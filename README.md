@@ -12,7 +12,7 @@ Oracle Application Framework (OAF) BootCamp
 - Oracle E-Business Suite Virtual Machine
 - Toad for Oracle
 - Oracle Jdeveloper patch for OAF
-<br><br>
+<br>
 
 **Target Students-** <br>
 
