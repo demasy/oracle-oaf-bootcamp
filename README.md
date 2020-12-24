@@ -1,2 +1,2 @@
-# oracle-oaf-bootcamp
+# Oracle Application Framework (OAF) BootCamp
 Oracle Application Framework (OAF) BootCamp
