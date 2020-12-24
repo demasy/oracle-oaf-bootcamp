@@ -30,7 +30,7 @@ Oracle Application Framework (OAF) BootCamp
 - Oracle Techno Functional
 - Oracle Apps Developer Course attended
 
-###### Buy this courses via udemy.com
+###### Buy these courses via udemy.com
 > <a href="#">udemy.com</a>
 
 ###### Suggestions & Issues
