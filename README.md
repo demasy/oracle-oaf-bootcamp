@@ -14,7 +14,7 @@ Oracle Application Framework (OAF) BootCamp
 - e-Business Suite development and debugging
 - Programming experience
 - Oracle SQL
-- Oracle Pl/SQL
+- Oracle PL/SQL
 - Java Programming
 - Oracle E-Business Suite Virtual Machine
 - Toad for Oracle
