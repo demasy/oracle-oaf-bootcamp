@@ -17,7 +17,7 @@ Oracle Application Framework (OAF) BootCamp
 - Oracle PL/SQL
 - Java Programming
 - Oracle E-Business Suite Virtual Machine
-- Toad for Oracle
+- Toad for Oracle or SQL Developer
 - Oracle Jdeveloper patch for OAF
 <br>
 
