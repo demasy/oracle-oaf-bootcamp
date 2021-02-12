@@ -57,7 +57,7 @@
 
 <br>
 
-### Deploying OA Framework Applicaitons
+### Deploying Your Application
 
 - First Topic
 
