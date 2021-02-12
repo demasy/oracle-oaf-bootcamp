@@ -12,7 +12,7 @@
 - OA Framework Development Concepts and Standard
 - Deploying OA Framework Applicaitons
 
-<br><br> 
+<br>
 
 ### Introduction
 
@@ -22,7 +22,7 @@
 - OA Framework
 - Logical Components of an OA Framework Page
 
-<br><br>
+<br>
 
 ### Getting started
 - Learning more about the page
