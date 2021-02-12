@@ -35,7 +35,7 @@
 
 ### Basics of the Model
 
-- FBC4J Model
+- BC4J Model
 - Applications Modules
 - Entity Objects
 - View Objects
