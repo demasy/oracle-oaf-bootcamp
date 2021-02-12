@@ -1,8 +1,22 @@
 # Oracle OAF Building BootCamp 101
 
-<br> 
+R12.x Extend Oracle Applications: Building OA Framework Applications
 
-**Curriculum:-** <br>
+<br> <br> 
+
+#### What will students learn in your course?
+- Complete a basic query page (SELECT)
+- Complete a basic drill-down page (SELECT)
+- Complete a basic create page (INSERT)
+- Complete a basic delete page (DELETE)
+- Complete a single-page update page (UPDATE)
+- Complete a multi-page update (UPDATE)
+- Understand the foundational concepts and standards of OA Framework-based applications and pages
+- 
+
+<br> <br> <br> 
+
+#### **Curriculum:-** <br>
 
 - Introduction
 - Getting started
