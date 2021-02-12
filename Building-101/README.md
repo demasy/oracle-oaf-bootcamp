@@ -12,7 +12,7 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 - Complete a single-page update page (UPDATE)
 - Complete a multi-page update (UPDATE)
 - Understand the foundational concepts and standards of OA Framework-based applications and pages
-- 
+
 
 <br> 
 
