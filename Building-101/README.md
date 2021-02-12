@@ -2,7 +2,7 @@
 
 R12.x Extend Oracle Applications: Building OA Framework Applications
 
-<br> <br> 
+<br>
 
 #### What will students learn in your course?
 - Complete a basic query page (SELECT)
@@ -14,7 +14,7 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 - Understand the foundational concepts and standards of OA Framework-based applications and pages
 - 
 
-<br> <br> <br> 
+<br> 
 
 #### **Curriculum:-** <br>
 
