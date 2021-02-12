@@ -21,3 +21,12 @@
 - Concepts of the MVC Design Pattern
 - OA Framework
 - Logical Components of an OA Framework Page
+
+
+### Getting started
+- Learning more about the page
+- Setting Up Development Environment
+- Introduction to JDeveloper 10g with OA Extension
+- Setting up your development environment
+- What The First option do you need ?!
+
