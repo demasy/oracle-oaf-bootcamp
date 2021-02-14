@@ -34,7 +34,7 @@ Ahmed El-Demasy
 
 <br>
 
-### [1] Welcome!
+### Section1: Welcome!
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:    | :----   |
@@ -44,7 +44,7 @@ Ahmed El-Demasy
 <br>
 
 
-### [2] Introduction
+###  Section2: Introduction
 
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
