@@ -156,5 +156,6 @@ Ahmed El-Demasy
 
 
 <br>
+
 ###### Suggestions & Issues
 > If you find any issue or have a great idea in mind please create an issue on <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/issues">GitHub</a>.
