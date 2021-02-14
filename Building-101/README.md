@@ -84,19 +84,21 @@ Ahmed El-Demasy
 
 ### [4] Explain the Basics of the Model
 
-- 4.1  Video: Explain BC4J Model
-- 4.2  Video: Explain Applications Modules
-- 4.3  Video: Create and test Applications Modules (Practice)
-- 4.4  Video: Explain Entity Objects
-- 4.5  Video: Create Entity Objects (Practice)
-- 4.6  Video: Explain View Objects
-- 4.7  Video: Create Updatable View Object (Practice)
-- 4.8  Video: Create Readonly View Object(Practice)
-- 4.9  Video: Create Programmatically View Object (Practice)
-- 4.10 Video: Your Trun
-- 4.11 Video: XXXXX (Practice Solution) 
-- 4.12 Video: Explain Other BC4J Objects
-- 4.13 Video: Explain BC4J Database Interactions
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 3.1        | Explain BC4J Model                  | Video   |  -       |  -       | -|
+| 3.1        | Explain Applications Modules                  | Video   |  -       |  -       | -|
+| 3.1        | Create and test Applications Modules                  | Video   |  X       |  -       | -|
+| 3.1        | Explain Entity Objects                 | Video   |  X       |  -       | -|
+| 3.1        | Create Entity Objects                  | Video   |  X       |  -       | -|
+| 3.1        | Explain View Objects                  | Video   |  X       |  -       | -|
+| 3.1        | Create Updatable View Object                  | Video   |  X       |  -       | -|
+| 3.1        | Create Readonly View Object                  | Video   |  X       |  -       | -|
+| 3.1        | Create Programmatically View Object                  | Video   |  X       |  -       | -|
+| 3.1        | Your Trun                  | Video   |  X       |  -       | -|
+| 3.1        | XXXXX (Practice Solution)                   | Video   |  X       |  -       | -|
+| 3.1        | Explain Other BC4J Objects                 | Video   |  X       |  -       | -|
+| 3.1        | Explain BC4J Database Interactions                 | Video   |  X       |  -       | -|
 
 
 <br>
