@@ -28,10 +28,10 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 <br>
 
-### 1 Welcome!
+### [1] Welcome!
 
-- Video: Welcome Lecutre
-- Video: About the Instructor
+- 1.1 Video: Welcome Lecutre
+- 1.2 Video: About the Instructor
 
 <br>
 
