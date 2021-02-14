@@ -86,19 +86,19 @@ Ahmed El-Demasy
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 3.1        | Explain BC4J Model                  | Video   |  -       |  -       | -|
-| 3.1        | Explain Applications Modules                  | Video   |  -       |  -       | -|
-| 3.1        | Create and test Applications Modules                  | Video   |  X       |  -       | -|
-| 3.1        | Explain Entity Objects                 | Video   |  X       |  -       | -|
-| 3.1        | Create Entity Objects                  | Video   |  X       |  -       | -|
-| 3.1        | Explain View Objects                  | Video   |  X       |  -       | -|
-| 3.1        | Create Updatable View Object                  | Video   |  X       |  -       | -|
-| 3.1        | Create Readonly View Object                  | Video   |  X       |  -       | -|
-| 3.1        | Create Programmatically View Object                  | Video   |  X       |  -       | -|
-| 3.1        | Your Trun                  | Video   |  X       |  -       | -|
-| 3.1        | XXXXX (Practice Solution)                   | Video   |  X       |  -       | -|
-| 3.1        | Explain Other BC4J Objects                 | Video   |  X       |  -       | -|
-| 3.1        | Explain BC4J Database Interactions                 | Video   |  X       |  -       | -|
+| 4.1        | Explain BC4J Model                  | Video   |  -       |  -       | -|
+| 4.2        | Explain Applications Modules                  | Video   |  -       |  -       | -|
+| 4.3        | Create and test Applications Modules                  | Video   |  X       |  -       | -|
+| 4.4        | Explain Entity Objects                 | Video   |  X       |  -       | -|
+| 4.5        | Create Entity Objects                  | Video   |  X       |  -       | -|
+| 4.6        | Explain View Objects                  | Video   |  X       |  -       | -|
+| 4.7        | Create Updatable View Object                  | Video   |  X       |  -       | -|
+| 4.8        | Create Readonly View Object                  | Video   |  X       |  -       | -|
+| 4.9        | Create Programmatically View Object                  | Video   |  X       |  -       | -|
+| 4.10        | Your Trun                  | Video   |  X       |  -       | -|
+| 4.11        | XXXXX (Practice Solution)                   | Video   |  X       |  -       | -|
+| 4.12        | Explain Other BC4J Objects                 | Video   |  X       |  -       | -|
+| 4.13        | Explain BC4J Database Interactions                 | Video   |  X       |  -       | -|
 
 
 <br>
