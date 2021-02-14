@@ -145,33 +145,37 @@ Ahmed El-Demasy
 
 <br>
 
-### Handling and Logging Errors
+### [7] Handling and Logging Errors
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | View-layer Components                  | Video   |  -       |  -       | -|
+| 4.1        | Lecture Name                  | Video   |  -       |  -       | -|
 
-- First Topic
 
 <br>
 
-### Explain OA Framework Development Concepts and Standard
+### [8] Explain OA Framework Development Concepts and Standard
 
-- Why Standards
-- Coding Standards and Terminology
-- Different Standards
-- Files and Packages
-- Directory Structure
-- export.bat, import.bat, JPXImporter
-- Personalizations
-- Extensions
-- Explain about the pages use cases
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Why Standards                  | Video   |  -       |  -       | -|
+| 4.1        | Coding Standards and Terminology                  | Video   |  -       |  -       | -|
+| 4.1        | Different Standards                  | Video   |  -       |  -       | -|
+| 4.1        | Files and Packages                  | Video   |  -       |  -       | -|
+| 4.1        | Directory Structure                 | Video   |  -       |  -       | -|
+| 4.1        | export.bat, import.bat, JPXImporter                  | Video   |  -       |  -       | -|
+| 4.1        | Personalizations                  | Video   |  -       |  -       | -|
+| 4.1        | Extensions                  | Video   |  -       |  -       | -|
+| 4.1        | Explain about the pages use cases                  | Video   |  -       |  -       | -|
 
 <br>
 
 ### Deploying Your OAF Application
 
-- First Topic
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Lecture Name                  | Video   |  -       |  -       | -|
+
 
 
 <br>
