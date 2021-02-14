@@ -166,7 +166,7 @@ Ahmed El-Demasy
 
 <br>
 
-### Section 101: Point-Of-Sale Project using OA Framework
+### [101] Point-Of-Sale Project using OA Framework
 
 | Code       | Lecture Title                    | Format  | Practice | Resource |
 | :-         | :--------                        | :-:     | :-:      | :-:     |
