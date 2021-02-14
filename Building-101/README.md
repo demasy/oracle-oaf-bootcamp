@@ -28,23 +28,23 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 <br>
 
-### Welcome!
+### 1 Welcome!
 
-- Welcome Lecutre
-- About the Instructor
+- Video: Welcome Lecutre
+- Video: About the Instructor
 
 <br>
 
 
-### Introduction
+### 2 Introduction
 
-- Explain Important Terminology
-- Differentiate Between Oracle Forms (D2K) and OA Framework
-- Explain Advantages and Disadvantages of OA Framework
-- Introduction to OA Framework
-- Explain Concept of MVC Design Pattern
-- Explain OA Framework
-- Explain Logical Components of an OA Framework Page
+- Video: 2.1 Explain Important Terminology
+- Video: 2.2 Differentiate Between Oracle Forms (D2K) and OA Framework
+- Video: 2.3 Explain Advantages and Disadvantages of OA Framework
+- Video: 2.4 Introduction to OA Framework
+- Video: 2.5 Explain Concept of MVC Design Pattern
+- Video: 2.6 Explain OA Framework
+- Video: 2.7 Explain Logical Components of an OA Framework Page
 
 <br>
 
