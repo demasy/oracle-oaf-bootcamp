@@ -57,7 +57,7 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 <br>
 
-### Basics of the Model
+### Explain the Basics of the Model
 
 - BC4J Model
 - Applications Modules
@@ -69,7 +69,7 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 <br>
 
-### Basics of the View
+### Explain the Basics of the View
 
 - View-layer Components
 - Workspaces and Projects
@@ -80,7 +80,7 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 <br>
 
-### Basics of the Controller
+### Explain the Basics of the Controller
 
 - Handling GETs
 - Handling POSTs
@@ -89,7 +89,7 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 <br>
 
-### OA Framework Development Concepts and Standard
+### Explain OA Framework Development Concepts and Standard
 
 - First Topic
 
