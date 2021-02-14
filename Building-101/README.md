@@ -89,6 +89,12 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 <br>
 
+### Handling and Logging Errors
+
+- First Topic
+
+<br>
+
 ### Explain OA Framework Development Concepts and Standard
 
 - First Topic
