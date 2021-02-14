@@ -61,11 +61,15 @@ Ahmed El-Demasy
 <br>
 
 ### [3] Getting started
-- 3.1 Video: Learning More About (Practice)
-- 3.2 Video: Setting Up Development Environment
-- 3.3 Video: Explain About JDeveloper 10g with OA Extension
-- 3.4 Video: What The First option do you need ?!
-- 3.5 Video: Buit the Hello World OA Page (Practice)
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 3.1        | Learning More About                  | Video   |  X       |  -       | -|
+| 3.2        | Setting Up Development Environment                  | Video   |  -       |  -       | -|
+| 3.3        | Explain About JDeveloper 10g with OA Extension                 | Video   |  -       |  -       | -|
+| 3.4        | What The First option do you need ?!                  | Video   |  -       |  -       | -|
+| 3.5        | Buit the Hello World OA Page                  | Video   |  X       |  -       | -|
+
 
 <br>
 
