@@ -187,7 +187,8 @@ Ahmed El-Demasy
 | 101.1.1        | Setting-Up Development Environment                   | Video   |  X       |  <a href="#">File</a>      |
 | 101.1.1        | Installing Git (Version Control System)                   | Video   |  X       |  <a href="#">File</a>        |
 | 101.1.1        | Create Workspaces and Projects                   | Video   |  X       |  <a href="#">File</a>       |
-| 101.1.2        | Create Database Connection                   | Video   |  X       |  <a href="#">File</a>       |
+| 101.1.2        | Create & Test Database Connection                   | Video   |  X       |  <a href="#">File</a>       |
+| 101.1.2        | Create Store Search Page                   | Video   |  X       |  <a href="#">File</a>       |
 
 
 
