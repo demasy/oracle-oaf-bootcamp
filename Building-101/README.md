@@ -97,7 +97,15 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 ### Explain OA Framework Development Concepts and Standard
 
-- First Topic
+- Why Standards
+- Coding Standards and Terminology
+- Different Standards
+- Files and Packages
+- Directory Structure
+- export.bat, import.bat, JPXImporter
+- Personalizations
+- Extensions
+- Explain about the pages use cases
 
 <br>
 
