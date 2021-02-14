@@ -194,7 +194,7 @@ Ahmed El-Demasy
 | 101.2.4        | Implementing store delete page (DELETE)                  | Video   |  X       |  <a href="#">File</a>       |
 | 101.2.5        | Implementing store update page (UPDATE)                  | Video   |  X       |  <a href="#">File</a>       |
 | 101.3.1        | Practice Assignment: Implementing bransh page (CRUD functionalities)                 | Video   |  X       |  <a href="#">File</a>       |
-| 101.1.2        | Assignment Solution: Implementing bransh page (CRUD functionalities)                 | Video   |  X       |  <a href="#">File</a>       |
+| 101.3.2        | Assignment Solution: Implementing bransh page (CRUD functionalities)                 | Video   |  X       |  <a href="#">File</a>       |
 
 <br>
 
