@@ -16,7 +16,7 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 <br> 
 
-#### **Curriculum:-** <br>
+# **Curriculum**
 
 - Introduction
 - Getting started
