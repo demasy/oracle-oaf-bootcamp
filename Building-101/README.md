@@ -188,10 +188,11 @@ Ahmed El-Demasy
 | 101.1.1        | Installing Git (Version Control System)                   | Video   |  X       |  <a href="#">File</a>        |
 | 101.1.1        | Create Workspaces and Projects                   | Video   |  X       |  <a href="#">File</a>       |
 | 101.1.2        | Create & Test Database Connection                   | Video   |  X       |  <a href="#">File</a>       |
-| 101.1.2        | Create Store Search Page                   | Video   |  X       |  <a href="#">File</a>       |
-
-
-
+| 101.1.2        | Building store query page (SELECT)                  | Video   |  X       |  <a href="#">File</a>       |
+| 101.1.2        | Building store drill-down page (SELECT)                  | Video   |  X       |  <a href="#">File</a>       |
+| 101.1.2        | Building store create page (INSERT)                  | Video   |  X       |  <a href="#">File</a>       |
+| 101.1.2        | Building store delete page (DELETE)                  | Video   |  X       |  <a href="#">File</a>       |
+| 101.1.2        | Building store update page (UPDATE)                  | Video   |  X       |  <a href="#">File</a>       |
 
 <br>
 
