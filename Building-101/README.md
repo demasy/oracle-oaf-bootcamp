@@ -60,6 +60,7 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 ### Explain the Basics of the Model
 
 - Explain BC4J Model
+- Reading: 
 - Explain Applications Modules
 - Activitiy: Create and test Applications Modules
 - Explain Entity Objects
@@ -68,6 +69,8 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 - Activitiy: Create Updatable View Object
 - Activitiy: Create Readonly View Object
 - Activitiy: Create Programmatically View Object
+- Your Trun
+- Solution: 
 - Explain Other BC4J Objects
 - Explain BC4J Database Interactions
 
