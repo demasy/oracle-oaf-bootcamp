@@ -184,10 +184,11 @@ Ahmed El-Demasy
 
 | Code       | Lecture Title                    | Format  | Practice | Resource |
 | :-         | :--------                        | :-:     | :-:      | :-:     |
-| 101.1.1        | Setting-Up Development Environment                   | Video   |  X       |  -       |
-| 101.1.1        | Installing Git (Version Control System)                   | Video   |  X       |  -       |
-| 101.1.1        | Create Workspaces and Projects                   | Video   |  X       |  -       |
-| 101.1.2        | Create Database Connection                   | Video   |  X       |  -       |
+| 101.1.1        | Setting-Up Development Environment                   | Video   |  X       |  <a href="#">File</a>      |
+| 101.1.1        | Installing Git (Version Control System)                   | Video   |  X       |  <a href="#">File</a>        |
+| 101.1.1        | Create Workspaces and Projects                   | Video   |  X       |  <a href="#">File</a>       |
+| 101.1.2        | Create Database Connection                   | Video   |  X       |  <a href="#">File</a>       |
+
 
 
 
