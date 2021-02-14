@@ -18,7 +18,13 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 # **Curriculum**
 
-- Introduction
+1. **Welcome!**
+2. **Introduction**
+3. **Getting started**
+4. **Explain the Basics of the Model**
+5. **Explain the Basics of the View**
+6. **Explain the Basics of the Controller**
+
 - Getting started
 - Basics of the Model
 - Basics of the View
