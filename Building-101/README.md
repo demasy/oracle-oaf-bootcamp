@@ -57,7 +57,6 @@ Ahmed El-Demasy
 | 2.6        | Explain OA Framework                 | Video   |  -       |  -       | -|
 | 2.7        | Explain Logical Components of an OA Framework Page                 | Video   |  -       |  -       | -|
 
-
 <br>
 
 ### [3] Getting started
@@ -70,6 +69,12 @@ Ahmed El-Demasy
 | 3.4        | Explain About JDeveloper 10g with OA Extension                 | Video   |  -       |  -       | -|
 | 3.5        | What The First option do you need ?!                  | Video   |  -       |  -       | -|
 | 3.6        | Buit the Hello World OA Page                  | Video   |  X       |  -       | -|
+
+##### [101] Project: Point-Of-Sale Project Practices
+
+| Code       | Lecture Title                    | Format  | Practice |
+| :-         | :--------                        | :-:     | :-:      | 
+| 101.1        | Create Workspaces and Projects                  | Video   |  X       | 
 
 
 <br>
