@@ -134,16 +134,22 @@ Ahmed El-Demasy
 
 <br>
 
-### Explain the Basics of the Controller
+### [6] Explain the Basics of the Controller
 
-- Handling GETs
-- Handling POSTs
-- Common Controller tasks
-- Controller Methods
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 6.1        | Handling GETs                  | Video   |  -       |  -       | -|
+| 6.2        | Handling POSTs                  | Video   |  -       |  -       | -|
+| 6.3        | Common Controller tasks                  | Video   |  -       |  -       | -|
+| 6.4        | Controller Methods                  | Video   |  -       |  -       | -|
 
 <br>
 
 ### Handling and Logging Errors
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | View-layer Components                  | Video   |  -       |  -       | -|
 
 - First Topic
 
