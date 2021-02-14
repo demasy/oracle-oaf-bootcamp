@@ -166,5 +166,13 @@ Ahmed El-Demasy
 
 <br>
 
+### Section 101: Point-Of-Sale Project using OA Framework
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 101.1        | Create Workspaces and Projects                   | Video   |  -       |  -       | -|
+
+<br>
+
 ###### Suggestions & Issues
 > If you find any issue or have a great idea in mind please create an issue on <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/issues">GitHub</a>.
