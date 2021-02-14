@@ -65,10 +65,11 @@ Ahmed El-Demasy
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
 | 3.1        | Learning More About                  | Video   |  X       |  -       | -|
-| 3.2        | Setting Up Development Environment                  | Video   |  -       |  -       | -|
-| 3.3        | Explain About JDeveloper 10g with OA Extension                 | Video   |  -       |  -       | -|
-| 3.4        | What The First option do you need ?!                  | Video   |  -       |  -       | -|
-| 3.5        | Buit the Hello World OA Page                  | Video   |  X       |  -       | -|
+| 3.2        | Downloading OA Extension from Oracle Metalink                  | Video   |  X       |  X       | -|
+| 3.3        | Setting Up Development Environment                  | Video   |  -       |  -       | -|
+| 3.4        | Explain About JDeveloper 10g with OA Extension                 | Video   |  -       |  -       | -|
+| 3.5        | What The First option do you need ?!                  | Video   |  -       |  -       | -|
+| 3.6        | Buit the Hello World OA Page                  | Video   |  X       |  -       | -|
 
 
 <br>
