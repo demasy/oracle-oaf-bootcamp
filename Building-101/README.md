@@ -38,7 +38,7 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 ### Introduction
 
-- Important Terminology
+- Explain Important Terminology
 - Differentiate Between Oracle Forms (D2K) and OA Framework
 - Explain Advantages and Disadvantages of OA Framework
 - Introduction to OA Framework
