@@ -49,11 +49,11 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 <br>
 
 ### Getting started
-- Learning more about the page
+- Activitiy: Learning More About
 - Setting Up Development Environment
-- Introduction to JDeveloper 10g with OA Extension
-- Setting up your development environment
+- Explain About JDeveloper 10g with OA Extension
 - What The First option do you need ?!
+- Activitiy: Buit the Hello World OA Page
 
 <br>
 
