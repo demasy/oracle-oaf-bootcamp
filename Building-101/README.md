@@ -4,6 +4,13 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 <br>
 
+## **About the Instructor**
+Ahmed El-Demasy
+
+<br>
+
+## **Course Goals** 
+
 #### What will students learn in your course?
 - Complete a basic query page (SELECT)
 - Complete a basic drill-down page (SELECT)
@@ -16,7 +23,7 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 <br> 
 
-# **Curriculum**
+## **Curriculum**
 
 1. **Welcome!**
 2. **Introduction**
@@ -29,8 +36,10 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 ### [1] Welcome!
 
-- 1.1 Video: Welcome Lecutre
-- 1.2 Video: About the Instructor
+| Code       | Lecture Title                    | Format  | Activity | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :---     | :----   |
+| 1.1        | Welcome Lecutre                  | Video   |  -       |  -       | -|
+| 1.2        | About the Instructor             | Video   |  -       |  -       | -|
 
 <br>
 
