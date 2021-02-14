@@ -170,7 +170,7 @@ Ahmed El-Demasy
 
 <br>
 
-### Deploying Your OAF Application
+### [9] Deploying Your OAF Application
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
