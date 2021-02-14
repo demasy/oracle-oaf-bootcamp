@@ -77,14 +77,32 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 
 <br>
 
-### Explain the Basics of the View
+### [5] Explain the Basics of the View
 
-- View-layer Components
-- Workspaces and Projects
-- Pages and Regions
-- Items
-- CSS Styles
-- Attributes Sets
+- 5.1   Video: View-layer Components
+- 5.2   Video: Workspaces and Projects
+- 5.3   Video: Pages and Regions
+- 5.4   Video: Items
+- 5.4.1 Video: Implementing Message Text Input
+- 5.4.2 Video: Implementing Message Styled Text
+- 5.4.3 Video: Implementing Message Check Box
+- 5.4.4 Video: Implementing Message Radio Button
+- 5.4.5 Video: Implementing Message Choice
+- 5.4.6 Video: Implementing Submit Button
+- 5.4.7 Video: Implementing Image Item
+- 5.4.8 Video: Implementing dependent LOV 
+- 5.4.9 Video: Implementing External LOV 
+- 5.5   Video: CSS Styles
+- 5.6   Video: Attributes Sets
+- 5.5   Video: Pages and Regions
+- 5.5.1 Video: Implementing Message Component Layout
+- 5.5.2 Video: Implementing Header Region
+- 5.5.3 Video: Implementing Row Layout Region
+- 5.5.4 Video: Implementing Default Double Column
+- 5.5.5 Video: Implementing Default Single Column
+- 5.5.6 Video: Implementing Page Button Bar
+- 5.5.7 Video: Implementing Query Region
+
 
 <br>
 
