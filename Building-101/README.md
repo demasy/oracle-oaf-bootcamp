@@ -184,8 +184,8 @@ Ahmed El-Demasy
 
 | Code       | Lecture Title                    | Format  | Practice | Resource |
 | :-         | :--------                        | :-:     | :-:      | :-:     |
-| 101.1.1        | Create Workspaces and Projects                   | Video   |  -       |  -       |
-| 101.1.2        | Create Database Connection                   | Video   |  -       |  -       |
+| 101.1.1        | Create Workspaces and Projects                   | Video   |  X       |  -       |
+| 101.1.2        | Create Database Connection                   | Video   |  X       |  -       |
 
 <br>
 
