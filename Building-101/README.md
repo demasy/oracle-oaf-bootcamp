@@ -70,7 +70,7 @@ Ahmed El-Demasy
 | 3.5        | What The First option do you need ?!                  | Video   |  -       |  -       | -|
 | 3.6        | Buit the Hello World OA Page                  | Video   |  X       |  -       | -|
 
-##### 101.1 Project: Point-Of-Sale Project Practices
+##### 101.1 Project Practices 
 
 > This is the part of section 101, Point-Of-Sale Project using OA Framework.
 
@@ -170,7 +170,8 @@ Ahmed El-Demasy
 
 | Code       | Lecture Title                    | Format  | Practice | Resource |
 | :-         | :--------                        | :-:     | :-:      | :-:     |
-| 101.1        | Create Workspaces and Projects                   | Video   |  -       |  -       |
+| 101.1.1        | Create Workspaces and Projects                   | Video   |  -       |  -       |
+| 101.1.2        | Create Database Connection                   | Video   |  -       |  -       |
 
 <br>
 
