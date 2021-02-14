@@ -25,13 +25,6 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 5. **Explain the Basics of the View**
 6. **Explain the Basics of the Controller**
 
-- Getting started
-- Basics of the Model
-- Basics of the View
-- Basics of the Controller
-- OA Framework Development Concepts and Standard
-- Deploying OA Framework Applicaitons
-
 <br>
 
 ### [1] Welcome!
