@@ -34,7 +34,7 @@ Ahmed El-Demasy
 
 <br>
 
-### Section1: Welcome!
+### [1] Welcome!
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:    | :----   |
@@ -44,7 +44,7 @@ Ahmed El-Demasy
 <br>
 
 
-###  Section2: Introduction
+### [2] Introduction
 
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
@@ -70,7 +70,7 @@ Ahmed El-Demasy
 | 3.5        | What The First option do you need ?!                  | Video   |  -       |  -       | -|
 | 3.6        | Buit the Hello World OA Page                  | Video   |  X       |  -       | -|
 
-##### Code 101.1 Project: Point-Of-Sale Project Practices
+##### 101.1 Project: Point-Of-Sale Project Practices
 
 > This is the part of section 101, Point-Of-Sale Project using OA Framework.
 
