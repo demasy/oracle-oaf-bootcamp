@@ -91,9 +91,7 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 - 5.4.6 Video: Implementing Submit Button
 - 5.4.7 Video: Implementing Image Item
 - 5.4.8 Video: Implementing dependent LOV 
-- 5.4.9 Video: Implementing External LOV 
-- 5.5   Video: CSS Styles
-- 5.6   Video: Attributes Sets
+- 5.4.9 Video: Implementing External LOV
 - 5.5   Video: Pages and Regions
 - 5.5.1 Video: Implementing Message Component Layout
 - 5.5.2 Video: Implementing Header Region
@@ -102,6 +100,8 @@ R12.x Extend Oracle Applications: Building OA Framework Applications
 - 5.5.5 Video: Implementing Default Single Column
 - 5.5.6 Video: Implementing Page Button Bar
 - 5.5.7 Video: Implementing Query Region
+- 5.5   Video: CSS Styles
+- 5.6   Video: Attributes Sets
 
 
 <br>
