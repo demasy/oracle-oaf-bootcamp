@@ -22,7 +22,7 @@ Oracle Application Framework (OAF) BootCamp
 - <a href="#">Oracle OAF Building BootCamp 102 (Advanced) </a> (Stay Tuned)
 - <a href="#">Oracle OAF Customizing BootCamp 101 (Beginner) </a> (Stay Tuned)
 - <a href="#">Oracle OAF Customizing BootCamp 102 (Advanced) </a> (Stay Tuned)
-- 
+
 <br><br>
 
 ## Prerequisites & Requirements 
