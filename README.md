@@ -2,14 +2,30 @@
 Oracle Application Framework (OAF) BootCamp
 <br><br><br>
 
-**OAF BootCamp :-**
-- <a href="#">Oracle OAF Building BootCamp 101</a> (Stay Tuned)
-- <a href="#">Oracle OAF Building BootCamp 102</a> (Stay Tuned)
-- <a href="#">Oracle OAF Customizing BootCamp 101</a> (Stay Tuned)
-- <a href="#">Oracle OAF Customizing BootCamp 102</a> (Stay Tuned)
+## About this BootCamp
 <br><br>
 
-**Prerequisites & Requirements-** <br>
+
+## Target Audience
+
+- Oracle Technical Consultant (Apps Developer)
+- Oracle Developer
+- Java Developer
+- Oracle Techno Functional
+- Oracle Apps Developer Course attended
+
+<br><br>
+
+## OAF BootCamp Levels
+ 
+- <a href="#">Oracle OAF Building BootCamp 101 (Beginner) </a> (Stay Tuned)
+- <a href="#">Oracle OAF Building BootCamp 102 (Advanced) </a> (Stay Tuned)
+- <a href="#">Oracle OAF Customizing BootCamp 101 (Beginner) </a> (Stay Tuned)
+- <a href="#">Oracle OAF Customizing BootCamp 102 (Advanced) </a> (Stay Tuned)
+- 
+<br><br>
+
+## Prerequisites & Requirements 
 
 - e-Business Suite development and debugging
 - Programming experience
@@ -21,13 +37,7 @@ Oracle Application Framework (OAF) BootCamp
 - Oracle Jdeveloper patch for OAF
 <br>
 
-**Target Students-** <br>
-
-- Oracle Technical Consultant (Apps Developer)
-- Oracle Developer
-- Java Developer
-- Oracle Techno Functional
-- Oracle Apps Developer Course attended
+ 
 
 ###### Buy these courses via udemy.com
 > <a href="#">udemy.com</a>
