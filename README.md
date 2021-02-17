@@ -22,10 +22,10 @@ Stay Tuned
 
 ## OAF BootCamp Levels
  
-- <a href="#">Oracle OAF Building BootCamp 101 (Beginner) </a> (Stay Tuned)
-- <a href="#">Oracle OAF Building BootCamp 102 (Advanced) </a> (Stay Tuned)
-- <a href="#">Oracle OAF Customizing BootCamp 101 (Beginner) </a> (Stay Tuned)
-- <a href="#">Oracle OAF Customizing BootCamp 102 (Advanced) </a> (Stay Tuned)
+- <a href="#">Oracle OAF Building BootCamp 101 </a> (Stay Tuned)
+- <a href="#">Oracle OAF Building BootCamp 102 </a> (Stay Tuned)
+- <a href="#">Oracle OAF Customizing BootCamp 101  </a> (Stay Tuned)
+- <a href="#">Oracle OAF Customizing BootCamp 102  </a> (Stay Tuned)
 
 <br><br>
 
