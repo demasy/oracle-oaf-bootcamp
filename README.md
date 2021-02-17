@@ -12,10 +12,11 @@ Stay Tuned
 ## Target Audience
 
 - Oracle Technical Consultant (Apps Developer)
+- Oracle Apps Developer Course attended
 - Oracle Developer
 - Java Developer
 - Oracle Techno Functional
-- Oracle Apps Developer Course attended
+
 
 <br><br>
 
@@ -41,8 +42,11 @@ Stay Tuned
 <br>
  
 
-###### Buy these courses via udemy.com
+###### Online BootCamps for individuals buy these BootCamps via udemy.com
 > <a href="#">udemy.com</a>
+
+###### Live BootCamps for enterprise ONLY
+> <a href="#">Schedule Call via Calendly</a>
 
 ###### Suggestions & Issues
 > If you find any issue or have a great idea in mind please create an issue on <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/issues">GitHub</a>.
