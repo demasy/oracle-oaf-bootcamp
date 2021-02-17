@@ -154,7 +154,19 @@ Ahmed El-Demasy
 
 <br>
 
-### [8] Explain OA Framework Development Concepts and Standard
+
+
+### [8] Explain OA Framework Security
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Lecture Name                  | Video   |  -       |  -       | -|
+
+
+<br>
+
+
+### [9] Explain OA Framework Development Concepts and Standard
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
