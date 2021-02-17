@@ -3,6 +3,9 @@ Oracle Application Framework (OAF) BootCamp
 <br><br><br>
 
 ## About this BootCamp
+
+Stay Tuned
+
 <br><br>
 
 
@@ -36,7 +39,7 @@ Oracle Application Framework (OAF) BootCamp
 - Toad for Oracle or SQL Developer
 - Oracle Jdeveloper patch for OAF
 <br>
-
+<br>
  
 
 ###### Buy these courses via udemy.com
