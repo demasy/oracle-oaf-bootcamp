@@ -40,6 +40,9 @@ Ahmed El-Demasy
 | :-         | :--------                        | :-:     | :-:      | :-:    | :----   |
 | 1.1        | Welcome Lecutre                  | Video   |  -       |  -       | -|
 | 1.2        | About the Instructor             | Video   |  -       |  -       | -|
+| 1.3        | How This Course Works             | Video   |  -       |  -       | -|
+	
+
 
 <br>
 
