@@ -8,16 +8,6 @@ Stay Tuned
 
 <br>
 
-## Target Audience
-
-- Oracle Technical Consultant (Apps Developer)
-- Oracle Apps Developer Course attended
-- Oracle Developer
-- Java Developer
-- Oracle Techno Functional
-
-<br>
-
 ## OAF BootCamp Levels
  
 - <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/tree/master/Building-101">Oracle OAF Building BootCamp 101</a>
@@ -38,7 +28,17 @@ Stay Tuned
 - Oracle Jdeveloper patch for OAF
 
 <br>
- 
+
+## Target Audience
+
+- Oracle Technical Consultant (Apps Developer)
+- Oracle Apps Developer Course attended
+- Oracle Developer
+- Java Developer
+- Oracle Techno Functional
+
+<br>
+
 ## **About the Instructor**
 This is <a href="https://github.com/demasy">Ahmed El-Demasy</a> , I have more than 13 years of experience in Oracle technology and Oracle applications; 11 years in ERP development using JAVA and ORACLE tools specialist in OA framework development (OAF).
 
