@@ -48,11 +48,16 @@ For more information about my experiences and professional career. please visit 
 
 <br>
 
+## How can get this BootCamp!
+
 ###### Online BootCamps for individuals buy these BootCamps via udemy.com
 > <a href="#">udemy.com</a>
 
 ###### Live BootCamps for enterprise ONLY
 > <a href="#">Schedule call with us via Calendly</a>
+
+<br>
+
 
 ###### Suggestions & Issues
 > If you find any issue or have a great idea in mind please create an issue on <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/issues">GitHub</a>.
