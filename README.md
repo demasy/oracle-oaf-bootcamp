@@ -24,8 +24,8 @@ For more information about my experiences and professional career. please visit 
  
 - <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/tree/master/Building-101">Oracle OAF Building BootCamp 101</a>
 - Oracle OAF Building BootCamp 102 (Stay Tuned)
-- <a href="#">Oracle OAF Customizing BootCamp 101  </a> (Stay Tuned)
-- <a href="#">Oracle OAF Customizing BootCamp 102  </a> (Stay Tuned)
+- Oracle OAF Customizing BootCamp 101 (Stay Tuned)
+- Oracle OAF Customizing BootCamp 102 (Stay Tuned)
 
 <br>
 
