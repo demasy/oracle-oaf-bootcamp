@@ -9,6 +9,17 @@ Stay Tuned
 
 <br>
 
+## **About the Instructor**
+This is <a href="https://github.com/demasy">Ahmed El-Demasy</a> , I have more than 13 years of experience in Oracle technology and Oracle applications; 11 years in ERP development using JAVA and ORACLE tools specialist in OA framework development (OAF).
+
+Currently holding a position of Principal Technical Consultant, responsible for implementation, enhancement, and support for Oracle e-Business Suite applications (ERP); coaching development team, leading projects and vendor resources coordination.
+
+Practical experience in coaching and teaching Oracle courses such as Oracle SQL, Oracle PL/SQL, Java SE, Oracle OA framework (OAF), Oracle workflow, and etc.
+
+For more information about my experiences and professional career. please visit my LinkedIn profile <a href="https://www.linkedin.com/in/demasy/">here</a>
+
+<br>
+
 ## OAF BootCamp Levels
  
 - <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/tree/master/Building-101">Oracle OAF Building BootCamp 101</a>
@@ -37,17 +48,6 @@ Stay Tuned
 - Oracle Developer
 - Java Developer
 - Oracle Techno Functional
-
-<br>
-
-## **About the Instructor**
-This is <a href="https://github.com/demasy">Ahmed El-Demasy</a> , I have more than 13 years of experience in Oracle technology and Oracle applications; 11 years in ERP development using JAVA and ORACLE tools specialist in OA framework development (OAF).
-
-Currently holding a position of Principal Technical Consultant, responsible for implementation, enhancement, and support for Oracle e-Business Suite applications (ERP); coaching development team, leading projects and vendor resources coordination.
-
-Practical experience in coaching and teaching Oracle courses such as Oracle SQL, Oracle PL/SQL, Java SE, Oracle OA framework (OAF), Oracle workflow, and etc.
-
-For more information about my experiences and professional career. please visit my LinkedIn profile <a href="https://www.linkedin.com/in/demasy/">here</a>
 
 <br>
 
