@@ -193,7 +193,8 @@ For more information about my experiences and professional career. please visit 
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Lecture Name                  | Video   |  -       |  -       | -|
+| 4.1        | Deploy Your OAF Application on R12.1.x                  | Video   |  -       |  -       | -|
+| 4.1        | Deploy Your OAF Application on R12.2.x                  | Video   |  -       |  -       | -|
 
 
 
