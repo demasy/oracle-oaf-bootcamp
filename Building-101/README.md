@@ -189,7 +189,7 @@ For more information about my experiences and professional career. please visit 
 
 <br>
 
-### [9] Deploying Your OAF Application
+### [9] Deploying Your OA Framework Applications
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
