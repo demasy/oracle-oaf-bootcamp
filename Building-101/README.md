@@ -75,7 +75,7 @@ For more information about my experiences and professional career. please visit 
 | 3.3        | Setting Up Development Environment                  | Video   |  -       |  -       | -|
 | 3.4        | Explain About JDeveloper 10g with OA Extension                 | Video   |  -       |  -       | -|
 | 3.5        | What The First option do you need ?!                  | Video   |  -       |  -       | -|
-| 3.6        | Buit the Hello World OA Page                  | Video   |  X       |  -       | -|
+| 3.6        | Build the Hello World OA Page                  | Video   |  X       |  -       | -|
 
 ##### 101.1 Project Practices 
 
