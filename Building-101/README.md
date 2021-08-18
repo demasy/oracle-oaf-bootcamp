@@ -118,23 +118,23 @@ For more information about my experiences and professional career. please visit 
 | 4.1        | Workspaces and Projects                  | Video   |  -       |  -       | -|
 | 4.1        | Pages and Regions                 | Video   |  -       |  -       | -|
 | 4.1        | Items                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Message Text Input                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Message Styled Text                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Message Check Box                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Message Radio Button                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Message Choice                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Submit Button                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Image Item                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing dependent LOV                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing External LOV                 | Video   |  -       |  -       | -|
+| 4.1        | Items: Implementing Message Text Input                  | Video   |  -       |  -       | -|
+| 4.1        | Items: Implementing Message Styled Text                  | Video   |  -       |  -       | -|
+| 4.1        | Items: Implementing Message Check Box                  | Video   |  -       |  -       | -|
+| 4.1        | Items: Implementing Message Radio Button                  | Video   |  -       |  -       | -|
+| 4.1        | Items: Implementing Message Choice                  | Video   |  -       |  -       | -|
+| 4.1        | Items: Implementing Submit Button                  | Video   |  -       |  -       | -|
+| 4.1        | Items: Implementing Image Item                  | Video   |  -       |  -       | -|
+| 4.1        | Items: Implementing dependent LOV                  | Video   |  -       |  -       | -|
+| 4.1        | Items: Implementing External LOV                 | Video   |  -       |  -       | -|
 | 4.1        | Pages and Regions                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Message Component Layout                 | Video   |  -       |  -       | -|
-| 4.1        | Implementing Header Region                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Row Layout Region                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Default Double Column                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Default Single Column                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Page Button Bar                 | Video   |  -       |  -       | -|
-| 4.1        | Implementing Query Region                  | Video   |  -       |  -       | -|
+| 4.1        | Regions: Implementing Message Component Layout                 | Video   |  -       |  -       | -|
+| 4.1        | Regions: Implementing Header Region                  | Video   |  -       |  -       | -|
+| 4.1        | Regions: Implementing Row Layout Region                  | Video   |  -       |  -       | -|
+| 4.1        | Regions: Implementing Default Double Column                  | Video   |  -       |  -       | -|
+| 4.1        | Regions: Implementing Default Single Column                  | Video   |  -       |  -       | -|
+| 4.1        | Regions: Implementing Page Button Bar                 | Video   |  -       |  -       | -|
+| 4.1        | Regions: Implementing Query Region                  | Video   |  -       |  -       | -|
 | 4.1        | CSS Styles                  | Video   |  -       |  -       | -|
 | 4.1        | Attributes Sets                  | Video   |  -       |  -       | -|
 
