@@ -37,7 +37,8 @@
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Lecture Name                     | Video   |  -       |  -       | -|
+| 4.1        | Import data from Excel sheet to DB Table through OAF page | Video   |  -       |  -       | -|
+| 4.1        | Export data from DB through OAF page | Video   |  -       |  -       | -|
 
 
 
