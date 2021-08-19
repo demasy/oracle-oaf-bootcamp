@@ -53,11 +53,13 @@
 
 <br>
 
-### [7] OA Framework Debugging Techniques
+
+### [4] OA Framework Validations
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Using demasy-oaf libraries for OA Framework debugging                | Video   |  -       |  -       | -|
+| 4.1        | Compare two dates in OA Framework  | Video   |  -       |  -       | -|
+| 4.1        | Implementing Validation using Entity Expert  | Video   |  -       |  -       | -|
 
 <br>
 
@@ -72,6 +74,14 @@
 
 <br> 
 
+### [7] OA Framework Debugging Techniques
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Using demasy-oaf libraries for OA Framework debugging                | Video   |  -       |  -       | -|
+
+<br>
+
 
 ### [4] Workflow in OA Framework
 
@@ -79,16 +89,6 @@
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
 | 4.1        | Launching a custom workflow from a OAF page | Video   |  -       |  -       | -|
 | 4.1        | Embeding OAF Region in Workflow Notification | Video   |  -       |  -       | -|
-
-<br> 
-
-### [4] OA Framework Validations
-
-| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
-| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Compare two dates in OA Framework  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Validation using Entity Expert  | Video   |  -       |  -       | -|
-
 
 <br> 
 
