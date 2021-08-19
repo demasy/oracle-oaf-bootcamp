@@ -82,6 +82,16 @@
 
 <br> 
 
+### [4] OA Framework Validations
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Compare two dates in OA Framework  | Video   |  -       |  -       | -|
+| 4.1        | Implementing Validation using Entity Expert  | Video   |  -       |  -       | -|
+
+
+<br> 
+
 ### [4] OA Framework Advanced Practices
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
@@ -93,10 +103,13 @@
 | 4.1        | Compare two dates in OA Framework | Video   |  -       |  -       | -|
 
 
-
-
-
 <br> 
+
+### [101] Point-Of-Sale Project using OA Framework (Advanced)
+
+| Code       | Lecture Title                    | Format  | Practice | Resource |
+| :-         | :--------                        | :-:     | :-:      | :-:     |
+| 102.1.1        | Setting-Up Development Environment                   | Video   |  X       |  <a href="#">File</a>      |
 
 ### [102] Items Creation with Approval cycle Project using OA Framework
 
