@@ -69,6 +69,8 @@
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
 | 4.1        | Import data from Excel sheet to DB Table through OAF page | Video   |  -       |  -       | -|
 | 4.1        | Export data from DB through OAF page | Video   |  -       |  -       | -|
+| 4.1        | Handle browser back button in OAF pages | Video   |  -       |  -       | -|
+
 
 
 <br> 
