@@ -27,6 +27,7 @@
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
 | 4.1        | Implementing Hide/Show region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Flow Layout region                     | Video   |  -       |  -       | -|
+| 4.1        | Implementing Query Region includes (Construction Modes, Results Based Search, Auto Customization Criteria and None)                    | Video   |  -       |  -       | -|
 | 4.1        | Implementing advanced table region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing train region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing advanced layout region (Table, Row and Cell Layout)                     | Video   |  -       |  -       | -|
