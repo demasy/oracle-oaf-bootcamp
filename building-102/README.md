@@ -13,7 +13,7 @@
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Lecture Name                     | Video   |  -       |  -       | -|
+| 4.1        | Create dynamic view object                     | Video   |  -       |  -       | -|
 
 <br> 
 
