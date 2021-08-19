@@ -70,6 +70,9 @@
 | 4.1        | Handle browser back button in OAF pages | Video   |  -       |  -       | -|
 | 4.1        | Data Validation |
 | 4.1        | Compare two dates in OA Framework | Video   |  -       |  -       | -|
+| 4.1        | Execute SQL statement in OA Framework | Video   |  -       |  -       | -|
+| 4.1        | Execute PL/SQL statement in OA Framework includes function and procedure | Video   |  -       |  -       | -|
+
 
 <br> 
 
