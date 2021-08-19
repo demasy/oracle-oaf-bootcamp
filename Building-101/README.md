@@ -161,10 +161,11 @@ For more information about my experiences and professional career. please visit 
 
 <br>
 
-### [7] OA Framework Debugging Techniques
+### [7] OA Framework Error Handling & Debugging Techniques
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Using OA Exception Message and Dialog Page                  | Video   |  -       |  -       | -|
 | 4.1        | Using System.out.println()                 | Video   |  -       |  -       | -|
 | 4.1        | Using jDeveloper Debugger                 | Video   |  -       |  -       | -|
 
