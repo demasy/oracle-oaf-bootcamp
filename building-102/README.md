@@ -62,7 +62,7 @@
 
 <br> 
 
-### [4] OA Framework Validations
+### [4] Data Validations in OA Framework
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
