@@ -10,6 +10,15 @@
 4. **Explain the Advanced of the Controller!**
 5. **OA Framework Advanced Practices!**
 
+<br>
+
+### [1] Welcome!
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:    | :----   |
+| 1.1        | Welcome Lecutre                  | Video   |  -       |  -       | -|
+| 1.2        | About the Instructor             | Video   |  -       |  -       | -|
+| 1.3        | How This Course Works             | Video   |  -       |  -       | -|
 
 <br>
 
