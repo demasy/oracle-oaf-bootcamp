@@ -55,11 +55,13 @@
 
 <br>
 
-### [4] Date Manipulation in OA Framework
+### [4] Date Manipulation & Formatting in OA Framework
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
 | 4.1        | Compare two dates in OA Framework  | Video   |  -       |  -       | -|
+| 4.1        | Formatting Numbers in OA Framework  | Video   |  -       |  -       | -|
+ 
 
 <br> 
 
