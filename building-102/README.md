@@ -112,6 +112,7 @@
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Implementing Attachments Functionality | Video   |  -       |  -       | -|
 | 4.1        | Implementing import data Functionality | Video   |  -       |  -       | -|
 | 4.1        | Implementing export data Functionality | Video   |  -       |  -       | -|
 | 4.1        | Handling browser back button in OAF pages | Video   |  -       |  -       | -|
