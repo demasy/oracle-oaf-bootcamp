@@ -21,7 +21,15 @@
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Lecture Name                     | Video   |  -       |  -       | -|
+| 4.1        | Implementing Hide/Show region                     | Video   |  -       |  -       | -|
+| 4.1        | Implementing Flow Layout region                     | Video   |  -       |  -       | -|
+| 4.1        | Implementing advanced table region                     | Video   |  -       |  -       | -|
+| 4.1        | Implementing train region                     | Video   |  -       |  -       | -|
+| 4.1        | Implementing advanced layout region (Table, Row and Cell Layout)                     | Video   |  -       |  -       | -|
+| 4.1        | Implementing H-Grid region                     | Video   |  -       |  -       | -|
+| 4.1        | Implementing Content Container region                     | Video   |  -       |  -       | -|
+
+
 
 <br> 
 
