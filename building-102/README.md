@@ -93,7 +93,7 @@
 
 <br> 
 
-### [4] OA Framework Advanced Practices
+### [4] Adding more functionality to OA Framework (Advanced Functionality)
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
