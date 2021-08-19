@@ -5,6 +5,10 @@
 ## **Curriculum**
 
 1. **Welcome!**
+2. **Explain the Advanced of the Model!**
+3. **Explain the Advanced of the View!**
+4. **Explain the Advanced of the Controller!**
+5. **OA Framework Advanced Practices!**
 
 
 <br>
