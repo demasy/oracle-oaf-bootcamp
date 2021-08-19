@@ -51,6 +51,7 @@
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
 | 4.1        | Using JavaScript in OA Framework                  | Video   |  -       |  -       | -|
+| 4.1        | Implementing Readonly Page in OA Framework                  | Video   |  -       |  -       | -|
 
 <br>
 
