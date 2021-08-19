@@ -39,13 +39,14 @@
 | 4.1        | Implementing Query Region includes (Construction Modes, Results Based Search, Auto Customization Criteria and None)                    | Video   |  -       |  -       | -|
 | 4.1        | Implementing advanced table region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing train region                     | Video   |  -       |  -       | -|
+| 4.1        | Implementing shuttle region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing advanced layout region (Table, Row and Cell Layout)                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing H-Grid region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Content Container region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Graph region                     | Video   |  -       |  -       | -|
 | 4.1        | Adding Custom HTML code to the OAF Page                     | Video   |  -       |  -       | -|
 
-
+Implementing Shuttle Region
 
 
 <br> 
