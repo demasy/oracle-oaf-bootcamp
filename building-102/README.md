@@ -70,6 +70,17 @@
 | 4.1        | Execute PL/SQL statement inculdes functions and procedures | Video   |  -       |  -       | -|
 
 
+<br> 
+
+
+### [4] Workflow in OA Framework
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Launching a custom workflow from a OAF page | Video   |  -       |  -       | -|
+| 4.1        | Embeding OAF Region in Workflow Notification | Video   |  -       |  -       | -|
+
+<br> 
 
 ### [4] OA Framework Advanced Practices
 
