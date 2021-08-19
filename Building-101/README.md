@@ -161,6 +161,15 @@ For more information about my experiences and professional career. please visit 
 
 <br>
 
+### [7] OA Framework Debugging Techniques
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Using System.out.println()                 | Video   |  -       |  -       | -|
+| 4.1        | Using jDeveloper Debugger                 | Video   |  -       |  -       | -|
+
+<br>
+
 
 
 ### [8] Explain OA Framework Security
