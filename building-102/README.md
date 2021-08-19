@@ -69,9 +69,7 @@
 | 4.1        | Export data from DB through OAF page | Video   |  -       |  -       | -|
 | 4.1        | Handle browser back button in OAF pages | Video   |  -       |  -       | -|
 | 4.1        | Data Validation |
-| 4.1        | Date Compares  | Video   |  -       |  -       | -|
-
-
+| 4.1        | Compare two dates in OA Framework | Video   |  -       |  -       | -|
 
 <br> 
 
