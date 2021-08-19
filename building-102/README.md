@@ -100,11 +100,14 @@
 
 <br> 
 
-### [7] OA Framework Debugging Techniques
+### [7] OA Framework Error Handling & Debugging Techniques
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
 | 4.1        | Using demasy-oaf libraries for OA Framework debugging                | Video   |  -       |  -       | -|
+| 4.1        | Raising bundle/multiple error messages in OA Framework                | Video   |  -       |  -       | -|
+
+
 
 <br>
 
