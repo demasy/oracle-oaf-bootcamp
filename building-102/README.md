@@ -73,5 +73,13 @@
 
 <br> 
 
+### [102] Items Creation with Approval cycle Project using OA Framework
+
+| Code       | Lecture Title                    | Format  | Practice | Resource |
+| :-         | :--------                        | :-:     | :-:      | :-:     |
+| 102.1.1        | Setting-Up Development Environment                   | Video   |  X       |  <a href="#">File</a>      |
+
+<br> 
+
 ###### Suggestions & Issues
 > If you find any issue or have a great idea in mind please create an issue on <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/issues">GitHub</a>.
