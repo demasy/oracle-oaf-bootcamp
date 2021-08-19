@@ -43,8 +43,6 @@
 | 4.1        | Implementing H-Grid region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Content Container region                     | Video   |  -       |  -       | -|
 
-
-
 <br> 
 
 ### [4] Explain the Advanced of the Controller
@@ -70,6 +68,8 @@
 | 4.1        | Import data from Excel sheet to DB Table through OAF page | Video   |  -       |  -       | -|
 | 4.1        | Export data from DB through OAF page | Video   |  -       |  -       | -|
 | 4.1        | Handle browser back button in OAF pages | Video   |  -       |  -       | -|
+| 4.1        | Data Validation |
+| 4.1        | Date Compares  | Video   |  -       |  -       | -|
 
 
 
