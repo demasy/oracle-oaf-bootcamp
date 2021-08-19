@@ -43,11 +43,20 @@
 | 4.1        | Implementing H-Grid region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Content Container region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Graph region                     | Video   |  -       |  -       | -|
+
+
+<br> 
+
+
+### [4] Explain the Advanced of the View (Part II)
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
 | 4.1        | WebBean Creation Programetically  |
 | 4.1        | Create Items Programetically                     | Video   |  -       |  -       | -|
 | 4.1        | Create Regions Programetically                     | Video   |  -       |  -       | -|
-
 <br> 
+
 
 ### [4] Explain the Advanced of the Controller
 
