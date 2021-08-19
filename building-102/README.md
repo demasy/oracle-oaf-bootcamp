@@ -75,15 +75,6 @@
 
 <br> 
 
-### [7] OA Framework Debugging Techniques
-
-| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
-| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Using demasy-oaf libraries for OA Framework debugging                | Video   |  -       |  -       | -|
-
-<br>
-
-
 ### [4] Workflow in OA Framework
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
@@ -93,7 +84,7 @@
 
 <br> 
 
-### [4] advanced functionality in OA Framework
+### [4] Advanced Functionality in OA Framework
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
@@ -103,6 +94,14 @@
 
 
 <br> 
+
+### [7] OA Framework Debugging Techniques
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Using demasy-oaf libraries for OA Framework debugging                | Video   |  -       |  -       | -|
+
+<br>
 
 ### [101] Point-Of-Sale Project using OA Framework (Advanced)
 
