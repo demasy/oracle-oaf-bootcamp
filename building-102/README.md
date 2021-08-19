@@ -69,8 +69,8 @@
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Execute SQL statement|
-| 4.1        | Execute PL/SQL statement inculdes functions and procedures | Video   |  -       |  -       | -|
+| 4.1        | Execute SQL statement in OA Framework| Video   |  -       |  -       | -|
+| 4.1        | Execute PL/SQL statement in OA Framework inculdes functions and procedures | Video   |  -       |  -       | -|
 
 
 <br> 
@@ -93,15 +93,13 @@
 
 <br> 
 
-### [4] Adding more functionality to OA Framework (Advanced Functionality)
+### [4] advanced functionality in OA Framework
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Import data from Excel sheet to DB Table through OAF page | Video   |  -       |  -       | -|
-| 4.1        | Export data from DB through OAF page | Video   |  -       |  -       | -|
-| 4.1        | Handle browser back button in OAF pages | Video   |  -       |  -       | -|
-| 4.1        | Data Validation |
-| 4.1        | Compare two dates in OA Framework | Video   |  -       |  -       | -|
+| 4.1        | Implementing import data | Video   |  -       |  -       | -|
+| 4.1        | Implementing export data | Video   |  -       |  -       | -|
+| 4.1        | Handling browser back button in OAF pages | Video   |  -       |  -       | -|
 
 
 <br> 
