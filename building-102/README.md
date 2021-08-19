@@ -111,6 +111,8 @@
 | :-         | :--------                        | :-:     | :-:      | :-:     |
 | 102.1.1        | Setting-Up Development Environment                   | Video   |  X       |  <a href="#">File</a>      |
 
+<br>
+
 ### [102] Items Creation with Approval cycle Project using OA Framework
 
 | Code       | Lecture Title                    | Format  | Practice | Resource |
