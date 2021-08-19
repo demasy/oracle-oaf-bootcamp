@@ -54,12 +54,17 @@
 
 <br>
 
+### [4] Date Manipulation in OA Framework
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Compare two dates in OA Framework  | Video   |  -       |  -       | -|
+
 
 ### [4] OA Framework Validations
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Compare two dates in OA Framework  | Video   |  -       |  -       | -|
 | 4.1        | Implementing Validation using Entity Expert  | Video   |  -       |  -       | -|
 
 <br>
