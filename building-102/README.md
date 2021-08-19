@@ -50,7 +50,7 @@
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Lecture Name                     | Video   |  -       |  -       | -|
+| 4.1        | Using JavaScript in OA Framework                  | Video   |  -       |  -       | -|
 
 <br>
 
