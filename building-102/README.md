@@ -42,6 +42,7 @@
 | 4.1        | Implementing advanced layout region (Table, Row and Cell Layout)                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing H-Grid region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Content Container region                     | Video   |  -       |  -       | -|
+| 4.1        | Implementing Graph region                     | Video   |  -       |  -       | -|
 
 <br> 
 
