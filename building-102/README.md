@@ -49,7 +49,7 @@
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Using demasy-oaf libraries                 | Video   |  -       |  -       | -|
+| 4.1        | Using demasy-oaf libraries for OA Framework debugging                | Video   |  -       |  -       | -|
 
 <br>
 
