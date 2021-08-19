@@ -45,6 +45,14 @@
 
 <br>
 
+### [7] OA Framework Debugging Techniques
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Using demasy-oaf libraries                 | Video   |  -       |  -       | -|
+
+<br>
+
 ### [4] OA Framework Advanced Practices
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
