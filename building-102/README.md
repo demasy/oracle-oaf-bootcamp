@@ -45,8 +45,10 @@
 | 4.1        | Implementing Content Container region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Graph region                     | Video   |  -       |  -       | -|
 | 4.1        | Adding Custom HTML code to the OAF Page                     | Video   |  -       |  -       | -|
+| 4.1        | Implementing Key Flexfield Region                     | Video   |  -       |  -       | -|
+| 4.1        | Implementing Descriptive Flexfield Region                     | Video   |  -       |  -       | -|
 
-Implementing Shuttle Region
+
 
 
 <br> 
