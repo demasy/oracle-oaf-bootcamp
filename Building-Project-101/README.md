@@ -24,7 +24,7 @@
 
 <br>
 
-## Setting-Up Development Environment
+## [101.1] Setting-Up Development Environment
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Instructions |
 | :-         | :--------                        | :-:     | :-:      | :-:     |:-:     |
@@ -36,7 +36,7 @@
 
 <br>
 
-## Implementing store pages
+## [101.2] Implementing store pages
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Instructions |
 | :-         | :--------                        | :-:     | :-:      | :-:     |:-:     |
