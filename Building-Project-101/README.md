@@ -37,6 +37,7 @@ Point-Of-Sale Project using OA Framework
 | 101.2.1    | Explaining the practice assignment | Video   |  -       | <a href="#">📁</a> |<a href="#"> 📁 </a> |
 | 101.2.1    | Explaining the practice solution   | Video   |  X       | <a href="#">📁</a> |<a href="#"> 📁 </a> |
 
+<br>
 
 ## Implementing branch master-details functionality
 
