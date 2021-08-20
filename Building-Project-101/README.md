@@ -45,3 +45,13 @@
 | 101.2.3    | Implementing store create page (INSERT)                  | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
 | 101.2.4    | Implementing store delete page (DELETE)                  | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
 | 101.2.5    | Implementing store update page (UPDATE)                  | Video   |  X       |  <a href="#">📁</a>       |<a href="#">📁</a> |
+
+
+<br>
+
+## [101.2] Implementing branch CRUD functionality (Practice Assignment)
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Instructions |
+| :-         | :--------                        | :-:     | :-:      | :-:     |:-:     |
+| 101.2.1    | Practice Assignment                  | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
+| 101.2.1    | Assignment Solution: Implementing branch CRUD functionality                  | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
