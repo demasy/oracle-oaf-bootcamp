@@ -167,11 +167,11 @@ For more information about my experiences and professional career. please visit 
 
 
 
-### [7] Handling and Logging Errors
+### [7] Error Handling in OA Framework
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Lecture Name                  | Video   |  -       |  -       | -|
+| 4.1        | Explain exception types                  | Video   |  -       |  -       | -|
 
 
 <br>
