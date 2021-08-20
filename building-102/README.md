@@ -47,8 +47,7 @@
 | 4.1        | Adding Custom HTML code to the OAF Page                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Key Flexfield Region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Descriptive Flexfield Region                     | Video   |  -       |  -       | -|
-
-
+| 4.1        | Changing item properties using SPEL statement                     | Video   |  X        |  -       | -|
 
 
 <br> 
