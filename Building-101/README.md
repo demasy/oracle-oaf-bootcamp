@@ -154,6 +154,19 @@ For more information about my experiences and professional career. please visit 
 
 <br>
 
+
+### [6] XXX
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 6.1        | Implement Master-Detail relationship                  | Video   |  -       |  -       | -|
+
+
+<br>
+
+
+
+
 ### [7] Handling and Logging Errors
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
