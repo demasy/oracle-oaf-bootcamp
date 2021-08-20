@@ -6,7 +6,7 @@
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Instructions |
 | :-         | :--------                        | :-:     | :-:      | :-:     |:-:     |
-| 101.1.1    | Setting-Up Development Environment                   | Video   |  X       |  <a href="#">File</a>      | <a href="#">Press Here</a> |
+| 101.1.1    | Setting-Up Development Environment                   | Video   |  X       |  <a href="#">File</a>      | <a href="#"> 📁 </a> |
 | 101.1.2    | Installing Git (Version Control System)                   | Video   |  X       |  <a href="#">File</a>        |<a href="#">Press Here</a> |
 | 101.1.3    | Create Workspaces and Projects                   | Video   |  X       |  <a href="#">File</a>       |<a href="#">Press Here</a> |
 | 101.1.4    | Create & Test Database Connection                   | Video   |  X       |  <a href="#">File</a>       |<a href="#">Press Here</a> |
