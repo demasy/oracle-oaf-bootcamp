@@ -62,9 +62,10 @@ For more information about my experiences and professional career. please visit 
 <br>
 
 
-###### Suggestions & Issues
-> If you find any issue or have a great idea in mind please create an issue on <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/issues">GitHub</a>.
+## Suggestions & Issues
+If you find any issue or have a great idea in mind please create an issue on <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/issues">GitHub</a>.
 
+<br> 
 <br>
 
 <p align="center">
