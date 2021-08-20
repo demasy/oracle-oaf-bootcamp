@@ -26,7 +26,7 @@
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Create dynamic view object Pragmatically                    | Video   |  -       |  -       | -|
+| 4.1        | Creating dynamic view object Pragmatically                    | Video   |  -       |  -       | -|
 | 4.1        | Adding attribute to View Object Pragmatically                    | Video   |  -       |  -       | -|
 
 <br> 
