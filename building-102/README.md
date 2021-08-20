@@ -22,18 +22,16 @@
 
 <br>
 
-### [4] Explain the Advanced of the Model
+### [4] Implementing the Model (Advanced)
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
 | 4.1        | Create dynamic view object Pragmatically                    | Video   |  -       |  -       | -|
 | 4.1        | Adding attribute to View Object Pragmatically                    | Video   |  -       |  -       | -|
 
-
-
 <br> 
 
-### [4] Explain the Advanced of the View
+### [4] Implementing the View (Advanced)
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
