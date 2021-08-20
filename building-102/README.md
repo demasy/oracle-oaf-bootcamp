@@ -104,6 +104,9 @@
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
 | 4.1        | setting a default value for item includes text, number, and date fields  | Video   |  -       |  -       | -|
+| 4.1        | Explain Metadata Services (MDS) in OA Framework | Video   |  -       |  -       | -|
+
+
 
 <br>
 
