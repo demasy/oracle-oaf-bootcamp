@@ -34,7 +34,7 @@ For more information about my experiences and professional career. please visit 
 - Programming experience
 - Java Programming
 - Oracle database SQL & PL/SQL
-- e-Business Suite development and debugging
+- E-Business Suite development and debugging
 - Oracle E-Business Suite Virtual Machine
 - Toad for Oracle or SQL Developer
 - Oracle Jdeveloper patch for OAF
