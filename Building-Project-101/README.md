@@ -49,7 +49,7 @@
 
 <br>
 
-## [101.2] Implementing branch CRUD functionality (Practice Assignment)
+## Assignment: Implementing branch CRUD functionality
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Instructions |
 | :-         | :--------                        | :-:     | :-:      | :-:     |:-:     |
