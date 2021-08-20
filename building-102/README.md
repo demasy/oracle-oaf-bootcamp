@@ -105,7 +105,7 @@
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
 | 4.1        | setting a default value for item includes text, number, and date fields  | Video   |  -       |  -       | -|
 | 4.1        | Explain Metadata Services (MDS) in OA Framework | Video   |  -       |  -       | -|
-
+| 4.1        | Explain Important profile options for OA Framework | Video   |  -       |  -       | -|
 
 
 <br>
@@ -139,7 +139,7 @@
 | 4.1        | Implementing export data Functionality | Video   |  -       |  -       | -|
 | 4.1        | Handling browser back button in OAF pages | Video   |  -       |  -       | -|
 
-
+ 
 <br> 
 
 ### [7] OA Framework Error Handling & Debugging Techniques
