@@ -17,7 +17,7 @@ Point-Of-Sale Project using OA Framework
 
 <br>
 
-## Implementing store pages
+## Implementing store pages (CRUD functionality)
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Instructions |
 | :-         | :--------                        | :-:     | :-:      | :-:     |:-:     |
@@ -30,9 +30,18 @@ Point-Of-Sale Project using OA Framework
 
 <br>
 
-## Assignment: Implementing branch CRUD functionality
+## Assignment: Implementing product CRUD functionality
 
 | Code       | Lecture Title                      | Format  | Practice | Resource           | Instructions |
 | :-         | :--------                          | :-:     | :-:      | :-:                |:-:     |
 | 101.2.1    | Explaining the practice assignment | Video   |  -       | <a href="#">📁</a> |<a href="#"> 📁 </a> |
 | 101.2.1    | Explaining the practice solution   | Video   |  X       | <a href="#">📁</a> |<a href="#"> 📁 </a> |
+
+
+## Implementing branch master-details functionality
+
+| Code       | Lecture Title                      | Format  | Practice | Resource           | Instructions |
+| :-         | :--------                          | :-:     | :-:      | :-:                |:-:     |
+| 101.2.1    | Lecture Name | Video   |  -       | <a href="#">📁</a> |<a href="#"> 📁 </a> |
+
+
