@@ -53,5 +53,5 @@
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Instructions |
 | :-         | :--------                        | :-:     | :-:      | :-:     |:-:     |
-| 101.2.1    | Practice Assignment                  | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
+| 101.2.1    | Practice Assignment                  | Video   |  -       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
 | 101.2.1    | Assignment Solution: Implementing branch CRUD functionality                  | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
