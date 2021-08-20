@@ -39,7 +39,7 @@ Point-Of-Sale Project using OA Framework
 
 <br>
 
-## Implementing branch master-details functionality
+## Implementing branch page (master-details functionality)
 
 | Code       | Lecture Title                      | Format  | Practice | Resource           | Instructions |
 | :-         | :--------                          | :-:     | :-:      | :-:                |:-:     |
