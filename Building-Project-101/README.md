@@ -20,3 +20,17 @@
 | 101.3.1    | Practice Assignment: Implementing bransh page (CRUD functionalities)                 | Video   |  X       |  <a href="#">📁</a>       |<a href="#">📁</a> |
 | 101.3.2    | Assignment Solution: Implementing bransh page (CRUD functionalities)                 | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
 
+
+
+<br>
+
+## Setting-Up Development Environment
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Instructions |
+| :-         | :--------                        | :-:     | :-:      | :-:     |:-:     |
+| 101.1.1    | Setting-Up Development Environment                   | Video   |  X       |  <a href="#"> 📁 </a>      | <a href="#"> 📁 </a> |
+| 101.1.2    | Installing Git (Version Control System)                   | Video   |  X       |  <a href="#"> 📁 </a>        | <a href="#"> 📁 </a> |
+| 101.1.3    | Create Workspaces and Projects                   | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
+| 101.1.4    | Create & Test Database Connection                   | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
+| 101.1.4    | Installing the database objects                   | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
+
