@@ -11,6 +11,7 @@
 | 101.1.3    | Create Workspaces and Projects                   | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
 | 101.1.4    | Create & Test Database Connection                   | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
 | 101.1.4    | Installing the database objects                   | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
+|            |  Implementing store pages (CRUD functionalities) |
 | 101.2.1    | Implementing store query page (SELECT)                  | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
 | 101.2.2    | Implementing store drill-down page (SELECT)                  | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
 | 101.2.3    | Implementing store create page (INSERT)                  | Video   |  X       |  <a href="#">📁</a>       |<a href="#"> 📁 </a> |
