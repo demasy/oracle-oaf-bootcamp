@@ -81,10 +81,10 @@ For more information about my experiences and professional career. please visit 
 
 > This is the part of section 101, Point-Of-Sale Project using OA Framework.
 
-| Code       | Lecture Title                    | Format  | Practice | Resource |
-| :-         | :--------                        | :-:     | :-:      | :-:      | 
-| 101.1.1        | Create Workspaces and Projects                  | Video   |  X       |  X |
-| 101.1.2        | Create Database Connection                  | Video   |  X       |   X |
+| Code       | Lecture Title                       | Format  | Practice | Resource | Instructions |
+| :-         | :--------                           | :-:     | :-:      | :-:      | :-: |
+| 101.1.1        | Create Workspaces and Projects  | Video   |  X       |  X       | X  |
+| 101.1.2        | Create Database Connection      | Video   |  X       |   X      |  X |
 
 
 <br>
@@ -102,10 +102,10 @@ For more information about my experiences and professional career. please visit 
 | 4.7        | Create Updatable View Object                  | Video   |  X       |  -       | -|
 | 4.8        | Create Readonly View Object                  | Video   |  X       |  -       | -|
 | 4.9        | Create Programmatically View Object                  | Video   |  X       |  -       | -|
-| 4.10        | Your Trun                  | Video   |  X       |  -       | -|
-| 4.11        | XXXXX (Practice Solution)                   | Video   |  X       |  -       | -|
-| 4.12        | Explain Other BC4J Objects                 | Video   |  X       |  -       | -|
-| 4.13        | Explain BC4J Database Interactions                 | Video   |  X       |  -       | -|
+| 4.10       | Your Trun                  | Video   |  X       |  -       | -|
+| 4.11       | XXXXX (Practice Solution)                   | Video   |  X       |  -       | -|
+| 4.12       | Explain Other BC4J Objects                 | Video   |  X       |  -       | -|
+| 4.13       | Explain BC4J Database Interactions                 | Video   |  X       |  -       | -|
 
 
 <br>
