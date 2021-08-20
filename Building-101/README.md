@@ -149,6 +149,8 @@ For more information about my experiences and professional career. please visit 
 | 6.2        | Handling POSTs                  | Video   |  -       |  -       | -|
 | 6.3        | Common Controller tasks                  | Video   |  -       |  -       | -|
 | 6.4        | Controller Methods                  | Video   |  -       |  -       | -|
+| 6.4        | Explain passing parameters between pages includes request, transaction, and session parameters               | Video   |  -       |  -       | -|
+
 
 <br>
 
