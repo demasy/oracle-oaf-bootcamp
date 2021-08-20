@@ -30,7 +30,7 @@ Point-Of-Sale Project using OA Framework
 
 <br>
 
-## Assignment: Implementing product CRUD functionality
+## Assignment: Implementing product (CRUD functionality)
 
 | Code       | Lecture Title                      | Format  | Practice | Resource           | Instructions |
 | :-         | :--------                          | :-:     | :-:      | :-:                |:-:     |
