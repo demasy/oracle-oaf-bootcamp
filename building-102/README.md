@@ -44,13 +44,14 @@
 | 4.1        | Implementing advanced layout region (Table, Row and Cell Layout)                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing H-Grid region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Content Container region                     | Video   |  -       |  -       | -|
-| 4.1        | Implementing Graph region                     | Video   |  -       |  -       | -|
+| 4.1        | Implementing Charts and Graphs                     | Video   |  -       |  -       | -|
 | 4.1        | Adding Custom HTML code to the OAF Page                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Key Flexfield Region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Descriptive Flexfield Region                     | Video   |  -       |  -       | -|
 | 4.1        | Changing item properties using SPEL statement                     | Video   |  X        |  -       | -|
 | 4.1        | Call OAF Page from form-based (D2K)                    | Video   |  X        |  -       | -|
 | 4.1        | Call form-based (D2K) from OAF Page                     | Video   |  X        |  -       | -|
+
 
 
 <br> 
