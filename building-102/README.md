@@ -97,6 +97,15 @@
 <br>
 
 
+### [4] Use Cases
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | setting a default value for item includes text, number, and date fields  | Video   |  -       |  -       | -|
+
+<br>
+
+
 ### [4] Execute SQL and PL/SQL statements in OA Framework
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
