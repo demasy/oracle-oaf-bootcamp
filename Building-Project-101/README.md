@@ -30,7 +30,7 @@ Point-Of-Sale Project using OA Framework
 
 <br>
 
-## Practice Assignment: Implementing branch CRUD functionality
+## Assignment: Implementing branch CRUD functionality
 
 | Code       | Lecture Title                      | Format  | Practice | Resource           | Instructions |
 | :-         | :--------                          | :-:     | :-:      | :-:                |:-:     |
