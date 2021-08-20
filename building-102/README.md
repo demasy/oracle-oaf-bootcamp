@@ -22,7 +22,7 @@
 
 <br>
 
-### [4] Implementing the Model (Advanced)
+### [4] Implementing the Model
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
@@ -31,13 +31,13 @@
 
 <br> 
 
-### [4] Implementing the View (Advanced)
+### [4] Implementing the View
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
 | 4.1        | Implementing Hide/Show region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Flow Layout region                     | Video   |  -       |  -       | -|
-| 4.1        | Implementing Query Region includes (Construction Modes, Results Based Search, Auto Customization Criteria and None)                    | Video   |  -       |  -       | -|
+| 4.1        | Implementing Query Region includes (Construction Modes, Results Based Search, Auto Customization Criteria and None) | Video   |  -       |  -       | -|
 | 4.1        | Implementing advanced table region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing train region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing shuttle region                     | Video   |  -       |  -       | -|
