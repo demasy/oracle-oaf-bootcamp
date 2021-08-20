@@ -137,7 +137,7 @@ For more information about my experiences and professional career. please visit 
 | 4.1        | Implementing Query Region                  | Video   |  -       |  -       | -|
 | 4.1        | CSS Styles                  | Video   |  -       |  -       | -|
 | 4.1        | Attributes Sets                  | Video   |  -       |  -       | -|
-
+| 4.1        | Using Partial Page Rendering (PPR) in OAF Page                  | Video   |  -       |  -       | -|
 
 <br>
 
