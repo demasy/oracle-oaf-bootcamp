@@ -2,7 +2,18 @@
 
 <br>
 
-### [1] Standard File Suffix Abbreviation
+### Name Length Limit
+
+
+| File Type                        | Maximum Size   | Notes|
+| :-                               | :--:           | :------| 
+| Java Files                       | 50 characters  |        |
+| OA Extension Component XML Files | 50 characters  |        |
+| BC4J XML Files                   | 50 characters  |        |
+
+<br>
+
+### Standard File Suffix Abbreviation
 
 | Suffix          | Object Type               | Example|
 | :-:             | :--------                 | :--------   | 
