@@ -39,4 +39,16 @@
 | Property View Object   | PVO     | .xml            |             |             |
 | Entity Expert  | Expert      | .xml            |             |             |
  
+<br> 
 
+#### Page Defintion Example
+
+Correct
+```
+DlStoreCreatePG
+```
+
+Incorrect
+```
+DLStoreCreatePG
+```
