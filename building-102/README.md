@@ -31,6 +31,18 @@
 
 <br> 
 
+### [4] Implementing Server-Side Features
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Creating dynamic view object Pragmatically                    | Video   |  -       |  -       | -|
+| 4.1        | Adding attribute to View Object Pragmatically                    | Video   |  -       |  -       | -|
+| 4.1        | Executing SQL statement                    | Video   |  -       |  -       | -|
+| 4.1        | Calling PL/SQL Functions and Procedures                    | Video   |  -       |  -       | -|
+
+
+<br> 
+
 ### [4] Implementing the View
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
@@ -52,6 +64,13 @@
 | 4.1        | Launching an Oracle Applications Form (D2K) From a Submit Button                    | Video   |  X        |  -       | -|
 | 4.1        | Launching OA Framework Pages from Oracle Applications Forms (D2K)| Video   |  X        |  -       | -|
 
+Understanding Query Regions
+Implementing Query Region/resultsBasedSearch
+Implementing Query Region/autoCustomizationCriteria
+Implementing Query Region/none
+Implementing Simple Search Page
+Implementing Manual Search Page
+Implementing Advanced Search Page
 
 
 <br> 
@@ -103,19 +122,12 @@
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
 | 4.1        | setting a default value for item includes text, number, and date fields  | Video   |  -       |  -       | -|
-| 4.1        | Explain Metadata Services (MDS) in OA Framework | Video   |  -       |  -       | -|
-| 4.1        | Explain Important profile options for OA Framework | Video   |  -       |  -       | -|
+| 4.1        | Explaining MDS Repository                                 | Video   |  -       |  -       | -|
+| 4.1        | Explaining the Important profile options for OA Framework | Video   |  -       |  -       | -|
 
 
 <br>
 
-
-### [4] Execute SQL and PL/SQL statements in OA Framework
-
-| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
-| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Execute SQL statement in OA Framework| Video   |  -       |  -       | -|
-| 4.1        | Execute PL/SQL statement in OA Framework inculdes functions and procedures | Video   |  -       |  -       | -|
 
 
 <br> 
