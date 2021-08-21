@@ -11,6 +11,10 @@
 | OA Extension Component XML Files | 50    |OA Extension includes page, region, attribute set and package |
 | BC4J XML Files                   | 30    |        |
 
+> OA Extension Component XML Files: You must try to use common abbreviations like "Emp" for "Employee," "Num" for "Number ," "Desc" for "Description" and so on whenever possible. Do not sacrifice clarity for brevity. If the abbreviation cannot be understood by the average consultant or customer, do not abbreviate.
+
+> The first letter in every word should be capitalized except where standard, upper case suffixes are required as described below. Note that approved abbreviations and acronyms should also use the initial capitalization scheme.
+
 <br>
 
 ### Standard File Suffix Abbreviation
