@@ -54,7 +54,7 @@ DLStoreCreatePG
 ```
 <br>
 
-#### Shared Region Defintion Example
+#### Share List of Values (LOV) Definition Example
 
 **Correct**
 ```
