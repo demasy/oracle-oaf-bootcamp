@@ -5,7 +5,11 @@ Point-Of-Sale Project using OA Framework
 
 <br>
 
-## Setting-Up Development Environment
+## Point-Of-Sale Project using OA Framework
+
+<br>
+
+### Setting-Up Development Environment
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Instructions |
 | :-         | :--------                        | :-:     | :-:      | :-:     |:-:     |
@@ -17,7 +21,7 @@ Point-Of-Sale Project using OA Framework
 
 <br>
 
-## Implementing store pages (CRUD functionality)
+### Implementing store pages (CRUD functionality)
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Instructions |
 | :-         | :--------                        | :-:     | :-:      | :-:     |:-:     |
@@ -30,7 +34,7 @@ Point-Of-Sale Project using OA Framework
 
 <br>
 
-## Assignment: Implementing product (CRUD functionality)
+### Assignment: Implementing product (CRUD functionality)
 
 | Code       | Lecture Title                      | Format  | Practice | Resource           | Instructions |
 | :-         | :--------                          | :-:     | :-:      | :-:                |:-:     |
@@ -39,7 +43,7 @@ Point-Of-Sale Project using OA Framework
 
 <br>
 
-## Implementing branch page (Master-Details functionality)
+### Implementing branch page (Master-Details functionality)
 
 | Code       | Lecture Title                      | Format  | Practice | Resource           | Instructions |
 | :-         | :--------                          | :-:     | :-:      | :-:                |:-:     |
