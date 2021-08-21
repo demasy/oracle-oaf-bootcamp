@@ -5,11 +5,11 @@
 ### Name Length Limit
 
 
-| File Type                        | Maximum Size   | Notes|
-| :-                               | :--:           | :------| 
-| Java Files                       | 50 characters  |        |
-| OA Extension Component XML Files | 50 characters  |        |
-| BC4J XML Files                   | 50 characters  |        |
+| File Type                        | Maximum Length/Characters   | Notes|
+| :-                               | :------:           | :------| 
+| Java Files                       | 50    |If inner classes are used, the concatenated inner class name with the outer class name may not exceed 50 characters.        |
+| OA Extension Component XML Files | 50    |OA Extension includes page, region, attribute set and package |
+| BC4J XML Files                   | 30    |        |
 
 <br>
 
