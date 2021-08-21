@@ -151,13 +151,17 @@ For more information about my experiences and professional career. please visit 
 
 ### [6] Explain the Basics of the Controller
 
-| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
-| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 6.1        | Handling GETs                  | Video   |  -       |  -       | -|
-| 6.2        | Handling POSTs                  | Video   |  -       |  -       | -|
-| 6.3        | Common Controller tasks                  | Video   |  -       |  -       | -|
-| 6.4        | Controller Methods                  | Video   |  -       |  -       | -|
-| 6.4        | Explain passing parameters between pages includes request, transaction, and session parameters               | Video   |  -       |  -       | -|
+| Code  | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-    | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 6.1   | Handling GETs                  | Video   |  -       |  -       | -|
+| 6.2   | Handling POSTs                  | Video   |  -       |  -       | -|
+| 6.3   | Common Controller tasks                  | Video   |  -       |  -       | -|
+| 6.4   | Controller Methods                  | Video   |  -       |  -       | -|
+| 6.4   | Passing Parameters between Pages | Video   |  -       |  -       | -|
+| 6.4.1 | Using Request Parameters         | Video   |  -       |  -       | -|
+| 6.4.2 | Using Transaction Parameters     | Video   |  -       |  -       | -|
+| 6.4.3 | Using Session Parameters         | Video   |  -       |  -       | -|
+
 
 
 <br>
