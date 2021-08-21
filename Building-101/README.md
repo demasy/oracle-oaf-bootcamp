@@ -112,7 +112,7 @@ For more information about my experiences and professional career. please visit 
 
 ### [5] Explain the Basics of the View
 
-| Code  | Lecture Title                        | Format  | Practice | Resource | Notes |
+| Code  | Lecture Title                        | Format  | Practice | Resource | Instructions |
 | :-    | :--------                            | :-:     | :-:      | :-:      | :----   |
 | 4.1   | View-layer Components                | Video   |  -       |  -       | -|
 | 4.1   | Workspaces and Projects              | Video   |  -       |  -       | -|
