@@ -81,10 +81,10 @@ For more information about my experiences and professional career. please visit 
 
 > This is the part of section 101, Point-Of-Sale Project using OA Framework.
 
-| Code       | Lecture Title                    | Format  | Practice | Resource |
-| :-         | :--------                        | :-:     | :-:      | :-:      | 
-| 101.1.1        | Create Workspaces and Projects                  | Video   |  X       |  X |
-| 101.1.2        | Create Database Connection                  | Video   |  X       |   X |
+| Code       | Lecture Title                       | Format  | Practice | Resource | Instructions |
+| :-         | :--------                           | :-:     | :-:      | :-:      | :-: |
+| 101.1.1        | Create Workspaces and Projects  | Video   |  X       |  X       | X  |
+| 101.1.2        | Create Database Connection      | Video   |  X       |   X      |  X |
 
 
 <br>
@@ -102,62 +102,99 @@ For more information about my experiences and professional career. please visit 
 | 4.7        | Create Updatable View Object                  | Video   |  X       |  -       | -|
 | 4.8        | Create Readonly View Object                  | Video   |  X       |  -       | -|
 | 4.9        | Create Programmatically View Object                  | Video   |  X       |  -       | -|
-| 4.10        | Your Trun                  | Video   |  X       |  -       | -|
-| 4.11        | XXXXX (Practice Solution)                   | Video   |  X       |  -       | -|
-| 4.12        | Explain Other BC4J Objects                 | Video   |  X       |  -       | -|
-| 4.13        | Explain BC4J Database Interactions                 | Video   |  X       |  -       | -|
+| 4.10       | Your Trun                  | Video   |  X       |  -       | -|
+| 4.11       | XXXXX (Practice Solution)                   | Video   |  X       |  -       | -|
+| 4.12       | Explain Other BC4J Objects                 | Video   |  X       |  -       | -|
+| 4.13       | Explain BC4J Database Interactions                 | Video   |  X       |  -       | -|
 
 
 <br>
 
 ### [5] Explain the Basics of the View
 
-| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
-| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | View-layer Components                  | Video   |  -       |  -       | -|
-| 4.1        | Workspaces and Projects                  | Video   |  -       |  -       | -|
-| 4.1        | Pages and Regions                 | Video   |  -       |  -       | -|
-|   |Items                   |
-| 4.1        | Implementing Message Text Input                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Message Styled Text                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Message Check Box                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Message Radio Button                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Message Choice                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Submit Button                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Image Item                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing dependent LOV                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing External LOV                 | Video   |  -       |  -       | -|
-|  |Pages and Regions             |
-| 4.1        | Implementing Message Component Layout                 | Video   |  -       |  -       | -|
-| 4.1        | Implementing Header Region                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Row Layout Region                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Default Double Column                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Default Single Column                  | Video   |  -       |  -       | -|
-| 4.1        | Implementing Page Button Bar                 | Video   |  -       |  -       | -|
-| 4.1        | Implementing Query Region                  | Video   |  -       |  -       | -|
-| 4.1        | CSS Styles                  | Video   |  -       |  -       | -|
-| 4.1        | Attributes Sets                  | Video   |  -       |  -       | -|
-
+| Code  | Lecture Title                        | Format  | Practice | Resource | Instructions |
+| :-    | :--------                            | :-:     | :-:      | :-:      | :-:   |
+| 4.1   | View-layer Components                | Video   |  -       |  -       | -|
+| 4.1   | Workspaces and Projects              | Video   |  -       |  -       | -|
+| 4.1   | Pages and Regions                    | Video   |  -       |  -       | -|
+|       | Implementing Standard Web Widgets    |
+| 4.1   | Implementing Text Field              | Video   |  -       |  -       | <a href="#"> 📁 </a> |
+| 4.1.1 | Implementing Text Input              | Video   |  -       |  -       | -|
+| 4.1.2 | Implementing Text Area               | Video   |  -       |  -       | -|
+| 4.1.3 | Implementing Data Entry Text Field   | Video   |  -       |  -       | -|
+| 4.1.4 | Implementing Data Entry Text Field   | Video   |  -       |  -       | -|
+| 4.1.5 | Implementing Display-Only Text Field | Video   |  -       |  -       | -|
+| 4.1.6 | Implementing Styled Text             | Video   |  -       |  -       | -|
+| 4.1   | Implementing Check Box               | Video   |  -       |  -       | -|
+| 4.1   | Implementing Radio Group / Buttons   | Video   |  -       |  -       | -|
+| 4.1   | Implementing Message Choice          | Video   |  -       |  -       | -|
+| 4.1   | Implementing Poplist                 | Video   |  -       |  -       | -|
+| 4.1   | Implementing Dynamic Poplists        | Video   |  -       |  -       | -|
+| 4.1   | Implementing Submit Button           | Video   |  -       |  -       | -|
+| 4.1   | Implementing Image Item              | Video   |  -       |  -       | -|
+|       | Implementing List of Values          | Video   |  -       |  -       | -|
+| 4.1.1 | Implementing dependent LOV           | Video   |  -       |  -       | -|
+| 4.1.1 | Implementing External LOV            | Video   |  -       |  -       | -|
+|       | Implementing Pages and Regions                    |
+| 4.1   | Implementing Message Component Layout| Video   |  -       |  -       | -|
+| 4.1   | Implementing Header Region           | Video   |  -       |  -       | -|
+| 4.1   | Implementing Row Layout Region       | Video   |  -       |  -       | -|
+| 4.1   | Implementing Default Double Column   | Video   |  -       |  -       | -|
+| 4.1   | Implementing Default Single Column   | Video   |  -       |  -       | -|
+| 4.1   | Implementing Page Button Bar         | Video   |  -       |  -       | -|
+| 4.1   | Implementing Query Region            | Video   |  -       |  -       | -|
+| 4.1   | CSS Styles                           | Video   |  -       |  -       | -|
+| 4.1   | Attributes Sets                      | Video   |  -       |  -       | -|
+| 4.1   | Using Partial Page Rendering (PPR)   | Video   |  -       |  -       | -|
 
 <br>
 
 ### [6] Explain the Basics of the Controller
 
-| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
-| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 6.1        | Handling GETs                  | Video   |  -       |  -       | -|
-| 6.2        | Handling POSTs                  | Video   |  -       |  -       | -|
-| 6.3        | Common Controller tasks                  | Video   |  -       |  -       | -|
-| 6.4        | Controller Methods                  | Video   |  -       |  -       | -|
+| Code  | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-    | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 6.1   | Handling GETs                  | Video   |  -       |  -       | -|
+| 6.2   | Handling POSTs                  | Video   |  -       |  -       | -|
+| 6.3   | Common Controller tasks                  | Video   |  -       |  -       | -|
+| 6.4   | Controller Methods                  | Video   |  -       |  -       | -|
+| 6.4   | Passing Parameters between Pages | Video   |  -       |  -       | -|
+| 6.4.1 | Using Request Parameters         | Video   |  -       |  -       | -|
+| 6.4.2 | Using Transaction Parameters     | Video   |  -       |  -       | -|
+| 6.4.3 | Using Session Parameters         | Video   |  -       |  -       | -|
+
+
 
 <br>
 
-### [7] Handling and Logging Errors
+
+### [6] XXX
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
-| 4.1        | Lecture Name                  | Video   |  -       |  -       | -|
+| 6.1        | Implement Master-Detail relationship                  | Video   |  -       |  -       | -|
 
+
+<br>
+
+
+
+
+### [7] Error Handling in OA Framework
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Explain exception types                  | Video   |  -       |  -       | -|
+
+
+<br>
+
+### [7] Testing and Debugging Techniques
+
+| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
+| :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 4.1        | Using OA Exception Message and Dialog Page                  | Video   |  -       |  -       | -|
+| 4.1        | Using System.out.println()                 | Video   |  -       |  -       | -|
+| 4.1        | Using jDeveloper Debugger                 | Video   |  -       |  -       | -|
 
 <br>
 
@@ -195,26 +232,6 @@ For more information about my experiences and professional career. please visit 
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
 | 4.1        | Deploy Your OAF Application on R12.1.x                  | Video   |  -       |  -       | -|
 | 4.1        | Deploy Your OAF Application on R12.2.x                  | Video   |  -       |  -       | -|
-
-
-
-<br>
-
-### [101] Point-Of-Sale Project using OA Framework
-
-| Code       | Lecture Title                    | Format  | Practice | Resource |
-| :-         | :--------                        | :-:     | :-:      | :-:     |
-| 101.1.1        | Setting-Up Development Environment                   | Video   |  X       |  <a href="#">File</a>      |
-| 101.1.2        | Installing Git (Version Control System)                   | Video   |  X       |  <a href="#">File</a>        |
-| 101.1.3        | Create Workspaces and Projects                   | Video   |  X       |  <a href="#">File</a>       |
-| 101.1.4        | Create & Test Database Connection                   | Video   |  X       |  <a href="#">File</a>       |
-| 101.2.1        | Implementing store query page (SELECT)                  | Video   |  X       |  <a href="#">File</a>       |
-| 101.2.2        | Implementing store drill-down page (SELECT)                  | Video   |  X       |  <a href="#">File</a>       |
-| 101.2.3        | Implementing store create page (INSERT)                  | Video   |  X       |  <a href="#">File</a>       |
-| 101.2.4        | Implementing store delete page (DELETE)                  | Video   |  X       |  <a href="#">File</a>       |
-| 101.2.5        | Implementing store update page (UPDATE)                  | Video   |  X       |  <a href="#">File</a>       |
-| 101.3.1        | Practice Assignment: Implementing bransh page (CRUD functionalities)                 | Video   |  X       |  <a href="#">File</a>       |
-| 101.3.2        | Assignment Solution: Implementing bransh page (CRUD functionalities)                 | Video   |  X       |  <a href="#">File</a>       |
 
 <br>
 

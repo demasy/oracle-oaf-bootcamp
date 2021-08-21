@@ -34,7 +34,7 @@ For more information about my experiences and professional career. please visit 
 - Programming experience
 - Java Programming
 - Oracle database SQL & PL/SQL
-- e-Business Suite development and debugging
+- E-Business Suite development and debugging
 - Oracle E-Business Suite Virtual Machine
 - Toad for Oracle or SQL Developer
 - Oracle Jdeveloper patch for OAF
@@ -62,5 +62,12 @@ For more information about my experiences and professional career. please visit 
 <br>
 
 
-###### Suggestions & Issues
-> If you find any issue or have a great idea in mind please create an issue on <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/issues">GitHub</a>.
+## Suggestions & Issues
+If you find any issue or have a great idea in mind please create an issue on <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/issues">GitHub</a>.
+
+<br> 
+<br>
+
+<p align="center">
+Made with love ❤️ in Egypt by <a href="https://github.com/demasylabs"> Demasy Labs </a>
+</p>
