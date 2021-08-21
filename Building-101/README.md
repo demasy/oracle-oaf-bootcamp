@@ -184,7 +184,7 @@ For more information about my experiences and professional career. please visit 
 
 <br>
 
-### [7] OA Framework Error Handling & Debugging Techniques
+### [7] Testing and Debugging Techniques
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
