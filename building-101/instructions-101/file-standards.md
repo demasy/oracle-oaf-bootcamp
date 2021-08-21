@@ -19,21 +19,24 @@
 
 ### Standard File Suffix Abbreviation
 
-| Suffix          | Object Type               | Example|
-| :-:             | :--------                 | :--------   | 
-| PG              | Page Defintion            | StoreCreatePG   |
-| RN              | Shared Region Defintion   |     |
-| LOV             | Share List of Values (LOV) Definition   |     |
-| \<Table Name\>  | Attribute Set Package     |     |
-| \<Module Name\> | UI Component Package      |     |
-| AM              | Application Module        |     |
-| VO              | View Object               |     |
-| VL              | View Link                 |     |
-| EO              | Entity Object             |     |
-| AO              | Association Object        |     |
-| CO              | Controller                |     |
-| VAM             | Validation Application Module   |     |
-| VVO             | Validation View Object   |     |
-| PVO             | Property View Object     |     |
-| Expert          | Entity Expert            |     |
+
+
+| File Type       | Suffix |File Extension   |Standard     | Example|
+| :--------       | :-:    |:-:              |  :---       | :--------   | 
+| Page Defintion  | PG     | .xml            |             |  StoreCreatePG           |
+| Shared Region Defintion  | RN     | .xml            |             |             |
+| Share List of Values (LOV) Definition  | LOV     | .xml            |             |             |
+| Attribute Set Package   | \<Table Name\>     | .xml            |             |             |
+| UI Component Package  | \<Module Name\>     | .xml            |             |             |
+| Application Module  | AM     | .xml            |             |             |
+| View Object  | VO     | .xml            |             |             |
+| View Link  | VL     | .xml            |             |             |
+| Entity Object  | EO     | .xml            |             |             |
+| Association Object  | AO     | .xml            |             |             |
+| Controller  | CO     | .xml            |             |             |
+| Validation Application Module  | VAM     | .xml            |             |             |
+| Validation View Object  | VVO     | .xml            |             |             |
+| Property View Object   | PVO     | .xml            |             |             |
+| Entity Expert  | Expert      | .xml            |             |             |
+ 
 
