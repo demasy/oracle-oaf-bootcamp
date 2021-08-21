@@ -42,7 +42,7 @@
 | 4.1        | Implementing train region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing shuttle region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing advanced layout region (Table, Row and Cell Layout)                     | Video   |  -       |  -       | -|
-| 4.1        | Implementing H-Grid region                     | Video   |  -       |  -       | -|
+| 4.1        | Implementing HGrid region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Content Container region                     | Video   |  -       |  -       | -|
 | 4.1        | Implementing Charts and Graphs                     | Video   |  -       |  -       | -|
 | 4.1        | Adding Custom HTML code to the OAF Page                     | Video   |  -       |  -       | -|
@@ -51,6 +51,7 @@
 | 4.1        | Changing item properties using SPEL statement                     | Video   |  X        |  -       | -|
 | 4.1        | Launching an Oracle Applications Form (D2K) From a Submit Button                    | Video   |  X        |  -       | -|
 | 4.1        | Launching OA Framework Pages from Oracle Applications Forms (D2K)| Video   |  X        |  -       | -|
+
 
 
 <br> 
