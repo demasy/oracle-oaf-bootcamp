@@ -113,12 +113,12 @@ For more information about my experiences and professional career. please visit 
 ### [5] Explain the Basics of the View
 
 | Code  | Lecture Title                        | Format  | Practice | Resource | Instructions |
-| :-    | :--------                            | :-:     | :-:      | :-:      | :----   |
+| :-    | :--------                            | :-:     | :-:      | :-:      | :-:   |
 | 4.1   | View-layer Components                | Video   |  -       |  -       | -|
 | 4.1   | Workspaces and Projects              | Video   |  -       |  -       | -|
 | 4.1   | Pages and Regions                    | Video   |  -       |  -       | -|
 |       | Implementing Standard Web Widgets    |
-| 4.1   | Implementing Text Field              | Video   |  -       |  -       | -|
+| 4.1   | Implementing Text Field              | Video   |  -       |  -       | <a href="#"> 📁 </a> |
 | 4.1.1 | Implementing Text Input              | Video   |  -       |  -       | -|
 | 4.1.2 | Implementing Text Area               | Video   |  -       |  -       | -|
 | 4.1.3 | Implementing Data Entry Text Field   | Video   |  -       |  -       | -|
