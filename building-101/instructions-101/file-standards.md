@@ -52,3 +52,15 @@ DlStoreCreatePG
 ```
 DLStoreCreatePG
 ```
+
+#### Shared Region Defintion Example
+
+**Correct**
+```
+StoresLovRN
+```
+
+**Incorrect**
+```
+StoresLOVRN
+```
