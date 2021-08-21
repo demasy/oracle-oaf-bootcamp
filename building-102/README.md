@@ -141,7 +141,7 @@ Implementing Advanced Search Page
 
 <br> 
 
-### [4] Advanced Functionality in OA Framework
+### [4] Implementing advanced functionality in OA Framework
 
 | Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-         | :--------                        | :-:     | :-:      | :-:     | :----   |
