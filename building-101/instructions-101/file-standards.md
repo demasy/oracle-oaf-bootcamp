@@ -43,12 +43,12 @@
 
 #### Page Defintion Example
 
-Correct
+**Correct**
 ```
 DlStoreCreatePG
 ```
 
-Incorrect
+**Incorrect**
 ```
 DLStoreCreatePG
 ```
