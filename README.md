@@ -9,13 +9,15 @@ Stay Tuned
 
 <br>
 
+### OA Framework BootCamp Levels
 
-## OAF BootCamp Levels
- 
-- <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/tree/master/Building-101">Oracle OAF Building BootCamp 101</a>
-- Oracle OAF Building BootCamp 102 (Stay Tuned)
-- Oracle OAF Customizing BootCamp 101 (Stay Tuned)
-- Oracle OAF Customizing BootCamp 102 (Stay Tuned)
+| Code       | Lecture Title                         | Level     | Subscribe  |   Notes |
+| :-         | :--------                             | :-:       | :-:        |     :----   |
+| 1.1        | <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/tree/master/Building-101">Oracle OAF Building BootCamp 101</a>      | Beginner  |  N/A       | -|
+| 1.2        | Oracle OAF Building BootCamp 102      | Advanced  |  N/A       | -|
+| 1.3        | Oracle OAF Building BootCamp 103      | Ninja     |  N/A       | -|
+| 2.1        | Oracle OAF Customizing BootCamp 101   | Beginner  |  N/A       | -|
+| 2.1        | Oracle OAF Customizing BootCamp 102   | Advanced  |  N/A       | -|
 
 <br>
 
