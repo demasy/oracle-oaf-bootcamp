@@ -17,7 +17,7 @@ Stay Tuned
 | DL-OAF-B-102        | Oracle OAF Building BootCamp 102      | Advanced  |  N/A       | -|
 | DL-OAF-B-103       | Oracle OAF Building BootCamp 103      | Ninja     |  N/A       | -|
 | DL-OAF-C-101        | Oracle OAF Customizing BootCamp 101   | Beginner  |  N/A       | -|
-| DL-OAF-B-102        | Oracle OAF Customizing BootCamp 102   | Advanced  |  N/A       | -|
+| DL-OAF-C-102        | Oracle OAF Customizing BootCamp 102   | Advanced  |  N/A       | -|
 
 <br>
 
