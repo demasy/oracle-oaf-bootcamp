@@ -15,17 +15,6 @@ Stay Tuned
 - Complete a multi-page update (UPDATE)
 - Understand the foundational concepts and standards of OA Framework-based applications and pages
 
-
-Anatomy of an OA Framework Page
-
-Building an OA Framework Application
-Explaining the basics of the model
-Implementing the Model
-Explaining the basics of the view
-Implementing the View
-Explaining the basics of the controller
-Implementing the Controller
-
 <br> 
 
 ## **Curriculum**
