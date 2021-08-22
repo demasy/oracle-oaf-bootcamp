@@ -16,6 +16,16 @@ Stay Tuned
 - Understand the foundational concepts and standards of OA Framework-based applications and pages
 
 
+Anatomy of an OA Framework Page
+
+Building an OA Framework Application
+Explaining the basics of the model
+Implementing the Model
+Explaining the basics of the view
+Implementing the View
+Explaining the basics of the controller
+Implementing the Controller
+
 <br> 
 
 ## **Curriculum**
@@ -23,9 +33,18 @@ Stay Tuned
 1. **Welcome!**
 2. **Introduction**
 3. **Getting started**
-4. **Explain the Basics of the Model**
-5. **Explain the Basics of the View**
-6. **Explain the Basics of the Controller**
+4. **Building an OA Framework Application**
+   1. **Explaining the basics of the model**
+   2. **Implementing the Model**
+   3. **Explaining the basics of the view**
+   4. **Implementing the View**
+   5. **Explaining the basics of the controller**
+   6. **Implementing the Controller**
+5. **Explaining Error Handling in OA Framework**
+6. **Testing and Debugging Techniques**
+7. **Explaining OA Framework Security Approaches**
+8. **Explaining OA Framework Development Concepts and Standard**
+9. **Deploying Your OA Framework Applications**
 
 <br>
 
