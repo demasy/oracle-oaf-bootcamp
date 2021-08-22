@@ -83,7 +83,7 @@ Implementing the Controller
 | 3.3        | Setting Up Development Environment                  | Video   |  -       |  -       | -|
 | 3.4        | Explain About JDeveloper 10g with OA Extension                 | Video   |  -       |  -       | -|
 | 3.5        | What The First option do you need ?!                  | Video   |  -       |  -       | -|
-| 3.6        | Building the "Hello World" OA Framework Page                  | Video   |  X       |  -       | -|
+| 3.6        | Building the "Hello World!" OA Framework Page                  | Video   |  X       |  -       | -|
 
 ##### 101.1 Project Practices 
 
