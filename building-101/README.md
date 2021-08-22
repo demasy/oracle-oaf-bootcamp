@@ -144,6 +144,7 @@ Stay Tuned
 
 | Code  | Lecture Title                    | Format  | Practice | Resource | Notes |
 | :-    | :--------                        | :-:     | :-:      | :-:     | :----   |
+| 6.1   | Explaining about the controller | Video   |  -       |  -       | -|
 | 6.1   | Handling GETs                  | Video   |  -       |  -       | -|
 | 6.2   | Handling POSTs                  | Video   |  -       |  -       | -|
 | 6.3   | Common Controller tasks                  | Video   |  -       |  -       | -|
