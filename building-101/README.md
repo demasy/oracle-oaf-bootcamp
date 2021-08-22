@@ -41,7 +41,7 @@ Implementing the Controller
    5. **Explaining the basics of the controller**
    6. **Implementing the Controller**
 5. **Explaining Error Handling in OA Framework**
-6. **Testing and Debugging Techniques**
+6. **Explaining Testing and Debugging Techniques**
 7. **Explaining OA Framework Security Approaches**
 8. **Explaining OA Framework Development Concepts and Standard**
 9. **Deploying Your OA Framework Applications**
@@ -50,13 +50,11 @@ Implementing the Controller
 
 ### [1] Welcome!
 
-| Code       | Lecture Title                    | Format  | Practice | Resource | Notes |
-| :-         | :--------                        | :-:     | :-:      | :-:    | :----   |
-| 1.1        | Welcome Lecutre                  | Video   |  -       |  -       | -|
-| 1.2        | About the Instructor             | Video   |  -       |  -       | -|
-| 1.3        | How This Course Works             | Video   |  -       |  -       | -|
-	
-
+| Code | Lecture Title         | Format  | Practice | Resource | Notes |
+| :-  | :--------              | :-:     | :-:      | :-:    | :----   |
+| 1.1 | Welcome Lecutre        | Video   |  -       |  -       | -|
+| 1.2 | About the Instructor   | Video   |  -       |  <a href="https://www.linkedin.com/in/demasy/">LinkedIn Profile</a> | -|
+| 1.3 | How This Course Works? | Video   |  -       |  -       | -|
 
 <br>
 
