@@ -8,7 +8,7 @@
 
 |       Attribute  |    Value      |  
 | :-               | :--------              |  
-| Application Name | Demasy-Labs Application | 
-| Short Name| XXDL   | 
-| Basepath| XXDL_TOP | 
+| Application      | Demasy-Labs Application | 
+| Short Name       | XXDL   | 
+| Basepath         | XXDL_TOP | 
 | Description      | Demasy-Labs Application for Training| 
