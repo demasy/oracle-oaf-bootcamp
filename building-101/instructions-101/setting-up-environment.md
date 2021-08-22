@@ -11,4 +11,4 @@
 | Application      | Demasy-Labs Application | 
 | Short Name       | XXDL   | 
 | Basepath         | XXDL_TOP | 
-| Description      | Demasy-Labs Application for Training| 
+| Description      | Demasy-Labs Application for training purpose| 
