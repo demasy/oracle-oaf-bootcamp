@@ -33,13 +33,11 @@ Stay Tuned
 
 ## Prerequisites & Requirements 
 
-- Programming experience
 - Java Programming
 - Oracle database SQL & PL/SQL
-- E-Business Suite development and debugging
+- 3 months of Oracle developing experience on e-Business Suite applications
 - Oracle E-Business Suite Virtual Machine
 - Toad for Oracle or SQL Developer
-- Oracle Jdeveloper patch for OAF
 
 <br>
 
