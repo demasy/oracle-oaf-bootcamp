@@ -1,7 +1,51 @@
-
-
-#Ignore vscode AI rules
-.github/instructions/codacy.instructions.md
-
-demasylabs-barin
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# JDeveloper
+*.class
+*.ear
+*.war
+*.sar
+.adf
+*.jws
+classes/
+deploy/
+.data/
+
+# Build artifacts
+target/
+build/
+dist/
+out/
+
+# IDE specific
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Oracle specific
+*.dbc
+*.env
+
+# Dependencies (if using package managers)
+node_modules/
+.npm/
+
+# Keep the brain repository for reference but don't track changes
+demasylabs-barin/

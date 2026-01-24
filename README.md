@@ -67,6 +67,62 @@ For more information about my experiences and professional career. please visit 
 ## Suggestions & Issues
 If you find any issue or have a great idea in mind please create an issue on <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/issues">GitHub</a>.
 
+<br>
+
+## Contributing
+
+We welcome contributions from the community! Whether you're fixing a bug, adding a new code example, improving documentation, or creating new lab exercises, your contributions help make this bootcamp better for everyone.
+
+### How to Contribute
+
+1. **Fork the Repository**: Create your own fork of the repository
+2. **Create a Branch**: Create a feature branch for your changes
+3. **Make Changes**: Follow our [Code Quality Guidelines](.github/instructions/codacy.instructions.md)
+4. **Submit a PR**: Submit a pull request with a clear description of your changes
+
+For detailed guidelines, please read our [Contributing Guide](.github/CONTRIBUTING.md).
+
+### Areas Where You Can Contribute
+
+- **Code Examples**: Add new OAF patterns and use cases to the [code-brain](code-brain/) directory
+- **Documentation**: Improve existing documentation or fix errors
+- **Lab Exercises**: Create new hands-on labs and exercises
+- **Course Content**: Enhance syllabus content and learning materials
+- **Bug Fixes**: Fix issues in existing code or documentation
+
+### Code of Conduct
+
+This project follows a Code of Conduct to ensure a welcoming and inclusive environment. By participating, you agree to be respectful, inclusive, and constructive in all interactions.
+
+<br>
+
+## Repository Structure
+
+```
+Oracle-OAF-BootCamp/
+├── code-brain/              # Comprehensive OAF code examples and patterns
+│   ├── code-brain.json      # Metadata for all code examples
+│   ├── README.md            # Documentation for code-brain
+│   ├── view-object-operations/
+│   ├── error-handling/
+│   ├── controller-patterns/
+│   └── ...                  # Other code categories
+├── SYLLABUS.md              # Main syllabus overview
+├── SYLLABUS_101.md          # Level 101 (Beginner) detailed syllabus
+├── SYLLABUS_102.md          # Level 102 (Advanced) detailed syllabus
+├── SYLLABUS_103.md          # Level 103 (Ninja) detailed syllabus
+├── LABS.md                  # All lab exercises and activities
+├── INSTRUCTOR_SYLLABUS.md   # Instructor-specific content
+├── PROJECT_LEVEL_101.md     # Capstone project details
+├── .github/                 # GitHub configuration
+│   ├── CONTRIBUTING.md      # Contribution guidelines
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   ├── ISSUE_TEMPLATE/      # Issue templates
+│   ├── instructions/        # Quality and coding guidelines
+│   └── workflows/           # CI/CD workflows
+└── README.md                # This file
+```
+
 <br> 
 <br>
 
