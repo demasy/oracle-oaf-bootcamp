@@ -1,14 +1,5 @@
 # Oracle Application Framework (OAF) BootCamp
 
-> **📚 Companion Documents:**
-> - **[LABS.md](LABS.md)** - All hands-on labs, activities, and exercises
-> - **[INSTRUCTOR_SYLLABUS.md](INSTRUCTOR_SYLLABUS.md)** - Detailed teaching guide for instructors
-> - **[PROJECT_LEVEL_101.md](PROJECT_LEVEL_101.md)** - Level 101 Capstone Project guide
-
-
-# Detailed Syllabus by Level
-
-
 ## 🎓 Level 101: Oracle OAF Building BootCamp (Beginner)
 
 **Duration:** 20-25 Days  
@@ -538,8 +529,8 @@ Upon completion of Level 103, students will be able to:
 Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Application Framework. This project synthesizes all concepts from Levels 101 and 102.
 
 
-### Phase 1: Project Setup and Planning
-**Duration:** 2.5 Days
+## [18] Project Setup and Planning
+**Duration:** 2.5 Days | **Level**: Ninja
 
 ### Learning Objectives
 - Set up professional development environment
@@ -549,43 +540,17 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 
 ### Lectures
 
-**P1.1 Setting-Up Development Environment**
-- Professional workspace setup
-- Team collaboration tools
-- Code repository structure
-
-**P1.2 Installing Git (Version Control System)**
-- Git fundamentals
-- Branching strategy
-- Commit conventions
-- Pull requests
-
-**P1.3 Create Workspaces and Projects**
-- Project structure
-- Naming conventions
-- Module organization
-
-**P1.4 Create & Test Database Connection**
-- Development database
-- Connection pooling
-- Testing connectivity
-
-**P1.5 Installing the Database Objects**
-- Database schema design
-- Tables and relationships
-- Sequences and triggers
-- Sample data
-- Database scripts
-
-#### Deliverables
-- Working development environment
-- Git repository
-- Database schema installed
-- Project plan document
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 18.1 | Setting-Up Development Environment | Lab | ✓ | Guide | Professional workspace setup, team collaboration tools, code repository structure |
+| 18.2 | Installing Git (Version Control System) | Lab | ✓ | Tutorial | Git fundamentals, branching strategy, commit conventions, pull requests |
+| 18.3 | Create Workspaces and Projects | Lab | ✓ | Template | Project structure, naming conventions, module organization |
+| 18.4 | Create & Test Database Connection | Lab | ✓ | Guide | Development database, connection pooling, testing connectivity |
+| 18.5 | Installing the Database Objects | Lab | ✓ | Scripts | Database schema design, tables and relationships, sequences and triggers, sample data |
 
 
-### Phase 2: Store Management Module (CRUD Operations)
-**Duration:** 7.5 Days
+## [19] Store Management Module (CRUD Operations)
+**Duration:** 7.5 Days | **Level**: Ninja
 
 ### Learning Objectives
 - Implement complete CRUD functionality
@@ -593,42 +558,19 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Build professional UI
 - Implement proper error handling
 
-#### Implementation Tasks
+### Lectures
 
-**P2.1 Implementing Store Query Page (SELECT)**
-- Search functionality
-- Multiple search criteria
-- Results table
-- Pagination
-- Export to Excel
-
-**P2.2 Implementing Store Drill-Down Page (SELECT)**
-- Master-detail display
-- Related information
-- Navigation
-- Breadcrumbs
-
-**P2.3 Implementing Store Create Page (INSERT)**
-- Data entry form
-- Validation
-- Confirmation
-- Success message
-
-**P2.4 Implementing Store Delete Page (DELETE)**
-- Confirmation dialog
-- Business rule validation
-- Cascade delete handling
-- Audit trail
-
-**P2.5 Implementing Store Update Page (UPDATE)**
-- Edit form
-- Version control
-- Concurrent update handling
-- Change tracking
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 19.1 | Implementing Store Query Page (SELECT) | Lab | ✓ | Project | Search functionality, multiple criteria, results table, pagination, export to Excel |
+| 19.2 | Implementing Store Drill-Down Page (SELECT) | Lab | ✓ | Project | Master-detail display, related information, navigation, breadcrumbs |
+| 19.3 | Implementing Store Create Page (INSERT) | Lab | ✓ | Project | Data entry form, validation, confirmation, success message |
+| 19.4 | Implementing Store Delete Page (DELETE) | Lab | ✓ | Project | Confirmation dialog, business rule validation, cascade delete handling, audit trail |
+| 19.5 | Implementing Store Update Page (UPDATE) | Lab | ✓ | Project | Edit form, version control, concurrent update handling, change tracking |
 
 
-### Phase 3: Product Management Module (Practice Assignment)
-**Duration:** 5 Days
+## [20] Product Management Module (Practice Assignment)
+**Duration:** 5 Days | **Level**: Ninja
 
 ### Learning Objectives
 - Independent implementation
@@ -636,30 +578,17 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Problem-solving
 - Self-assessment
 
-#### Assignment
+### Lectures
 
-**P3.1 Explaining the Practice Assignment**
-- Requirements specification
-- Business rules
-- Acceptance criteria
-- Deliverables
-
-**P3.2 Implementing Product CRUD Functionality**
-- Query page
-- Create page
-- Update page
-- Delete functionality
-- Drill-down details
-
-**P3.3 Explaining the Practice Solution**
-- Solution walkthrough
-- Best practices applied
-- Alternative approaches
-- Lessons learned
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 20.1 | Explaining the Practice Assignment | Workshop | ✓ | Requirements | Requirements specification, business rules, acceptance criteria, deliverables |
+| 20.2 | Implementing Product CRUD Functionality | Lab | ✓ | Project | Query page, create page, update page, delete functionality, drill-down details |
+| 20.3 | Explaining the Practice Solution | Workshop | ✓ | Review | Solution walkthrough, best practices applied, alternative approaches, lessons learned |
 
 
-### Phase 4: Branch Management (Master-Detail Complexity)
-**Duration:** 7.5 Days
+## [21] Branch Management (Master-Detail Complexity)
+**Duration:** 7.5 Days | **Level**: Ninja
 
 ### Learning Objectives
 - Implement complex master-detail relationships
@@ -667,108 +596,65 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Coordinate multiple regions
 - Advanced transaction management
 
-#### Implementation Tasks
+### Lectures
 
-**P4.1 Implementing Branch Page (Master-Details Functionality)**
-
-**Master Section: Branch Information**
-- Branch details form
-- Address information
-- Contact details
-- Operating hours
-
-**Detail Section 1: Store Assignments**
-- Stores assigned to branch
-- Add/Remove stores
-- Shuttle component
-- Validation
-
-**Detail Section 2: Employee Assignments**
-- Employees in branch
-- Roles and responsibilities
-- Schedule management
-- Advanced table with actions
-
-**Detail Section 3: Inventory Summary**
-- Product availability
-- Stock levels
-- Transfer functionality
-- Real-time updates with PPR
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 21.1 | Implementing Branch Page (Master-Details) | Lab | ✓ | Project | Master: Branch info, address, contact, hours; Detail 1: Store assignments with shuttle; Detail 2: Employee assignments with advanced table; Detail 3: Inventory summary with PPR |
 
 
-### Phase 5: Sales and Transactions Module
-**Duration:** 7.5 Days
+## [22] Sales and Transactions Module
+**Duration:** 7.5 Days | **Level**: Ninja
 
-#### Implementation Tasks (Student-Designed)
+### Learning Objectives
+- Design and implement transaction processing
+- Build inventory management system
+- Create reporting and analytics features
+- Apply all advanced concepts independently
 
-**P5.1 Sales Transaction Processing**
-- POS interface
-- Product selection
-- Quantity and pricing
-- Discounts and promotions
-- Payment processing
-- Receipt generation
+### Lectures
 
-**P5.2 Inventory Management**
-- Stock tracking
-- Reorder alerts
-- Transfer between stores
-- Inventory reports
-
-**P5.3 Reporting and Analytics**
-- Sales reports
-- Inventory reports
-- Employee performance
-- Charts and graphs
-- Export functionality
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 22.1 | Sales Transaction Processing | Lab | ✓ | Project | POS interface, product selection, quantity and pricing, discounts, payment, receipts |
+| 22.2 | Inventory Management | Lab | ✓ | Project | Stock tracking, reorder alerts, transfer between stores, inventory reports |
+| 22.3 | Reporting and Analytics | Lab | ✓ | Project | Sales reports, inventory reports, employee performance, charts and graphs, export |
 
 
-### Phase 6: Advanced Features and Polish
-**Duration:** 5 Days
+## [23] Advanced Features and Polish
+**Duration:** 5 Days | **Level**: Ninja
 
-#### Implementation Tasks
+### Learning Objectives
+- Implement advanced enterprise features
+- Optimize application performance
+- Establish comprehensive error handling
+- Prepare for production deployment
 
-**P6.1 Advanced Features**
-- Attachments for documents
-- Workflow integration
-- Audit trail
-- Security implementation
-- Multi-language support
+### Lectures
 
-**P6.2 Performance Optimization**
-- Query optimization
-- Caching strategies
-- Large data set handling
-- Response time improvement
-
-**P6.3 Error Handling and Logging**
-- Comprehensive error messages
-- Debug logging
-- Production monitoring
-- User help system
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 23.1 | Advanced Features | Lab | ✓ | Project | Attachments for documents, workflow integration, audit trail, security, multi-language support |
+| 23.2 | Performance Optimization | Lab | ✓ | Project | Query optimization, caching strategies, large data set handling, response time improvement |
+| 23.3 | Error Handling and Logging | Lab | ✓ | Project | Comprehensive error messages, debug logging, production monitoring, user help system |
 
 
-### Phase 7: Deployment and Presentation
-**Duration:** 2.5 Days
+## [24] Deployment and Presentation
+**Duration:** 2.5 Days | **Level**: Ninja
 
-#### Tasks
+### Learning Objectives
+- Deploy application to production environment
+- Create comprehensive documentation
+- Present project to stakeholders professionally
+- Demonstrate mastery of OAF development
 
-**P7.1 Deployment to Production**
-- Deployment package creation
-- Installation instructions
-- Production deployment
-- Post-deployment validation
+### Lectures
 
-**P7.2 Documentation**
-- Technical documentation
-- User manual
-- Installation guide
-- Troubleshooting guide
-
-**P7.3 Project Presentation**
-- Demo preparation
-- Presentation to stakeholders
-- Q&A handling
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 24.1 | Deployment to Production | Lab | ✓ | Guide | Deployment package creation, installation instructions, production deployment, post-deployment validation |
+| 24.2 | Documentation | Workshop | ✓ | Templates | Technical documentation, user manual, installation guide, troubleshooting guide |
+| 24.3 | Project Presentation | Workshop | ✓ | Guide | Demo preparation, presentation to stakeholders, Q&A handling |
 
 
 ### Level 103 Final Assessment
