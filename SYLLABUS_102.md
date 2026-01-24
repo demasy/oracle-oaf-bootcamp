@@ -37,7 +37,6 @@ Upon completion of Level 102, students will be able to:
 | 1.1 | Creating Dynamic View Objects Programmatically | Lab | ✓ | Tutorial | ViewObjectImpl methods, dynamic queries, adding to AM, use cases |
 | 1.2 | Adding Attributes to View Objects Programmatically | Lab | ✓ | Examples | AttributeDef creation, data types, calculated & transient attributes |
 
-
 ## [2] Server-Side Features
 **Duration:** 5 Days | **Level**: Advanced
 
@@ -54,7 +53,6 @@ Upon completion of Level 102, students will be able to:
 | 2.1 | Executing SQL Statements | Lab | ✓ | Tutorial | Using JDBC in OAF, PreparedStatement, handling result sets, connections |
 | 2.2 | Calling PL/SQL Functions and Procedures | Lab | ✓ | Examples | CallableStatement usage, IN/OUT parameters, function returns, error handling |
 | 2.3 | Best Practices | Video | ✓ | Best Practices | PL/SQL vs Java, performance considerations, transaction management |
-
 
 ## [3] Advanced View Components
 **Duration:** 10 Days | **Level**: Advanced
@@ -88,7 +86,6 @@ Upon completion of Level 102, students will be able to:
 | 3.15 | Launching Oracle Forms from OAF | Lab | ✓ | Tutorial | Form function call, parameter passing, integration patterns |
 | 3.16 | Launching OAF Pages from Oracle Forms | Lab | ✓ | Guide | ICX integration, URL construction, SSO considerations |
 
-
 ## [4] Advanced Controller and Programmatic UI
 **Duration:** 5 Days | **Level**: Advanced
 
@@ -110,7 +107,6 @@ Upon completion of Level 102, students will be able to:
 | 4.6 | Using JavaScript in OA Framework | Lab | ✓ | Guide | Client-side validation, UI enhancements, calling Java, security |
 | 4.7 | Implementing Read-Only Page | Lab | ✓ | Tutorial | Disabling inputs, visual indicators, conditional read-only mode |
 
-
 ## [5] Data Manipulation and Validation
 **Duration:** 2.5 Days | **Level**: Advanced
 
@@ -127,7 +123,6 @@ Upon completion of Level 102, students will be able to:
 | 5.2 | Formatting Numbers | Lab | ✓ | Examples | Number formats, currency display, locale considerations, decimal precision |
 | 5.3 | Data Validations | Lab | ✓ | Guide | Field-level validation, cross-field validation, business rule validation |
 | 5.4 | Implementing Validation Using Entity Expert | Lab | ✓ | Tutorial | Entity Expert pattern, reusable validation, complex business rules, messages |
-
 
 ## [6] Advanced Features and Integrations
 **Duration:** 5 Days | **Level**: Advanced
@@ -153,7 +148,6 @@ Upon completion of Level 102, students will be able to:
 | 6.8 | Handling Browser Back Button | Lab | ✓ | Guide | Back button issues, prevention techniques, transaction integrity |
 | 6.9 | Workflow in OA Framework | Lab | ✓ | Tutorial | Launching workflow, passing parameters, monitoring, embedding OAF in notification |
 
-
 ## [7] Advanced Debugging and Error Handling
 **Duration:** 2.5 Days | **Level**: Ninja
 
@@ -170,7 +164,6 @@ Upon completion of Level 102, students will be able to:
 | 7.1 | Using demasy-oaf Libraries for Debugging | Lab | ✓ | Tutorial | Library overview, installation, debug utilities, performance profiling |
 | 7.2 | Raising Bundle/Multiple Error Messages | Lab | ✓ | Examples | Message bundles, multiple validation errors, user-friendly messages, i18n |
 | 7.3 | Advanced Debugging Techniques | Lab | ✓ | Guide | Remote debugging, production debugging, log analysis, performance profiling |
-
 
 ## [8] Level 102 Projects
 **Duration:** 7.5 Days | **Level**: Advanced
@@ -189,7 +182,6 @@ Upon completion of Level 102, students will be able to:
 | :- | :-------- | :-: | :-: | :-: | :---- |
 | 8.1 | Project 101: Point-Of-Sale System (Introduction) | Workshop | ✓ | Project Guide | Setting up project structure, Git version control, database design, project planning, team collaboration setup (Duration: 2.5 Days) |
 | 8.2 | Project 102: Items Creation with Approval Cycle | Lab | ✓ | Requirements | Multi-step approval workflow, complex business logic, workflow integration, advanced UI features, item creation form, multi-level approvals, email notifications, approval history, advanced search and reporting (Duration: 5 Days) |
-
 
 ## [9] Level 102 Final Assessment
 **Duration:** 10 Days | **Level**: Advanced

@@ -9,12 +9,12 @@
 ### Level 101 Learning Outcomes
 
 Upon completion of Level 101, students will be able to:
-- **LO1.1:** Set up and configure OAF development environment
-- **LO1.2:** Create basic OAF pages using Model-View-Controller pattern
-- **LO1.3:** Implement standard web widgets and UI components
-- **LO1.4:** Build CRUD (Create, Read, Update, Delete) functionality
-- **LO1.5:** Deploy OAF applications to Oracle E-Business Suite
-- **LO1.6:** Debug and test basic OAF applications
+- Set up and configure OAF development environment
+- Create basic OAF pages using Model-View-Controller pattern
+- Implement standard web widgets and UI components
+- Build CRUD (Create, Read, Update, Delete) functionality
+- Deploy OAF applications to Oracle E-Business Suite
+- Debug and test basic OAF applications
 
 
 ## [1] BootCamp Orientation & Your Success Path
@@ -34,7 +34,6 @@ Upon completion of Level 101, students will be able to:
 | 1.2 | BootCamp Architecture & Learning Framework | Video | ✓ | PDF | Three-level progression, scaffolding approach, assessment |
 | 1.3 | Building Your Learning Community | Video | ✓ | Guide | Study groups, code review, forums, peer learning |
 | 1.4 | Setting Goals & Success Strategies | Workshop | ✓ | Template | SMART goals, time management, growth mindset |
-
 
 ## [2] OAF Foundations - Architecture & Design Patterns
 **Duration:** 5 Days | **Level**: Beginner
@@ -58,7 +57,6 @@ Upon completion of Level 101, students will be able to:
 | 2.6 | OAF Architecture Deep Dive: BC4J and UIX | Video | ✓ | Architecture Guide | BC4J, UIX, lifecycle, metadata repository |
 | 2.7 | Page Anatomy: Understanding OAF Components | Video | ✓ | Reference Poster | AM, VO, EO, Pages, Regions, Controllers |
 
-
 ## [3] Development Environment Setup & Your First Page
 **Duration:** 5 Days | **Level**: Advanced
 
@@ -81,7 +79,6 @@ Upon completion of Level 101, students will be able to:
 | 3.6 | Milestone Achievement: Building "Hello World!" | Lab | ✓ | Step-by-step | First page, AM, layout, components, run |
 | 3.7 | Project Structure Best Practices | Video | ✓ | Template | Workspace organization, naming, version control |
 | 3.8 | Database Connectivity Essentials | Video | ✓ | Connection Guide | Connection setup, pooling, multi-environment |
-
 
 ## [4] The Model Layer - Business Logic with BC4J
 **Duration:** 7.5 Days | **Level**: Advanced
@@ -110,7 +107,6 @@ Upon completion of Level 101, students will be able to:
 | 4.10 | Advanced BC4J: View Links & Associations | Video | ✓ | Reference | Master-detail, FK relationships, domains |
 | 4.11 | Database Interactions: Transactions & Pooling | Video | ✓ | Best Practices | Connection pooling, commits, locking, tuning |
 
-
 ## [5] The View Layer - Building Modern User Interfaces
 **Duration:** 7.5 Days | **Level**: Advanced
 
@@ -136,7 +132,6 @@ Upon completion of Level 101, students will be able to:
 | 5.7 | Styling & Customization: CSS & Attribute Sets | Video | ✓ | Style Guide | CSS styling, attribute sets, theming |
 | 5.8 | Partial Page Rendering (PPR): Dynamic UI | Lab | ✓ | PPR Tutorial | AJAX in OAF, PPR events, dynamic updates |
 | 5.9 | Navigation: Breadcrumbs & Menus | Video | ✓ | Nav Guide | Breadcrumb configuration, menu integration |
-
 
 ## [6] The Controller Layer - Handling User Events
 **Duration:** 5 Days | **Level**: Advanced
@@ -164,7 +159,6 @@ Upon completion of Level 101, students will be able to:
 | 6.8 | Transaction Parameters: Task Flow Scope | Lab | ✓ | Tutorial | Multi-page flow, retention, cleanup |
 | 6.9 | Session Parameters: User Session Management | Lab | ✓ | Tutorial | Session scope, persistence, memory, best practices |
 
-
 ## [6B] Master-Detail Relationships - Hierarchical Data
 **Duration:** 2.5 Days | **Level**: Advanced
 
@@ -180,7 +174,6 @@ Upon completion of Level 101, students will be able to:
 | :- | :-------- | :-: | :-: | :-: | :---- |
 | 6B.1 | Master-Detail Pattern: View Links Explained | Video | ✓ | Guide | Parent-child relationships, View Links, use cases |
 | 6B.2 | Building Master-Detail User Interfaces | Lab | ✓ | Tutorial | Region configuration, synchronization, cascading |
-
 
 ## [7] Error Handling & Debugging Excellence
 **Duration:** 2.5 Days | **Level**: Advanced
@@ -202,7 +195,6 @@ Upon completion of Level 101, students will be able to:
 | 7.3 | Debugging Toolkit: Console & Logging | Video | ✓ | Debug Guide | Console output, log files, diagnostic logging |
 | 7.4 | JDeveloper Debugger: Step-Through Analysis | Lab | ✓ | Debug Tutorial | Breakpoints, step-through, variables, remote |
 
-
 ## [8] Security Implementation - Protecting Your Application
 **Duration:** 2.5 Days | **Level**: Beginner
 
@@ -221,7 +213,6 @@ Upon completion of Level 101, students will be able to:
 | 8.1 | OAF Security Model: Authentication & Authorization | Video | ✓ | Security Guide | Authentication, authorization, function security |
 | 8.2 | Function Security: Controlling Page Access | Lab | ✓ | Tutorial | Function registration, menu setup, responsibilities |
 | 8.3 | Data Security: Row-Level Protection | Video | ✓ | Best Practices | Multi-Org, row-level security, VPD, filtering |
-
 
 ## [9] Development Standards and Best Practices
 **Duration:** 2.5 Days | **Level**: Beginner
@@ -246,7 +237,6 @@ Upon completion of Level 101, students will be able to:
 | 9.7 | Personalizations | Video | ✓ | Guide | User-level, admin-level customization, personalization limits |
 | 9.8 | Extensions | Video | ✓ | Best Practices | Extending Oracle pages, custom extensions, upgrade-safe mods |
 | 9.9 | Common Page Use Cases | Video | ✓ | Patterns | Search pages, Create/Update pages, Detail/drill-down, List pages |
-
 
 ## [10] Deploying OA Framework Applications
 **Duration:** 2.5 Days | **Level**: Advanced
