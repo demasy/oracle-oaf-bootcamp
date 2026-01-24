@@ -1,24 +1,60 @@
-# OAF Code Brain Repository
+# OAF Code Brain Repository v1.3
 
-Comprehensive collection of Oracle Application Framework (OAF) code examples and patterns for the Oracle OAF BootCamp.
+Comprehensive layer-based MVC architecture for Oracle Application Framework (OAF) - Enhanced with View Layer, Integration (Excel/PL-SQL), and Security patterns.
 
 ## 📚 Overview
 
-This repository contains **13 categories** of OAF code examples with **138+ use cases**, providing practical, copy-paste-ready implementations for common OAF development tasks. Enhanced with advanced patterns from official OAF reference documentation.
+This repository contains **18 pattern files** organized by MVC architecture layers with **185+ use cases**, providing practical, production-ready implementations for OAF development.
 
 ### Statistics
-- **Total Files**: 13 Java files
-- **Total Lines**: 5,191 lines of code
-- **Total Methods**: 149 methods
-- **Total Use Cases**: 138 patterns and examples
-- **Version**: 1.2
+- **Total Files**: 18 Java files
+- **Total Lines**: ~7,800 lines of code
+- **Total Use Cases**: 185+ patterns and examples
+- **Architecture**: Layer-based MVC (Model/View/Controller/Integration/Security/Cross-cutting)
+- **Version**: 1.3
 - **Last Updated**: 2026-01-26
 
-## 🗂️ Code Categories
+## 🏗️ Architecture
 
-### 1. View Object Operations
-**Directory**: `view-object-operations/`  
-**File**: `ExecuteVO.java` (161 lines, 7 methods)
+Code organized by architectural layers for clear separation of concerns:
+
+```
+code-brain/
+├── model-layer/              # Data and business logic
+│   ├── view-objects/         # VO query patterns
+│   ├── entity-objects/       # EO validation patterns
+│   ├── application-modules/  # AM patterns
+│   └── validation/           # Validation logic
+├── view-layer/               # UI components
+│   ├── tables/               # Table patterns
+│   ├── lov/                  # LOV patterns
+│   ├── ppr/                  # PPR patterns
+│   ├── flexfields/           # KFF/DFF patterns
+│   └── layouts/              # Layout patterns
+├── controller-layer/         # Event handling
+│   ├── core/                 # Core controller patterns
+│   ├── advanced/             # Advanced patterns
+│   ├── dialogs/              # Dialog patterns
+│   └── navigation/           # Navigation patterns
+├── integration/              # External systems
+│   ├── excel/                # Excel import/export
+│   ├── plsql/                # PL/SQL integration
+│   └── files/                # File operations
+├── security/                 # Access control
+└── cross-cutting/            # Cross-cutting concerns
+    ├── error-handling/       # Exception handling
+    ├── session/              # Session management
+    ├── configuration/        # Profile options
+    └── metadata/             # MDS operations
+```
+
+## 🗂️ Pattern Categories by Layer
+
+### Model Layer
+
+#### 1. View Object Operations
+**Directory**: `model-layer/view-objects/`  
+**File**: `ExecuteVO.java` (161 lines, 7 use cases)
 
 **Use Cases**:
 - Execute VO without parameters
@@ -29,35 +65,189 @@ This repository contains **13 categories** of OAF code examples with **138+ use 
 - Execute VO and iterate through rows
 - Execute VO with dynamic query
 
+#### 2. Entity Object Patterns
+**Directory**: `model-layer/entity-objects/`  
+**File**: `EntityObjectPatterns.java` (14 use cases)
+
+#### 3. Application Module Patterns
+**Directory**: `model-layer/application-modules/`  
+**Files**: `RootAMAccess.java`, `NestedAMPatterns.java`
+
+#### 4. Validation Patterns
+**Directory**: `model-layer/validation/`  
+**File**: `ValidationPatterns.java` (18 use cases)
+
+---
+
+### View Layer ⭐ NEW
+
+#### 5. Table Patterns
+**Directory**: `view-layer/tables/`  
+**File**: `TablePatterns.java` (557 lines, 12 use cases)
+
+**Use Cases**:
+- Configure basic table
+- Advanced table with single/multiple selection
+- Add action columns (Update/Delete buttons)
+- Handle row selection in controller
+- Configure sortable columns
+- Add/delete rows dynamically
+- Configure Excel export
+- Table footer with totals
+- Best practices
+
 **Key Patterns**:
 ```java
-vo.executeQuery()
-vo.setWhereClause()
-vo.setWhereClauseParams()
-vo.setOrderByClause()
-vo.first() / vo.next()
+OATableBean, OAAdvancedTableBean
+setSelectionMode(SINGLE_SELECTION/MULTIPLE_SELECTION)
+vo.getFilteredRows("SelectFlag", "Y")
+vo.createRow(), vo.insertRow()
+setExportSupport(true)
+```
+
+#### 6. LOV Patterns
+**Directory**: `view-layer/lov/`  
+**File**: `LOVPatterns.java` (450 lines, 10 use cases)
+
+**Use Cases**:
+- Configure standard LOV
+- Configure dependent LOV (cascading)
+- Handle PPR events for dependent LOVs
+- Programmatically launch LOV
+- Configure auto-clear behavior
+- Validate LOV selection
+- Configure custom criteria
+- Handle return values
+- Configure query limits
+- Best practices
+
+**Key Patterns**:
+```java
+OAMessageLovInputBean
+setExternalListOfValues()
+addToLovMapping()
+FIRE_PARTIAL_ACTION_ATTR
+PARTIAL_TRIGGERS_ATTR
 ```
 
 ---
 
-### 2. Error Handling
-**Directory**: `error-handling/`  
-**File**: `OAExceptionHandling.java` (172 lines, 13 methods)
+### Controller Layer
+
+#### 7. Controller Patterns
+**Directory**: `controller-layer/core/`  
+**File**: `ControllerPatterns.java` (11 use cases)
+
+#### 8. Advanced Controller
+**Directory**: `controller-layer/advanced/`  
+**File**: `AdvancedControllerPatterns.java` (19 use cases)
+
+#### 9. Dialog Patterns
+**Directory**: `controller-layer/dialogs/`  
+**File**: `DialogPageExamples.java` (12 use cases)
+
+#### 10. Navigation
+**Directory**: `controller-layer/navigation/`  
+**File**: `NavigationPatterns.java` (10 use cases)
+
+---
+
+### Integration Layer ⭐ NEW
+
+#### 11. Excel Operations
+**Directory**: `integration/excel/`  
+**File**: `ExcelOperations.java` (580 lines, 8 use cases)
 
 **Use Cases**:
-- Throw simple/dictionary/tokenized error messages
-- Display warning/confirmation/information messages
-- Handle AM and SQL exceptions
-- Add multiple messages to page
-- Exception with detail messages
+- Import Excel - Upload and parse using Apache POI
+- Parse Excel sheet and extract data
+- Validate Excel data before insert
+- Insert Excel data to database
+- Export data to Excel - Query and format
+- Stream Excel file to browser
+- Handle large Excel files (streaming)
+- Best practices
 
 **Key Patterns**:
 ```java
-OAException(message, severity)
-OAException(product, messageName)
-setMessageToken()
-pageContext.putDialogMessage()
+WorkbookFactory.create(inputStream)
+HSSFWorkbook, HSSFSheet, HSSFRow
+sheet.getRow(i).getCell(j)
+row.createCell(col).setCellValue()
+response.setContentType("application/vnd.ms-excel")
 ```
+
+**Dependencies**: Apache POI (poi-3.9.jar, poi-ooxml-3.9.jar)
+
+#### 12. PL/SQL Integration
+**Directory**: `integration/plsql/`  
+**File**: `PLSQLIntegration.java` (650 lines, 9 use cases)
+
+**Use Cases**:
+- Call PL/SQL function with return value
+- Call PL/SQL procedure with OUT parameters
+- Function with multiple parameters
+- Handle PL/SQL exceptions
+- IN OUT parameters
+- Batch processing with PL/SQL
+- Call from Application Module
+- Execute anonymous PL/SQL block
+- Best practices
+
+**Key Patterns**:
+```java
+CallableStatement cs = conn.prepareCall("{? = call pkg.func(?)}")
+cs.registerOutParameter(1, Types.VARCHAR)
+cs.setInt(2, value)
+cs.execute()
+String result = cs.getString(1)
+```
+
+---
+
+### Security Layer ⭐ NEW
+
+#### 13. Security Patterns
+**Directory**: `security/`  
+**File**: `SecurityPatterns.java` (385 lines, 8 use cases)
+
+**Use Cases**:
+- Check function security
+- Conditional rendering based on function access
+- Data security - Filter by organization
+- Check responsibility
+- Custom authorization logic
+- Audit trail - Track user actions
+- Field-level security
+- Best practices
+
+**Key Patterns**:
+```java
+pageContext.isResFunctionRegistered(functionName)
+pageContext.getProfile("ORG_ID")
+pageContext.getResponsibilityKey()
+webBean.setRendered(hasAccess)
+```
+
+---
+
+### Cross-cutting Concerns
+
+#### 14. Error Handling
+**Directory**: `cross-cutting/error-handling/`  
+**File**: `OAExceptionHandling.java` (13 use cases)
+
+#### 15. Session Management
+**Directory**: `cross-cutting/session/`  
+**File**: `SessionManagement.java` (14 use cases)
+
+#### 16. Configuration
+**Directory**: `cross-cutting/configuration/`  
+**File**: `ProfileOptionPatterns.java` (11 use cases)
+
+#### 17. Metadata Operations
+**Directory**: `cross-cutting/metadata/`  
+**File**: `MDSOperations.java` (10 use cases)
 
 ---
 
