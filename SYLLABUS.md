@@ -341,9 +341,6 @@ Upon completion of Level 101, students will be able to:
 | 1.3 | Building Your Learning Community | Video | ✓ | Guide | Study groups, code review, forums, peer learning |
 | 1.4 | Setting Goals & Success Strategies | Workshop | ✓ | Template | SMART goals, time management, growth mindset |
 
-#### Assessment
-- Self-assessment: Prior knowledge inventory
-
 ---
 
 ### [2] OAF Foundations - Architecture & Design Patterns
@@ -367,11 +364,6 @@ Upon completion of Level 101, students will be able to:
 | 2.5 | MVC Pattern Mastery: The Foundation of OAF | Video | ✓ | Diagram | Model-View-Controller, separation of concerns |
 | 2.6 | OAF Architecture Deep Dive: BC4J and UIX | Video | ✓ | Architecture Guide | BC4J, UIX, lifecycle, metadata repository |
 | 2.7 | Page Anatomy: Understanding OAF Components | Video | ✓ | Reference Poster | AM, VO, EO, Pages, Regions, Controllers |
-
-#### Assessment
-- ✅ Quiz: OAF terminology and concepts (10 questions)
-- 📝 Essay: Explain MVC with real-world analogy
-- 🎯 Self-check: Can you identify OAF components?
 
 ---
 
@@ -397,11 +389,6 @@ Upon completion of Level 101, students will be able to:
 | 3.6 | Milestone Achievement: Building "Hello World!" | Lab | ✓ | Step-by-step | First page, AM, layout, components, run |
 | 3.7 | Project Structure Best Practices | Video | ✓ | Template | Workspace organization, naming, version control |
 | 3.8 | Database Connectivity Essentials | Video | ✓ | Connection Guide | Connection setup, pooling, multi-environment |
-
-#### Assessment
-- ✅ **Practical Exam:** Successfully run "Hello World" page
-- 📋 **Checklist:** Environment setup verification
-- 🎯 **Milestone:** Development environment ready
 
 ---
 
@@ -432,12 +419,6 @@ Upon completion of Level 101, students will be able to:
 | 4.10 | Advanced BC4J: View Links & Associations | Video | ✓ | Reference | Master-detail, FK relationships, domains |
 | 4.11 | Database Interactions: Transactions & Pooling | Video | ✓ | Best Practices | Connection pooling, commits, locking, tuning |
 
-#### Assessment
-- ✅ **Quiz:** BC4J concepts (15 questions)
-- 🔬 **Practical:** Create complete BC4J model for given scenario
-- 📝 **Reflection:** When to use updatable vs. read-only VOs?
-- 🎯 **Milestone:** Can independently create Model components
-
 ---
 
 ### [5] The View Layer - Building Modern User Interfaces
@@ -465,12 +446,6 @@ Upon completion of Level 101, students will be able to:
 | 5.7 | Styling & Customization: CSS & Attribute Sets | Video | ✓ | Style Guide | CSS styling, attribute sets, theming |
 | 5.8 | Partial Page Rendering (PPR): Dynamic UI | Lab | ✓ | PPR Tutorial | AJAX in OAF, PPR events, dynamic updates |
 | 5.9 | Navigation: Breadcrumbs & Menus | Video | ✓ | Nav Guide | Breadcrumb configuration, menu integration |
-
-#### Assessment
-- ✅ **Quiz:** View components and properties (20 questions)
-- 🔬 **Practical:** Build complete data entry page with all widget types
-- 📊 **Design Review:** Evaluate UI for usability
-- 🎯 **Milestone:** Can create professional-looking OAF pages
 
 ---
 
@@ -500,12 +475,6 @@ Upon completion of Level 101, students will be able to:
 | 6.8 | Transaction Parameters: Task Flow Scope | Lab | ✓ | Tutorial | Multi-page flow, retention, cleanup |
 | 6.9 | Session Parameters: User Session Management | Lab | ✓ | Tutorial | Session scope, persistence, memory, best practices |
 
-#### Assessment
-- ✅ **Quiz:** Controller concepts (15 questions)
-- 🔬 **Practical:** Implement complete controller logic for scenario
-- 📝 **Code Review:** Analyze provided controller code
-- 🎯 **Milestone:** Can handle user interactions effectively
-
 ---
 
 ### [6B] Master-Detail Relationships - Hierarchical Data
@@ -523,9 +492,6 @@ Upon completion of Level 101, students will be able to:
 | :- | :-------- | :-: | :-: | :-: | :---- |
 | 6B.1 | Master-Detail Pattern: View Links Explained | Video | ✓ | Guide | Parent-child relationships, View Links, use cases |
 | 6B.2 | Building Master-Detail User Interfaces | Lab | ✓ | Tutorial | Region configuration, synchronization, cascading |
-
-#### Assessment
-- 🔬 **Practical:** Build master-detail for given scenario
 
 ---
 
@@ -549,10 +515,6 @@ Upon completion of Level 101, students will be able to:
 | 7.3 | Debugging Toolkit: Console & Logging | Video | ✓ | Debug Guide | Console output, log files, diagnostic logging |
 | 7.4 | JDeveloper Debugger: Step-Through Analysis | Lab | ✓ | Debug Tutorial | Breakpoints, step-through, variables, remote |
 
-#### Assessment
-- 🔬 **Practical:** Debug and fix provided broken page
-- 📝 **Reflection:** Error handling best practices
-
 ---
 
 ### [8] Security Implementation - Protecting Your Application
@@ -573,10 +535,6 @@ Upon completion of Level 101, students will be able to:
 | 8.1 | OAF Security Model: Authentication & Authorization | Video | ✓ | Security Guide | Authentication, authorization, function security |
 | 8.2 | Function Security: Controlling Page Access | Lab | ✓ | Tutorial | Function registration, menu setup, responsibilities |
 | 8.3 | Data Security: Row-Level Protection | Video | ✓ | Best Practices | Multi-Org, row-level security, VPD, filtering |
-
-#### Assessment
-- ✅ **Quiz:** Security concepts (10 questions)
-- 🔬 **Practical:** Secure your Hello World page
 
 ---
 
@@ -640,10 +598,6 @@ Upon completion of Level 101, students will be able to:
 - Detail/drill-down pages
 - List pages
 
-#### Assessment
-- ✅ **Quiz:** Standards and best practices (10 questions)
-- 📊 **Code Review:** Evaluate code quality
-
 ---
 
 ### Section 10: Deploying OA Framework Applications
@@ -681,11 +635,6 @@ Upon completion of Level 101, students will be able to:
 - Menu setup
 - Responsibility assignment
 - Testing in production
-
-#### Assessment
-- 🔬 **Practical:** Complete deployment of your page
-- 📝 **Documentation:** Write deployment instructions
-- 🎯 **Milestone:** Page deployed and accessible in E-Business Suite
 
 ---
 
@@ -992,9 +941,6 @@ Upon completion of Level 102, students will be able to:
 - Calculated attributes
 - Transient attributes
 
-#### Assessment
-- 🔬 **Practical:** Implement dynamic reporting VO
-
 ---
 
 ### Section 12: Server-Side Features
@@ -1025,10 +971,6 @@ Upon completion of Level 102, students will be able to:
 - Performance considerations
 - Transaction management
 - Error handling patterns
-
-#### Assessment
-- 🔬 **Practical:** Build report with complex SQL
-- 📝 **Code Review:** Evaluate SQL execution code
 
 ---
 
@@ -1141,10 +1083,6 @@ Upon completion of Level 102, students will be able to:
 - URL construction
 - SSO considerations
 
-#### Assessment
-- 🔬 **Practical:** Build page with 5+ advanced components
-- 📊 **UI/UX Review:** Evaluate usability
-
 ---
 
 ### Section 14: Advanced Controller and Programmatic UI
@@ -1196,10 +1134,6 @@ Upon completion of Level 102, students will be able to:
 - Visual indicators
 - Conditional read-only mode
 
-#### Assessment
-- 🔬 **Practical:** Create dynamic form based on metadata
-- 📝 **Code Review:** Evaluate programmatic UI code
-
 ---
 
 ### Section 15: Data Manipulation and Validation
@@ -1234,9 +1168,6 @@ Upon completion of Level 102, students will be able to:
 - Reusable validation
 - Complex business rules
 - Validation messages
-
-#### Assessment
-- 🔬 **Practical:** Implement 5 validation rules
 
 ---
 
@@ -1304,10 +1235,6 @@ Upon completion of Level 102, students will be able to:
 - Monitoring workflow
 - Embedding OAF region in notification
 
-#### Assessment
-- 🔬 **Practical:** Build document management page
-- 📊 **Integration Test:** Workflow + OAF
-
 ---
 
 ### Section 17: Advanced Debugging and Error Handling
@@ -1338,9 +1265,6 @@ Upon completion of Level 102, students will be able to:
 - Production debugging
 - Log analysis
 - Performance profiling
-
-#### Assessment
-- 🔬 **Practical:** Debug and fix 3 complex issues
 
 ---
 
@@ -1527,12 +1451,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Concurrent update handling
 - Change tracking
 
-#### Assessment
-- Functional testing results
-- Code review score
-- Standards compliance check
-- Performance benchmarks
-
 ---
 
 ### Phase 3: Product Management Module (Practice Assignment)
@@ -1564,12 +1482,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Best practices applied
 - Alternative approaches
 - Lessons learned
-
-#### Assessment
-- Self-assessment report
-- Functional completeness
-- Code quality vs. solution
-- Improvement plan
 
 ---
 
@@ -1609,12 +1521,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Stock levels
 - Transfer functionality
 - Real-time updates with PPR
-
-#### Assessment
-- Complex scenario testing
-- Integration testing
-- Performance under load
-- Code architecture review
 
 ---
 
