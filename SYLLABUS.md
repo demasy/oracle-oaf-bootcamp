@@ -27,7 +27,7 @@ Upon completion of Level 101, students will be able to:
 
 
 ## [1] BootCamp Orientation & Your Success Path
-**Duration:** 2.5 Days | **Bloom's Level:** Remember
+**Duration:** 2.5 Days | **Level**: Beginner
 
 ### Learning Objectives
 - Navigate bootcamp structure, resources, and support system
@@ -46,7 +46,7 @@ Upon completion of Level 101, students will be able to:
 
 
 ## [2] OAF Foundations - Architecture & Design Patterns
-**Duration:** 5 Days | **Bloom's Level:** Remember, Understand
+**Duration:** 5 Days | **Level**: Beginner
 
 ### Learning Objectives
 - Master OAF terminology to communicate effectively with teams
@@ -69,7 +69,7 @@ Upon completion of Level 101, students will be able to:
 
 
 ## [3] Development Environment Setup & Your First Page
-**Duration:** 5 Days | **Bloom's Level:** Apply
+**Duration:** 5 Days | **Level**: Advanced
 
 ### Learning Objectives
 - Install and configure production-ready OAF development environment
@@ -93,7 +93,7 @@ Upon completion of Level 101, students will be able to:
 
 
 ## [4] The Model Layer - Business Logic with BC4J
-**Duration:** 7.5 Days | **Bloom's Level:** Apply, Analyze
+**Duration:** 7.5 Days | **Level**: Advanced
 
 ### Learning Objectives
 - Design and implement complete BC4J Model layer components
@@ -121,7 +121,7 @@ Upon completion of Level 101, students will be able to:
 
 
 ## [5] The View Layer - Building Modern User Interfaces
-**Duration:** 7.5 Days | **Bloom's Level:** Apply, Analyze
+**Duration:** 7.5 Days | **Level**: Advanced
 
 ### Learning Objectives
 - Master all standard OAF web widgets and UI components
@@ -148,7 +148,7 @@ Upon completion of Level 101, students will be able to:
 
 
 ## [6] The Controller Layer - Handling User Events
-**Duration:** 5 Days | **Bloom's Level:** Apply, Analyze
+**Duration:** 5 Days | **Level**: Advanced
 
 ### Learning Objectives
 - Implement Controller logic for HTTP GET and POST requests
@@ -175,7 +175,7 @@ Upon completion of Level 101, students will be able to:
 
 
 ## [6B] Master-Detail Relationships - Hierarchical Data
-**Duration:** 2.5 Days | **Bloom's Level:** Apply
+**Duration:** 2.5 Days | **Level**: Advanced
 
 ### Learning Objectives
 - Implement master-detail relationships using View Links
@@ -192,7 +192,7 @@ Upon completion of Level 101, students will be able to:
 
 
 ## [7] Error Handling & Debugging Excellence
-**Duration:** 2.5 Days | **Bloom's Level:** Apply, Analyze
+**Duration:** 2.5 Days | **Level**: Advanced
 
 ### Learning Objectives
 - Implement robust exception handling strategies
@@ -213,7 +213,7 @@ Upon completion of Level 101, students will be able to:
 
 
 ## [8] Security Implementation - Protecting Your Application
-**Duration:** 2.5 Days | **Bloom's Level:** Understand, Apply
+**Duration:** 2.5 Days | **Level**: Beginner
 
 ### Learning Objectives
 - Understand OAF security model and EBS integration
@@ -233,7 +233,7 @@ Upon completion of Level 101, students will be able to:
 
 
 ## [9] Development Standards and Best Practices
-**Duration:** 2.5 Days | **Bloom's Level:** Understand, Apply
+**Duration:** 2.5 Days | **Level**: Beginner
 
 ### Learning Objectives
 - Follow Oracle OAF coding standards
@@ -258,7 +258,7 @@ Upon completion of Level 101, students will be able to:
 
 
 ## [10] Deploying OA Framework Applications
-**Duration:** 2.5 Days | **Bloom's Level:** Apply
+**Duration:** 2.5 Days | **Level**: Advanced
 
 ### Learning Objectives
 - Deploy OAF applications to E-Business Suite
@@ -556,7 +556,7 @@ Upon completion of Level 102, students will be able to:
 
 
 ## [11] Advanced Model Implementation
-**Duration:** 2.5 Days | **Bloom's Level:** Apply, Create
+**Duration:** 2.5 Days | **Level**: Advanced
 
 ### Learning Objectives
 - Create View Objects dynamically at runtime
@@ -572,7 +572,7 @@ Upon completion of Level 102, students will be able to:
 
 
 ## [12] Server-Side Features
-**Duration:** 5 Days | **Bloom's Level:** Apply, Create
+**Duration:** 5 Days | **Level**: Advanced
 
 ### Learning Objectives
 - Execute SQL statements from Java
@@ -590,7 +590,7 @@ Upon completion of Level 102, students will be able to:
 
 
 ## [13] Advanced View Components
-**Duration:** 10 Days | **Bloom's Level:** Apply, Create
+**Duration:** 10 Days | **Level**: Advanced
 
 ### Learning Objectives
 - Implement all advanced UI regions
@@ -623,7 +623,7 @@ Upon completion of Level 102, students will be able to:
 
 
 ## [14] Advanced Controller and Programmatic UI
-**Duration:** 5 Days | **Bloom's Level:** Create
+**Duration:** 5 Days | **Level**: Advanced
 
 ### Learning Objectives
 - Create UI components programmatically
@@ -645,7 +645,7 @@ Upon completion of Level 102, students will be able to:
 
 
 ## [15] Data Manipulation and Validation
-**Duration:** 2.5 Days | **Bloom's Level:** Apply
+**Duration:** 2.5 Days | **Level**: Advanced
 
 ### Learning Objectives
 - Format dates and numbers properly
@@ -663,7 +663,7 @@ Upon completion of Level 102, students will be able to:
 
 
 ## [16] Advanced Features and Integrations
-**Duration:** 5 Days | **Bloom's Level:** Apply, Create
+**Duration:** 5 Days | **Level**: Advanced
 
 ### Learning Objectives
 - Implement attachments functionality
@@ -688,7 +688,7 @@ Upon completion of Level 102, students will be able to:
 
 
 ## [17] Advanced Debugging and Error Handling
-**Duration:** 2.5 Days | **Bloom's Level:** Analyze, Evaluate
+**Duration:** 2.5 Days | **Level**: Ninja
 
 ### Learning Objectives
 - Use advanced debugging techniques
