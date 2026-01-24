@@ -77,14 +77,14 @@ Upon completion of Level 101, students will be able to:
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
-| 3.1 | JDeveloper IDE: Your Development Command Center | Video | ✓ | Quick Ref | IDE layout, panels, workspace organization |
-| 3.2 | Acquiring OA Extension from Oracle Support | Video | - | Guide | MOS portal, version matrix, download process |
-| 3.3 | Environment Configuration: Step-by-Step Setup | Video | ✓ | Checklist | Installation, OA Extension, configuration, DBC |
-| 3.4 | JDeveloper Productivity: Tools & Shortcuts | Video | ✓ | Shortcut Card | Interface customization, shortcuts, templates |
-| 3.5 | Essential Configuration: DBC Files & Connections | Video | ✓ | Troubleshoot Guide | DBC setup, connection parameters, validation |
-| 3.6 | Milestone Achievement: Building "Hello World!" | Lab | ✓ | Step-by-step | First page, AM, layout, components, run |
-| 3.7 | Project Structure Best Practices | Video | ✓ | Template | Workspace organization, naming, version control |
-| 3.8 | Database Connectivity Essentials | Video | ✓ | Connection Guide | Connection setup, pooling, multi-environment |
+| 3.1 | Mastering JDeveloper IDE: Your Development Command Center | Video | ✓ | Quick Ref | IDE layout, panels, workspace organization |
+| 3.2 | Downloading OA Extension from Oracle Support Portal | Video | - | Guide | MOS portal, version matrix, download process |
+| 3.3 | Complete Environment Configuration & Setup | Video | ✓ | Checklist | Installation, OA Extension, configuration, DBC |
+| 3.4 | Boosting Productivity: JDeveloper Tools & Shortcuts | Video | ✓ | Shortcut Card | Interface customization, shortcuts, templates |
+| 3.5 | Configuring DBC Files & Database Connections | Video | ✓ | Troubleshoot Guide | DBC setup, connection parameters, validation |
+| 3.6 | Building Your First "Hello World!" OAF Page | Lab | ✓ | Step-by-step | First page, AM, layout, components, run |
+| 3.7 | Organizing Projects: Structure & Best Practices | Video | ✓ | Template | Workspace organization, naming, version control |
+| 3.8 | Establishing Database Connectivity | Video | ✓ | Connection Guide | Connection setup, pooling, multi-environment |
 
 <br>
 
@@ -103,17 +103,17 @@ Upon completion of Level 101, students will be able to:
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
-| 4.1 | BC4J Framework: The Data Management Engine | Video | ✓ | Overview | Understanding BC4J, MVC role, component ecosystem |
-| 4.2 | Application Modules: Orchestrating Business Logic | Video | ✓ | Design Guide | AM structure, transactions, pooling, patterns |
-| 4.3 | Hands-On: Creating & Testing Application Modules | Lab | ✓ | Wizard Guide | Step-by-step creation, testing, debugging |
-| 4.4 | Entity Objects: Your Database Gateway | Video | ✓ | EO Reference | Table mapping, validation, DML, associations |
-| 4.5 | Building Entity Objects: Mapping to Reality | Lab | ✓ | Tutorial | Wizard creation, attributes, validation rules |
-| 4.6 | View Objects: Query-Based Data Views | Video | ✓ | VO Guide | SQL queries, read-only vs updatable, performance |
-| 4.7 | Creating Updatable View Objects | Lab | ✓ | Tutorial | VO-EO linking, attribute mapping, CRUD testing |
-| 4.8 | Creating Read-Only View Objects | Lab | ✓ | Tutorial | SQL-based VOs, expert mode, joins, optimization |
-| 4.9 | Creating Programmatic View Objects | Lab | ✓ | Examples | Dynamic VOs, runtime attributes, use cases |
-| 4.10 | Advanced BC4J: View Links & Associations | Video | ✓ | Reference | Master-detail, FK relationships, domains |
-| 4.11 | Database Interactions: Transactions & Pooling | Video | ✓ | Best Practices | Connection pooling, commits, locking, tuning |
+| 4.1 | Understanding BC4J: The Data Management Engine | Video | ✓ | Overview | Understanding BC4J, MVC role, component ecosystem |
+| 4.2 | Designing Application Modules: Orchestrating Business Logic | Video | ✓ | Design Guide | AM structure, transactions, pooling, patterns |
+| 4.3 | Building & Testing Your First Application Module | Lab | ✓ | Wizard Guide | Step-by-step creation, testing, debugging |
+| 4.4 | Entity Objects Fundamentals: Your Database Gateway | Video | ✓ | EO Reference | Table mapping, validation, DML, associations |
+| 4.5 | Creating Entity Objects: Table-to-Object Mapping | Lab | ✓ | Tutorial | Wizard creation, attributes, validation rules |
+| 4.6 | View Objects Explained: Query-Based Data Views | Video | ✓ | VO Guide | SQL queries, read-only vs updatable, performance |
+| 4.7 | Building Updatable View Objects for CRUD Operations | Lab | ✓ | Tutorial | VO-EO linking, attribute mapping, CRUD testing |
+| 4.8 | Implementing Read-Only View Objects with SQL | Lab | ✓ | Tutorial | SQL-based VOs, expert mode, joins, optimization |
+| 4.9 | Developing Programmatic View Objects Dynamically | Lab | ✓ | Examples | Dynamic VOs, runtime attributes, use cases |
+| 4.10 | Mastering View Links & Entity Associations | Video | ✓ | Reference | Master-detail, FK relationships, domains |
+| 4.11 | Managing Database Transactions & Connection Pooling | Video | ✓ | Best Practices | Connection pooling, commits, locking, tuning |
 
 <br>
 
@@ -133,15 +133,15 @@ Upon completion of Level 101, students will be able to:
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
-| 5.1 | UIX Framework: Component-Based UI Architecture | Video | ✓ | UIX Guide | Framework basics, component hierarchy, metadata |
-| 5.2 | Organizing UI Components: Workspace Structure | Video | ✓ | Structure Guide | Workspace organization, naming, packages, reusable |
-| 5.3 | Pages and Regions: Fundamentals | Video | ✓ | Layout Guide | Page structure, region types, hierarchy, containers |
-| 5.4 | Standard Web Widgets: Input & Display Components | Lab | ✓ | Widget Reference | All standard UI widgets and their properties |
-| 5.5 | List of Values (LOV): Search & Select | Lab | ✓ | LOV Tutorial | Standard, dependent, and external LOVs |
-| 5.6 | Page Layouts & Advanced Regions | Lab | ✓ | Layout Patterns | Layouts, headers, buttons, query regions |
-| 5.7 | Styling & Customization: CSS & Attribute Sets | Video | ✓ | Style Guide | CSS styling, attribute sets, theming |
-| 5.8 | Partial Page Rendering (PPR): Dynamic UI | Lab | ✓ | PPR Tutorial | AJAX in OAF, PPR events, dynamic updates |
-| 5.9 | Navigation: Breadcrumbs & Menus | Video | ✓ | Nav Guide | Breadcrumb configuration, menu integration |
+| 5.1 | Understanding UIX: Component-Based UI Architecture | Video | ✓ | UIX Guide | Framework basics, component hierarchy, metadata |
+| 5.2 | Structuring UI Components in Your Workspace | Video | ✓ | Structure Guide | Workspace organization, naming, packages, reusable |
+| 5.3 | Building Pages & Regions: Core Fundamentals | Video | ✓ | Layout Guide | Page structure, region types, hierarchy, containers |
+| 5.4 | Working with Standard Web Widgets & Components | Lab | ✓ | Widget Reference | All standard UI widgets and their properties |
+| 5.5 | Implementing List of Values (LOV) for Data Selection | Lab | ✓ | LOV Tutorial | Standard, dependent, and external LOVs |
+| 5.6 | Designing Professional Page Layouts & Advanced Regions | Lab | ✓ | Layout Patterns | Layouts, headers, buttons, query regions |
+| 5.7 | Applying CSS Styling & Reusable Attribute Sets | Video | ✓ | Style Guide | CSS styling, attribute sets, theming |
+| 5.8 | Enabling Partial Page Rendering (PPR) for Dynamic UI | Lab | ✓ | PPR Tutorial | AJAX in OAF, PPR events, dynamic updates |
+| 5.9 | Implementing Navigation: Breadcrumbs & Menus | Video | ✓ | Nav Guide | Breadcrumb configuration, menu integration |
 
 <br>
 
@@ -161,15 +161,15 @@ Upon completion of Level 101, students will be able to:
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
-| 6.1 | Controller Architecture: Processing User Actions | Video | ✓ | CO Guide | MVC role, lifecycle, structure, best practices |
-| 6.2 | GET Requests: Page Initialization Logic | Video | ✓ | Pattern Library | processRequest(), initialization, default values |
-| 6.3 | POST Requests: Form Submission Handling | Video | ✓ | Examples | processFormRequest(), button clicks, validation |
-| 6.4 | Common Controller Patterns & Tasks | Video | ✓ | Cookbook | Parameters, form values, navigation, messages |
-| 6.5 | Controller API: pageContext & WebBeans | Video | ✓ | API Reference | pageContext, attributes, WebBeans, transactions |
-| 6.6 | Parameter Passing Strategies: Overview | Video | ✓ | Decision Tree | Request, Transaction, Session scopes comparison |
-| 6.7 | Request Parameters: Single-Page Scope | Lab | ✓ | Tutorial | Token-based, navigation, lifecycle, examples |
-| 6.8 | Transaction Parameters: Task Flow Scope | Lab | ✓ | Tutorial | Multi-page flow, retention, cleanup |
-| 6.9 | Session Parameters: User Session Management | Lab | ✓ | Tutorial | Session scope, persistence, memory, best practices |
+| 6.1 | Understanding Controller Architecture & User Actions | Video | ✓ | CO Guide | MVC role, lifecycle, structure, best practices |
+| 6.2 | Handling GET Requests: Page Initialization Logic | Video | ✓ | Pattern Library | processRequest(), initialization, default values |
+| 6.3 | Processing POST Requests: Form Submissions | Video | ✓ | Examples | processFormRequest(), button clicks, validation |
+| 6.4 | Implementing Common Controller Patterns | Video | ✓ | Cookbook | Parameters, form values, navigation, messages |
+| 6.5 | Leveraging Controller API: pageContext & WebBeans | Video | ✓ | API Reference | pageContext, attributes, WebBeans, transactions |
+| 6.6 | Comparing Parameter Passing Strategies | Video | ✓ | Decision Tree | Request, Transaction, Session scopes comparison |
+| 6.7 | Using Request Parameters for Single-Page Scope | Lab | ✓ | Tutorial | Token-based, navigation, lifecycle, examples |
+| 6.8 | Managing Transaction Parameters Across Pages | Lab | ✓ | Tutorial | Multi-page flow, retention, cleanup |
+| 6.9 | Implementing Session Parameters for User State | Lab | ✓ | Tutorial | Session scope, persistence, memory, best practices |
 
 ## [6B] Master-Detail Relationships - Hierarchical Data
 **Duration:** 2.5 Days | **Level**: Advanced
@@ -184,8 +184,8 @@ Upon completion of Level 101, students will be able to:
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
-| 6B.1 | Master-Detail Pattern: View Links Explained | Video | ✓ | Guide | Parent-child relationships, View Links, use cases |
-| 6B.2 | Building Master-Detail User Interfaces | Lab | ✓ | Tutorial | Region configuration, synchronization, cascading |
+| 6B.1 | Understanding Master-Detail Pattern with View Links | Video | ✓ | Guide | Parent-child relationships, View Links, use cases |
+| 6B.2 | Implementing Master-Detail User Interfaces | Lab | ✓ | Tutorial | Region configuration, synchronization, cascading |
 
 <br>
 
@@ -204,10 +204,10 @@ Upon completion of Level 101, students will be able to:
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
-| 7.1 | OAF Exception Framework: Types & Hierarchy | Video | ✓ | Exception Guide | OAException, checked/unchecked, propagation |
-| 7.2 | User Feedback: Messages & Dialog Pages | Video | ✓ | Message Library | Error messages, dialogs, tokens, i18n |
-| 7.3 | Debugging Toolkit: Console & Logging | Video | ✓ | Debug Guide | Console output, log files, diagnostic logging |
-| 7.4 | JDeveloper Debugger: Step-Through Analysis | Lab | ✓ | Debug Tutorial | Breakpoints, step-through, variables, remote |
+| 7.1 | Understanding OAF Exception Framework & Hierarchy | Video | ✓ | Exception Guide | OAException, checked/unchecked, propagation |
+| 7.2 | Providing User Feedback: Messages & Dialog Pages | Video | ✓ | Message Library | Error messages, dialogs, tokens, i18n |
+| 7.3 | Using Debugging Tools: Console & Logging | Video | ✓ | Debug Guide | Console output, log files, diagnostic logging |
+| 7.4 | Mastering JDeveloper Debugger: Step-Through Analysis | Lab | ✓ | Debug Tutorial | Breakpoints, step-through, variables, remote |
 
 <br>
 
@@ -226,9 +226,9 @@ Upon completion of Level 101, students will be able to:
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
-| 8.1 | OAF Security Model: Authentication & Authorization | Video | ✓ | Security Guide | Authentication, authorization, function security |
-| 8.2 | Function Security: Controlling Page Access | Lab | ✓ | Tutorial | Function registration, menu setup, responsibilities |
-| 8.3 | Data Security: Row-Level Protection | Video | ✓ | Best Practices | Multi-Org, row-level security, VPD, filtering |
+| 8.1 | Understanding OAF Security: Authentication & Authorization | Video | ✓ | Security Guide | Authentication, authorization, function security |
+| 8.2 | Implementing Function Security to Control Page Access | Lab | ✓ | Tutorial | Function registration, menu setup, responsibilities |
+| 8.3 | Applying Data Security: Row-Level Protection | Video | ✓ | Best Practices | Multi-Org, row-level security, VPD, filtering |
 
 <br>
 
@@ -246,15 +246,15 @@ Upon completion of Level 101, students will be able to:
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
-| 9.1 | Why Standards Matter | Video | ✓ | Guide | Maintainability, team collaboration, Oracle support, upgrades |
-| 9.2 | Coding Standards and Terminology | Video | ✓ | Standards Doc | Naming conventions, package structure, comments, organization |
-| 9.3 | Different Standards | Video | ✓ | Comparison | Oracle standards, project-specific, industry best practices |
-| 9.4 | Files and Packages | Video | ✓ | Reference | File types (.xml, .java, .class), package naming, MDS structure |
-| 9.5 | Directory Structure | Video | ✓ | Diagram | $JAVA_TOP structure, workspace organization, resource files |
-| 9.6 | export.bat, import.bat, JPXImporter | Lab | ✓ | Tutorial | Code extraction from database, importing to JDeveloper, version control |
-| 9.7 | Personalizations | Video | ✓ | Guide | User-level, admin-level customization, personalization limits |
-| 9.8 | Extensions | Video | ✓ | Best Practices | Extending Oracle pages, custom extensions, upgrade-safe mods |
-| 9.9 | Common Page Use Cases | Video | ✓ | Patterns | Search pages, Create/Update pages, Detail/drill-down, List pages |
+| 9.1 | Understanding Why Development Standards Matter | Video | ✓ | Guide | Maintainability, team collaboration, Oracle support, upgrades |
+| 9.2 | Following OAF Coding Standards & Terminology | Video | ✓ | Standards Doc | Naming conventions, package structure, comments, organization |
+| 9.3 | Comparing Oracle, Project & Industry Standards | Video | ✓ | Comparison | Oracle standards, project-specific, industry best practices |
+| 9.4 | Organizing Files & Packages in OAF Projects | Video | ✓ | Reference | File types (.xml, .java, .class), package naming, MDS structure |
+| 9.5 | Understanding OAF Directory Structure | Video | ✓ | Diagram | $JAVA_TOP structure, workspace organization, resource files |
+| 9.6 | Using Import/Export Utilities for Code Management | Lab | ✓ | Tutorial | Code extraction from database, importing to JDeveloper, version control |
+| 9.7 | Implementing Personalizations in OAF | Video | ✓ | Guide | User-level, admin-level customization, personalization limits |
+| 9.8 | Creating Extensions for Oracle Pages | Video | ✓ | Best Practices | Extending Oracle pages, custom extensions, upgrade-safe mods |
+| 9.9 | Designing Common Page Patterns & Use Cases | Video | ✓ | Patterns | Search pages, Create/Update pages, Detail/drill-down, List pages |
 
 <br>
 
@@ -271,7 +271,7 @@ Upon completion of Level 101, students will be able to:
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
-| 10.1 | Deployment Process Overview | Video | ✓ | Checklist | Compilation, packaging, file transfer, import to MDS, bounce Apache |
-| 10.2 | Deploy Your OAF Application on R12.1.x | Lab | ✓ | Tutorial | Step-by-step deployment, file locations, import commands, verification |
-| 10.3 | Deploy Your OAF Application on R12.2.x | Lab | ✓ | Tutorial | Deployment differences, dual file system, ADOP, online patching |
-| 10.4 | Post-Deployment Tasks | Lab | ✓ | Guide | Function registration, menu setup, responsibility assignment, testing |
+| 10.1 | Understanding the OAF Deployment Process | Video | ✓ | Checklist | Compilation, packaging, file transfer, import to MDS, bounce Apache |
+| 10.2 | Deploying Your OAF Application on R12.1.x | Lab | ✓ | Tutorial | Step-by-step deployment, file locations, import commands, verification |
+| 10.3 | Deploying Your OAF Application on R12.2.x | Lab | ✓ | Tutorial | Deployment differences, dual file system, ADOP, online patching |
+| 10.4 | Completing Post-Deployment Configuration Tasks | Lab | ✓ | Guide | Function registration, menu setup, responsibility assignment, testing |
