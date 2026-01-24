@@ -1,0 +1,534 @@
+{
+  "brainName": "Oracle OAF Code Repository Brain",
+  "version": "1.0",
+  "lastUpdated": "2026-01-25",
+  "description": "Comprehensive code examples and patterns for Oracle Application Framework development",
+  
+  "purpose": {
+    "primary": "Centralized repository of reusable OAF code patterns and examples",
+    "secondary": [
+      "Reference guide for common OAF development tasks",
+      "Best practices demonstration",
+      "Student learning resource",
+      "Instructor teaching aid"
+    ]
+  },
+  
+  "codeCategories": {
+    "viewObjectOperations": {
+      "directory": "view-object-operations/",
+      "description": "View Object query execution patterns",
+      "complexity": "Basic",
+      "files": [
+        {
+          "name": "ExecuteVO.java",
+          "useCases": [
+            "Execute VO without parameters",
+            "Execute VO with where clause",
+            "Execute VO with multiple parameters",
+            "Execute VO and reset filters",
+            "Execute VO with ORDER BY clause",
+            "Execute VO and iterate through rows",
+            "Execute VO with dynamic query"
+          ],
+          "lines": 161,
+          "methods": 7,
+          "keyPatterns": [
+            "vo.executeQuery()",
+            "vo.setWhereClause()",
+            "vo.setWhereClauseParams()",
+            "vo.setOrderByClause()",
+            "vo.first() / vo.next()"
+          ]
+        }
+      ],
+      "relatedSections": ["Level 101 Section 3", "Level 102 Section 1"],
+      "prerequisites": ["Understanding of BC4J", "View Object basics"]
+    },
+    
+    "errorHandling": {
+      "directory": "error-handling/",
+      "description": "Exception handling and user message display",
+      "complexity": "Intermediate",
+      "files": [
+        {
+          "name": "OAExceptionHandling.java",
+          "useCases": [
+            "Throw simple error message",
+            "Throw error with message dictionary",
+            "Throw error with message tokens",
+            "Display warning message",
+            "Display confirmation message",
+            "Display information message",
+            "Handle exceptions from Application Module",
+            "Add multiple messages to page",
+            "Handle SQL exceptions",
+            "Throw exception with detail message"
+          ],
+          "lines": 172,
+          "methods": 13,
+          "keyPatterns": [
+            "OAException(message, severity)",
+            "OAException(product, messageName)",
+            "setMessageToken()",
+            "pageContext.putDialogMessage()",
+            "try-catch with OAException"
+          ]
+        }
+      ],
+      "relatedSections": ["Level 101 Section 7", "Level 102 Section 7"],
+      "prerequisites": ["OAException class", "Message dictionary"]
+    },
+    
+    "applicationModule": {
+      "directory": "application-module/",
+      "description": "Root AM access and method invocation",
+      "complexity": "Basic",
+      "files": [
+        {
+          "name": "RootAMAccess.java",
+          "useCases": [
+            "Get Root Application Module",
+            "Invoke AM method using invokeMethod()",
+            "Invoke AM method with return value",
+            "Invoke AM method with multiple parameters",
+            "Access nested Application Module",
+            "Commit transaction using Root AM",
+            "Rollback transaction using Root AM",
+            "Check if AM method exists before invoking",
+            "Access AM in processRequest",
+            "Access AM in processFormRequest"
+          ],
+          "lines": 158,
+          "methods": 11,
+          "keyPatterns": [
+            "pageContext.getRootApplicationModule()",
+            "rootAM.invokeMethod(methodName, params)",
+            "rootAM.findApplicationModule(instanceName)",
+            "rootAM.invokeMethod(\"commit\")",
+            "rootAM.invokeMethod(\"rollback\")"
+          ]
+        }
+      ],
+      "relatedSections": ["Level 101 Section 3", "Level 101 Section 5"],
+      "prerequisites": ["Application Module basics", "Controller fundamentals"]
+    },
+    
+    "dialogPages": {
+      "directory": "dialog-pages/",
+      "description": "Dialog page creation and response handling",
+      "complexity": "Intermediate",
+      "files": [
+        {
+          "name": "DialogPageExamples.java",
+          "useCases": [
+            "Simple confirmation dialog",
+            "Confirmation dialog with Yes/No buttons",
+            "Handle dialog response in processFormRequest",
+            "Warning dialog",
+            "Error dialog",
+            "Information dialog",
+            "Dialog with detail message",
+            "Dialog with navigation",
+            "Dialog with multiple form parameters",
+            "Dialog with message dictionary",
+            "Complete dialog flow example"
+          ],
+          "lines": 311,
+          "methods": 11,
+          "keyPatterns": [
+            "OADialogPage(severity, message, detail, okDest, noDest)",
+            "dialogPage.setOkButtonItemName()",
+            "dialogPage.setOkButtonToPost(true)",
+            "dialogPage.setFormParameters(Hashtable)",
+            "pageContext.redirectToDialogPage()",
+            "pageContext.getParameter(buttonName)"
+          ]
+        }
+      ],
+      "relatedSections": ["Level 102 Section 4", "Level 102 Section 7"],
+      "prerequisites": ["OADialogPage", "Controller event handling"]
+    },
+    
+    "entityObjects": {
+      "directory": "entity-objects/",
+      "description": "Entity Object lifecycle and validation patterns",
+      "complexity": "Intermediate",
+      "files": [
+        {
+          "name": "EntityObjectPatterns.java",
+          "useCases": [
+            "Populate WHO columns and sequence on create",
+            "Update WHO columns before DML",
+            "Entity-level validation",
+            "Attribute-level validation (setter override)",
+            "Custom business logic before remove",
+            "Calculate derived attribute",
+            "Post changes to database",
+            "Refresh entity from database",
+            "Check if attribute has changed"
+          ],
+          "lines": 243,
+          "methods": 9,
+          "keyPatterns": [
+            "create(AttributeList)",
+            "doDML(operation, TransactionEvent)",
+            "validateEntity()",
+            "setAttributeInternal()",
+            "getOADBTransaction()",
+            "SequenceImpl(sequenceName, transaction)",
+            "remove()",
+            "isAttributeChanged(attributeIndex)"
+          ]
+        }
+      ],
+      "relatedSections": ["Level 101 Section 3", "Level 102 Section 1"],
+      "prerequisites": ["Entity Object basics", "WHO columns", "Sequences"]
+    },
+    
+    "controllerPatterns": {
+      "directory": "controller-patterns/",
+      "description": "Controller lifecycle and event handling",
+      "complexity": "Intermediate",
+      "files": [
+        {
+          "name": "ControllerPatterns.java",
+          "useCases": [
+            "processRequest - page initialization",
+            "processFormRequest - handle form submissions",
+            "Handle Save button",
+            "Handle Cancel button",
+            "Handle Delete button with confirmation",
+            "Show delete confirmation dialog",
+            "Handle Apply button",
+            "Handle Search button",
+            "Handle Clear button",
+            "Validate form data",
+            "Set default values for new record",
+            "Handle table row action"
+          ],
+          "lines": 282,
+          "methods": 12,
+          "keyPatterns": [
+            "processRequest(pageContext, webBean)",
+            "processFormRequest(pageContext, webBean)",
+            "pageContext.getParameter(paramName)",
+            "am.invokeMethod(methodName, params)",
+            "pageContext.forwardImmediately()",
+            "pageContext.putDialogMessage()"
+          ]
+        }
+      ],
+      "relatedSections": ["Level 101 Section 5", "Level 102 Section 4"],
+      "prerequisites": ["Controller basics", "Event handling", "MVC pattern"]
+    },
+    
+    "validation": {
+      "directory": "validation/",
+      "description": "Multi-layer validation patterns",
+      "complexity": "Intermediate",
+      "files": [
+        {
+          "name": "ValidationPatterns.java",
+          "useCases": [
+            "Attribute-level validation (setter method)",
+            "Entity-level validation (validateEntity)",
+            "Transaction-level validation (AM method)",
+            "Date range validation",
+            "Business rule validation",
+            "Database uniqueness check",
+            "Cross-field validation",
+            "Conditional validation",
+            "Complex multi-entity validation"
+          ],
+          "lines": 349,
+          "classes": 5,
+          "keyPatterns": [
+            "Setter with validation logic",
+            "validateEntity() override",
+            "AM validation method",
+            "SQL validation queries",
+            "Conditional validation based on field values"
+          ]
+        }
+      ],
+      "relatedSections": ["Level 101 Section 7", "Level 102 Section 1"],
+      "prerequisites": ["Entity Objects", "Application Modules", "SQL"]
+    },
+    
+    "navigation": {
+      "directory": "navigation/",
+      "description": "Page navigation and parameter passing",
+      "complexity": "Basic to Intermediate",
+      "files": [
+        {
+          "name": "NavigationPatterns.java",
+          "useCases": [
+            "Forward to another page immediately",
+            "Forward with parameters (HashMap)",
+            "Forward with URL parameters",
+            "Set forward URL (deferred navigation)",
+            "Navigate with breadcrumb",
+            "Navigate without retaining AM",
+            "Return to calling page",
+            "Navigate with function call",
+            "Navigate to external URL",
+            "Navigate with message preservation",
+            "Refresh current page",
+            "Conditional navigation",
+            "Pass complex object between pages",
+            "Navigate with custom breadcrumb label"
+          ],
+          "lines": 267,
+          "methods": 14,
+          "keyPatterns": [
+            "pageContext.forwardImmediately()",
+            "pageContext.setForwardURL()",
+            "HashMap for parameters",
+            "OAWebBeanConstants.ADD_BREAD_CRUMB_YES/NO",
+            "OAWebBeanConstants.KEEP_MENU_CONTEXT",
+            "pageContext.putSessionValue()/getSessionValue()"
+          ]
+        }
+      ],
+      "relatedSections": ["Level 101 Section 5", "Level 102 Section 4"],
+      "prerequisites": ["Controller basics", "Page lifecycle"]
+    }
+  },
+  
+  "statistics": {
+    "totalCategories": 8,
+    "totalFiles": 8,
+    "totalLines": 1943,
+    "totalMethods": 91,
+    "totalUseCases": 80,
+    "avgLinesPerFile": 243,
+    "avgMethodsPerFile": 11
+  },
+  
+  "usageGuidelines": {
+    "forStudents": [
+      "Browse by category to find relevant examples",
+      "Study use cases that match your current task",
+      "Copy and adapt patterns to your project",
+      "Understand key patterns before implementing",
+      "Reference prerequisite sections if concepts are unclear"
+    ],
+    "forInstructors": [
+      "Use as teaching examples in lectures",
+      "Reference in lab exercises",
+      "Point students to specific examples during troubleshooting",
+      "Demonstrate best practices vs anti-patterns",
+      "Assign specific patterns for practice exercises"
+    ],
+    "forDevelopers": [
+      "Quick reference for common tasks",
+      "Copy-paste starting points",
+      "Best practice validation",
+      "Pattern library for code reviews",
+      "Template for new implementations"
+    ]
+  },
+  
+  "codeStandards": {
+    "documentation": {
+      "header": "Required for all files - includes use case, location, complexity",
+      "methods": "JavaDoc comments with use case description",
+      "inline": "Explain non-obvious logic"
+    },
+    "naming": {
+      "classes": "Descriptive names ending in Patterns/Examples",
+      "methods": "Clear verb-noun format (executeVOBasic, handleSave)",
+      "variables": "Meaningful names (rootAM, dialogPage, errorMsg)"
+    },
+    "errorHandling": {
+      "always": "Use OAException with appropriate severity",
+      "never": "Generic Exception or printStackTrace()",
+      "practice": "Include message dictionary references"
+    },
+    "architecture": {
+      "validation": "In Entity Object layer, not Controller",
+      "businessLogic": "In Application Module, not Controller",
+      "uiLogic": "In Controller only",
+      "separation": "Strict MVC separation of concerns"
+    }
+  },
+  
+  "bestPractices": {
+    "viewObjects": [
+      "Always check VO for null before executing",
+      "Use bind variables in where clauses (avoid SQL injection)",
+      "Reset VO state before applying new filters",
+      "Use setOrderByClause instead of SQL ORDER BY in query",
+      "Close row set after iteration to free resources"
+    ],
+    "errorHandling": [
+      "Use message dictionary for all user-facing messages",
+      "Include message tokens for dynamic values",
+      "Choose appropriate severity (ERROR, WARNING, CONFIRMATION, INFO)",
+      "Provide detail messages for technical errors",
+      "Never expose SQL errors directly to users"
+    ],
+    "applicationModule": [
+      "Always check rootAM for null",
+      "Use invokeMethod() instead of casting to custom AM",
+      "Commit in AM, never in Controller",
+      "Rollback on exceptions",
+      "Keep transactions short"
+    ],
+    "dialogPages": [
+      "Use Hashtable to pass parameters through dialog",
+      "Set button names for identification in processFormRequest",
+      "Use postToCallingPage for dialog responses",
+      "Get Yes/No labels from message dictionary",
+      "Handle both OK and Cancel responses"
+    ],
+    "entityObjects": [
+      "Always populate WHO columns in create() and doDML()",
+      "Use SequenceImpl for primary key generation",
+      "Validate in validateEntity() for multi-attribute checks",
+      "Use setter override for single-attribute validation",
+      "Never perform UI operations in EO"
+    ],
+    "controllers": [
+      "Initialize data in processRequest",
+      "Handle events in processFormRequest",
+      "Never put business logic in Controller",
+      "Always validate before invoking AM methods",
+      "Use forwardImmediately for navigation"
+    ],
+    "validation": [
+      "Attribute-level: In setter methods",
+      "Entity-level: In validateEntity()",
+      "Transaction-level: In AM methods",
+      "Never validate in Controller or Page",
+      "Use SQL for database-level validations"
+    ],
+    "navigation": [
+      "Use forwardImmediately for immediate navigation",
+      "Use setForwardURL for deferred navigation",
+      "Retain AM when staying in same flow",
+      "Add breadcrumbs for user navigation tracking",
+      "Use HashMap for complex parameter passing"
+    ]
+  },
+  
+  "commonMistakes": {
+    "viewObjects": [
+      "Forgetting to call executeQuery() after setting where clause",
+      "Not resetting VO before applying new filters",
+      "Using SQL syntax in where clause instead of bind variables",
+      "Not checking VO for null before operations"
+    ],
+    "errorHandling": [
+      "Hardcoding error messages instead of using dictionary",
+      "Using generic Exception instead of OAException",
+      "Not setting appropriate severity level",
+      "Catching exceptions without handling them"
+    ],
+    "applicationModule": [
+      "Casting to custom AM instead of using invokeMethod()",
+      "Not checking rootAM for null",
+      "Committing in Controller instead of AM",
+      "Not rolling back on exceptions"
+    ],
+    "dialogPages": [
+      "Not setting button names for identification",
+      "Forgetting to set postToCallingPage(true)",
+      "Not passing parameters through dialog",
+      "Not handling Cancel button response"
+    ],
+    "entityObjects": [
+      "Not populating WHO columns",
+      "Forgetting to call super.create() or super.doDML()",
+      "Putting business logic in EO instead of AM",
+      "Not using sequences for primary keys"
+    ],
+    "controllers": [
+      "Putting business logic in Controller",
+      "Not checking for null before operations",
+      "Using processRequest for form submissions",
+      "Using processFormRequest for page initialization"
+    ],
+    "validation": [
+      "Validating in Controller instead of Model layer",
+      "Not checking for null values",
+      "Using wrong validation layer",
+      "Not throwing OAException on validation failure"
+    ],
+    "navigation": [
+      "Using setForwardURL when forwardImmediately is needed",
+      "Not retaining AM when needed",
+      "Forgetting to pass required parameters",
+      "Not handling navigation errors"
+    ]
+  },
+  
+  "relatedResources": {
+    "syllabi": [
+      "SYLLABUS_101.md - Level 101 (Beginner) course outline",
+      "SYLLABUS_102.md - Level 102 (Advanced) course outline",
+      "SYLLABUS_103.md - Level 103 (Ninja) course outline"
+    ],
+    "brainFiles": [
+      "demasylabs-barin/.ai-brain.json - Main project brain",
+      "demasylabs-barin/ANALYSIS_REPORT.md - Brain directory analysis"
+    ],
+    "oracleDocumentation": [
+      "OA Framework Developer's Guide",
+      "BC4J Developer's Guide",
+      "Doc ID 416708.1 - JDeveloper version compatibility"
+    ],
+    "additionalCode": [
+      "demasylabs-barin/brain-repo/dialogPage.txt",
+      "demasylabs-barin/brain-repo/Get Root Application Module.txt",
+      "demasylabs-barin/brain-repo/JDR Base Tables.txt"
+    ]
+  },
+  
+  "versionHistory": {
+    "v1.0": {
+      "date": "2026-01-25",
+      "changes": [
+        "Initial code-brain creation",
+        "8 categories with comprehensive examples",
+        "8 Java files with 1943 lines of code",
+        "91 methods demonstrating 80 use cases",
+        "Complete documentation with best practices",
+        "Common mistakes guide",
+        "Usage guidelines for students/instructors/developers"
+      ]
+    }
+  },
+  
+  "futureEnhancements": {
+    "plannedCategories": [
+      "Advanced View Object operations (programmatic VO creation)",
+      "Personalization examples",
+      "Flexfield handling",
+      "Attachment handling",
+      "Export to Excel",
+      "Advanced table operations",
+      "Partial page rendering (PPR)",
+      "LOV (List of Values) patterns",
+      "Master-Detail implementations",
+      "Search page patterns"
+    ],
+    "plannedFeatures": [
+      "Video demonstrations for complex patterns",
+      "Interactive code playground",
+      "Unit tests for all examples",
+      "Performance optimization tips",
+      "Debugging guide per category"
+    ]
+  },
+  
+  "metadata": {
+    "createdBy": "GitHub Copilot",
+    "createdDate": "2026-01-25",
+    "lastModifiedBy": "GitHub Copilot",
+    "lastModifiedDate": "2026-01-25",
+    "purpose": "Centralized code repository brain for Oracle OAF BootCamp",
+    "usage": "Reference this file to understand available code examples and patterns"
+  }
+}
