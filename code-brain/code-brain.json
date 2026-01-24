@@ -1,8 +1,8 @@
 {
   "brainName": "Oracle OAF Code Repository Brain",
-  "version": "1.0",
-  "lastUpdated": "2026-01-25",
-  "description": "Comprehensive code examples and patterns for Oracle Application Framework development",
+  "version": "1.1",
+  "lastUpdated": "2026-01-26",
+  "description": "Comprehensive code examples and patterns for Oracle Application Framework development - Enhanced with advanced patterns from OAF Reference documentation",
   
   "purpose": {
     "primary": "Centralized repository of reusable OAF code patterns and examples",
@@ -293,16 +293,164 @@
       ],
       "relatedSections": ["Level 101 Section 5", "Level 102 Section 4"],
       "prerequisites": ["Controller basics", "Page lifecycle"]
+    },
+    
+    "nestedApplicationModule": {
+      "directory": "nested-am/",
+      "description": "Advanced patterns for nested Application Module operations",
+      "complexity": "Advanced",
+      "files": [
+        {
+          "name": "NestedAMPatterns.java",
+          "useCases": [
+            "Create root AM via JNDI",
+            "Create nested AM from parent",
+            "Find nested AM by instance name",
+            "List all nested AMs",
+            "Get root AM transaction from nested AM",
+            "Find nested AM with system-generated name",
+            "Get root AM from controller",
+            "Access nested AM from controller",
+            "Verify nested AM definition match",
+            "Understand nested AM transaction scope",
+            "Debug nested AM hierarchy"
+          ],
+          "lines": 521,
+          "methods": 11,
+          "keyPatterns": [
+            "ApplicationModuleHome.create()",
+            "parentAM.createApplicationModule()",
+            "parentAM.findApplicationModule()",
+            "parentAM.getApplicationModuleNames()",
+            "getOADBTransaction()",
+            "pageContext.getRootApplicationModule()",
+            "nestedAM.getDefFullName()"
+          ]
+        }
+      ],
+      "relatedSections": ["Level 102 Section 2", "Level 103 Section 1"],
+      "prerequisites": ["Application Module basics", "JNDI concepts", "Transaction understanding"]
+    },
+    
+    "mdsRepository": {
+      "directory": "mds-repository/",
+      "description": "MDS (Metadata Service) repository operations and JDR table queries",
+      "complexity": "Advanced",
+      "files": [
+        {
+          "name": "MDSOperations.java",
+          "useCases": [
+            "Query page hierarchy from JDR_PATHS",
+            "Query page components from JDR_COMPONENTS",
+            "Query component attributes from JDR_ATTRIBUTES",
+            "Find all personalizations for a page",
+            "Find all pages using specific AM",
+            "Query translated attributes",
+            "Find all controllers in module",
+            "Using JDR_UTILS PL/SQL package",
+            "Find orphaned components",
+            "Understand MDS cache and performance"
+          ],
+          "lines": 558,
+          "methods": 10,
+          "keyPatterns": [
+            "JDR_PATHS table queries",
+            "JDR_COMPONENTS table queries",
+            "JDR_ATTRIBUTES table queries",
+            "JDR_ATTRIBUTES_TRANS table queries",
+            "JDR_UTILS PL/SQL package",
+            "MDS cache behavior",
+            "Personalization queries"
+          ]
+        }
+      ],
+      "relatedSections": ["Level 103 Section 2"],
+      "prerequisites": ["SQL knowledge", "MDS concepts", "Personalization understanding"]
+    },
+    
+    "sessionManagement": {
+      "directory": "session-management/",
+      "description": "HTTP session, ICX session, and JVM cache management patterns",
+      "complexity": "Intermediate to Advanced",
+      "files": [
+        {
+          "name": "SessionManagement.java",
+          "useCases": [
+            "Access HTTP/Servlet session",
+            "Access ICX session (Oracle Apps session)",
+            "Understand session timeouts (HTTP vs ICX)",
+            "Query ICX_SESSIONS table",
+            "Store data in HTTP session",
+            "Understand JVM cache behavior",
+            "Get session values from page context",
+            "Understand session state vs database state",
+            "Invalidate HTTP session programmatically",
+            "Session management best practices"
+          ],
+          "lines": 487,
+          "methods": 10,
+          "keyPatterns": [
+            "pageContext.getHttpSession()",
+            "pageContext.getWebAppsContext()",
+            "ICX_SESSIONS table",
+            "session.setAttribute()/getAttribute()",
+            "Profile options for timeouts",
+            "JVM cache vs session cache",
+            "session.invalidate()"
+          ]
+        }
+      ],
+      "relatedSections": ["Level 102 Section 3", "Level 103 Section 1"],
+      "prerequisites": ["HTTP session concepts", "Oracle Apps architecture", "Profile options"]
+    },
+    
+    "profileOptions": {
+      "directory": "profile-options/",
+      "description": "Profile option access and configuration patterns",
+      "complexity": "Beginner to Intermediate",
+      "files": [
+        {
+          "name": "ProfileOptionPatterns.java",
+          "useCases": [
+            "Read profile option value (Controller)",
+            "Read profile option value (Application Module)",
+            "Use FND_Diagnostics profile",
+            "Write diagnostics in controller",
+            "Write diagnostics in AM",
+            "Check personalization enabled",
+            "Check region link enabled",
+            "Check personalization disabled",
+            "Get personalization root path",
+            "Create custom profile option",
+            "Understand profile option hierarchy",
+            "Common profile options reference",
+            "Profile options best practices"
+          ],
+          "lines": 678,
+          "methods": 13,
+          "keyPatterns": [
+            "pageContext.getProfile()",
+            "getOADBTransaction().getProfile()",
+            "pageContext.writeDiagnostics()",
+            "getOADBTransaction().writeDiagnostics()",
+            "FND_DIAGNOSTICS profile",
+            "PERSONALIZE_SELFSERVICE_DEFN",
+            "Profile option hierarchy (User > Resp > App > Site)"
+          ]
+        }
+      ],
+      "relatedSections": ["Level 101 Section 2", "Level 102 Section 3"],
+      "prerequisites": ["Basic Oracle Apps concepts", "Configuration understanding"]
     }
   },
   
   "statistics": {
-    "totalCategories": 8,
-    "totalFiles": 8,
-    "totalLines": 1943,
-    "totalMethods": 91,
-    "totalUseCases": 80,
-    "avgLinesPerFile": 243,
+    "totalCategories": 12,
+    "totalFiles": 12,
+    "totalLines": 4187,
+    "totalMethods": 135,
+    "totalUseCases": 124,
+    "avgLinesPerFile": 349,
     "avgMethodsPerFile": 11
   },
   
@@ -487,6 +635,20 @@
   },
   
   "versionHistory": {
+    "v1.1": {
+      "date": "2026-01-26",
+      "changes": [
+        "Added 4 new advanced categories from OAF Reference documentation",
+        "Nested Application Module patterns (11 use cases, 521 lines)",
+        "MDS Repository operations (10 use cases, 558 lines)",
+        "Session Management patterns (10 use cases, 487 lines)",
+        "Profile Options patterns (13 use cases, 678 lines)",
+        "Total: 12 categories, 12 files, 4187 lines, 135 methods, 124 use cases",
+        "Enhanced documentation with advanced concepts",
+        "Added best practices for infrastructure components"
+      ],
+      "source": "OAF Reference - By Mostafa EL-Ruby.docx"
+    },
     "v1.0": {
       "date": "2026-01-25",
       "changes": [
@@ -504,7 +666,6 @@
   "futureEnhancements": {
     "plannedCategories": [
       "Advanced View Object operations (programmatic VO creation)",
-      "Personalization examples",
       "Flexfield handling",
       "Attachment handling",
       "Export to Excel",
@@ -512,7 +673,9 @@
       "Partial page rendering (PPR)",
       "LOV (List of Values) patterns",
       "Master-Detail implementations",
-      "Search page patterns"
+      "Search page patterns",
+      "UIX Framework components",
+      "Directory structure and file locations"
     ],
     "plannedFeatures": [
       "Video demonstrations for complex patterns",
@@ -527,8 +690,9 @@
     "createdBy": "GitHub Copilot",
     "createdDate": "2026-01-25",
     "lastModifiedBy": "GitHub Copilot",
-    "lastModifiedDate": "2026-01-25",
+    "lastModifiedDate": "2026-01-26",
     "purpose": "Centralized code repository brain for Oracle OAF BootCamp",
-    "usage": "Reference this file to understand available code examples and patterns"
+    "usage": "Reference this file to understand available code examples and patterns",
+    "enhancementSource": "OAF Reference - By Mostafa EL-Ruby.docx"
   }
 }

@@ -4,13 +4,15 @@ Comprehensive collection of Oracle Application Framework (OAF) code examples and
 
 ## 📚 Overview
 
-This repository contains **8 categories** of OAF code examples with **80+ use cases**, providing practical, copy-paste-ready implementations for common OAF development tasks.
+This repository contains **12 categories** of OAF code examples with **124+ use cases**, providing practical, copy-paste-ready implementations for common OAF development tasks. Enhanced with advanced patterns from official OAF reference documentation.
 
 ### Statistics
-- **Total Files**: 8 Java files
-- **Total Lines**: 1,943 lines of code
-- **Total Methods**: 91 methods
-- **Total Use Cases**: 80 patterns and examples
+- **Total Files**: 12 Java files
+- **Total Lines**: 4,187 lines of code
+- **Total Methods**: 135 methods
+- **Total Use Cases**: 124 patterns and examples
+- **Version**: 1.1
+- **Last Updated**: 2026-01-26
 
 ## 🗂️ Code Categories
 
@@ -203,6 +205,120 @@ pageContext.putSessionValue()/getSessionValue()
 
 ---
 
+### 9. Nested Application Module (Advanced)
+**Directory**: `nested-am/`  
+**File**: `NestedAMPatterns.java` (521 lines, 11 methods)
+
+**Use Cases**:
+- Create root AM via JNDI
+- Create nested AM from parent
+- Find nested AM by instance name
+- List all nested AMs
+- Get root AM transaction from nested AM
+- Find nested AM with system-generated name
+- Get root AM from controller
+- Access nested AM from controller
+- Verify nested AM definition match
+- Understand nested AM transaction scope
+- Debug nested AM hierarchy
+
+**Key Patterns**:
+```java
+ApplicationModuleHome.create()
+parentAM.createApplicationModule()
+parentAM.findApplicationModule()
+parentAM.getApplicationModuleNames()
+getOADBTransaction()
+pageContext.getRootApplicationModule()
+```
+
+---
+
+### 10. MDS Repository Operations (Advanced)
+**Directory**: `mds-repository/`  
+**File**: `MDSOperations.java` (558 lines, 10 methods)
+
+**Use Cases**:
+- Query page hierarchy from JDR_PATHS
+- Query page components from JDR_COMPONENTS
+- Query component attributes from JDR_ATTRIBUTES
+- Find all personalizations for a page
+- Find all pages using specific AM
+- Query translated attributes
+- Find all controllers in module
+- Using JDR_UTILS PL/SQL package
+- Find orphaned components
+- Understand MDS cache and performance
+
+**Key Patterns**:
+```java
+JDR_PATHS table queries
+JDR_COMPONENTS table queries
+JDR_ATTRIBUTES table queries
+JDR_UTILS PL/SQL package
+MDS cache behavior
+```
+
+---
+
+### 11. Session Management (Intermediate to Advanced)
+**Directory**: `session-management/`  
+**File**: `SessionManagement.java` (487 lines, 10 methods)
+
+**Use Cases**:
+- Access HTTP/Servlet session
+- Access ICX session (Oracle Apps session)
+- Understand session timeouts (HTTP vs ICX)
+- Query ICX_SESSIONS table
+- Store data in HTTP session
+- Understand JVM cache behavior
+- Get session values from page context
+- Understand session state vs database state
+- Invalidate HTTP session programmatically
+- Session management best practices
+
+**Key Patterns**:
+```java
+pageContext.getHttpSession()
+pageContext.getWebAppsContext()
+ICX_SESSIONS table
+session.setAttribute()/getAttribute()
+Profile options for timeouts
+session.invalidate()
+```
+
+---
+
+### 12. Profile Options (Beginner to Intermediate)
+**Directory**: `profile-options/`  
+**File**: `ProfileOptionPatterns.java` (678 lines, 13 methods)
+
+**Use Cases**:
+- Read profile option value (Controller)
+- Read profile option value (Application Module)
+- Use FND_Diagnostics profile
+- Write diagnostics in controller
+- Write diagnostics in AM
+- Check personalization enabled
+- Check region link enabled
+- Check personalization disabled
+- Get personalization root path
+- Create custom profile option
+- Understand profile option hierarchy
+- Common profile options reference
+- Profile options best practices
+
+**Key Patterns**:
+```java
+pageContext.getProfile()
+getOADBTransaction().getProfile()
+pageContext.writeDiagnostics()
+getOADBTransaction().writeDiagnostics()
+Profile option hierarchy (User > Resp > App > Site)
+```
+
+---
+
 ## 🎯 Usage Guidelines
 
 ### For Students
@@ -360,12 +476,32 @@ pageContext.putSessionValue()/getSessionValue()
 
 ## 📊 Version History
 
+### v1.1 (2026-01-26)
+- Added 4 new advanced categories from OAF Reference documentation
+- Nested Application Module patterns (11 use cases, 521 lines)
+- MDS Repository operations (10 use cases, 558 lines)
+- Session Management patterns (10 use cases, 487 lines)
+- Profile Options patterns (13 use cases, 678 lines)
+- Total: 12 categories, 12 files, 4,187 lines, 135 methods, 124 use cases
+- Enhanced documentation with advanced concepts
+- Source: OAF Reference - By Mostafa EL-Ruby.docx
+
 ### v1.0 (2026-01-25)
 - Initial code-brain creation
 - 8 categories with comprehensive examples
 - 8 Java files with 1,943 lines of code
 - 91 methods demonstrating 80 use cases
 - Complete documentation with best practices
+
+---
+
+## 📚 Enhancement Sources
+
+This code repository has been enhanced with patterns and examples from:
+- **OAF Reference - By Mostafa EL-Ruby.docx**: Official Oracle Application Framework reference documentation covering architecture, MDS repository, session management, profile options, nested AM concepts, naming standards, and more.
+- **Oracle OAF Developer's Guide**: Official Oracle documentation
+- **BC4J Developer's Guide**: Business Components for Java documentation
+- **Project brain-repo**: Accumulated knowledge from various OAF resources
 
 ---
 
@@ -387,10 +523,11 @@ For questions or clarification:
 - Refer to the main project [.ai-brain.json](../demasylabs-barin/.ai-brain.json)
 - Check the [ANALYSIS_REPORT.md](../demasylabs-barin/ANALYSIS_REPORT.md)
 - Review course syllabi for context
+- See [brain-repo/OAF/](../demasylabs-barin/brain-repo/OAF/) for additional resources
 
 ---
 
 **Created**: 2026-01-25  
-**Last Updated**: 2026-01-25  
-**Version**: 1.0  
+**Last Updated**: 2026-01-26  
+**Version**: 1.1  
 **Maintained By**: Oracle OAF BootCamp Team
