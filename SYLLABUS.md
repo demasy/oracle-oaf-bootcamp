@@ -13,7 +13,7 @@
 
 ## 🎓 Level 101: Oracle OAF Building BootCamp (Beginner)
 
-**Duration:** 4-5 Weeks  
+**Duration:** 20-25 Days  
 **Level:** Beginner  
 **Prerequisites:** Basic Java and SQL  
 
@@ -30,7 +30,7 @@ Upon completion of Level 101, students will be able to:
 ---
 
 ## [1] BootCamp Orientation & Your Success Path
-**Duration:** 0.5 Week | **Bloom's Level:** Remember
+**Duration:** 2.5 Days | **Bloom's Level:** Remember
 
 #### Learning Objectives
 - Navigate bootcamp structure, resources, and support system
@@ -50,7 +50,7 @@ Upon completion of Level 101, students will be able to:
 ---
 
 ## [2] OAF Foundations - Architecture & Design Patterns
-**Duration:** 1 Week | **Bloom's Level:** Remember, Understand
+**Duration:** 5 Days | **Bloom's Level:** Remember, Understand
 
 #### Learning Objectives
 - Master OAF terminology to communicate effectively with teams
@@ -74,7 +74,7 @@ Upon completion of Level 101, students will be able to:
 ---
 
 ## [3] Development Environment Setup & Your First Page
-**Duration:** 1 Week | **Bloom's Level:** Apply
+**Duration:** 5 Days | **Bloom's Level:** Apply
 
 #### Learning Objectives
 - Install and configure production-ready OAF development environment
@@ -99,7 +99,7 @@ Upon completion of Level 101, students will be able to:
 ---
 
 ## [4] The Model Layer - Business Logic with BC4J
-**Duration:** 1.5 Weeks | **Bloom's Level:** Apply, Analyze
+**Duration:** 7.5 Days | **Bloom's Level:** Apply, Analyze
 
 #### Learning Objectives
 - Design and implement complete BC4J Model layer components
@@ -128,7 +128,7 @@ Upon completion of Level 101, students will be able to:
 ---
 
 ## [5] The View Layer - Building Modern User Interfaces
-**Duration:** 1.5 Weeks | **Bloom's Level:** Apply, Analyze
+**Duration:** 7.5 Days | **Bloom's Level:** Apply, Analyze
 
 #### Learning Objectives
 - Master all standard OAF web widgets and UI components
@@ -156,7 +156,7 @@ Upon completion of Level 101, students will be able to:
 ---
 
 ## [6] The Controller Layer - Handling User Events
-**Duration:** 1 Week | **Bloom's Level:** Apply, Analyze
+**Duration:** 5 Days | **Bloom's Level:** Apply, Analyze
 
 #### Learning Objectives
 - Implement Controller logic for HTTP GET and POST requests
@@ -184,7 +184,7 @@ Upon completion of Level 101, students will be able to:
 ---
 
 ## [6B] Master-Detail Relationships - Hierarchical Data
-**Duration:** 0.5 Week | **Bloom's Level:** Apply
+**Duration:** 2.5 Days | **Bloom's Level:** Apply
 
 #### Learning Objectives
 - Implement master-detail relationships using View Links
@@ -202,7 +202,7 @@ Upon completion of Level 101, students will be able to:
 ---
 
 ## [7] Error Handling & Debugging Excellence
-**Duration:** 0.5 Week | **Bloom's Level:** Apply, Analyze
+**Duration:** 2.5 Days | **Bloom's Level:** Apply, Analyze
 
 #### Learning Objectives
 - Implement robust exception handling strategies
@@ -224,7 +224,7 @@ Upon completion of Level 101, students will be able to:
 ---
 
 ## [8] Security Implementation - Protecting Your Application
-**Duration:** 0.5 Week | **Bloom's Level:** Understand, Apply
+**Duration:** 2.5 Days | **Bloom's Level:** Understand, Apply
 
 #### Learning Objectives
 - Understand OAF security model and EBS integration
@@ -245,7 +245,7 @@ Upon completion of Level 101, students will be able to:
 ---
 
 ## [9] Development Standards and Best Practices
-**Duration:** 0.5 Week | **Bloom's Level:** Understand, Apply
+**Duration:** 2.5 Days | **Bloom's Level:** Understand, Apply
 
 #### Learning Objectives
 - Follow Oracle OAF coding standards
@@ -307,7 +307,7 @@ Upon completion of Level 101, students will be able to:
 ---
 
 ## [10] Deploying OA Framework Applications
-**Duration:** 0.5 Week | **Bloom's Level:** Apply
+**Duration:** 2.5 Days | **Bloom's Level:** Apply
 
 #### Learning Objectives
 - Deploy OAF applications to E-Business Suite
@@ -604,7 +604,7 @@ WebUI Package: oracle.apps.xx.jobmgmt.webui
 
 ## 🚀 Level 102: Oracle OAF Building BootCamp (Advanced)
 
-**Duration:** 4-5 Weeks  
+**Duration:** 20-25 Days  
 **Level:** Advanced  
 **Prerequisites:** Completion of Level 101 or equivalent experience  
 **Scaffolding Level:** Moderate (40% guidance, 60% independence)
@@ -626,7 +626,7 @@ Upon completion of Level 102, students will be able to:
 ---
 
 ## [11] Advanced Model Implementation
-**Duration:** 0.5 Week | **Bloom's Level:** Apply, Create
+**Duration:** 2.5 Days | **Bloom's Level:** Apply, Create
 
 #### Learning Objectives
 - Create View Objects dynamically at runtime
@@ -650,7 +650,7 @@ Upon completion of Level 102, students will be able to:
 ---
 
 ## [12] Server-Side Features
-**Duration:** 1 Week | **Bloom's Level:** Apply, Create
+**Duration:** 5 Days | **Bloom's Level:** Apply, Create
 
 #### Learning Objectives
 - Execute SQL statements from Java
@@ -681,7 +681,7 @@ Upon completion of Level 102, students will be able to:
 ---
 
 ## [13] Advanced View Components
-**Duration:** 2 Weeks | **Bloom's Level:** Apply, Create
+**Duration:** 10 Days | **Bloom's Level:** Apply, Create
 
 #### Learning Objectives
 - Implement all advanced UI regions
@@ -792,7 +792,7 @@ Upon completion of Level 102, students will be able to:
 ---
 
 ## [14] Advanced Controller and Programmatic UI
-**Duration:** 1 Week | **Bloom's Level:** Create
+**Duration:** 5 Days | **Bloom's Level:** Create
 
 #### Learning Objectives
 - Create UI components programmatically
@@ -843,7 +843,7 @@ Upon completion of Level 102, students will be able to:
 ---
 
 ## [15] Data Manipulation and Validation
-**Duration:** 0.5 Week | **Bloom's Level:** Apply
+**Duration:** 2.5 Days | **Bloom's Level:** Apply
 
 #### Learning Objectives
 - Format dates and numbers properly
@@ -878,7 +878,7 @@ Upon completion of Level 102, students will be able to:
 ---
 
 ## [16] Advanced Features and Integrations
-**Duration:** 1 Week | **Bloom's Level:** Apply, Create
+**Duration:** 5 Days | **Bloom's Level:** Apply, Create
 
 #### Learning Objectives
 - Implement attachments functionality
@@ -944,7 +944,7 @@ Upon completion of Level 102, students will be able to:
 ---
 
 ## [17] Advanced Debugging and Error Handling
-**Duration:** 0.5 Week | **Bloom's Level:** Analyze, Evaluate
+**Duration:** 2.5 Days | **Bloom's Level:** Analyze, Evaluate
 
 #### Learning Objectives
 - Use advanced debugging techniques
@@ -977,7 +977,7 @@ Upon completion of Level 102, students will be able to:
 ### Level 102 Projects
 
 #### Project 101: Point-Of-Sale System (Introduction)
-**Duration:** 0.5 Week
+**Duration:** 2.5 Days
 
 - Setting up project structure
 - Git version control
@@ -985,7 +985,7 @@ Upon completion of Level 102, students will be able to:
 - Project planning
 
 #### Project 102: Items Creation with Approval Cycle
-**Duration:** 1 Week
+**Duration:** 5 Days
 
 **Objectives:**
 - Multi-step approval workflow
@@ -1037,7 +1037,7 @@ Upon completion of Level 102, students will be able to:
 
 ## 🥷 Level 103: Oracle OAF Building BootCamp (Ninja)
 
-**Duration:** 4-6 Weeks  
+**Duration:** 20-30 Days  
 **Level:** Expert/Ninja  
 **Prerequisites:** Completion of Level 102 with good understanding  
 **Scaffolding Level:** Minimal (20% guidance, 80% autonomous work)
@@ -1059,7 +1059,7 @@ Upon completion of Level 103, students will be able to:
 
 ### Capstone Project 101: Complete Point-Of-Sale System
 
-**Duration:** 4-6 Weeks  
+**Duration:** 20-30 Days  
 **Project Type:** Real-world, production-grade application
 
 #### Project Overview
@@ -1069,7 +1069,7 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ---
 
 ### Phase 1: Project Setup and Planning
-**Duration:** 0.5 Week
+**Duration:** 2.5 Days
 
 #### Learning Objectives
 - Set up professional development environment
@@ -1116,7 +1116,7 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ---
 
 ### Phase 2: Store Management Module (CRUD Operations)
-**Duration:** 1.5 Weeks
+**Duration:** 7.5 Days
 
 #### Learning Objectives
 - Implement complete CRUD functionality
@@ -1160,7 +1160,7 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ---
 
 ### Phase 3: Product Management Module (Practice Assignment)
-**Duration:** 1 Week
+**Duration:** 5 Days
 
 #### Learning Objectives
 - Independent implementation
@@ -1192,7 +1192,7 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ---
 
 ### Phase 4: Branch Management (Master-Detail Complexity)
-**Duration:** 1.5 Weeks
+**Duration:** 7.5 Days
 
 #### Learning Objectives
 - Implement complex master-detail relationships
@@ -1231,7 +1231,7 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ---
 
 ### Phase 5: Sales and Transactions Module
-**Duration:** 1.5 Weeks
+**Duration:** 7.5 Days
 
 #### Implementation Tasks (Student-Designed)
 
@@ -1259,7 +1259,7 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ---
 
 ### Phase 6: Advanced Features and Polish
-**Duration:** 1 Week
+**Duration:** 5 Days
 
 #### Implementation Tasks
 
@@ -1285,7 +1285,7 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ---
 
 ### Phase 7: Deployment and Presentation
-**Duration:** 0.5 Week
+**Duration:** 2.5 Days
 
 #### Tasks
 
