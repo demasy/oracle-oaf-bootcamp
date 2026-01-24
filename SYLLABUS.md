@@ -5,11 +5,9 @@
 > - **[INSTRUCTOR_SYLLABUS.md](INSTRUCTOR_SYLLABUS.md)** - Detailed teaching guide for instructors
 > - **[PROJECT_LEVEL_101.md](PROJECT_LEVEL_101.md)** - Level 101 Capstone Project guide
 
----
 
 # Detailed Syllabus by Level
 
----
 
 ## 🎓 Level 101: Oracle OAF Building BootCamp (Beginner)
 
@@ -27,7 +25,6 @@ Upon completion of Level 101, students will be able to:
 - **LO1.5:** Deploy OAF applications to Oracle E-Business Suite
 - **LO1.6:** Debug and test basic OAF applications
 
----
 
 ## [1] BootCamp Orientation & Your Success Path
 **Duration:** 2.5 Days | **Bloom's Level:** Remember
@@ -47,7 +44,6 @@ Upon completion of Level 101, students will be able to:
 | 1.3 | Building Your Learning Community | Video | ✓ | Guide | Study groups, code review, forums, peer learning |
 | 1.4 | Setting Goals & Success Strategies | Workshop | ✓ | Template | SMART goals, time management, growth mindset |
 
----
 
 ## [2] OAF Foundations - Architecture & Design Patterns
 **Duration:** 5 Days | **Bloom's Level:** Remember, Understand
@@ -71,7 +67,6 @@ Upon completion of Level 101, students will be able to:
 | 2.6 | OAF Architecture Deep Dive: BC4J and UIX | Video | ✓ | Architecture Guide | BC4J, UIX, lifecycle, metadata repository |
 | 2.7 | Page Anatomy: Understanding OAF Components | Video | ✓ | Reference Poster | AM, VO, EO, Pages, Regions, Controllers |
 
----
 
 ## [3] Development Environment Setup & Your First Page
 **Duration:** 5 Days | **Bloom's Level:** Apply
@@ -96,7 +91,6 @@ Upon completion of Level 101, students will be able to:
 | 3.7 | Project Structure Best Practices | Video | ✓ | Template | Workspace organization, naming, version control |
 | 3.8 | Database Connectivity Essentials | Video | ✓ | Connection Guide | Connection setup, pooling, multi-environment |
 
----
 
 ## [4] The Model Layer - Business Logic with BC4J
 **Duration:** 7.5 Days | **Bloom's Level:** Apply, Analyze
@@ -125,7 +119,6 @@ Upon completion of Level 101, students will be able to:
 | 4.10 | Advanced BC4J: View Links & Associations | Video | ✓ | Reference | Master-detail, FK relationships, domains |
 | 4.11 | Database Interactions: Transactions & Pooling | Video | ✓ | Best Practices | Connection pooling, commits, locking, tuning |
 
----
 
 ## [5] The View Layer - Building Modern User Interfaces
 **Duration:** 7.5 Days | **Bloom's Level:** Apply, Analyze
@@ -153,7 +146,6 @@ Upon completion of Level 101, students will be able to:
 | 5.8 | Partial Page Rendering (PPR): Dynamic UI | Lab | ✓ | PPR Tutorial | AJAX in OAF, PPR events, dynamic updates |
 | 5.9 | Navigation: Breadcrumbs & Menus | Video | ✓ | Nav Guide | Breadcrumb configuration, menu integration |
 
----
 
 ## [6] The Controller Layer - Handling User Events
 **Duration:** 5 Days | **Bloom's Level:** Apply, Analyze
@@ -181,7 +173,6 @@ Upon completion of Level 101, students will be able to:
 | 6.8 | Transaction Parameters: Task Flow Scope | Lab | ✓ | Tutorial | Multi-page flow, retention, cleanup |
 | 6.9 | Session Parameters: User Session Management | Lab | ✓ | Tutorial | Session scope, persistence, memory, best practices |
 
----
 
 ## [6B] Master-Detail Relationships - Hierarchical Data
 **Duration:** 2.5 Days | **Bloom's Level:** Apply
@@ -199,7 +190,6 @@ Upon completion of Level 101, students will be able to:
 | 6B.1 | Master-Detail Pattern: View Links Explained | Video | ✓ | Guide | Parent-child relationships, View Links, use cases |
 | 6B.2 | Building Master-Detail User Interfaces | Lab | ✓ | Tutorial | Region configuration, synchronization, cascading |
 
----
 
 ## [7] Error Handling & Debugging Excellence
 **Duration:** 2.5 Days | **Bloom's Level:** Apply, Analyze
@@ -221,7 +211,6 @@ Upon completion of Level 101, students will be able to:
 | 7.3 | Debugging Toolkit: Console & Logging | Video | ✓ | Debug Guide | Console output, log files, diagnostic logging |
 | 7.4 | JDeveloper Debugger: Step-Through Analysis | Lab | ✓ | Debug Tutorial | Breakpoints, step-through, variables, remote |
 
----
 
 ## [8] Security Implementation - Protecting Your Application
 **Duration:** 2.5 Days | **Bloom's Level:** Understand, Apply
@@ -242,7 +231,6 @@ Upon completion of Level 101, students will be able to:
 | 8.2 | Function Security: Controlling Page Access | Lab | ✓ | Tutorial | Function registration, menu setup, responsibilities |
 | 8.3 | Data Security: Row-Level Protection | Video | ✓ | Best Practices | Multi-Org, row-level security, VPD, filtering |
 
----
 
 ## [9] Development Standards and Best Practices
 **Duration:** 2.5 Days | **Bloom's Level:** Understand, Apply
@@ -268,7 +256,6 @@ Upon completion of Level 101, students will be able to:
 | 9.8 | Extensions | Video | ✓ | Best Practices | Extending Oracle pages, custom extensions, upgrade-safe mods |
 | 9.9 | Common Page Use Cases | Video | ✓ | Patterns | Search pages, Create/Update pages, Detail/drill-down, List pages |
 
----
 
 ## [10] Deploying OA Framework Applications
 **Duration:** 2.5 Days | **Bloom's Level:** Apply
@@ -288,7 +275,6 @@ Upon completion of Level 101, students will be able to:
 | 10.3 | Deploy Your OAF Application on R12.2.x | Lab | ✓ | Tutorial | Deployment differences, dual file system, ADOP, online patching |
 | 10.4 | Post-Deployment Tasks | Lab | ✓ | Guide | Function registration, menu setup, responsibility assignment, testing |
 
----
 
 ### Level 101 Final Assessment (Scaffolded Project)
 
@@ -546,7 +532,6 @@ WebUI Package: oracle.apps.xx.jobmgmt.webui
 
 **Note:** This is a scaffolded project with gradual release of responsibility. Use the supports provided in each phase, but challenge yourself to work more independently as you progress!
 
----
 
 ## 🚀 Level 102: Oracle OAF Building BootCamp (Advanced)
 
@@ -569,7 +554,6 @@ Upon completion of Level 102, students will be able to:
 - **LO2.7:** Create dynamic UI components programmatically
 - **LO2.8:** Optimize performance and implement advanced debugging
 
----
 
 ## [11] Advanced Model Implementation
 **Duration:** 2.5 Days | **Bloom's Level:** Apply, Create
@@ -586,7 +570,6 @@ Upon completion of Level 102, students will be able to:
 | 11.1 | Creating Dynamic View Objects Programmatically | Lab | ✓ | Tutorial | ViewObjectImpl methods, dynamic queries, adding to AM, use cases |
 | 11.2 | Adding Attributes to View Objects Programmatically | Lab | ✓ | Examples | AttributeDef creation, data types, calculated & transient attributes |
 
----
 
 ## [12] Server-Side Features
 **Duration:** 5 Days | **Bloom's Level:** Apply, Create
@@ -605,7 +588,6 @@ Upon completion of Level 102, students will be able to:
 | 12.2 | Calling PL/SQL Functions and Procedures | Lab | ✓ | Examples | CallableStatement usage, IN/OUT parameters, function returns, error handling |
 | 12.3 | Best Practices | Video | ✓ | Best Practices | PL/SQL vs Java, performance considerations, transaction management |
 
----
 
 ## [13] Advanced View Components
 **Duration:** 10 Days | **Bloom's Level:** Apply, Create
@@ -639,7 +621,6 @@ Upon completion of Level 102, students will be able to:
 | 13.15 | Launching Oracle Forms from OAF | Lab | ✓ | Tutorial | Form function call, parameter passing, integration patterns |
 | 13.16 | Launching OAF Pages from Oracle Forms | Lab | ✓ | Guide | ICX integration, URL construction, SSO considerations |
 
----
 
 ## [14] Advanced Controller and Programmatic UI
 **Duration:** 5 Days | **Bloom's Level:** Create
@@ -662,7 +643,6 @@ Upon completion of Level 102, students will be able to:
 | 14.6 | Using JavaScript in OA Framework | Lab | ✓ | Guide | Client-side validation, UI enhancements, calling Java, security |
 | 14.7 | Implementing Read-Only Page | Lab | ✓ | Tutorial | Disabling inputs, visual indicators, conditional read-only mode |
 
----
 
 ## [15] Data Manipulation and Validation
 **Duration:** 2.5 Days | **Bloom's Level:** Apply
@@ -681,7 +661,6 @@ Upon completion of Level 102, students will be able to:
 | 15.3 | Data Validations | Lab | ✓ | Guide | Field-level validation, cross-field validation, business rule validation |
 | 15.4 | Implementing Validation Using Entity Expert | Lab | ✓ | Tutorial | Entity Expert pattern, reusable validation, complex business rules, messages |
 
----
 
 ## [16] Advanced Features and Integrations
 **Duration:** 5 Days | **Bloom's Level:** Apply, Create
@@ -707,7 +686,6 @@ Upon completion of Level 102, students will be able to:
 | 16.8 | Handling Browser Back Button | Lab | ✓ | Guide | Back button issues, prevention techniques, transaction integrity |
 | 16.9 | Workflow in OA Framework | Lab | ✓ | Tutorial | Launching workflow, passing parameters, monitoring, embedding OAF in notification |
 
----
 
 ## [17] Advanced Debugging and Error Handling
 **Duration:** 2.5 Days | **Bloom's Level:** Analyze, Evaluate
@@ -726,7 +704,6 @@ Upon completion of Level 102, students will be able to:
 | 17.2 | Raising Bundle/Multiple Error Messages | Lab | ✓ | Examples | Message bundles, multiple validation errors, user-friendly messages, i18n |
 | 17.3 | Advanced Debugging Techniques | Lab | ✓ | Guide | Remote debugging, production debugging, log analysis, performance profiling |
 
----
 
 ### Level 102 Projects
 
@@ -762,7 +739,6 @@ Upon completion of Level 102, students will be able to:
 - User guide
 - Test results
 
----
 
 ### Level 102 Final Assessment
 
@@ -787,7 +763,6 @@ Upon completion of Level 102, students will be able to:
 - Documentation (10%)
 - Innovation and extras (5%)
 
----
 
 ## 🥷 Level 103: Oracle OAF Building BootCamp (Ninja)
 
@@ -809,7 +784,6 @@ Upon completion of Level 103, students will be able to:
 - **LO3.6:** Lead OAF development projects
 - **LO3.7:** Mentor junior developers
 
----
 
 ### Capstone Project 101: Complete Point-Of-Sale System
 
@@ -820,7 +794,6 @@ Upon completion of Level 103, students will be able to:
 
 Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Application Framework. This project synthesizes all concepts from Levels 101 and 102.
 
----
 
 ### Phase 1: Project Setup and Planning
 **Duration:** 2.5 Days
@@ -867,7 +840,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Database schema installed
 - Project plan document
 
----
 
 ### Phase 2: Store Management Module (CRUD Operations)
 **Duration:** 7.5 Days
@@ -911,7 +883,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Concurrent update handling
 - Change tracking
 
----
 
 ### Phase 3: Product Management Module (Practice Assignment)
 **Duration:** 5 Days
@@ -943,7 +914,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Alternative approaches
 - Lessons learned
 
----
 
 ### Phase 4: Branch Management (Master-Detail Complexity)
 **Duration:** 7.5 Days
@@ -982,7 +952,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Transfer functionality
 - Real-time updates with PPR
 
----
 
 ### Phase 5: Sales and Transactions Module
 **Duration:** 7.5 Days
@@ -1010,7 +979,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Charts and graphs
 - Export functionality
 
----
 
 ### Phase 6: Advanced Features and Polish
 **Duration:** 5 Days
@@ -1036,7 +1004,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Production monitoring
 - User help system
 
----
 
 ### Phase 7: Deployment and Presentation
 **Duration:** 2.5 Days
@@ -1060,7 +1027,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Presentation to stakeholders
 - Q&A handling
 
----
 
 ### Level 103 Final Assessment
 
@@ -1102,7 +1068,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Complete documentation
 - Demonstrates mastery
 
----
 
 ## 📚 Customization Track (Optional)
 
@@ -1129,7 +1094,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Best Practices for Customizations
 - Upgrade Considerations
 
----
 
 ## Level 202: Oracle OAF Customizing BootCamp (Advanced)
 
@@ -1152,7 +1116,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Migration and Deployment
 - Real-world Customization Projects
 
----
 
 ## 📊 Scaffolding Summary by Level
 
@@ -1214,7 +1177,6 @@ Level 103: ████░░░░░░░░░░░░░░░░  20% Sup
 - Design architecture without guidance
 - Mentor Level 101 students
 
----
 
 ## 🎯 Learning Support and Resources
 
@@ -1243,7 +1205,6 @@ Level 103: ████░░░░░░░░░░░░░░░░  20% Sup
 - Career advice
 - Portfolio development
 
----
 
 ## 📊 Progress Tracking
 
@@ -1265,7 +1226,6 @@ Level 103: ████░░░░░░░░░░░░░░░░  20% Sup
 - 🏅 Ninja Certified
 - 🏅 Project Completed
 
----
 
 ## 🎓 Certification
 
@@ -1290,7 +1250,6 @@ Level 103: ████░░░░░░░░░░░░░░░░  20% Sup
 - Professional presentation
 - Demonstrate mastery
 
----
 
 ## 📋 Course Policies
 
@@ -1316,7 +1275,6 @@ Level 103: ████░░░░░░░░░░░░░░░░  20% Sup
 - Late submission policy: 10% penalty per week
 - Code must be your own work
 
----
 
 ## 🔄 Continuous Improvement
 
@@ -1334,7 +1292,6 @@ This syllabus is a living document and will be updated based on:
 - Alumni feedback
 - Industry advisory board
 
----
 
 ## 📞 Contact and Support
 
@@ -1353,7 +1310,6 @@ This syllabus is a living document and will be updated based on:
 - Enrollment questions
 - Certificate requests
 
----
 
 ## 🚀 Getting Started
 
@@ -1376,11 +1332,9 @@ This syllabus is a living document and will be updated based on:
 - **Stay consistent** - Regular practice beats cramming
 - **Enjoy the journey** - Have fun building!
 
----
 
 **Welcome to the Oracle OAF BootCamp!**  
 **Let's build something amazing together! 🚀**
 
----
 
 *Version 1.0 | Last Updated: January 24, 2026 | Demasy Labs*
