@@ -1,6 +1,10 @@
 # Oracle Application Framework (OAF) BootCamp
 ## Complete Course Syllabus
 
+> **📚 Companion Documents:**
+> - **[LABS.md](LABS.md)** - All hands-on labs, activities, and exercises
+> - **[INSTRUCTOR_SYLLABUS.md](INSTRUCTOR_SYLLABUS.md)** - Detailed teaching guide for instructors
+
 ---
 
 ## Course Information
@@ -114,7 +118,7 @@ By the end of this bootcamp, students will be able to:
 - **Mini-Projects** - Section-based implementations
 
 ### Summative Assessments (Mastery Demonstration)
-- **Level 101 Project:** Hello World + Basic CRUD Operations (25%)
+- **Level 101 Project:** Jobs & Positions Management System - Master-Detail Application (25%)
 - **Level 102 Project:** Advanced Features Implementation (30%)
 - **Level 103 Capstone:** Complete Point-of-Sale System (45%)
 
@@ -337,12 +341,6 @@ Upon completion of Level 101, students will be able to:
 | 1.3 | Building Your Learning Community | Video | ✓ | Guide | Study groups, code review, forums, peer learning |
 | 1.4 | Setting Goals & Success Strategies | Workshop | ✓ | Template | SMART goals, time management, growth mindset |
 
-#### Activities
-- ✏️ Complete pre-course survey
-- 📋 Review course syllabus
-- 👥 Introduce yourself to peers
-- 🎯 Set personal learning goals
-
 #### Assessment
 - Self-assessment: Prior knowledge inventory
 
@@ -411,6 +409,16 @@ Upon completion of Level 101, students will be able to:
 - Request/Response lifecycle visualization
 - Component interaction and communication patterns
 - Metadata repository and dynamic behavior
+- JDR (Java Data Repository) tables: Where OAF metadata is stored
+  - JDR_PATHS: Document paths and package hierarchy (Primary Key: PATH_DOCID)
+  - JDR_COMPONENTS: Component definitions - regions, items (Primary Key: COMP_DOCID, COMP_SEQ)
+  - JDR_ATTRIBUTES: Component properties and configurations (Primary Key: ATT_COMP_DOCID, ATT_COMP_SEQ, ATT_SEQ)
+  - JDR_ATTRIBUTES_TRANS: Multi-language support for attributes (Primary Key: ATL_COMP_DOCID, ATL_LANG)
+- JDR tables: Where OAF metadata is stored
+  - JDR_PATHS: Document paths and package hierarchy
+  - JDR_COMPONENTS: Component definitions (regions, items)
+  - JDR_ATTRIBUTES: Component properties and configurations
+  - JDR_ATTRIBUTES_TRANS: Multi-language support
 
 **2.7 Page Anatomy: Understanding OAF Components**
 - Application Module (AM): Your business logic container
@@ -419,12 +427,6 @@ Upon completion of Level 101, students will be able to:
 - Pages and Regions: UI structure and hierarchy
 - Controllers (CO): Event handling and navigation
 - How components collaborate in a running application
-
-#### Activities
-- 📊 Create comparison chart: Forms vs. OAF
-- 🎨 Diagram MVC pattern for sample scenario
-- 🔍 Explore existing OAF pages in E-Business Suite
-- 💬 Discussion: When to use OAF?
 
 #### Assessment
 - ✅ Quiz: OAF terminology and concepts (10 questions)
@@ -455,101 +457,6 @@ Upon completion of Level 101, students will be able to:
 | 3.6 | Milestone Achievement: Building "Hello World!" | Lab | ✓ | Step-by-step | First page, AM, layout, components, run |
 | 3.7 | Project Structure Best Practices | Video | ✓ | Template | Workspace organization, naming, version control |
 | 3.8 | Database Connectivity Essentials | Video | ✓ | Connection Guide | Connection setup, pooling, multi-environment |
-
-#### Detailed Lecture Content
-
-**3.1 JDeveloper IDE: Your Development Command Center**
-- Oracle's integrated development environment for OAF
-- Workspace and project organization strategies
-- Understanding the IDE layout and key components
-- Essential panels: Navigator, Editor, Properties, Structure
-- Productivity features that accelerate development
-
-**3.2 Acquiring OA Extension from Oracle Support**
-- Navigating My Oracle Support (MOS) portal
-- Identifying correct version for your EBS release
-- Download process and file verification
-- Version compatibility matrix and dependencies
-- License and access considerations
-
-**3.3 Environment Configuration: Step-by-Step Setup**
-- Pre-installation requirements and system check
-- JDeveloper installation process (all platforms)
-- Applying OA Extension patch correctly
-- Essential configuration and preferences
-- Environment variables and system settings
-- DBC file setup and configuration
-
-**3.4 JDeveloper Productivity: Tools & Shortcuts**
-- Complete interface tour and customization
-- Essential keyboard shortcuts for efficiency
-- Toolbars, menus, and quick access features
-- Code templates and snippets
-- Workspace layout optimization
-- Time-saving tips from experienced developers
-
-**3.5 Essential Configuration: DBC Files & Connections**
-- Understanding DBC files and their role
-- Initial configuration checklist
-- Database connection setup and validation
-- Connection parameters explained
-- Troubleshooting connection issues
-- Managing multiple environment connections
-
-**3.6 Milestone Achievement: Building "Hello World!"**
-- Your first OAF page: Complete walkthrough
-- Creating workspace and project structure
-- Building Application Module (AM)
-- Designing simple page layout
-- Adding UI components
-- Running in embedded OC4J server
-- Celebrating your first success
-
-**3.7 Project Structure Best Practices**
-- Professional workspace organization
-- Package naming conventions (Oracle standards)
-- Separating POC from production code
-- Project folder hierarchy
-- Version control integration preparation
-
-**3.8 Database Connectivity Essentials**
-- Creating and testing database connections
-- Connection pooling and management
-- Multiple environment setup (DEV/TEST/PROD)
-- Security best practices
-- Troubleshooting connectivity problems
-
-#### Activities (Scaffold Level: Maximum)
-
-**"I Do" - Instructor Demonstration:**
-- 📺 Watch: Complete environment setup walkthrough
-- 📺 Watch: "Hello World" page creation live demo
-- 📄 Review: Annotated screenshots with explanations
-
-**"We Do" - Guided Practice:**
-- 🔧 **Lab 1:** Install and configure development environment (step-by-step guide provided)
-  - ✅ Checkpoint 1: JDeveloper installed
-  - ✅ Checkpoint 2: OA Extension configured
-  - ✅ Checkpoint 3: Connection successful
-- 🔧 **Lab 2:** Create "Hello World" page (instructor-guided with pauses)
-  - ✅ Checkpoint 1: Workspace created
-  - ✅ Checkpoint 2: Page created
-  - ✅ Checkpoint 3: Page runs successfully
-
-**"You Do" - Independent Practice:**
-- 🔧 **Lab 3:** Create workspace and project structure (instructions with optional hints)
-  - Hint 1 available if stuck on naming
-  - Hint 2 available if stuck on structure
-  - Solution available after 30 minutes or completion
-- 📸 Screenshot: Your first OAF page running
-- 🐛 Troubleshooting: Common setup errors (reference guide provided)
-
-**Scaffolding Tools Provided:**
-- ✔️ Complete installation checklist
-- ✔️ Configuration template
-- ✔️ Troubleshooting decision tree
-- ✔️ Visual reference guide
-- ✔️ Video tutorials (rewatchable)
 
 #### Assessment
 - ✅ **Practical Exam:** Successfully run "Hello World" page
@@ -673,44 +580,6 @@ Upon completion of Level 101, students will be able to:
 - Pessimistic vs. optimistic locking strategies
 - Performance tuning at Model layer
 
-#### Activities (Scaffold Level: High → Moderate)
-
-**"I Do" - Instructor Demonstration:**
-- 📺 Live Demo: Creating complete BC4J model
-- 📺 Watch: Testing with BC4J tester walkthrough
-- 📄 Study: Annotated code with explanation comments
-
-**"We Do" - Guided Practice:**
-- 🔧 **Lab 4:** Create Application Module (step-by-step with instructor)
-  - ✅ Checkpoint: AM created and configured
-- 🔧 **Lab 5:** Create Entity Object for EMPLOYEES table (guided)
-  - ✅ Checkpoint: EO attributes mapped
-  - ✅ Checkpoint: Validation rules added
-- 🔧 **Lab 6:** Create updatable View Object (with template)
-  - ✅ Checkpoint: VO based on EO
-  - ✅ Checkpoint: Query tested
-
-**"You Do" - Independent Practice:**
-- 🔧 **Lab 7:** Create read-only View Object with custom query (high-level instructions)
-  - 💡 Hint available: SQL syntax reference
-  - 💡 Hint available: Attribute definition
-- 🔧 **Lab 8:** Test all components using BC4J tester (checklist provided)
-  - Self-validate against testing checklist
-- 📊 **Exercise:** Design BC4J model for a simple scenario (requirements only)
-  - Scaffold option: Architecture diagram template
-  - Challenge option: No template
-- 🐛 **Debugging:** Fix 3 broken EO/VO examples (decreasing hints)
-  - Problem 1: Hints available
-  - Problem 2: Minimal hints
-  - Problem 3: No hints
-
-**Scaffolding Tools Provided:**
-- ✔️ BC4J creation wizard guide
-- ✔️ EO/VO template examples
-- ✔️ Testing checklist
-- ✔️ Common errors reference
-- ⚠️ Code solutions available after attempt
-
 #### Assessment
 - ✅ **Quiz:** BC4J concepts (15 questions)
 - 🔬 **Practical:** Create complete BC4J model for given scenario
@@ -744,252 +613,6 @@ Upon completion of Level 101, students will be able to:
 | 5.7 | Styling & Customization: CSS & Attribute Sets | Video | ✓ | Style Guide | CSS styling, attribute sets, theming |
 | 5.8 | Partial Page Rendering (PPR): Dynamic UI | Lab | ✓ | PPR Tutorial | AJAX in OAF, PPR events, dynamic updates |
 | 5.9 | Navigation: Breadcrumbs & Menus | Video | ✓ | Nav Guide | Breadcrumb configuration, menu integration |
-
-#### Detailed Lecture Content
-
-**5.1 UIX Framework: Component-Based UI Architecture**
-- Understanding UIX (User Interface XML) framework
-- Component-based design principles
-- Metadata-driven UI development
-- Component hierarchy and parent-child relationships
-- Region types and their purposes
-
-**5.2 Organizing UI Components: Workspace Structure**
-- Organizing UI components
-- Naming conventions
-- Package structure
-- Reusable components
-
-**5.3 Pages and Regions: Fundamentals**
-- Page structure
-- Region types and usage
-- Layout hierarchy
-- Container regions
-
-**5.4 Standard Web Widgets: Input & Display Components**
-- Text Field (basic text display)
-- Text Input (user data entry)
-- Text Area (multi-line input)
-- Data Entry Text Field (formatted input)
-- Display-Only Text Field (read-only views)
-- Styled Text (rich formatting)
-- Check Box (boolean selection)
-- Radio Group / Buttons (single choice)
-- Message Choice (dropdown selection)
-- Poplist (static dropdown lists)
-- Dynamic Poplists (database-driven options)
-- Submit Button (action buttons)
-- Image Item (visual elements)
-
-**5.5 List of Values (LOV): Search & Select**
-- Standard LOV (search & select functionality)
-- LOV configuration
-- Search capabilities
-- Return values
-- Dependent LOV (cascading selections)
-- Parent-child relationships
-- Parameter passing
-- External LOV (reusable components)
-- LOV from different AM
-- Configuration
-
-**5.6 Page Layouts & Advanced Regions**
-- Message Component Layout (auto-arrangement)
-- Header Region (page branding & actions)
-- Row Layout Region (horizontal components)
-- Default Double Column (two-column forms)
-- Default Single Column (single-column forms)
-- Page Button Bar (standard action area)
-- Query Region (search functionality)
-- Query criteria
-- Results display
-
-**5.7 Styling & Customization: CSS & Attribute Sets**
-- CSS Styles (custom appearance)
-- Applying styles
-- Custom CSS
-- Style inheritance
-- Attribute Sets (reusable properties)
-- Standard attributes
-- Custom attribute sets
-
-**5.8 Partial Page Rendering (PPR): Dynamic UI**
-- AJAX in OAF
-- PPR events and targets
-- Improving user experience
-- Performance considerations
-- Dynamic field updates
-- Refresh patterns
-
-**5.9 Navigation: Breadcrumbs & Menus**
-- Breadcrumb Navigation (user orientation)
-- Navigation trail
-- Configuration
-- Programmatic breadcrumbs
-- Menu integration
-
-**5.2 Workspaces and Projects Structure**
-- Organizing UI components
-- Naming conventions
-- Package structure
-- Reusable components
-
-**5.3 Pages and Regions Fundamentals**
-- Page structure
-- Region types and usage
-- Layout hierarchy
-- Container regions
-
-#### Sub-section: 5.4 Implementing Standard Web Widgets
-
-**5.4.1 Text Field**
-- Basic text display
-- Properties and attributes
-- Data binding
-
-**5.4.2 Text Input**
-- User input fields
-- Maximum length
-- Input validation
-
-**5.4.3 Text Area**
-- Multi-line input
-- Rows and columns
-- Character limits
-
-**5.4.4 Data Entry Text Field**
-- Required fields
-- Format masks
-- Data types (number, date, text)
-
-**5.4.5 Display-Only Text Field**
-- Read-only presentation
-- Conditional display
-- Styling options
-
-**5.4.6 Styled Text**
-- HTML formatting
-- Rich text display
-- Custom styling
-
-**5.4.7 Check Box**
-- Boolean input
-- Checked/unchecked values
-- Event handling
-
-**5.4.8 Radio Group / Buttons**
-- Single selection
-- Option lists
-- Dynamic radio groups
-
-**5.4.9 Message Choice**
-- Dropdown selection
-- Static vs. dynamic
-- LOV integration
-
-**5.4.10 Poplist**
-- Static poplists
-- Binding to View Object
-- Default values
-
-**5.4.11 Dynamic Poplists**
-- Database-driven options
-- Dependent poplists
-- Programmatic population
-
-**5.4.12 Submit Button**
-- Action buttons
-- Event handling
-- Navigation
-
-**5.4.13 Image Item**
-- Displaying images
-- Image sources
-- Clickable images
-
-#### Sub-section: 5.5 Implementing List of Values (LOV)
-
-**5.5.1 Standard LOV**
-- LOV configuration
-- Search capabilities
-- Return values
-
-**5.5.2 Dependent LOV**
-- Parent-child relationships
-- Cascading LOVs
-- Parameter passing
-
-**5.5.3 External LOV**
-- LOV from different AM
-- Reusable LOVs
-- Configuration
-
-#### Sub-section: 5.6 Implementing Pages and Regions
-
-**5.6.1 Message Component Layout**
-- Automatic layout
-- Component arrangement
-- Properties
-
-**5.6.2 Header Region**
-- Page headers
-- Titles and instructions
-- Action buttons
-
-**5.6.3 Row Layout Region**
-- Horizontal arrangement
-- Multiple columns
-- Spacing
-
-**5.6.4 Default Double Column**
-- Two-column forms
-- Label positioning
-- Alignment
-
-**5.6.5 Default Single Column**
-- Single-column forms
-- Vertical layout
-- Field arrangement
-
-**5.6.6 Page Button Bar**
-- Standard button placement
-- Action buttons
-- Navigation buttons
-
-**5.6.7 Query Region**
-- Search functionality
-- Query criteria
-- Results display
-
-**5.6.8 CSS Styles**
-- Applying styles
-- Custom CSS
-- Style inheritance
-
-**5.6.9 Attribute Sets**
-- Reusable properties
-- Standard attributes
-- Custom attribute sets
-
-**5.6.10 Using Partial Page Rendering (PPR)**
-- AJAX in OAF
-- PPR events and targets
-- Improving user experience
-- Performance considerations
-
-**5.6.11 Implementing Breadcrumbs**
-- Navigation trail
-- Configuration
-- Programmatic breadcrumbs
-
-#### Activities
-- 🔧 **Lab 9:** Create form with all standard widgets
-- 🔧 **Lab 10:** Implement LOV with search functionality
-- 🔧 **Lab 11:** Build query region with results
-- 🔧 **Lab 12:** Implement PPR for dynamic field updates
-- 🔧 **Lab 13:** Create multi-region page with proper layout
-- 🎨 **Design Exercise:** UI mockup to OAF implementation
-- 🐛 **Debugging:** UI rendering issues
 
 #### Assessment
 - ✅ **Quiz:** View components and properties (20 questions)
@@ -1025,47 +648,6 @@ Upon completion of Level 101, students will be able to:
 | 6.8 | Transaction Parameters: Task Flow Scope | Lab | ✓ | Tutorial | Multi-page flow, retention, cleanup |
 | 6.9 | Session Parameters: User Session Management | Lab | ✓ | Tutorial | Session scope, persistence, memory, best practices |
 
-#### Activities (Scaffold Level: Moderate)
-
-**"I Do" - Instructor Demonstration:**
-- 📺 Live Coding: Complete controller implementation
-- 📺 Watch: Debugging controller execution flow
-- 📄 Study: Controller pattern library with examples
-
-**"We Do" - Guided Practice:**
-- 🔧 **Lab 14:** Create controller with button click handler (paired work)
-  - Work with partner, instructor circulates
-  - ✅ Checkpoint: processFormRequest implemented
-  - ✅ Checkpoint: Navigation working
-- 🔧 **Lab 15:** Implement page navigation with parameters (semi-guided)
-  - Framework provided, implementation independent
-  - ✅ Checkpoint: Parameters passed correctly
-
-**"You Do" - Independent Practice:**
-- 🔧 **Lab 16:** Build multi-page flow with data passing (minimal guidance)
-  - Requirements and architecture diagram only
-  - 💡 Optional: Parameter types reference
-  - Self-test against acceptance criteria
-- 🔧 **Lab 17:** Implement form validation in controller (independent)
-  - Validation requirements listed
-  - Choose your approach
-  - Peer review before submission
-- 💻 **Coding Exercise:** Implement 5 common controller patterns
-  - Pattern 1: Fully guided example
-  - Pattern 2-3: Partial guidance
-  - Pattern 4-5: Independent implementation
-- 🐛 **Debugging Challenge:** Fix controller bugs (minimal scaffolding)
-  - Bug descriptions only
-  - Use debugging framework learned
-  - Document your debugging process
-
-**Scaffolding Tools Provided:**
-- ✔️ Controller method reference card
-- ✔️ Parameter passing decision tree
-- ✔️ Common patterns library
-- ⚠️ Hints available on request (try first!)
-- ⚠️ Solutions after completion only
-
 #### Assessment
 - ✅ **Quiz:** Controller concepts (15 questions)
 - 🔬 **Practical:** Implement complete controller logic for scenario
@@ -1089,10 +671,6 @@ Upon completion of Level 101, students will be able to:
 | :- | :-------- | :-: | :-: | :-: | :---- |
 | 6B.1 | Master-Detail Pattern: View Links Explained | Video | ✓ | Guide | Parent-child relationships, View Links, use cases |
 | 6B.2 | Building Master-Detail User Interfaces | Lab | ✓ | Tutorial | Region configuration, synchronization, cascading |
-
-#### Activities
-- 🔧 **Lab 18:** Create View Link
-- 🔧 **Lab 19:** Implement master-detail page (Departments → Employees)
 
 #### Assessment
 - 🔬 **Practical:** Build master-detail for given scenario
@@ -1119,12 +697,6 @@ Upon completion of Level 101, students will be able to:
 | 7.3 | Debugging Toolkit: Console & Logging | Video | ✓ | Debug Guide | Console output, log files, diagnostic logging |
 | 7.4 | JDeveloper Debugger: Step-Through Analysis | Lab | ✓ | Debug Tutorial | Breakpoints, step-through, variables, remote |
 
-#### Activities
-- 🔧 **Lab 20:** Implement exception handling
-- 🔧 **Lab 21:** Debug existing page with errors
-- 🐛 **Exercise:** Fix 5 buggy code samples
-- 📋 **Checklist:** Common errors and solutions
-
 #### Assessment
 - 🔬 **Practical:** Debug and fix provided broken page
 - 📝 **Reflection:** Error handling best practices
@@ -1149,11 +721,6 @@ Upon completion of Level 101, students will be able to:
 | 8.1 | OAF Security Model: Authentication & Authorization | Video | ✓ | Security Guide | Authentication, authorization, function security |
 | 8.2 | Function Security: Controlling Page Access | Lab | ✓ | Tutorial | Function registration, menu setup, responsibilities |
 | 8.3 | Data Security: Row-Level Protection | Video | ✓ | Best Practices | Multi-Org, row-level security, VPD, filtering |
-
-#### Activities
-- 🔧 **Lab 22:** Register function and add to menu
-- 🔧 **Lab 23:** Test security with different users
-- 📋 **Exercise:** Security checklist for your pages
 
 #### Assessment
 - ✅ **Quiz:** Security concepts (10 questions)
@@ -1221,12 +788,6 @@ Upon completion of Level 101, students will be able to:
 - Detail/drill-down pages
 - List pages
 
-#### Activities
-- 📋 **Checklist:** Review your code against standards
-- 🔧 **Lab 24:** Export and import page
-- 📝 **Exercise:** Refactor code to meet standards
-- 💬 **Discussion:** Personalizations vs. Extensions
-
 #### Assessment
 - ✅ **Quiz:** Standards and best practices (10 questions)
 - 📊 **Code Review:** Evaluate code quality
@@ -1269,12 +830,6 @@ Upon completion of Level 101, students will be able to:
 - Responsibility assignment
 - Testing in production
 
-#### Activities
-- 🔧 **Lab 25:** Deploy Hello World page to R12
-- 🔧 **Lab 26:** Register and test deployed page
-- 📋 **Checklist:** Deployment verification steps
-- 🐛 **Troubleshooting:** Common deployment issues
-
 #### Assessment
 - 🔬 **Practical:** Complete deployment of your page
 - 📝 **Documentation:** Write deployment instructions
@@ -1284,64 +839,259 @@ Upon completion of Level 101, students will be able to:
 
 ### Level 101 Final Assessment (Scaffolded Project)
 
-**Capstone Project: Employee Management System**
+**Capstone Project: Jobs & Positions Management System**
 
-Build a complete CRUD application for managing employee records with scaffolded support:
+Build a complete master-detail OAF application to manage organizational jobs and positions with scaffolded support.
 
-**Scaffolding Provided:**
-- ✔️ Project starter template (workspace structure)
-- ✔️ Database schema and sample data
-- ✔️ Architecture diagram and design guidance
-- ✔️ Implementation checklist with milestones
-- ✔️ Code review checkpoints (25%, 50%, 75%, 100%)
-- ✔️ Testing template and scenarios
-- ✔️ Deployment checklist
+#### Project Overview
+
+**Business Context:**
+An organization needs to track job titles and the positions available under each job. This is a classic master-detail relationship where:
+- **Master:** Jobs (e.g., "Oracle Technical Consultant", "Oracle Functional Consultant")
+- **Detail:** Positions under each job (e.g., "Junior", "Senior", "Team Leader")
+
+**Database Objects Provided:**
+
+```sql
+-- Tables
+XX_JOBS (job_id, job_name, job_head_count, effective_start_date, effective_end_date, WHO columns)
+XX_POSITIONS (position_id, job_id, position_name, position_head_count, effective_start_date, effective_end_date, WHO columns)
+
+-- Sequences
+XX_JOB_ID_SEQ
+XX_POSITION_ID_SEQ
+
+-- Sample Data Included
+- 2 Jobs: Oracle Technical Consultant, Oracle Functional Consultant
+- 8 Positions: Junior, Experienced, Senior, Team Leader (4 per job)
+```
+
+#### Functional Requirements
+
+**1. Jobs Management Module**
+- **Search Jobs:** Search by job name, effective dates
+- **View Jobs:** Display all jobs in a table with job name, head count, dates
+- **Create Job:** Form to enter new job details with validation
+- **Update Job:** Edit existing job information
+- **Delete Job:** Delete job with referential integrity check (prevent if positions exist)
+
+**2. Positions Management Module (Master-Detail)**
+- **View Positions by Job:** Select a job, see all its positions
+- **Create Position:** Add new position under a job
+- **Update Position:** Edit position details
+- **Delete Position:** Remove position
+
+**3. Business Validations**
+- Effective start date must be before end date
+- Head count must be greater than zero
+- Job name is required and unique
+- Cannot delete job if positions exist (referential integrity)
+- Position head count cannot exceed job head count
+
+#### Technical Requirements
+
+**Model Layer (BC4J):**
+- **Entity Objects:**
+  - `JobEO` based on XX_JOBS table
+  - `PositionEO` based on XX_POSITIONS table
+  - Entity Association between JobEO and PositionEO (FK: job_id)
+- **View Objects:**
+  - `JobVO` (updatable, based on JobEO)
+  - `PositionVO` (updatable, based on PositionEO)
+  - View Link: `JobPositionVL` connecting JobVO to PositionVO
+- **Application Module:**
+  - `JobMgmtAM` containing JobVO and PositionVO instances
+
+**View Layer (UI):**
+- **JobSearchPG:** Search criteria + results table
+- **JobDetailsPG:** Form for create/update job
+- **PositionMaintPG:** Master-detail page showing job and its positions
+
+**Controller Layer:**
+- Event handlers for Search, Create, Update, Delete operations
+- Navigation between pages
+- Parameter passing (job_id)
+
+**Naming Conventions:**
+```
+Package: oracle.apps.xx.jobmgmt
+Server Package: oracle.apps.xx.jobmgmt.server
+  - JobEO, PositionEO
+  - JobVO, PositionVO
+  - JobPositionVL
+  - JobMgmtAM
+WebUI Package: oracle.apps.xx.jobmgmt.webui
+  - JobSearchPG, JobSearchCO
+  - JobDetailsPG, JobDetailsCO
+  - PositionMaintPG, PositionMaintCO
+```
+
+#### Scaffolding Provided
+
+**Maximum Support (60% Guided):**
+- ✔️ Complete DDL and DML scripts (ready to execute)
+- ✔️ Database schema diagram
+- ✔️ Architecture diagram (MVC components)
+- ✔️ Step-by-step implementation guide (20-day schedule)
+- ✔️ Code templates for EO create() methods with sequence generation
+- ✔️ Sample validation code
+- ✔️ Testing checklist with expected results
+- ✔️ Deployment instructions
 
 **Gradual Release Structure:**
 
-**Phase 1: Guided (Week 1)** - Search/Query Page
-- Detailed implementation guide provided
-- Instructor checkpoint after Model creation
-- Guided debugging session
+**Phase 1: Guided (Days 1-8)** - Database & Model Layer
+- **Day 1-2:** Create database objects, load sample data
+  - Scaffold: Complete SQL scripts provided
+  - Checkpoint: Query tables to verify data
+- **Day 3-5:** Create Entity Objects with association
+  - Scaffold: Step-by-step wizard instructions + video
+  - Checkpoint: Test with BC4J tester
+- **Day 6-8:** Create View Objects and View Link
+  - Scaffold: SQL queries provided, wizard guide
+  - Checkpoint: Master-detail query works
 
-**Phase 2: Semi-Guided (Week 2)** - Create/Update Pages
-- High-level requirements only
-- Optional: Review architecture with instructor
-- Peer code review session
+**Phase 2: Semi-Guided (Days 9-14)** - UI & Basic Operations
+- **Day 9-11:** Build JobSearchPG and JobDetailsPG
+  - Scaffold: UI layout diagram, high-level steps
+  - Checkpoint: Pages display correctly
+- **Day 12-14:** Implement Search and Create operations
+  - Scaffold: Controller code patterns, no complete solution
+  - Checkpoint: Can search and create jobs
 
-**Phase 3: Independent (Week 3)** - Delete & Deployment
-- Requirements only
-- Self-directed implementation
-- On-demand help available
+**Phase 3: Independent (Days 15-20)** - Advanced & Deployment
+- **Day 15-17:** Implement Update and Delete
+  - Scaffold: Requirements only, optional hints
+  - Checkpoint: Self-testing against test cases
+- **Day 18-19:** Build PositionMaintPG (Master-Detail)
+  - Scaffold: Architecture guidance only
+  - Checkpoint: Peer code review
+- **Day 20:** Testing, debugging, and deployment
+  - Scaffold: Deployment checklist
+  - Final: Application running in EBS
 
-**Requirements:**
-- Search/Query page with multiple criteria
-- Results table with drill-down
-- Create new employee page
-- Update employee page
-- Delete confirmation
-- Proper error handling
-- Deployed to E-Business Suite
+#### Deliverables
 
-**Deliverables:**
-1. Fully functional application
-2. Source code (exported .jpx)
-3. Deployment instructions
-4. Test cases and results
-5. Reflection document (what scaffolds were most helpful?)
+1. **Source Code:**
+   - Exported JDeveloper project (.jpx file)
+   - All BC4J and WebUI components
 
-**Assessment Rubric:**
-- Functionality: 40%
-- Code Quality: 30%
-- Standards Compliance: 20%
-- Documentation: 10%
+2. **Database Scripts:**
+   - DDL script (if you modified the provided schema)
+   - Your own DML for additional test data
 
-**Success Criteria:**
-- All CRUD operations work correctly
-- No console errors
-- Follows naming conventions
-- Successfully deployed
-- Demonstrates progression from guided to independent work
+3. **Documentation:**
+   - Technical design document (1-2 pages)
+     - Architecture diagram
+     - Component relationships
+     - Design decisions
+   - Deployment guide
+   - Test results (with screenshots)
+
+4. **Reflection Paper (1 page):**
+   - What scaffolds were most helpful?
+   - What did you struggle with?
+   - What would you do differently next time?
+   - How confident are you now vs. at the start?
+
+#### Assessment Rubric
+
+**Functionality (40 points):**
+- [ ] (10 pts) Jobs CRUD operations work correctly
+- [ ] (10 pts) Positions CRUD operations work correctly
+- [ ] (10 pts) Master-detail relationship functions properly (selecting job shows positions)
+- [ ] (5 pts) Search functionality works with multiple criteria
+- [ ] (5 pts) All validations prevent invalid data
+  - Effective dates validation
+  - Head count > 0
+  - Referential integrity (cannot delete job with positions)
+
+**Code Quality (30 points):**
+- [ ] (10 pts) Naming conventions followed (Oracle standards)
+  - Package names: oracle.apps.xx.jobmgmt.server/webui
+  - Component names: JobEO, JobVO, JobSearchPG, JobSearchCO
+- [ ] (10 pts) Proper exception handling and user feedback
+  - OAException used correctly
+  - Meaningful error messages
+  - No generic catch blocks
+- [ ] (5 pts) Code is well-commented (JavaDoc for custom methods)
+- [ ] (5 pts) No hardcoded values (use message dictionary for messages)
+
+**Architecture (20 points):**
+- [ ] (5 pts) Proper EO-VO relationships (EO has validation, VO queries)
+- [ ] (5 pts) Business logic in AM, not in Controller
+- [ ] (5 pts) MVC separation maintained (no database calls in controller)
+- [ ] (5 pts) Proper use of View Links for master-detail
+  - JobPositionVL configured correctly
+  - Detail query filters based on master row
+
+**Documentation (10 points):**
+- [ ] (3 pts) README with setup instructions (how to run the project)
+- [ ] (3 pts) Technical design document (architecture, components)
+- [ ] (2 pts) Test results documented (with screenshots of working features)
+- [ ] (2 pts) Deployment instructions (step-by-step)
+
+**Total: 100 points**
+
+**Grading Scale:**
+- **90-100:** Excellent - All features work, high-quality code, excellent documentation
+- **80-89:** Good - All major features work, good code quality, adequate documentation
+- **70-79:** Satisfactory - Most features work, acceptable code, basic documentation
+- **60-69:** Needs Improvement - Some features work, code issues, minimal documentation
+- **Below 60:** Unsatisfactory - Major functionality missing or not working
+
+#### Success Criteria
+
+**Minimum Requirements to Pass:**
+1. Database tables created and populated
+2. All Entity Objects and View Objects created correctly
+3. At least Jobs search and create work
+4. Application compiles without errors
+5. Basic documentation provided
+
+**Excellence Criteria:**
+1. All functionality works flawlessly
+2. Code follows all Oracle standards
+3. Professional error handling and user messages
+4. Master-detail works perfectly
+5. Comprehensive documentation
+6. Successfully deployed to E-Business Suite
+7. Demonstrates clear progression from guided to independent work
+
+#### Support Resources
+
+**Available Throughout:**
+- Database scripts (DDL/DML)
+- Oracle OAF Developer's Guide
+- JDR metadata reference
+- Course lecture notes and examples
+
+**Phase-Specific:**
+- **Phase 1:** Step-by-step guides, video tutorials, BC4J tester guide
+- **Phase 2:** UI layout patterns, controller templates, code snippets
+- **Phase 3:** On-demand instructor consultation (office hours)
+
+**Community Support:**
+- Discussion forum for questions
+- Peer code review sessions
+- Study group coordination
+
+#### Timeline
+
+**Recommended Schedule: 4 Weeks (20 days)**
+
+- **Week 1 (Days 1-5):** Database + Entity Objects
+- **Week 2 (Days 6-10):** View Objects + Application Module + First UI page
+- **Week 3 (Days 11-15):** Complete CRUD operations
+- **Week 4 (Days 16-20):** Master-Detail + Testing + Deployment
+
+**Checkpoints:**
+- **End of Week 1:** BC4J model tested and working
+- **End of Week 2:** First page (Job Search) working
+- **End of Week 3:** All CRUD operations working
+- **End of Week 4:** Deployed and documented
+
+**Note:** This is a scaffolded project with gradual release of responsibility. Use the supports provided in each phase, but challenge yourself to work more independently as you progress!
 
 ---
 
@@ -1390,30 +1140,6 @@ Upon completion of Level 102, students will be able to:
 - Calculated attributes
 - Transient attributes
 
-#### Activities (Scaffold Level: Moderate)
-
-**"I Do" - Brief Demonstration:**
-- 📺 Concept Demo: Dynamic VO creation (15 min overview)
-- 📄 Reference: Code examples available
-
-**"You Do" - Semi-Independent Work:**
-- 🔧 **Lab 27:** Create VO dynamically based on user input (requirements + architecture only)
-  - 💡 Reference: ViewObjectImpl API documentation
-  - Milestone checkpoint at 50%
-- 🔧 **Lab 28:** Add calculated attributes at runtime (minimal guidance)
-  - Use case scenarios provided
-  - Implement your approach
-  - Peer review recommended
-- 💻 **Coding Exercise:** Build flexible search functionality (independent)
-  - Business requirements only
-  - Design your own solution
-  - Optional: Consult with instructor on architecture
-
-**Scaffolding Available (On Request):**
-- ⚠️ Code snippets (if stuck > 30 min)
-- ⚠️ Architecture consultation
-- ⚠️ Debugging support
-
 #### Assessment
 - 🔬 **Practical:** Implement dynamic reporting VO
 
@@ -1447,12 +1173,6 @@ Upon completion of Level 102, students will be able to:
 - Performance considerations
 - Transaction management
 - Error handling patterns
-
-#### Activities
-- 🔧 **Lab 29:** Execute dynamic SQL query
-- 🔧 **Lab 30:** Call PL/SQL procedure with parameters
-- 🔧 **Lab 31:** Call function and process return value
-- 💻 **Exercise:** Implement complex business logic
 
 #### Assessment
 - 🔬 **Practical:** Build report with complex SQL
@@ -1569,18 +1289,6 @@ Upon completion of Level 102, students will be able to:
 - URL construction
 - SSO considerations
 
-#### Activities
-- 🔧 **Lab 32:** Implement hide/show with PPR
-- 🔧 **Lab 33:** Build advanced query region
-- 🔧 **Lab 34:** Create advanced table with all features
-- 🔧 **Lab 35:** Implement 3-step train page
-- 🔧 **Lab 36:** Build shuttle for assignment functionality
-- 🔧 **Lab 37:** Create HGrid for organizational hierarchy
-- 🔧 **Lab 38:** Integrate Key Flexfield
-- 🔧 **Lab 39:** Integrate Descriptive Flexfield
-- 🔧 **Lab 40:** Implement chart visualization
-- 🎨 **Design Challenge:** Complex multi-region page
-
 #### Assessment
 - 🔬 **Practical:** Build page with 5+ advanced components
 - 📊 **UI/UX Review:** Evaluate usability
@@ -1636,13 +1344,6 @@ Upon completion of Level 102, students will be able to:
 - Visual indicators
 - Conditional read-only mode
 
-#### Activities
-- 🔧 **Lab 41:** Create complete form programmatically
-- 🔧 **Lab 42:** Build dynamic table at runtime
-- 🔧 **Lab 43:** Implement JavaScript validation
-- 🔧 **Lab 44:** Create read-only mode toggle
-- 💻 **Challenge:** Build page generator utility
-
 #### Assessment
 - 🔬 **Practical:** Create dynamic form based on metadata
 - 📝 **Code Review:** Evaluate programmatic UI code
@@ -1681,12 +1382,6 @@ Upon completion of Level 102, students will be able to:
 - Reusable validation
 - Complex business rules
 - Validation messages
-
-#### Activities
-- 🔧 **Lab 45:** Implement date comparisons
-- 🔧 **Lab 46:** Format currency fields
-- 🔧 **Lab 47:** Create Entity Expert for validation
-- 💻 **Exercise:** Comprehensive validation scenarios
 
 #### Assessment
 - 🔬 **Practical:** Implement 5 validation rules
@@ -1757,15 +1452,6 @@ Upon completion of Level 102, students will be able to:
 - Monitoring workflow
 - Embedding OAF region in notification
 
-#### Activities
-- 🔧 **Lab 48:** Implement attachments
-- 🔧 **Lab 49:** Build file upload feature
-- 🔧 **Lab 50:** Create CSV import functionality
-- 🔧 **Lab 51:** Implement Excel export
-- 🔧 **Lab 52:** Launch workflow from OAF
-- 🔧 **Lab 53:** Embed OAF in workflow notification
-- 💻 **Integration Project:** Complete attachment system
-
 #### Assessment
 - 🔬 **Practical:** Build document management page
 - 📊 **Integration Test:** Workflow + OAF
@@ -1800,12 +1486,6 @@ Upon completion of Level 102, students will be able to:
 - Production debugging
 - Log analysis
 - Performance profiling
-
-#### Activities
-- 🔧 **Lab 54:** Install and use demasy-oaf library
-- 🔧 **Lab 55:** Implement multiple error messages
-- 🐛 **Challenge:** Debug complex production issue
-- 📋 **Create:** Personal debugging checklist
 
 #### Assessment
 - 🔬 **Practical:** Debug and fix 3 complex issues
@@ -1945,12 +1625,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Sample data
 - Database scripts
 
-#### Activities
-- 🏗️ **Setup:** Complete development environment
-- 📊 **Design:** Database ERD
-- 📋 **Plan:** Project timeline and milestones
-- 💻 **Init:** Git repository with proper structure
-
 #### Deliverables
 - Working development environment
 - Git repository
@@ -2001,35 +1675,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Concurrent update handling
 - Change tracking
 
-#### Activities (Scaffold Level: Minimal)
-
-**"You Do" - Autonomous Work:**
-- 🔧 **Build:** Complete Store CRUD module (requirements only)
-  - No step-by-step instructions
-  - Design your own approach
-  - Choose your own patterns
-- ✅ **Test:** Create and execute test plan
-  - Design your test scenarios
-  - Document test results
-- 📝 **Document:** Technical documentation (template provided)
-- 👥 **Review:** Mandatory peer code review
-  - Review partner's code
-  - Provide constructive feedback
-  - Incorporate feedback received
-
-**Milestone Checkpoints (Instructor Review):**
-- ⚡ 25% Complete: Architecture review
-- ⚡ 50% Complete: Code review (if requested)
-- ⚡ 75% Complete: Optional consultation
-- ⚡ 100% Complete: Final assessment
-
-**Support Available:**
-- ⚠️ Office hours (scheduled)
-- ⚠️ Architecture consultation (by appointment)
-- ⚠️ Debugging support (must document attempts first)
-- ✘ No solution code provided
-- ✘ No step-by-step guides
-
 #### Assessment
 - Functional testing results
 - Code review score
@@ -2067,12 +1712,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Best practices applied
 - Alternative approaches
 - Lessons learned
-
-#### Activities
-- 💻 **Independent Work:** Complete Product module
-- 🔍 **Self-Assessment:** Compare with solution
-- 📊 **Reflection:** What could be improved?
-- 👥 **Discussion:** Share challenges and solutions
 
 #### Assessment
 - Self-assessment report
@@ -2119,12 +1758,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Transfer functionality
 - Real-time updates with PPR
 
-#### Activities
-- 🔧 **Build:** Complete Branch module
-- 🧪 **Test:** Complex scenarios
-- 🔄 **Integrate:** With Store and Product modules
-- 📊 **Validate:** Business rules
-
 #### Assessment
 - Complex scenario testing
 - Integration testing
@@ -2159,12 +1792,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Charts and graphs
 - Export functionality
 
-#### Activities
-- 🎨 **Design:** UI/UX for sales module
-- 🔧 **Build:** Complete functionality
-- 🧪 **Test:** Real-world scenarios
-- 📊 **Optimize:** Performance tuning
-
 ---
 
 ### Phase 6: Advanced Features and Polish
@@ -2191,12 +1818,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Production monitoring
 - User help system
 
-#### Activities
-- ⚡ **Optimize:** Performance tuning
-- 🔒 **Secure:** Security hardening
-- 📝 **Document:** Complete documentation
-- 🎨 **Polish:** UI/UX refinements
-
 ---
 
 ### Phase 7: Deployment and Presentation
@@ -2220,12 +1841,6 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 - Demo preparation
 - Presentation to stakeholders
 - Q&A handling
-
-#### Activities
-- 🚀 **Deploy:** To production environment
-- 📄 **Complete:** All documentation
-- 🎤 **Present:** Project showcase
-- 🎓 **Reflect:** Learning journey
 
 ---
 
