@@ -323,7 +323,7 @@ Upon completion of Level 101, students will be able to:
 
 ---
 
-### [1] BootCamp Orientation & Your Success Path
+## [1] BootCamp Orientation & Your Success Path
 **Duration:** 0.5 Week | **Bloom's Level:** Remember
 
 #### Learning Objectives
@@ -343,7 +343,7 @@ Upon completion of Level 101, students will be able to:
 
 ---
 
-### [2] OAF Foundations - Architecture & Design Patterns
+## [2] OAF Foundations - Architecture & Design Patterns
 **Duration:** 1 Week | **Bloom's Level:** Remember, Understand
 
 #### Learning Objectives
@@ -367,7 +367,7 @@ Upon completion of Level 101, students will be able to:
 
 ---
 
-### [3] Development Environment Setup & Your First Page
+## [3] Development Environment Setup & Your First Page
 **Duration:** 1 Week | **Bloom's Level:** Apply
 
 #### Learning Objectives
@@ -392,7 +392,7 @@ Upon completion of Level 101, students will be able to:
 
 ---
 
-### [4] The Model Layer - Business Logic with BC4J
+## [4] The Model Layer - Business Logic with BC4J
 **Duration:** 1.5 Weeks | **Bloom's Level:** Apply, Analyze
 
 #### Learning Objectives
@@ -421,7 +421,7 @@ Upon completion of Level 101, students will be able to:
 
 ---
 
-### [5] The View Layer - Building Modern User Interfaces
+## [5] The View Layer - Building Modern User Interfaces
 **Duration:** 1.5 Weeks | **Bloom's Level:** Apply, Analyze
 
 #### Learning Objectives
@@ -449,7 +449,7 @@ Upon completion of Level 101, students will be able to:
 
 ---
 
-### [6] The Controller Layer - Handling User Events
+## [6] The Controller Layer - Handling User Events
 **Duration:** 1 Week | **Bloom's Level:** Apply, Analyze
 
 #### Learning Objectives
@@ -477,7 +477,7 @@ Upon completion of Level 101, students will be able to:
 
 ---
 
-### [6B] Master-Detail Relationships - Hierarchical Data
+## [6B] Master-Detail Relationships - Hierarchical Data
 **Duration:** 0.5 Week | **Bloom's Level:** Apply
 
 #### Learning Objectives
@@ -495,7 +495,7 @@ Upon completion of Level 101, students will be able to:
 
 ---
 
-### [7] Error Handling & Debugging Excellence
+## [7] Error Handling & Debugging Excellence
 **Duration:** 0.5 Week | **Bloom's Level:** Apply, Analyze
 
 #### Learning Objectives
@@ -517,7 +517,7 @@ Upon completion of Level 101, students will be able to:
 
 ---
 
-### [8] Security Implementation - Protecting Your Application
+## [8] Security Implementation - Protecting Your Application
 **Duration:** 0.5 Week | **Bloom's Level:** Understand, Apply
 
 #### Learning Objectives
@@ -538,7 +538,7 @@ Upon completion of Level 101, students will be able to:
 
 ---
 
-### Section 9: Development Standards and Best Practices
+## [9] Development Standards and Best Practices
 **Duration:** 0.5 Week | **Bloom's Level:** Understand, Apply
 
 #### Learning Objectives
@@ -600,7 +600,7 @@ Upon completion of Level 101, students will be able to:
 
 ---
 
-### Section 10: Deploying OA Framework Applications
+## [10] Deploying OA Framework Applications
 **Duration:** 0.5 Week | **Bloom's Level:** Apply
 
 #### Learning Objectives
@@ -919,7 +919,7 @@ Upon completion of Level 102, students will be able to:
 
 ---
 
-### Section 11: Advanced Model Implementation
+## [11] Advanced Model Implementation
 **Duration:** 0.5 Week | **Bloom's Level:** Apply, Create
 
 #### Learning Objectives
@@ -943,7 +943,7 @@ Upon completion of Level 102, students will be able to:
 
 ---
 
-### Section 12: Server-Side Features
+## [12] Server-Side Features
 **Duration:** 1 Week | **Bloom's Level:** Apply, Create
 
 #### Learning Objectives
@@ -974,7 +974,7 @@ Upon completion of Level 102, students will be able to:
 
 ---
 
-### Section 13: Advanced View Components
+## [13] Advanced View Components
 **Duration:** 2 Weeks | **Bloom's Level:** Apply, Create
 
 #### Learning Objectives
@@ -1085,7 +1085,7 @@ Upon completion of Level 102, students will be able to:
 
 ---
 
-### Section 14: Advanced Controller and Programmatic UI
+## [14] Advanced Controller and Programmatic UI
 **Duration:** 1 Week | **Bloom's Level:** Create
 
 #### Learning Objectives
@@ -1136,7 +1136,7 @@ Upon completion of Level 102, students will be able to:
 
 ---
 
-### Section 15: Data Manipulation and Validation
+## [15] Data Manipulation and Validation
 **Duration:** 0.5 Week | **Bloom's Level:** Apply
 
 #### Learning Objectives
@@ -1171,7 +1171,7 @@ Upon completion of Level 102, students will be able to:
 
 ---
 
-### Section 16: Advanced Features and Integrations
+## [16] Advanced Features and Integrations
 **Duration:** 1 Week | **Bloom's Level:** Apply, Create
 
 #### Learning Objectives
@@ -1237,7 +1237,7 @@ Upon completion of Level 102, students will be able to:
 
 ---
 
-### Section 17: Advanced Debugging and Error Handling
+## [17] Advanced Debugging and Error Handling
 **Duration:** 0.5 Week | **Bloom's Level:** Analyze, Evaluate
 
 #### Learning Objectives
