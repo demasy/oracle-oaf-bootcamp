@@ -36,13 +36,13 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ## [1] Project Setup and Planning
 **Duration:** 2.5 Days | **Level**: Ninja
 
-### Scaffolded Objectives
+### Learning Objectives
 - Set up professional development environment
 - Configure version control
 - Design database architecture
 - Plan application structure
 
-### Scaffolded Content
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -57,13 +57,13 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ## [2] Store Management Module (CRUD Operations)
 **Duration:** 7.5 Days | **Level**: Ninja
 
-### Scaffolded Objectives
+### Learning Objectives
 - Implement complete CRUD functionality
 - Apply all Level 101 concepts
 - Build professional UI
 - Implement proper error handling
 
-### Scaffolded Content
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -78,13 +78,13 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ## [3] Product Management Module (Practice Assignment)
 **Duration:** 5 Days | **Level**: Ninja
 
-### Scaffolded Objectives
+### Learning Objectives
 - Independent implementation
 - Apply learned patterns
 - Problem-solving
 - Self-assessment
 
-### Scaffolded Content
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -97,13 +97,13 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ## [4] Branch Management (Master-Detail Complexity)
 **Duration:** 7.5 Days | **Level**: Ninja
 
-### Scaffolded Objectives
+### Learning Objectives
 - Implement complex master-detail relationships
 - Handle hierarchical data
 - Coordinate multiple regions
 - Advanced transaction management
 
-### Scaffolded Content
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -114,13 +114,13 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ## [5] Sales and Transactions Module
 **Duration:** 7.5 Days | **Level**: Ninja
 
-### Scaffolded Objectives
+### Learning Objectives
 - Design and implement transaction processing
 - Build inventory management system
 - Create reporting and analytics features
 - Apply all advanced concepts independently
 
-### Scaffolded Content
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -133,13 +133,13 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ## [6] Advanced Features and Polish
 **Duration:** 5 Days | **Level**: Ninja
 
-### Scaffolded Objectives
+### Learning Objectives
 - Implement advanced enterprise features
 - Optimize application performance
 - Establish comprehensive error handling
 - Prepare for production deployment
 
-### Scaffolded Content
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -152,13 +152,13 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ## [7] Deployment and Presentation
 **Duration:** 2.5 Days | **Level**: Ninja
 
-### Scaffolded Objectives
+### Learning Objectives
 - Deploy application to production environment
 - Create comprehensive documentation
 - Present project to stakeholders professionally
 - Demonstrate mastery of OAF development
 
-### Scaffolded Content
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -171,14 +171,14 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ## [8] Level 103 Final Assessment
 **Duration:** 5 Days | **Level**: Ninja
 
-### Scaffolded Objectives
+### Learning Objectives
 - Demonstrate mastery of all OAF concepts from Levels 101-103
 - Present production-ready enterprise application
 - Defend architectural and design decisions
 - Showcase innovation and problem-solving excellence
 - Achieve Ninja-level certification
 
-### Scaffolded Content
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
