@@ -31,6 +31,8 @@ Upon completion of Level 103, students will be able to:
 Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Application Framework. This project synthesizes all concepts from Levels 101 and 102.
 
 
+<br>
+
 ## [1] Project Setup and Planning
 **Duration:** 2.5 Days | **Level**: Ninja
 
@@ -49,6 +51,8 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 | 1.3 | Create Workspaces and Projects | Lab | ✓ | Template | Project structure, naming conventions, module organization |
 | 1.4 | Create & Test Database Connection | Lab | ✓ | Guide | Development database, connection pooling, testing connectivity |
 | 1.5 | Installing the Database Objects | Lab | ✓ | Scripts | Database schema design, tables and relationships, sequences and triggers, sample data |
+
+<br>
 
 ## [2] Store Management Module (CRUD Operations)
 **Duration:** 7.5 Days | **Level**: Ninja
@@ -69,6 +73,8 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 | 2.4 | Implementing Store Delete Page (DELETE) | Lab | ✓ | Project | Confirmation dialog, business rule validation, cascade delete handling, audit trail |
 | 2.5 | Implementing Store Update Page (UPDATE) | Lab | ✓ | Project | Edit form, version control, concurrent update handling, change tracking |
 
+<br>
+
 ## [3] Product Management Module (Practice Assignment)
 **Duration:** 5 Days | **Level**: Ninja
 
@@ -86,6 +92,8 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 | 3.2 | Implementing Product CRUD Functionality | Lab | ✓ | Project | Query page, create page, update page, delete functionality, drill-down details |
 | 3.3 | Explaining the Practice Solution | Workshop | ✓ | Review | Solution walkthrough, best practices applied, alternative approaches, lessons learned |
 
+<br>
+
 ## [4] Branch Management (Master-Detail Complexity)
 **Duration:** 7.5 Days | **Level**: Ninja
 
@@ -100,6 +108,8 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
 | 4.1 | Implementing Branch Page (Master-Details) | Lab | ✓ | Project | Master: Branch info, address, contact, hours; Detail 1: Store assignments with shuttle; Detail 2: Employee assignments with advanced table; Detail 3: Inventory summary with PPR |
+
+<br>
 
 ## [5] Sales and Transactions Module
 **Duration:** 7.5 Days | **Level**: Ninja
@@ -118,6 +128,8 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 | 5.2 | Inventory Management | Lab | ✓ | Project | Stock tracking, reorder alerts, transfer between stores, inventory reports |
 | 5.3 | Reporting and Analytics | Lab | ✓ | Project | Sales reports, inventory reports, employee performance, charts and graphs, export |
 
+<br>
+
 ## [6] Advanced Features and Polish
 **Duration:** 5 Days | **Level**: Ninja
 
@@ -135,6 +147,8 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 | 6.2 | Performance Optimization | Lab | ✓ | Project | Query optimization, caching strategies, large data set handling, response time improvement |
 | 6.3 | Error Handling and Logging | Lab | ✓ | Project | Comprehensive error messages, debug logging, production monitoring, user help system |
 
+<br>
+
 ## [7] Deployment and Presentation
 **Duration:** 2.5 Days | **Level**: Ninja
 
@@ -151,6 +165,8 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 | 7.1 | Deployment to Production | Lab | ✓ | Guide | Deployment package creation, installation instructions, production deployment, post-deployment validation |
 | 7.2 | Documentation | Workshop | ✓ | Templates | Technical documentation, user manual, installation guide, troubleshooting guide |
 | 7.3 | Project Presentation | Workshop | ✓ | Guide | Demo preparation, presentation to stakeholders, Q&A handling |
+
+<br>
 
 ## [8] Level 103 Final Assessment
 **Duration:** 5 Days | **Level**: Ninja
