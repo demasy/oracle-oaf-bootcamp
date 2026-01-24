@@ -1,18 +1,19 @@
 # OAF Code Brain Repository v1.3
 
-Comprehensive layer-based MVC architecture for Oracle Application Framework (OAF) - Enhanced with View Layer, Integration (Excel/PL-SQL), and Security patterns.
+Comprehensive layer-based MVC architecture for Oracle Application Framework (OAF) - Enhanced with View Layer, Integration (Excel/PL-SQL), Security patterns, and Complete Lab Exercises.
 
 ## 📚 Overview
 
-This repository contains **18 pattern files** organized by MVC architecture layers with **185+ use cases**, providing practical, production-ready implementations for OAF development.
+This repository contains **21 pattern files** organized by MVC architecture layers with **200+ use cases**, providing practical, production-ready implementations for OAF development plus complete lab exercises from R12 Building OAF Applications course.
 
 ### Statistics
-- **Total Files**: 18 Java files
-- **Total Lines**: ~7,800 lines of code
-- **Total Use Cases**: 185+ patterns and examples
-- **Architecture**: Layer-based MVC (Model/View/Controller/Integration/Security/Cross-cutting)
+- **Total Files**: 21 Java files (18 patterns + 3 complete labs)
+- **Total Lines**: ~11,500 lines of code
+- **Total Use Cases**: 200+ patterns and examples
+- **Lab Exercises**: 3 complete hands-on labs
+- **Architecture**: Layer-based MVC (Model/View/Controller/Integration/Security/Cross-cutting/Labs)
 - **Version**: 1.3
-- **Last Updated**: 2026-01-26
+- **Last Updated**: 2026-01-25
 
 ## 🏗️ Architecture
 
@@ -41,6 +42,7 @@ code-brain/
 │   ├── plsql/                # PL/SQL integration
 │   └── files/                # File operations
 ├── security/                 # Access control
+├── labs/                     # Complete lab exercises ⭐ NEW
 └── cross-cutting/            # Cross-cutting concerns
     ├── error-handling/       # Exception handling
     ├── session/              # Session management
@@ -248,6 +250,215 @@ webBean.setRendered(hasAccess)
 #### 17. Metadata Operations
 **Directory**: `cross-cutting/metadata/`  
 **File**: `MDSOperations.java` (10 use cases)
+
+---
+
+## 🎓 Complete Lab Exercises ⭐ NEW
+
+### Lab 1: Query Page with Search
+**Directory**: `labs/`  
+**File**: `Lab1-QueryPage.java` (~290 lines, 4 exercises + bonus)
+
+**Lab Objectives**:
+- Create search page with multiple criteria
+- Build dynamic WHERE clause with bind variables
+- Execute query and display results in table
+- Handle Clear button and reset functionality
+- Navigate to detail page on row selection
+
+**Exercises**:
+1. Initialize Query Page (processRequest)
+2. Handle Search Button Click (processFormRequest)
+3. Clear Search Functionality
+4. BONUS: Add Row Selection Handler
+
+**What You'll Learn**:
+- Application Module access patterns
+- View Object query execution
+- Parameter capture and validation
+- Dynamic WHERE clause construction
+- Search patterns and best practices
+
+**Key Lab Patterns**:
+```java
+OAApplicationModule am = pageContext.getApplicationModule(webBean)
+OAViewObject vo = am.findViewObject("EmployeeSearchVO")
+vo.setWhereClause("EMPLOYEE_NUMBER = :1 AND UPPER(FULL_NAME) LIKE :2")
+vo.setWhereClauseParam(0, empNumber)
+vo.executeQuery()
+```
+
+**Testing Checklist**:
+- ✓ Page loads without initial results
+- ✓ Search with single/multiple criteria
+- ✓ LIKE operator for partial name match
+- ✓ Clear button resets form
+- ✓ No results message displays
+- ✓ Row selection navigates correctly
+
+---
+
+### Lab 2: Create and Update Page (CRUD)
+**Directory**: `labs/`  
+**File**: `Lab2-CreateUpdatePage.java` (~335 lines, 5 exercises)
+
+**Lab Objectives**:
+- Implement complete CRUD operations
+- Distinguish CREATE vs UPDATE modes
+- Validate user input with business rules
+- Handle database errors gracefully
+- Implement Cancel and Delete operations
+
+**Exercises**:
+1. Initialize Page for Create or Update mode
+2. Handle Apply (Save) Button with validation
+3. Validate Employee Data (business rules)
+4. Handle Cancel Operation (rollback)
+5. BONUS: Handle Delete Operation
+
+**What You'll Learn**:
+- Row creation and initialization
+- Field validation techniques
+- Transaction commit and rollback
+- Error handling patterns
+- WHO column management
+
+**Key Lab Patterns**:
+```java
+// CREATE MODE
+Row row = vo.createRow()
+row.setAttribute("Status", "ACTIVE")
+row.setAttribute("CreatedBy", pageContext.getUserId())
+vo.insertRow(row)
+
+// UPDATE MODE
+vo.setWhereClause("EMPLOYEE_ID = :1")
+vo.executeQuery()
+Row row = vo.first()
+
+// COMMIT
+am.getTransaction().commit()
+
+// ROLLBACK
+am.getTransaction().rollback()
+```
+
+**Validation Rules Implemented**:
+- Employee Number: Required, unique
+- Full Name: Required
+- Email: Required, valid format (@, .)
+- Salary: Positive number, max 999,999
+- Hire Date: Cannot be future date
+
+**Testing Checklist**:
+- ✓ Create new employee successfully
+- ✓ Update existing employee
+- ✓ All validation rules work
+- ✓ Duplicate check prevents constraint violation
+- ✓ Cancel discards changes
+- ✓ Delete removes record
+- ✓ Success/error messages display
+
+---
+
+### Lab 3: Master-Detail Page
+**Directory**: `labs/`  
+**File**: `Lab3-MasterDetailPage.java` (~340 lines, 6 exercises)
+
+**Lab Objectives**:
+- Implement master-detail relationship
+- Synchronize master and detail queries
+- Handle master row selection
+- Create and delete detail records
+- Maintain referential integrity
+
+**Exercises**:
+1. Initialize Master-Detail Page
+2. Handle Master Row Selection (PPR)
+3. Load Job History for Selected Employee
+4. Clear Job History Display
+5. Add New Job History Record
+6. Delete Job History Record
+
+**Scenario**:
+- Master: Employee list
+- Detail: Job history for selected employee
+- When employee selected, job history auto-refreshes
+- Add/Delete job history for current employee
+
+**What You'll Learn**:
+- Master-detail query coordination
+- View Link relationships
+- Foreign key management
+- PPR (Partial Page Rendering)
+- Detail record lifecycle
+
+**Key Lab Patterns**:
+```java
+// Initialize empty detail
+detailVO.setWhereClause("1=2")
+detailVO.executeQuery()
+
+// Load detail for master
+detailVO.setWhereClause("EMPLOYEE_ID = :1")
+detailVO.setWhereClauseParam(0, empId)
+detailVO.setOrderByClause("START_DATE DESC")
+detailVO.executeQuery()
+
+// Create detail record
+Row newRow = detailVO.createRow()
+newRow.setAttribute("EmployeeId", empId) // Foreign key
+detailVO.insertRow(newRow)
+
+// Delete detail record
+Row rowToDelete = detailVO.getFilteredRows("JobHistoryId", jobHistId)[0]
+rowToDelete.remove()
+am.getTransaction().commit()
+```
+
+**Architecture Notes**:
+- Master VO: Independent query (all employees)
+- Detail VO: Filtered by foreign key (job history)
+- View Link: Defines master-detail relationship in BC4J
+- One master row → Many detail rows
+
+**Testing Checklist**:
+- ✓ Master query loads successfully
+- ✓ Detail empty on initial load
+- ✓ Detail refreshes on master selection
+- ✓ Add new job history works
+- ✓ Foreign key set automatically
+- ✓ Delete job history works
+- ✓ PPR works without full page refresh
+- ✓ No orphan records created
+
+---
+
+## 📖 Lab Enhancements (Try on Your Own)
+
+Each lab includes suggested enhancements for additional practice:
+
+**Lab 1 Enhancements**:
+- Add date range search (hire date from/to)
+- Add sorting functionality
+- Add export to Excel button
+- Add pagination for large result sets
+- Add "Advanced Search" with more criteria
+
+**Lab 2 Enhancements**:
+- Add confirmation dialog before delete
+- Add "Save and New" button
+- Add field-level validation (onSubmit)
+- Add duplicate check before save
+- Add attachment functionality
+
+**Lab 3 Enhancements**:
+- Add search/filter in master region
+- Add pagination for master records
+- Add inline edit in detail table
+- Add summary/aggregate (total years)
+- Add multiple detail sections
+- Add drill-down to third level
 
 ---
 

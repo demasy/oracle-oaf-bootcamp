@@ -1,5 +1,105 @@
 # Code Brain Change Log
 
+## Version 1.3.1 (2026-01-25)
+
+### New: Complete Lab Exercises from R12 Building OAF Applications
+
+Added comprehensive, hands-on lab exercises extracted from R12 Building OA Framework Applications course materials.
+
+### New Lab Files
+
+**Lab 1: Query Page with Search** (~290 lines, 4 exercises + bonus)
+- File: `labs/Lab1-QueryPage.java`
+- Objective: Create search page with dynamic criteria
+- Exercises:
+  * Initialize Query Page (processRequest pattern)
+  * Handle Search Button (dynamic WHERE clause)
+  * Clear Search Functionality
+  * BONUS: Row Selection Handler with navigation
+- Key Concepts: View Object queries, bind variables, parameter capture
+- Testing Checklist: 6 test scenarios included
+
+**Lab 2: Create and Update Page** (~335 lines, 5 exercises)
+- File: `labs/Lab2-CreateUpdatePage.java`
+- Objective: Complete CRUD operations with validation
+- Exercises:
+  * Initialize Create vs Update mode
+  * Handle Apply (Save) with validation
+  * Validate Employee Data (5 business rules)
+  * Handle Cancel (rollback)
+  * BONUS: Handle Delete operation
+- Key Concepts: Row creation, validation, commit/rollback, error handling
+- Validation Rules: Employee number, name, email format, salary range, hire date
+- Testing Checklist: 9 test scenarios included
+
+**Lab 3: Master-Detail Page** (~340 lines, 6 exercises)
+- File: `labs/Lab3-MasterDetailPage.java`
+- Objective: Master-detail relationship with PPR
+- Exercises:
+  * Initialize Master-Detail Page
+  * Handle Master Row Selection (PPR)
+  * Load Job History for Selected Employee
+  * Clear Job History Display
+  * Add New Job History Record
+  * Delete Job History Record
+- Key Concepts: View Links, foreign keys, PPR, referential integrity
+- Scenario: Employee list (master) → Job history (detail)
+- Testing Checklist: 8 test scenarios included
+
+### Lab Features
+
+**Educational Structure**:
+- Each lab divided into numbered exercises (LAB EXERCISE 1, 2, 3...)
+- Step-by-step implementation guidance
+- "What You'll Learn" sections
+- Complete code examples
+- Detailed comments explaining each step
+
+**Best Practices Included**:
+- Common lab mistakes to avoid (❌ patterns)
+- Best practices summary
+- Lab enhancements for additional practice
+- Complete testing checklists
+- Architecture notes
+
+**Lab Patterns Covered**:
+- Query patterns with dynamic WHERE clauses
+- CRUD operations (Create, Read, Update, Delete)
+- Validation techniques
+- Transaction management (commit/rollback)
+- Master-detail coordination
+- PPR (Partial Page Rendering)
+- Foreign key management
+- Error handling strategies
+
+### Statistics Update
+
+| Metric | v1.3 | v1.3.1 | Change |
+|--------|------|--------|--------|
+| **Files** | 18 | 21 | +3 (+17%) |
+| **Lines** | 7,813 | 11,478 | +3,665 (+47%) |
+| **Use Cases** | 185 | 200+ | +15 (+8%) |
+| **Lab Exercises** | 0 | 15 | +15 (NEW) |
+
+### Documentation Updates
+
+- Updated README.md with complete lab section
+- Added lab architecture diagrams
+- Added testing checklists for each lab
+- Added lab enhancement suggestions
+- Updated statistics to reflect lab additions
+
+### Source Material
+
+Based on Oracle's R12 Building OA Framework Applications Labs PDF:
+- Classic OAF lab patterns
+- Industry-standard CRUD operations
+- Master-detail relationship patterns
+- Search and query page patterns
+- Real-world scenarios (employee management)
+
+---
+
 ## Version 1.3 (2026-01-26)
 
 ### Major Reorganization: Layer-Based MVC Architecture
