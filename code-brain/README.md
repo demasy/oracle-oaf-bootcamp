@@ -4,14 +4,14 @@ Comprehensive collection of Oracle Application Framework (OAF) code examples and
 
 ## 📚 Overview
 
-This repository contains **12 categories** of OAF code examples with **124+ use cases**, providing practical, copy-paste-ready implementations for common OAF development tasks. Enhanced with advanced patterns from official OAF reference documentation.
+This repository contains **13 categories** of OAF code examples with **138+ use cases**, providing practical, copy-paste-ready implementations for common OAF development tasks. Enhanced with advanced patterns from official OAF reference documentation.
 
 ### Statistics
-- **Total Files**: 12 Java files
-- **Total Lines**: 4,187 lines of code
-- **Total Methods**: 135 methods
-- **Total Use Cases**: 124 patterns and examples
-- **Version**: 1.1
+- **Total Files**: 13 Java files
+- **Total Lines**: 5,191 lines of code
+- **Total Methods**: 149 methods
+- **Total Use Cases**: 138 patterns and examples
+- **Version**: 1.2
 - **Last Updated**: 2026-01-26
 
 ## 🗂️ Code Categories
@@ -319,6 +319,42 @@ Profile option hierarchy (User > Resp > App > Site)
 
 ---
 
+### 13. Advanced Controller Patterns (Advanced)
+**Directory**: `advanced-controller/`  
+**File**: `AdvancedControllerPatterns.java` (593 lines, 14 methods)
+
+**Use Cases**:
+- Block form submission (setBlockOnEverySubmit)
+- Block specific button with JavaScript
+- Disable global buttons
+- Set initial focus on field
+- Handle Enter key press on field
+- Handle browser back button
+- End transaction unit before navigation
+- Wrap text in read-only text area
+- Check if form submission
+- Get event and source parameters
+- Set field values programmatically
+- Release database lock
+- Controller extension pattern
+- Advanced controller best practices
+
+**Key Patterns**:
+```java
+OABodyBean.setBlockOnEverySubmit()
+JavaScript button disabling
+OAGlobalButtonBarBean.setRendered()
+OABodyBean.setInitialFocusId()
+OABoundValueEnterOnKeyPress
+TransactionUnitHelper.startTransactionUnit()
+pageContext.isBackNavigationFired()
+pageContext.isFormSubmission()
+OAWebBeanConstants.EVENT_PARAM
+OAWebBeanConstants.SOURCE_PARAM
+```
+
+---
+
 ## 🎯 Usage Guidelines
 
 ### For Students
@@ -476,13 +512,25 @@ Profile option hierarchy (User > Resp > App > Site)
 
 ## 📊 Version History
 
+### v1.2 (2026-01-26)
+- Added Advanced Controller Patterns category
+- 14 advanced use cases covering UI manipulation
+- Form submission blocking patterns (setBlockOnEverySubmit, JavaScript)
+- Focus and event management
+- Browser back button handling with TransactionUnitHelper
+- Global button control
+- Controller extension patterns
+- 593 new lines of code with detailed examples
+- Total: 13 categories, 13 files, 5,191 lines, 149 methods, 138 use cases
+- Source: OAF Reference - By Mostafa EL-Ruby.docx
+
 ### v1.1 (2026-01-26)
 - Added 4 new advanced categories from OAF Reference documentation
 - Nested Application Module patterns (11 use cases, 521 lines)
 - MDS Repository operations (10 use cases, 558 lines)
 - Session Management patterns (10 use cases, 487 lines)
 - Profile Options patterns (13 use cases, 678 lines)
-- Total: 12 categories, 12 files, 4,187 lines, 135 methods, 124 use cases
+- Total: 12 categories, 12 files, 4,598 lines, 135 methods, 124 use cases
 - Enhanced documentation with advanced concepts
 - Source: OAF Reference - By Mostafa EL-Ruby.docx
 
@@ -529,5 +577,5 @@ For questions or clarification:
 
 **Created**: 2026-01-25  
 **Last Updated**: 2026-01-26  
-**Version**: 1.1  
+**Version**: 1.2  
 **Maintained By**: Oracle OAF BootCamp Team

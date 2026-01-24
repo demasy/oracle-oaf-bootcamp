@@ -1,6 +1,6 @@
 {
   "brainName": "Oracle OAF Code Repository Brain",
-  "version": "1.1",
+  "version": "1.2",
   "lastUpdated": "2026-01-26",
   "description": "Comprehensive code examples and patterns for Oracle Application Framework development - Enhanced with advanced patterns from OAF Reference documentation",
   
@@ -441,16 +441,59 @@
       ],
       "relatedSections": ["Level 101 Section 2", "Level 102 Section 3"],
       "prerequisites": ["Basic Oracle Apps concepts", "Configuration understanding"]
+    },
+    
+    "advancedController": {
+      "directory": "advanced-controller/",
+      "description": "Advanced controller patterns for UI manipulation, form submission blocking, focus management, and browser navigation handling",
+      "complexity": "Advanced",
+      "files": [
+        {
+          "name": "AdvancedControllerPatterns.java",
+          "useCases": [
+            "Block form submission (setBlockOnEverySubmit)",
+            "Block specific button with JavaScript",
+            "Disable global buttons",
+            "Set initial focus on field",
+            "Handle Enter key press on field",
+            "Handle browser back button",
+            "End transaction unit before navigation",
+            "Wrap text in read-only text area",
+            "Check if form submission",
+            "Get event and source parameters",
+            "Set field values programmatically",
+            "Release database lock",
+            "Controller extension pattern",
+            "Advanced controller best practices"
+          ],
+          "lines": 593,
+          "methods": 14,
+          "keyPatterns": [
+            "OABodyBean.setBlockOnEverySubmit()",
+            "JavaScript button disabling",
+            "OAGlobalButtonBarBean.setRendered()",
+            "OABodyBean.setInitialFocusId()",
+            "OABoundValueEnterOnKeyPress",
+            "TransactionUnitHelper.startTransactionUnit()",
+            "pageContext.isBackNavigationFired()",
+            "pageContext.isFormSubmission()",
+            "OAWebBeanConstants.EVENT_PARAM",
+            "OAWebBeanConstants.SOURCE_PARAM"
+          ]
+        }
+      ],
+      "relatedSections": ["Level 102 Section 2", "Level 103 Section 1"],
+      "prerequisites": ["Basic controller concepts", "JavaScript basics", "Transaction management"]
     }
   },
   
   "statistics": {
-    "totalCategories": 12,
-    "totalFiles": 12,
-    "totalLines": 4187,
-    "totalMethods": 135,
-    "totalUseCases": 124,
-    "avgLinesPerFile": 349,
+    "totalCategories": 13,
+    "totalFiles": 13,
+    "totalLines": 5191,
+    "totalMethods": 149,
+    "totalUseCases": 138,
+    "avgLinesPerFile": 399,
     "avgMethodsPerFile": 11
   },
   
@@ -635,6 +678,21 @@
   },
   
   "versionHistory": {
+    "v1.2": {
+      "date": "2026-01-26",
+      "changes": [
+        "Added Advanced Controller Patterns category",
+        "14 advanced use cases covering UI manipulation",
+        "Form submission blocking patterns",
+        "Focus and event management",
+        "Browser back button handling",
+        "Global button control",
+        "Controller extension patterns",
+        "593 new lines of code with detailed examples",
+        "Total: 13 categories, 13 files, 5191 lines, 149 methods, 138 use cases"
+      ],
+      "source": "OAF Reference - By Mostafa EL-Ruby.docx"
+    },
     "v1.1": {
       "date": "2026-01-26",
       "changes": [
@@ -643,7 +701,7 @@
         "MDS Repository operations (10 use cases, 558 lines)",
         "Session Management patterns (10 use cases, 487 lines)",
         "Profile Options patterns (13 use cases, 678 lines)",
-        "Total: 12 categories, 12 files, 4187 lines, 135 methods, 124 use cases",
+        "Total: 12 categories, 12 files, 4598 lines, 135 methods, 124 use cases",
         "Enhanced documentation with advanced concepts",
         "Added best practices for infrastructure components"
       ],
