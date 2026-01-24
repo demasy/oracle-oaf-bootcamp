@@ -147,16 +147,18 @@ public class ExcelOperations {
                 // Extract cell values
                 String employeeNumber = getCellValueAsString(row.getCell(0));
                 String employeeName = getCellValueAsString(row.getCell(1));
-                String email = getCellValueAsString(row.getCell(2));
-                String department = getCellValueAsString(row.getCell(3));
-                Double salary = getCellValueAsDouble(row.getCell(4));
                 
-                // Validate required fields
+                // Validate required fields first
                 if (employeeNumber == null || employeeName == null) {
                     System.err.println("Row " + (rowIndex + 1) + ": Missing required fields");
                     errorCount++;
                     continue;
                 }
+                
+                // Extract optional fields after validation
+                String email = getCellValueAsString(row.getCell(2));
+                String department = getCellValueAsString(row.getCell(3));
+                Double salary = getCellValueAsDouble(row.getCell(4));
                 
                 // Store data (will be inserted later)
                 // For now, just log
@@ -194,26 +196,16 @@ public class ExcelOperations {
         StringBuilder errors = new StringBuilder();
         
         // Validate employee number
-        if (empNum == null || empNum.trim().isEmpty()) {
-            errors.append("Employee Number is required; ");
-        } else if (empNum.length() > 20) {
-            errors.append("Employee Number too long; ");
-        }
+        validateEmployeeNumber(empNum, errors);
         
         // Validate employee name
-        if (empName == null || empName.trim().isEmpty()) {
-            errors.append("Employee Name is required; ");
-        }
+        validateEmployeeName(empName, errors);
         
         // Validate email format
-        if (email != null && !email.contains("@")) {
-            errors.append("Invalid email format; ");
-        }
+        validateEmail(email, errors);
         
         // Validate salary
-        if (salary != null && salary < 0) {
-            errors.append("Salary cannot be negative; ");
-        }
+        validateSalary(salary, errors);
         
         // If errors found, log and return false
         if (errors.length() > 0) {
@@ -222,6 +214,44 @@ public class ExcelOperations {
         }
         
         return true;
+    }
+    
+    /**
+     * Helper: Validate employee number
+     */
+    private void validateEmployeeNumber(String empNum, StringBuilder errors) {
+        if (empNum == null || empNum.trim().isEmpty()) {
+            errors.append("Employee Number is required; ");
+        } else if (empNum.length() > 20) {
+            errors.append("Employee Number too long; ");
+        }
+    }
+    
+    /**
+     * Helper: Validate employee name
+     */
+    private void validateEmployeeName(String empName, StringBuilder errors) {
+        if (empName == null || empName.trim().isEmpty()) {
+            errors.append("Employee Name is required; ");
+        }
+    }
+    
+    /**
+     * Helper: Validate email format
+     */
+    private void validateEmail(String email, StringBuilder errors) {
+        if (email != null && !email.contains("@")) {
+            errors.append("Invalid email format; ");
+        }
+    }
+    
+    /**
+     * Helper: Validate salary
+     */
+    private void validateSalary(Double salary, StringBuilder errors) {
+        if (salary != null && salary < 0) {
+            errors.append("Salary cannot be negative; ");
+        }
     }
 
     /**

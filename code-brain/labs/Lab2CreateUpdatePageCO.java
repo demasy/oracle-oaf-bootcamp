@@ -231,18 +231,47 @@ public class Lab2CreateUpdatePageCO extends OAControllerImpl {
     private void validateEmployeeData(OAPageContext pageContext, Row row) {
         
         // Validation 1: Employee Number (Required)
+        validateEmployeeNumber(row);
+        
+        // Validation 2: Full Name (Required)
+        validateFullName(row);
+        
+        // Validation 3: Email (Required and valid format)
+        validateEmail(row);
+        
+        // Validation 4: Salary (Must be positive if provided)
+        validateSalary(row);
+        
+        // Validation 5: Hire Date (Cannot be future date)
+        validateHireDate(pageContext, row);
+        
+        System.out.println("All validations passed");
+    }
+    
+    /**
+     * Helper: Validate employee number
+     */
+    private void validateEmployeeNumber(Row row) {
         String empNumber = (String) row.getAttribute("EmployeeNumber");
         if (empNumber == null || empNumber.trim().isEmpty()) {
             throw new OAException("Employee Number is required", OAException.ERROR);
         }
-        
-        // Validation 2: Full Name (Required)
+    }
+    
+    /**
+     * Helper: Validate full name
+     */
+    private void validateFullName(Row row) {
         String fullName = (String) row.getAttribute("FullName");
         if (fullName == null || fullName.trim().isEmpty()) {
             throw new OAException("Employee Name is required", OAException.ERROR);
         }
-        
-        // Validation 3: Email (Required and valid format)
+    }
+    
+    /**
+     * Helper: Validate email
+     */
+    private void validateEmail(Row row) {
         String email = (String) row.getAttribute("Email");
         if (email == null || email.trim().isEmpty()) {
             throw new OAException("Email is required", OAException.ERROR);
@@ -251,8 +280,12 @@ public class Lab2CreateUpdatePageCO extends OAControllerImpl {
         if (!email.contains("@") || !email.contains(".")) {
             throw new OAException("Invalid email format", OAException.ERROR);
         }
-        
-        // Validation 4: Salary (Must be positive if provided)
+    }
+    
+    /**
+     * Helper: Validate salary
+     */
+    private void validateSalary(Row row) {
         Object salaryObj = row.getAttribute("Salary");
         if (salaryObj != null) {
             try {
@@ -268,8 +301,12 @@ public class Lab2CreateUpdatePageCO extends OAControllerImpl {
                 throw new OAException("Invalid salary value", OAException.ERROR);
             }
         }
-        
-        // Validation 5: Hire Date (Cannot be future date)
+    }
+    
+    /**
+     * Helper: Validate hire date
+     */
+    private void validateHireDate(OAPageContext pageContext, Row row) {
         Object hireDateObj = row.getAttribute("HireDate");
         if (hireDateObj != null) {
             java.sql.Date hireDate = (java.sql.Date) hireDateObj;
@@ -280,8 +317,6 @@ public class Lab2CreateUpdatePageCO extends OAControllerImpl {
                                     OAException.ERROR);
             }
         }
-        
-        System.out.println("All validations passed");
     }
 
     /**
@@ -335,7 +370,6 @@ public class Lab2CreateUpdatePageCO extends OAControllerImpl {
             
             if (row != null) {
                 String empName = (String) row.getAttribute("FullName");
-                String empId = (String) row.getAttribute("EmployeeId");
                 
                 try {
                     // Mark row for deletion

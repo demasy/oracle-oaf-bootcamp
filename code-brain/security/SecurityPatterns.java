@@ -259,10 +259,8 @@ public class SecurityPatterns {
         boolean canEditStatus = pageContext.isResFunctionRegistered("XXCUST_EDIT_STATUS");
         
         OAWebBean statusField = webBean.findChildRecursive("Status");
-        if (statusField != null) {
-            if (!canEditStatus) {
-                statusField.setAttributeValue("readOnly", Boolean.TRUE);
-            }
+        if (statusField != null && !canEditStatus) {
+            statusField.setAttributeValue("readOnly", Boolean.TRUE);
         }
         
         System.out.println("Field-level security applied");

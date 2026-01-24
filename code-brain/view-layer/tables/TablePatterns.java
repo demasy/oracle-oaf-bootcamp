@@ -320,9 +320,6 @@ public class TablePatterns {
             OAPageContext pageContext,
             OAWebBean webBean) {
         
-        // Get the application module
-        String amName = webBean.getApplicationModuleDefFullName();
-        
         // Get the view object
         OAViewObject vo = (OAViewObject) pageContext.getApplicationModule(webBean)
             .findViewObject("EmployeeVO1");
@@ -405,10 +402,10 @@ public class TablePatterns {
                     
                     try {
                         // Get row data
-                        String empId = (String) row.getAttribute("EmployeeId");
                         String empName = (String) row.getAttribute("EmployeeName");
+                        String empId = (String) row.getAttribute("EmployeeId");
                         
-                        System.out.println("Processing Employee: " + empName);
+                        System.out.println("Processing Employee: " + empName + " (ID: " + empId + ")");
                         
                         // Perform action on row
                         // processEmployee(empId);

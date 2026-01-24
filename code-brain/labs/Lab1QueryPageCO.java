@@ -86,94 +86,121 @@ public class Lab1QueryPageCO extends OAControllerImpl {
         
         // Lab Step 1: Check if Search button was clicked
         if (pageContext.getParameter("SearchButton") != null) {
-            
-            // Lab Step 2: Get search criteria from the search region
-            String empNumber = pageContext.getParameter("EmpNumber");
-            String empName = pageContext.getParameter("EmpName");
-            String department = pageContext.getParameter("Department");
-            
-            System.out.println("Search Parameters:");
-            System.out.println("  Employee Number: " + empNumber);
-            System.out.println("  Employee Name: " + empName);
-            System.out.println("  Department: " + department);
-            
-            // Lab Step 3: Get the Application Module
-            OAApplicationModule am = pageContext.getApplicationModule(webBean);
-            OAViewObject vo = (OAViewObject) am.findViewObject("EmployeeSearchVO");
-            
-            if (vo != null) {
-                // Lab Step 4: Build dynamic WHERE clause based on criteria
-                StringBuilder whereClause = new StringBuilder();
-                int paramIndex = 0;
-                
-                // Add employee number condition
-                if (empNumber != null && !empNumber.trim().isEmpty()) {
-                    whereClause.append("EMPLOYEE_NUMBER = :").append(++paramIndex);
-                }
-                
-                // Add employee name condition (using LIKE for partial match)
-                if (empName != null && !empName.trim().isEmpty()) {
-                    if (whereClause.length() > 0) {
-                        whereClause.append(" AND ");
-                    }
-                    whereClause.append("UPPER(FULL_NAME) LIKE :").append(++paramIndex);
-                }
-                
-                // Add department condition
-                if (department != null && !department.trim().isEmpty()) {
-                    if (whereClause.length() > 0) {
-                        whereClause.append(" AND ");
-                    }
-                    whereClause.append("DEPARTMENT_ID = :").append(++paramIndex);
-                }
-                
-                // Lab Step 5: Apply WHERE clause and bind parameters
-                if (whereClause.length() > 0) {
-                    vo.setWhereClause(whereClause.toString());
-                    
-                    // Reset parameters
-                    vo.setWhereClauseParams(null);
-                    
-                    // Bind parameters in the same order
-                    paramIndex = 0;
-                    
-                    if (empNumber != null && !empNumber.trim().isEmpty()) {
-                        vo.setWhereClauseParam(paramIndex++, empNumber);
-                    }
-                    
-                    if (empName != null && !empName.trim().isEmpty()) {
-                        vo.setWhereClauseParam(paramIndex++, "%" + empName.toUpperCase() + "%");
-                    }
-                    
-                    if (department != null && !department.trim().isEmpty()) {
-                        vo.setWhereClauseParam(paramIndex++, department);
-                    }
-                    
-                    System.out.println("WHERE Clause: " + whereClause.toString());
-                } else {
-                    // No criteria - show all (optional: you may want to show a message instead)
-                    vo.setWhereClause(null);
-                    vo.setWhereClauseParams(null);
-                }
-                
-                // Lab Step 6: Remove fetch limit and execute query
-                vo.setMaxFetchSize(-1); // No limit
-                vo.executeQuery();
-                
-                // Lab Step 7: Display result count
-                int rowCount = vo.getRowCount();
-                System.out.println("Search Results: " + rowCount + " rows found");
-                
-                if (rowCount == 0) {
-                    throw new OAException("No employees found matching your criteria", 
-                                        OAException.INFORMATION);
-                }
-            }
+            performSearch(pageContext, webBean);
         }
         
         // Lab Step 8: Handle Clear button
         else if (pageContext.getParameter("ClearButton") != null) {
             clearSearchCriteria(pageContext, webBean);
+        }
+    }
+    
+    /**
+     * Helper method: Perform search operation
+     */
+    private void performSearch(OAPageContext pageContext, OAWebBean webBean) {
+        // Lab Step 2: Get search criteria from the search region
+        String empNumber = pageContext.getParameter("EmpNumber");
+        String empName = pageContext.getParameter("EmpName");
+        String department = pageContext.getParameter("Department");
+        
+        System.out.println("Search Parameters:");
+        System.out.println("  Employee Number: " + empNumber);
+        System.out.println("  Employee Name: " + empName);
+        System.out.println("  Department: " + department);
+        
+        // Lab Step 3: Get the Application Module
+        OAApplicationModule am = pageContext.getApplicationModule(webBean);
+        OAViewObject vo = (OAViewObject) am.findViewObject("EmployeeSearchVO");
+        
+        if (vo != null) {
+            // Lab Step 4: Build dynamic WHERE clause
+            buildWhereClauseAndExecuteQuery(vo, empNumber, empName, department);
+            
+            // Lab Step 7: Display result count
+            int rowCount = vo.getRowCount();
+            System.out.println("Search Results: " + rowCount + " rows found");
+            
+            if (rowCount == 0) {
+                throw new OAException("No employees found matching your criteria", 
+                                    OAException.INFORMATION);
+            }
+        }
+    }
+    
+    /**
+     * Helper method: Build WHERE clause and execute query
+     */
+    private void buildWhereClauseAndExecuteQuery(OAViewObject vo, String empNumber, 
+                                                  String empName, String department) {
+        StringBuilder whereClause = new StringBuilder();
+        int paramIndex = 0;
+        
+        // Add employee number condition
+        if (isNotEmpty(empNumber)) {
+            whereClause.append("EMPLOYEE_NUMBER = :").append(++paramIndex);
+        }
+        
+        // Add employee name condition (using LIKE for partial match)
+        if (isNotEmpty(empName)) {
+            if (whereClause.length() > 0) {
+                whereClause.append(" AND ");
+            }
+            whereClause.append("UPPER(FULL_NAME) LIKE :").append(++paramIndex);
+        }
+        
+        // Add department condition
+        if (isNotEmpty(department)) {
+            if (whereClause.length() > 0) {
+                whereClause.append(" AND ");
+            }
+            whereClause.append("DEPARTMENT_ID = :").append(++paramIndex);
+        }
+        
+        // Lab Step 5: Apply WHERE clause and bind parameters
+        if (whereClause.length() > 0) {
+            vo.setWhereClause(whereClause.toString());
+            vo.setWhereClauseParams(null);
+            
+            // Bind parameters in the same order
+            bindSearchParameters(vo, empNumber, empName, department);
+            
+            System.out.println("WHERE Clause: " + whereClause.toString());
+        } else {
+            // No criteria - show all
+            vo.setWhereClause(null);
+            vo.setWhereClauseParams(null);
+        }
+        
+        // Lab Step 6: Remove fetch limit and execute query
+        vo.setMaxFetchSize(-1); // No limit
+        vo.executeQuery();
+    }
+    
+    /**
+     * Helper method: Check if string is not empty
+     */
+    private boolean isNotEmpty(String value) {
+        return value != null && !value.trim().isEmpty();
+    }
+    
+    /**
+     * Helper method: Bind search parameters
+     */
+    private void bindSearchParameters(OAViewObject vo, String empNumber, 
+                                      String empName, String department) {
+        int paramIndex = 0;
+        
+        if (isNotEmpty(empNumber)) {
+            vo.setWhereClauseParam(paramIndex++, empNumber);
+        }
+        
+        if (isNotEmpty(empName)) {
+            vo.setWhereClauseParam(paramIndex++, "%" + empName.toUpperCase() + "%");
+        }
+        
+        if (isNotEmpty(department)) {
+            vo.setWhereClauseParam(paramIndex++, department);
         }
     }
 
