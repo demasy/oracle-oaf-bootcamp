@@ -159,42 +159,23 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 | 7.3 | Project Presentation | Workshop | ✓ | Guide | Demo preparation, presentation to stakeholders, Q&A handling |
 
 
-### Level 103 Final Assessment
+## [8] Level 103 Final Assessment
+**Duration:** 5 Days | **Level**: Ninja
 
-**Comprehensive Evaluation:**
+### Learning Objectives
+- Demonstrate mastery of all OAF concepts from Levels 101-103
+- Present production-ready enterprise application
+- Defend architectural and design decisions
+- Showcase innovation and problem-solving excellence
+- Achieve Ninja-level certification
 
-1. **Functional Completeness (30%)**
-   - All modules working
-   - Business rules implemented
-   - No critical bugs
+### Lectures
 
-2. **Code Quality (25%)**
-   - Standards compliance
-   - Maintainability
-   - Documentation
-   - Test coverage
-
-3. **Architecture & Design (20%)**
-   - MVC implementation
-   - Scalability
-   - Reusability
-   - Performance
-
-4. **Professional Deliverables (15%)**
-   - Complete documentation
-   - Deployment package
-   - User manual
-   - Presentation
-
-5. **Innovation & Excellence (10%)**
-   - Creative solutions
-   - Additional features
-   - Problem-solving approach
-   - Going beyond requirements
-
-**Success Criteria for Ninja Level:**
-- Score ≥ 85% on all criteria
-- Production-ready application
-- Professional presentation
-- Complete documentation
-- Demonstrates mastery
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 8.1 | Comprehensive Evaluation Criteria | Workshop | ✓ | Rubric | Functional Completeness (30%): All modules working, business rules implemented, no critical bugs |
+| 8.2 | Code Quality Assessment | Workshop | ✓ | Standards Guide | Code Quality (25%): Standards compliance, maintainability, documentation, test coverage |
+| 8.3 | Architecture & Design Review | Workshop | ✓ | Design Patterns | Architecture & Design (20%): MVC implementation, scalability, reusability, performance |
+| 8.4 | Professional Deliverables Review | Workshop | ✓ | Checklist | Professional Deliverables (15%): Complete documentation, deployment package, user manual, presentation |
+| 8.5 | Innovation & Excellence Showcase | Workshop | ✓ | Portfolio | Innovation & Excellence (10%): Creative solutions, additional features, problem-solving, exceeding requirements |
+| 8.6 | Ninja Level Certification | Workshop | ✓ | Success Criteria | Success Criteria: Score ≥ 85% on all criteria, production-ready application, professional presentation, complete documentation, demonstrates mastery |
