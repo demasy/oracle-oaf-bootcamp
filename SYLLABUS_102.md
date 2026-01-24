@@ -27,12 +27,12 @@ Upon completion of Level 102, students will be able to:
 ## [1] Advanced Model Implementation
 **Duration:** 2.5 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Create View Objects dynamically at runtime
 - Add attributes to VOs programmatically
 - Implement complex query logic
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -44,13 +44,13 @@ Upon completion of Level 102, students will be able to:
 ## [2] Server-Side Features
 **Duration:** 5 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Execute SQL statements from Java
 - Call PL/SQL functions and procedures
 - Handle database interactions efficiently
 - Implement business logic in AM
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -63,7 +63,7 @@ Upon completion of Level 102, students will be able to:
 ## [3] Advanced View Components
 **Duration:** 10 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Implement all advanced UI regions
 - Create dynamic hide/show functionality
 - Build query regions with advanced features
@@ -71,7 +71,7 @@ Upon completion of Level 102, students will be able to:
 - Create multi-step train pages
 - Integrate Flexfields
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -97,13 +97,13 @@ Upon completion of Level 102, students will be able to:
 ## [4] Advanced Controller and Programmatic UI
 **Duration:** 5 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Create UI components programmatically
 - Build dynamic pages at runtime
 - Implement JavaScript integration
 - Create read-only pages dynamically
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -120,12 +120,12 @@ Upon completion of Level 102, students will be able to:
 ## [5] Data Manipulation and Validation
 **Duration:** 2.5 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Format dates and numbers properly
 - Implement data validation
 - Use Entity Experts for complex validation
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -139,14 +139,14 @@ Upon completion of Level 102, students will be able to:
 ## [6] Advanced Features and Integrations
 **Duration:** 5 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Implement attachments functionality
 - Build file upload/download features
 - Create data import/export functionality
 - Handle browser back button
 - Integrate with Oracle Workflow
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -165,13 +165,13 @@ Upon completion of Level 102, students will be able to:
 ## [7] Advanced Debugging and Error Handling
 **Duration:** 2.5 Days | **Level**: Ninja
 
-### Learning Objectives
+### Scaffolded Objectives
 - Use advanced debugging techniques
 - Implement custom logging
 - Handle multiple error messages
 - Debug production issues
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -184,7 +184,7 @@ Upon completion of Level 102, students will be able to:
 ## [8] Level 102 Projects
 **Duration:** 7.5 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Apply all Level 102 concepts in practical projects
 - Build complex multi-module applications
 - Implement approval workflows and business logic
@@ -192,7 +192,7 @@ Upon completion of Level 102, students will be able to:
 - Use version control effectively
 - Deliver production-ready applications
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -204,14 +204,14 @@ Upon completion of Level 102, students will be able to:
 ## [9] Level 102 Final Assessment
 **Duration:** 10 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Demonstrate mastery of all Level 102 concepts
 - Design and implement comprehensive enterprise application
 - Apply advanced OAF patterns and best practices
 - Create production-ready deliverables
 - Present professional project documentation
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |

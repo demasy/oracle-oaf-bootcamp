@@ -22,13 +22,13 @@ Upon completion of Level 101, students will be able to:
 ## [1] BootCamp Orientation & Your Success Path
 **Duration:** 2.5 Days | **Level**: Beginner
 
-### Learning Objectives
+### Scaffolded Objectives
 - Navigate bootcamp structure, resources, and support system
 - Understand assessment criteria and success strategies
 - Connect with learning community and set personal goals
 - Establish productive learning habits and mindset
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -42,14 +42,14 @@ Upon completion of Level 101, students will be able to:
 ## [2] OAF Foundations - Architecture & Design Patterns
 **Duration:** 5 Days | **Level**: Beginner
 
-### Learning Objectives
+### Scaffolded Objectives
 - Master OAF terminology to communicate effectively with teams
 - Evaluate when to use OAF versus alternative technologies
 - Apply MVC design pattern principles to application architecture
 - Identify and explain all OAF architectural components
 - Articulate the strategic value of OAF in enterprise environments
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -66,14 +66,14 @@ Upon completion of Level 101, students will be able to:
 ## [3] Development Environment Setup & Your First Page
 **Duration:** 5 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Install and configure production-ready OAF development environment
 - Master JDeveloper IDE navigation and productivity features
 - Create and run your first working "Hello World" OAF page
 - Establish professional workspace organization standards
 - Troubleshoot common environment and connectivity issues
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -91,7 +91,7 @@ Upon completion of Level 101, students will be able to:
 ## [4] The Model Layer - Business Logic with BC4J
 **Duration:** 7.5 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Design and implement complete BC4J Model layer components
 - Create Application Modules that manage business transactions
 - Build Entity Objects that enforce business rules at database level
@@ -99,7 +99,7 @@ Upon completion of Level 101, students will be able to:
 - Test Model components independently using BC4J tester
 - Understand transaction management and database interaction patterns
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -120,7 +120,7 @@ Upon completion of Level 101, students will be able to:
 ## [5] The View Layer - Building Modern User Interfaces
 **Duration:** 7.5 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Master all standard OAF web widgets and UI components
 - Design professional page layouts using regions and hierarchies
 - Implement List of Values (LOV) with search capabilities
@@ -129,7 +129,7 @@ Upon completion of Level 101, students will be able to:
 - Build intuitive navigation with breadcrumbs and menus
 - Create accessible, user-friendly interfaces
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -148,7 +148,7 @@ Upon completion of Level 101, students will be able to:
 ## [6] The Controller Layer - Handling User Events
 **Duration:** 5 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Implement Controller logic for HTTP GET and POST requests
 - Handle user events: button clicks, form submissions, navigation
 - Pass parameters between pages using three scoping strategies
@@ -157,7 +157,7 @@ Upon completion of Level 101, students will be able to:
 - Call Model layer methods from Controller
 - Display messages and manage user feedback
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -174,13 +174,13 @@ Upon completion of Level 101, students will be able to:
 ## [6B] Master-Detail Relationships - Hierarchical Data
 **Duration:** 2.5 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Implement master-detail relationships using View Links
 - Display and navigate hierarchical parent-child data
 - Coordinate updates between master and detail records
 - Handle cascading operations and dependencies
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -192,7 +192,7 @@ Upon completion of Level 101, students will be able to:
 ## [7] Error Handling & Debugging Excellence
 **Duration:** 2.5 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Implement robust exception handling strategies
 - Master OA Framework exception types and hierarchy
 - Debug OAF applications using multiple techniques
@@ -200,7 +200,7 @@ Upon completion of Level 101, students will be able to:
 - Provide user-friendly error messages
 - Use professional debugging tools effectively
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -214,7 +214,7 @@ Upon completion of Level 101, students will be able to:
 ## [8] Security Implementation - Protecting Your Application
 **Duration:** 2.5 Days | **Level**: Beginner
 
-### Learning Objectives
+### Scaffolded Objectives
 - Understand OAF security model and EBS integration
 - Implement function security to control page access
 - Configure menu entries and responsibility assignments
@@ -222,7 +222,7 @@ Upon completion of Level 101, students will be able to:
 - Test security configurations thoroughly
 - Follow security best practices
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -235,14 +235,14 @@ Upon completion of Level 101, students will be able to:
 ## [9] Development Standards and Best Practices
 **Duration:** 2.5 Days | **Level**: Beginner
 
-### Learning Objectives
+### Scaffolded Objectives
 - Follow Oracle OAF coding standards
 - Organize code and files properly
 - Understand directory structure
 - Use import/export utilities
 - Distinguish between Personalizations and Extensions
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -261,13 +261,13 @@ Upon completion of Level 101, students will be able to:
 ## [10] Deploying OA Framework Applications
 **Duration:** 2.5 Days | **Level**: Advanced
 
-### Learning Objectives
+### Scaffolded Objectives
 - Deploy OAF applications to E-Business Suite
 - Understand deployment differences between versions
 - Troubleshoot deployment issues
 - Register pages in E-Business Suite
 
-### Lectures
+### Scaffolded Content
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
