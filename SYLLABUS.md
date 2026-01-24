@@ -32,13 +32,13 @@ Upon completion of Level 101, students will be able to:
 ## [1] BootCamp Orientation & Your Success Path
 **Duration:** 2.5 Days | **Bloom's Level:** Remember
 
-#### Learning Objectives
+### Learning Objectives
 - Navigate bootcamp structure, resources, and support system
 - Understand assessment criteria and success strategies
 - Connect with learning community and set personal goals
 - Establish productive learning habits and mindset
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -52,14 +52,14 @@ Upon completion of Level 101, students will be able to:
 ## [2] OAF Foundations - Architecture & Design Patterns
 **Duration:** 5 Days | **Bloom's Level:** Remember, Understand
 
-#### Learning Objectives
+### Learning Objectives
 - Master OAF terminology to communicate effectively with teams
 - Evaluate when to use OAF versus alternative technologies
 - Apply MVC design pattern principles to application architecture
 - Identify and explain all OAF architectural components
 - Articulate the strategic value of OAF in enterprise environments
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -76,14 +76,14 @@ Upon completion of Level 101, students will be able to:
 ## [3] Development Environment Setup & Your First Page
 **Duration:** 5 Days | **Bloom's Level:** Apply
 
-#### Learning Objectives
+### Learning Objectives
 - Install and configure production-ready OAF development environment
 - Master JDeveloper IDE navigation and productivity features
 - Create and run your first working "Hello World" OAF page
 - Establish professional workspace organization standards
 - Troubleshoot common environment and connectivity issues
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -101,7 +101,7 @@ Upon completion of Level 101, students will be able to:
 ## [4] The Model Layer - Business Logic with BC4J
 **Duration:** 7.5 Days | **Bloom's Level:** Apply, Analyze
 
-#### Learning Objectives
+### Learning Objectives
 - Design and implement complete BC4J Model layer components
 - Create Application Modules that manage business transactions
 - Build Entity Objects that enforce business rules at database level
@@ -109,7 +109,7 @@ Upon completion of Level 101, students will be able to:
 - Test Model components independently using BC4J tester
 - Understand transaction management and database interaction patterns
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -130,7 +130,7 @@ Upon completion of Level 101, students will be able to:
 ## [5] The View Layer - Building Modern User Interfaces
 **Duration:** 7.5 Days | **Bloom's Level:** Apply, Analyze
 
-#### Learning Objectives
+### Learning Objectives
 - Master all standard OAF web widgets and UI components
 - Design professional page layouts using regions and hierarchies
 - Implement List of Values (LOV) with search capabilities
@@ -139,7 +139,7 @@ Upon completion of Level 101, students will be able to:
 - Build intuitive navigation with breadcrumbs and menus
 - Create accessible, user-friendly interfaces
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -158,7 +158,7 @@ Upon completion of Level 101, students will be able to:
 ## [6] The Controller Layer - Handling User Events
 **Duration:** 5 Days | **Bloom's Level:** Apply, Analyze
 
-#### Learning Objectives
+### Learning Objectives
 - Implement Controller logic for HTTP GET and POST requests
 - Handle user events: button clicks, form submissions, navigation
 - Pass parameters between pages using three scoping strategies
@@ -167,7 +167,7 @@ Upon completion of Level 101, students will be able to:
 - Call Model layer methods from Controller
 - Display messages and manage user feedback
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -186,13 +186,13 @@ Upon completion of Level 101, students will be able to:
 ## [6B] Master-Detail Relationships - Hierarchical Data
 **Duration:** 2.5 Days | **Bloom's Level:** Apply
 
-#### Learning Objectives
+### Learning Objectives
 - Implement master-detail relationships using View Links
 - Display and navigate hierarchical parent-child data
 - Coordinate updates between master and detail records
 - Handle cascading operations and dependencies
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -204,7 +204,7 @@ Upon completion of Level 101, students will be able to:
 ## [7] Error Handling & Debugging Excellence
 **Duration:** 2.5 Days | **Bloom's Level:** Apply, Analyze
 
-#### Learning Objectives
+### Learning Objectives
 - Implement robust exception handling strategies
 - Master OA Framework exception types and hierarchy
 - Debug OAF applications using multiple techniques
@@ -212,7 +212,7 @@ Upon completion of Level 101, students will be able to:
 - Provide user-friendly error messages
 - Use professional debugging tools effectively
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -226,7 +226,7 @@ Upon completion of Level 101, students will be able to:
 ## [8] Security Implementation - Protecting Your Application
 **Duration:** 2.5 Days | **Bloom's Level:** Understand, Apply
 
-#### Learning Objectives
+### Learning Objectives
 - Understand OAF security model and EBS integration
 - Implement function security to control page access
 - Configure menu entries and responsibility assignments
@@ -234,7 +234,7 @@ Upon completion of Level 101, students will be able to:
 - Test security configurations thoroughly
 - Follow security best practices
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -247,14 +247,14 @@ Upon completion of Level 101, students will be able to:
 ## [9] Development Standards and Best Practices
 **Duration:** 2.5 Days | **Bloom's Level:** Understand, Apply
 
-#### Learning Objectives
+### Learning Objectives
 - Follow Oracle OAF coding standards
 - Organize code and files properly
 - Understand directory structure
 - Use import/export utilities
 - Distinguish between Personalizations and Extensions
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -273,13 +273,13 @@ Upon completion of Level 101, students will be able to:
 ## [10] Deploying OA Framework Applications
 **Duration:** 2.5 Days | **Bloom's Level:** Apply
 
-#### Learning Objectives
+### Learning Objectives
 - Deploy OAF applications to E-Business Suite
 - Understand deployment differences between versions
 - Troubleshoot deployment issues
 - Register pages in E-Business Suite
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -574,12 +574,12 @@ Upon completion of Level 102, students will be able to:
 ## [11] Advanced Model Implementation
 **Duration:** 2.5 Days | **Bloom's Level:** Apply, Create
 
-#### Learning Objectives
+### Learning Objectives
 - Create View Objects dynamically at runtime
 - Add attributes to VOs programmatically
 - Implement complex query logic
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -591,13 +591,13 @@ Upon completion of Level 102, students will be able to:
 ## [12] Server-Side Features
 **Duration:** 5 Days | **Bloom's Level:** Apply, Create
 
-#### Learning Objectives
+### Learning Objectives
 - Execute SQL statements from Java
 - Call PL/SQL functions and procedures
 - Handle database interactions efficiently
 - Implement business logic in AM
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -610,7 +610,7 @@ Upon completion of Level 102, students will be able to:
 ## [13] Advanced View Components
 **Duration:** 10 Days | **Bloom's Level:** Apply, Create
 
-#### Learning Objectives
+### Learning Objectives
 - Implement all advanced UI regions
 - Create dynamic hide/show functionality
 - Build query regions with advanced features
@@ -618,7 +618,7 @@ Upon completion of Level 102, students will be able to:
 - Create multi-step train pages
 - Integrate Flexfields
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -644,13 +644,13 @@ Upon completion of Level 102, students will be able to:
 ## [14] Advanced Controller and Programmatic UI
 **Duration:** 5 Days | **Bloom's Level:** Create
 
-#### Learning Objectives
+### Learning Objectives
 - Create UI components programmatically
 - Build dynamic pages at runtime
 - Implement JavaScript integration
 - Create read-only pages dynamically
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -667,12 +667,12 @@ Upon completion of Level 102, students will be able to:
 ## [15] Data Manipulation and Validation
 **Duration:** 2.5 Days | **Bloom's Level:** Apply
 
-#### Learning Objectives
+### Learning Objectives
 - Format dates and numbers properly
 - Implement data validation
 - Use Entity Experts for complex validation
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -686,14 +686,14 @@ Upon completion of Level 102, students will be able to:
 ## [16] Advanced Features and Integrations
 **Duration:** 5 Days | **Bloom's Level:** Apply, Create
 
-#### Learning Objectives
+### Learning Objectives
 - Implement attachments functionality
 - Build file upload/download features
 - Create data import/export functionality
 - Handle browser back button
 - Integrate with Oracle Workflow
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -712,13 +712,13 @@ Upon completion of Level 102, students will be able to:
 ## [17] Advanced Debugging and Error Handling
 **Duration:** 2.5 Days | **Bloom's Level:** Analyze, Evaluate
 
-#### Learning Objectives
+### Learning Objectives
 - Use advanced debugging techniques
 - Implement custom logging
 - Handle multiple error messages
 - Debug production issues
 
-#### Lectures
+### Lectures
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
@@ -825,13 +825,13 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ### Phase 1: Project Setup and Planning
 **Duration:** 2.5 Days
 
-#### Learning Objectives
+### Learning Objectives
 - Set up professional development environment
 - Configure version control
 - Design database architecture
 - Plan application structure
 
-#### Lectures
+### Lectures
 
 **P1.1 Setting-Up Development Environment**
 - Professional workspace setup
@@ -872,7 +872,7 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ### Phase 2: Store Management Module (CRUD Operations)
 **Duration:** 7.5 Days
 
-#### Learning Objectives
+### Learning Objectives
 - Implement complete CRUD functionality
 - Apply all Level 101 concepts
 - Build professional UI
@@ -916,7 +916,7 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ### Phase 3: Product Management Module (Practice Assignment)
 **Duration:** 5 Days
 
-#### Learning Objectives
+### Learning Objectives
 - Independent implementation
 - Apply learned patterns
 - Problem-solving
@@ -948,7 +948,7 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 ### Phase 4: Branch Management (Master-Detail Complexity)
 **Duration:** 7.5 Days
 
-#### Learning Objectives
+### Learning Objectives
 - Implement complex master-detail relationships
 - Handle hierarchical data
 - Coordinate multiple regions
