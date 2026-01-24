@@ -172,60 +172,40 @@ Upon completion of Level 102, students will be able to:
 | 17.3 | Advanced Debugging Techniques | Lab | ✓ | Guide | Remote debugging, production debugging, log analysis, performance profiling |
 
 
-### Level 102 Projects
+## [18] Level 102 Projects
+**Duration:** 7.5 Days | **Level**: Advanced
 
-#### Project 101: Point-Of-Sale System (Introduction)
-**Duration:** 2.5 Days
+### Learning Objectives
+- Apply all Level 102 concepts in practical projects
+- Build complex multi-module applications
+- Implement approval workflows and business logic
+- Create professional project documentation
+- Use version control effectively
+- Deliver production-ready applications
 
-- Setting up project structure
-- Git version control
-- Database design
-- Project planning
+### Lectures
 
-#### Project 102: Items Creation with Approval Cycle
-**Duration:** 5 Days
-
-**Objectives:**
-- Multi-step approval workflow
-- Complex business logic
-- Integration with workflow
-- Advanced UI features
-
-**Requirements:**
-1. Item creation form with all details
-2. Submit for approval
-3. Multi-level approval workflow
-4. Email notifications
-5. Approval history tracking
-6. Advanced search and reporting
-
-**Deliverables:**
-- Functional application
-- Git repository
-- Technical documentation
-- User guide
-- Test results
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 18.1 | Project 101: Point-Of-Sale System (Introduction) | Workshop | ✓ | Project Guide | Setting up project structure, Git version control, database design, project planning, team collaboration setup (Duration: 2.5 Days) |
+| 18.2 | Project 102: Items Creation with Approval Cycle | Lab | ✓ | Requirements | Multi-step approval workflow, complex business logic, workflow integration, advanced UI features, item creation form, multi-level approvals, email notifications, approval history, advanced search and reporting (Duration: 5 Days) |
 
 
-### Level 102 Final Assessment
+## [19] Level 102 Final Assessment
+**Duration:** 10 Days | **Level**: Advanced
 
-**Comprehensive Project: Choose One**
+### Learning Objectives
+- Demonstrate mastery of all Level 102 concepts
+- Design and implement comprehensive enterprise application
+- Apply advanced OAF patterns and best practices
+- Create production-ready deliverables
+- Present professional project documentation
 
-**Option A: Advanced HR Management System**
-- Employee self-service
-- Manager approvals
-- Integration with workflow
-- Reports and dashboards
+### Lectures
 
-**Option B: Procurement Request System**
-- Purchase requisition creation
-- Multi-level approval
-- Budget validation
-- PO integration
-
-**Assessment Criteria:**
-- All Level 102 concepts implemented (40%)
-- Code quality and standards (25%)
-- Architecture and design (20%)
-- Documentation (10%)
-- Innovation and extras (5%)
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 19.1 | Final Assessment Overview and Project Selection | Workshop | ✓ | Assessment Guide | Comprehensive project requirements, choosing between Option A (Advanced HR Management System) or Option B (Procurement Request System), planning and timeline |
+| 19.2 | Option A: Advanced HR Management System | Lab | ✓ | Project Spec | Employee self-service portal, manager approval workflows, workflow integration, reports and dashboards, complete HRIS functionality |
+| 19.3 | Option B: Procurement Request System | Lab | ✓ | Project Spec | Purchase requisition creation, multi-level approval process, budget validation logic, PO integration, procurement workflow |
+| 19.4 | Assessment Criteria and Deliverables | Workshop | ✓ | Rubric | All Level 102 concepts (40%), Code quality and standards (25%), Architecture and design (20%), Documentation (10%), Innovation and extras (5%) |
