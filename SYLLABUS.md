@@ -370,6 +370,56 @@ Upon completion of Level 101, students will be able to:
 | 2.6 | OAF Architecture Deep Dive: BC4J and UIX | Video | ✓ | Architecture Guide | BC4J, UIX, lifecycle, metadata repository |
 | 2.7 | Page Anatomy: Understanding OAF Components | Video | ✓ | Reference Poster | AM, VO, EO, Pages, Regions, Controllers |
 
+#### Detailed Lecture Content
+
+**2.1 OAF Terminology: Speaking the Language**
+- Essential vocabulary for OAF developers
+- Component naming conventions and standards
+- Oracle E-Business Suite integration context
+- Reading and understanding Oracle documentation
+
+**2.2 Evolution: From Oracle Forms to OA Framework**
+- Technology shift: Client-server to web-based architecture
+- Development paradigm comparison
+- Migration strategies and considerations
+- Real-world use case analysis
+- When each technology is the right choice
+
+**2.3 Strategic Value: When and Why to Use OAF**
+- Competitive advantages: Web-based, MVC, reusability, scalability
+- Understanding the limitations: Complexity and learning curve
+- Decision matrix: OAF vs. Forms vs. other technologies
+- Business case for OAF adoption
+- Oracle's strategic roadmap
+
+**2.4 OAF Ecosystem: Integration with E-Business Suite**
+- Historical evolution and market positioning
+- Oracle's technology direction and investment
+- Deep integration with EBS infrastructure
+- Framework capabilities and boundaries
+
+**2.5 MVC Pattern Mastery: The Foundation of OAF**
+- Model layer: Business logic and data management
+- View layer: User interface presentation and experience
+- Controller layer: User interaction and event handling
+- Separation of concerns: Benefits and best practices
+- Real-world analogies for understanding MVC
+
+**2.6 OAF Architecture Deep Dive: BC4J and UIX**
+- BC4J Framework: The data management engine
+- UIX Framework: Metadata-driven user interfaces
+- Request/Response lifecycle visualization
+- Component interaction and communication patterns
+- Metadata repository and dynamic behavior
+
+**2.7 Page Anatomy: Understanding OAF Components**
+- Application Module (AM): Your business logic container
+- View Objects (VO): Query-based data access
+- Entity Objects (EO): Database table representation
+- Pages and Regions: UI structure and hierarchy
+- Controllers (CO): Event handling and navigation
+- How components collaborate in a running application
+
 #### Activities
 - 📊 Create comparison chart: Forms vs. OAF
 - 🎨 Diagram MVC pattern for sample scenario
@@ -405,6 +455,69 @@ Upon completion of Level 101, students will be able to:
 | 3.6 | Milestone Achievement: Building "Hello World!" | Lab | ✓ | Step-by-step | First page, AM, layout, components, run |
 | 3.7 | Project Structure Best Practices | Video | ✓ | Template | Workspace organization, naming, version control |
 | 3.8 | Database Connectivity Essentials | Video | ✓ | Connection Guide | Connection setup, pooling, multi-environment |
+
+#### Detailed Lecture Content
+
+**3.1 JDeveloper IDE: Your Development Command Center**
+- Oracle's integrated development environment for OAF
+- Workspace and project organization strategies
+- Understanding the IDE layout and key components
+- Essential panels: Navigator, Editor, Properties, Structure
+- Productivity features that accelerate development
+
+**3.2 Acquiring OA Extension from Oracle Support**
+- Navigating My Oracle Support (MOS) portal
+- Identifying correct version for your EBS release
+- Download process and file verification
+- Version compatibility matrix and dependencies
+- License and access considerations
+
+**3.3 Environment Configuration: Step-by-Step Setup**
+- Pre-installation requirements and system check
+- JDeveloper installation process (all platforms)
+- Applying OA Extension patch correctly
+- Essential configuration and preferences
+- Environment variables and system settings
+- DBC file setup and configuration
+
+**3.4 JDeveloper Productivity: Tools & Shortcuts**
+- Complete interface tour and customization
+- Essential keyboard shortcuts for efficiency
+- Toolbars, menus, and quick access features
+- Code templates and snippets
+- Workspace layout optimization
+- Time-saving tips from experienced developers
+
+**3.5 Essential Configuration: DBC Files & Connections**
+- Understanding DBC files and their role
+- Initial configuration checklist
+- Database connection setup and validation
+- Connection parameters explained
+- Troubleshooting connection issues
+- Managing multiple environment connections
+
+**3.6 Milestone Achievement: Building "Hello World!"**
+- Your first OAF page: Complete walkthrough
+- Creating workspace and project structure
+- Building Application Module (AM)
+- Designing simple page layout
+- Adding UI components
+- Running in embedded OC4J server
+- Celebrating your first success
+
+**3.7 Project Structure Best Practices**
+- Professional workspace organization
+- Package naming conventions (Oracle standards)
+- Separating POC from production code
+- Project folder hierarchy
+- Version control integration preparation
+
+**3.8 Database Connectivity Essentials**
+- Creating and testing database connections
+- Connection pooling and management
+- Multiple environment setup (DEV/TEST/PROD)
+- Security best practices
+- Troubleshooting connectivity problems
 
 #### Activities (Scaffold Level: Maximum)
 
@@ -472,6 +585,94 @@ Upon completion of Level 101, students will be able to:
 | 4.10 | Advanced BC4J: View Links & Associations | Video | ✓ | Reference | Master-detail, FK relationships, domains |
 | 4.11 | Database Interactions: Transactions & Pooling | Video | ✓ | Best Practices | Connection pooling, commits, locking, tuning |
 
+#### Detailed Lecture Content
+
+**4.1 BC4J Framework: The Data Management Engine**
+- Understanding Business Components for Java (BC4J)
+- BC4J's role in MVC architecture: The "M" in Model
+- Component ecosystem: EO, VO, AM, and their relationships
+- Metadata-driven approach and XML descriptors
+- Why Oracle chose BC4J for OAF
+
+**4.2 Application Modules: Orchestrating Business Logic**
+- AM purpose: Transaction boundary and data container
+- Application Module structure and hierarchy
+- Root AM vs. nested AM patterns
+- Transaction management and commit coordination
+- Connection pooling and performance optimization
+- When to create new AM vs. extending existing
+
+**4.3 Hands-On: Creating & Testing Application Modules**
+- Step-by-step AM creation using wizards
+- Adding View Objects to AM data model
+- Configuring AM properties and settings
+- Testing with BC4J tester (standalone testing)
+- Debugging AM issues and common pitfalls
+- Best practices for AM design
+
+**4.4 Entity Objects: Your Database Gateway**
+- EO fundamentals: Mapping to database tables
+- Understanding EO attributes and database columns
+- Business validation logic at the Model layer
+- DML operations: Insert, Update, Delete
+- Entity Associations: Relationships between EOs
+- When to use EOs vs. direct SQL
+
+**4.5 Building Entity Objects: Mapping to Reality**
+- Wizard-driven EO creation process
+- Attribute configuration and data types
+- Implementing validation rules in EOs
+- Business logic in EO methods
+- Composite keys and complex mappings
+- EO inheritance and reuse
+
+**4.6 View Objects: Query-Based Data Views**
+- VO fundamentals: SQL queries as Java objects
+- Read-only vs. updatable View Objects
+- VO-EO relationships: When to link them
+- Custom SQL queries and expert mode
+- Performance implications of VO design
+- Calculated and transient attributes
+
+**4.7 Creating Updatable View Objects**
+- Building VO based on Entity Object
+- Attribute mapping between VO and EO
+- WHERE clause customization
+- Testing updatable VOs for CRUD operations
+- Handling updates and data persistence
+- Validation flow from VO to EO
+
+**4.8 Creating Read-Only View Objects**
+- SQL-based VOs without EO association
+- Expert mode: Writing custom SQL queries
+- Calculated attributes and complex expressions
+- Performance optimization for read-only data
+- Joins and multi-table queries
+- When to use read-only vs. updatable
+
+**4.9 Creating Programmatic View Objects**
+- Building VOs dynamically at runtime
+- Defining attributes programmatically in code
+- Populating data without database queries
+- Use cases: Dynamic columns, calculated data
+- Memory management considerations
+- Advanced scenarios and examples
+
+**4.10 Advanced BC4J: View Links & Associations**
+- View Links: Implementing master-detail relationships
+- Entity Associations: FK relationships in EOs
+- Domain objects: Reusable data types
+- Type converters: Custom data transformations
+- Advanced querying capabilities
+
+**4.11 Database Interactions: Transactions & Pooling**
+- Understanding BC4J connection pooling
+- Transaction handling: Commit and rollback patterns
+- Integration with database triggers
+- Sequence generation for primary keys
+- Pessimistic vs. optimistic locking strategies
+- Performance tuning at Model layer
+
 #### Activities (Scaffold Level: High → Moderate)
 
 **"I Do" - Instructor Demonstration:**
@@ -535,6 +736,97 @@ Upon completion of Level 101, students will be able to:
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
 | 5.1 | UIX Framework: Component-Based UI Architecture | Video | ✓ | UIX Guide | Framework basics, component hierarchy, metadata |
+| 5.2 | Organizing UI Components: Workspace Structure | Video | ✓ | Structure Guide | Workspace organization, naming, packages, reusable |
+| 5.3 | Pages and Regions: Fundamentals | Video | ✓ | Layout Guide | Page structure, region types, hierarchy, containers |
+| 5.4 | Standard Web Widgets: Input & Display Components | Lab | ✓ | Widget Reference | All standard UI widgets and their properties |
+| 5.5 | List of Values (LOV): Search & Select | Lab | ✓ | LOV Tutorial | Standard, dependent, and external LOVs |
+| 5.6 | Page Layouts & Advanced Regions | Lab | ✓ | Layout Patterns | Layouts, headers, buttons, query regions |
+| 5.7 | Styling & Customization: CSS & Attribute Sets | Video | ✓ | Style Guide | CSS styling, attribute sets, theming |
+| 5.8 | Partial Page Rendering (PPR): Dynamic UI | Lab | ✓ | PPR Tutorial | AJAX in OAF, PPR events, dynamic updates |
+| 5.9 | Navigation: Breadcrumbs & Menus | Video | ✓ | Nav Guide | Breadcrumb configuration, menu integration |
+
+#### Detailed Lecture Content
+
+**5.1 UIX Framework: Component-Based UI Architecture**
+- Understanding UIX (User Interface XML) framework
+- Component-based design principles
+- Metadata-driven UI development
+- Component hierarchy and parent-child relationships
+- Region types and their purposes
+
+**5.2 Organizing UI Components: Workspace Structure**
+- Organizing UI components
+- Naming conventions
+- Package structure
+- Reusable components
+
+**5.3 Pages and Regions: Fundamentals**
+- Page structure
+- Region types and usage
+- Layout hierarchy
+- Container regions
+
+**5.4 Standard Web Widgets: Input & Display Components**
+- Text Field (basic text display)
+- Text Input (user data entry)
+- Text Area (multi-line input)
+- Data Entry Text Field (formatted input)
+- Display-Only Text Field (read-only views)
+- Styled Text (rich formatting)
+- Check Box (boolean selection)
+- Radio Group / Buttons (single choice)
+- Message Choice (dropdown selection)
+- Poplist (static dropdown lists)
+- Dynamic Poplists (database-driven options)
+- Submit Button (action buttons)
+- Image Item (visual elements)
+
+**5.5 List of Values (LOV): Search & Select**
+- Standard LOV (search & select functionality)
+- LOV configuration
+- Search capabilities
+- Return values
+- Dependent LOV (cascading selections)
+- Parent-child relationships
+- Parameter passing
+- External LOV (reusable components)
+- LOV from different AM
+- Configuration
+
+**5.6 Page Layouts & Advanced Regions**
+- Message Component Layout (auto-arrangement)
+- Header Region (page branding & actions)
+- Row Layout Region (horizontal components)
+- Default Double Column (two-column forms)
+- Default Single Column (single-column forms)
+- Page Button Bar (standard action area)
+- Query Region (search functionality)
+- Query criteria
+- Results display
+
+**5.7 Styling & Customization: CSS & Attribute Sets**
+- CSS Styles (custom appearance)
+- Applying styles
+- Custom CSS
+- Style inheritance
+- Attribute Sets (reusable properties)
+- Standard attributes
+- Custom attribute sets
+
+**5.8 Partial Page Rendering (PPR): Dynamic UI**
+- AJAX in OAF
+- PPR events and targets
+- Improving user experience
+- Performance considerations
+- Dynamic field updates
+- Refresh patterns
+
+**5.9 Navigation: Breadcrumbs & Menus**
+- Breadcrumb Navigation (user orientation)
+- Navigation trail
+- Configuration
+- Programmatic breadcrumbs
+- Menu integration
 
 **5.2 Workspaces and Projects Structure**
 - Organizing UI components
