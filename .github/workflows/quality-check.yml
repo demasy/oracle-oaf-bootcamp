@@ -6,10 +6,15 @@ on:
   push:
     branches: [ main, master ]
 
+permissions:
+  contents: read
+
 jobs:
   markdown-lint:
     name: Markdown Lint
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     
     steps:
     - name: Checkout code
@@ -26,6 +31,8 @@ jobs:
   file-structure-check:
     name: Validate File Structure
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     
     steps:
     - name: Checkout code
@@ -68,6 +75,8 @@ jobs:
   code-brain-validation:
     name: Validate Code Brain Structure
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     
     steps:
     - name: Checkout code
@@ -121,6 +130,8 @@ jobs:
   syllabus-check:
     name: Validate Syllabus Files
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     
     steps:
     - name: Checkout code
@@ -150,6 +161,8 @@ jobs:
   check-documentation-quality:
     name: Documentation Quality Check
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     
     steps:
     - name: Checkout code
@@ -179,6 +192,8 @@ jobs:
   summary:
     name: Quality Check Summary
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     needs: [markdown-lint, file-structure-check, code-brain-validation, syllabus-check, check-documentation-quality]
     if: always()
     
