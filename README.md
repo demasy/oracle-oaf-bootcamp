@@ -96,11 +96,12 @@ throw MessageHelper.createValidationError(
 
 ## 📖 Documentation
 
-- **[CHANGELOG.md](CHANGELOG.md)** - Version history and migration guides
-- **[MESSAGE_CODES.md](MESSAGE_CODES.md)** - XXVAL validation message codes (v1.3.5)
-- **[USAGE_EXAMPLES.md](USAGE_EXAMPLES.md)** - Validation utilities guide
-- **[MESSAGE_REGISTRATION.sql](MESSAGE_REGISTRATION.sql)** - Complete FND_MESSAGES setup (v1.4.0)
-- **[code-brain/README.md](code-brain/README.md)** - Detailed code brain documentation
+- **[CHANGELOG.md](CHANGELOG.md)** - Version history and migration guides  
+- **[MESSAGEHELPER_GUIDE.md](MESSAGEHELPER_GUIDE.md)** - Complete MessageHelper usage guide (v1.4.0)  
+- **[MESSAGE_REGISTRATION.sql](MESSAGE_REGISTRATION.sql)** - FND_MESSAGES setup for XX/XXVAL/XXLAB (v1.4.0)  
+- **[MESSAGE_CODES.md](code-brain/model-layer/validation/MESSAGE_CODES.md)** - XXVAL validation messages (v1.3.5)  
+- **[USAGE_EXAMPLES.md](code-brain/model-layer/validation/USAGE_EXAMPLES.md)** - DataValidation utilities guide (v1.3.5)  
+- **[code-brain/README.md](code-brain/README.md)** - Complete code brain documentation  
 
 <br>
 
