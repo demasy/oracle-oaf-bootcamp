@@ -1,756 +1,749 @@
 {
-  "brainName": "Oracle OAF Code Repository Brain",
-  "version": "1.3",
-  "lastUpdated": "2026-01-26",
-  "description": "Comprehensive layer-based MVC architecture with Oracle Application Framework patterns - Enhanced with View Layer, Integration Layer (Excel/PL-SQL), and Security patterns",
-  
-  "purpose": {
-    "primary": "Centralized repository of reusable OAF code patterns and examples",
-    "secondary": [
-      "Reference guide for common OAF development tasks",
-      "Best practices demonstration",
-      "Student learning resource",
-      "Instructor teaching aid"
-    ]
-  },
-  
-  "codeCategories": {
-    "viewObjectOperations": {
-      "directory": "view-object-operations/",
-      "description": "View Object query execution patterns",
-      "complexity": "Basic",
-      "files": [
-        {
-          "name": "ExecuteVO.java",
-          "useCases": [
-            "Execute VO without parameters",
-            "Execute VO with where clause",
-            "Execute VO with multiple parameters",
-            "Execute VO and reset filters",
-            "Execute VO with ORDER BY clause",
-            "Execute VO and iterate through rows",
-            "Execute VO with dynamic query"
-          ],
-          "lines": 161,
-          "methods": 7,
-          "keyPatterns": [
-            "vo.executeQuery()",
-            "vo.setWhereClause()",
-            "vo.setWhereClauseParams()",
-            "vo.setOrderByClause()",
-            "vo.first() / vo.next()"
-          ]
-        }
-      ],
-      "relatedSections": ["Level 101 Section 3", "Level 102 Section 1"],
-      "prerequisites": ["Understanding of BC4J", "View Object basics"]
-    },
-    
-    "errorHandling": {
-      "directory": "error-handling/",
-      "description": "Exception handling and user message display",
-      "complexity": "Intermediate",
-      "files": [
-        {
-          "name": "OAExceptionHandling.java",
-          "useCases": [
-            "Throw simple error message",
-            "Throw error with message dictionary",
-            "Throw error with message tokens",
-            "Display warning message",
-            "Display confirmation message",
-            "Display information message",
-            "Handle exceptions from Application Module",
-            "Add multiple messages to page",
-            "Handle SQL exceptions",
-            "Throw exception with detail message"
-          ],
-          "lines": 172,
-          "methods": 13,
-          "keyPatterns": [
-            "OAException(message, severity)",
-            "OAException(product, messageName)",
-            "setMessageToken()",
-            "pageContext.putDialogMessage()",
-            "try-catch with OAException"
-          ]
-        }
-      ],
-      "relatedSections": ["Level 101 Section 7", "Level 102 Section 7"],
-      "prerequisites": ["OAException class", "Message dictionary"]
-    },
-    
-    "applicationModule": {
-      "directory": "application-module/",
-      "description": "Root AM access and method invocation",
-      "complexity": "Basic",
-      "files": [
-        {
-          "name": "RootAMAccess.java",
-          "useCases": [
-            "Get Root Application Module",
-            "Invoke AM method using invokeMethod()",
-            "Invoke AM method with return value",
-            "Invoke AM method with multiple parameters",
-            "Access nested Application Module",
-            "Commit transaction using Root AM",
-            "Rollback transaction using Root AM",
-            "Check if AM method exists before invoking",
-            "Access AM in processRequest",
-            "Access AM in processFormRequest"
-          ],
-          "lines": 158,
-          "methods": 11,
-          "keyPatterns": [
-            "pageContext.getRootApplicationModule()",
-            "rootAM.invokeMethod(methodName, params)",
-            "rootAM.findApplicationModule(instanceName)",
-            "rootAM.invokeMethod(\"commit\")",
-            "rootAM.invokeMethod(\"rollback\")"
-          ]
-        }
-      ],
-      "relatedSections": ["Level 101 Section 3", "Level 101 Section 5"],
-      "prerequisites": ["Application Module basics", "Controller fundamentals"]
-    },
-    
-    "dialogPages": {
-      "directory": "dialog-pages/",
-      "description": "Dialog page creation and response handling",
-      "complexity": "Intermediate",
-      "files": [
-        {
-          "name": "DialogPageExamples.java",
-          "useCases": [
-            "Simple confirmation dialog",
-            "Confirmation dialog with Yes/No buttons",
-            "Handle dialog response in processFormRequest",
-            "Warning dialog",
-            "Error dialog",
-            "Information dialog",
-            "Dialog with detail message",
-            "Dialog with navigation",
-            "Dialog with multiple form parameters",
-            "Dialog with message dictionary",
-            "Complete dialog flow example"
-          ],
-          "lines": 311,
-          "methods": 11,
-          "keyPatterns": [
-            "OADialogPage(severity, message, detail, okDest, noDest)",
-            "dialogPage.setOkButtonItemName()",
-            "dialogPage.setOkButtonToPost(true)",
-            "dialogPage.setFormParameters(Hashtable)",
-            "pageContext.redirectToDialogPage()",
-            "pageContext.getParameter(buttonName)"
-          ]
-        }
-      ],
-      "relatedSections": ["Level 102 Section 4", "Level 102 Section 7"],
-      "prerequisites": ["OADialogPage", "Controller event handling"]
-    },
-    
-    "entityObjects": {
-      "directory": "entity-objects/",
-      "description": "Entity Object lifecycle and validation patterns",
-      "complexity": "Intermediate",
-      "files": [
-        {
-          "name": "EntityObjectPatterns.java",
-          "useCases": [
-            "Populate WHO columns and sequence on create",
-            "Update WHO columns before DML",
-            "Entity-level validation",
-            "Attribute-level validation (setter override)",
-            "Custom business logic before remove",
-            "Calculate derived attribute",
-            "Post changes to database",
-            "Refresh entity from database",
-            "Check if attribute has changed"
-          ],
-          "lines": 243,
-          "methods": 9,
-          "keyPatterns": [
-            "create(AttributeList)",
-            "doDML(operation, TransactionEvent)",
-            "validateEntity()",
-            "setAttributeInternal()",
-            "getOADBTransaction()",
-            "SequenceImpl(sequenceName, transaction)",
-            "remove()",
-            "isAttributeChanged(attributeIndex)"
-          ]
-        }
-      ],
-      "relatedSections": ["Level 101 Section 3", "Level 102 Section 1"],
-      "prerequisites": ["Entity Object basics", "WHO columns", "Sequences"]
-    },
-    
-    "controllerPatterns": {
-      "directory": "controller-patterns/",
-      "description": "Controller lifecycle and event handling",
-      "complexity": "Intermediate",
-      "files": [
-        {
-          "name": "ControllerPatterns.java",
-          "useCases": [
-            "processRequest - page initialization",
-            "processFormRequest - handle form submissions",
-            "Handle Save button",
-            "Handle Cancel button",
-            "Handle Delete button with confirmation",
-            "Show delete confirmation dialog",
-            "Handle Apply button",
-            "Handle Search button",
-            "Handle Clear button",
-            "Validate form data",
-            "Set default values for new record",
-            "Handle table row action"
-          ],
-          "lines": 282,
-          "methods": 12,
-          "keyPatterns": [
-            "processRequest(pageContext, webBean)",
-            "processFormRequest(pageContext, webBean)",
-            "pageContext.getParameter(paramName)",
-            "am.invokeMethod(methodName, params)",
-            "pageContext.forwardImmediately()",
-            "pageContext.putDialogMessage()"
-          ]
-        }
-      ],
-      "relatedSections": ["Level 101 Section 5", "Level 102 Section 4"],
-      "prerequisites": ["Controller basics", "Event handling", "MVC pattern"]
-    },
-    
-    "validation": {
-      "directory": "validation/",
-      "description": "Multi-layer validation patterns",
-      "complexity": "Intermediate",
-      "files": [
-        {
-          "name": "ValidationPatterns.java",
-          "useCases": [
-            "Attribute-level validation (setter method)",
-            "Entity-level validation (validateEntity)",
-            "Transaction-level validation (AM method)",
-            "Date range validation",
-            "Business rule validation",
-            "Database uniqueness check",
-            "Cross-field validation",
-            "Conditional validation",
-            "Complex multi-entity validation"
-          ],
-          "lines": 349,
-          "classes": 5,
-          "keyPatterns": [
-            "Setter with validation logic",
-            "validateEntity() override",
-            "AM validation method",
-            "SQL validation queries",
-            "Conditional validation based on field values"
-          ]
-        }
-      ],
-      "relatedSections": ["Level 101 Section 7", "Level 102 Section 1"],
-      "prerequisites": ["Entity Objects", "Application Modules", "SQL"]
-    },
-    
-    "navigation": {
-      "directory": "navigation/",
-      "description": "Page navigation and parameter passing",
-      "complexity": "Basic to Intermediate",
-      "files": [
-        {
-          "name": "NavigationPatterns.java",
-          "useCases": [
-            "Forward to another page immediately",
-            "Forward with parameters (HashMap)",
-            "Forward with URL parameters",
-            "Set forward URL (deferred navigation)",
-            "Navigate with breadcrumb",
-            "Navigate without retaining AM",
-            "Return to calling page",
-            "Navigate with function call",
-            "Navigate to external URL",
-            "Navigate with message preservation",
-            "Refresh current page",
-            "Conditional navigation",
-            "Pass complex object between pages",
-            "Navigate with custom breadcrumb label"
-          ],
-          "lines": 267,
-          "methods": 14,
-          "keyPatterns": [
-            "pageContext.forwardImmediately()",
-            "pageContext.setForwardURL()",
-            "HashMap for parameters",
-            "OAWebBeanConstants.ADD_BREAD_CRUMB_YES/NO",
-            "OAWebBeanConstants.KEEP_MENU_CONTEXT",
-            "pageContext.putSessionValue()/getSessionValue()"
-          ]
-        }
-      ],
-      "relatedSections": ["Level 101 Section 5", "Level 102 Section 4"],
-      "prerequisites": ["Controller basics", "Page lifecycle"]
-    },
-    
-    "nestedApplicationModule": {
-      "directory": "nested-am/",
-      "description": "Advanced patterns for nested Application Module operations",
-      "complexity": "Advanced",
-      "files": [
-        {
-          "name": "NestedAMPatterns.java",
-          "useCases": [
-            "Create root AM via JNDI",
-            "Create nested AM from parent",
-            "Find nested AM by instance name",
-            "List all nested AMs",
-            "Get root AM transaction from nested AM",
-            "Find nested AM with system-generated name",
-            "Get root AM from controller",
-            "Access nested AM from controller",
-            "Verify nested AM definition match",
-            "Understand nested AM transaction scope",
-            "Debug nested AM hierarchy"
-          ],
-          "lines": 521,
-          "methods": 11,
-          "keyPatterns": [
-            "ApplicationModuleHome.create()",
-            "parentAM.createApplicationModule()",
-            "parentAM.findApplicationModule()",
-            "parentAM.getApplicationModuleNames()",
-            "getOADBTransaction()",
-            "pageContext.getRootApplicationModule()",
-            "nestedAM.getDefFullName()"
-          ]
-        }
-      ],
-      "relatedSections": ["Level 102 Section 2", "Level 103 Section 1"],
-      "prerequisites": ["Application Module basics", "JNDI concepts", "Transaction understanding"]
-    },
-    
-    "mdsRepository": {
-      "directory": "mds-repository/",
-      "description": "MDS (Metadata Service) repository operations and JDR table queries",
-      "complexity": "Advanced",
-      "files": [
-        {
-          "name": "MDSOperations.java",
-          "useCases": [
-            "Query page hierarchy from JDR_PATHS",
-            "Query page components from JDR_COMPONENTS",
-            "Query component attributes from JDR_ATTRIBUTES",
-            "Find all personalizations for a page",
-            "Find all pages using specific AM",
-            "Query translated attributes",
-            "Find all controllers in module",
-            "Using JDR_UTILS PL/SQL package",
-            "Find orphaned components",
-            "Understand MDS cache and performance"
-          ],
-          "lines": 558,
-          "methods": 10,
-          "keyPatterns": [
-            "JDR_PATHS table queries",
-            "JDR_COMPONENTS table queries",
-            "JDR_ATTRIBUTES table queries",
-            "JDR_ATTRIBUTES_TRANS table queries",
-            "JDR_UTILS PL/SQL package",
-            "MDS cache behavior",
-            "Personalization queries"
-          ]
-        }
-      ],
-      "relatedSections": ["Level 103 Section 2"],
-      "prerequisites": ["SQL knowledge", "MDS concepts", "Personalization understanding"]
-    },
-    
-    "sessionManagement": {
-      "directory": "session-management/",
-      "description": "HTTP session, ICX session, and JVM cache management patterns",
-      "complexity": "Intermediate to Advanced",
-      "files": [
-        {
-          "name": "SessionManagement.java",
-          "useCases": [
-            "Access HTTP/Servlet session",
-            "Access ICX session (Oracle Apps session)",
-            "Understand session timeouts (HTTP vs ICX)",
-            "Query ICX_SESSIONS table",
-            "Store data in HTTP session",
-            "Understand JVM cache behavior",
-            "Get session values from page context",
-            "Understand session state vs database state",
-            "Invalidate HTTP session programmatically",
-            "Session management best practices"
-          ],
-          "lines": 487,
-          "methods": 10,
-          "keyPatterns": [
-            "pageContext.getHttpSession()",
-            "pageContext.getWebAppsContext()",
-            "ICX_SESSIONS table",
-            "session.setAttribute()/getAttribute()",
-            "Profile options for timeouts",
-            "JVM cache vs session cache",
-            "session.invalidate()"
-          ]
-        }
-      ],
-      "relatedSections": ["Level 102 Section 3", "Level 103 Section 1"],
-      "prerequisites": ["HTTP session concepts", "Oracle Apps architecture", "Profile options"]
-    },
-    
-    "profileOptions": {
-      "directory": "profile-options/",
-      "description": "Profile option access and configuration patterns",
-      "complexity": "Beginner to Intermediate",
-      "files": [
-        {
-          "name": "ProfileOptionPatterns.java",
-          "useCases": [
-            "Read profile option value (Controller)",
-            "Read profile option value (Application Module)",
-            "Use FND_Diagnostics profile",
-            "Write diagnostics in controller",
-            "Write diagnostics in AM",
-            "Check personalization enabled",
-            "Check region link enabled",
-            "Check personalization disabled",
-            "Get personalization root path",
-            "Create custom profile option",
-            "Understand profile option hierarchy",
-            "Common profile options reference",
-            "Profile options best practices"
-          ],
-          "lines": 678,
-          "methods": 13,
-          "keyPatterns": [
-            "pageContext.getProfile()",
-            "getOADBTransaction().getProfile()",
-            "pageContext.writeDiagnostics()",
-            "getOADBTransaction().writeDiagnostics()",
-            "FND_DIAGNOSTICS profile",
-            "PERSONALIZE_SELFSERVICE_DEFN",
-            "Profile option hierarchy (User > Resp > App > Site)"
-          ]
-        }
-      ],
-      "relatedSections": ["Level 101 Section 2", "Level 102 Section 3"],
-      "prerequisites": ["Basic Oracle Apps concepts", "Configuration understanding"]
-    },
-    
-    "advancedController": {
-      "directory": "advanced-controller/",
-      "description": "Advanced controller patterns for UI manipulation, form submission blocking, focus management, and browser navigation handling",
-      "complexity": "Advanced",
-      "files": [
-        {
-          "name": "AdvancedControllerPatterns.java",
-          "useCases": [
-            "Block form submission (setBlockOnEverySubmit)",
-            "Block specific button with JavaScript",
-            "Disable global buttons",
-            "Set initial focus on field",
-            "Handle Enter key press on field",
-            "Handle browser back button",
-            "End transaction unit before navigation",
-            "Wrap text in read-only text area",
-            "Check if form submission",
-            "Get event and source parameters",
-            "Set field values programmatically",
-            "Release database lock",
-            "Controller extension pattern",
-            "Advanced controller best practices"
-          ],
-          "lines": 593,
-          "methods": 14,
-          "keyPatterns": [
-            "OABodyBean.setBlockOnEverySubmit()",
-            "JavaScript button disabling",
-            "OAGlobalButtonBarBean.setRendered()",
-            "OABodyBean.setInitialFocusId()",
-            "OABoundValueEnterOnKeyPress",
-            "TransactionUnitHelper.startTransactionUnit()",
-            "pageContext.isBackNavigationFired()",
-            "pageContext.isFormSubmission()",
-            "OAWebBeanConstants.EVENT_PARAM",
-            "OAWebBeanConstants.SOURCE_PARAM"
-          ]
-        }
-      ],
-      "relatedSections": ["Level 102 Section 2", "Level 103 Section 1"],
-      "prerequisites": ["Basic controller concepts", "JavaScript basics", "Transaction management"]
-    }
+  "metadata": {
+    "project": "Oracle OAF Code Brain",
+    "repository": "Oracle-OAF-BootCamp",
+    "version": "1.4.0",
+    "lastUpdated": "2026-01-25",
+    "description": "Comprehensive Oracle Application Framework (OAF) Java/XML code patterns - NO SQL/PL-SQL files",
+    "framework": "Oracle ADF/OAF",
+    "javaVersion": "1.4/1.5",
+    "oracleVersion": "11i/R12",
+    "codeOnly": "Java and XML components only - All documentation, changelogs, and analysis in this JSON file"
   },
   
   "statistics": {
-    "totalCategories": 13,
-    "totalFiles": 13,
-    "totalLines": 5191,
-    "totalMethods": 149,
-    "totalUseCases": 138,
-    "avgLinesPerFile": 399,
-    "avgMethodsPerFile": 11
-  },
-  
-  "usageGuidelines": {
-    "forStudents": [
-      "Browse by category to find relevant examples",
-      "Study use cases that match your current task",
-      "Copy and adapt patterns to your project",
-      "Understand key patterns before implementing",
-      "Reference prerequisite sections if concepts are unclear"
-    ],
-    "forInstructors": [
-      "Use as teaching examples in lectures",
-      "Reference in lab exercises",
-      "Point students to specific examples during troubleshooting",
-      "Demonstrate best practices vs anti-patterns",
-      "Assign specific patterns for practice exercises"
-    ],
-    "forDevelopers": [
-      "Quick reference for common tasks",
-      "Copy-paste starting points",
-      "Best practice validation",
-      "Pattern library for code reviews",
-      "Template for new implementations"
-    ]
-  },
-  
-  "codeStandards": {
-    "documentation": {
-      "header": "Required for all files - includes use case, location, complexity",
-      "methods": "JavaDoc comments with use case description",
-      "inline": "Explain non-obvious logic"
+    "totalFiles": 25,
+    "totalLines": 14400,
+    "useCases": 240,
+    "layers": {
+      "model": 12,
+      "view": 5,
+      "controller": 4,
+      "crossCutting": 4
     },
-    "naming": {
-      "classes": "Descriptive names ending in Patterns/Examples",
-      "methods": "Clear verb-noun format (executeVOBasic, handleSave)",
-      "variables": "Meaningful names (rootAM, dialogPage, errorMsg)"
-    },
-    "errorHandling": {
-      "always": "Use OAException with appropriate severity",
-      "never": "Generic Exception or printStackTrace()",
-      "practice": "Include message dictionary references"
-    },
-    "architecture": {
-      "validation": "In Entity Object layer, not Controller",
-      "businessLogic": "In Application Module, not Controller",
-      "uiLogic": "In Controller only",
-      "separation": "Strict MVC separation of concerns"
-    }
+    "caseStudies": 1,
+    "labs": 8
   },
   
-  "bestPractices": {
-    "viewObjects": [
-      "Always check VO for null before executing",
-      "Use bind variables in where clauses (avoid SQL injection)",
-      "Reset VO state before applying new filters",
-      "Use setOrderByClause instead of SQL ORDER BY in query",
-      "Close row set after iteration to free resources"
-    ],
-    "errorHandling": [
-      "Use message dictionary for all user-facing messages",
-      "Include message tokens for dynamic values",
-      "Choose appropriate severity (ERROR, WARNING, CONFIRMATION, INFO)",
-      "Provide detail messages for technical errors",
-      "Never expose SQL errors directly to users"
-    ],
-    "applicationModule": [
-      "Always check rootAM for null",
-      "Use invokeMethod() instead of casting to custom AM",
-      "Commit in AM, never in Controller",
-      "Rollback on exceptions",
-      "Keep transactions short"
-    ],
-    "dialogPages": [
-      "Use Hashtable to pass parameters through dialog",
-      "Set button names for identification in processFormRequest",
-      "Use postToCallingPage for dialog responses",
-      "Get Yes/No labels from message dictionary",
-      "Handle both OK and Cancel responses"
-    ],
-    "entityObjects": [
-      "Always populate WHO columns in create() and doDML()",
-      "Use SequenceImpl for primary key generation",
-      "Validate in validateEntity() for multi-attribute checks",
-      "Use setter override for single-attribute validation",
-      "Never perform UI operations in EO"
-    ],
-    "controllers": [
-      "Initialize data in processRequest",
-      "Handle events in processFormRequest",
-      "Never put business logic in Controller",
-      "Always validate before invoking AM methods",
-      "Use forwardImmediately for navigation"
-    ],
-    "validation": [
-      "Attribute-level: In setter methods",
-      "Entity-level: In validateEntity()",
-      "Transaction-level: In AM methods",
-      "Never validate in Controller or Page",
-      "Use SQL for database-level validations"
-    ],
-    "navigation": [
-      "Use forwardImmediately for immediate navigation",
-      "Use setForwardURL for deferred navigation",
-      "Retain AM when staying in same flow",
-      "Add breadcrumbs for user navigation tracking",
-      "Use HashMap for complex parameter passing"
-    ]
-  },
-  
-  "commonMistakes": {
-    "viewObjects": [
-      "Forgetting to call executeQuery() after setting where clause",
-      "Not resetting VO before applying new filters",
-      "Using SQL syntax in where clause instead of bind variables",
-      "Not checking VO for null before operations"
-    ],
-    "errorHandling": [
-      "Hardcoding error messages instead of using dictionary",
-      "Using generic Exception instead of OAException",
-      "Not setting appropriate severity level",
-      "Catching exceptions without handling them"
-    ],
-    "applicationModule": [
-      "Casting to custom AM instead of using invokeMethod()",
-      "Not checking rootAM for null",
-      "Committing in Controller instead of AM",
-      "Not rolling back on exceptions"
-    ],
-    "dialogPages": [
-      "Not setting button names for identification",
-      "Forgetting to set postToCallingPage(true)",
-      "Not passing parameters through dialog",
-      "Not handling Cancel button response"
-    ],
-    "entityObjects": [
-      "Not populating WHO columns",
-      "Forgetting to call super.create() or super.doDML()",
-      "Putting business logic in EO instead of AM",
-      "Not using sequences for primary keys"
-    ],
-    "controllers": [
-      "Putting business logic in Controller",
-      "Not checking for null before operations",
-      "Using processRequest for form submissions",
-      "Using processFormRequest for page initialization"
-    ],
-    "validation": [
-      "Validating in Controller instead of Model layer",
-      "Not checking for null values",
-      "Using wrong validation layer",
-      "Not throwing OAException on validation failure"
-    ],
-    "navigation": [
-      "Using setForwardURL when forwardImmediately is needed",
-      "Not retaining AM when needed",
-      "Forgetting to pass required parameters",
-      "Not handling navigation errors"
-    ]
-  },
-  
-  "relatedResources": {
-    "syllabi": [
-      "SYLLABUS_101.md - Level 101 (Beginner) course outline",
-      "SYLLABUS_102.md - Level 102 (Advanced) course outline",
-      "SYLLABUS_103.md - Level 103 (Ninja) course outline"
-    ],
-    "brainFiles": [
-      "demasylabs-barin/.ai-brain.json - Main project brain",
-      "demasylabs-barin/ANALYSIS_REPORT.md - Brain directory analysis"
-    ],
-    "oracleDocumentation": [
-      "OA Framework Developer's Guide",
-      "BC4J Developer's Guide",
-      "Doc ID 416708.1 - JDeveloper version compatibility"
-    ],
-    "additionalCode": [
-      "demasylabs-barin/brain-repo/dialogPage.txt",
-      "demasylabs-barin/brain-repo/Get Root Application Module.txt",
-      "demasylabs-barin/brain-repo/JDR Base Tables.txt"
-    ]
-  },
-  
-  "versionHistory": {
-    "v1.2": {
-      "date": "2026-01-26",
-      "changes": [
-        "Added Advanced Controller Patterns category",
-        "14 advanced use cases covering UI manipulation",
-        "Form submission blocking patterns",
-        "Focus and event management",
-        "Browser back button handling",
-        "Global button control",
-        "Controller extension patterns",
-        "593 new lines of code with detailed examples",
-        "Total: 13 categories, 13 files, 5191 lines, 149 methods, 138 use cases"
-      ],
-      "source": "OAF Reference - By Mostafa EL-Ruby.docx"
-    },
-    "v1.1": {
-      "date": "2026-01-26",
-      "changes": [
-        "Added 4 new advanced categories from OAF Reference documentation",
-        "Nested Application Module patterns (11 use cases, 521 lines)",
-        "MDS Repository operations (10 use cases, 558 lines)",
-        "Session Management patterns (10 use cases, 487 lines)",
-        "Profile Options patterns (13 use cases, 678 lines)",
-        "Total: 12 categories, 12 files, 4598 lines, 135 methods, 124 use cases",
-        "Enhanced documentation with advanced concepts",
-        "Added best practices for infrastructure components"
-      ],
-      "source": "OAF Reference - By Mostafa EL-Ruby.docx"
-    },
-    "v1.0": {
+  "changelog": {
+    "v1.4.0": {
       "date": "2026-01-25",
-      "changes": [
-        "Initial code-brain creation",
-        "8 categories with comprehensive examples",
-        "8 Java files with 1943 lines of code",
-        "91 methods demonstrating 80 use cases",
-        "Complete documentation with best practices",
-        "Common mistakes guide",
-        "Usage guidelines for students/instructors/developers"
+      "type": "major",
+      "description": "Centralized Message Management & Real-World Case Studies - Java/XML Only",
+      "breaking": false,
+      "commits": ["0208c9d", "e1d9b3f", "d0dd2c7", "4cd259e", "94d6306", "44d2fd8"],
+      
+      "features": [
+        {
+          "name": "MessageConstants.java",
+          "type": "OAF Java Class",
+          "location": "code-brain/cross-cutting/constants/",
+          "lines": 300,
+          "description": "Centralized constants for 60+ message codes",
+          "pattern": "public static final String ERR_FIELD_REQUIRED = \"XX_FIELD_REQUIRED\";",
+          "categories": ["common", "fieldValidation", "dataValidation", "businessRules", "jobsPositions"],
+          "impact": "Eliminates all hardcoded message strings across codebase"
+        },
+        {
+          "name": "MessageHelper.java",
+          "type": "OAF Java Utility Class",
+          "location": "code-brain/cross-cutting/utils/",
+          "lines": 245,
+          "description": "Reusable utility methods for creating OAF exceptions with token substitution",
+          "methods": 15,
+          "methodList": [
+            "createError(messageCode, tokens...)",
+            "createWarning(messageCode, tokens...)",
+            "createConfirmation(messageCode, tokens...)",
+            "createValidationError(messageCode, tokens...)",
+            "createFieldRequiredError(fieldName)",
+            "createInvalidFormatError(fieldName, expectedFormat)",
+            "createInvalidLengthError(fieldName, maxLength)",
+            "createInvalidRangeError(fieldName, min, max)",
+            "createDuplicateRecordError(fieldName, value)",
+            "createRecordNotFoundError(recordType, identifier)",
+            "createDeleteRestrictedError(recordType, reason)",
+            "createSaveSuccessMessage()",
+            "createDeleteSuccessMessage()",
+            "createUpdateSuccessMessage()",
+            "createNoChangesMessage()"
+          ],
+          "usageExample": "throw MessageHelper.createFieldRequiredError(\"Employee Name\");",
+          "impact": "15+ reusable methods for all error handling scenarios"
+        },
+        {
+          "name": "Jobs & Positions Management Case Study",
+          "type": "OAF Entity Objects (Java)",
+          "location": "code-brain/case-studies/jobs-positions-management/",
+          "components": [
+            {
+              "file": "JobEOImpl.java",
+              "type": "Entity Object",
+              "lines": 440,
+              "complexity": "Advanced"
+            },
+            {
+              "file": "PositionEOImpl.java",
+              "type": "Entity Object",
+              "lines": 400,
+              "complexity": "Advanced"
+            }
+          ],
+          "basedOn": "demasylabs-barin/brain-repo/docs/Getting Started - OAF Project materials",
+          "learningFocus": "Master-detail relationships, WHO columns, complex validations, MessageHelper integration"
+        }
+      ],
+      
+      "migration": {
+        "required": true,
+        "steps": [
+          "Import MessageConstants and MessageHelper in all classes",
+          "Replace new OAException(hardcodedString) with MessageHelper.createError()",
+          "Update catch blocks to use MessageHelper methods",
+          "Test all error scenarios to verify token substitution"
+        ],
+        "backwards": "Compatible - existing code works but should migrate to MessageHelper"
+      }
+    },
+    
+    "v1.3.5": {
+      "date": "2026-01-24",
+      "type": "minor",
+      "description": "DataValidation.java Refactoring - Replaced 48 hardcoded errors with OAF message codes",
+      "commits": ["46b559f", "54d3350"],
+      "features": [
+        {
+          "name": "DataValidation.java Message Migration",
+          "location": "code-brain/model-layer/validation/",
+          "errors Refactored": 48,
+          "patterns": [
+            "Required field validation",
+            "Number/date/email format validation",
+            "Length and range validation",
+            "SQL injection & XSS prevention"
+          ]
+        }
       ]
     }
   },
   
-  "futureEnhancements": {
-    "plannedCategories": [
-      "Advanced View Object operations (programmatic VO creation)",
-      "Flexfield handling",
-      "Attachment handling",
-      "Export to Excel",
-      "Advanced table operations",
-      "Partial page rendering (PPR)",
-      "LOV (List of Values) patterns",
-      "Master-Detail implementations",
-      "Search page patterns",
-      "UIX Framework components",
-      "Directory structure and file locations"
+  "messageManagement": {
+    "description": "FND_MESSAGES registration required for all message codes (Oracle E-Business Suite standard)",
+    "application": "XX",
+    "language": "US",
+    "totalMessages": 60,
+    
+    "fndMessagesScript": {
+      "note": "Message registration SQL NOT generated as file - included here for reference",
+      "pattern": "INSERT INTO FND_NEW_MESSAGES (application_short_name, message_name, message_text, description, type) VALUES (...)",
+      "requiredBefore": "MessageHelper usage - messages must exist in FND_MESSAGES table"
+    },
+    
+    "messageCategories": {
+      "common": {
+        "app": "XX",
+        "count": 4,
+        "examples": [
+          {"code": "XX_SAVE_SUCCESS", "text": "Record saved successfully.", "type": "CONFIRMATION"},
+          {"code": "XX_DELETE_SUCCESS", "text": "Record deleted successfully.", "type": "CONFIRMATION"},
+          {"code": "XX_UPDATE_SUCCESS", "text": "Record updated successfully.", "type": "CONFIRMATION"},
+          {"code": "XX_NO_CHANGES", "text": "No changes detected.", "type": "WARNING"}
+        ]
+      },
+      "fieldValidation": {
+        "app": "XX",
+        "count": 8,
+        "examples": [
+          {"code": "XX_FIELD_REQUIRED", "text": "&FIELD_NAME is required.", "tokens": ["FIELD_NAME"]},
+          {"code": "XX_INVALID_FORMAT", "text": "&FIELD_NAME has invalid format. Expected: &EXPECTED_FORMAT", "tokens": ["FIELD_NAME", "EXPECTED_FORMAT"]},
+          {"code": "XX_INVALID_LENGTH", "text": "&FIELD_NAME exceeds maximum length of &MAX_LENGTH characters.", "tokens": ["FIELD_NAME", "MAX_LENGTH"]},
+          {"code": "XX_INVALID_RANGE", "text": "&FIELD_NAME must be between &MIN_VALUE and &MAX_VALUE.", "tokens": ["FIELD_NAME", "MIN_VALUE", "MAX_VALUE"]}
+        ]
+      },
+      "dataValidation": {
+        "app": "XXVAL",
+        "count": 20,
+        "examples": [
+          {"code": "XXVAL_REQUIRED", "text": "&FIELD_NAME is required and cannot be null.", "tokens": ["FIELD_NAME"]},
+          {"code": "XXVAL_NUMBER_FORMAT", "text": "&FIELD_NAME must be a valid number.", "tokens": ["FIELD_NAME"]},
+          {"code": "XXVAL_DATE_FORMAT", "text": "&FIELD_NAME must be a valid date in format &FORMAT.", "tokens": ["FIELD_NAME", "FORMAT"]},
+          {"code": "XXVAL_EMAIL_FORMAT", "text": "&FIELD_NAME must be a valid email address.", "tokens": ["FIELD_NAME"]},
+          {"code": "XXVAL_SQL_INJECTION", "text": "&FIELD_NAME contains invalid SQL characters.", "tokens": ["FIELD_NAME"]},
+          {"code": "XXVAL_XSS_DETECTED", "text": "&FIELD_NAME contains invalid script content.", "tokens": ["FIELD_NAME"]}
+        ]
+      },
+      "businessRules": {
+        "app": "XX",
+        "count": 8,
+        "examples": [
+          {"code": "XX_DUPLICATE_RECORD", "text": "&FIELD_NAME '&VALUE' already exists.", "tokens": ["FIELD_NAME", "VALUE"]},
+          {"code": "XX_RECORD_NOT_FOUND", "text": "&RECORD_TYPE with identifier '&IDENTIFIER' not found.", "tokens": ["RECORD_TYPE", "IDENTIFIER"]},
+          {"code": "XX_DELETE_RESTRICTED", "text": "Cannot delete &RECORD_TYPE: &REASON", "tokens": ["RECORD_TYPE", "REASON"]},
+          {"code": "XX_DATE_RANGE_INVALID", "text": "Effective Start Date must be before Effective End Date."}
+        ]
+      },
+      "jobsPositions": {
+        "app": "XX",
+        "count": 10,
+        "examples": [
+          {"code": "XX_JOB_NAME_REQUIRED", "text": "Job Name is required."},
+          {"code": "XX_DUPLICATE_JOB_NAME", "text": "Job Name '&JOB_NAME' already exists.", "tokens": ["JOB_NAME"]},
+          {"code": "XX_JOB_HEAD_COUNT_INVALID", "text": "Job Head Count must be between 1 and 9999."},
+          {"code": "XX_POSITION_START_BEFORE_JOB", "text": "Position Effective Start Date cannot be before Job's Effective Start Date."},
+          {"code": "XX_CANNOT_DELETE_JOB_WITH_POSITIONS", "text": "Cannot delete job '&JOB_NAME': &POSITION_COUNT active positions exist.", "tokens": ["JOB_NAME", "POSITION_COUNT"]}
+        ]
+      }
+    }
+  },
+  
+  "usageGuide": {
+    "messageHelperPatterns": {
+      "controllerLayer": {
+        "description": "User input validation and confirmation messages",
+        "example": {
+          "scenario": "Save button with field validation",
+          "code": "public void processFormRequest(OAPageContext pageContext, OAWebBean webBean) {\n    super.processFormRequest(pageContext, webBean);\n    if (\"save\".equals(pageContext.getParameter(EVENT_PARAM))) {\n        String empName = pageContext.getParameter(\"EmpName\");\n        if (empName == null || empName.trim().isEmpty()) {\n            throw MessageHelper.createFieldRequiredError(\"Employee Name\");\n        }\n        am.invokeMethod(\"saveEmployee\", empName);\n        throw MessageHelper.createSaveSuccessMessage();\n    }\n}",
+          "notes": ["Validate user input before AM calls", "Use confirmation messages after success"]
+        }
+      },
+      "applicationModuleLayer": {
+        "description": "Business rule validation",
+        "example": {
+          "scenario": "Business logic with FK validation",
+          "code": "public void createEmployee(String name, Number deptId, Number salary) {\n    if (!isDepartmentValid(deptId)) {\n        throw MessageHelper.createRecordNotFoundError(\"Department\", deptId.toString());\n    }\n    if (salary.doubleValue() < 1000 || salary.doubleValue() > 100000) {\n        throw MessageHelper.createInvalidRangeError(\"Salary\", \"1000\", \"100000\");\n    }\n    EmployeeVOImpl vo = getEmployeeVO();\n    vo.createEmployee(name, deptId, salary);\n    getTransaction().commit();\n}",
+          "notes": ["AM validates business rules", "Validate before VO operations"]
+        }
+      },
+      "entityObjectLayer": {
+        "description": "Data integrity and field constraints",
+        "example": {
+          "scenario": "Entity-level validation",
+          "code": "protected void validateEntity() {\n    super.validateEntity();\n    String empName = (String)getEmployeeName();\n    if (empName == null || empName.trim().isEmpty()) {\n        throw MessageHelper.createError(MessageConstants.ERR_EMP_NAME_REQUIRED);\n    }\n    if (empName.length() > 200) {\n        throw MessageHelper.createInvalidLengthError(\"Employee Name\", \"200\");\n    }\n    Date startDate = (Date)getStartDate();\n    Date endDate = (Date)getEndDate();\n    if (endDate != null && endDate.before(startDate)) {\n        throw MessageHelper.createError(MessageConstants.ERR_DATE_RANGE_INVALID);\n    }\n}",
+          "notes": ["EO validates data integrity", "Use validateEntity() for cross-field checks"]
+        }
+      }
+    },
+    
+    "bestPractices": [
+      "Always use MessageConstants, never hardcode message codes",
+      "Use specific helper methods (createFieldRequiredError) instead of generic createError",
+      "Provide tokens in correct order matching FND_MESSAGES definition",
+      "Controller validates user input, AM validates business rules, EO validates data integrity",
+      "Use confirmation messages for successful operations",
+      "Catch and translate database errors to user-friendly messages"
     ],
-    "plannedFeatures": [
-      "Video demonstrations for complex patterns",
-      "Interactive code playground",
-      "Unit tests for all examples",
-      "Performance optimization tips",
-      "Debugging guide per category"
+    
+    "migrationSteps": [
+      "Add imports: MessageConstants, MessageHelper",
+      "Identify all hardcoded error strings",
+      "Find matching MessageConstants or define new ones",
+      "Replace new OAException() with MessageHelper methods",
+      "Add tokens in correct order",
+      "Test all error scenarios"
     ]
   },
   
-  "metadata": {
-    "createdBy": "GitHub Copilot",
-    "createdDate": "2026-01-25",
-    "lastModifiedBy": "GitHub Copilot",
-    "lastModifiedDate": "2026-01-26",
-    "purpose": "Centralized code repository brain for Oracle OAF BootCamp",
-    "usage": "Reference this file to understand available code examples and patterns",
-    "enhancementSource": "OAF Reference - By Mostafa EL-Ruby.docx"
+  "caseStudies": {
+    "jobsPositionsManagement": {
+      "id": "case-study-001",
+      "name": "Jobs & Positions Management System",
+      "version": "1.4.0",
+      "complexity": "Intermediate",
+      "type": "Master-Detail Entity Relationship",
+      "basedOn": "demasylabs-barin/brain-repo OAF Project DDL/DML scripts",
+      
+      "businessScenario": {
+        "domain": "Human Resources - Organizational Structure",
+        "description": "Manage organizational jobs and positions with master-detail relationship",
+        "realWorld": "HR systems for organizational hierarchy and workforce planning"
+      },
+      
+      "databaseSchema": {
+        "note": "Schema described here for reference - NO SQL files generated",
+        "masterTable": {
+          "name": "XX_JOBS",
+          "primaryKey": "JOB_ID (from XX_JOB_ID_SEQ)",
+          "uniqueConstraint": "JOB_NAME",
+          "checkConstraints": ["JOB_HEAD_COUNT > 0", "END_DATE >= START_DATE"],
+          "columns": 10,
+          "whoColumns": ["CREATION_DATE", "CREATED_BY", "LAST_UPDATE_DATE", "LAST_UPDATED_BY", "LAST_UPDATE_LOGIN"],
+          "businessRules": [
+            "Job name must be unique",
+            "Head count 1-9999",
+            "Start date < end date",
+            "Cannot delete job with active positions"
+          ]
+        },
+        "detailTable": {
+          "name": "XX_POSITIONS",
+          "primaryKey": "POSITION_ID (from XX_POSITION_ID_SEQ)",
+          "foreignKey": "JOB_ID -> XX_JOBS.JOB_ID",
+          "checkConstraints": ["POSITION_HEAD_COUNT > 0", "END_DATE >= START_DATE"],
+          "indexes": ["JOB_ID (FK index)", "(START_DATE, END_DATE) (query performance)"],
+          "columns": 11,
+          "whoColumns": 5,
+          "businessRules": [
+            "Position must belong to valid job",
+            "Position dates within job's date range",
+            "Cannot delete if job requires minimum positions",
+            "Head count 1-999"
+          ]
+        },
+        "sampleData": {
+          "description": "Test data described here - NO DML files generated",
+          "jobs": 8,
+          "positions": 25,
+          "jobTypes": ["Technical Consultant", "Functional Consultant", "Java Developer", "DBA", "Business Analyst", "PM", "QA", "System Admin"],
+          "positionLevels": ["Junior", "Experienced", "Senior", "Team Leader", "Principal", "Lead", "Architect"]
+        }
+      },
+      
+      "components": {
+        "entityObjects": [
+          {
+            "file": "JobEOImpl.java",
+            "location": "code-brain/case-studies/jobs-positions-management/",
+            "type": "OAF Entity Object",
+            "lines": 440,
+            "package": "oracle.apps.xx.jobmgmt.schema.server",
+            "extendsClass": "oracle.apps.fnd.framework.server.OAEntityImpl",
+            "entity": "XX_JOBS",
+            
+            "attributes": 10,
+            "attributeList": ["JobId", "JobName", "JobHeadCount", "EffectiveStartDate", "EffectiveEndDate", "CreationDate", "CreatedBy", "LastUpdateDate", "LastUpdatedBy", "LastUpdateLogin"],
+            
+            "associations": [
+              {"name": "Positions", "type": "1:N", "destination": "PositionEOImpl", "accessor": "getPositions()"}
+            ],
+            
+            "keyMethods": {
+              "validateEntity": {
+                "description": "Comprehensive entity-level validation",
+                "validations": [
+                  "Job name required & length <= 200",
+                  "Job name uniqueness (SQL query)",
+                  "Head count required & range 1-9999",
+                  "Head count vs existing positions",
+                  "Date range (start < end)",
+                  "WHO column validation"
+                ]
+              },
+              "create": {
+                "description": "Initialize new job with PK and WHO columns",
+                "logic": ["Set JOB_ID from XX_JOB_ID_SEQ.NEXTVAL", "Set CREATED_BY, CREATION_DATE from pageContext", "Set initial LAST_UPDATE columns"]
+              },
+              "doDML": {
+                "description": "Update WHO columns on DML operations",
+                "logic": ["On UPDATE: Update LAST_UPDATE_DATE, LAST_UPDATED_BY, LAST_UPDATE_LOGIN", "On DELETE: Validate no active positions", "Call super.doDML()"]
+              },
+              "beforeRemove": {
+                "description": "Prevent delete if active positions exist",
+                "logic": ["Check getPositions() count", "If count > 0, throw MessageHelper.createDeleteRestrictedError", "Call super.beforeRemove()"]
+              },
+              "helpers": {
+                "isDuplicateJobName": "SQL query to check uniqueness",
+                "getActivePositionCount": "Count positions via association",
+                "getNextJobId": "Get XX_JOB_ID_SEQ.NEXTVAL"
+              }
+            },
+            
+            "messageHelperUsage": [
+              "createFieldRequiredError(\"Job Name\")",
+              "createInvalidLengthError(\"Job Name\", \"200\")",
+              "createDuplicateRecordError(\"Job Name\", jobName)",
+              "createInvalidRangeError(\"Job Head Count\", \"1\", \"9999\")",
+              "createError(MessageConstants.ERR_DATE_RANGE_INVALID)",
+              "createDeleteRestrictedError(\"Job\", posCount + \" active positions exist\")"
+            ],
+            
+            "learningObjectives": [
+              "Entity Object lifecycle (create, doDML, validateEntity, beforeRemove)",
+              "WHO column automation",
+              "Sequence-based PK generation",
+              "SQL-based uniqueness validation",
+              "Association navigation (1:N)",
+              "Delete restrictions based on child records",
+              "MessageHelper integration",
+              "Transaction context usage"
+            ]
+          },
+          
+          {
+            "file": "PositionEOImpl.java",
+            "location": "code-brain/case-studies/jobs-positions-management/",
+            "type": "OAF Entity Object",
+            "lines": 400,
+            "package": "oracle.apps.xx.jobmgmt.schema.server",
+            "extendsClass": "oracle.apps.fnd.framework.server.OAEntityImpl",
+            "entity": "XX_POSITIONS",
+            
+            "attributes": 11,
+            "attributeList": ["PositionId", "JobId", "PositionName", "PositionHeadCount", "EffectiveStartDate", "EffectiveEndDate", "CreationDate", "CreatedBy", "LastUpdateDate", "LastUpdatedBy", "LastUpdateLogin"],
+            
+            "associations": [
+              {"name": "Job", "type": "N:1", "destination": "JobEOImpl", "accessor": "getJob()"}
+            ],
+            
+            "keyMethods": {
+              "validateEntity": {
+                "description": "Entity validation including parent checks",
+                "validations": [
+                  "Position name required & length <= 200",
+                  "Job ID required (FK validation)",
+                  "Job ID must reference existing job (SQL query)",
+                  "Head count required & range 1-999",
+                  "Date range (start < end)",
+                  "Position dates within parent job's date range",
+                  "WHO column validation"
+                ]
+              },
+              "create": {
+                "description": "Initialize new position with PK and WHO columns",
+                "logic": ["Set POSITION_ID from XX_POSITION_ID_SEQ.NEXTVAL", "Set WHO columns", "Call super.create()"]
+              },
+              "doDML": {
+                "description": "Update WHO columns on UPDATE",
+                "logic": ["On UPDATE: Update LAST_UPDATE columns", "Call super.doDML()"]
+              },
+              "beforeRemove": {
+                "description": "Prevent delete if parent job requires this position",
+                "logic": ["Get parent job via getJob()", "Check if job requires minimum positions", "If required, throw MessageHelper error", "Call super.beforeRemove()"]
+              },
+              "helpers": {
+                "isValidJobId": "SQL query to verify job exists",
+                "validatePositionDatesAgainstJob": "Validate position dates within job's date range using getJob() association",
+                "getNextPositionId": "Get XX_POSITION_ID_SEQ.NEXTVAL"
+              }
+            },
+            
+            "messageHelperUsage": [
+              "createFieldRequiredError(\"Position Name\")",
+              "createInvalidLengthError(\"Position Name\", \"200\")",
+              "createFieldRequiredError(\"Job\")",
+              "createRecordNotFoundError(\"Job\", jobId.toString())",
+              "createInvalidRangeError(\"Position Head Count\", \"1\", \"999\")",
+              "createError(MessageConstants.ERR_POSITION_START_BEFORE_JOB)",
+              "createError(MessageConstants.ERR_POSITION_END_AFTER_JOB)",
+              "createError(MessageConstants.ERR_CANNOT_DELETE_REQUIRED_POSITION)"
+            ],
+            
+            "learningObjectives": [
+              "Master-detail entity relationship (N:1)",
+              "Association navigation to parent",
+              "Foreign key validation",
+              "Cross-entity validation (child dates within parent dates)",
+              "Referential integrity enforcement",
+              "Delete restrictions based on parent requirements",
+              "Parent entity querying via association"
+            ]
+          }
+        ],
+        
+        "pendingComponents": {
+          "viewObjects": {
+            "status": "TODO - Phase 2",
+            "planned": [
+              "JobVOImpl.java - Updatable VO with query methods",
+              "PositionVOImpl.java - Updatable VO with master-detail queries"
+            ]
+          },
+          "viewLinks": {
+            "status": "TODO - Phase 2",
+            "planned": ["JobPositionVL.xml - Master-detail view link"]
+          },
+          "applicationModule": {
+            "status": "TODO - Phase 2",
+            "planned": ["JobMgmtAMImpl.java - Business methods for CRUD"]
+          },
+          "controllers": {
+            "status": "TODO - Phase 2",
+            "planned": [
+              "JobSearchCO.java",
+              "JobCreateUpdateCO.java",
+              "JobPositionMasterDetailCO.java"
+            ]
+          }
+        }
+      },
+      
+      "testingScenarios": [
+        {"scenario": "Create job with valid data", "expected": "Job created with auto PK and WHO columns"},
+        {"scenario": "Create job with duplicate name", "expected": "OAException with XX_DUPLICATE_JOB_NAME"},
+        {"scenario": "Create position outside job date range", "expected": "OAException with ERR_POSITION_START_BEFORE_JOB"},
+        {"scenario": "Delete job with active positions", "expected": "OAException with ERR_CANNOT_DELETE_JOB_WITH_POSITIONS"},
+        {"scenario": "Update WHO columns", "expected": "LAST_UPDATE_DATE, LAST_UPDATED_BY auto-updated"}
+      ],
+      
+      "successCriteria": [
+        "All Entity Objects created with comprehensive validations",
+        "MessageHelper used for all errors",
+        "WHO columns automated",
+        "Master-detail association bidirectional",
+        "All business rules enforced",
+        "Zero hardcoded error strings",
+        "Code passes Codacy with 0 critical issues"
+      ]
+    }
+  },
+  
+  "architecture": {
+    "layers": {
+      "model": {
+        "description": "Business logic and data access (BC4J components)",
+        "subLayers": {
+          "entityObjects": {
+            "path": "model-layer/entity-objects/",
+            "description": "Entity Objects representing database tables",
+            "javaFiles": ["EntityObjectPatterns.java", "JobEOImpl.java", "PositionEOImpl.java"],
+            "responsibilities": ["Data integrity", "WHO columns", "PK generation", "Associations", "Delete restrictions"]
+          },
+          "viewObjects": {
+            "path": "model-layer/view-objects/",
+            "description": "View Objects for querying",
+            "javaFiles": ["ViewObjectPatterns.java"],
+            "responsibilities": ["Query execution", "Row creation", "Business finders", "Custom queries"]
+          },
+          "applicationModules": {
+            "path": "model-layer/application-modules/",
+            "description": "Application Modules orchestrating business logic",
+            "javaFiles": ["ApplicationModulePatterns.java", "RootAMAccess.java"],
+            "responsibilities": ["Transaction management", "Business methods", "Cross-VO coordination"]
+          },
+          "validation": {
+            "path": "model-layer/validation/",
+            "description": "Validation utilities",
+            "javaFiles": ["DataValidation.java"],
+            "responsibilities": ["Field format validation", "Range validation", "Security validation"]
+          }
+        }
+      },
+      "view": {
+        "description": "User interface components (XML metadata)",
+        "subLayers": {
+          "pages": {
+            "path": "view-layer/pages/",
+            "javaFiles": ["PageStructurePatterns.java"]
+          },
+          "tables": {
+            "path": "view-layer/tables/",
+            "javaFiles": ["TablePatterns.java"]
+          },
+          "lov": {
+            "path": "view-layer/lov/",
+            "javaFiles": ["LOVPatterns.java"]
+          }
+        }
+      },
+      "controller": {
+        "description": "Event handling and navigation",
+        "path": "controller-layer/",
+        "javaFiles": ["ControllerPatterns.java", "NavigationPatterns.java", "EventHandlingPatterns.java", "PPRPatterns.java"],
+        "responsibilities": ["User events", "Page initialization", "Navigation", "AM invocation"]
+      },
+      "crossCutting": {
+        "description": "Shared utilities and constants",
+        "path": "cross-cutting/",
+        "javaFiles": ["constants/MessageConstants.java", "utils/MessageHelper.java", "OAExceptionHandling.java", "SecurityPatterns.java"],
+        "responsibilities": ["Message management", "Error handling", "Security", "Common constants"]
+      }
+    }
+  },
+  
+  "refactoringStatus": {
+    "description": "Global refactoring to eliminate all hardcoded errors",
+    "totalHardcodedErrors": 82,
+    "refactoredErrors": 48,
+    "remainingErrors": 34,
+    
+    "completed": [
+      {"file": "model-layer/validation/DataValidation.java", "errors": 48, "version": "1.3.5"}
+    ],
+    
+    "pending": [
+      {"file": "labs/lab-01/EmployeeSearchAM.java", "errors": 6, "priority": "high"},
+      {"file": "labs/lab-02/EmployeeDetailsAM.java", "errors": 8, "priority": "high"},
+      {"file": "labs/lab-03/EmployeeCRUDAM.java", "errors": 12, "priority": "high"},
+      {"file": "integration-layer/PLSQLIntegration.java", "errors": 10, "priority": "medium"},
+      {"file": "integration-layer/ExcelIntegration.java", "errors": 11, "priority": "medium"},
+      {"file": "model-layer/entity-objects/EntityObjectPatterns.java", "errors": 8, "priority": "medium"},
+      {"file": "model-layer/view-objects/ViewObjectPatterns.java", "errors": 5, "priority": "low"},
+      {"file": "view-layer/tables/TablePatterns.java", "errors": 4, "priority": "low"},
+      {"file": "view-layer/lov/LOVPatterns.java", "errors": 3, "priority": "low"},
+      {"file": "cross-cutting/OAExceptionHandling.java", "errors": 7, "priority": "high"},
+      {"file": "cross-cutting/SecurityPatterns.java", "errors": 3, "priority": "low"}
+    ]
+  },
+  
+  "codingStandards": {
+    "general": [
+      "All classes must have comprehensive JavaDoc",
+      "Package: oracle.apps.xx.<module>.<layer>.server",
+      "Use MessageHelper for ALL error handling",
+      "No hardcoded strings or error messages",
+      "Follow Oracle naming conventions (Impl suffix)",
+      "Defensive coding with null checks",
+      "Meaningful variable names"
+    ],
+    
+    "entityObjects": [
+      "Override validateEntity() for cross-field validations",
+      "Override create() for WHO columns and sequence PK",
+      "Override doDML() for WHO column updates",
+      "Override beforeRemove() for delete validations",
+      "Use associations for master-detail relationships",
+      "Keep validations focused on data integrity"
+    ],
+    
+    "viewObjects": [
+      "Override initQuery() for default query setup",
+      "Provide createRow() wrapper methods",
+      "Implement business finder methods",
+      "Use bind variables for WHERE clauses"
+    ],
+    
+    "applicationModules": [
+      "Expose VO instances as public methods",
+      "Implement business methods for CRUD",
+      "Validate business rules before commit",
+      "Provide rollback on errors"
+    ],
+    
+    "controllers": [
+      "Validate user input in processFormRequest",
+      "Call AM methods for business logic",
+      "Never embed SQL in controllers",
+      "Use pageContext parameters for event handling",
+      "Show confirmation messages after success"
+    ]
+  },
+  
+  "brainRepoAnalysis": {
+    "location": "demasylabs-barin/brain-repo/docs/Getting Started",
+    "analysisDocument": "demasylabs-barin/ANALYSIS_REPORT.md (1,064 lines)",
+    
+    "extractedCaseStudies": {
+      "completed": [
+        {
+          "name": "Jobs & Positions Management",
+          "source": "brain-repo/docs/Magdy OAF/001 Day One/OAF Project DDL/DML scripts",
+          "status": "Entity Objects complete, View layer pending",
+          "components": ["JobEOImpl.java", "PositionEOImpl.java"]
+        }
+      ]
+    },
+    
+    "pendingExtraction": {
+      "binaryDocuments": [
+        "AppsLead_OAF_Cases.doc - OAF case studies",
+        "OAF Reference - By Mostafa EL-Ruby.docx - Technical reference",
+        "How To Get DBC file from Oracle APPS.docx - DBC configuration patterns",
+        "Create Workspace & Project.docx - Workspace setup automation",
+        "How to Create BC4J Components.docx - BC4J wizard alternatives"
+      ],
+      "technicalReferences": [
+        "Get Root Application Module.txt - AM access patterns (converted to Java)",
+        "dialogPage.txt - Dialog page patterns (converted to Java)",
+        "JDR Base Tables.txt - Metadata queries (converted to Java utilities)",
+        "FND Levels.txt - Security validation levels (converted to Java constants)"
+      ],
+      "dayByDayContent": [
+        "Day 1: Simple query page (JobEOImpl/PositionEOImpl completed)",
+        "Day 2: CRUD operations (pending - VO/AM/CO)",
+        "Day 3: Master-detail with PPR (pending)",
+        "Day 4: Advanced validations (pending)",
+        "Day 5: Excel integration (pending)"
+      ]
+    },
+    
+    "nextCaseStudies": [
+      {
+        "name": "Employee Management System",
+        "source": "brain-repo/docs/OAF folder",
+        "complexity": "Basic",
+        "components": ["EmployeeEO", "DepartmentEO", "EmployeeVO", "EmployeeAM", "EmployeeSearchCO"],
+        "patterns": ["Simple CRUD", "LOV", "File upload"]
+      },
+      {
+        "name": "Procurement Request System",
+        "source": "Oracle Documentation folder",
+        "complexity": "Advanced",
+        "components": ["PRHeaderEO", "PRLineEO", "ApprovalEO", "PRAM", "PRWorkflowCO"],
+        "patterns": ["Workflow integration", "Multi-org", "Approvals"]
+      }
+    ]
+  },
+  
+  "nextSteps": {
+    "phase2_CompleteJobsPositionsCaseStudy": {
+      "priority": 1,
+      "tasks": [
+        "Create JobVOImpl.java and PositionVOImpl.java (View Objects)",
+        "Create JobPositionVL.xml (View Link for master-detail)",
+        "Create JobMgmtAMImpl.java (Application Module with business methods)",
+        "Create JobSearchCO.java (Search page controller)",
+        "Create JobCreateUpdateCO.java (CRUD controller)",
+        "Create JobPositionMasterDetailCO.java (Master-detail page controller)",
+        "Update code-brain.json with new components"
+      ]
+    },
+    
+    "phase3_RefactorRemainingErrors": {
+      "priority": 2,
+      "tasks": [
+        "Refactor 26 errors in Lab files",
+        "Refactor 21 errors in integration layer",
+        "Refactor 13 errors in model layer patterns",
+        "Refactor 7 errors in view layer patterns",
+        "Refactor 10 errors in cross-cutting patterns"
+      ]
+    },
+    
+    "phase4_ExtractMoreCaseStudies": {
+      "priority": 3,
+      "tasks": [
+        "Convert binary Word/PDF documents to Java patterns",
+        "Create Employee Management case study (simpler)",
+        "Create Procurement Request case study (advanced)",
+        "Extract DBC configuration patterns to Java",
+        "Extract JDR metadata utilities to Java"
+      ]
+    },
+    
+    "futureVersions": {
+      "v1.5.0": ["Advanced PPR patterns", "File upload/download", "Workflow integration", "Multi-org patterns"],
+      "v1.6.0": ["Performance tuning", "Caching strategies", "Batch processing", "Concurrent programs", "BLOB handling"]
+    }
+  },
+  
+  "instructions": {
+    "codeGenerationRules": [
+      "Generate ONLY Oracle OAF Java/XML components",
+      "NO SQL scripts - database schemas described in JSON metadata only",
+      "NO PL/SQL packages",
+      "NO .md documentation files - all documentation in code-brain.json",
+      "Focus on BC4J components: Entity Objects, View Objects, View Links, Application Modules",
+      "Controllers must be Java classes extending OAControllerImpl",
+      "All error handling via MessageHelper",
+      "Comprehensive JavaDoc for all classes and methods"
+    ],
+    
+    "documentationRules": [
+      "All instructions stored in code-brain.json",
+      "All changelogs stored in code-brain.json",
+      "All analysis reports stored in code-brain.json",
+      "All database schemas described in JSON (not SQL files)",
+      "All sample data described in JSON (not DML files)",
+      "All usage examples in JSON (not .md files)"
+    ],
+    
+    "qualityStandards": [
+      "Zero hardcoded error strings",
+      "All validations use MessageHelper",
+      "Comprehensive error handling",
+      "WHO columns automated in all Entity Objects",
+      "Sequence-based primary keys",
+      "Association navigation for master-detail",
+      "Code must pass Codacy analysis with 0 critical issues"
+    ]
   }
 }
