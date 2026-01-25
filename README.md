@@ -1,11 +1,106 @@
 # Oracle Application Framework (OAF) BootCamp
-Stay Tuned
-<br>
-<br>
+
+**Version 1.4.0** - Production-Ready Code Brain with Centralized Message Management
+
+A comprehensive collection of Oracle Application Framework (OAF) patterns, utilities, and best practices. Features 12,800+ lines of production-ready code with 240+ use cases covering all MVC layers, validation utilities, and multi-language message support.
+
+## 🎯 What's New in v1.4.0
+
+**Centralized Message Management** - Zero hardcoded error messages!
+- ✅ **MessageConstants.java** - 60+ centralized message codes
+- ✅ **MessageHelper.java** - Reusable error creation utilities
+- ✅ **MESSAGE_REGISTRATION.sql** - Complete FND_MESSAGES setup
+- ✅ **Multi-language (i18n)** - Support for all languages via database
+- ✅ **Production-ready** - Message changes without code deployment
 
 ## About this BootCamp
 
-Stay Tuned
+This repository provides comprehensive training materials and production-ready code for Oracle E-Business Suite OA Framework development. The **code-brain** directory contains extensively documented Java patterns covering Entity Objects, View Objects, Application Modules, Controllers, Integration (Excel/PL/SQL), Security, and more.
+
+**Key Features:**
+- 📚 Complete MVC layer implementations
+- 🔧 Reusable validation utilities (48 XXVAL_* message codes)
+- 🌍 Multi-language message support (XX, XXVAL, XXLAB applications)
+- 📊 3 complete lab exercises with step-by-step solutions
+- 🛡️ Security patterns and best practices
+- 📈 Production-tested code with comprehensive JavaDoc
+
+<br>
+
+## 📚 Code Brain Structure
+
+The **code-brain** directory contains production-ready OAF code organized by layer:
+
+### Model Layer
+- **Entity Objects** - Database entity patterns, validation, DML operations
+- **View Objects** - Query patterns, WHERE clause building, dynamic SQL
+- **Application Modules** - Transaction management, nested AM patterns
+- **Validation** - DataValidation.java with 40 reusable methods (v1.3.5)
+
+### View Layer  
+- **Tables** - Advanced table patterns, PPR, row selection
+- **LOV** - List of Values patterns with validation
+- **Flexfields** - DFF/KFF implementation patterns
+
+### Controller Layer
+- **Core Controllers** - CRUD operations, navigation, dialogs
+- **Advanced Controllers** - File upload/download, PPR, dynamic forms
+- **Lab Exercises** - 3 complete labs with solutions
+
+### Integration & Utilities
+- **Excel Integration** - Upload/download with Apache POI
+- **PL/SQL Integration** - Functions, procedures, batch operations
+- **Message Management** - MessageConstants + MessageHelper (v1.4.0)
+- **Security** - Access control, function security
+
+**Statistics:**
+- **Total Lines**: 12,800+
+- **Use Cases**: 240+
+- **Message Codes**: 100+ (XX, XXVAL, XXLAB)
+- **Lab Exercises**: 3 complete implementations
+
+## 🚀 Quick Start - Message Management
+
+**Step 1: Register Messages**
+```sql
+-- Run MESSAGE_REGISTRATION.sql in your database
+@MESSAGE_REGISTRATION.sql
+-- Then load messages via Application Developer responsibility
+-- Tools > Load Messages from File (FND_NEW_MESSAGES)
+```
+
+**Step 2: Use MessageHelper in Your Code**
+```java
+import oracle.apps.xxcust.oaf.codebrain.constants.MessageConstants;
+import oracle.apps.xxcust.oaf.codebrain.utils.MessageHelper;
+
+// Instead of hardcoded errors
+// throw new OAException("Employee Name is required", OAException.ERROR);
+
+// Use MessageHelper
+throw MessageHelper.createError(MessageConstants.ERR_EMP_NAME_REQUIRED, "EmployeeName");
+
+// Or for validation
+throw MessageHelper.createValidationError(
+    MessageConstants.ERR_FIELD_REQUIRED, 
+    fieldName
+);
+```
+
+**Benefits:**
+- ✅ Multi-language support without code changes
+- ✅ Message updates via database (no redeployment)
+- ✅ Centralized message management
+- ✅ Token substitution for dynamic messages
+- ✅ Consistent error handling patterns
+
+## 📖 Documentation
+
+- **[CHANGELOG.md](CHANGELOG.md)** - Version history and migration guides
+- **[MESSAGE_CODES.md](MESSAGE_CODES.md)** - XXVAL validation message codes (v1.3.5)
+- **[USAGE_EXAMPLES.md](USAGE_EXAMPLES.md)** - Validation utilities guide
+- **[MESSAGE_REGISTRATION.sql](MESSAGE_REGISTRATION.sql)** - Complete FND_MESSAGES setup (v1.4.0)
+- **[code-brain/README.md](code-brain/README.md)** - Detailed code brain documentation
 
 <br>
 
