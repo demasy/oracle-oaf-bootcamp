@@ -15,23 +15,33 @@ import java.text.ParseException;
  * Comprehensive validation methods for common data types ensuring
  * data compatibility and integrity in Oracle Application Framework.
  * 
+ * All validation methods throw OAException with proper message codes:
+ * - Application Short Name: XXVAL (Custom Validation Messages)
+ * - Message Pattern: XXVAL_<VALIDATION_TYPE>_<ERROR_CODE>
+ * 
+ * Message codes must be registered in FND_MESSAGES table.
+ * 
  * Data Types Covered:
  * - String: Required, length, pattern, format validation
  * - Number: Range, positive/negative, decimal validation
  * - Date: Range, past/future, format validation
  * - Email: Format and domain validation
- * - Phone: Format validation
+ * - Phone/Mobile: Format validation (Saudi Arabia, International)
  * - URL: Format and protocol validation
+ * - IQAMA: Saudi National ID validation
  * - Custom: Business-specific validation patterns
  * 
  * Layer: Model - Validation
  * Complexity: Intermediate
- * Version: 1.3.2
+ * Version: 1.3.5
  * 
  * @author OAF Code Brain
- * @version 1.3.2
+ * @version 1.3.5
  */
 public class DataValidation {
+
+    // Application Short Name for validation messages
+    private static final String APP_SHORT_NAME = "XXVAL";
 
     // ========================================
     // STRING VALIDATION
@@ -47,16 +57,18 @@ public class DataValidation {
      * - Required API parameters
      * - Database NOT NULL columns
      * 
+     * Message Code: XXVAL_REQUIRED_FIELD
+     * Message Text: &FIELD_NAME is required.
+     * 
      * @param value String to validate
      * @param fieldName Name of field for error message
      * @throws OAException if validation fails
      */
     public static void validateRequired(String value, String fieldName) {
         if (value == null || value.trim().isEmpty()) {
-            throw new OAException(
-                fieldName + " is required",
-                OAException.ERROR
-            );
+            OAException error = new OAException(APP_SHORT_NAME, "XXVAL_REQUIRED_FIELD");
+            error.setApplicationModule(fieldName);
+            throw error;
         }
     }
 
@@ -82,17 +94,15 @@ public class DataValidation {
             int length = value.length();
             
             if (length < minLength) {
-                throw new OAException(
-                    fieldName + " must be at least " + minLength + " characters",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_MIN_LENGTH");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
             
             if (length > maxLength) {
-                throw new OAException(
-                    fieldName + " cannot exceed " + maxLength + " characters",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_MAX_LENGTH");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -121,10 +131,9 @@ public class DataValidation {
             Matcher matcher = pattern.matcher(value);
             
             if (!matcher.matches()) {
-                throw new OAException(
-                    fieldName + " format is invalid. Expected format: " + exampleFormat,
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_INVALID_PATTERN");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -145,10 +154,9 @@ public class DataValidation {
      */
     public static void validateAlphanumeric(String value, String fieldName) {
         if (value != null && !value.trim().isEmpty() && !value.matches("^[a-zA-Z0-9]+$")) {
-            throw new OAException(
-                fieldName + " must contain only letters and numbers",
-                OAException.ERROR
-            );
+            OAException error = new OAException(APP_SHORT_NAME, "XXVAL_ALPHANUMERIC_ONLY");
+            error.setApplicationModule(fieldName);
+            throw error;
         }
     }
 
@@ -169,10 +177,9 @@ public class DataValidation {
     public static void validateNoSpecialChars(String value, String fieldName) {
         if (value != null && !value.trim().isEmpty() && 
             !value.matches("^[a-zA-Z0-9\\s.,'/\\-]+$")) {
-            throw new OAException(
-                fieldName + " contains invalid characters",
-                OAException.ERROR
-            );
+            OAException error = new OAException(APP_SHORT_NAME, "XXVAL_SPECIAL_CHARS");
+            error.setApplicationModule(fieldName);
+            throw error;
         }
     }
 
@@ -194,10 +201,9 @@ public class DataValidation {
     public static void validateContains(String value, String fieldName, String requiredSubstring) {
         if (value != null && requiredSubstring != null && 
             !value.toLowerCase().contains(requiredSubstring.toLowerCase())) {
-            throw new OAException(
-                fieldName + " must contain '" + requiredSubstring + "'",
-                OAException.ERROR
-            );
+            OAException error = new OAException(APP_SHORT_NAME, "XXVAL_MUST_CONTAIN");
+            error.setApplicationModule(fieldName);
+            throw error;
         }
     }
 
@@ -218,10 +224,9 @@ public class DataValidation {
      */
     public static void validateStartsWith(String value, String fieldName, String prefix) {
         if (value != null && prefix != null && !value.startsWith(prefix)) {
-            throw new OAException(
-                fieldName + " must start with '" + prefix + "'",
-                OAException.ERROR
-            );
+            OAException error = new OAException(APP_SHORT_NAME, "XXVAL_MUST_START_WITH");
+            error.setApplicationModule(fieldName);
+            throw error;
         }
     }
 
@@ -243,15 +248,13 @@ public class DataValidation {
     public static void validateCase(String value, String fieldName, boolean uppercase) {
         if (value != null && !value.trim().isEmpty()) {
             if (uppercase && !value.equals(value.toUpperCase())) {
-                throw new OAException(
-                    fieldName + " must be in uppercase",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_MUST_BE_UPPERCASE");
+                error.setApplicationModule(fieldName);
+                throw error;
             } else if (!uppercase && !value.equals(value.toLowerCase())) {
-                throw new OAException(
-                    fieldName + " must be in lowercase",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_MUST_BE_LOWERCASE");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -276,10 +279,9 @@ public class DataValidation {
             String lowerValue = value.toLowerCase();
             for (String forbidden : forbiddenStrings) {
                 if (lowerValue.contains(forbidden.toLowerCase())) {
-                    throw new OAException(
-                        fieldName + " contains forbidden content",
-                        OAException.ERROR
-                    );
+                    OAException error = new OAException(APP_SHORT_NAME, "XXVAL_FORBIDDEN_CONTENT");
+                    error.setApplicationModule(fieldName);
+                    throw error;
                 }
             }
         }
@@ -312,10 +314,9 @@ public class DataValidation {
             double numValue = value.doubleValue();
             
             if (numValue < min || numValue > max) {
-                throw new OAException(
-                    fieldName + " must be between " + min + " and " + max,
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_NUM_RANGE");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -340,10 +341,9 @@ public class DataValidation {
             double numValue = value.doubleValue();
             
             if (numValue <= 0) {
-                throw new OAException(
-                    fieldName + " must be greater than zero",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_MUST_BE_POSITIVE");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -367,10 +367,9 @@ public class DataValidation {
             double numValue = value.doubleValue();
             
             if (numValue < 0) {
-                throw new OAException(
-                    fieldName + " cannot be negative",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_CANNOT_BE_NEGATIVE");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -398,10 +397,9 @@ public class DataValidation {
             if (valueStr.contains(".")) {
                 String[] parts = valueStr.split("\\.");
                 if (parts.length > 1 && parts[1].length() > maxDecimals) {
-                    throw new OAException(
-                        fieldName + " cannot have more than " + maxDecimals + " decimal places",
-                        OAException.ERROR
-                    );
+                    OAException error = new OAException(APP_SHORT_NAME, "XXVAL_MAX_DECIMALS");
+                    error.setApplicationModule(fieldName);
+                    throw error;
                 }
             }
         }
@@ -426,10 +424,9 @@ public class DataValidation {
             double numValue = value.doubleValue();
             
             if (numValue != Math.floor(numValue)) {
-                throw new OAException(
-                    fieldName + " must be a whole number",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_MUST_BE_INTEGER");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -452,10 +449,9 @@ public class DataValidation {
         if (value != null) {
             long numValue = value.longValue();
             if (numValue % 2 != 0) {
-                throw new OAException(
-                    fieldName + " must be an even number",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_MUST_BE_EVEN");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -477,10 +473,9 @@ public class DataValidation {
         if (value != null) {
             long numValue = value.longValue();
             if (numValue % 2 == 0) {
-                throw new OAException(
-                    fieldName + " must be an odd number",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_MUST_BE_ODD");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -504,10 +499,9 @@ public class DataValidation {
         if (value != null) {
             double numValue = value.doubleValue();
             if (numValue < 0 || numValue > 100) {
-                throw new OAException(
-                    fieldName + " must be between 0 and 100",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_PERCENTAGE_RANGE");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -531,10 +525,9 @@ public class DataValidation {
         if (value != null && divisor != 0) {
             long numValue = value.longValue();
             if (numValue % divisor != 0) {
-                throw new OAException(
-                    fieldName + " must be divisible by " + divisor,
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_DIVISIBLE_BY");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -563,17 +556,15 @@ public class DataValidation {
                                          Date minDate, Date maxDate) {
         if (value != null) {
             if (minDate != null && value.before(minDate)) {
-                throw new OAException(
-                    fieldName + " cannot be before " + formatDate(minDate),
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_DATE_BEFORE");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
             
             if (maxDate != null && value.after(maxDate)) {
-                throw new OAException(
-                    fieldName + " cannot be after " + formatDate(maxDate),
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_DATE_AFTER");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -596,10 +587,9 @@ public class DataValidation {
      */
     public static void validateNotFuture(Date value, String fieldName, Date currentDate) {
         if (value != null && currentDate != null && value.after(currentDate)) {
-            throw new OAException(
-                fieldName + " cannot be in the future",
-                OAException.ERROR
-            );
+            OAException error = new OAException(APP_SHORT_NAME, "XXVAL_DATE_FUTURE");
+            error.setApplicationModule(fieldName);
+            throw error;
         }
     }
 
@@ -621,10 +611,9 @@ public class DataValidation {
      */
     public static void validateNotPast(Date value, String fieldName, Date currentDate) {
         if (value != null && currentDate != null && value.before(currentDate)) {
-            throw new OAException(
-                fieldName + " cannot be in the past",
-                OAException.ERROR
-            );
+            OAException error = new OAException(APP_SHORT_NAME, "XXVAL_DATE_PAST");
+            error.setApplicationModule(fieldName);
+            throw error;
         }
     }
 
@@ -648,10 +637,9 @@ public class DataValidation {
     public static void validateDateSequence(Date startDate, Date endDate,
                                            String startFieldName, String endFieldName) {
         if (startDate != null && endDate != null && endDate.before(startDate)) {
-            throw new OAException(
-                endFieldName + " must be after " + startFieldName,
-                OAException.ERROR
-            );
+            OAException error = new OAException(APP_SHORT_NAME, "XXVAL_DATE_SEQUENCE");
+            error.setApplicationModule(endFieldName);
+            throw error;
         }
     }
 
@@ -679,10 +667,9 @@ public class DataValidation {
             long ageInYears = diffInMillis / (1000L * 60 * 60 * 24 * 365);
             
             if (ageInYears < minAge) {
-                throw new OAException(
-                    "Age must be at least " + minAge + " years",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_MINIMUM_AGE");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -709,10 +696,9 @@ public class DataValidation {
             
             // 1 = Sunday, 7 = Saturday
             if (dayOfWeek == java.util.Calendar.SUNDAY || dayOfWeek == java.util.Calendar.SATURDAY) {
-                throw new OAException(
-                    fieldName + " must be a business day (Monday-Friday)",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_BUSINESS_DAY");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -737,10 +723,9 @@ public class DataValidation {
             int dayOfWeek = cal.get(java.util.Calendar.DAY_OF_WEEK);
             
             if (dayOfWeek != java.util.Calendar.SUNDAY && dayOfWeek != java.util.Calendar.SATURDAY) {
-                throw new OAException(
-                    fieldName + " must be a weekend day (Saturday or Sunday)",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_WEEKEND_DAY");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -767,15 +752,13 @@ public class DataValidation {
             long diffInDays = diffInMillis / (1000L * 60 * 60 * 24);
             
             if (days > 0 && diffInDays > days) {
-                throw new OAException(
-                    fieldName + " must be within " + days + " days from today",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_DATE_WITHIN_FUTURE");
+                error.setApplicationModule(fieldName);
+                throw error;
             } else if (days < 0 && diffInDays < days) {
-                throw new OAException(
-                    fieldName + " must be within " + Math.abs(days) + " days before today",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_DATE_WITHIN_PAST");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -808,10 +791,9 @@ public class DataValidation {
             Matcher matcher = pattern.matcher(email);
             
             if (!matcher.matches()) {
-                throw new OAException(
-                    fieldName + " is not a valid email address",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_INVALID_EMAIL");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -845,10 +827,9 @@ public class DataValidation {
             }
             
             if (!validDomain) {
-                throw new OAException(
-                    fieldName + " must belong to an authorized domain",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_EMAIL_DOMAIN");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -884,10 +865,9 @@ public class DataValidation {
             
             // Check if contains only digits and is reasonable length (10-15 digits)
             if (!cleanPhone.matches("^\\d{10,15}$")) {
-                throw new OAException(
-                    fieldName + " is not a valid phone number",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_INVALID_PHONE");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -933,10 +913,9 @@ public class DataValidation {
             }
             
             if (!isValid) {
-                throw new OAException(
-                    fieldName + " is not a valid Saudi mobile number (format: 05XXXXXXXX)",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_INVALID_SAUDI_MOBILE");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -963,10 +942,9 @@ public class DataValidation {
             // International format: +CountryCode followed by 6-14 digits
             // Examples: +966512345678, +14155551234, +442071234567
             if (!cleanMobile.matches("^\\+\\d{7,15}$")) {
-                throw new OAException(
-                    fieldName + " is not a valid international mobile number (format: +CountryCodeNumber)",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_INVALID_INTL_MOBILE");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -997,10 +975,9 @@ public class DataValidation {
             Matcher matcher = pattern.matcher(url);
             
             if (!matcher.matches()) {
-                throw new OAException(
-                    fieldName + " is not a valid URL",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_INVALID_URL");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -1022,10 +999,9 @@ public class DataValidation {
     public static void validateHTTPSURL(String url, String fieldName) {
         if (url != null && !url.trim().isEmpty()) {
             if (!url.toLowerCase().startsWith("https://")) {
-                throw new OAException(
-                    fieldName + " must use secure HTTPS protocol",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_HTTPS_REQUIRED");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
             
             // Also validate URL format
@@ -1034,10 +1010,9 @@ public class DataValidation {
             Matcher matcher = pattern.matcher(url);
             
             if (!matcher.matches()) {
-                throw new OAException(
-                    fieldName + " is not a valid HTTPS URL",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_INVALID_HTTPS_URL");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -1070,10 +1045,9 @@ public class DataValidation {
             }
             
             if (!validDomain) {
-                throw new OAException(
-                    fieldName + " must belong to an authorized domain",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_URL_DOMAIN");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -1097,10 +1071,9 @@ public class DataValidation {
      */
     public static void validateSSN(String ssn, String fieldName) {
         if (ssn != null && !ssn.trim().isEmpty() && !ssn.matches("^\\d{3}-\\d{2}-\\d{4}$")) {
-            throw new OAException(
-                fieldName + " must be in format XXX-XX-XXXX",
-                OAException.ERROR
-            );
+            OAException error = new OAException(APP_SHORT_NAME, "XXVAL_INVALID_SSN");
+            error.setApplicationModule(fieldName);
+            throw error;
         }
     }
 
@@ -1124,18 +1097,16 @@ public class DataValidation {
             
             // Check if only digits and reasonable length (13-19 digits)
             if (!cleanCard.matches("^\\d{13,19}$")) {
-                throw new OAException(
-                    fieldName + " is not a valid credit card number",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_INVALID_CREDIT_CARD");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
             
             // Luhn algorithm validation
             if (!isValidLuhn(cleanCard)) {
-                throw new OAException(
-                    fieldName + " failed validation check",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_CREDIT_CARD_CHECKSUM");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -1171,10 +1142,9 @@ public class DataValidation {
             }
             
             if (regex != null && !postalCode.matches(regex)) {
-                throw new OAException(
-                    fieldName + " format is invalid for " + countryCode,
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_INVALID_POSTAL_CODE");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -1210,19 +1180,17 @@ public class DataValidation {
             
             // Check if exactly 10 digits
             if (!cleanIqama.matches("^\\d{10}$")) {
-                throw new OAException(
-                    fieldName + " must be exactly 10 digits",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_IQAMA_LENGTH");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
             
             // Check if starts with 1 or 2
             char firstDigit = cleanIqama.charAt(0);
             if (firstDigit != '1' && firstDigit != '2') {
-                throw new OAException(
-                    fieldName + " must start with 1 (Saudi National) or 2 (Resident)",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_IQAMA_START_DIGIT");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -1250,10 +1218,9 @@ public class DataValidation {
             
             // Apply Luhn algorithm for checksum validation
             if (!isValidLuhn(cleanIqama)) {
-                throw new OAException(
-                    fieldName + " failed checksum validation",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_IQAMA_CHECKSUM");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -1281,17 +1248,15 @@ public class DataValidation {
             char firstDigit = cleanIqama.charAt(0);
             
             if (mustBeSaudi && firstDigit != '1') {
-                throw new OAException(
-                    fieldName + " must be a Saudi National ID (starts with 1)",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_IQAMA_MUST_BE_SAUDI");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
             
             if (!mustBeSaudi && firstDigit != '2') {
-                throw new OAException(
-                    fieldName + " must be a Resident ID (starts with 2)",
-                    OAException.ERROR
-                );
+                OAException error = new OAException(APP_SHORT_NAME, "XXVAL_IQAMA_MUST_BE_RESIDENT");
+                error.setApplicationModule(fieldName);
+                throw error;
             }
         }
     }
@@ -1299,14 +1264,6 @@ public class DataValidation {
     // ========================================
     // HELPER METHODS
     // ========================================
-
-    /**
-     * Helper: Format date for display in error messages
-     */
-    private static String formatDate(Date date) {
-        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
-        return sdf.format(date);
-    }
 
     /**
      * Helper: Luhn algorithm for credit card validation
