@@ -176,6 +176,115 @@ public class DataValidation {
         }
     }
 
+    /**
+     * USE CASE 23: Validate String Contains
+     * 
+     * Check if string contains a specific substring (case-insensitive).
+     * 
+     * When to use:
+     * - Search validation
+     * - Keyword validation
+     * - Content filtering
+     * 
+     * @param value String to validate
+     * @param fieldName Name of field for error message
+     * @param requiredSubstring Required substring
+     * @throws OAException if validation fails
+     */
+    public static void validateContains(String value, String fieldName, String requiredSubstring) {
+        if (value != null && requiredSubstring != null && 
+            !value.toLowerCase().contains(requiredSubstring.toLowerCase())) {
+            throw new OAException(
+                fieldName + " must contain '" + requiredSubstring + "'",
+                OAException.ERROR
+            );
+        }
+    }
+
+    /**
+     * USE CASE 24: Validate String Starts With
+     * 
+     * Check if string starts with a specific prefix.
+     * 
+     * When to use:
+     * - Code prefixes (EMP-, DEPT-)
+     * - Category validation
+     * - Hierarchical codes
+     * 
+     * @param value String to validate
+     * @param fieldName Name of field for error message
+     * @param prefix Required prefix
+     * @throws OAException if validation fails
+     */
+    public static void validateStartsWith(String value, String fieldName, String prefix) {
+        if (value != null && prefix != null && !value.startsWith(prefix)) {
+            throw new OAException(
+                fieldName + " must start with '" + prefix + "'",
+                OAException.ERROR
+            );
+        }
+    }
+
+    /**
+     * USE CASE 25: Validate String Case
+     * 
+     * Check if string is in uppercase or lowercase.
+     * 
+     * When to use:
+     * - Code standardization
+     * - Username policies
+     * - Data normalization
+     * 
+     * @param value String to validate
+     * @param fieldName Name of field for error message
+     * @param uppercase True for uppercase, false for lowercase
+     * @throws OAException if validation fails
+     */
+    public static void validateCase(String value, String fieldName, boolean uppercase) {
+        if (value != null && !value.trim().isEmpty()) {
+            if (uppercase && !value.equals(value.toUpperCase())) {
+                throw new OAException(
+                    fieldName + " must be in uppercase",
+                    OAException.ERROR
+                );
+            } else if (!uppercase && !value.equals(value.toLowerCase())) {
+                throw new OAException(
+                    fieldName + " must be in lowercase",
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
+    /**
+     * USE CASE 26: Validate String Not Contains
+     * 
+     * Check if string does NOT contain forbidden characters or words.
+     * 
+     * When to use:
+     * - SQL injection prevention
+     * - XSS prevention
+     * - Profanity filtering
+     * 
+     * @param value String to validate
+     * @param fieldName Name of field for error message
+     * @param forbiddenStrings Array of forbidden strings
+     * @throws OAException if validation fails
+     */
+    public static void validateNotContains(String value, String fieldName, String[] forbiddenStrings) {
+        if (value != null && forbiddenStrings != null) {
+            String lowerValue = value.toLowerCase();
+            for (String forbidden : forbiddenStrings) {
+                if (lowerValue.contains(forbidden.toLowerCase())) {
+                    throw new OAException(
+                        fieldName + " contains forbidden content",
+                        OAException.ERROR
+                    );
+                }
+            }
+        }
+    }
+
     // ========================================
     // NUMBER VALIDATION
     // ========================================
@@ -319,6 +428,111 @@ public class DataValidation {
             if (numValue != Math.floor(numValue)) {
                 throw new OAException(
                     fieldName + " must be a whole number",
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
+    /**
+     * USE CASE 27: Validate Even Number
+     * 
+     * Check if number is even.
+     * 
+     * When to use:
+     * - Pair requirements
+     * - Even-numbered seats
+     * - Batch processing (even batch sizes)
+     * 
+     * @param value Number to validate
+     * @param fieldName Name of field for error message
+     * @throws OAException if validation fails
+     */
+    public static void validateEven(Number value, String fieldName) {
+        if (value != null) {
+            long numValue = value.longValue();
+            if (numValue % 2 != 0) {
+                throw new OAException(
+                    fieldName + " must be an even number",
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
+    /**
+     * USE CASE 28: Validate Odd Number
+     * 
+     * Check if number is odd.
+     * 
+     * When to use:
+     * - Odd-numbered seats
+     * - Specific business rules
+     * 
+     * @param value Number to validate
+     * @param fieldName Name of field for error message
+     * @throws OAException if validation fails
+     */
+    public static void validateOdd(Number value, String fieldName) {
+        if (value != null) {
+            long numValue = value.longValue();
+            if (numValue % 2 == 0) {
+                throw new OAException(
+                    fieldName + " must be an odd number",
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
+    /**
+     * USE CASE 29: Validate Percentage
+     * 
+     * Check if number is a valid percentage (0-100).
+     * 
+     * When to use:
+     * - Discount percentage
+     * - Tax rate
+     * - Completion percentage
+     * - Score percentage
+     * 
+     * @param value Number to validate
+     * @param fieldName Name of field for error message
+     * @throws OAException if validation fails
+     */
+    public static void validatePercentage(Number value, String fieldName) {
+        if (value != null) {
+            double numValue = value.doubleValue();
+            if (numValue < 0 || numValue > 100) {
+                throw new OAException(
+                    fieldName + " must be between 0 and 100",
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
+    /**
+     * USE CASE 30: Validate Divisible By
+     * 
+     * Check if number is divisible by a specific value.
+     * 
+     * When to use:
+     * - Batch size validation
+     * - Package quantity validation
+     * - Multiple requirements
+     * 
+     * @param value Number to validate
+     * @param fieldName Name of field for error message
+     * @param divisor Number must be divisible by this value
+     * @throws OAException if validation fails
+     */
+    public static void validateDivisibleBy(Number value, String fieldName, int divisor) {
+        if (value != null && divisor != 0) {
+            long numValue = value.longValue();
+            if (numValue % divisor != 0) {
+                throw new OAException(
+                    fieldName + " must be divisible by " + divisor,
                     OAException.ERROR
                 );
             }
@@ -473,6 +687,99 @@ public class DataValidation {
         }
     }
 
+    /**
+     * USE CASE 31: Validate Business Day
+     * 
+     * Check if date falls on a weekday (Monday-Friday).
+     * 
+     * When to use:
+     * - Delivery date validation
+     * - Meeting date validation
+     * - Working day scheduling
+     * 
+     * @param value Date to validate
+     * @param fieldName Name of field for error message
+     * @throws OAException if validation fails
+     */
+    public static void validateBusinessDay(Date value, String fieldName) {
+        if (value != null) {
+            java.util.Calendar cal = java.util.Calendar.getInstance();
+            cal.setTime(value);
+            int dayOfWeek = cal.get(java.util.Calendar.DAY_OF_WEEK);
+            
+            // 1 = Sunday, 7 = Saturday
+            if (dayOfWeek == java.util.Calendar.SUNDAY || dayOfWeek == java.util.Calendar.SATURDAY) {
+                throw new OAException(
+                    fieldName + " must be a business day (Monday-Friday)",
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
+    /**
+     * USE CASE 32: Validate Weekend Day
+     * 
+     * Check if date falls on a weekend (Saturday or Sunday).
+     * 
+     * When to use:
+     * - Weekend event scheduling
+     * - Off-day validation
+     * 
+     * @param value Date to validate
+     * @param fieldName Name of field for error message
+     * @throws OAException if validation fails
+     */
+    public static void validateWeekendDay(Date value, String fieldName) {
+        if (value != null) {
+            java.util.Calendar cal = java.util.Calendar.getInstance();
+            cal.setTime(value);
+            int dayOfWeek = cal.get(java.util.Calendar.DAY_OF_WEEK);
+            
+            if (dayOfWeek != java.util.Calendar.SUNDAY && dayOfWeek != java.util.Calendar.SATURDAY) {
+                throw new OAException(
+                    fieldName + " must be a weekend day (Saturday or Sunday)",
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
+    /**
+     * USE CASE 33: Validate Date Within Days
+     * 
+     * Check if date is within specified number of days from current date.
+     * 
+     * When to use:
+     * - Expiry date validation
+     * - Near-future date validation
+     * - Recent date validation
+     * 
+     * @param value Date to validate
+     * @param fieldName Name of field for error message
+     * @param days Number of days (positive for future, negative for past)
+     * @param currentDate Current date from database
+     * @throws OAException if validation fails
+     */
+    public static void validateDateWithinDays(Date value, String fieldName, int days, Date currentDate) {
+        if (value != null && currentDate != null) {
+            long diffInMillis = value.getTime() - currentDate.getTime();
+            long diffInDays = diffInMillis / (1000L * 60 * 60 * 24);
+            
+            if (days > 0 && diffInDays > days) {
+                throw new OAException(
+                    fieldName + " must be within " + days + " days from today",
+                    OAException.ERROR
+                );
+            } else if (days < 0 && diffInDays < days) {
+                throw new OAException(
+                    fieldName + " must be within " + Math.abs(days) + " days before today",
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
     // ========================================
     // EMAIL VALIDATION
     // ========================================
@@ -585,6 +892,85 @@ public class DataValidation {
         }
     }
 
+    /**
+     * USE CASE 34: Validate Mobile Number (Saudi Arabia)
+     * 
+     * Check if mobile number follows Saudi Arabia format (05XXXXXXXX).
+     * 
+     * When to use:
+     * - Saudi mobile validation
+     * - SMS notification (SA)
+     * - Contact information (SA)
+     * 
+     * Formats supported:
+     * - 05XXXXXXXX (10 digits starting with 05)
+     * - +9665XXXXXXXX (with country code)
+     * - 009665XXXXXXXX (with international prefix)
+     * 
+     * @param mobile Mobile number to validate
+     * @param fieldName Name of field for error message
+     * @throws OAException if validation fails
+     */
+    public static void validateSaudiMobile(String mobile, String fieldName) {
+        if (mobile != null && !mobile.trim().isEmpty()) {
+            // Remove spaces, dashes, and parentheses
+            String cleanMobile = mobile.replaceAll("[\\s\\-\\(\\)]", "");
+            
+            // Check various Saudi mobile formats
+            boolean isValid = false;
+            
+            // Format: 05XXXXXXXX (10 digits)
+            if (cleanMobile.matches("^05\\d{8}$")) {
+                isValid = true;
+            }
+            // Format: +9665XXXXXXXX or 9665XXXXXXXX
+            else if (cleanMobile.matches("^\\+?9665\\d{8}$")) {
+                isValid = true;
+            }
+            // Format: 009665XXXXXXXX
+            else if (cleanMobile.matches("^009665\\d{8}$")) {
+                isValid = true;
+            }
+            
+            if (!isValid) {
+                throw new OAException(
+                    fieldName + " is not a valid Saudi mobile number (format: 05XXXXXXXX)",
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
+    /**
+     * USE CASE 35: Validate International Mobile
+     * 
+     * Check if mobile number follows international format.
+     * 
+     * When to use:
+     * - International contact
+     * - Multi-country support
+     * - Global SMS validation
+     * 
+     * @param mobile Mobile number to validate
+     * @param fieldName Name of field for error message
+     * @throws OAException if validation fails
+     */
+    public static void validateInternationalMobile(String mobile, String fieldName) {
+        if (mobile != null && !mobile.trim().isEmpty()) {
+            // Remove spaces, dashes, and parentheses
+            String cleanMobile = mobile.replaceAll("[\\s\\-\\(\\)]", "");
+            
+            // International format: +CountryCode followed by 6-14 digits
+            // Examples: +966512345678, +14155551234, +442071234567
+            if (!cleanMobile.matches("^\\+\\d{7,15}$")) {
+                throw new OAException(
+                    fieldName + " is not a valid international mobile number (format: +CountryCodeNumber)",
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
     // ========================================
     // URL VALIDATION
     // ========================================
@@ -613,6 +999,79 @@ public class DataValidation {
             if (!matcher.matches()) {
                 throw new OAException(
                     fieldName + " is not a valid URL",
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
+    /**
+     * USE CASE 36: Validate HTTPS URL Only
+     * 
+     * Check if URL uses secure HTTPS protocol.
+     * 
+     * When to use:
+     * - Secure payment links
+     * - Sensitive data endpoints
+     * - Security policy enforcement
+     * 
+     * @param url URL to validate
+     * @param fieldName Name of field for error message
+     * @throws OAException if validation fails
+     */
+    public static void validateHTTPSURL(String url, String fieldName) {
+        if (url != null && !url.trim().isEmpty()) {
+            if (!url.toLowerCase().startsWith("https://")) {
+                throw new OAException(
+                    fieldName + " must use secure HTTPS protocol",
+                    OAException.ERROR
+                );
+            }
+            
+            // Also validate URL format
+            String urlRegex = "^https://[^\\s/$.?#].[^\\s]*$";
+            Pattern pattern = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);
+            Matcher matcher = pattern.matcher(url);
+            
+            if (!matcher.matches()) {
+                throw new OAException(
+                    fieldName + " is not a valid HTTPS URL",
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
+    /**
+     * USE CASE 37: Validate URL Domain
+     * 
+     * Check if URL belongs to allowed domain(s).
+     * 
+     * When to use:
+     * - Restrict to corporate domains
+     * - Partner website validation
+     * - Whitelist verification
+     * 
+     * @param url URL to validate
+     * @param fieldName Name of field for error message
+     * @param allowedDomains Array of allowed domains
+     * @throws OAException if validation fails
+     */
+    public static void validateURLDomain(String url, String fieldName, String[] allowedDomains) {
+        if (url != null && !url.trim().isEmpty() && allowedDomains != null) {
+            boolean validDomain = false;
+            
+            for (String domain : allowedDomains) {
+                // Check if URL contains the allowed domain
+                if (url.toLowerCase().contains(domain.toLowerCase())) {
+                    validDomain = true;
+                    break;
+                }
+            }
+            
+            if (!validDomain) {
+                throw new OAException(
+                    fieldName + " must belong to an authorized domain",
                     OAException.ERROR
                 );
             }
@@ -714,6 +1173,123 @@ public class DataValidation {
             if (regex != null && !postalCode.matches(regex)) {
                 throw new OAException(
                     fieldName + " format is invalid for " + countryCode,
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
+    /**
+     * USE CASE 38: Validate IQAMA Number (Saudi Arabia National ID)
+     * 
+     * Check if IQAMA number follows Saudi Arabia format.
+     * 
+     * Saudi IQAMA Format Rules:
+     * - Exactly 10 digits
+     * - First digit: 1 (Saudi National) or 2 (Resident/Expat)
+     * - Remaining 9 digits: Sequential number
+     * 
+     * When to use:
+     * - Employee registration (Saudi Arabia)
+     * - National ID validation
+     * - Resident permit validation
+     * - Government services integration
+     * 
+     * Examples:
+     * - 1234567890 (Saudi National)
+     * - 2123456789 (Resident/Expat)
+     * 
+     * @param iqama IQAMA number
+     * @param fieldName Name of field for error message
+     * @throws OAException if validation fails
+     */
+    public static void validateIqamaNumber(String iqama, String fieldName) {
+        if (iqama != null && !iqama.trim().isEmpty()) {
+            // Remove spaces and dashes if any
+            String cleanIqama = iqama.replaceAll("[\\s\\-]", "");
+            
+            // Check if exactly 10 digits
+            if (!cleanIqama.matches("^\\d{10}$")) {
+                throw new OAException(
+                    fieldName + " must be exactly 10 digits",
+                    OAException.ERROR
+                );
+            }
+            
+            // Check if starts with 1 or 2
+            char firstDigit = cleanIqama.charAt(0);
+            if (firstDigit != '1' && firstDigit != '2') {
+                throw new OAException(
+                    fieldName + " must start with 1 (Saudi National) or 2 (Resident)",
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
+    /**
+     * USE CASE 39: Validate IQAMA Number with Checksum
+     * 
+     * Validate IQAMA with Luhn algorithm checksum verification.
+     * 
+     * When to use:
+     * - High-security validation
+     * - Government integration
+     * - Critical identity verification
+     * 
+     * @param iqama IQAMA number
+     * @param fieldName Name of field for error message
+     * @throws OAException if validation fails
+     */
+    public static void validateIqamaNumberWithChecksum(String iqama, String fieldName) {
+        // First do basic format validation
+        validateIqamaNumber(iqama, fieldName);
+        
+        if (iqama != null && !iqama.trim().isEmpty()) {
+            String cleanIqama = iqama.replaceAll("[\\s\\-]", "");
+            
+            // Apply Luhn algorithm for checksum validation
+            if (!isValidLuhn(cleanIqama)) {
+                throw new OAException(
+                    fieldName + " failed checksum validation",
+                    OAException.ERROR
+                );
+            }
+        }
+    }
+
+    /**
+     * USE CASE 40: Validate Saudi National ID vs Resident
+     * 
+     * Validate and distinguish between Saudi National (1) and Resident (2) IQAMA.
+     * 
+     * When to use:
+     * - Nationality-specific processing
+     * - Benefits eligibility
+     * - Service restrictions
+     * 
+     * @param iqama IQAMA number
+     * @param fieldName Name of field for error message
+     * @param mustBeSaudi True if must be Saudi National, false if must be Resident
+     * @throws OAException if validation fails
+     */
+    public static void validateIqamaType(String iqama, String fieldName, boolean mustBeSaudi) {
+        validateIqamaNumber(iqama, fieldName);
+        
+        if (iqama != null && !iqama.trim().isEmpty()) {
+            String cleanIqama = iqama.replaceAll("[\\s\\-]", "");
+            char firstDigit = cleanIqama.charAt(0);
+            
+            if (mustBeSaudi && firstDigit != '1') {
+                throw new OAException(
+                    fieldName + " must be a Saudi National ID (starts with 1)",
+                    OAException.ERROR
+                );
+            }
+            
+            if (!mustBeSaudi && firstDigit != '2') {
+                throw new OAException(
+                    fieldName + " must be a Resident ID (starts with 2)",
                     OAException.ERROR
                 );
             }

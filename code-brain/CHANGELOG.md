@@ -1,5 +1,102 @@
 # Code Brain Change Log
 
+## Version 1.3.4 (2026-01-25)
+
+### Extended Validation Methods - 18 New Validators
+
+Enhanced `DataValidation.java` with 18 additional validation methods for comprehensive OAF data integrity.
+
+**New String Validations** (5 methods):
+- `validateContains()` - Check if string contains required substring
+- `validateStartsWith()` - Validate string prefix (code patterns)
+- `validateCase()` - Enforce uppercase/lowercase
+- `validateNotContains()` - Block forbidden content (SQL injection, XSS prevention)
+
+**New Number Validations** (4 methods):
+- `validateEven()` - Even number validation
+- `validateOdd()` - Odd number validation
+- `validatePercentage()` - 0-100 range for percentages
+- `validateDivisibleBy()` - Batch/package quantity validation
+
+**New Date Validations** (3 methods):
+- `validateBusinessDay()` - Weekday validation (Monday-Friday)
+- `validateWeekendDay()` - Weekend validation (Saturday-Sunday)
+- `validateDateWithinDays()` - Date proximity validation
+
+**New Mobile/Phone Validations** (2 methods):
+- `validateSaudiMobile()` - Saudi Arabia mobile format (05XXXXXXXX, +9665X...)
+- `validateInternationalMobile()` - International format (+CountryCode...)
+
+**New URL Validations** (2 methods):
+- `validateHTTPSURL()` - Enforce secure HTTPS protocol
+- `validateURLDomain()` - Restrict to whitelisted domains
+
+**New IQAMA Validations** (3 methods):
+- `validateIqamaNumber()` - Saudi National ID format (10 digits, starts with 1 or 2)
+- `validateIqamaNumberWithChecksum()` - IQAMA with Luhn algorithm verification
+- `validateIqamaType()` - Distinguish Saudi National (1) vs Resident (2)
+
+**IQAMA Validation Details**:
+```java
+// Format: 1XXXXXXXXX (Saudi National) or 2XXXXXXXXX (Resident)
+// Exactly 10 digits
+DataValidation.validateIqamaNumber(iqama, "IQAMA Number");
+
+// With checksum verification
+DataValidation.validateIqamaNumberWithChecksum(iqama, "IQAMA Number");
+
+// Type-specific validation
+DataValidation.validateIqamaType(iqama, "IQAMA Number", true); // Must be Saudi
+DataValidation.validateIqamaType(iqama, "IQAMA Number", false); // Must be Resident
+```
+
+**Mobile Number Examples**:
+```java
+// Saudi mobile validation
+DataValidation.validateSaudiMobile("0512345678", "Mobile"); // Valid
+DataValidation.validateSaudiMobile("+966512345678", "Mobile"); // Valid
+DataValidation.validateSaudiMobile("00966512345678", "Mobile"); // Valid
+
+// International mobile
+DataValidation.validateInternationalMobile("+14155551234", "Mobile"); // US
+DataValidation.validateInternationalMobile("+442071234567", "Mobile"); // UK
+```
+
+**Code Statistics**:
+- **Total Methods**: 40 validation methods (up from 22)
+- **Lines of Code**: 1,180 (up from 812)
+- **New Use Cases**: 18 additional validation scenarios
+- **Coverage**: String, Number, Date, Email, Phone, Mobile, URL, IQAMA, Postal Code
+
+**All Validators Return**:
+- ✅ `OAException` with Oracle Application Error Messages
+- ✅ User-friendly field names in error messages
+- ✅ Clear format examples in error text
+- ✅ Null-safe operations
+
+**OAF Integration Pattern**:
+```java
+// In Controller processFormRequest()
+public void processFormRequest(OAPageContext pageContext, OAWebBean webBean) {
+    try {
+        String iqama = pageContext.getParameter("Iqama");
+        String mobile = pageContext.getParameter("Mobile");
+        
+        // Validate inputs
+        DataValidation.validateIqamaNumber(iqama, "IQAMA Number");
+        DataValidation.validateSaudiMobile(mobile, "Mobile Number");
+        
+        // Continue with business logic...
+        
+    } catch (OAException e) {
+        // Oracle Application will display the error message
+        throw e;
+    }
+}
+```
+
+---
+
 ## Version 1.3.3 (2026-01-25)
 
 ### New Feature: Comprehensive Data Validation Utilities
