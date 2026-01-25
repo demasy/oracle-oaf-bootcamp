@@ -8,11 +8,11 @@ This repository contains **21 pattern files** organized by MVC architecture laye
 
 ### Statistics
 - **Total Files**: 21 Java files (18 patterns + 3 complete labs)
-- **Total Lines**: ~11,500 lines of code
-- **Total Use Cases**: 200+ patterns and examples
+- **Total Lines**: ~12,800 lines of code
+- **Total Use Cases**: 240+ patterns and examples
 - **Lab Exercises**: 3 complete hands-on labs
 - **Architecture**: Layer-based MVC (Model/View/Controller/Integration/Security/Cross-cutting/Labs)
-- **Version**: 1.3
+- **Version**: 1.3.5 ⭐ UPDATED
 - **Last Updated**: 2026-01-25
 
 ## 🏗️ Architecture
@@ -75,9 +75,56 @@ code-brain/
 **Directory**: `model-layer/application-modules/`  
 **Files**: `RootAMAccess.java`, `NestedAMPatterns.java`
 
-#### 4. Validation Patterns
+#### 4. Data Validation Utilities ⭐ UPDATED v1.3.5
 **Directory**: `model-layer/validation/`  
-**File**: `ValidationPatterns.java` (18 use cases)
+**File**: `DataValidation.java` (1,339 lines, 40 validation methods)
+
+**PRODUCTION-READY**: OAF Message Code Pattern (FND_MESSAGES integration)
+
+**Use Cases** (40 validators):
+- **String Validation** (11): Required, Length, Pattern, Alphanumeric, Special Chars, Contains, StartsWith, Case, NotContains
+- **Number Validation** (9): Range, Positive, Non-Negative, Decimal Places, Integer, Even, Odd, Percentage, Divisible By
+- **Date Validation** (10): Range, Not Future, Not Past, Sequence, Minimum Age, Business Day, Weekend, Within Days
+- **Email Validation** (2): Format (RFC 5322), Domain Restriction
+- **Phone/Mobile** (3): Phone, Saudi Mobile (05XXXXXXXX, +966), International Mobile
+- **URL Validation** (3): Format, HTTPS Only, Domain Restriction
+- **Business Validation** (4): SSN (US), Credit Card (Luhn), Postal Code (US/CA/UK)
+- **IQAMA Validation** (3): Saudi National ID Format, Checksum (Luhn), Type (Saudi/Resident)
+
+**Key Features**:
+- ✅ OAF message codes (XXVAL_* pattern)
+- ✅ Multi-language support (FND_MESSAGES)
+- ✅ Centralized message management
+- ✅ Token substitution for field names
+- ✅ Production-ready for Oracle E-Business Suite
+
+**Message Codes**: 48 total (see MESSAGE_CODES.md for SQL registration script)
+
+**Key Patterns**:
+```java
+// OAF Message Code Pattern (v1.3.5)
+OAException error = new OAException("XXVAL", "XXVAL_REQUIRED_FIELD");
+error.setApplicationModule(fieldName);
+throw error;
+
+// Usage Examples
+DataValidation.validateRequired(empName, "Employee Name");
+DataValidation.validateEmail(email, "Email");
+DataValidation.validateSaudiMobile(mobile, "Mobile Number");
+DataValidation.validateIqamaNumber(iqama, "IQAMA Number");
+DataValidation.validateNumberRange(salary, "Salary", 3000, 50000);
+DataValidation.validateNotFuture(birthDate, "Birth Date", currentDate);
+```
+
+**Documentation**:
+- `MESSAGE_CODES.md` - Complete SQL script for FND_MESSAGES registration
+- `USAGE_EXAMPLES.md` - Complete usage guide with controller examples
+- `CHANGELOG.md` - Version history and migration guide
+
+**Saudi Arabia Specific**:
+- Saudi Mobile: 05XXXXXXXX, +9665XXXXXXXX, 009665XXXXXXXX
+- IQAMA Number: 10 digits, starts with 1 (Saudi) or 2 (Resident)
+- Checksum validation using Luhn algorithm
 
 ---
 
