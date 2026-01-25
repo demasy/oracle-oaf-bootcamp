@@ -1,18 +1,19 @@
-# OAF Code Brain Repository v1.3
+# OAF Code Brain Repository v1.4
 
-Comprehensive layer-based MVC architecture for Oracle Application Framework (OAF) - Enhanced with View Layer, Integration (Excel/PL-SQL), Security patterns, and Complete Lab Exercises.
+Comprehensive layer-based MVC architecture for Oracle Application Framework (OAF) - Enhanced with View Layer, Integration (Excel/PL-SQL), Security patterns, Complete Lab Exercises, and Real-World Case Studies.
 
 ## 📚 Overview
 
-This repository contains **21 pattern files** organized by MVC architecture layers with **200+ use cases**, providing practical, production-ready implementations for OAF development plus complete lab exercises from R12 Building OAF Applications course.
+This repository contains **21+ pattern files** plus **complete case studies** organized by MVC architecture layers with **240+ use cases**, providing practical, production-ready implementations for OAF development.
 
 ### Statistics
-- **Total Files**: 21 Java files (18 patterns + 3 complete labs)
-- **Total Lines**: ~12,800 lines of code
+- **Total Files**: 25+ Java files (18 patterns + 3 labs + 4+ case study files)
+- **Total Lines**: ~14,400+ lines of code
 - **Total Use Cases**: 240+ patterns and examples
 - **Lab Exercises**: 3 complete hands-on labs
-- **Architecture**: Layer-based MVC (Model/View/Controller/Integration/Security/Cross-cutting/Labs)
-- **Version**: 1.3.5 ⭐ UPDATED
+- **Case Studies**: 1 complete system (Jobs & Positions Management) ⭐ NEW v1.4
+- **Architecture**: Layer-based MVC (Model/View/Controller/Integration/Security/Cross-cutting/Labs/Case-Studies)
+- **Version**: 1.4.0 ⭐ UPDATED
 - **Last Updated**: 2026-01-25
 
 ## 🏗️ Architecture
@@ -25,7 +26,7 @@ code-brain/
 │   ├── view-objects/         # VO query patterns
 │   ├── entity-objects/       # EO validation patterns
 │   ├── application-modules/  # AM patterns
-│   └── validation/           # Validation logic
+│   └── validation/           # Validation logic (v1.3.5 - 40 validators)
 ├── view-layer/               # UI components
 │   ├── tables/               # Table patterns
 │   ├── lov/                  # LOV patterns
@@ -42,12 +43,16 @@ code-brain/
 │   ├── plsql/                # PL/SQL integration
 │   └── files/                # File operations
 ├── security/                 # Access control
-├── labs/                     # Complete lab exercises ⭐ NEW
-└── cross-cutting/            # Cross-cutting concerns
-    ├── error-handling/       # Exception handling
-    ├── session/              # Session management
-    ├── configuration/        # Profile options
-    └── metadata/             # MDS operations
+├── labs/                     # Complete lab exercises (3 labs)
+├── case-studies/             # Real-world case studies ⭐ NEW v1.4
+│   └── jobs-positions-management/  # Complete master-detail system
+├── cross-cutting/            # Cross-cutting concerns
+│   ├── constants/            # MessageConstants ⭐ NEW v1.4
+│   ├── utils/                # MessageHelper ⭐ NEW v1.4
+│   ├── error-handling/       # Exception handling
+│   ├── session/              # Session management
+│   ├── configuration/        # Profile options
+│   └── metadata/             # MDS operations
 ```
 
 ## 🗂️ Pattern Categories by Layer
@@ -506,6 +511,47 @@ Each lab includes suggested enhancements for additional practice:
 - Add summary/aggregate (total years)
 - Add multiple detail sections
 - Add drill-down to third level
+
+---
+
+## 🎯 Real-World Case Studies ⭐ NEW v1.4
+
+### Jobs & Positions Management System
+**Directory**: `case-studies/jobs-positions-management/`  
+**Files**: 5 files (JobEOImpl.java, PositionEOImpl.java, DDL/DML scripts, README)  
+**Based on**: demasylabs-barin/brain-repo/docs/Getting Started - OAF Project Scripts  
+**Complexity**: Advanced  
+**Status**: Foundation Complete (Entity Objects & Database)
+
+**Overview**:
+Complete master-detail system demonstrating organizational job structure and position hierarchies. Real-world case study based on actual Oracle training materials with production-ready code.
+
+**Business Scenario**:
+- **Jobs**: Organizational roles (Oracle Technical Consultant, Java Developer, etc.)
+- **Positions**: Levels within jobs (Junior, Senior, Team Leader, etc.)
+- **Relationship**: One Job → Many Positions (1:N)
+
+**Key Learning Outcomes**:
+- Master-detail relationships with entity associations
+- Complex business rule validations  
+- Date range constraint enforcement
+- WHO columns implementation
+- Sequence management for primary keys
+- MessageHelper integration (v1.4.0)
+- Cascade delete behavior
+
+**Components**:
+1. **JobEOImpl.java** (440+ lines) - Job Entity with validations
+2. **PositionEOImpl.java** (400+ lines) - Position Entity with master validation
+3. **XX_JOB_POSITIONS_DDL.sql** - Complete database schema
+4. **XX_JOB_POSITIONS_DML.sql** - Sample data (8 jobs, 25+ positions)
+5. **README.md** - Comprehensive guide and testing scenarios
+
+**Sample Data**: 8 Jobs (Technical, Functional, Management roles) with 25+ positions across different levels
+
+**Next Steps**: View Objects, View Links, Application Module, Controllers, UI Pages
+
+**See**: [case-studies/jobs-positions-management/README.md](case-studies/jobs-positions-management/README.md) for complete documentation
 
 ---
 
