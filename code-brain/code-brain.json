@@ -12,13 +12,22 @@
   },
   
   "statistics": {
-    "totalFiles": 26,
-    "totalLines": 15200,
-    "totalJavaClasses": 26,
-    "useCases": 240,
+    "totalFiles": 31,
+    "totalLines": 18400,
+    "totalJavaClasses": 31,
+    "useCases": 280,
     "messageConstants": 60,
-    "helperMethods": 15,
+    "helperMethods": 20,
     "caseStudyComponents": 2,
+    "realWorldAnalysis": {
+      "jdevFiles": 362,
+      "applicationModules": 48,
+      "viewObjects": 130,
+      "entityObjects": 25,
+      "controllers": 81,
+      "patterns": "Analyzed from demasylabs-barin/brain-repo/code/JDEV",
+      "projects": ["XXOtlTreee-Attendance", "TamayuzLC-Finance", "IRC-Recruitment", "PaymentRequests", "PrepaymentClaims"]
+    },
     "layers": {
       "model": {
         "files": 12,
@@ -67,6 +76,175 @@
   },
   
   "changelog": {
+    "v1.5.0": {
+      "date": "2026-01-26",
+      "type": "major",
+      "description": "Real-World Production Patterns from JDEV Codebase Analysis",
+      "breaking": false,
+      "commits": [],
+      
+      "features": [
+        {
+          "name": "JDEV Codebase Analysis",
+          "type": "Code Analysis Report",
+          "description": "Analyzed 362 production Java files from demasylabs-barin/brain-repo/code/JDEV",
+          "statistics": {
+            "applicationModules": 48,
+            "viewObjects": 130,
+            "entityObjects": 25,
+            "controllers": 81,
+            "voRowImpl": 42,
+            "helpers": 8
+          },
+          "projects": [
+            "XXOtlTreee - Daily Attendance & Time Tracking System",
+            "Tamayuz Letter of Credit (LC) - Financial Module with Master-Detail",
+            "IRC Recruitment - Candidate Assessment & Workflow Integration",
+            "Payment Requests - AP Payment Processing with Approvals",
+            "Prepayment Claims - Financial Claims Management"
+          ],
+          "impact": "Extracted real-world patterns for secure search, PLSQL integration, dynamic UI, and master-detail management"
+        },
+        {
+          "name": "SecureSearchVO.java",
+          "type": "OAF View Object Pattern",
+          "location": "code-brain/model-layer/view-objects/",
+          "lines": 280,
+          "description": "Production-ready search patterns using ViewCriteria (prevents SQL injection)",
+          "patterns": ["ViewCriteria-based search", "Bind variable usage", "Dynamic criteria building", "Date range filtering"],
+          "antiPatternFixed": "String concatenation WHERE clauses → ViewCriteria API"
+        },
+        {
+          "name": "PLSQLIntegrationHelper.java",
+          "type": "OAF Integration Utility",
+          "location": "code-brain/integration/plsql/",
+          "lines": 320,
+          "description": "CallableStatement patterns for PLSQL procedures/functions",
+          "methods": 8,
+          "patterns": ["CallableStatement execution", "OUT parameter handling", "Function return values", "Exception wrapping", "Workflow initiation"]
+        },
+        {
+          "name": "DynamicUIHelper.java",
+          "type": "OAF View Layer Utility",
+          "location": "code-brain/view-layer/dynamic-ui/",
+          "lines": 245,
+          "description": "Programmatic component creation for dynamic forms",
+          "methods": 6,
+          "patterns": ["Radio button generation from LOV", "Dynamic table columns", "Conditional field rendering", "CSS styling in CO"]
+        },
+        {
+          "name": "MasterDetailPatterns.java",
+          "type": "OAF Application Module Pattern",
+          "location": "code-brain/model-layer/application-modules/",
+          "lines": 380,
+          "description": "Complete master-detail relationship management",
+          "patterns": ["Line number auto-increment", "Header-line validation", "Cascading operations", "Batch line creation", "Detail row navigation"]
+        },
+        {
+          "name": "DateValidationHelper.java",
+          "type": "OAF Cross-Cutting Utility",
+          "location": "code-brain/cross-cutting/utils/",
+          "lines": 190,
+          "description": "Comprehensive date handling and validation utilities",
+          "methods": 7,
+          "patterns": ["Date range validation", "Cross-field date comparison", "Hijri-Gregorian conversion support", "Null-safe date operations"]
+        }
+      ],
+      
+      "improvements": [
+        {
+          "category": "Security",
+          "description": "Added ViewCriteria-based search to eliminate SQL injection vulnerabilities",
+          "filesAffected": ["SecureSearchVO.java"],
+          "antiPatternFixed": "String concatenation in WHERE clauses",
+          "bestPractice": "Use ViewCriteria and bind variables for all dynamic queries"
+        },
+        {
+          "category": "Architecture",
+          "description": "PLSQL integration moved from Controllers to Helper classes",
+          "filesAffected": ["PLSQLIntegrationHelper.java"],
+          "antiPatternFixed": "JDBC CallableStatement in Controller layer",
+          "bestPractice": "Encapsulate all PLSQL calls in reusable Helper or AM methods"
+        },
+        {
+          "category": "Error Handling",
+          "description": "Standardized exception handling with OAException.wrapperException",
+          "filesAffected": ["All new pattern files"],
+          "antiPatternFixed": "Silent exception catching with default returns",
+          "bestPractice": "Always wrap exceptions and provide meaningful context"
+        },
+        {
+          "category": "Null Safety",
+          "description": "Added defensive null checks across all patterns",
+          "filesAffected": ["All new pattern files"],
+          "antiPatternFixed": "Direct .toString() calls without null check",
+          "bestPractice": "Check for null before accessing object methods or attributes"
+        },
+        {
+          "category": "WHO Column Automation",
+          "description": "Enhanced EO patterns with complete WHO column management",
+          "filesAffected": ["MasterDetailPatterns.java", "commonPatterns"],
+          "improvement": "Automatic WHO column population in create() and doDML()"
+        }
+      ],
+      
+      "antiPatternsDocumented": [
+        {
+          "name": "SQL Injection via String Concatenation",
+          "bad": "setWhereClause(\"ORG_ID = '\" + orgId + \"'\");",
+          "good": "Use ViewCriteria or setWhereClauseParam(index, value)",
+          "severity": "CRITICAL",
+          "found": "130+ occurrences in JDEV codebase",
+          "fix": "See SecureSearchVO.java for correct patterns"
+        },
+        {
+          "name": "JDBC in Controller Layer",
+          "bad": "conn = pageContext.getAM().getOADBTransaction().getJdbcConnection(); stat = conn.prepareStatement(query);",
+          "good": "Move JDBC to AM methods or PLSQL package, call from CO via AM.invokeMethod()",
+          "severity": "HIGH",
+          "found": "Multiple controllers (XXDailyCO.java, etc.)",
+          "fix": "See PLSQLIntegrationHelper.java for proper encapsulation"
+        },
+        {
+          "name": "Silent Exception Swallowing",
+          "bad": "catch (SQLException e) { return new String(\"--\"); }",
+          "good": "catch (SQLException e) { throw OAException.wrapperException(e); }",
+          "severity": "HIGH",
+          "found": "Multiple helper classes",
+          "fix": "Always propagate exceptions with context"
+        },
+        {
+          "name": "Null Pointer Exceptions",
+          "bad": "row.getAttribute(\"PoHeaderId\").toString();",
+          "good": "Object val = row.getAttribute(\"PoHeaderId\"); String id = val != null ? val.toString() : null;",
+          "severity": "MEDIUM",
+          "found": "Throughout JDEV codebase",
+          "fix": "Add null checks before method calls"
+        },
+        {
+          "name": "Missing WHO Column Automation",
+          "bad": "protected void doDML(int operation, TransactionEvent e) { super.doDML(operation, e); }",
+          "good": "if (operation == DML_UPDATE) { setLastUpdatedBy(txn.getUserId()); setLastUpdateDate(txn.getCurrentDate()); }",
+          "severity": "MEDIUM",
+          "found": "Most EO implementations",
+          "fix": "See commonPatterns.whoColumnAutomation"
+        }
+      ],
+      
+      "bestPracticesAdded": [
+        "Secure search with ViewCriteria and bind variables",
+        "PLSQL integration with proper exception handling",
+        "Dynamic UI component creation from database LOV",
+        "Master-detail line number management with auto-increment",
+        "Date validation with cross-field dependencies",
+        "RowSetIterator with mandatory cleanup (try-finally)",
+        "Sequence-based PK generation in EO.create()",
+        "Status management with lookup value resolution",
+        "Batch processing with commit intervals",
+        "Null-safe attribute access patterns"
+      ]
+    },
+    
     "v1.4.0": {
       "date": "2026-01-25",
       "type": "major",
