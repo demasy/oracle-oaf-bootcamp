@@ -1,0 +1,214 @@
+name: Code Quality Check
+
+on:
+  pull_request:
+    branches: [ main, master ]
+  push:
+    branches: [ main, master ]
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-lint:
+    name: Markdown Lint
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Lint Markdown files
+      uses: articulate/actions-markdownlint@v1
+      with:
+        config: .markdownlint.json
+        files: '**/*.md'
+        ignore: node_modules
+      continue-on-error: true
+
+  file-structure-check:
+    name: Validate File Structure
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Check required files exist
+      run: |
+        echo "Checking for required documentation files..."
+        
+        required_files=(
+          "README.md"
+          "LICENSE.md"
+          "code-brain/README.md"
+          "code-brain/code-brain.json"
+          ".github/CONTRIBUTING.md"
+          ".github/PULL_REQUEST_TEMPLATE.md"
+          ".github/instructions/codacy.instructions.md"
+        )
+        
+        missing_files=()
+        
+        for file in "${required_files[@]}"; do
+          if [ ! -f "$file" ]; then
+            echo "❌ Missing required file: $file"
+            missing_files+=("$file")
+          else
+            echo "✅ Found: $file"
+          fi
+        done
+        
+        if [ ${#missing_files[@]} -ne 0 ]; then
+          echo ""
+          echo "ERROR: Missing required files. Please ensure all required files exist."
+          exit 1
+        fi
+        
+        echo ""
+        echo "✅ All required files are present!"
+
+  code-brain-validation:
+    name: Validate Code Brain Structure
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Validate code-brain.json
+      run: |
+        echo "Validating code-brain.json structure..."
+        
+        if [ ! -f "code-brain/code-brain.json" ]; then
+          echo "❌ code-brain/code-brain.json not found"
+          exit 1
+        fi
+        
+        # Check if it's valid JSON
+        if ! jq empty code-brain/code-brain.json 2>/dev/null; then
+          echo "❌ code-brain.json is not valid JSON"
+          exit 1
+        fi
+        
+        echo "✅ code-brain.json is valid JSON"
+        
+        # Check for required fields
+        required_fields=("brainName" "version" "lastUpdated" "codeCategories" "statistics")
+        
+        for field in "${required_fields[@]}"; do
+          if ! jq -e ".$field" code-brain/code-brain.json > /dev/null; then
+            echo "❌ Missing required field: $field"
+            exit 1
+          else
+            echo "✅ Found required field: $field"
+          fi
+        done
+        
+        echo ""
+        echo "✅ code-brain.json structure is valid!"
+    
+    - name: Check Java files exist
+      run: |
+        echo "Checking for Java implementation files..."
+        
+        java_count=$(find code-brain -name "*.java" -type f | wc -l)
+        
+        if [ "$java_count" -eq 0 ]; then
+          echo "⚠️  Warning: No Java files found in code-brain directory"
+        else
+          echo "✅ Found $java_count Java files"
+          find code-brain -name "*.java" -type f | head -10
+        fi
+
+  syllabus-check:
+    name: Validate Syllabus Files
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Check syllabus files
+      run: |
+        echo "Checking for syllabus files..."
+        
+        syllabus_files=(
+          "SYLLABUS.md"
+          "SYLLABUS_101.md"
+          "SYLLABUS_102.md"
+          "SYLLABUS_103.md"
+        )
+        
+        for file in "${syllabus_files[@]}"; do
+          if [ -f "$file" ]; then
+            echo "✅ Found: $file"
+            lines=$(wc -l < "$file")
+            echo "   - Contains $lines lines"
+          else
+            echo "⚠️  Missing: $file"
+          fi
+        done
+
+  check-documentation-quality:
+    name: Documentation Quality Check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Check for common documentation issues
+      run: |
+        echo "Checking documentation quality..."
+        
+        # Check for TODO or FIXME comments
+        todo_count=$(grep -r "TODO\|FIXME" --include="*.md" . | wc -l || true)
+        if [ "$todo_count" -gt 0 ]; then
+          echo "⚠️  Found $todo_count TODO/FIXME comments in markdown files"
+          grep -r "TODO\|FIXME" --include="*.md" . || true
+        else
+          echo "✅ No TODO/FIXME comments found"
+        fi
+        
+        # Check for broken internal links (basic check)
+        echo ""
+        echo "Checking for potential broken links..."
+        
+        # This is a basic check - would need more sophisticated tooling for full validation
+        broken_links=$(grep -r "\[.*\](.*\.md)" --include="*.md" . | grep -v "http" | wc -l || true)
+        echo "ℹ️  Found $broken_links internal markdown links (manual verification recommended)"
+
+  summary:
+    name: Quality Check Summary
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    needs: [markdown-lint, file-structure-check, code-brain-validation, syllabus-check, check-documentation-quality]
+    if: always()
+    
+    steps:
+    - name: Summary
+      run: |
+        echo "=================================="
+        echo "Code Quality Check Summary"
+        echo "=================================="
+        echo ""
+        echo "All automated quality checks have completed."
+        echo "Please review any warnings or errors above."
+        echo ""
+        echo "For detailed quality guidelines, see:"
+        echo "  - .github/instructions/codacy.instructions.md"
+        echo "  - .github/CONTRIBUTING.md"
+        echo ""
+        echo "=================================="
