@@ -27,7 +27,7 @@
 | [9] | B102-9 | [Layout and Container Regions](#9-layout-and-container-regions) | Extended | 7 |
 | [10] | B102-10 | [Data Regions, Grids and Charts](#10-data-regions-grids-and-charts) | Extended | 7 |
 | [11] | B102-11 | [Wizards, Rich Inputs and Configurable Pages](#11-wizards-rich-inputs-and-configurable-pages) | Extended | 7 |
-| [12] | B102-12 | [Flexfields, SPEL and Forms Integration](#12-flexfields-spel-and-forms-integration) | Extended | 6 |
+| [12] | B102-12 | [Flexfields, SPEL and Forms Integration](#12-flexfields-spel-and-forms-integration) | Extended | 7 |
 | [13] | B102-13 | [Client-Side Scripting and Page Modes](#13-client-side-scripting-and-page-modes) | Extended | 2 |
 | [14] | B102-14 | [Data Formatting and Validation](#14-data-formatting-and-validation) | Extended | 5 |
 | [15] | B102-15 | [Configuration and Defaults](#15-configuration-and-defaults) | Extended | 3 |
@@ -175,6 +175,7 @@
 | B102-12.4 | Adding Custom HTML Code | Lab | Guide | RawText component, JavaScript integration, security, best practices |
 | B102-12.5 | Launching Oracle Forms from OAF | Lab | Tutorial | Form function call, parameter passing, integration patterns |
 | B102-12.6 | Launching OAF Pages from Oracle Forms | Lab | Guide | ICX integration, URL construction, SSO considerations |
+| B102-12.7 | Mapping Flexfield Segments with flexMap | Lab | Tutorial | flex and flexMap regions for DFF and KFF, mapping segments to page items |
 
 ## [13] Client-Side Scripting and Page Modes
 

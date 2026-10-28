@@ -28,7 +28,7 @@
 | [10] | B103-10 | [Deployment and Presentation](#10-deployment-and-presentation) | Required | 4 |
 | [11] | B103-11 | [Final Assessment](#11-final-assessment) | Required | 6 |
 | [12] | B103-12 | [Advanced Tables, Grids and Visualization](#12-advanced-tables-grids-and-visualization) | Extended | 9 |
-| [13] | B103-13 | [Advanced Search and Navigation](#13-advanced-search-and-navigation) | Extended | 10 |
+| [13] | B103-13 | [Advanced Search and Navigation](#13-advanced-search-and-navigation) | Extended | 11 |
 | [14] | B103-14 | [State Management, Back Button and Security](#14-state-management-back-button-and-security) | Extended | 9 |
 | [15] | B103-15 | [Security Hardening](#15-security-hardening) | Extended | 4 |
 | [16] | B103-16 | [REST and Product Integration](#16-rest-and-product-integration) | Extended | 6 |
@@ -186,6 +186,7 @@
 | B103-13.8 | Practicing Infotile-Driven Search | Lab | Project | Infotile summary counts filtering a results table |
 | B103-13.9 | Practicing Quick Search | Lab | Guide | Quick search inputs in headers and side navigation |
 | B103-13.10 | Practicing Declarative Page Flows | Lab | Project | Declarative page flows with transaction state and save for later |
+| B103-13.11 | Building Sub Tabs and Sliding Sub Tab Layouts | Lab | Guide | subTabLayout, subTabBar and hideShowSubTabLayout with slide-out content panels |
 
 ## [14] State Management, Back Button and Security
 
