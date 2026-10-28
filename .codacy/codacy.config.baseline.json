@@ -1,0 +1,1365 @@
+{
+  "version": 1,
+  "metadata": {
+    "source": "auto",
+    "provider": null,
+    "organization": null,
+    "repositoryId": null,
+    "repositoryName": null,
+    "createdAt": "2026-10-28T20:16:25.223Z",
+    "updatedAt": "2026-10-28T20:16:25.223Z",
+    "languages": [
+      "JSON",
+      "Java",
+      "Markdown",
+      "Shell",
+      "YAML"
+    ]
+  },
+  "tools": [
+    {
+      "toolId": "jackson",
+      "patterns": [
+        {
+          "patternId": "jackson_duplicate-keys"
+        },
+        {
+          "patternId": "jackson_parse-error"
+        }
+      ]
+    },
+    {
+      "toolId": "markdownlint",
+      "patterns": [
+        {
+          "patternId": "markdownlint_MD001"
+        },
+        {
+          "patternId": "markdownlint_MD003"
+        },
+        {
+          "patternId": "markdownlint_MD004"
+        },
+        {
+          "patternId": "markdownlint_MD005"
+        },
+        {
+          "patternId": "markdownlint_MD007"
+        },
+        {
+          "patternId": "markdownlint_MD010"
+        },
+        {
+          "patternId": "markdownlint_MD011"
+        },
+        {
+          "patternId": "markdownlint_MD012"
+        },
+        {
+          "patternId": "markdownlint_MD014"
+        },
+        {
+          "patternId": "markdownlint_MD018"
+        },
+        {
+          "patternId": "markdownlint_MD019"
+        },
+        {
+          "patternId": "markdownlint_MD020"
+        },
+        {
+          "patternId": "markdownlint_MD021"
+        },
+        {
+          "patternId": "markdownlint_MD022"
+        },
+        {
+          "patternId": "markdownlint_MD023"
+        },
+        {
+          "patternId": "markdownlint_MD024"
+        },
+        {
+          "patternId": "markdownlint_MD025"
+        },
+        {
+          "patternId": "markdownlint_MD026"
+        },
+        {
+          "patternId": "markdownlint_MD027"
+        },
+        {
+          "patternId": "markdownlint_MD028"
+        },
+        {
+          "patternId": "markdownlint_MD029"
+        },
+        {
+          "patternId": "markdownlint_MD030"
+        },
+        {
+          "patternId": "markdownlint_MD032"
+        },
+        {
+          "patternId": "markdownlint_MD033"
+        },
+        {
+          "patternId": "markdownlint_MD034"
+        },
+        {
+          "patternId": "markdownlint_MD035"
+        },
+        {
+          "patternId": "markdownlint_MD036"
+        },
+        {
+          "patternId": "markdownlint_MD037"
+        },
+        {
+          "patternId": "markdownlint_MD038"
+        },
+        {
+          "patternId": "markdownlint_MD039"
+        },
+        {
+          "patternId": "markdownlint_MD042"
+        },
+        {
+          "patternId": "markdownlint_MD044"
+        },
+        {
+          "patternId": "markdownlint_MD045"
+        },
+        {
+          "patternId": "markdownlint_MD046"
+        },
+        {
+          "patternId": "markdownlint_MD048"
+        },
+        {
+          "patternId": "markdownlint_MD049"
+        },
+        {
+          "patternId": "markdownlint_MD050"
+        },
+        {
+          "patternId": "markdownlint_MD051"
+        },
+        {
+          "patternId": "markdownlint_MD052"
+        },
+        {
+          "patternId": "markdownlint_MD053"
+        },
+        {
+          "patternId": "markdownlint_MD054"
+        },
+        {
+          "patternId": "markdownlint_MD055"
+        },
+        {
+          "patternId": "markdownlint_MD056"
+        }
+      ]
+    },
+    {
+      "toolId": "shellcheck",
+      "patterns": [
+        {
+          "patternId": "shellcheck_SC2001"
+        },
+        {
+          "patternId": "shellcheck_SC2002"
+        },
+        {
+          "patternId": "shellcheck_SC2003"
+        },
+        {
+          "patternId": "shellcheck_SC2004"
+        },
+        {
+          "patternId": "shellcheck_SC2006"
+        },
+        {
+          "patternId": "shellcheck_SC2015"
+        },
+        {
+          "patternId": "shellcheck_SC2016"
+        },
+        {
+          "patternId": "shellcheck_SC2020"
+        },
+        {
+          "patternId": "shellcheck_SC2022"
+        },
+        {
+          "patternId": "shellcheck_SC2024"
+        },
+        {
+          "patternId": "shellcheck_SC2025"
+        },
+        {
+          "patternId": "shellcheck_SC2026"
+        },
+        {
+          "patternId": "shellcheck_SC2027"
+        },
+        {
+          "patternId": "shellcheck_SC2028"
+        },
+        {
+          "patternId": "shellcheck_SC2029"
+        },
+        {
+          "patternId": "shellcheck_SC2031"
+        },
+        {
+          "patternId": "shellcheck_SC2033"
+        },
+        {
+          "patternId": "shellcheck_SC2034"
+        },
+        {
+          "patternId": "shellcheck_SC2035"
+        },
+        {
+          "patternId": "shellcheck_SC2036"
+        },
+        {
+          "patternId": "shellcheck_SC2086"
+        },
+        {
+          "patternId": "shellcheck_SC2148"
+        }
+      ]
+    },
+    {
+      "toolId": "Trivy",
+      "patterns": [
+        {
+          "patternId": "Trivy_malicious_packages"
+        },
+        {
+          "patternId": "Trivy_secret"
+        },
+        {
+          "patternId": "Trivy_vulnerability_critical"
+        },
+        {
+          "patternId": "Trivy_vulnerability_high"
+        },
+        {
+          "patternId": "Trivy_vulnerability_medium"
+        },
+        {
+          "patternId": "Trivy_vulnerability_minor"
+        }
+      ]
+    },
+    {
+      "toolId": "Semgrep",
+      "patterns": [
+        {
+          "patternId": "Semgrep_bash.curl.security.curl-eval.curl-eval"
+        },
+        {
+          "patternId": "Semgrep_dockerfile.security.dockerd-socket-mount.dockerfile-dockerd-socket-mount"
+        },
+        {
+          "patternId": "Semgrep_generic.secrets.security.detected-onfido-live-api-token.detected-onfido-live-api-token"
+        },
+        {
+          "patternId": "Semgrep_generic.secrets.security.detected-stripe-restricted-api-key.detected-stripe-restricted-api-key"
+        },
+        {
+          "patternId": "Semgrep_generic.secrets.security.detected-username-and-password-in-uri.detected-username-and-password-in-uri"
+        },
+        {
+          "patternId": "Semgrep_generic.secrets.security.google-maps-apikeyleak.google-maps-apikeyleak"
+        },
+        {
+          "patternId": "Semgrep_java.aws-lambda.security.tainted-sqli.tainted-sqli"
+        },
+        {
+          "patternId": "Semgrep_java.aws-lambda.security.tainted-sql-string.tainted-sql-string"
+        },
+        {
+          "patternId": "Semgrep_java_crypto_rule-DisallowOldTLSVersion"
+        },
+        {
+          "patternId": "Semgrep_java_crypto_rule-HttpComponentsRequest"
+        },
+        {
+          "patternId": "Semgrep_java_crypto_rule-HttpGetHTTPRequest"
+        },
+        {
+          "patternId": "Semgrep_java_crypto_rule-HTTPUrlConnectionHTTPRequest"
+        },
+        {
+          "patternId": "Semgrep_java_crypto_rule_JwtDecodeWithoutVerify"
+        },
+        {
+          "patternId": "Semgrep_java_crypto_rule-SpringFTPRequest"
+        },
+        {
+          "patternId": "Semgrep_java_crypto_rule-SpringHTTPRequestRestTemplate"
+        },
+        {
+          "patternId": "Semgrep_java_crypto_rule-TelnetRequest"
+        },
+        {
+          "patternId": "Semgrep_java_crypto_rule-TLSUnsafeRenegotiation"
+        },
+        {
+          "patternId": "Semgrep_java_crypto_rule-UnirestHTTPRequest"
+        },
+        {
+          "patternId": "Semgrep_java_crypto_rule-UseOfRC2"
+        },
+        {
+          "patternId": "Semgrep_java_crypto_rule-UseOfRC4"
+        },
+        {
+          "patternId": "Semgrep_java_deserialization_rule-InsecureJmsDeserialization"
+        },
+        {
+          "patternId": "Semgrep_java_endpoint_rule-ManuallyConstructedURLs"
+        },
+        {
+          "patternId": "Semgrep_java_file_rule_rule-FilePathTraversalHttpServlet"
+        },
+        {
+          "patternId": "Semgrep_java_inject_rule-EnvInjection"
+        },
+        {
+          "patternId": "Semgrep_java.java-jwt.security.audit.jwt-decode-without-verify.java-jwt-decode-without-verify"
+        },
+        {
+          "patternId": "Semgrep_java.java-jwt.security.jwt-hardcode.java-jwt-hardcoded-secret"
+        },
+        {
+          "patternId": "Semgrep_java.java-jwt.security.jwt-none-alg.java-jwt-none-alg"
+        },
+        {
+          "patternId": "Semgrep_java.jax-rs.security.jax-rs-path-traversal.jax-rs-path-traversal"
+        },
+        {
+          "patternId": "Semgrep_java.jboss.security.session_sqli.find-sql-string-concatenation"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.blowfish-insufficient-key-size.blowfish-insufficient-key-size"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.cbc-padding-oracle.cbc-padding-oracle"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crlf-injection-logs.crlf-injection-logs"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.ecb-cipher.ecb-cipher"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.gcm-nonce-reuse.gcm-nonce-reuse"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.no-null-cipher.no-null-cipher"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.no-static-initialization-vector.no-static-initialization-vector"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.rsa-no-padding.rsa-no-padding"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.unencrypted-socket.unencrypted-socket"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.use-of-aes-ecb.use-of-aes-ecb"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.use-of-blowfish.use-of-blowfish"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.use-of-default-aes.use-of-default-aes"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.use-of-md5-digest-utils.use-of-md5-digest-utils"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.use-of-md5.use-of-md5"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.use-of-rc2.use-of-rc2"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.use-of-rc4.use-of-rc4"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.use-of-sha1.use-of-sha1"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.crypto.weak-rsa.use-of-weak-rsa-key"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.formatted-sql-string.formatted-sql-string"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.http-response-splitting.http-response-splitting"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.insecure-smtp-connection.insecure-smtp-connection"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.md5-used-as-password.md5-used-as-password"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.tainted-env-from-http-request.tainted-env-from-http-request"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.tainted-ldapi-from-http-request.tainted-ldapi-from-http-request"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.tainted-session-from-http-request.tainted-session-from-http-request"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.tainted-xpath-from-http-request.tainted-xpath-from-http-request"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.unvalidated-redirect.unvalidated-redirect"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.weak-ssl-context.weak-ssl-context"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.xxe.documentbuilderfactory-disallow-doctype-decl-false.documentbuilderfactory-disallow-doctype-decl-false"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.xxe.documentbuilderfactory-disallow-doctype-decl-missing.documentbuilderfactory-disallow-doctype-decl-missing"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.xxe.documentbuilderfactory-external-general-entities-true.documentbuilderfactory-external-general-entities-true"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.xxe.documentbuilderfactory-external-parameter-entities-true.documentbuilderfactory-external-parameter-entities-true"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.xxe.saxparserfactory-disallow-doctype-decl-missing.saxparserfactory-disallow-doctype-decl-missing"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.audit.xxe.transformerfactory-dtds-not-disabled.transformerfactory-dtds-not-disabled"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.insecure-jms-deserialization.insecure-jms-deserialization"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.jackson-unsafe-deserialization.jackson-unsafe-deserialization"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.servletresponse-writer-xss.servletresponse-writer-xss"
+        },
+        {
+          "patternId": "Semgrep_java.lang.security.xmlinputfactory-possible-xxe.xmlinputfactory-possible-xxe"
+        },
+        {
+          "patternId": "Semgrep_java_perm_rule-DangerousPermissions"
+        },
+        {
+          "patternId": "Semgrep_java_perm_rule-OverlyPermissiveFilePermissionInline"
+        },
+        {
+          "patternId": "Semgrep_java_strings_rule-BadHexConversion"
+        },
+        {
+          "patternId": "Semgrep_java_strings_rule-FormatStringManipulation"
+        },
+        {
+          "patternId": "Semgrep_java_strings_rule-ModifyAfterValidation"
+        },
+        {
+          "patternId": "Semgrep_java_strings_rule-NormalizeAfterValidation"
+        },
+        {
+          "patternId": "Semgrep_java_xxe_rule-DisallowDoctypeDeclFalse"
+        },
+        {
+          "patternId": "Semgrep_java_xxe_rule-DocumentBuilderFactoryDisallowDoctypeDeclMissing"
+        },
+        {
+          "patternId": "Semgrep_json.aws.security.public-s3-bucket.public-s3-bucket"
+        },
+        {
+          "patternId": "Semgrep_json.aws.security.public-s3-policy-statement.public-s3-policy-statement"
+        },
+        {
+          "patternId": "Semgrep_json.aws.security.wildcard-assume-role.wildcard-assume-role"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.java-spring.bypass-tls-verification.bypass-tls-verification"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.java-spring.spring-ftp-request.spring-ftp-request"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.java-spring.spring-http-request.spring-http-request"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.java-stdlib.bypass-tls-verification.bypass-tls-verification"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.java-stdlib.disallow-old-tls-versions1.disallow-old-tls-versions1"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.java-stdlib.disallow-old-tls-versions2.disallow-old-tls-versions2"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.java-stdlib.ftp-request.ftp-request"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.java-stdlib.httpclient-http-request.httpclient-http-request"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.java-stdlib.http-components-request.http-components-request"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.java-stdlib.httpget-http-request.httpget-http-request"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.java-stdlib.httpurlconnection-http-request.httpurlconnection-http-request"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.java-stdlib.telnet-request.telnet-request"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.java-stdlib.tls-renegotiation.tls-renegotiation"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.java-stdlib.unirest-http-request.unirest-http-request"
+        },
+        {
+          "patternId": "Semgrep_properties_spring_rule-SpringActuatorFullyEnabled"
+        },
+        {
+          "patternId": "Semgrep_yaml.argo.security.argo-workflow-parameter-command-injection.argo-workflow-parameter-command-injection"
+        },
+        {
+          "patternId": "Semgrep_yaml.docker-compose.security.privileged-service.privileged-service"
+        },
+        {
+          "patternId": "Semgrep_yaml.github-actions.security.allowed-unsecure-commands.allowed-unsecure-commands"
+        },
+        {
+          "patternId": "Semgrep_yaml.github-actions.security.audit.unsafe-add-mask-workflow-command.unsafe-add-mask-workflow-command"
+        },
+        {
+          "patternId": "Semgrep_yaml.github-actions.security.curl-eval.curl-eval"
+        },
+        {
+          "patternId": "Semgrep_yaml.github-actions.security.github-script-injection.github-script-injection"
+        },
+        {
+          "patternId": "Semgrep_yaml.github-actions.security.pull-request-target-code-checkout.pull-request-target-code-checkout"
+        },
+        {
+          "patternId": "Semgrep_yaml.github-actions.security.run-shell-injection.run-shell-injection"
+        },
+        {
+          "patternId": "Semgrep_yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.third-party-action-not-pinned-to-commit-sha"
+        },
+        {
+          "patternId": "Semgrep_yaml.github-actions.security.workflow-run-target-code-checkout.workflow-run-target-code-checkout"
+        },
+        {
+          "patternId": "Semgrep_yaml.github-actions.semgrep-configuration.semgrep-github-action-push-without-branches.semgrep-github-action-push-without-branches"
+        },
+        {
+          "patternId": "Semgrep_yaml.openapi.security.openai-consequential-action-false.openai-consequential-action-false"
+        },
+        {
+          "patternId": "Semgrep_yaml.openapi.security.use-of-basic-authentication.use-of-basic-authentication"
+        },
+        {
+          "patternId": "Semgrep_yaml_spring_rule-SpringActuatorFullyEnabled"
+        }
+      ]
+    },
+    {
+      "toolId": "spectral",
+      "patterns": [
+        {
+          "patternId": "spectral_array-items"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-channel-no-empty-parameter"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-channel-no-query-nor-fragment"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-channel-no-trailing-slash"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-channel-servers"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-document-resolved"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-document-unresolved"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-headers-schema-type-object"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-operation-description"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-operation-security"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-payload-unsupported-schemaFormat"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-server-no-empty-variable"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-server-no-trailing-slash"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-tags"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-tags-uniqueness"
+        },
+        {
+          "patternId": "spectral_asyncapi-channel-no-empty-parameter"
+        },
+        {
+          "patternId": "spectral_asyncapi-channel-no-query-nor-fragment"
+        },
+        {
+          "patternId": "spectral_asyncapi-channel-no-trailing-slash"
+        },
+        {
+          "patternId": "spectral_asyncapi-channel-parameters"
+        },
+        {
+          "patternId": "spectral_asyncapi-channel-servers"
+        },
+        {
+          "patternId": "spectral_asyncapi-headers-schema-type-object"
+        },
+        {
+          "patternId": "spectral_asyncapi-info-contact"
+        },
+        {
+          "patternId": "spectral_asyncapi-info-contact-properties"
+        },
+        {
+          "patternId": "spectral_asyncapi-info-description"
+        },
+        {
+          "patternId": "spectral_asyncapi-info-license"
+        },
+        {
+          "patternId": "spectral_asyncapi-latest-version"
+        },
+        {
+          "patternId": "spectral_asyncapi-message-examples"
+        },
+        {
+          "patternId": "spectral_asyncapi-message-messageId-uniqueness"
+        },
+        {
+          "patternId": "spectral_asyncapi-operation-description"
+        },
+        {
+          "patternId": "spectral_asyncapi-operation-operationId"
+        },
+        {
+          "patternId": "spectral_asyncapi-operation-operationId-uniqueness"
+        },
+        {
+          "patternId": "spectral_asyncapi-operation-security"
+        },
+        {
+          "patternId": "spectral_asyncapi-payload"
+        },
+        {
+          "patternId": "spectral_asyncapi-payload-default"
+        },
+        {
+          "patternId": "spectral_asyncapi-payload-examples"
+        },
+        {
+          "patternId": "spectral_asyncapi-payload-unsupported-schemaFormat"
+        },
+        {
+          "patternId": "spectral_asyncapi-schema"
+        },
+        {
+          "patternId": "spectral_asyncapi-schema-default"
+        },
+        {
+          "patternId": "spectral_asyncapi-schema-examples"
+        },
+        {
+          "patternId": "spectral_asyncapi-server-no-empty-variable"
+        },
+        {
+          "patternId": "spectral_asyncapi-server-no-trailing-slash"
+        },
+        {
+          "patternId": "spectral_asyncapi-servers"
+        },
+        {
+          "patternId": "spectral_asyncapi-server-security"
+        },
+        {
+          "patternId": "spectral_asyncapi-server-variables"
+        },
+        {
+          "patternId": "spectral_asyncapi-tags"
+        },
+        {
+          "patternId": "spectral_asyncapi-tags-uniqueness"
+        },
+        {
+          "patternId": "spectral_asyncapi-unused-components-schema"
+        },
+        {
+          "patternId": "spectral_asyncapi-unused-components-server"
+        },
+        {
+          "patternId": "spectral_duplicated-entry-in-enum"
+        },
+        {
+          "patternId": "spectral_info-contact"
+        },
+        {
+          "patternId": "spectral_info-description"
+        },
+        {
+          "patternId": "spectral_no-eval-in-markdown"
+        },
+        {
+          "patternId": "spectral_no-$ref-siblings"
+        },
+        {
+          "patternId": "spectral_no-script-tags-in-markdown"
+        },
+        {
+          "patternId": "spectral_oas2-anyOf"
+        },
+        {
+          "patternId": "spectral_oas2-api-host"
+        },
+        {
+          "patternId": "spectral_oas2-api-schemes"
+        },
+        {
+          "patternId": "spectral_oas2-discriminator"
+        },
+        {
+          "patternId": "spectral_oas2-host-trailing-slash"
+        },
+        {
+          "patternId": "spectral_oas2-oneOf"
+        },
+        {
+          "patternId": "spectral_oas2-operation-formData-consume-check"
+        },
+        {
+          "patternId": "spectral_oas2-operation-security-defined"
+        },
+        {
+          "patternId": "spectral_oas2-schema"
+        },
+        {
+          "patternId": "spectral_oas2-unused-definition"
+        },
+        {
+          "patternId": "spectral_oas2-valid-media-example"
+        },
+        {
+          "patternId": "spectral_oas2-valid-schema-example"
+        },
+        {
+          "patternId": "spectral_oas3_1-callbacks-in-webhook"
+        },
+        {
+          "patternId": "spectral_oas3_1-servers-in-webhook"
+        },
+        {
+          "patternId": "spectral_oas3-api-servers"
+        },
+        {
+          "patternId": "spectral_oas3-callbacks-in-callbacks"
+        },
+        {
+          "patternId": "spectral_oas3-examples-value-or-externalValue"
+        },
+        {
+          "patternId": "spectral_oas3-operation-security-defined"
+        },
+        {
+          "patternId": "spectral_oas3-schema"
+        },
+        {
+          "patternId": "spectral_oas3-server-trailing-slash"
+        },
+        {
+          "patternId": "spectral_oas3-server-variables"
+        },
+        {
+          "patternId": "spectral_oas3-unused-component"
+        },
+        {
+          "patternId": "spectral_oas3-valid-media-example"
+        },
+        {
+          "patternId": "spectral_oas3-valid-schema-example"
+        },
+        {
+          "patternId": "spectral_openapi-tags-uniqueness"
+        },
+        {
+          "patternId": "spectral_operation-description"
+        },
+        {
+          "patternId": "spectral_operation-operationId"
+        },
+        {
+          "patternId": "spectral_operation-operationId-unique"
+        },
+        {
+          "patternId": "spectral_operation-operationId-valid-in-url"
+        },
+        {
+          "patternId": "spectral_operation-parameters"
+        },
+        {
+          "patternId": "spectral_operation-success-response"
+        },
+        {
+          "patternId": "spectral_operation-tag-defined"
+        },
+        {
+          "patternId": "spectral_operation-tags"
+        },
+        {
+          "patternId": "spectral_path-declarations-must-exist"
+        },
+        {
+          "patternId": "spectral_path-keys-no-trailing-slash"
+        },
+        {
+          "patternId": "spectral_path-not-include-query"
+        },
+        {
+          "patternId": "spectral_path-params"
+        },
+        {
+          "patternId": "spectral_typed-enum"
+        }
+      ]
+    },
+    {
+      "toolId": "Checkov",
+      "patterns": [
+        {
+          "patternId": "Checkov_CKV2_GHA_1"
+        },
+        {
+          "patternId": "Checkov_CKV_BITBUCKET_1"
+        },
+        {
+          "patternId": "Checkov_CKV_GHA_1"
+        },
+        {
+          "patternId": "Checkov_CKV_GHA_2"
+        },
+        {
+          "patternId": "Checkov_CKV_GHA_3"
+        },
+        {
+          "patternId": "Checkov_CKV_GHA_4"
+        },
+        {
+          "patternId": "Checkov_CKV_GHA_5"
+        },
+        {
+          "patternId": "Checkov_CKV_GHA_6"
+        },
+        {
+          "patternId": "Checkov_CKV_GHA_7"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_1"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_10"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_11"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_12"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_13"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_14"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_15"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_16"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_17"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_18"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_19"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_2"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_20"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_21"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_22"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_23"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_26"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_27"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_28"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_3"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_4"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_5"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_6"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_7"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_8"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_9"
+        },
+        {
+          "patternId": "Checkov_CKV_GITLAB_1"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_1"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_10"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_11"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_12"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_13"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_14"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_15"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_16"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_17"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_18"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_19"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_2"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_20"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_21"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_3"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_4"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_5"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_6"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_7"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_8"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_9"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_1"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_11"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_12"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_13"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_14"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_15"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_16"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_17"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_18"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_19"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_2"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_3"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_4"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_5"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_6"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_7"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_8"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_9"
+        }
+      ]
+    },
+    {
+      "toolId": "Lizard",
+      "patterns": [
+        {
+          "patternId": "Lizard_file-nloc-medium"
+        },
+        {
+          "patternId": "Lizard_nloc-medium"
+        },
+        {
+          "patternId": "Lizard_parameter-count-medium"
+        },
+        {
+          "patternId": "Lizard_nloc-critical"
+        },
+        {
+          "patternId": "Lizard_ccn-critical"
+        },
+        {
+          "patternId": "Lizard_ccn-medium"
+        },
+        {
+          "patternId": "Lizard_parameter-count-critical"
+        },
+        {
+          "patternId": "Lizard_file-nloc-critical"
+        }
+      ]
+    },
+    {
+      "toolId": "Checkstyle",
+      "patterns": [
+        {
+          "patternId": "Checkstyle_AvoidStarImport"
+        },
+        {
+          "patternId": "Checkstyle_CommentsIndentation"
+        },
+        {
+          "patternId": "Checkstyle_EmptyBlock"
+        },
+        {
+          "patternId": "Checkstyle_EmptyCatchBlock"
+        },
+        {
+          "patternId": "Checkstyle_EmptyLineSeparator"
+        },
+        {
+          "patternId": "Checkstyle_FileTabCharacter"
+        },
+        {
+          "patternId": "Checkstyle_LineLength"
+        },
+        {
+          "patternId": "Checkstyle_NoLineWrap"
+        },
+        {
+          "patternId": "Checkstyle_OneTopLevelClass"
+        },
+        {
+          "patternId": "Checkstyle_UnusedImports"
+        }
+      ]
+    },
+    {
+      "toolId": "PMD7",
+      "patterns": [
+        {
+          "patternId": "PMD7_category_java_bestpractices_AvoidReassigningParameters"
+        },
+        {
+          "patternId": "PMD7_category_java_bestpractices_CheckResultSet"
+        },
+        {
+          "patternId": "PMD7_category_java_bestpractices_OneDeclarationPerLine"
+        },
+        {
+          "patternId": "PMD7_category_java_bestpractices_UnusedFormalParameter"
+        },
+        {
+          "patternId": "PMD7_category_java_bestpractices_UnusedLocalVariable"
+        },
+        {
+          "patternId": "PMD7_category_java_bestpractices_UnusedPrivateField"
+        },
+        {
+          "patternId": "PMD7_category_java_bestpractices_UnusedPrivateMethod"
+        },
+        {
+          "patternId": "PMD7_category_java_codestyle_ClassNamingConventions"
+        },
+        {
+          "patternId": "PMD7_category_java_codestyle_ExtendsObject"
+        },
+        {
+          "patternId": "PMD7_category_java_codestyle_FieldDeclarationsShouldBeAtStartOfClass"
+        },
+        {
+          "patternId": "PMD7_category_java_codestyle_MethodNamingConventions"
+        },
+        {
+          "patternId": "PMD7_category_java_codestyle_NoPackage"
+        },
+        {
+          "patternId": "PMD7_category_java_codestyle_PackageCase"
+        },
+        {
+          "patternId": "PMD7_category_java_codestyle_UnnecessaryConstructor"
+        },
+        {
+          "patternId": "PMD7_category_java_codestyle_UnnecessaryFullyQualifiedName"
+        },
+        {
+          "patternId": "PMD7_category_java_codestyle_UnnecessaryReturn"
+        },
+        {
+          "patternId": "PMD7_category_java_design_AvoidThrowingNullPointerException"
+        },
+        {
+          "patternId": "PMD7_category_java_design_AvoidThrowingRawExceptionTypes"
+        },
+        {
+          "patternId": "PMD7_category_java_design_CollapsibleIfStatements"
+        },
+        {
+          "patternId": "PMD7_category_java_design_ExcessiveParameterList"
+        },
+        {
+          "patternId": "PMD7_category_java_design_LogicInversion"
+        },
+        {
+          "patternId": "PMD7_category_java_design_NPathComplexity"
+        },
+        {
+          "patternId": "PMD7_category_java_design_SimplifyBooleanExpressions"
+        },
+        {
+          "patternId": "PMD7_category_java_design_SimplifyBooleanReturns"
+        },
+        {
+          "patternId": "PMD7_category_java_design_SingularField"
+        },
+        {
+          "patternId": "PMD7_category_java_documentation_UncommentedEmptyMethodBody"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_AssignmentToNonFinalStatic"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_AvoidAccessibilityAlteration"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_AvoidBranchingStatementAsLastInLoop"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_AvoidCallingFinalize"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_AvoidDecimalLiteralsInBigDecimalConstructor"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_AvoidInstanceofChecksInCatchClause"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_AvoidMultipleUnaryOperators"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_BrokenNullCheck"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_CheckSkipResult"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_CompareObjectsWithEquals"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_DoNotHardCodeSDCard"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_DontUseFloatTypeForLoopIndices"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_EmptyFinalizer"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_EqualsNull"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_JumbledIncrementer"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_MethodWithSameNameAsEnclosingClass"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_MisplacedNullCheck"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_MissingStaticMethodInNonInstantiatableClass"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_NonStaticInitializer"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_ReturnFromFinallyBlock"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_UnconditionalIfStatement"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_UnnecessaryBooleanAssertion"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_UnnecessaryCaseChange"
+        },
+        {
+          "patternId": "PMD7_category_java_errorprone_UseEqualsToCompareStrings"
+        },
+        {
+          "patternId": "PMD7_category_java_multithreading_AvoidThreadGroup"
+        },
+        {
+          "patternId": "PMD7_category_java_multithreading_DontCallThreadRun"
+        },
+        {
+          "patternId": "PMD7_category_java_performance_StringInstantiation"
+        },
+        {
+          "patternId": "PMD7_category_java_performance_StringToString"
+        },
+        {
+          "patternId": "PMD7_category_java_performance_UseStringBufferLength"
+        },
+        {
+          "patternId": "PMD7_category_jsp_bestpractices_DontNestJsfInJstlIteration"
+        },
+        {
+          "patternId": "PMD7_category_jsp_bestpractices_NoJspForward"
+        },
+        {
+          "patternId": "PMD7_category_jsp_design_NoInlineStyleInformation"
+        },
+        {
+          "patternId": "PMD7_category_jsp_design_NoLongScripts"
+        },
+        {
+          "patternId": "PMD7_category_jsp_design_NoScriptlets"
+        }
+      ]
+    }
+  ],
+  "exclude": []
+}
