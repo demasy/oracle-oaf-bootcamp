@@ -12,14 +12,23 @@
 Upon completion of Level 102, students will be able to:
 
 **Note:** At this level, scaffolding is significantly reduced. Students receive high-level guidance and must independently implement solutions with occasional checkpoints.
-- **LO2.1:** Create dynamic View Objects programmatically
-- **LO2.2:** Execute SQL statements and call PL/SQL procedures from OAF
-- **LO2.3:** Implement advanced UI components (HGrid, Train, Shuttle, etc.)
-- **LO2.4:** Integrate Flexfields (Key and Descriptive) in OAF pages
-- **LO2.5:** Implement file upload/download and data import/export
-- **LO2.6:** Build workflow-enabled OAF applications
-- **LO2.7:** Create dynamic UI components programmatically
-- **LO2.8:** Optimize performance and implement advanced debugging
+**Core outcomes**
+- **LO2.1:** Intercept user interactions and execute post-back processing with processFormRequest
+- **LO2.2:** Update specific page regions with partial page rendering
+- **LO2.3:** Build lists of values, including dependent LOVs
+- **LO2.4:** Implement exception handling and user messaging
+- **LO2.5:** Manage confirmation workflows with dialog pages
+- **LO2.6:** Build advanced tables with inline record creation and deletion
+- **LO2.7:** Change web bean state dynamically during the page lifecycle
+
+**Extended outcomes**
+- **LO2.8:** Create dynamic View Objects programmatically
+- **LO2.9:** Execute SQL statements and call PL/SQL procedures from OAF
+- **LO2.10:** Implement advanced UI components (HGrid, Train, Shuttle, etc.)
+- **LO2.11:** Integrate Flexfields (Key and Descriptive) in OAF pages
+- **LO2.12:** Implement file upload/download and data import/export
+- **LO2.13:** Build workflow-enabled OAF applications
+- **LO2.14:** Implement advanced debugging techniques
 
 
 <br>
@@ -78,12 +87,12 @@ Upon completion of Level 102, students will be able to:
 | 3.1 | Implementing Hide/Show Region | Lab | ✓ | Tutorial | Conditional rendering, PPR for dynamic display, UX considerations |
 | 3.2 | Implementing Flow Layout Region | Lab | ✓ | Examples | Flow vs other layouts, component arrangement, responsive design |
 | 3.3 | Implementing Query Region (Advanced) | Lab | ✓ | Guide | Construction modes, results-based search, auto-customization, configuration |
-| 3.4 | Implementing Advanced Table Region | Lab | ✓ | Tutorial | Selection, sorting, filtering, row actions, footer calculations, performance |
+| 3.4 | Implementing Advanced Table Region | Lab | ✓ | Tutorial | Selection, sorting, filtering, row actions, footer calculations, performance; tableFooter; singleSelection and multipleSelection row selection items |
 | 3.5 | Implementing Train Region | Lab | ✓ | Examples | Multi-step processes, train stops, navigation, validation, progress tracking |
 | 3.6 | Implementing Shuttle Region | Lab | ✓ | Tutorial | Dual-list selection, moving items, ordering, search functionality |
 | 3.7 | Implementing Advanced Layout Region | Lab | ✓ | Patterns | Table/Row/Cell layouts, nested layouts, complex forms |
-| 3.8 | Implementing HGrid Region | Lab | ✓ | Tutorial | Hierarchical data, expandable nodes, tree navigation, performance |
-| 3.9 | Implementing Content Container Region | Lab | ✓ | Examples | Tab-based navigation, hiding/showing tabs, dynamic tab generation |
+| 3.8 | Implementing HGrid Region | Lab | ✓ | Tutorial | Hierarchical data, expandable nodes, tree navigation, performance; tree, nodeDef and childNode definitions |
+| 3.9 | Implementing Content Container Region | Lab | ✓ | Examples | Tab-based navigation, hiding/showing tabs, dynamic tab generation; richContainer |
 | 3.10 | Implementing Charts and Graphs | Lab | ✓ | Tutorial | Chart types, data binding, interactive charts, BI Publisher integration |
 | 3.11 | Adding Custom HTML Code | Lab | ✓ | Guide | RawText component, JavaScript integration, security, best practices |
 | 3.12 | Implementing Key Flexfield Region | Lab | ✓ | Tutorial | KFF configuration, binding to page, validation, capturing values |
@@ -91,6 +100,17 @@ Upon completion of Level 102, students will be able to:
 | 3.14 | Changing Item Properties Using SPEL | Lab | ✓ | Examples | SPEL syntax, conditional properties, dynamic rendering, performance |
 | 3.15 | Launching Oracle Forms from OAF | Lab | ✓ | Tutorial | Form function call, parameter passing, integration patterns |
 | 3.16 | Launching OAF Pages from Oracle Forms | Lab | ✓ | Guide | ICX integration, URL construction, SSO considerations |
+| 3.17 | Implementing Dependent (Cascading) LOVs | Lab | ✓ | Tutorial | Parent-child LOVs, criteria items, dynamic result mapping, clearing dependent fields |
+| 3.18 | Handling PPR Events on the Server | Lab | ✓ | Tutorial | PPR event triggers, dynamic target regions, processFormRequest handling of PPR events |
+| 3.19 | Implementing Panel Splitter and Layered Layout | Lab | ✓ | Tutorial | panelSplitter, layeredLayout, adjustable panels, multi-mode pages |
+| 3.20 | Implementing Rich Inputs: Rich Text Editor, Color Picker and Rating Bar | Lab | ✓ | Tutorial | richTextEditor, messageRichTextEditor, colorPicker, messageRatingBar |
+| 3.21 | Implementing Bulleted Lists | Lab | ✓ | Tutorial | bulletedList, multi-column lists, dynamic list content |
+| 3.22 | Configurable Pages with flexibleLayout and flexibleContent | Lab | ✓ | Project | flexibleLayout, flexibleContent, flexibleContentList, user and admin dashboard tiles |
+| 3.23 | Multi-Step Create and Update Flows | Lab | ✓ | Project | Train-based wizards, transaction state across steps, iterative versus single-submit updates |
+| 3.24 | Implementing LOV Auto-Completion and Look-Ahead | Lab | ✓ | Tutorial | Foreign key validation, look-ahead dropdowns, auto-completion, popup LOV fallback |
+| 3.25 | Building Custom Grids with tableLayout, rowLayout and cellFormat | Lab | ✓ | Tutorial | Explicit rows and cells, columnSpan, rowSpan, hAlign, vAlign, width and height |
+| 3.26 | Implementing Auto-Repeating Layouts | Lab | ✓ | Tutorial | Repeating regions generated from view object rows, dynamic sections, per-row content |
+| 3.27 | LOV Action Buttons and Mappings | Lab | ✓ | Tutorial | lovActionButton, lovActionMap, lovMap return values, actions inside the LOV window |
 
 <br>
 
@@ -114,6 +134,9 @@ Upon completion of Level 102, students will be able to:
 | 4.5 | Creating Submit Button Programmatically | Lab | ✓ | Tutorial | Button properties, event handlers, action binding |
 | 4.6 | Using JavaScript in OA Framework | Lab | ✓ | Guide | Client-side validation, UI enhancements, calling Java, security |
 | 4.7 | Implementing Read-Only Page | Lab | ✓ | Tutorial | Disabling inputs, visual indicators, conditional read-only mode |
+| 4.8 | Controlling Focus and Dynamic Bean Properties | Lab | ✓ | Tutorial | OABodyBean.setInitialFocusId(), dynamic read-only and rendered states, runtime bean changes |
+| 4.9 | Creating and Deleting Table Rows Programmatically | Lab | ✓ | Project | Advanced table row creation, dynamic row deletion, single and multiple row selection, table events |
+| 4.10 | Updateable Summary Pages: Batch Update, Duplicate and Delete Rows | Lab | ✓ | Project | Multi-row table updates, row duplication, batch delete, partial commit handling |
 
 <br>
 
@@ -151,14 +174,21 @@ Upon completion of Level 102, students will be able to:
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
 | 6.1 | Setting Default Values | Lab | ✓ | Tutorial | Text fields, number fields, date fields, techniques and best practices |
-| 6.2 | Understanding MDS Repository | Video | ✓ | Guide | Metadata storage, MDS queries, import/export, cleanup |
+| 6.2 | Understanding MDS Repository | Video | ✓ | Guide | How page metadata is stored and queried, from a developer view; MDS architecture and administration are covered in Cust 101 |
 | 6.3 | Important Profile Options | Video | ✓ | Reference | Key profile options, impact on behavior, setting programmatically |
-| 6.4 | Implementing Attachments Functionality | Lab | ✓ | Tutorial | FND_ATTACHED_DOCUMENTS, configuration, UI integration, file storage |
-| 6.5 | Implementing Upload Files Functionality | Lab | ✓ | Tutorial | File upload component, server-side handling, validation, storage options |
+| 6.4 | Implementing Attachments Functionality | Lab | ✓ | Tutorial | FND_ATTACHED_DOCUMENTS, configuration, UI integration, file storage; attachmentTable, attachmentLink, attachmentImage, messageInlineAttachment, entityMap, categoryMap, primaryKey |
+| 6.5 | Implementing Upload Files Functionality | Lab | ✓ | Tutorial | File upload component, server-side handling, validation, storage options; messageFileUpload |
 | 6.6 | Implementing Import Data Functionality | Lab | ✓ | Examples | CSV/Excel import, data validation, batch processing, error handling |
 | 6.7 | Implementing Export Data Functionality | Lab | ✓ | Tutorial | Export formats (CSV, Excel, PDF), large data sets, streaming, performance |
 | 6.8 | Handling Browser Back Button | Lab | ✓ | Guide | Back button issues, prevention techniques, transaction integrity |
 | 6.9 | Workflow in OA Framework | Lab | ✓ | Tutorial | Launching workflow, passing parameters, monitoring, embedding OAF in notification |
+| 6.10 | Submitting Concurrent Requests from OAF Pages | Lab | ✓ | Tutorial | Declarative request submission, monitoring requests, passing parameters |
+| 6.11 | Multi-Language Support and Internationalization | Lab | ✓ | Guide | MLS and _TL tables, timezone conversion, client character encoding, right-to-left alignment |
+| 6.12 | Accessibility: Screen Reader Mode, Row Headers and Accelerator Keys | Lab | ✓ | Checklist | Screen reader optimized mode, rowheadercol, keyboard accelerator keys |
+| 6.13 | Publishing Documents to the Document Catalog | Lab | ✓ | Guide | Document set upload, catalog publishing, AntiSamy filtering and virus scanning on upload |
+| 6.14 | Inline PDF Viewing and Secure File Download | Lab | ✓ | Tutorial | Rendering PDFs inline, streaming binary files, secure download handling; messageDownload |
+| 6.15 | Deep Linking and Bookmarkable URLs | Lab | ✓ | Guide | RF.jsp, OA.jsp and OAD.jsp URLs, passing parameters, security of direct page access |
+| 6.16 | Enhanced Save Model: Warning on Unsaved Changes | Lab | ✓ | Tutorial | Detecting uncommitted changes, warning before navigating away, save and discard flows |
 
 <br>
 
@@ -178,6 +208,9 @@ Upon completion of Level 102, students will be able to:
 | 7.1 | Using demasy-oaf Libraries for Debugging | Lab | ✓ | Tutorial | Library overview, installation, debug utilities, performance profiling |
 | 7.2 | Raising Bundle/Multiple Error Messages | Lab | ✓ | Examples | Message bundles, multiple validation errors, user-friendly messages, i18n |
 | 7.3 | Advanced Debugging Techniques | Lab | ✓ | Guide | Remote debugging, production debugging, log analysis, performance profiling |
+| 7.4 | Exception Severity Levels and Inline Messages | Lab | ✓ | Guide | OAException severities (ERROR, WARNING, INFORMATION, CONFIRMATION), inline message rendering; OAAttrValException, OARowValException and bundled exceptions |
+| 7.5 | Dialog Pages and Flow Control | Lab | ✓ | Tutorial | OADialogPage, putDialogMessage(), pageContext.forwardImmediately(), confirmation workflows |
+| 7.6 | Diagnostic Pages: About This Page and OAInfo.jsp | Lab | ✓ | Guide | Page inspector, OAInfo.jsp, technology stack and profile option inspection, regionMap.xml |
 
 <br>
 
@@ -196,7 +229,7 @@ Upon completion of Level 102, students will be able to:
 
 | Code | Lecture Title | Format | Practice | Resource | Notes |
 | :- | :-------- | :-: | :-: | :-: | :---- |
-| 8.1 | Project 101: Point-Of-Sale System (Introduction) | Workshop | ✓ | Project Guide | Setting up project structure, Git version control, database design, project planning, team collaboration setup (Duration: 2.5 Days) |
+| 8.1 | Project 101: Project Kickoff and Planning | Workshop | ✓ | Project Guide | Setting up project structure, Git version control, database design, project planning, team collaboration setup; applied to Project 102 (the POS system is the Dev 103 capstone) (Duration: 2.5 Days) |
 | 8.2 | Project 102: Items Creation with Approval Cycle | Lab | ✓ | Requirements | Multi-step approval workflow, complex business logic, workflow integration, advanced UI features, item creation form, multi-level approvals, email notifications, approval history, advanced search and reporting (Duration: 5 Days) |
 
 <br>
@@ -219,3 +252,6 @@ Upon completion of Level 102, students will be able to:
 | 9.2 | Option A: Advanced HR Management System | Lab | ✓ | Project Spec | Employee self-service portal, manager approval workflows, workflow integration, reports and dashboards, complete HRIS functionality |
 | 9.3 | Option B: Procurement Request System | Lab | ✓ | Project Spec | Purchase requisition creation, multi-level approval process, budget validation logic, PO integration, procurement workflow |
 | 9.4 | Assessment Criteria and Deliverables | Workshop | ✓ | Rubric | All Level 102 concepts (40%), Code quality and standards (25%), Architecture and design (20%), Documentation (10%), Innovation and extras (5%) |
+
+### Certification Milestone
+**Professional OAF Developer**: BC4J model design (EO/VO/AM), complex UI construction, LOV and flexfield integration, exception handling.

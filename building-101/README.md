@@ -1,5 +1,7 @@
 # Oracle OAF Building BootCamp 101
 
+> **Legacy outline.** Superseded by the `SYLLABUS_*.md` files at the repo root. See [ROADMAP.md](../ROADMAP.md).
+
 Stay Tuned
 
 <br>

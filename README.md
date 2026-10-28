@@ -96,6 +96,8 @@ throw MessageHelper.createValidationError(
 
 ## 📖 Documentation
 
+- **[COURSE.md](COURSE.md)** - Full course outline: Level, Section, Module, Lecture  
+- **[ROADMAP.md](ROADMAP.md)** - BootCamp roadmap: course map, syllabus completion plan and phases  
 - **[CHANGELOG.md](CHANGELOG.md)** - Version history and migration guides  
 - **[MESSAGEHELPER_GUIDE.md](MESSAGEHELPER_GUIDE.md)** - Complete MessageHelper usage guide (v1.4.0)  
 - **[MESSAGE_REGISTRATION.sql](MESSAGE_REGISTRATION.sql)** - FND_MESSAGES setup for XX/XXVAL/XXLAB (v1.4.0)  
@@ -110,10 +112,10 @@ throw MessageHelper.createValidationError(
 | Code       | Lecture Title                         | Level     | Subscribe  |   Notes |
 | :-:         | :--------                             | :-:       | :-:        |     :----   |
 | DL-OAF-B-101        | <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/tree/master/building-101">Oracle OAF Building BootCamp 101</a>      | Beginner  |  N/A       | -|
-| DL-OAF-B-102        | Oracle OAF Building BootCamp 102      | Advanced  |  N/A       | -|
-| DL-OAF-B-103       | Oracle OAF Building BootCamp 103      | Ninja     |  N/A       | -|
-| DL-OAF-C-101        | Oracle OAF Customizing BootCamp 101   | Beginner  |  N/A       | -|
-| DL-OAF-C-102        | Oracle OAF Customizing BootCamp 102   | Advanced  |  N/A       | -|
+| DL-OAF-B-102        | <a href="SYLLABUS_102.md">Oracle OAF Building BootCamp 102</a>      | Advanced  |  N/A       | -|
+| DL-OAF-B-103       | <a href="SYLLABUS_103.md">Oracle OAF Building BootCamp 103</a>      | Ninja     |  N/A       | -|
+| DL-OAF-C-101        | <a href="SYLLABUS_CUST_101.md">Oracle OAF Customizing BootCamp 101</a>   | Beginner  |  N/A       | -|
+| DL-OAF-C-102        | <a href="SYLLABUS_CUST_102.md">Oracle OAF Customizing BootCamp 102</a>   | Advanced  |  N/A       | -|
 
 <br>
 

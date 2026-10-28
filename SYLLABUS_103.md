@@ -165,6 +165,7 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 | 7.1 | Deployment to Production | Lab | ✓ | Guide | Deployment package creation, installation instructions, production deployment, post-deployment validation |
 | 7.2 | Documentation | Workshop | ✓ | Templates | Technical documentation, user manual, installation guide, troubleshooting guide |
 | 7.3 | Project Presentation | Workshop | ✓ | Guide | Demo preparation, presentation to stakeholders, Q&A handling |
+| 7.4 | Mentoring and Code Review | Workshop | ✓ | Guide | Reviewing a peer implementation, giving actionable feedback, coaching a junior developer through a defect, review checklist |
 
 <br>
 
@@ -188,3 +189,162 @@ Build a complete, enterprise-grade Point-of-Sale (POS) system using Oracle Appli
 | 8.4 | Professional Deliverables Review | Workshop | ✓ | Checklist | Professional Deliverables (15%): Complete documentation, deployment package, user manual, presentation |
 | 8.5 | Innovation & Excellence Showcase | Workshop | ✓ | Portfolio | Innovation & Excellence (10%): Creative solutions, additional features, problem-solving, exceeding requirements |
 | 8.6 | Ninja Level Certification | Workshop | ✓ | Success Criteria | Success Criteria: Score ≥ 85% on all criteria, production-ready application, professional presentation, complete documentation, demonstrates mastery |
+
+<br>
+
+## Advanced Topics Track
+
+Sections [9]-[12] cover enterprise-level topics taught alongside the capstone. Items marked *(verify)* depend on the EBS 12.2 patch level and must be confirmed against Oracle's 12.2 documentation before delivery.
+
+## [9] Advanced Tables, Grids and Visualization
+**Duration:** 3 Days | **Level**: Ninja
+
+### Learning Objectives
+- Choose between advanced and classic tables
+- Build hierarchical grids and trees
+- Export and visualize data
+
+### Lectures
+
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 9.1 | Advanced Tables | Lab | ✓ | Guide | Column groups, sortable headers, selection, total rows, detail disclosure, table-in-table |
+| 9.2 | Classic Tables and Migration | Video | ✓ | Guide | Comparison with advanced tables, usage limits, migration strategy |
+| 9.3 | Rich Table Interactions | Lab | ✓ | Guide | Resize, reorder, freeze, hide/show columns, scrolling; touch-device optimizations |
+| 9.4 | Exporting Table Data | Lab | ✓ | Guide | Excel and PDF export, transient columns, export limits *(verify)* |
+| 9.5 | HGrid and Tree | Lab | ✓ | Project | OAHGridBean, OATreeBean, focus and hierarchy columns, child row retrieval |
+| 9.6 | Charts, Graphs and Infotiles | Lab | ✓ | Guide | BI beans and JET transition, Gantt, Infotiles *(verify)* |
+| 9.7 | Masonry Layout Dashboards | Lab | ✓ | Guide | Grid-based responsive dashboards, status tiles, KPI cards *(verify)* |
+
+<br>
+
+## [10] Advanced Search and Navigation
+**Duration:** 2.5 Days | **Level**: Ninja
+
+### Learning Objectives
+- Design flexible search interfaces
+- Build wizard and tabbed navigation
+
+### Lectures
+
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 10.1 | Search Architecture | Lab | ✓ | Guide | Query regions, simple and advanced search, results-based search |
+| 10.2 | List Search Framework | Lab | ✓ | Guide | Filter panels, saved searches, quick and keyword search |
+| 10.3 | Navigation Components | Lab | ✓ | Guide | Trains, subtabs, accordions, hide/show, popups, shuttles |
+| 10.4 | Declarative Page Flows | Lab | ✓ | Guide | Destination function and workflow page flows, transaction state |
+| 10.5 | Infotile-Driven Search | Lab | ✓ | Project | Summary tiles with metric counts that filter a results table |
+| 10.6 | Quick Search and Side Navigation Search | Lab | ✓ | Guide | Compact search inputs in global headers and side navigation |
+
+<br>
+
+## [11] State Management, Back Button and Security
+**Duration:** 3 Days | **Level**: Ninja
+
+### Learning Objectives
+- Manage application module state and retention
+- Build back-button-safe flows
+- Apply the OAF security framework
+
+### Lectures
+
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 11.1 | Advanced Entity Mechanics | Lab | ✓ | Guide | Polymorphic entities, parent/child posting order, transient attributes |
+| 11.2 | PL/SQL Entity Objects | Lab | ✓ | Guide | Wrapping PL/SQL table APIs, key generation, locking, error mapping |
+| 11.3 | State Retention and Pooling | Video | ✓ | Guide | Retention levels, passivation, session limits, connection pool monitoring |
+| 11.4 | Browser Back Button Support | Lab | ✓ | Guide | Page instance IDs, transaction units, back-button detection |
+| 11.5 | Page, Function and Data Security | Lab | ✓ | Guide | Function security, data grants, page access tracking |
+| 11.6 | Input Hardening | Lab | ✓ | Guide | XSS scanning, AntiSamy HTML filtering, virus scanning, frame busting |
+| 11.7 | Resource Swapping and Memory Caching | Video | ✓ | Guide | AM pooling and resource swapping, JDBC pool tuning, memory caching, resource conservation |
+
+<br>
+
+## [12] REST and Product Integration
+**Duration:** 2.5 Days | **Level**: Ninja
+
+### Learning Objectives
+- Expose application module methods as services
+- Integrate OAF pages with other EBS products
+
+### Lectures
+
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 12.1 | OAF REST Servlet | Lab | ✓ | Guide | Exposing AM methods, service data objects, testing business service objects; BSO API tester |
+| 12.2 | Application Web Services | Video | ✓ | Guide | Business service objects, attachments service, home page service |
+| 12.3 | Forms and Workflow Integration | Lab | ✓ | Guide | Launching Forms from OAF and back, worklist notifications; JTT application launch and parameter passing *(verify the term and scope)* |
+| 12.4 | Portal and Analytics Embedding | Video | ✓ | Guide | Portlet integration, embedding analytics *(verify)*; OBIEE analytics embedding |
+| 12.5 | Reviewing and Approving Workflow Notifications from OAF | Lab | ✓ | Guide | Notification pages, approve and reject actions, worklist review |
+| 12.6 | Consuming External SOAP and REST Services | Lab | ✓ | Project | Calling external services from application module code, error handling, timeouts |
+
+### Certification Milestone
+**Master OAF Developer**: advanced tables, HGrid, REST services, enterprise security, back-button flow design.
+
+## Production Readiness Track
+
+Sections [13]-[16] cover deployment, diagnostics and R12.2 patching practice.
+
+## [13] MDS and BC4J Deployment
+**Duration:** 2 Days | **Level**: Ninja
+
+### Learning Objectives
+- Deploy page definitions to the MDS repository from the command line
+- Register BC4J project configuration
+
+### Lectures
+
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 13.1 | Deploying Pages with XMLImporter | Lab | ✓ | Guide | -rootdir, -username, -password, -dbconnection parameters, $JAVA_TOP layout |
+| 13.2 | Registering BC4J Configuration with JPXImporter | Lab | ✓ | Guide | .jpx project files, classpath specifications, repository registration |
+
+<br>
+
+## [14] AOL Security and Page Registration
+**Duration:** 1.5 Days | **Level**: Ninja
+
+### Learning Objectives
+- Register OAF pages in Oracle E-Business Suite
+- Secure pages through menus and responsibilities
+
+### Lectures
+
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 14.1 | Defining Form Functions for OAF Pages | Lab | ✓ | Guide | SSWA jsp function, page path and parameters |
+| 14.2 | Menus and Responsibilities | Lab | ✓ | Guide | Attaching functions to menus, assigning responsibilities, testing access |
+
+<br>
+
+## [15] Logging, Diagnostics and Log Maintenance
+**Duration:** 2 Days | **Level**: Ninja
+
+### Learning Objectives
+- Instrument applications with the FND logging framework
+- Maintain diagnostic log storage
+
+### Lectures
+
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 15.1 | FND_LOG Framework and Profile Options | Lab | ✓ | Guide | FND: Debug Log Enabled, FND: Debug Log Level, FND_LOG_MESSAGES |
+| 15.2 | Writing Diagnostics from Code | Lab | ✓ | Tutorial | pageContext.writeDiagnostics(), screen logging, performance tracing; SQL trace with event 10046 |
+| 15.3 | Purging Logs with FNDLGPRG | Lab | ✓ | Guide | Concurrent program, FND_LOG_ADMIN package, table storage |
+
+<br>
+
+## [16] R12.2 Online Patching and Packaging
+**Duration:** 2.5 Days | **Level**: Ninja
+
+### Learning Objectives
+- Deploy custom code under the R12.2 dual file system
+- Automate repeatable deployments
+
+### Lectures
+
+| Code | Lecture Title | Format | Practice | Resource | Notes |
+| :- | :-------- | :-: | :-: | :-: | :---- |
+| 16.1 | Online Patching (adop) Fundamentals | Video | ✓ | Diagram | Run edition versus patch edition, patch phases, classpath configuration |
+| 16.2 | Compiling and Archiving with adcgnjar | Lab | ✓ | Guide | $AD_TOP/bin/adcgnjar, customall.jar, signed archives under $JAVA_TOP |
+| 16.3 | Scripted Deployment | Lab | ✓ | Project | Environment variables such as $AD_APPS_JDBC_URL in place of hardcoded connection strings |

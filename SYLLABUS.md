@@ -1,5 +1,7 @@
 # Oracle Application Framework (OAF) BootCamp
 
+> **Deprecated.** This monolithic syllabus is superseded by [SYLLABUS_101.md](SYLLABUS_101.md), [SYLLABUS_102.md](SYLLABUS_102.md), [SYLLABUS_103.md](SYLLABUS_103.md), [SYLLABUS_CUST_101.md](SYLLABUS_CUST_101.md) and [SYLLABUS_CUST_102.md](SYLLABUS_CUST_102.md). Kept for reference.
+
 ## 🎓 Level 101: Oracle OAF Building BootCamp (Beginner)
 
 **Duration:** 20-25 Days  
