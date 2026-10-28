@@ -1,0 +1,82 @@
+# Oracle OAF Customizing BootCamp 102
+
+**Code:** DL-OAF-C-102 | **Level:** Advanced | **Duration:** 10-15 days | **Scaffolding:** 40% guidance | **Certification milestone:** Master Customization Architect
+
+## Course Goals
+
+- Apply extension standards and place custom code correctly
+- Extend view, entity and application module objects
+- Deploy substitutions and extended controllers
+- Package, deploy and promote customizations across environments
+
+## Curriculum
+
+| Section | Module | Title | Path | Lectures |
+| :-: | :-- | :-- | :-: | :-: |
+| [1] | C102-1 | [Controller and LOV Extensions](#1-controller-and-lov-extensions) | Core | 2 |
+| [2] | C102-2 | [Business Component Extensions](#2-business-component-extensions) | Core | 3 |
+| [3] | C102-3 | [Substitution and Troubleshooting](#3-substitution-and-troubleshooting) | Core | 3 |
+| [4] | C102-4 | [Packaging and R12.2 Synchronization](#4-packaging-and-r122-synchronization) | Core | 3 |
+| [5] | C102-5 | [Extension Architecture and Standards](#5-extension-architecture-and-standards) | Required | 4 |
+| [6] | C102-6 | [Release, Promotion and Assessment](#6-release-promotion-and-assessment) | Required | 4 |
+
+## [1] Controller and LOV Extensions
+
+**Module:** C102-1 | **Path:** Core  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| C102-1.1 | Extending Controllers | Lab | Project | Extending `processRequest` and `processFormRequest`, attaching through personalization |
+| C102-1.2 | Extending LOVs Programmatically | Lab | Project | LOV controller extensions, VO substitution for LOV queries |
+
+## [2] Business Component Extensions
+
+**Module:** C102-2 | **Path:** Core  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| C102-2.1 | Extending View Objects | Lab | Project | Transient and mapped attributes, SQL changes, query overrides |
+| C102-2.2 | Extending Entity Objects | Lab | Project | Default values, custom validation rules |
+| C102-2.3 | Extending Application Modules | Lab | Project | Custom transaction methods, nested AM extensions |
+
+## [3] Substitution and Troubleshooting
+
+**Module:** C102-3 | **Path:** Core  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| C102-3.1 | Understanding the Substitution Mechanism | Video | Diagram | How MDS substitutions replace parent objects at runtime |
+| C102-3.2 | Deploying Substitutions | Lab | Guide | JPX files, `jpximport`, verifying active substitutions; extension-specific steps, tooling basics are in Dev 103 |
+| C102-3.3 | Troubleshooting Extensions | Lab | Checklist | Classloader conflicts, substitution load failures, casting exceptions |
+
+## [4] Packaging and R12.2 Synchronization
+
+**Module:** C102-4 | **Path:** Core  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| C102-4.1 | Packaging Archives with adcgnjar | Lab | Guide | $AD_TOP/bin/adcgnjar, customall.jar, manifest files, signed archives; applies the Dev 103 tooling to extensions |
+| C102-4.2 | Packaging Extensions for Deployment | Lab | Guide | Classes, XML pages and MDS documents under `$JAVA_TOP`; extension-specific steps, tooling basics are in Dev 103 |
+| C102-4.3 | Synchronizing the R12.2 File Systems | Lab | Guide | adop cycle, dual file systems, adop_sync_drv.tmp custom driver entries |
+
+## [5] Extension Architecture and Standards
+
+**Module:** C102-5 | **Path:** Required  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| C102-5.1 | Applying Extension Standards | Video | Guide | `xx` prefixes, package structure, extension log |
+| C102-5.2 | Choosing Extension Touchpoints | Video | Diagram | Model object extensions versus controller extensions |
+| C102-5.3 | Placing Custom Code | Video | Guide | APPS versus custom schema, grants and synonyms under Edition-Based Redefinition |
+| C102-5.4 | Creating Extensions for Oracle Pages | Video | Patterns | Extending Oracle pages, custom extensions, upgrade-safe mods |
+
+## [6] Release, Promotion and Assessment
+
+**Module:** C102-6 | **Path:** Required  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| C102-6.1 | Using Import Tools | Lab | Guide | XMLImporter for pages and regions, attribute sets |
+| C102-6.2 | Registering Functions and Menus | Lab | Guide | Register functions, attach to menus, assign responsibilities |
+| C102-6.3 | Promoting Customizations Between Environments | Video | Guide | Dev, test and production migration, patching, version control |
+| C102-6.4 | Completing the Extension Project | Workshop | Rubric | Extend a seeded page with a substitution and a controller, then deploy it. Proposed criteria: extension correctness 35, substitution and JPX deployment 25, packaging and adop synchronization 20, troubleshooting log 10, documentation 10 |
