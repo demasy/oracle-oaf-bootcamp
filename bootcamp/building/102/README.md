@@ -11,13 +11,6 @@
 - Manage confirmation workflows with dialog pages
 - Build advanced tables with inline record creation and deletion
 - Change web bean state dynamically during the page lifecycle
-- Create dynamic View Objects programmatically
-- Execute SQL statements and call PL/SQL procedures from OAF
-- Implement advanced UI components (HGrid, Train, Shuttle, etc.)
-- Integrate Flexfields (Key and Descriptive) in OAF pages
-- Implement file upload/download and data import/export
-- Build workflow-enabled OAF applications
-- Implement advanced debugging techniques
 
 ## Curriculum
 
@@ -37,9 +30,12 @@
 | [12] | B102-12 | [Flexfields, SPEL and Forms Integration](#12-flexfields-spel-and-forms-integration) | Extended | 6 |
 | [13] | B102-13 | [Client-Side Scripting and Page Modes](#13-client-side-scripting-and-page-modes) | Extended | 2 |
 | [14] | B102-14 | [Data Formatting and Validation](#14-data-formatting-and-validation) | Extended | 4 |
-| [15] | B102-15 | [Advanced Features and Integrations](#15-advanced-features-and-integrations) | Extended | 16 |
-| [16] | B102-16 | [Advanced Debugging](#16-advanced-debugging) | Extended | 3 |
-| [17] | B102-17 | [Projects and Final Assessment](#17-projects-and-final-assessment) | Required | 6 |
+| [15] | B102-15 | [Configuration and Defaults](#15-configuration-and-defaults) | Extended | 3 |
+| [16] | B102-16 | [Files, Documents and Data Exchange](#16-files-documents-and-data-exchange) | Extended | 6 |
+| [17] | B102-17 | [Navigation, Workflow and Background Processing](#17-navigation-workflow-and-background-processing) | Extended | 4 |
+| [18] | B102-18 | [Internationalization, Accessibility and Usability](#18-internationalization-accessibility-and-usability) | Extended | 3 |
+| [19] | B102-19 | [Advanced Debugging](#19-advanced-debugging) | Extended | 3 |
+| [20] | B102-20 | [Projects and Final Assessment](#20-projects-and-final-assessment) | Required | 6 |
 
 ## [1] Form Event Handling Lifecycle
 
@@ -48,7 +44,7 @@
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
 | B102-1.1 | Handling Form Submissions with processFormRequest | Video | Examples | processFormRequest(), button clicks, validation |
-| B102-1.2 | Implementing Common Controller Patterns | Video | Cookbook | Parameters, form values, navigation, messages |
+| B102-1.2 | Implementing Common Controller Patterns | Video | Patterns | Parameters, form values, navigation, messages |
 
 ## [2] Asynchronous UI via PPR
 
@@ -56,7 +52,7 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-2.1 | Enabling Partial Page Rendering (PPR) for Dynamic UI | Lab | PPR Tutorial | AJAX in OAF, PPR events, dynamic updates |
+| B102-2.1 | Enabling Partial Page Rendering (PPR) for Dynamic UI | Lab | Tutorial | AJAX in OAF, PPR events, dynamic updates |
 | B102-2.2 | Handling PPR Events on the Server | Lab | Tutorial | PPR event triggers, dynamic target regions, processFormRequest handling of PPR events |
 
 ## [3] List of Values (LOV) Engineering
@@ -65,7 +61,7 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-3.1 | Implementing List of Values (LOV) for Data Selection | Lab | LOV Tutorial | Standard, dependent, and external LOVs; listOfValues region, lovMap criteria and result mapping, messageLovInput |
+| B102-3.1 | Implementing List of Values (LOV) for Data Selection | Lab | Tutorial | Standard, dependent, and external LOVs; listOfValues region, lovMap criteria and result mapping, messageLovInput |
 | B102-3.2 | Implementing Dependent (Cascading) LOVs | Lab | Tutorial | Parent-child LOVs, criteria items, dynamic result mapping, clearing dependent fields |
 | B102-3.3 | Implementing LOV Auto-Completion and Look-Ahead | Lab | Tutorial | Foreign key validation, look-ahead dropdowns, auto-completion, popup LOV fallback |
 | B102-3.4 | Implementing LOV Action Buttons and Mappings | Lab | Tutorial | lovActionButton, lovActionMap, lovMap return values, actions inside the LOV window |
@@ -76,7 +72,7 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-4.1 | Handling Exceptions with the OAF Exception Hierarchy | Video | Exception Guide | OAException, checked/unchecked, propagation |
+| B102-4.1 | Handling Exceptions with the OAF Exception Hierarchy | Video | Guide | OAException, checked/unchecked, propagation |
 | B102-4.2 | Applying Exception Severity Levels and Inline Messages | Lab | Guide | OAException severities (ERROR, WARNING, INFORMATION, CONFIRMATION), inline message rendering; OAAttrValException, OARowValException and bundled exceptions |
 | B102-4.3 | Raising Bundle/Multiple Error Messages | Lab | Examples | Message bundles, multiple validation errors, user-friendly messages, i18n |
 
@@ -86,7 +82,7 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-5.1 | Providing User Feedback with Messages and Dialog Pages | Video | Message Library | Error messages, dialogs, tokens, i18n |
+| B102-5.1 | Providing User Feedback with Messages and Dialog Pages | Video | Reference | Error messages, dialogs, tokens, i18n |
 | B102-5.2 | Controlling Page Flow with Dialog Pages | Lab | Tutorial | OADialogPage, putDialogMessage(), pageContext.forwardImmediately(), confirmation workflows |
 
 ## [6] Advanced Table Operations
@@ -123,7 +119,7 @@
 | B102-8.3 | Adding Attributes to View Objects Programmatically | Lab | Examples | AttributeDef creation, data types, calculated & transient attributes |
 | B102-8.4 | Executing SQL Statements | Lab | Tutorial | Using JDBC in OAF, PreparedStatement, handling result sets, connections |
 | B102-8.5 | Calling PL/SQL Functions and Procedures | Lab | Examples | CallableStatement usage, IN/OUT parameters, function returns, error handling |
-| B102-8.6 | Applying Server-Side Best Practices | Video | Best Practices | PL/SQL vs Java, performance considerations, transaction management |
+| B102-8.6 | Applying Server-Side Best Practices | Video | Patterns | PL/SQL vs Java, performance considerations, transaction management |
 
 ## [9] Layout and Container Regions
 
@@ -195,7 +191,7 @@
 | B102-14.3 | Implementing Data Validations | Lab | Guide | Field-level validation, cross-field validation, business rule validation |
 | B102-14.4 | Implementing Validation Using Entity Expert | Lab | Tutorial | Entity Expert pattern, reusable validation, complex business rules, messages |
 
-## [15] Advanced Features and Integrations
+## [15] Configuration and Defaults
 
 **Module:** B102-15 | **Path:** Extended  
 
@@ -204,39 +200,60 @@
 | B102-15.1 | Setting Default Values | Lab | Tutorial | Text fields, number fields, date fields, techniques and best practices |
 | B102-15.2 | Understanding MDS Repository | Video | Guide | How page metadata is stored and queried, from a developer view; MDS architecture and administration are covered in Cust 101 |
 | B102-15.3 | Configuring Important Profile Options | Video | Reference | Key profile options, impact on behavior, setting programmatically |
-| B102-15.4 | Implementing Attachments Functionality | Lab | Tutorial | FND_ATTACHED_DOCUMENTS, configuration, UI integration, file storage; attachmentTable, attachmentLink, attachmentImage, messageInlineAttachment, entityMap, categoryMap, primaryKey |
-| B102-15.5 | Implementing Upload Files Functionality | Lab | Tutorial | File upload component, server-side handling, validation, storage options; messageFileUpload |
-| B102-15.6 | Implementing Import Data Functionality | Lab | Examples | CSV/Excel import, data validation, batch processing, error handling |
-| B102-15.7 | Implementing Export Data Functionality | Lab | Tutorial | Export formats (CSV, Excel, PDF), large data sets, streaming, performance |
-| B102-15.8 | Publishing Documents to the Document Catalog | Lab | Guide | Document set upload, catalog publishing, AntiSamy filtering and virus scanning on upload |
-| B102-15.9 | Displaying PDFs Inline and Downloading Files Securely | Lab | Tutorial | Rendering PDFs inline, streaming binary files, secure download handling; messageDownload |
-| B102-15.10 | Handling Browser Back Button | Lab | Guide | Back button issues, prevention techniques, transaction integrity |
-| B102-15.11 | Building Workflow-Enabled OAF Applications | Lab | Tutorial | Launching workflow, passing parameters, monitoring, embedding OAF in notification |
-| B102-15.12 | Implementing Deep Links and Bookmarkable URLs | Lab | Guide | RF.jsp, OA.jsp and OAD.jsp URLs, passing parameters, security of direct page access |
-| B102-15.13 | Submitting Concurrent Requests from OAF Pages | Lab | Tutorial | Declarative request submission, monitoring requests, passing parameters |
-| B102-15.14 | Supporting Multiple Languages and Internationalization | Lab | Guide | MLS and _TL tables, timezone conversion, client character encoding, right-to-left alignment |
-| B102-15.15 | Implementing Screen Reader Mode, Row Headers and Hot Keys | Lab | Checklist | Screen reader optimized mode, rowheadercol, keyboard accelerator keys |
-| B102-15.16 | Warning on Unsaved Changes with the Enhanced Save Model | Lab | Tutorial | Detecting uncommitted changes, warning before navigating away, save and discard flows |
 
-## [16] Advanced Debugging
+## [16] Files, Documents and Data Exchange
 
 **Module:** B102-16 | **Path:** Extended  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-16.1 | Using demasy-oaf Libraries for Debugging | Lab | Tutorial | Library overview, installation, debug utilities, performance profiling |
-| B102-16.2 | Applying Advanced Debugging Techniques | Lab | Guide | Remote debugging, production debugging, log analysis, performance profiling |
-| B102-16.3 | Using the About This Page and OAInfo.jsp Diagnostics | Lab | Guide | Page inspector, OAInfo.jsp, technology stack and profile option inspection, regionMap.xml |
+| B102-16.1 | Implementing Attachments Functionality | Lab | Tutorial | FND_ATTACHED_DOCUMENTS, configuration, UI integration, file storage; attachmentTable, attachmentLink, attachmentImage, messageInlineAttachment, entityMap, categoryMap, primaryKey |
+| B102-16.2 | Implementing Upload Files Functionality | Lab | Tutorial | File upload component, server-side handling, validation, storage options; messageFileUpload |
+| B102-16.3 | Implementing Import Data Functionality | Lab | Examples | CSV/Excel import, data validation, batch processing, error handling |
+| B102-16.4 | Implementing Export Data Functionality | Lab | Tutorial | Export formats (CSV, Excel, PDF), large data sets, streaming, performance |
+| B102-16.5 | Publishing Documents to the Document Catalog | Lab | Guide | Document set upload, catalog publishing, AntiSamy filtering and virus scanning on upload |
+| B102-16.6 | Displaying PDFs Inline and Downloading Files Securely | Lab | Tutorial | Rendering PDFs inline, streaming binary files, secure download handling; messageDownload |
 
-## [17] Projects and Final Assessment
+## [17] Navigation, Workflow and Background Processing
 
-**Module:** B102-17 | **Path:** Required  
+**Module:** B102-17 | **Path:** Extended  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-17.1 | Kicking Off and Planning Project 101 | Workshop | Project Guide | Setting up project structure, Git version control, database design, project planning, team collaboration setup; applied to Project 102 (the POS system is the Dev 103 capstone) (Duration: 2.5 Days) |
-| B102-17.2 | Building Project 102: Items with an Approval Cycle | Lab | Requirements | Multi-step approval workflow, complex business logic, workflow integration, advanced UI features, item creation form, multi-level approvals, email notifications, approval history, advanced search and reporting (Duration: 5 Days) |
-| B102-17.3 | Selecting the Final Assessment Project | Workshop | Assessment Guide | Comprehensive project requirements, choosing between Option A (Advanced HR Management System) or Option B (Procurement Request System), planning and timeline |
-| B102-17.4 | Building the Advanced HR Management System (Option A) | Lab | Project Spec | Employee self-service portal, manager approval workflows, workflow integration, reports and dashboards, complete HRIS functionality |
-| B102-17.5 | Building the Procurement Request System (Option B) | Lab | Project Spec | Purchase requisition creation, multi-level approval process, budget validation logic, PO integration, procurement workflow |
-| B102-17.6 | Applying the Assessment Criteria and Deliverables | Workshop | Rubric | All Level 102 concepts (40%), Code quality and standards (25%), Architecture and design (20%), Documentation (10%), Innovation and extras (5%) |
+| B102-17.1 | Handling Browser Back Button | Lab | Guide | Back button issues, prevention techniques, transaction integrity |
+| B102-17.2 | Building Workflow-Enabled OAF Applications | Lab | Tutorial | Launching workflow, passing parameters, monitoring, embedding OAF in notification |
+| B102-17.3 | Implementing Deep Links and Bookmarkable URLs | Lab | Guide | RF.jsp, OA.jsp and OAD.jsp URLs, passing parameters, security of direct page access |
+| B102-17.4 | Submitting Concurrent Requests from OAF Pages | Lab | Tutorial | Declarative request submission, monitoring requests, passing parameters |
+
+## [18] Internationalization, Accessibility and Usability
+
+**Module:** B102-18 | **Path:** Extended  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| B102-18.1 | Supporting Multiple Languages and Internationalization | Lab | Guide | MLS and _TL tables, timezone conversion, client character encoding, right-to-left alignment |
+| B102-18.2 | Implementing Screen Reader Mode, Row Headers and Hot Keys | Lab | Checklist | Screen reader optimized mode, rowheadercol, keyboard accelerator keys |
+| B102-18.3 | Warning on Unsaved Changes with the Enhanced Save Model | Lab | Tutorial | Detecting uncommitted changes, warning before navigating away, save and discard flows |
+
+## [19] Advanced Debugging
+
+**Module:** B102-19 | **Path:** Extended  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| B102-19.1 | Using demasy-oaf Libraries for Debugging | Lab | Tutorial | Library overview, installation, debug utilities, performance profiling |
+| B102-19.2 | Applying Advanced Debugging Techniques | Lab | Guide | Remote debugging, production debugging, log analysis, performance profiling |
+| B102-19.3 | Using the About This Page and OAInfo.jsp Diagnostics | Lab | Guide | Page inspector, OAInfo.jsp, technology stack and profile option inspection, regionMap.xml |
+
+## [20] Projects and Final Assessment
+
+**Module:** B102-20 | **Path:** Required  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| B102-20.1 | Kicking Off and Planning Project 101 | Workshop | Guide | Setting up project structure, Git version control, database design, project planning, team collaboration setup; applied to Project 102 (the POS system is the Dev 103 capstone) (Duration: 2.5 Days) |
+| B102-20.2 | Building Project 102: Items with an Approval Cycle | Lab | Project | Multi-step approval workflow, complex business logic, workflow integration, advanced UI features, item creation form, multi-level approvals, email notifications, approval history, advanced search and reporting (Duration: 5 Days) |
+| B102-20.3 | Selecting the Final Assessment Project | Workshop | Guide | Comprehensive project requirements, choosing between Option A (Advanced HR Management System) or Option B (Procurement Request System), planning and timeline |
+| B102-20.4 | Building the Advanced HR Management System (Option A) | Lab | Project | Employee self-service portal, manager approval workflows, workflow integration, reports and dashboards, complete HRIS functionality |
+| B102-20.5 | Building the Procurement Request System (Option B) | Lab | Project | Purchase requisition creation, multi-level approval process, budget validation logic, PO integration, procurement workflow |
+| B102-20.6 | Applying the Assessment Criteria and Deliverables | Workshop | Rubric | All Level 102 concepts (40%), Code quality and standards (25%), Architecture and design (20%), Documentation (10%), Innovation and extras (5%) |
