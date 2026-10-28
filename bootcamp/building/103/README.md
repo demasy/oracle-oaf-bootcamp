@@ -18,8 +18,8 @@
 | :-: | :-- | :-- | :-: | :-: |
 | [1] | B103-1 | [MDS and BC4J Deployment](#1-mds-and-bc4j-deployment) | Core | 2 |
 | [2] | B103-2 | [AOL Security and Page Registration](#2-aol-security-and-page-registration) | Core | 2 |
-| [3] | B103-3 | [Enterprise Instrumentation and Log Management](#3-enterprise-instrumentation-and-log-management) | Core | 3 |
-| [4] | B103-4 | [R12.2 Online Patching and Packaging](#4-r122-online-patching-and-packaging) | Core | 3 |
+| [3] | B103-3 | [Enterprise Instrumentation and Log Management](#3-enterprise-instrumentation-and-log-management) | Core | 5 |
+| [4] | B103-4 | [R12.2 Online Patching and Packaging](#4-r122-online-patching-and-packaging) | Core | 4 |
 | [5] | B103-5 | [Project Setup and Planning](#5-project-setup-and-planning) | Required | 5 |
 | [6] | B103-6 | [Store Management Module](#6-store-management-module) | Required | 5 |
 | [7] | B103-7 | [Product and Branch Management](#7-product-and-branch-management) | Required | 4 |
@@ -27,10 +27,12 @@
 | [9] | B103-9 | [Advanced Features and Polish](#9-advanced-features-and-polish) | Required | 3 |
 | [10] | B103-10 | [Deployment and Presentation](#10-deployment-and-presentation) | Required | 4 |
 | [11] | B103-11 | [Final Assessment](#11-final-assessment) | Required | 6 |
-| [12] | B103-12 | [Advanced Tables, Grids and Visualization](#12-advanced-tables-grids-and-visualization) | Extended | 7 |
-| [13] | B103-13 | [Advanced Search and Navigation](#13-advanced-search-and-navigation) | Extended | 6 |
-| [14] | B103-14 | [State Management, Back Button and Security](#14-state-management-back-button-and-security) | Extended | 7 |
-| [15] | B103-15 | [REST and Product Integration](#15-rest-and-product-integration) | Extended | 6 |
+| [12] | B103-12 | [Advanced Tables, Grids and Visualization](#12-advanced-tables-grids-and-visualization) | Extended | 9 |
+| [13] | B103-13 | [Advanced Search and Navigation](#13-advanced-search-and-navigation) | Extended | 10 |
+| [14] | B103-14 | [State Management, Back Button and Security](#14-state-management-back-button-and-security) | Extended | 9 |
+| [15] | B103-15 | [Security Hardening](#15-security-hardening) | Extended | 4 |
+| [16] | B103-16 | [REST and Product Integration](#16-rest-and-product-integration) | Extended | 6 |
+| [17] | B103-17 | [Portal, Analytics and Service Testing](#17-portal-analytics-and-service-testing) | Extended | 3 |
 
 ## [1] MDS and BC4J Deployment
 
@@ -59,6 +61,8 @@
 | B103-3.1 | Configuring the FND_LOG Framework and Profile Options | Lab | Guide | FND: Debug Log Enabled, FND: Debug Log Level, FND_LOG_MESSAGES |
 | B103-3.2 | Writing Diagnostics from Code | Lab | Tutorial | pageContext.writeDiagnostics(), screen logging, performance tracing; SQL trace with event 10046 |
 | B103-3.3 | Purging Logs with FNDLGPRG | Lab | Guide | Concurrent program, FND_LOG_ADMIN package, table storage |
+| B103-3.4 | Tracing SQL with Event 10046 | Lab | Guide | SQL trace with event 10046, reading trace output, finding slow statements |
+| B103-3.5 | Scheduling Log Purges with FNDLGPRG | Lab | Guide | FNDLGPRG concurrent program schedule, FND_LOG_ADMIN, log table size checks |
 
 ## [4] R12.2 Online Patching and Packaging
 
@@ -69,6 +73,7 @@
 | B103-4.1 | Using Online Patching (adop) Fundamentals | Video | Diagram | Run edition versus patch edition, patch phases, classpath configuration |
 | B103-4.2 | Compiling and Archiving with adcgnjar | Lab | Guide | $AD_TOP/bin/adcgnjar, customall.jar, signed archives under $JAVA_TOP |
 | B103-4.3 | Scripting Repeatable Deployments | Lab | Project | Environment variables such as $AD_APPS_JDBC_URL in place of hardcoded connection strings |
+| B103-4.4 | Practicing Scripted Deployment on R12.2 | Lab | Scripts | Repeatable scripted deployment with environment variables on an R12.2 instance |
 
 ## [5] Project Setup and Planning
 
@@ -162,6 +167,8 @@
 | B103-12.5 | Building HGrid and Tree Regions | Lab | Project | OAHGridBean, OATreeBean, focus and hierarchy columns, child row retrieval |
 | B103-12.6 | Building Charts, Graphs and Infotiles | Lab | Guide | BI beans and JET transition, Gantt, Infotiles *(verify)* |
 | B103-12.7 | Building Masonry Layout Dashboards | Lab | Guide | Grid-based responsive dashboards, status tiles, KPI cards *(verify)* |
+| B103-12.8 | Building Gantt Charts | Lab | Guide | Gantt chart region bound to project schedule data |
+| B103-12.9 | Practicing Masonry Dashboards | Lab | Guide | Masonry layout with status tiles and KPI cards *(verify)* |
 
 ## [13] Advanced Search and Navigation
 
@@ -175,6 +182,10 @@
 | B103-13.4 | Implementing Quick Search and Side Navigation Search | Lab | Guide | Compact search inputs in global headers and side navigation |
 | B103-13.5 | Using Navigation Components | Lab | Guide | Trains, subtabs, accordions, hide/show, popups, shuttles |
 | B103-13.6 | Implementing Declarative Page Flows | Lab | Guide | Destination function and workflow page flows, transaction state |
+| B103-13.7 | Building Accordion Navigation | Lab | Guide | Accordion regions and hide/show navigation containers |
+| B103-13.8 | Practicing Infotile-Driven Search | Lab | Project | Infotile summary counts filtering a results table |
+| B103-13.9 | Practicing Quick Search | Lab | Guide | Quick search inputs in headers and side navigation |
+| B103-13.10 | Practicing Declarative Page Flows | Lab | Project | Declarative page flows with transaction state and save for later |
 
 ## [14] State Management, Back Button and Security
 
@@ -189,16 +200,39 @@
 | B103-14.5 | Supporting the Browser Back Button | Lab | Guide | Page instance IDs, transaction units, back-button detection |
 | B103-14.6 | Securing Pages, Functions and Data | Lab | Guide | Function security, data grants, page access tracking |
 | B103-14.7 | Hardening Input Against Attacks | Lab | Guide | XSS scanning, AntiSamy HTML filtering, virus scanning, frame busting |
+| B103-14.8 | Applying Polymorphic Entity Objects | Lab | Guide | Polymorphic entity objects with subtype-specific validation |
+| B103-14.9 | Practicing PL/SQL Entity Objects | Lab | Project | PL/SQL entity objects wrapping a legacy table API with key generation and locking |
 
-## [15] REST and Product Integration
+## [15] Security Hardening
 
 **Module:** B103-15 | **Path:** Extended  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B103-15.1 | Using the OAF REST Servlet | Lab | Guide | Exposing AM methods, service data objects, testing business service objects; BSO API tester |
-| B103-15.2 | Using Application Web Services | Video | Guide | Business service objects, attachments service, home page service |
-| B103-15.3 | Consuming External SOAP and REST Services | Lab | Project | Calling external services from application module code, error handling, timeouts |
-| B103-15.4 | Integrating Forms and Workflow | Lab | Guide | Launching Forms from OAF and back, worklist notifications; JTT application launch and parameter passing *(verify the term and scope)* |
-| B103-15.5 | Embedding Portal Content and Analytics | Video | Guide | Portlet integration, embedding analytics *(verify)*; OBIEE analytics embedding |
-| B103-15.6 | Reviewing and Approving Workflow Notifications from OAF | Lab | Guide | Notification pages, approve and reject actions, worklist review |
+| B103-15.1 | Tracking Page Access | Lab | Guide | Page access tracking, reviewing who opened which page |
+| B103-15.2 | Scanning Pages for Cross-Site Scripting | Lab | Checklist | XSS scanning, AntiSamy HTML filtering and fixing findings |
+| B103-15.3 | Applying Frame Busting Protection | Lab | Guide | Frame busting against clickjacking and framed pages |
+| B103-15.4 | Scanning Uploaded Files for Viruses | Lab | Guide | Virus scanning on file upload, rejecting infected files |
+
+## [16] REST and Product Integration
+
+**Module:** B103-16 | **Path:** Extended  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| B103-16.1 | Using the OAF REST Servlet | Lab | Guide | Exposing AM methods, service data objects, testing business service objects; BSO API tester |
+| B103-16.2 | Using Application Web Services | Video | Guide | Business service objects, attachments service, home page service |
+| B103-16.3 | Consuming External SOAP and REST Services | Lab | Project | Calling external services from application module code, error handling, timeouts |
+| B103-16.4 | Integrating Forms and Workflow | Lab | Guide | Launching Forms from OAF and back, worklist notifications; JTT application launch and parameter passing *(verify the term and scope)* |
+| B103-16.5 | Embedding Portal Content and Analytics | Video | Guide | Portlet integration, embedding analytics *(verify)*; OBIEE analytics embedding |
+| B103-16.6 | Reviewing and Approving Workflow Notifications from OAF | Lab | Guide | Notification pages, approve and reject actions, worklist review |
+
+## [17] Portal, Analytics and Service Testing
+
+**Module:** B103-17 | **Path:** Extended  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| B103-17.1 | Publishing OAF Regions as Portlets | Lab | Guide | Portlet publishing to WebCenter Portal and WSRP portals |
+| B103-17.2 | Embedding OBIEE Analytics | Lab | Guide | OBIEE analytics embedded in an OAF page *(verify)* |
+| B103-17.3 | Testing Services with the BSO API Tester | Lab | Guide | BSO tester, testing business service objects and REST calls |

@@ -20,16 +20,17 @@
 | [2] | B101-2 | [OAF Architecture and MVC Paradigms](#2-oaf-architecture-and-mvc-paradigms) | Core | 7 |
 | [3] | B101-3 | [IDE Setup and Project Topology](#3-ide-setup-and-project-topology) | Core | 10 |
 | [4] | B101-4 | [Application Module Construction](#4-application-module-construction) | Core | 5 |
-| [5] | B101-5 | [View Object Development](#5-view-object-development) | Core | 5 |
+| [5] | B101-5 | [View Object Development](#5-view-object-development) | Core | 6 |
 | [6] | B101-6 | [Entity Object and DML Layer](#6-entity-object-and-dml-layer) | Core | 3 |
 | [7] | B101-7 | [Declarative Page Layouts](#7-declarative-page-layouts) | Core | 14 |
-| [8] | B101-8 | [Controller Request Processing](#8-controller-request-processing) | Core | 7 |
-| [9] | B101-9 | [Master-Detail Relationships](#9-master-detail-relationships) | Required | 2 |
-| [10] | B101-10 | [JDeveloper Debugging](#10-jdeveloper-debugging) | Required | 2 |
-| [11] | B101-11 | [Security Implementation](#11-security-implementation) | Extended | 4 |
-| [12] | B101-12 | [Development Standards and Best Practices](#12-development-standards-and-best-practices) | Extended | 7 |
-| [13] | B101-13 | [OAF Application Deployment](#13-oaf-application-deployment) | Required | 4 |
-| [14] | B101-14 | [Jobs and Positions Management Capstone](#14-jobs-and-positions-management-capstone) | Required | 6 |
+| [8] | B101-8 | [Reusable UI Practice](#8-reusable-ui-practice) | Extended | 7 |
+| [9] | B101-9 | [Controller Request Processing](#9-controller-request-processing) | Core | 7 |
+| [10] | B101-10 | [Master-Detail Relationships](#10-master-detail-relationships) | Required | 2 |
+| [11] | B101-11 | [JDeveloper Debugging](#11-jdeveloper-debugging) | Required | 2 |
+| [12] | B101-12 | [Security Implementation](#12-security-implementation) | Extended | 7 |
+| [13] | B101-13 | [Development Standards and Best Practices](#13-development-standards-and-best-practices) | Extended | 7 |
+| [14] | B101-14 | [OAF Application Deployment](#14-oaf-application-deployment) | Required | 4 |
+| [15] | B101-15 | [Jobs and Positions Management Capstone](#15-jobs-and-positions-management-capstone) | Required | 6 |
 
 ## [1] BootCamp Orientation and Success Path
 
@@ -96,6 +97,7 @@
 | B101-5.3 | Implementing Read-Only View Objects with SQL | Lab | Tutorial | SQL-based VOs, expert mode, joins, optimization |
 | B101-5.4 | Configuring Bind Variables and View Criteria | Lab | Tutorial | Named bind variables, view criteria, dynamic WHERE clauses, preventing SQL injection |
 | B101-5.5 | Linking View Objects with View Links and Associations | Video | Reference | Master-detail, FK relationships, domains |
+| B101-5.6 | Practicing Bind Variables in View Objects | Lab | Tutorial | Bind variables and view criteria behind a search page, avoiding SQL injection |
 
 ## [6] Entity Object and DML Layer
 
@@ -128,83 +130,100 @@
 | B101-7.13 | Applying CSS Styling and Reusable Attribute Sets | Video | Guide | CSS styling, attribute sets, theming |
 | B101-7.14 | Implementing Navigation with Breadcrumbs and Menus | Video | Guide | Breadcrumb configuration, menu integration; locator element |
 
-## [8] Controller Request Processing
+## [8] Reusable UI Practice
 
-**Module:** B101-8 | **Path:** Core  
-
-| Code | Lecture | Format | Resource | Notes |
-| :-- | :-------- | :-: | :-- | :---- |
-| B101-8.1 | Understanding Controller Architecture and User Actions | Video | Guide | MVC role, lifecycle, structure, best practices |
-| B101-8.2 | Handling GET Requests and Page Initialization | Video | Patterns | processRequest(), initialization, default values |
-| B101-8.3 | Using the Controller API: pageContext and WebBeans | Video | Reference | pageContext, attributes, WebBeans, transactions |
-| B101-8.4 | Comparing Parameter Passing Strategies | Video | Diagram | Request, Transaction, Session scopes comparison |
-| B101-8.5 | Using Request Parameters for Single-Page Scope | Lab | Tutorial | Token-based, navigation, lifecycle, examples |
-| B101-8.6 | Managing Transaction Parameters Across Pages | Lab | Tutorial | Multi-page flow, retention, cleanup |
-| B101-8.7 | Implementing Session Parameters for User State | Lab | Tutorial | Session scope, persistence, memory, best practices |
-
-## [9] Master-Detail Relationships
-
-**Module:** B101-9 | **Path:** Required  
+**Module:** B101-8 | **Path:** Extended  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B101-9.1 | Understanding Master-Detail with View Links | Video | Guide | Parent-child relationships, View Links, use cases |
-| B101-9.2 | Implementing Master-Detail User Interfaces | Lab | Tutorial | Region configuration, synchronization, cascading |
+| B101-8.1 | Building Smart Poplists with LOV Choice Lists | Lab | Tutorial | Smart poplist, messageLovChoice, combining a searchable LOV with a customizable poplist |
+| B101-8.2 | Practicing Shared Regions Across Pages | Lab | Project | Shared regions reused across pages, shared pages and items, sharing logistics |
+| B101-8.3 | Practicing Spacers, Separators and Images in Layouts | Lab | Tutorial | Spacers, separators and images placed in forms and regions |
+| B101-8.4 | Passing Form Parameters Between Pages | Lab | Tutorial | formParameter, formValue and servletInclude in a multi-page flow |
+| B101-8.5 | Applying a Look and Feel to a Page | Lab | Guide | Look-and-feel standards applied to a finished page, BLAF checks |
+| B101-8.6 | Practicing messageComponentLayout Forms | Lab | Tutorial | messageComponentLayout columns and rows, labeled fields and alignment |
+| B101-8.7 | Practicing Page Button Bars | Lab | Tutorial | pageButtonBar with Save, Apply and Cancel actions and submit handling |
 
-## [10] JDeveloper Debugging
+## [9] Controller Request Processing
+
+**Module:** B101-9 | **Path:** Core  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| B101-9.1 | Understanding Controller Architecture and User Actions | Video | Guide | MVC role, lifecycle, structure, best practices |
+| B101-9.2 | Handling GET Requests and Page Initialization | Video | Patterns | processRequest(), initialization, default values |
+| B101-9.3 | Using the Controller API: pageContext and WebBeans | Video | Reference | pageContext, attributes, WebBeans, transactions |
+| B101-9.4 | Comparing Parameter Passing Strategies | Video | Diagram | Request, Transaction, Session scopes comparison |
+| B101-9.5 | Using Request Parameters for Single-Page Scope | Lab | Tutorial | Token-based, navigation, lifecycle, examples |
+| B101-9.6 | Managing Transaction Parameters Across Pages | Lab | Tutorial | Multi-page flow, retention, cleanup |
+| B101-9.7 | Implementing Session Parameters for User State | Lab | Tutorial | Session scope, persistence, memory, best practices |
+
+## [10] Master-Detail Relationships
 
 **Module:** B101-10 | **Path:** Required  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B101-10.1 | Using Console and Logging Debugging Tools | Video | Guide | Console output, log files, diagnostic logging |
-| B101-10.2 | Debugging with the JDeveloper Debugger | Lab | Tutorial | Breakpoints, step-through, variables, remote |
+| B101-10.1 | Understanding Master-Detail with View Links | Video | Guide | Parent-child relationships, View Links, use cases |
+| B101-10.2 | Implementing Master-Detail User Interfaces | Lab | Tutorial | Region configuration, synchronization, cascading |
 
-## [11] Security Implementation
+## [11] JDeveloper Debugging
 
-**Module:** B101-11 | **Path:** Extended  
+**Module:** B101-11 | **Path:** Required  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B101-11.1 | Distinguishing Authentication from Authorization in OAF | Video | Guide | Authentication, authorization, function security |
-| B101-11.2 | Implementing Function Security for Page Access | Lab | Tutorial | Function registration, menu setup, responsibilities |
-| B101-11.3 | Applying Data Security for Row-Level Protection | Video | Patterns | Multi-Org, row-level security, VPD, filtering |
-| B101-11.4 | Understanding Built-In Protection Against HTML Tampering | Video | Guide | Automatic guards against HTML tampering and common hacking vectors, what the framework protects by default |
+| B101-11.1 | Using Console and Logging Debugging Tools | Video | Guide | Console output, log files, diagnostic logging |
+| B101-11.2 | Debugging with the JDeveloper Debugger | Lab | Tutorial | Breakpoints, step-through, variables, remote |
 
-## [12] Development Standards and Best Practices
+## [12] Security Implementation
 
 **Module:** B101-12 | **Path:** Extended  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B101-12.1 | Understanding Why Development Standards Matter | Video | Guide | Maintainability, team collaboration, Oracle support, upgrades |
-| B101-12.2 | Following OAF Coding Standards and Terminology | Video | Guide | Naming conventions, package structure, comments, organization |
-| B101-12.3 | Comparing Oracle, Project and Industry Standards | Video | Diagram | Oracle standards, project-specific, industry best practices |
-| B101-12.4 | Organizing Files and Packages in OAF Projects | Video | Reference | File types (.xml, .java, .class), package naming, MDS structure |
-| B101-12.5 | Understanding the OAF Directory Structure | Video | Diagram | $JAVA_TOP structure, workspace organization, resource files |
-| B101-12.6 | Using Import and Export Utilities for Code Management | Lab | Tutorial | Code extraction from database, importing to JDeveloper, version control; JDeveloper-level only, command-line importers are covered in Dev 103 |
-| B101-12.7 | Designing Common Page Patterns and Use Cases | Video | Patterns | Search pages, Create/Update pages, Detail/drill-down, List pages |
+| B101-12.1 | Distinguishing Authentication from Authorization in OAF | Video | Guide | Authentication, authorization, function security |
+| B101-12.2 | Implementing Function Security for Page Access | Lab | Tutorial | Function registration, menu setup, responsibilities |
+| B101-12.3 | Applying Data Security for Row-Level Protection | Video | Patterns | Multi-Org, row-level security, VPD, filtering |
+| B101-12.4 | Understanding Built-In Protection Against HTML Tampering | Video | Guide | Automatic guards against HTML tampering and common hacking vectors, what the framework protects by default |
+| B101-12.5 | Testing Protection Against HTML Tampering | Lab | Checklist | Tampering attempts on hidden fields and URLs, verifying HTML tampering protection |
+| B101-12.6 | Practicing Data Security with Row-Level Grants | Lab | Tutorial | Data security grants and row-level filtering on a search page |
+| B101-12.7 | Practicing Authentication and Session Handling | Lab | Guide | Authentication in EBS, login flow and session timeout behavior |
 
-## [13] OAF Application Deployment
+## [13] Development Standards and Best Practices
 
-**Module:** B101-13 | **Path:** Required  
+**Module:** B101-13 | **Path:** Extended  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B101-13.1 | Following the OAF Deployment Steps from Build to Bounce | Video | Checklist | Compilation, packaging, file transfer, import to MDS, bounce Apache |
-| B101-13.2 | Deploying an OAF Application on R12.1.x | Lab | Tutorial | Step-by-step deployment, file locations, import commands, verification |
-| B101-13.3 | Deploying an OAF Application on R12.2.x | Lab | Tutorial | Deployment differences on R12.2 for a training instance; the dual file system, adop and online patching are covered in Dev 103 |
-| B101-13.4 | Completing Post-Deployment Configuration | Lab | Guide | Function registration, menu setup, responsibility assignment, testing |
+| B101-13.1 | Understanding Why Development Standards Matter | Video | Guide | Maintainability, team collaboration, Oracle support, upgrades |
+| B101-13.2 | Following OAF Coding Standards and Terminology | Video | Guide | Naming conventions, package structure, comments, organization |
+| B101-13.3 | Comparing Oracle, Project and Industry Standards | Video | Diagram | Oracle standards, project-specific, industry best practices |
+| B101-13.4 | Organizing Files and Packages in OAF Projects | Video | Reference | File types (.xml, .java, .class), package naming, MDS structure |
+| B101-13.5 | Understanding the OAF Directory Structure | Video | Diagram | $JAVA_TOP structure, workspace organization, resource files |
+| B101-13.6 | Using Import and Export Utilities for Code Management | Lab | Tutorial | Code extraction from database, importing to JDeveloper, version control; JDeveloper-level only, command-line importers are covered in Dev 103 |
+| B101-13.7 | Designing Common Page Patterns and Use Cases | Video | Patterns | Search pages, Create/Update pages, Detail/drill-down, List pages |
 
-## [14] Jobs and Positions Management Capstone
+## [14] OAF Application Deployment
 
 **Module:** B101-14 | **Path:** Required  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B101-14.1 | Creating Database Objects and Entities | Lab | Scripts | Tables, sequences, entity objects, WHO columns |
-| B101-14.2 | Building View Objects and the Application Module | Lab | Project | Job and position VOs, view link, root AM |
-| B101-14.3 | Building Job Search and Job Details Pages | Lab | Project | Search page, create/update page, controllers |
-| B101-14.4 | Implementing Position Maintenance (Master-Detail) | Lab | Project | Detail table, add/delete rows, validation |
-| B101-14.5 | Testing the Application and Deploying It to EBS | Lab | Checklist | Test plan, deployment to EBS, reflection |
-| B101-14.6 | Assessing the Capstone Against the 100-Point Rubric | Workshop | Rubric | 100 points: functionality 40, code quality 30, UI 20, documentation 10 |
+| B101-14.1 | Following the OAF Deployment Steps from Build to Bounce | Video | Checklist | Compilation, packaging, file transfer, import to MDS, bounce Apache |
+| B101-14.2 | Deploying an OAF Application on R12.1.x | Lab | Tutorial | Step-by-step deployment, file locations, import commands, verification |
+| B101-14.3 | Deploying an OAF Application on R12.2.x | Lab | Tutorial | Deployment differences on R12.2 for a training instance; the dual file system, adop and online patching are covered in Dev 103 |
+| B101-14.4 | Completing Post-Deployment Configuration | Lab | Guide | Function registration, menu setup, responsibility assignment, testing |
+
+## [15] Jobs and Positions Management Capstone
+
+**Module:** B101-15 | **Path:** Required  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| B101-15.1 | Creating Database Objects and Entities | Lab | Scripts | Tables, sequences, entity objects, WHO columns |
+| B101-15.2 | Building View Objects and the Application Module | Lab | Project | Job and position VOs, view link, root AM |
+| B101-15.3 | Building Job Search and Job Details Pages | Lab | Project | Search page, create/update page, controllers |
+| B101-15.4 | Implementing Position Maintenance (Master-Detail) | Lab | Project | Detail table, add/delete rows, validation |
+| B101-15.5 | Testing the Application and Deploying It to EBS | Lab | Checklist | Test plan, deployment to EBS, reflection |
+| B101-15.6 | Assessing the Capstone Against the 100-Point Rubric | Workshop | Rubric | 100 points: functionality 40, code quality 30, UI 20, documentation 10 |

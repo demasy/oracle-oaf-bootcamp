@@ -13,12 +13,12 @@
 
 | Section | Module | Title | Path | Lectures |
 | :-: | :-- | :-- | :-: | :-: |
-| [1] | C102-1 | [Controller and LOV Extensions](#1-controller-and-lov-extensions) | Core | 2 |
-| [2] | C102-2 | [Business Component Extensions](#2-business-component-extensions) | Core | 3 |
+| [1] | C102-1 | [Controller and LOV Extensions](#1-controller-and-lov-extensions) | Core | 4 |
+| [2] | C102-2 | [Business Component Extensions](#2-business-component-extensions) | Core | 6 |
 | [3] | C102-3 | [Substitution and Troubleshooting](#3-substitution-and-troubleshooting) | Core | 3 |
 | [4] | C102-4 | [Packaging and R12.2 Synchronization](#4-packaging-and-r122-synchronization) | Core | 3 |
 | [5] | C102-5 | [Extension Architecture and Standards](#5-extension-architecture-and-standards) | Required | 4 |
-| [6] | C102-6 | [Release, Promotion and Assessment](#6-release-promotion-and-assessment) | Required | 4 |
+| [6] | C102-6 | [Release, Promotion and Assessment](#6-release-promotion-and-assessment) | Required | 5 |
 
 ## [1] Controller and LOV Extensions
 
@@ -28,6 +28,8 @@
 | :-- | :-------- | :-: | :-- | :---- |
 | C102-1.1 | Extending Controllers | Lab | Project | Extending `processRequest` and `processFormRequest`, attaching through personalization |
 | C102-1.2 | Extending LOVs Programmatically | Lab | Project | LOV controller extensions, VO substitution for LOV queries |
+| C102-1.3 | Practicing LOV Extensions with View Object Substitution | Lab | Project | Extending LOVs with a controller extension and view object substitution |
+| C102-1.4 | Extending Controllers with Custom Event Handling | Lab | Project | Extending controllers, super calls to processRequest and processFormRequest |
 
 ## [2] Business Component Extensions
 
@@ -38,6 +40,9 @@
 | C102-2.1 | Extending View Objects | Lab | Project | Transient and mapped attributes, SQL changes, query overrides |
 | C102-2.2 | Extending Entity Objects | Lab | Project | Default values, custom validation rules |
 | C102-2.3 | Extending Application Modules | Lab | Project | Custom transaction methods, nested AM extensions |
+| C102-2.4 | Extending View Objects with Custom Queries | Lab | Project | Extending view objects: SQL changes, bind parameters and transient attributes |
+| C102-2.5 | Extending Entity Objects with Custom Validation | Lab | Project | Extending entity objects: extra columns, validation and DML overrides |
+| C102-2.6 | Extending Application Modules with Custom Methods | Lab | Project | Extending application modules with custom transaction methods |
 
 ## [3] Substitution and Troubleshooting
 
@@ -79,4 +84,5 @@
 | C102-6.1 | Using Import Tools | Lab | Guide | XMLImporter for pages and regions, attribute sets |
 | C102-6.2 | Registering Functions and Menus | Lab | Guide | Register functions, attach to menus, assign responsibilities |
 | C102-6.3 | Promoting Customizations Between Environments | Video | Guide | Dev, test and production migration, patching, version control |
-| C102-6.4 | Completing the Extension Project | Workshop | Rubric | Extend a seeded page with a substitution and a controller, then deploy it. Proposed criteria: extension correctness 35, substitution and JPX deployment 25, packaging and adop synchronization 20, troubleshooting log 10, documentation 10 |
+| C102-6.4 | Promoting Customizations Through Test and Production | Lab | Checklist | Promoting customizations with migration steps, verification and rollback |
+| C102-6.5 | Completing the Extension Project | Workshop | Rubric | Extend a seeded page with a substitution and a controller, then deploy it. Proposed criteria: extension correctness 35, substitution and JPX deployment 25, packaging and adop synchronization 20, troubleshooting log 10, documentation 10 |
