@@ -5,7 +5,7 @@
 **Code:** DL-OAF-C-102  
 **Duration:** 10-15 Days (proposed, to be confirmed)  
 **Level:** Advanced  
-**Prerequisites:** Level 102, Cust 101, the Dev 103 production-readiness core (DEV103-1 to DEV103-7) and advanced Java  
+**Prerequisites:** Level 102, Cust 101, the Dev 103 production-readiness core (B103-1 to B103-7) and advanced Java  
 **Scaffolding Level:** Moderate (40% guidance)
 
 ### Cust 102 Learning Outcomes
