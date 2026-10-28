@@ -25,9 +25,9 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| C101-001.001 | Distinguishing Personalization, Extension and Modification | Video | Diagram | Personalization, extension, modification; what is supported |
+| C101-001.001 | Comparing Personalization, Extension and Modification | Video | Diagram | Personalization, extension, modification; what is supported |
 | C101-001.002 | Preserving Personalizations Through Upgrades | Video | Diagram | Delta overlays stored apart from base metadata, survival across patches |
-| C101-001.003 | Understanding the MDS Repository | Video | Guide | Repository tables, document paths (`/oracle/apps/...`), XML documents |
+| C101-001.003 | Understanding the MDS Repository Architecture | Video | Guide | Repository tables, document paths (`/oracle/apps/...`), XML documents |
 | C101-001.004 | Implementing Personalizations in OAF | Video | Guide | User-level, admin-level customization, personalization limits |
 
 ## [2] Personalization Hierarchy and Administration
@@ -39,7 +39,7 @@
 | C101-002.001 | Applying Personalization Levels and Precedence | Lab | Guide | Function, organization, responsibility, site and localization levels |
 | C101-002.002 | Enabling Personalization | Lab | Guide | Personalization profile options, Functional Administrator responsibility |
 | C101-002.003 | Clearing MDS Caches | Lab | Guide | Functional Administrator cache invalidation, seeing personalization changes immediately |
-| C101-002.004 | Practicing Personalization Levels | Lab | Tutorial | Personalization levels applied at site, responsibility and user with precedence results |
+| C101-002.004 | Comparing Site, Responsibility and User Levels | Lab | Tutorial | Personalization levels applied at site, responsibility and user with precedence results |
 
 ## [3] Declarative Customization of Pages, Regions and LOVs
 
@@ -52,8 +52,8 @@
 | C101-003.003 | Personalizing Flexfields and Tables | Lab | Guide | DFF/KFF rendering, row counts, export buttons, accessibility columns |
 | C101-003.004 | Injecting Regions Declaratively | Lab | Project | Inject stack layouts, tables, buttons and extended regions into seeded pages |
 | C101-003.005 | Personalizing LOVs | Lab | Guide | Restrict LOV result sets, change list parameters, alter displays declaratively |
-| C101-003.006 | Practicing Injecting Regions into Seeded Pages | Lab | Project | Injecting regions with stack layouts and buttons into a seeded page |
-| C101-003.007 | Practicing Personalizing LOVs in Seeded Pages | Lab | Tutorial | Personalizing LOVs: restricting results and changing list parameters |
+| C101-003.006 | Adding Regions to Seeded Pages with Personalization | Lab | Project | Injecting regions with stack layouts and buttons into a seeded page |
+| C101-003.007 | Restricting LOV Results in Seeded Pages | Lab | Tutorial | Personalizing LOVs: restricting results and changing list parameters |
 
 ## [4] Personalization Migration
 
@@ -73,5 +73,5 @@
 | :-- | :-------- | :-: | :-- | :---- |
 | C101-005.001 | Using About This Page Diagnostics | Lab | Guide | Page context, active personalizations, technology stack, profile options |
 | C101-005.002 | Managing Translated Personalizations | Video | Guide | Managing translated personalization content |
-| C101-005.003 | Practicing Translated Personalizations | Lab | Guide | Translated personalizations exported and imported with XMLExporter and XMLImporter |
+| C101-005.003 | Exporting and Importing Translated Personalizations | Lab | Guide | Translated personalizations exported and imported with XMLExporter and XMLImporter |
 | C101-005.004 | Completing the Personalization Project | Workshop | Rubric | Personalize a seeded page at two levels and promote it with XMLImporter. Proposed criteria: personalization correctness 40, level targeting and precedence 20, migration with XMLExporter and XMLImporter 25, documentation 15 |

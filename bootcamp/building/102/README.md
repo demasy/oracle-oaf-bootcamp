@@ -44,7 +44,7 @@
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
 | B102-001.001 | Handling Form Submissions with processFormRequest | Video | Examples | processFormRequest(), button clicks, validation |
-| B102-001.002 | Implementing Common Controller Patterns | Video | Patterns | Parameters, form values, navigation, messages |
+| B102-001.002 | Applying Common Controller Patterns | Video | Patterns | Parameters, form values, navigation, messages |
 
 ## [2] Asynchronous UI via PPR
 
@@ -61,10 +61,10 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-003.001 | Implementing List of Values (LOV) for Data Selection | Lab | Tutorial | Standard, dependent, and external LOVs; listOfValues region, lovMap criteria and result mapping, messageLovInput |
-| B102-003.002 | Implementing Dependent (Cascading) LOVs | Lab | Tutorial | Parent-child LOVs, criteria items, dynamic result mapping, clearing dependent fields |
-| B102-003.003 | Implementing LOV Auto-Completion and Look-Ahead | Lab | Tutorial | Foreign key validation, look-ahead dropdowns, auto-completion, popup LOV fallback |
-| B102-003.004 | Implementing LOV Action Buttons and Mappings | Lab | Tutorial | lovActionButton, lovActionMap, lovMap return values, actions inside the LOV window |
+| B102-003.001 | Configuring List of Values (LOV) for Data Selection | Lab | Tutorial | Standard, dependent, and external LOVs; listOfValues region, lovMap criteria and result mapping, messageLovInput |
+| B102-003.002 | Building Dependent (Cascading) LOVs | Lab | Tutorial | Parent-child LOVs, criteria items, dynamic result mapping, clearing dependent fields |
+| B102-003.003 | Enabling LOV Auto-Completion and Look-Ahead | Lab | Tutorial | Foreign key validation, look-ahead dropdowns, auto-completion, popup LOV fallback |
+| B102-003.004 | Wiring LOV Action Buttons and Mappings | Lab | Tutorial | lovActionButton, lovActionMap, lovMap return values, actions inside the LOV window |
 
 ## [4] Enterprise Exception Framework
 
@@ -93,7 +93,7 @@
 | :-- | :-------- | :-: | :-- | :---- |
 | B102-006.001 | Implementing Advanced Table Region | Lab | Tutorial | Selection, sorting, filtering, row actions, footer calculations, performance; tableFooter; singleSelection and multipleSelection row selection items |
 | B102-006.002 | Creating and Deleting Table Rows Programmatically | Lab | Project | Advanced table row creation, dynamic row deletion, single and multiple row selection, table events |
-| B102-006.003 | Building Updateable Summary Pages with Batch Row Actions | Lab | Project | Multi-row table updates, row duplication, batch delete, partial commit handling |
+| B102-006.003 | Building Updateable Summary Pages with Batch Actions | Lab | Project | Multi-row table updates, row duplication, batch delete, partial commit handling |
 
 ## [7] Dynamic UI Control and Focus
 
@@ -133,7 +133,7 @@
 | B102-009.004 | Implementing Content Container Region | Lab | Examples | Tab-based navigation, hiding/showing tabs, dynamic tab generation; richContainer |
 | B102-009.005 | Implementing Panel Splitter and Layered Layout | Lab | Tutorial | panelSplitter, layeredLayout, adjustable panels, multi-mode pages |
 | B102-009.006 | Building Custom Grids with tableLayout and cellFormat | Lab | Tutorial | Explicit rows and cells, columnSpan, rowSpan, hAlign, vAlign, width and height |
-| B102-009.007 | Practicing Panel Splitter and Layered Layouts | Lab | Tutorial | panelSplitter and layeredLayout with adjustable panels and multi-mode pages |
+| B102-009.007 | Splitting Pages with Panel Splitters | Lab | Tutorial | panelSplitter and layeredLayout with adjustable panels and multi-mode pages |
 
 ## [10] Data Regions, Grids and Charts
 
@@ -146,7 +146,7 @@
 | B102-010.003 | Implementing Charts and Graphs | Lab | Tutorial | Chart types, data binding, interactive charts, BI Publisher integration |
 | B102-010.004 | Implementing Bulleted Lists | Lab | Tutorial | bulletedList, multi-column lists, dynamic list content |
 | B102-010.005 | Implementing Auto-Repeating Layouts | Lab | Tutorial | Repeating regions generated from view object rows, dynamic sections, per-row content |
-| B102-010.006 | Practicing Auto-Repeating Layouts | Lab | Tutorial | Auto-repeating regions generated from view object rows |
+| B102-010.006 | Repeating Regions from View Object Rows | Lab | Tutorial | Auto-repeating regions generated from view object rows |
 | B102-010.007 | Building Bulleted Lists from View Rows | Lab | Tutorial | bulletedList with up to three columns bound to view rows |
 
 ## [11] Wizards, Rich Inputs and Configurable Pages
@@ -158,10 +158,10 @@
 | B102-011.001 | Implementing Train Region | Lab | Examples | Multi-step processes, train stops, navigation, validation, progress tracking |
 | B102-011.002 | Implementing Shuttle Region | Lab | Tutorial | Dual-list selection, moving items, ordering, search functionality |
 | B102-011.003 | Implementing Multi-Step Create and Update Flows | Lab | Project | Train-based wizards, transaction state across steps, iterative versus single-submit updates |
-| B102-011.004 | Implementing Rich Text Editor, Color Picker and Rating Bar | Lab | Tutorial | richTextEditor, messageRichTextEditor, colorPicker, messageRatingBar |
+| B102-011.004 | Building Rich Text, Color Picker and Rating Bar Inputs | Lab | Tutorial | richTextEditor, messageRichTextEditor, colorPicker, messageRatingBar |
 | B102-011.005 | Building Configurable Pages with flexibleLayout | Lab | Project | flexibleLayout, flexibleContent, flexibleContentList, user and admin dashboard tiles |
-| B102-011.006 | Practicing Configurable Pages with flexibleContent | Lab | Project | flexibleLayout, flexibleContent and flexibleContentList tiles for users and administrators |
-| B102-011.007 | Practicing Rich Inputs in Forms | Lab | Tutorial | Rich text editor, color picker and rating bar bound to a form |
+| B102-011.006 | Assembling Configurable Pages with flexibleContent | Lab | Project | flexibleLayout, flexibleContent and flexibleContentList tiles for users and administrators |
+| B102-011.007 | Binding Rich Inputs to Form Fields | Lab | Tutorial | Rich text editor, color picker and rating bar bound to a form |
 
 ## [12] Flexfields, SPEL and Forms Integration
 
@@ -169,8 +169,8 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-012.001 | Implementing Key Flexfield Region | Lab | Tutorial | KFF configuration, binding to page, validation, capturing values |
-| B102-012.002 | Implementing Descriptive Flexfield Region | Lab | Tutorial | DFF configuration, context-sensitive DFF, EO integration, querying |
+| B102-012.001 | Configuring a Key Flexfield Region | Lab | Tutorial | KFF configuration, binding to page, validation, capturing values |
+| B102-012.002 | Configuring a Descriptive Flexfield Region | Lab | Tutorial | DFF configuration, context-sensitive DFF, EO integration, querying |
 | B102-012.003 | Changing Item Properties Using SPEL | Lab | Examples | SPEL syntax, conditional properties, dynamic rendering, performance |
 | B102-012.004 | Adding Custom HTML Code | Lab | Guide | RawText component, JavaScript integration, security, best practices |
 | B102-012.005 | Launching Oracle Forms from OAF | Lab | Tutorial | Form function call, parameter passing, integration patterns |
@@ -205,7 +205,7 @@
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
 | B102-015.001 | Setting Default Values | Lab | Tutorial | Text fields, number fields, date fields, techniques and best practices |
-| B102-015.002 | Understanding MDS Repository | Video | Guide | How page metadata is stored and queried, from a developer view; MDS architecture and administration are covered in Cust 101 |
+| B102-015.002 | Querying Page Metadata in the MDS Repository | Video | Guide | How page metadata is stored and queried, from a developer view; MDS architecture and administration are covered in Cust 101 |
 | B102-015.003 | Configuring Important Profile Options | Video | Reference | Key profile options, impact on behavior, setting programmatically |
 
 ## [16] Files, Documents and Data Exchange
@@ -214,10 +214,10 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-016.001 | Implementing Attachments Functionality | Lab | Tutorial | FND_ATTACHED_DOCUMENTS, configuration, UI integration, file storage; attachmentTable, attachmentLink, attachmentImage, messageInlineAttachment, entityMap, categoryMap, primaryKey |
-| B102-016.002 | Implementing Upload Files Functionality | Lab | Tutorial | File upload component, server-side handling, validation, storage options; messageFileUpload |
-| B102-016.003 | Implementing Import Data Functionality | Lab | Examples | CSV/Excel import, data validation, batch processing, error handling |
-| B102-016.004 | Implementing Export Data Functionality | Lab | Tutorial | Export formats (CSV, Excel, PDF), large data sets, streaming, performance |
+| B102-016.001 | Enabling Attachments in Pages | Lab | Tutorial | FND_ATTACHED_DOCUMENTS, configuration, UI integration, file storage; attachmentTable, attachmentLink, attachmentImage, messageInlineAttachment, entityMap, categoryMap, primaryKey |
+| B102-016.002 | Enabling File Upload in Pages | Lab | Tutorial | File upload component, server-side handling, validation, storage options; messageFileUpload |
+| B102-016.003 | Building Import Data Functionality | Lab | Examples | CSV/Excel import, data validation, batch processing, error handling |
+| B102-016.004 | Building Export Data Functionality | Lab | Tutorial | Export formats (CSV, Excel, PDF), large data sets, streaming, performance |
 | B102-016.005 | Publishing Documents to the Document Catalog | Lab | Guide | Document set upload, catalog publishing, AntiSamy filtering and virus scanning on upload |
 | B102-016.006 | Displaying PDFs Inline and Downloading Files Securely | Lab | Tutorial | Rendering PDFs inline, streaming binary files, secure download handling; messageDownload |
 
@@ -240,11 +240,11 @@
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
 | B102-018.001 | Supporting Multiple Languages and Internationalization | Lab | Guide | MLS and _TL tables, timezone conversion, client character encoding, right-to-left alignment |
-| B102-018.002 | Implementing Screen Reader Mode, Row Headers and Hot Keys | Lab | Checklist | Screen reader optimized mode, rowheadercol, keyboard accelerator keys |
+| B102-018.002 | Enabling Screen Reader Mode, Row Headers and Hot Keys | Lab | Checklist | Screen reader optimized mode, rowheadercol, keyboard accelerator keys |
 | B102-018.003 | Warning on Unsaved Changes with the Enhanced Save Model | Lab | Tutorial | Detecting uncommitted changes, warning before navigating away, save and discard flows |
 | B102-018.004 | Handling Right-to-Left Layouts and Timezones | Lab | Guide | Right-to-left alignment, timezone conversion, client character encoding |
 | B102-018.005 | Testing Screen Reader and Hot Key Support | Lab | Checklist | Screen reader mode, row headers, accelerator hot keys tested on a page |
-| B102-018.006 | Practicing the Enhanced Save Model | Lab | Tutorial | Save model warnings on unsaved changes, save and discard flows |
+| B102-018.006 | Handling Unsaved Changes with the Save Model | Lab | Tutorial | Save model warnings on unsaved changes, save and discard flows |
 | B102-018.007 | Auditing Accessibility Compliance of a Page | Lab | Checklist | Accessibility audit of labels, row headers, keyboard access and contrast |
 
 ## [19] Advanced Debugging
@@ -265,7 +265,7 @@
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
 | B102-020.001 | Kicking Off and Planning Project 101 | Workshop | Guide | Setting up project structure, Git version control, database design, project planning, team collaboration setup; applied to Project 102 (the POS system is the Dev 103 capstone) (Duration: 2.5 Days) |
-| B102-020.002 | Building Project 102: Items with an Approval Cycle | Lab | Project | Multi-step approval workflow, complex business logic, workflow integration, advanced UI features, item creation form, multi-level approvals, email notifications, approval history, advanced search and reporting (Duration: 5 Days) |
+| B102-020.002 | Building Project 102 for Items with an Approval Cycle | Lab | Project | Multi-step approval workflow, complex business logic, workflow integration, advanced UI features, item creation form, multi-level approvals, email notifications, approval history, advanced search and reporting (Duration: 5 Days) |
 | B102-020.003 | Selecting the Final Assessment Project | Workshop | Guide | Comprehensive project requirements, choosing between Option A (Advanced HR Management System) or Option B (Procurement Request System), planning and timeline |
 | B102-020.004 | Building the Advanced HR Management System (Option A) | Lab | Project | Employee self-service portal, manager approval workflows, workflow integration, reports and dashboards, complete HRIS functionality |
 | B102-020.005 | Building the Procurement Request System (Option B) | Lab | Project | Purchase requisition creation, multi-level approval process, budget validation logic, PO integration, procurement workflow |

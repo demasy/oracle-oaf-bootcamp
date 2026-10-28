@@ -16,7 +16,7 @@
 | [1] | C102-001 | [Controller and LOV Extensions](#1-controller-and-lov-extensions) | Core | 4 |
 | [2] | C102-002 | [Business Component Extensions](#2-business-component-extensions) | Core | 6 |
 | [3] | C102-003 | [Substitution and Troubleshooting](#3-substitution-and-troubleshooting) | Core | 3 |
-| [4] | C102-004 | [Packaging and R12.2 Synchronization](#4-packaging-and-r122-synchronization) | Core | 3 |
+| [4] | C102-004 | [Extension Packaging and R12.2 Synchronization](#4-extension-packaging-and-r122-synchronization) | Core | 3 |
 | [5] | C102-005 | [Extension Architecture and Standards](#5-extension-architecture-and-standards) | Required | 4 |
 | [6] | C102-006 | [Release, Promotion and Assessment](#6-release-promotion-and-assessment) | Required | 5 |
 
@@ -28,7 +28,7 @@
 | :-- | :-------- | :-: | :-- | :---- |
 | C102-001.001 | Extending Controllers | Lab | Project | Extending `processRequest` and `processFormRequest`, attaching through personalization |
 | C102-001.002 | Extending LOVs Programmatically | Lab | Project | LOV controller extensions, VO substitution for LOV queries |
-| C102-001.003 | Practicing LOV Extensions with View Object Substitution | Lab | Project | Extending LOVs with a controller extension and view object substitution |
+| C102-001.003 | Extending LOVs with View Object Substitution | Lab | Project | Extending LOVs with a controller extension and view object substitution |
 | C102-001.004 | Extending Controllers with Custom Event Handling | Lab | Project | Extending controllers, super calls to processRequest and processFormRequest |
 
 ## [2] Business Component Extensions
@@ -54,7 +54,7 @@
 | C102-003.002 | Deploying Substitutions | Lab | Guide | JPX files, `jpximport`, verifying active substitutions; extension-specific steps, tooling basics are in Dev 103 |
 | C102-003.003 | Troubleshooting Extensions | Lab | Checklist | Classloader conflicts, substitution load failures, casting exceptions |
 
-## [4] Packaging and R12.2 Synchronization
+## [4] Extension Packaging and R12.2 Synchronization
 
 **Module:** C102-004 | **Path:** Core  
 

@@ -73,7 +73,7 @@
 | B103-004.001 | Using Online Patching (adop) Fundamentals | Video | Diagram | Run edition versus patch edition, patch phases, classpath configuration |
 | B103-004.002 | Compiling and Archiving with adcgnjar | Lab | Guide | $AD_TOP/bin/adcgnjar, customall.jar, signed archives under $JAVA_TOP |
 | B103-004.003 | Scripting Repeatable Deployments | Lab | Project | Environment variables such as $AD_APPS_JDBC_URL in place of hardcoded connection strings |
-| B103-004.004 | Practicing Scripted Deployment on R12.2 | Lab | Scripts | Repeatable scripted deployment with environment variables on an R12.2 instance |
+| B103-004.004 | Running Scripted Deployments on R12.2 | Lab | Scripts | Repeatable scripted deployment with environment variables on an R12.2 instance |
 
 ## [5] Project Setup and Planning
 
@@ -168,7 +168,7 @@
 | B103-012.006 | Building Charts, Graphs and Infotiles | Lab | Guide | BI beans and JET transition, Gantt, Infotiles *(verify)* |
 | B103-012.007 | Building Masonry Layout Dashboards | Lab | Guide | Grid-based responsive dashboards, status tiles, KPI cards *(verify)* |
 | B103-012.008 | Building Gantt Charts | Lab | Guide | Gantt chart region bound to project schedule data |
-| B103-012.009 | Practicing Masonry Dashboards | Lab | Guide | Masonry layout with status tiles and KPI cards *(verify)* |
+| B103-012.009 | Laying Out Masonry Dashboards | Lab | Guide | Masonry layout with status tiles and KPI cards *(verify)* |
 
 ## [13] Advanced Search and Navigation
 
@@ -183,9 +183,9 @@
 | B103-013.005 | Using Navigation Components | Lab | Guide | Trains, subtabs, accordions, hide/show, popups, shuttles |
 | B103-013.006 | Implementing Declarative Page Flows | Lab | Guide | Destination function and workflow page flows, transaction state |
 | B103-013.007 | Building Accordion Navigation | Lab | Guide | Accordion regions and hide/show navigation containers |
-| B103-013.008 | Practicing Infotile-Driven Search | Lab | Project | Infotile summary counts filtering a results table |
-| B103-013.009 | Practicing Quick Search | Lab | Guide | Quick search inputs in headers and side navigation |
-| B103-013.010 | Practicing Declarative Page Flows | Lab | Project | Declarative page flows with transaction state and save for later |
+| B103-013.008 | Filtering Results with Infotiles | Lab | Project | Infotile summary counts filtering a results table |
+| B103-013.009 | Searching from Headers and Side Navigation | Lab | Guide | Quick search inputs in headers and side navigation |
+| B103-013.010 | Chaining Pages with Declarative Page Flows | Lab | Project | Declarative page flows with transaction state and save for later |
 | B103-013.011 | Building Sub Tabs and Sliding Sub Tab Layouts | Lab | Guide | subTabLayout, subTabBar and hideShowSubTabLayout with slide-out content panels |
 
 ## [14] State Management, Back Button and Security
@@ -202,7 +202,7 @@
 | B103-014.006 | Securing Pages, Functions and Data | Lab | Guide | Function security, data grants, page access tracking |
 | B103-014.007 | Hardening Input Against Attacks | Lab | Guide | XSS scanning, AntiSamy HTML filtering, virus scanning, frame busting |
 | B103-014.008 | Applying Polymorphic Entity Objects | Lab | Guide | Polymorphic entity objects with subtype-specific validation |
-| B103-014.009 | Practicing PL/SQL Entity Objects | Lab | Project | PL/SQL entity objects wrapping a legacy table API with key generation and locking |
+| B103-014.009 | Wrapping Legacy Tables with PL/SQL Entity Objects | Lab | Project | PL/SQL entity objects wrapping a legacy table API with key generation and locking |
 
 ## [15] Security Hardening
 

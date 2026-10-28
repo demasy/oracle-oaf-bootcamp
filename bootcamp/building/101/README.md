@@ -23,7 +23,7 @@
 | [5] | B101-005 | [View Object Development](#5-view-object-development) | Core | 6 |
 | [6] | B101-006 | [Entity Object and DML Layer](#6-entity-object-and-dml-layer) | Core | 3 |
 | [7] | B101-007 | [Declarative Page Layouts](#7-declarative-page-layouts) | Core | 14 |
-| [8] | B101-008 | [Reusable UI Practice](#8-reusable-ui-practice) | Extended | 7 |
+| [8] | B101-008 | [Reusable UI Components](#8-reusable-ui-components) | Extended | 7 |
 | [9] | B101-009 | [Controller Request Processing](#9-controller-request-processing) | Core | 7 |
 | [10] | B101-010 | [Master-Detail Relationships](#10-master-detail-relationships) | Required | 2 |
 | [11] | B101-011 | [JDeveloper Debugging](#11-jdeveloper-debugging) | Required | 2 |
@@ -39,7 +39,7 @@
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
 | B101-001.001 | Introducing the OAF BootCamp | Video | Guide | Transformation roadmap, success stories, instructor intro |
-| B101-001.002 | Understanding the BootCamp Structure and Learning Framework | Video | Guide | Three-level progression, scaffolding approach, assessment |
+| B101-001.002 | Understanding the BootCamp Structure and Learning Model | Video | Guide | Three-level progression, scaffolding approach, assessment |
 | B101-001.003 | Joining the Learning Community | Video | Guide | Study groups, code review, forums, peer learning |
 | B101-001.004 | Setting Goals and Success Strategies | Workshop | Template | SMART goals, time management, growth mindset |
 
@@ -67,10 +67,10 @@
 | B101-003.002 | Downloading OA Extension from Oracle Support | Video | Guide | MOS portal, version matrix, download process |
 | B101-003.003 | Configuring the Development Environment | Video | Checklist | Installation, OA Extension, configuration, DBC; directories (jdevbin, jdevhome, jdevdoc), JDEV_USER_HOME and JDEV_JAVA_HOME |
 | B101-003.004 | Using JDeveloper Tools and Shortcuts | Video | Reference | Interface customization, shortcuts, templates |
-| B101-003.005 | Using the Structure Pane, Property Inspector and UML Modeler | Lab | Guide | Hierarchy navigation, property sheets, UML modeling of business components, local debugging tools |
+| B101-003.005 | Using the Structure Pane, Inspector and UML Modeler | Lab | Guide | Hierarchy navigation, property sheets, UML modeling of business components, local debugging tools |
 | B101-003.006 | Configuring DBC Files and Database Connections | Video | Guide | DBC setup, connection parameters, validation |
 | B101-003.007 | Establishing Database Connectivity | Video | Guide | Connection setup, pooling, multi-environment; setup verification with test_fwktutorial.jsp |
-| B101-003.008 | Registering Application Short Names and Responsibility Keys | Lab | Guide | Application short name, responsibility key, FWK_TBX_TUTORIAL setup for local testing |
+| B101-003.008 | Registering Short Names and Responsibility Keys | Lab | Guide | Application short name, responsibility key, FWK_TBX_TUTORIAL setup for local testing |
 | B101-003.009 | Building the First Hello World OAF Page | Lab | Tutorial | First page, AM, layout, components, run |
 | B101-003.010 | Organizing Workspaces and Version Control in JDeveloper | Video | Template | Workspace organization, naming, version control |
 
@@ -94,10 +94,10 @@
 | :-- | :-------- | :-: | :-- | :---- |
 | B101-005.001 | Choosing Between Read-Only and Updatable View Objects | Video | Guide | SQL queries, read-only vs updatable, performance |
 | B101-005.002 | Building Updatable View Objects for CRUD | Lab | Tutorial | VO-EO linking, attribute mapping, CRUD testing |
-| B101-005.003 | Implementing Read-Only View Objects with SQL | Lab | Tutorial | SQL-based VOs, expert mode, joins, optimization |
+| B101-005.003 | Building Read-Only View Objects with SQL | Lab | Tutorial | SQL-based VOs, expert mode, joins, optimization |
 | B101-005.004 | Configuring Bind Variables and View Criteria | Lab | Tutorial | Named bind variables, view criteria, dynamic WHERE clauses, preventing SQL injection |
 | B101-005.005 | Linking View Objects with View Links and Associations | Video | Reference | Master-detail, FK relationships, domains |
-| B101-005.006 | Practicing Bind Variables in View Objects | Lab | Tutorial | Bind variables and view criteria behind a search page, avoiding SQL injection |
+| B101-005.006 | Writing Search Pages with Bind Variables | Lab | Tutorial | Bind variables and view criteria behind a search page, avoiding SQL injection |
 
 ## [6] Entity Object and DML Layer
 
@@ -125,24 +125,24 @@
 | B101-007.008 | Applying Look-and-Feel Standards | Video | Guide | Oracle look-and-feel standards, BLAF guidelines, Redwood look and feel, choosing and applying a look and feel *(verify)* |
 | B101-007.009 | Using Poplists, Radio Groups, Checkboxes and Spin Boxes | Lab | Reference | messageChoice, messageLovChoice, messageRadioGroup, messageCheckBox, messageSpinBox, default values; messageRadioButton |
 | B101-007.010 | Using Buttons, Page Button Bars and Content Footers | Lab | Reference | button, submitButton, resetButton, selectionButton, exportButton, link, pageButtonBar, contentFooter; page footer (copyright and privacy links); contentFooter is deprecated; link variants (GET/POST, external URL, mailto, JavaScript) |
-| B101-007.011 | Adding Images, Spacers, Separators, Tips and Static Text | Lab | Reference | image, spacer, separator, tip, instructionText, styledText, formattedText; messageStyledText, staticStyledText, rawText, dynamic images from BLOB columns |
+| B101-007.011 | Adding Images, Spacers, Separators and Static Text | Lab | Reference | image, spacer, separator, tip, instructionText, styledText, formattedText; messageStyledText, staticStyledText, rawText, dynamic images from BLOB columns |
 | B101-007.012 | Passing Form Parameters and Form Values | Lab | Guide | formParameter, formValue, servletInclude, urlInclude; passing hidden values |
 | B101-007.013 | Applying CSS Styling and Reusable Attribute Sets | Video | Guide | CSS styling, attribute sets, theming |
 | B101-007.014 | Implementing Navigation with Breadcrumbs and Menus | Video | Guide | Breadcrumb configuration, menu integration; locator element |
 
-## [8] Reusable UI Practice
+## [8] Reusable UI Components
 
 **Module:** B101-008 | **Path:** Extended  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
 | B101-008.001 | Building Smart Poplists with LOV Choice Lists | Lab | Tutorial | Smart poplist, messageLovChoice, combining a searchable LOV with a customizable poplist |
-| B101-008.002 | Practicing Shared Regions Across Pages | Lab | Project | Shared regions reused across pages, shared pages and items, sharing logistics |
-| B101-008.003 | Practicing Spacers, Separators and Images in Layouts | Lab | Tutorial | Spacers, separators and images placed in forms and regions |
+| B101-008.002 | Reusing Shared Regions Across Pages | Lab | Project | Shared regions reused across pages, shared pages and items, sharing logistics |
+| B101-008.003 | Spacing Layouts with Spacers, Separators and Images | Lab | Tutorial | Spacers, separators and images placed in forms and regions |
 | B101-008.004 | Passing Form Parameters Between Pages | Lab | Tutorial | formParameter, formValue and servletInclude in a multi-page flow |
 | B101-008.005 | Applying a Look and Feel to a Page | Lab | Guide | Look-and-feel standards applied to a finished page, BLAF checks |
-| B101-008.006 | Practicing messageComponentLayout Forms | Lab | Tutorial | messageComponentLayout columns and rows, labeled fields and alignment |
-| B101-008.007 | Practicing Page Button Bars | Lab | Tutorial | pageButtonBar with Save, Apply and Cancel actions and submit handling |
+| B101-008.006 | Laying Out Forms with messageComponentLayout | Lab | Tutorial | messageComponentLayout columns and rows, labeled fields and alignment |
+| B101-008.007 | Adding Page Button Bars to Forms | Lab | Tutorial | pageButtonBar with Save, Apply and Cancel actions and submit handling |
 
 ## [9] Controller Request Processing
 
@@ -152,11 +152,11 @@
 | :-- | :-------- | :-: | :-- | :---- |
 | B101-009.001 | Understanding Controller Architecture and User Actions | Video | Guide | MVC role, lifecycle, structure, best practices |
 | B101-009.002 | Handling GET Requests and Page Initialization | Video | Patterns | processRequest(), initialization, default values |
-| B101-009.003 | Using the Controller API: pageContext and WebBeans | Video | Reference | pageContext, attributes, WebBeans, transactions |
+| B101-009.003 | Using the Controller API for pageContext and WebBeans | Video | Reference | pageContext, attributes, WebBeans, transactions |
 | B101-009.004 | Comparing Parameter Passing Strategies | Video | Diagram | Request, Transaction, Session scopes comparison |
 | B101-009.005 | Using Request Parameters for Single-Page Scope | Lab | Tutorial | Token-based, navigation, lifecycle, examples |
 | B101-009.006 | Managing Transaction Parameters Across Pages | Lab | Tutorial | Multi-page flow, retention, cleanup |
-| B101-009.007 | Implementing Session Parameters for User State | Lab | Tutorial | Session scope, persistence, memory, best practices |
+| B101-009.007 | Storing User State in Session Parameters | Lab | Tutorial | Session scope, persistence, memory, best practices |
 
 ## [10] Master-Detail Relationships
 
@@ -185,10 +185,10 @@
 | B101-012.001 | Distinguishing Authentication from Authorization in OAF | Video | Guide | Authentication, authorization, function security |
 | B101-012.002 | Implementing Function Security for Page Access | Lab | Tutorial | Function registration, menu setup, responsibilities |
 | B101-012.003 | Applying Data Security for Row-Level Protection | Video | Patterns | Multi-Org, row-level security, VPD, filtering |
-| B101-012.004 | Understanding Built-In Protection Against HTML Tampering | Video | Guide | Automatic guards against HTML tampering and common hacking vectors, what the framework protects by default |
+| B101-012.004 | Understanding Built-In HTML Tampering Protection | Video | Guide | Automatic guards against HTML tampering and common hacking vectors, what the framework protects by default |
 | B101-012.005 | Testing Protection Against HTML Tampering | Lab | Checklist | Tampering attempts on hidden fields and URLs, verifying HTML tampering protection |
-| B101-012.006 | Practicing Data Security with Row-Level Grants | Lab | Tutorial | Data security grants and row-level filtering on a search page |
-| B101-012.007 | Practicing Authentication and Session Handling | Lab | Guide | Authentication in EBS, login flow and session timeout behavior |
+| B101-012.006 | Granting Row-Level Data Security | Lab | Tutorial | Data security grants and row-level filtering on a search page |
+| B101-012.007 | Handling Authentication and Session Timeouts | Lab | Guide | Authentication in EBS, login flow and session timeout behavior |
 
 ## [13] Development Standards and Best Practices
 
