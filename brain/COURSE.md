@@ -9,9 +9,9 @@ Level
          └─ Lecture
 ```
 
-**Structure.** Each course has three kinds of module. **Core** modules are the seven per course from the reference curriculum (`DEV101-1` to `DEV101-7`, and so on). **Required** modules are repository content that the level's exit competencies or outcomes depend on, such as capstones, assessments, master-detail, debugging and deployment in Dev 101. **Extended** modules are optional depth. The required path is core plus required. Core modules are placed in each level to follow the reference curriculum, so a few lectures moved between levels (see below).
+**Structure.** Each course has three kinds of module. **Core** modules are the seven per course from the reference curriculum (`B101-1` to `B101-7`, and so on). **Required** modules are repository content that the level's exit competencies or outcomes depend on, such as capstones, assessments, master-detail, debugging and deployment in Dev 101. **Extended** modules are optional depth. The required path is core plus required. Core modules are placed in each level to follow the reference curriculum, so a few lectures moved between levels (see below).
 
-**Codes.** Modules use their reference IDs. Lectures read `<module id>.<lecture>`, for example `DEV101-4.3`. The *Syllabus* column gives the lecture's number in the `SYLLABUS_*.md` file for tracing; the syllabi keep their older section numbering and are the source for format, practice, resource and notes.
+**Codes.** Modules use their reference IDs. Lectures read `<module id>.<lecture>`, for example `B101-4.3`. The *Syllabus* column gives the lecture's number in the `SYLLABUS_*.md` file for tracing; the syllabi keep their older section numbering and are the source for format, practice, resource and notes.
 
 **Moves between levels.** The reference curriculum teaches PPR, LOVs, form (POST) processing, exceptions and dialog pages in Dev 102. Those six Dev 101 lectures now sit in Dev 102 core modules (DEV102-1 to DEV102-5): *Processing POST Requests: Form Submissions*, *Implementing Common Controller Patterns*, *Enabling Partial Page Rendering (PPR) for Dynamic UI*, *Implementing List of Values (LOV) for Data Selection*, *Understanding OAF Exception Framework & Hierarchy* and *Providing User Feedback: Messages & Dialog Pages*.
 
@@ -43,10 +43,10 @@ What each level covers, what it deliberately leaves out, and what a learner can 
 | Audience | Junior developers, technical consultants, application analysts. Target role: Associate OAF Developer. |
 | Entry criteria | Basic Java, SQL, PL/SQL and HTML. No OAF experience needed. |
 | Entry check | Proposed check: writes a Java class with inheritance and exceptions; writes SQL joins and DML; reads a PL/SQL procedure; writes a basic HTML form. |
-| In scope (core modules) | DEV101-1 OAF Architecture & MVC Paradigms; DEV101-2 IDE Setup & Project Topology; DEV101-3 Application Module Construction; DEV101-4 View Object Development; DEV101-5 Entity Object & DML Layer; DEV101-6 Declarative Page Layouts; DEV101-7 Controller Request Processing |
+| In scope (core modules) | B101-1 OAF Architecture & MVC Paradigms; B101-2 IDE Setup & Project Topology; B101-3 Application Module Construction; B101-4 View Object Development; B101-5 Entity Object & DML Layer; B101-6 Declarative Page Layouts; B101-7 Controller Request Processing |
 | Key artifacts (core) | J2EE MVC, Tier Separation, MDS Architecture; JDeveloper Setup, .jws/.jpr Specs, DBC Connections; OAApplicationModuleImpl, OADBTransaction, Root AM; OAViewObjectImpl, SQL Bind Variables, View Links; OAEntityImpl, Validation Logic, Primary Keys; Page Definitions (.xml), UIX Web Beans, Region Types; OAControllerImpl, processRequest(), OAPageContext |
-| Required additions | DEV101-8 Master-Detail Relationships; DEV101-9 Debugging in JDeveloper; DEV101-12 Deploying OA Framework Applications; DEV101-13 Jobs & Positions Management Capstone |
-| Extended content (optional) | DEV101-0 BootCamp Orientation & Success Path; DEV101-10 Security Implementation; DEV101-11 Development Standards and Best Practices |
+| Required additions | B101-8 Master-Detail Relationships; B101-9 Debugging in JDeveloper; B101-12 Deploying OA Framework Applications; B101-13 Jobs & Positions Management Capstone |
+| Extended content (optional) | B101-0 BootCamp Orientation & Success Path; B101-10 Security Implementation; B101-11 Development Standards and Best Practices |
 | Outputs (learner produces) | Configured workspace, project and DBC connection with a running Hello World page; BC4J model: root application module, view objects, entity objects, view links; Declarative pages with a controller for the initial request; Master-detail pages; Application deployed to a training instance with function, menu and responsibility; Jobs & Positions application: DDL scripts, code, test plan and documentation |
 | Outcomes (learner can do) | Cognitive level: Remember, Understand, Apply. 6 syllabus outcomes, 6 reached on the required path. |
 | Hands-on deliverable | Jobs & Positions master-detail application (100-point rubric). |
@@ -166,11 +166,11 @@ Which modules deliver each exit competency, and whether the learner reaches it o
 
 | Level | Exit competency | Delivered by | Path |
 | :-: | :-- | :-- | :-: |
-| 101 | Build a BC4J model (application module, view objects, entity objects) | DEV101-3, DEV101-4, DEV101-5 | Required path |
-| 101 | Build declarative pages and a controller for the initial request | DEV101-6, DEV101-7 | Required path |
-| 101 | Build a master-detail CRUD application | DEV101-8 | Required path |
-| 101 | Run locally and deploy to a training instance | DEV101-2, DEV101-12 | Required path |
-| 101 | Pass the Jobs & Positions capstone | DEV101-13 | Required path |
+| 101 | Build a BC4J model (application module, view objects, entity objects) | B101-3, B101-4, B101-5 | Required path |
+| 101 | Build declarative pages and a controller for the initial request | B101-6, B101-7 | Required path |
+| 101 | Build a master-detail CRUD application | B101-8 | Required path |
+| 101 | Run locally and deploy to a training instance | B101-2, B101-12 | Required path |
+| 101 | Pass the Jobs & Positions capstone | B101-13 | Required path |
 | 102 | Process form events | DEV102-1 | Required path |
 | 102 | Update regions with PPR | DEV102-2 | Required path |
 | 102 | Build LOVs and dependent LOVs | DEV102-3 | Required path |
@@ -202,9 +202,9 @@ Each level's entry criteria against what the course delivers. A prerequisite mar
 | Level | Requires | Satisfied by | Status |
 | :-: | :-- | :-- | :-: |
 | 101 | Basic Java, SQL, PL/SQL, HTML | Not taught in this course | External |
-| 102 | Dev 101 exit competencies | Dev 101 modules DEV101-1 to DEV101-8 | Covered |
+| 102 | Dev 101 exit competencies | Dev 101 modules B101-1 to B101-8 | Covered |
 | 103 | Dev 102 exit competencies | Dev 102 core modules DEV102-1 to DEV102-7 | Covered |
-| C101 | Dev 101 | Dev 101 core modules DEV101-1 to DEV101-7 | Covered |
+| C101 | Dev 101 | Dev 101 core modules B101-1 to B101-7 | Covered |
 | C101 | EBS system administration | Not taught in this course | External |
 | C102 | Dev 102 | Dev 102 core modules DEV102-1 to DEV102-7 | Covered |
 | C102 | Cust 101 | CUST101-1 to CUST101-7 | Covered |
@@ -228,7 +228,7 @@ Each topic a level leaves out, and the module that teaches it.
 | REST services and security hardening | 102 | DEV103-19 REST and Product Integration, DEV103-18 State Management, Back Button and Security |
 | Personalization | 101, 102, 103, C102 | CUST101-4 UI Component Personalization, CUST101-2 Personalization Hierarchy |
 | Controller and BC4J extensions | 101, 102, 103, C101 | CUST102-1 Controller Class Extensions, CUST102-2 Business Component Extensions |
-| Building a full application | C101, C102 | DEV101-13 Jobs & Positions Management Capstone, DEV103-9 Store Management Module |
+| Building a full application | C101, C102 | B101-13 Jobs & Positions Management Capstone, DEV103-9 Store Management Module |
 
 ### Outputs
 
@@ -236,12 +236,12 @@ What a learner produces at each level, where it is produced and how it is assess
 
 | Level | Output | Produced in | Assessed by |
 | :-: | :-- | :-- | :-- |
-| 101 | Configured workspace, project and DBC connection with a running Hello World page | DEV101-2 | Page runs locally |
-| 101 | BC4J model: root application module, view objects, entity objects, view links | DEV101-3, DEV101-4, DEV101-5 | BC4J tester |
-| 101 | Declarative pages with a controller for the initial request | DEV101-6, DEV101-7 | Pages render with data |
-| 101 | Master-detail pages | DEV101-8 | Master-detail labs |
-| 101 | Application deployed to a training instance with function, menu and responsibility | DEV101-12 | Post-deployment checklist |
-| 101 | Jobs & Positions application: DDL scripts, code, test plan and documentation | DEV101-13 | 100-point capstone rubric: functionality 40, code quality 30, UI 20, documentation 10 |
+| 101 | Configured workspace, project and DBC connection with a running Hello World page | B101-2 | Page runs locally |
+| 101 | BC4J model: root application module, view objects, entity objects, view links | B101-3, B101-4, B101-5 | BC4J tester |
+| 101 | Declarative pages with a controller for the initial request | B101-6, B101-7 | Pages render with data |
+| 101 | Master-detail pages | B101-8 | Master-detail labs |
+| 101 | Application deployed to a training instance with function, menu and responsibility | B101-12 | Post-deployment checklist |
+| 101 | Jobs & Positions application: DDL scripts, code, test plan and documentation | B101-13 | 100-point capstone rubric: functionality 40, code quality 30, UI 20, documentation 10 |
 | 102 | Pages with form event handling, PPR and LOVs | DEV102-1, DEV102-2, DEV102-3 | Labs |
 | 102 | Message and dialog flows using OAException and OADialogPage | DEV102-4, DEV102-5 | Labs |
 | 102 | Advanced table page with dynamic row create and delete | DEV102-6 | Labs |
@@ -268,12 +268,12 @@ The learning outcomes in each syllabus, the modules that deliver them, and wheth
 
 | Level | Cognitive level | Outcome | Delivered by | Path |
 | :-: | :-- | :-- | :-- | :-: |
-| 101 | Remember, Understand, Apply | Set up and configure OAF development environment | DEV101-2 | Required path |
-| 101 |  | Create basic OAF pages using Model-View-Controller pattern | DEV101-1, DEV101-6, DEV101-7 | Required path |
-| 101 |  | Implement standard web widgets and UI components | DEV101-6 | Required path |
-| 101 |  | Build CRUD (Create, Read, Update, Delete) functionality | DEV101-4, DEV101-5, DEV101-7 | Required path |
-| 101 |  | Deploy OAF applications to Oracle E-Business Suite | DEV101-12 | Required path |
-| 101 |  | Debug and test basic OAF applications | DEV101-9 | Required path |
+| 101 | Remember, Understand, Apply | Set up and configure OAF development environment | B101-2 | Required path |
+| 101 |  | Create basic OAF pages using Model-View-Controller pattern | B101-1, B101-6, B101-7 | Required path |
+| 101 |  | Implement standard web widgets and UI components | B101-6 | Required path |
+| 101 |  | Build CRUD (Create, Read, Update, Delete) functionality | B101-4, B101-5, B101-7 | Required path |
+| 101 |  | Deploy OAF applications to Oracle E-Business Suite | B101-12 | Required path |
+| 101 |  | Debug and test basic OAF applications | B101-9 | Required path |
 | 102 | Apply, Analyze, Evaluate | LO2.1: Intercept user interactions and execute post-back processing with processFormRequest | DEV102-1 | Required path |
 | 102 |  | LO2.2: Update specific page regions with partial page rendering | DEV102-2 | Required path |
 | 102 |  | LO2.3: Build lists of values, including dependent LOVs | DEV102-3 | Required path |
@@ -312,13 +312,13 @@ The learning outcome of each core module, from the reference curriculum. These a
 
 | Level | Module | Title | Learning outcome |
 | :-: | :-- | :-- | :-- |
-| 101 | DEV101-1 | OAF Architecture & MVC Paradigms | Analyze the execution flow across Model, View, and Controller layers. |
-| 101 | DEV101-2 | IDE Setup & Project Topology | Configure standardized local development environments linked to EBS. |
-| 101 | DEV101-3 | Application Module Construction | Construct transactional containers for BC4J component management. |
-| 101 | DEV101-4 | View Object Development | Develop declarative and dynamic data query components for UI rendering. |
-| 101 | DEV101-5 | Entity Object & DML Layer | Build persistent data access objects that enforce business constraints. |
-| 101 | DEV101-6 | Declarative Page Layouts | Construct structured UI hierarchies using standard JRAD components. |
-| 101 | DEV101-7 | Controller Request Processing | Implement controller logic for initial page rendering and query setup. |
+| 101 | B101-1 | OAF Architecture & MVC Paradigms | Analyze the execution flow across Model, View, and Controller layers. |
+| 101 | B101-2 | IDE Setup & Project Topology | Configure standardized local development environments linked to EBS. |
+| 101 | B101-3 | Application Module Construction | Construct transactional containers for BC4J component management. |
+| 101 | B101-4 | View Object Development | Develop declarative and dynamic data query components for UI rendering. |
+| 101 | B101-5 | Entity Object & DML Layer | Build persistent data access objects that enforce business constraints. |
+| 101 | B101-6 | Declarative Page Layouts | Construct structured UI hierarchies using standard JRAD components. |
+| 101 | B101-7 | Controller Request Processing | Implement controller logic for initial page rendering and query setup. |
 | 102 | DEV102-1 | Form Event Handling Lifecycle | Intercept user interactions and execute complex post-back processing. |
 | 102 | DEV102-2 | Asynchronous UI via PPR | Eliminate full page refreshes by updating specific UI regions. |
 | 102 | DEV102-3 | List of Values (LOV) Engineering | Build interactive selection dialogs and cascading field pickers. |
@@ -401,20 +401,20 @@ Guidance steps down linearly from the first module to the last, ten points above
 
 | Module | Title | Type | Video (I Do) | Lab (We Do, You Do) | Workshop (You Do) | Planned guidance |
 | :-- | :-- | :-: | :-: | :-: | :-: | :-: |
-| DEV101-0 | BootCamp Orientation & Success Path | Extended | 3 | 0 | 1 | 70% |
-| DEV101-1 | OAF Architecture & MVC Paradigms | Core | 7 | 0 | 0 | 68% |
-| DEV101-2 | IDE Setup & Project Topology | Core | 7 | 3 | 0 | 67% |
-| DEV101-3 | Application Module Construction | Core | 3 | 2 | 0 | 65% |
-| DEV101-4 | View Object Development | Core | 2 | 3 | 0 | 64% |
-| DEV101-5 | Entity Object & DML Layer | Core | 1 | 2 | 0 | 62% |
-| DEV101-8 | Master-Detail Relationships | Required | 1 | 1 | 0 | 61% |
-| DEV101-6 | Declarative Page Layouts | Core | 6 | 8 | 0 | 59% |
-| DEV101-7 | Controller Request Processing | Core | 4 | 3 | 0 | 58% |
-| DEV101-9 | Debugging in JDeveloper | Required | 1 | 1 | 0 | 56% |
-| DEV101-10 | Security Implementation | Extended | 3 | 1 | 0 | 55% |
-| DEV101-11 | Development Standards and Best Practices | Extended | 6 | 1 | 0 | 53% |
-| DEV101-12 | Deploying OA Framework Applications | Required | 1 | 3 | 0 | 52% |
-| DEV101-13 | Jobs & Positions Management Capstone | Required | 0 | 5 | 1 | 50% |
+| B101-0 | BootCamp Orientation & Success Path | Extended | 3 | 0 | 1 | 70% |
+| B101-1 | OAF Architecture & MVC Paradigms | Core | 7 | 0 | 0 | 68% |
+| B101-2 | IDE Setup & Project Topology | Core | 7 | 3 | 0 | 67% |
+| B101-3 | Application Module Construction | Core | 3 | 2 | 0 | 65% |
+| B101-4 | View Object Development | Core | 2 | 3 | 0 | 64% |
+| B101-5 | Entity Object & DML Layer | Core | 1 | 2 | 0 | 62% |
+| B101-8 | Master-Detail Relationships | Required | 1 | 1 | 0 | 61% |
+| B101-6 | Declarative Page Layouts | Core | 6 | 8 | 0 | 59% |
+| B101-7 | Controller Request Processing | Core | 4 | 3 | 0 | 58% |
+| B101-9 | Debugging in JDeveloper | Required | 1 | 1 | 0 | 56% |
+| B101-10 | Security Implementation | Extended | 3 | 1 | 0 | 55% |
+| B101-11 | Development Standards and Best Practices | Extended | 6 | 1 | 0 | 53% |
+| B101-12 | Deploying OA Framework Applications | Required | 1 | 3 | 0 | 52% |
+| B101-13 | Jobs & Positions Management Capstone | Required | 0 | 5 | 1 | 50% |
 | | **Level total** | | **45** (56%) | **33** (41%) | **2** (2%) | **60% average** |
 
 #### 102: Dev 102: Oracle OAF Building BootCamp (Advanced)
@@ -600,41 +600,41 @@ Dev 101 was stated at 20-25 days, but its required path of 59 lectures needs abo
 
 | Module | Title | Type | Section | Lectures | Days |
 | :-- | :-- | :-: | :-- | :-: | :-: |
-| DEV101-0 | BootCamp Orientation & Success Path | Extended | 1. Orientation | 4 | 2.1 |
-| DEV101-1 | OAF Architecture & MVC Paradigms | Core | 2. Foundations | 7 | 3.7 |
-| DEV101-2 | IDE Setup & Project Topology | Core | 2. Foundations | 10 | 5.3 |
-| DEV101-3 | Application Module Construction | Core | 3. Model Layer | 5 | 2.6 |
-| DEV101-4 | View Object Development | Core | 3. Model Layer | 5 | 2.6 |
-| DEV101-5 | Entity Object & DML Layer | Core | 3. Model Layer | 3 | 1.6 |
-| DEV101-8 | Master-Detail Relationships | Required | 3. Model Layer | 2 | 1.1 |
-| DEV101-6 | Declarative Page Layouts | Core | 4. View and Controller | 14 | 7.4 |
-| DEV101-7 | Controller Request Processing | Core | 4. View and Controller | 7 | 3.7 |
-| DEV101-9 | Debugging in JDeveloper | Required | 5. Quality, Security and Delivery | 2 | 1.1 |
-| DEV101-10 | Security Implementation | Extended | 5. Quality, Security and Delivery | 4 | 2.1 |
-| DEV101-11 | Development Standards and Best Practices | Extended | 5. Quality, Security and Delivery | 7 | 3.7 |
-| DEV101-12 | Deploying OA Framework Applications | Required | 5. Quality, Security and Delivery | 4 | 2.1 |
-| DEV101-13 | Jobs & Positions Management Capstone | Required | 6. Capstone | 6 | alongside |
+| B101-0 | BootCamp Orientation & Success Path | Extended | 1. Orientation | 4 | 2.1 |
+| B101-1 | OAF Architecture & MVC Paradigms | Core | 2. Foundations | 7 | 3.7 |
+| B101-2 | IDE Setup & Project Topology | Core | 2. Foundations | 10 | 5.3 |
+| B101-3 | Application Module Construction | Core | 3. Model Layer | 5 | 2.6 |
+| B101-4 | View Object Development | Core | 3. Model Layer | 5 | 2.6 |
+| B101-5 | Entity Object & DML Layer | Core | 3. Model Layer | 3 | 1.6 |
+| B101-8 | Master-Detail Relationships | Required | 3. Model Layer | 2 | 1.1 |
+| B101-6 | Declarative Page Layouts | Core | 4. View and Controller | 14 | 7.4 |
+| B101-7 | Controller Request Processing | Core | 4. View and Controller | 7 | 3.7 |
+| B101-9 | Debugging in JDeveloper | Required | 5. Quality, Security and Delivery | 2 | 1.1 |
+| B101-10 | Security Implementation | Extended | 5. Quality, Security and Delivery | 4 | 2.1 |
+| B101-11 | Development Standards and Best Practices | Extended | 5. Quality, Security and Delivery | 7 | 3.7 |
+| B101-12 | Deploying OA Framework Applications | Required | 5. Quality, Security and Delivery | 4 | 2.1 |
+| B101-13 | Jobs & Positions Management Capstone | Required | 6. Capstone | 6 | alongside |
 
 ### Section 101.1: Orientation
 
 **Modules:** 1 | **Days:** 2.1
 
-#### Module DEV101-0: BootCamp Orientation & Success Path
+#### Module B101-0: BootCamp Orientation & Success Path
 
 **Type:** Extended | **Days:** 2.1  
 
 | Code | Lecture Title | Format | Practice | Resource | Notes | Syllabus |
 | :-- | :-- | :-: | :-: | :-: | :-- | :-: |
-| DEV101-0.1 | Welcome to Your OAF Journey | Video | ✓ | PDF | Transformation roadmap, success stories, instructor intro | 101§1.1 |
-| DEV101-0.2 | BootCamp Architecture & Learning Framework | Video | ✓ | PDF | Three-level progression, scaffolding approach, assessment | 101§1.2 |
-| DEV101-0.3 | Building Your Learning Community | Video | ✓ | Guide | Study groups, code review, forums, peer learning | 101§1.3 |
-| DEV101-0.4 | Setting Goals & Success Strategies | Workshop | ✓ | Template | SMART goals, time management, growth mindset | 101§1.4 |
+| B101-0.1 | Welcome to Your OAF Journey | Video | ✓ | PDF | Transformation roadmap, success stories, instructor intro | 101§1.1 |
+| B101-0.2 | BootCamp Architecture & Learning Framework | Video | ✓ | PDF | Three-level progression, scaffolding approach, assessment | 101§1.2 |
+| B101-0.3 | Building Your Learning Community | Video | ✓ | Guide | Study groups, code review, forums, peer learning | 101§1.3 |
+| B101-0.4 | Setting Goals & Success Strategies | Workshop | ✓ | Template | SMART goals, time management, growth mindset | 101§1.4 |
 
 ### Section 101.2: Foundations
 
 **Modules:** 2 | **Days:** 8.9
 
-#### Module DEV101-1: OAF Architecture & MVC Paradigms
+#### Module B101-1: OAF Architecture & MVC Paradigms
 
 **Type:** Core | **Days:** 3.7 | **Labs:** [LABS.md](LABS.md), Section 2  
 **Technical focus:** J2EE MVC, Tier Separation, MDS Architecture  
@@ -643,15 +643,15 @@ Dev 101 was stated at 20-25 days, but its required path of 59 lectures needs abo
 
 | Code | Lecture Title | Format | Practice | Resource | Notes | Syllabus |
 | :-- | :-- | :-: | :-: | :-: | :-- | :-: |
-| DEV101-1.1 | OAF Terminology: Speaking the Language | Video | ✓ | Glossary | Vocabulary, naming conventions, EBS context | 101§2.1 |
-| DEV101-1.2 | Evolution: From Oracle Forms to OA Framework | Video | ✓ | Comparison Chart | Technology shift, migration strategies, use cases | 101§2.2 |
-| DEV101-1.3 | Strategic Value: When and Why to Use OAF | Video | ✓ | Decision Matrix | Advantages, limitations, business case | 101§2.3 |
-| DEV101-1.4 | OAF Ecosystem: Integration with E-Business Suite | Video | - | Whitepaper | Evolution, Oracle's direction, EBS integration | 101§2.4 |
-| DEV101-1.5 | MVC Pattern Mastery: The Foundation of OAF | Video | ✓ | Diagram | Model-View-Controller, separation of concerns | 101§2.5 |
-| DEV101-1.6 | OAF Architecture Deep Dive: BC4J and UIX | Video | ✓ | Architecture Guide | BC4J, UIX, lifecycle, metadata repository | 101§2.6 |
-| DEV101-1.7 | Page Anatomy: Understanding OAF Components | Video | ✓ | Reference Poster | AM, VO, EO, Pages, Regions, Controllers | 101§2.7 |
+| B101-1.1 | OAF Terminology: Speaking the Language | Video | ✓ | Glossary | Vocabulary, naming conventions, EBS context | 101§2.1 |
+| B101-1.2 | Evolution: From Oracle Forms to OA Framework | Video | ✓ | Comparison Chart | Technology shift, migration strategies, use cases | 101§2.2 |
+| B101-1.3 | Strategic Value: When and Why to Use OAF | Video | ✓ | Decision Matrix | Advantages, limitations, business case | 101§2.3 |
+| B101-1.4 | OAF Ecosystem: Integration with E-Business Suite | Video | - | Whitepaper | Evolution, Oracle's direction, EBS integration | 101§2.4 |
+| B101-1.5 | MVC Pattern Mastery: The Foundation of OAF | Video | ✓ | Diagram | Model-View-Controller, separation of concerns | 101§2.5 |
+| B101-1.6 | OAF Architecture Deep Dive: BC4J and UIX | Video | ✓ | Architecture Guide | BC4J, UIX, lifecycle, metadata repository | 101§2.6 |
+| B101-1.7 | Page Anatomy: Understanding OAF Components | Video | ✓ | Reference Poster | AM, VO, EO, Pages, Regions, Controllers | 101§2.7 |
 
-#### Module DEV101-2: IDE Setup & Project Topology
+#### Module B101-2: IDE Setup & Project Topology
 
 **Type:** Core | **Days:** 5.3 | **Labs:** [LABS.md](LABS.md), Section 3  
 **Technical focus:** JDeveloper Setup, .jws/.jpr Specs, DBC Connections  
@@ -659,22 +659,22 @@ Dev 101 was stated at 20-25 days, but its required path of 59 lectures needs abo
 
 | Code | Lecture Title | Format | Practice | Resource | Notes | Syllabus |
 | :-- | :-- | :-: | :-: | :-: | :-- | :-: |
-| DEV101-2.1 | Mastering JDeveloper IDE: Your Development Command Center | Video | ✓ | Quick Ref | IDE layout, panels, workspace organization | 101§3.1 |
-| DEV101-2.2 | Downloading OA Extension from Oracle Support Portal | Video | - | Guide | MOS portal, version matrix, download process | 101§3.2 |
-| DEV101-2.3 | Complete Environment Configuration & Setup | Video | ✓ | Checklist | Installation, OA Extension, configuration, DBC; directories (jdevbin, jdevhome, jdevdoc), JDEV_USER_HOME and JDEV_JAVA_HOME | 101§3.3 |
-| DEV101-2.4 | Boosting Productivity: JDeveloper Tools & Shortcuts | Video | ✓ | Shortcut Card | Interface customization, shortcuts, templates | 101§3.4 |
-| DEV101-2.5 | Using the Structure Pane, Property Inspector and UML Modeler | Lab | ✓ | Guide | Hierarchy navigation, property sheets, UML modeling of business components, local debugging tools | 101§3.10 |
-| DEV101-2.6 | Configuring DBC Files & Database Connections | Video | ✓ | Troubleshoot Guide | DBC setup, connection parameters, validation | 101§3.5 |
-| DEV101-2.7 | Establishing Database Connectivity | Video | ✓ | Connection Guide | Connection setup, pooling, multi-environment; setup verification with test_fwktutorial.jsp | 101§3.8 |
-| DEV101-2.8 | Registering Application Short Names and Responsibility Keys | Lab | ✓ | Guide | Application short name, responsibility key, FWK_TBX_TUTORIAL setup for local testing | 101§3.9 |
-| DEV101-2.9 | Building Your First "Hello World!" OAF Page | Lab | ✓ | Step-by-step | First page, AM, layout, components, run | 101§3.6 |
-| DEV101-2.10 | Organizing Projects: Structure & Best Practices | Video | ✓ | Template | Workspace organization, naming, version control | 101§3.7 |
+| B101-2.1 | Mastering JDeveloper IDE: Your Development Command Center | Video | ✓ | Quick Ref | IDE layout, panels, workspace organization | 101§3.1 |
+| B101-2.2 | Downloading OA Extension from Oracle Support Portal | Video | - | Guide | MOS portal, version matrix, download process | 101§3.2 |
+| B101-2.3 | Complete Environment Configuration & Setup | Video | ✓ | Checklist | Installation, OA Extension, configuration, DBC; directories (jdevbin, jdevhome, jdevdoc), JDEV_USER_HOME and JDEV_JAVA_HOME | 101§3.3 |
+| B101-2.4 | Boosting Productivity: JDeveloper Tools & Shortcuts | Video | ✓ | Shortcut Card | Interface customization, shortcuts, templates | 101§3.4 |
+| B101-2.5 | Using the Structure Pane, Property Inspector and UML Modeler | Lab | ✓ | Guide | Hierarchy navigation, property sheets, UML modeling of business components, local debugging tools | 101§3.10 |
+| B101-2.6 | Configuring DBC Files & Database Connections | Video | ✓ | Troubleshoot Guide | DBC setup, connection parameters, validation | 101§3.5 |
+| B101-2.7 | Establishing Database Connectivity | Video | ✓ | Connection Guide | Connection setup, pooling, multi-environment; setup verification with test_fwktutorial.jsp | 101§3.8 |
+| B101-2.8 | Registering Application Short Names and Responsibility Keys | Lab | ✓ | Guide | Application short name, responsibility key, FWK_TBX_TUTORIAL setup for local testing | 101§3.9 |
+| B101-2.9 | Building Your First "Hello World!" OAF Page | Lab | ✓ | Step-by-step | First page, AM, layout, components, run | 101§3.6 |
+| B101-2.10 | Organizing Projects: Structure & Best Practices | Video | ✓ | Template | Workspace organization, naming, version control | 101§3.7 |
 
 ### Section 101.3: Model Layer
 
 **Modules:** 4 | **Days:** 7.9
 
-#### Module DEV101-3: Application Module Construction
+#### Module B101-3: Application Module Construction
 
 **Type:** Core | **Days:** 2.6 | **Labs:** [LABS.md](LABS.md), Section 4  
 **Technical focus:** OAApplicationModuleImpl, OADBTransaction, Root AM  
@@ -683,13 +683,13 @@ Dev 101 was stated at 20-25 days, but its required path of 59 lectures needs abo
 
 | Code | Lecture Title | Format | Practice | Resource | Notes | Syllabus |
 | :-- | :-- | :-: | :-: | :-: | :-- | :-: |
-| DEV101-3.1 | Understanding BC4J: The Data Management Engine | Video | ✓ | Overview | Understanding BC4J, MVC role, component ecosystem | 101§4.1 |
-| DEV101-3.2 | Designing Application Modules: Orchestrating Business Logic | Video | ✓ | Design Guide | AM structure, transactions, pooling, patterns | 101§4.2 |
-| DEV101-3.3 | Building & Testing Your First Application Module | Lab | ✓ | Wizard Guide | Step-by-step creation, testing, debugging | 101§4.3 |
-| DEV101-3.4 | Accessing OADBTransaction from the Application Module | Lab | ✓ | Guide | Database connection access, transaction commit/rollback, server-side utilities | 101§4.13 |
-| DEV101-3.5 | Managing Database Transactions & Connection Pooling | Video | ✓ | Best Practices | Connection pooling, commits, locking, tuning | 101§4.11 |
+| B101-3.1 | Understanding BC4J: The Data Management Engine | Video | ✓ | Overview | Understanding BC4J, MVC role, component ecosystem | 101§4.1 |
+| B101-3.2 | Designing Application Modules: Orchestrating Business Logic | Video | ✓ | Design Guide | AM structure, transactions, pooling, patterns | 101§4.2 |
+| B101-3.3 | Building & Testing Your First Application Module | Lab | ✓ | Wizard Guide | Step-by-step creation, testing, debugging | 101§4.3 |
+| B101-3.4 | Accessing OADBTransaction from the Application Module | Lab | ✓ | Guide | Database connection access, transaction commit/rollback, server-side utilities | 101§4.13 |
+| B101-3.5 | Managing Database Transactions & Connection Pooling | Video | ✓ | Best Practices | Connection pooling, commits, locking, tuning | 101§4.11 |
 
-#### Module DEV101-4: View Object Development
+#### Module B101-4: View Object Development
 
 **Type:** Core | **Days:** 2.6 | **Labs:** [LABS.md](LABS.md), Section 4  
 **Technical focus:** OAViewObjectImpl, SQL Bind Variables, View Links  
@@ -698,13 +698,13 @@ Dev 101 was stated at 20-25 days, but its required path of 59 lectures needs abo
 
 | Code | Lecture Title | Format | Practice | Resource | Notes | Syllabus |
 | :-- | :-- | :-: | :-: | :-: | :-- | :-: |
-| DEV101-4.1 | View Objects Explained: Query-Based Data Views | Video | ✓ | VO Guide | SQL queries, read-only vs updatable, performance | 101§4.6 |
-| DEV101-4.2 | Building Updatable View Objects for CRUD Operations | Lab | ✓ | Tutorial | VO-EO linking, attribute mapping, CRUD testing | 101§4.7 |
-| DEV101-4.3 | Implementing Read-Only View Objects with SQL | Lab | ✓ | Tutorial | SQL-based VOs, expert mode, joins, optimization | 101§4.8 |
-| DEV101-4.4 | Configuring Bind Variables and View Criteria | Lab | ✓ | Tutorial | Named bind variables, view criteria, dynamic WHERE clauses, preventing SQL injection | 101§4.12 |
-| DEV101-4.5 | Mastering View Links & Entity Associations | Video | ✓ | Reference | Master-detail, FK relationships, domains | 101§4.10 |
+| B101-4.1 | View Objects Explained: Query-Based Data Views | Video | ✓ | VO Guide | SQL queries, read-only vs updatable, performance | 101§4.6 |
+| B101-4.2 | Building Updatable View Objects for CRUD Operations | Lab | ✓ | Tutorial | VO-EO linking, attribute mapping, CRUD testing | 101§4.7 |
+| B101-4.3 | Implementing Read-Only View Objects with SQL | Lab | ✓ | Tutorial | SQL-based VOs, expert mode, joins, optimization | 101§4.8 |
+| B101-4.4 | Configuring Bind Variables and View Criteria | Lab | ✓ | Tutorial | Named bind variables, view criteria, dynamic WHERE clauses, preventing SQL injection | 101§4.12 |
+| B101-4.5 | Mastering View Links & Entity Associations | Video | ✓ | Reference | Master-detail, FK relationships, domains | 101§4.10 |
 
-#### Module DEV101-5: Entity Object & DML Layer
+#### Module B101-5: Entity Object & DML Layer
 
 **Type:** Core | **Days:** 1.6 | **Labs:** [LABS.md](LABS.md), Section 4  
 **Technical focus:** OAEntityImpl, Validation Logic, Primary Keys  
@@ -713,25 +713,25 @@ Dev 101 was stated at 20-25 days, but its required path of 59 lectures needs abo
 
 | Code | Lecture Title | Format | Practice | Resource | Notes | Syllabus |
 | :-- | :-- | :-: | :-: | :-: | :-- | :-: |
-| DEV101-5.1 | Entity Objects Fundamentals: Your Database Gateway | Video | ✓ | EO Reference | Table mapping, validation, DML, associations | 101§4.4 |
-| DEV101-5.2 | Creating Entity Objects: Table-to-Object Mapping | Lab | ✓ | Tutorial | Wizard creation, attributes, validation rules | 101§4.5 |
-| DEV101-5.3 | Defining Primary Keys and Attribute Validation in Entity Objects | Lab | ✓ | Tutorial | Primary key identification, attribute-level validation routines, entity-level validation | 101§4.14 |
+| B101-5.1 | Entity Objects Fundamentals: Your Database Gateway | Video | ✓ | EO Reference | Table mapping, validation, DML, associations | 101§4.4 |
+| B101-5.2 | Creating Entity Objects: Table-to-Object Mapping | Lab | ✓ | Tutorial | Wizard creation, attributes, validation rules | 101§4.5 |
+| B101-5.3 | Defining Primary Keys and Attribute Validation in Entity Objects | Lab | ✓ | Tutorial | Primary key identification, attribute-level validation routines, entity-level validation | 101§4.14 |
 
-#### Module DEV101-8: Master-Detail Relationships
+#### Module B101-8: Master-Detail Relationships
 
 **Type:** Required | **Days:** 1.1 | **Labs:** [LABS.md](LABS.md), Section 6B  
 **Code-brain examples:** [MasterDetailPatternsAM.java](code-brain/model-layer/application-modules/MasterDetailPatternsAM.java), [Lab3MasterDetailPageCO.java](code-brain/labs/Lab3MasterDetailPageCO.java)
 
 | Code | Lecture Title | Format | Practice | Resource | Notes | Syllabus |
 | :-- | :-- | :-: | :-: | :-: | :-- | :-: |
-| DEV101-8.1 | Understanding Master-Detail Pattern with View Links | Video | ✓ | Guide | Parent-child relationships, View Links, use cases | 101§6B.1 |
-| DEV101-8.2 | Implementing Master-Detail User Interfaces | Lab | ✓ | Tutorial | Region configuration, synchronization, cascading | 101§6B.2 |
+| B101-8.1 | Understanding Master-Detail Pattern with View Links | Video | ✓ | Guide | Parent-child relationships, View Links, use cases | 101§6B.1 |
+| B101-8.2 | Implementing Master-Detail User Interfaces | Lab | ✓ | Tutorial | Region configuration, synchronization, cascading | 101§6B.2 |
 
 ### Section 101.4: View and Controller
 
 **Modules:** 2 | **Days:** 11.1
 
-#### Module DEV101-6: Declarative Page Layouts
+#### Module B101-6: Declarative Page Layouts
 
 **Type:** Core | **Days:** 7.4 | **Labs:** [LABS.md](LABS.md), Section 5  
 **Technical focus:** Page Definitions (.xml), UIX Web Beans, Region Types  
@@ -740,22 +740,22 @@ Dev 101 was stated at 20-25 days, but its required path of 59 lectures needs abo
 
 | Code | Lecture Title | Format | Practice | Resource | Notes | Syllabus |
 | :-- | :-- | :-: | :-: | :-: | :-- | :-: |
-| DEV101-6.1 | Understanding UIX: Component-Based UI Architecture | Video | ✓ | UIX Guide | Framework basics, component hierarchy, metadata | 101§5.1 |
-| DEV101-6.2 | Structuring UI Components in Your Workspace | Video | ✓ | Structure Guide | Workspace organization, naming, packages, reusable | 101§5.2 |
-| DEV101-6.3 | Building Pages & Regions: Core Fundamentals | Video | ✓ | Layout Guide | Page structure, region types, hierarchy, containers | 101§5.3 |
-| DEV101-6.4 | Creating and Reusing Shared Regions, Pages and Items | Lab | ✓ | Tutorial | Shared regions, shared pages, shared items, reuse across page contexts, sharing logistics | 101§5.15 |
-| DEV101-6.5 | Working with Standard Web Widgets & Components | Lab | ✓ | Widget Reference | All standard UI widgets and their properties | 101§5.4 |
-| DEV101-6.6 | Designing Professional Page Layouts & Advanced Regions | Lab | ✓ | Layout Patterns | Layouts, headers, buttons, query regions | 101§5.6 |
-| DEV101-6.7 | Building Forms with messageComponentLayout and Default Layouts | Lab | ✓ | Widget Reference | messageComponentLayout columns and rows, stack layouts; default* form layouts are deprecated in 12.2; messageLayout for non-message beans, labeledFieldLayout | 101§5.10 |
-| DEV101-6.8 | Look-and-Feel Standards: BLAF and Redwood *(verify)* | Video | ✓ | Style Guide | Oracle look-and-feel standards, BLAF guidelines, Redwood look and feel, choosing and applying a look and feel *(verify)* | 101§5.16 |
-| DEV101-6.9 | Selection Controls: Poplists, Radio Groups, Checkboxes and Spin Boxes | Lab | ✓ | Widget Reference | messageChoice, messageLovChoice, messageRadioGroup, messageCheckBox, messageSpinBox, default values; messageRadioButton | 101§5.11 |
-| DEV101-6.10 | Buttons, Page Button Bars and Content Footers | Lab | ✓ | Widget Reference | button, submitButton, resetButton, selectionButton, exportButton, link, pageButtonBar, contentFooter; page footer (copyright and privacy links); contentFooter is deprecated; link variants (GET/POST, external URL, mailto, JavaScript) | 101§5.12 |
-| DEV101-6.11 | Images, Spacers, Separators, Tips and Static Text | Lab | ✓ | Widget Reference | image, spacer, separator, tip, instructionText, styledText, formattedText; messageStyledText, staticStyledText, rawText, dynamic images from BLOB columns | 101§5.13 |
-| DEV101-6.12 | Form Parameters, Form Values and Includes | Lab | ✓ | Guide | formParameter, formValue, servletInclude, urlInclude; passing hidden values | 101§5.14 |
-| DEV101-6.13 | Applying CSS Styling & Reusable Attribute Sets | Video | ✓ | Style Guide | CSS styling, attribute sets, theming | 101§5.7 |
-| DEV101-6.14 | Implementing Navigation: Breadcrumbs & Menus | Video | ✓ | Nav Guide | Breadcrumb configuration, menu integration; locator element | 101§5.9 |
+| B101-6.1 | Understanding UIX: Component-Based UI Architecture | Video | ✓ | UIX Guide | Framework basics, component hierarchy, metadata | 101§5.1 |
+| B101-6.2 | Structuring UI Components in Your Workspace | Video | ✓ | Structure Guide | Workspace organization, naming, packages, reusable | 101§5.2 |
+| B101-6.3 | Building Pages & Regions: Core Fundamentals | Video | ✓ | Layout Guide | Page structure, region types, hierarchy, containers | 101§5.3 |
+| B101-6.4 | Creating and Reusing Shared Regions, Pages and Items | Lab | ✓ | Tutorial | Shared regions, shared pages, shared items, reuse across page contexts, sharing logistics | 101§5.15 |
+| B101-6.5 | Working with Standard Web Widgets & Components | Lab | ✓ | Widget Reference | All standard UI widgets and their properties | 101§5.4 |
+| B101-6.6 | Designing Professional Page Layouts & Advanced Regions | Lab | ✓ | Layout Patterns | Layouts, headers, buttons, query regions | 101§5.6 |
+| B101-6.7 | Building Forms with messageComponentLayout and Default Layouts | Lab | ✓ | Widget Reference | messageComponentLayout columns and rows, stack layouts; default* form layouts are deprecated in 12.2; messageLayout for non-message beans, labeledFieldLayout | 101§5.10 |
+| B101-6.8 | Look-and-Feel Standards: BLAF and Redwood *(verify)* | Video | ✓ | Style Guide | Oracle look-and-feel standards, BLAF guidelines, Redwood look and feel, choosing and applying a look and feel *(verify)* | 101§5.16 |
+| B101-6.9 | Selection Controls: Poplists, Radio Groups, Checkboxes and Spin Boxes | Lab | ✓ | Widget Reference | messageChoice, messageLovChoice, messageRadioGroup, messageCheckBox, messageSpinBox, default values; messageRadioButton | 101§5.11 |
+| B101-6.10 | Buttons, Page Button Bars and Content Footers | Lab | ✓ | Widget Reference | button, submitButton, resetButton, selectionButton, exportButton, link, pageButtonBar, contentFooter; page footer (copyright and privacy links); contentFooter is deprecated; link variants (GET/POST, external URL, mailto, JavaScript) | 101§5.12 |
+| B101-6.11 | Images, Spacers, Separators, Tips and Static Text | Lab | ✓ | Widget Reference | image, spacer, separator, tip, instructionText, styledText, formattedText; messageStyledText, staticStyledText, rawText, dynamic images from BLOB columns | 101§5.13 |
+| B101-6.12 | Form Parameters, Form Values and Includes | Lab | ✓ | Guide | formParameter, formValue, servletInclude, urlInclude; passing hidden values | 101§5.14 |
+| B101-6.13 | Applying CSS Styling & Reusable Attribute Sets | Video | ✓ | Style Guide | CSS styling, attribute sets, theming | 101§5.7 |
+| B101-6.14 | Implementing Navigation: Breadcrumbs & Menus | Video | ✓ | Nav Guide | Breadcrumb configuration, menu integration; locator element | 101§5.9 |
 
-#### Module DEV101-7: Controller Request Processing
+#### Module B101-7: Controller Request Processing
 
 **Type:** Core | **Days:** 3.7 | **Labs:** [LABS.md](LABS.md), Section 6  
 **Technical focus:** OAControllerImpl, processRequest(), OAPageContext  
@@ -764,83 +764,83 @@ Dev 101 was stated at 20-25 days, but its required path of 59 lectures needs abo
 
 | Code | Lecture Title | Format | Practice | Resource | Notes | Syllabus |
 | :-- | :-- | :-: | :-: | :-: | :-- | :-: |
-| DEV101-7.1 | Understanding Controller Architecture & User Actions | Video | ✓ | CO Guide | MVC role, lifecycle, structure, best practices | 101§6.1 |
-| DEV101-7.2 | Handling GET Requests: Page Initialization Logic | Video | ✓ | Pattern Library | processRequest(), initialization, default values | 101§6.2 |
-| DEV101-7.3 | Leveraging Controller API: pageContext & WebBeans | Video | ✓ | API Reference | pageContext, attributes, WebBeans, transactions | 101§6.5 |
-| DEV101-7.4 | Comparing Parameter Passing Strategies | Video | ✓ | Decision Tree | Request, Transaction, Session scopes comparison | 101§6.6 |
-| DEV101-7.5 | Using Request Parameters for Single-Page Scope | Lab | ✓ | Tutorial | Token-based, navigation, lifecycle, examples | 101§6.7 |
-| DEV101-7.6 | Managing Transaction Parameters Across Pages | Lab | ✓ | Tutorial | Multi-page flow, retention, cleanup | 101§6.8 |
-| DEV101-7.7 | Implementing Session Parameters for User State | Lab | ✓ | Tutorial | Session scope, persistence, memory, best practices | 101§6.9 |
+| B101-7.1 | Understanding Controller Architecture & User Actions | Video | ✓ | CO Guide | MVC role, lifecycle, structure, best practices | 101§6.1 |
+| B101-7.2 | Handling GET Requests: Page Initialization Logic | Video | ✓ | Pattern Library | processRequest(), initialization, default values | 101§6.2 |
+| B101-7.3 | Leveraging Controller API: pageContext & WebBeans | Video | ✓ | API Reference | pageContext, attributes, WebBeans, transactions | 101§6.5 |
+| B101-7.4 | Comparing Parameter Passing Strategies | Video | ✓ | Decision Tree | Request, Transaction, Session scopes comparison | 101§6.6 |
+| B101-7.5 | Using Request Parameters for Single-Page Scope | Lab | ✓ | Tutorial | Token-based, navigation, lifecycle, examples | 101§6.7 |
+| B101-7.6 | Managing Transaction Parameters Across Pages | Lab | ✓ | Tutorial | Multi-page flow, retention, cleanup | 101§6.8 |
+| B101-7.7 | Implementing Session Parameters for User State | Lab | ✓ | Tutorial | Session scope, persistence, memory, best practices | 101§6.9 |
 
 ### Section 101.5: Quality, Security and Delivery
 
 **Modules:** 4 | **Days:** 8.9
 
-#### Module DEV101-9: Debugging in JDeveloper
+#### Module B101-9: Debugging in JDeveloper
 
 **Type:** Required | **Days:** 1.1 | **Labs:** [LABS.md](LABS.md), Section 7  
 **Code-brain examples:** [OAExceptionHandling.java](code-brain/cross-cutting/error-handling/OAExceptionHandling.java), [MessageHelper.java](code-brain/cross-cutting/utils/MessageHelper.java), [MessageConstants.java](code-brain/cross-cutting/constants/MessageConstants.java), [DiagnosticsLogger.java](code-brain/foundation/diagnostics/DiagnosticsLogger.java), [DialogPageExamples.java](code-brain/controller-layer/dialogs/DialogPageExamples.java)
 
 | Code | Lecture Title | Format | Practice | Resource | Notes | Syllabus |
 | :-- | :-- | :-: | :-: | :-: | :-- | :-: |
-| DEV101-9.1 | Using Debugging Tools: Console & Logging | Video | ✓ | Debug Guide | Console output, log files, diagnostic logging | 101§7.3 |
-| DEV101-9.2 | Mastering JDeveloper Debugger: Step-Through Analysis | Lab | ✓ | Debug Tutorial | Breakpoints, step-through, variables, remote | 101§7.4 |
+| B101-9.1 | Using Debugging Tools: Console & Logging | Video | ✓ | Debug Guide | Console output, log files, diagnostic logging | 101§7.3 |
+| B101-9.2 | Mastering JDeveloper Debugger: Step-Through Analysis | Lab | ✓ | Debug Tutorial | Breakpoints, step-through, variables, remote | 101§7.4 |
 
-#### Module DEV101-10: Security Implementation
+#### Module B101-10: Security Implementation
 
 **Type:** Extended | **Days:** 2.1 | **Labs:** [LABS.md](LABS.md), Section 8  
 **Code-brain examples:** [SecurityPatterns.java](code-brain/security/SecurityPatterns.java), [SecurityValidator.java](code-brain/foundation/security/SecurityValidator.java), [UserContextHelper.java](code-brain/foundation/security/UserContextHelper.java), [SecureSearchVO.java](code-brain/model-layer/view-objects/SecureSearchVO.java)
 
 | Code | Lecture Title | Format | Practice | Resource | Notes | Syllabus |
 | :-- | :-- | :-: | :-: | :-: | :-- | :-: |
-| DEV101-10.1 | Understanding OAF Security: Authentication & Authorization | Video | ✓ | Security Guide | Authentication, authorization, function security | 101§8.1 |
-| DEV101-10.2 | Implementing Function Security to Control Page Access | Lab | ✓ | Tutorial | Function registration, menu setup, responsibilities | 101§8.2 |
-| DEV101-10.3 | Applying Data Security: Row-Level Protection | Video | ✓ | Best Practices | Multi-Org, row-level security, VPD, filtering | 101§8.3 |
-| DEV101-10.4 | Built-In Protection Against HTML Tampering | Video | ✓ | Guide | Automatic guards against HTML tampering and common hacking vectors, what the framework protects by default | 101§8.4 |
+| B101-10.1 | Understanding OAF Security: Authentication & Authorization | Video | ✓ | Security Guide | Authentication, authorization, function security | 101§8.1 |
+| B101-10.2 | Implementing Function Security to Control Page Access | Lab | ✓ | Tutorial | Function registration, menu setup, responsibilities | 101§8.2 |
+| B101-10.3 | Applying Data Security: Row-Level Protection | Video | ✓ | Best Practices | Multi-Org, row-level security, VPD, filtering | 101§8.3 |
+| B101-10.4 | Built-In Protection Against HTML Tampering | Video | ✓ | Guide | Automatic guards against HTML tampering and common hacking vectors, what the framework protects by default | 101§8.4 |
 
-#### Module DEV101-11: Development Standards and Best Practices
+#### Module B101-11: Development Standards and Best Practices
 
 **Type:** Extended | **Days:** 3.7 | **Labs:** [LABS.md](LABS.md), Section 9  
 **Code-brain examples:** [MDSOperations.java](code-brain/cross-cutting/metadata/MDSOperations.java), [ProfileOptionPatterns.java](code-brain/cross-cutting/configuration/ProfileOptionPatterns.java)
 
 | Code | Lecture Title | Format | Practice | Resource | Notes | Syllabus |
 | :-- | :-- | :-: | :-: | :-: | :-- | :-: |
-| DEV101-11.1 | Understanding Why Development Standards Matter | Video | ✓ | Guide | Maintainability, team collaboration, Oracle support, upgrades | 101§9.1 |
-| DEV101-11.2 | Following OAF Coding Standards & Terminology | Video | ✓ | Standards Doc | Naming conventions, package structure, comments, organization | 101§9.2 |
-| DEV101-11.3 | Comparing Oracle, Project & Industry Standards | Video | ✓ | Comparison | Oracle standards, project-specific, industry best practices | 101§9.3 |
-| DEV101-11.4 | Organizing Files & Packages in OAF Projects | Video | ✓ | Reference | File types (.xml, .java, .class), package naming, MDS structure | 101§9.4 |
-| DEV101-11.5 | Understanding OAF Directory Structure | Video | ✓ | Diagram | $JAVA_TOP structure, workspace organization, resource files | 101§9.5 |
-| DEV101-11.6 | Using Import/Export Utilities for Code Management | Lab | ✓ | Tutorial | Code extraction from database, importing to JDeveloper, version control; JDeveloper-level only, command-line importers are covered in Dev 103 | 101§9.6 |
-| DEV101-11.7 | Designing Common Page Patterns & Use Cases | Video | ✓ | Patterns | Search pages, Create/Update pages, Detail/drill-down, List pages | 101§9.9 |
+| B101-11.1 | Understanding Why Development Standards Matter | Video | ✓ | Guide | Maintainability, team collaboration, Oracle support, upgrades | 101§9.1 |
+| B101-11.2 | Following OAF Coding Standards & Terminology | Video | ✓ | Standards Doc | Naming conventions, package structure, comments, organization | 101§9.2 |
+| B101-11.3 | Comparing Oracle, Project & Industry Standards | Video | ✓ | Comparison | Oracle standards, project-specific, industry best practices | 101§9.3 |
+| B101-11.4 | Organizing Files & Packages in OAF Projects | Video | ✓ | Reference | File types (.xml, .java, .class), package naming, MDS structure | 101§9.4 |
+| B101-11.5 | Understanding OAF Directory Structure | Video | ✓ | Diagram | $JAVA_TOP structure, workspace organization, resource files | 101§9.5 |
+| B101-11.6 | Using Import/Export Utilities for Code Management | Lab | ✓ | Tutorial | Code extraction from database, importing to JDeveloper, version control; JDeveloper-level only, command-line importers are covered in Dev 103 | 101§9.6 |
+| B101-11.7 | Designing Common Page Patterns & Use Cases | Video | ✓ | Patterns | Search pages, Create/Update pages, Detail/drill-down, List pages | 101§9.9 |
 
-#### Module DEV101-12: Deploying OA Framework Applications
+#### Module B101-12: Deploying OA Framework Applications
 
 **Type:** Required | **Days:** 2.1 | **Labs:** [LABS.md](LABS.md), Section 10  
 
 | Code | Lecture Title | Format | Practice | Resource | Notes | Syllabus |
 | :-- | :-- | :-: | :-: | :-: | :-- | :-: |
-| DEV101-12.1 | Understanding the OAF Deployment Process | Video | ✓ | Checklist | Compilation, packaging, file transfer, import to MDS, bounce Apache | 101§10.1 |
-| DEV101-12.2 | Deploying Your OAF Application on R12.1.x | Lab | ✓ | Tutorial | Step-by-step deployment, file locations, import commands, verification | 101§10.2 |
-| DEV101-12.3 | Deploying Your OAF Application on R12.2.x | Lab | ✓ | Tutorial | Deployment differences on R12.2 for a training instance; the dual file system, adop and online patching are covered in Dev 103 | 101§10.3 |
-| DEV101-12.4 | Completing Post-Deployment Configuration Tasks | Lab | ✓ | Guide | Function registration, menu setup, responsibility assignment, testing | 101§10.4 |
+| B101-12.1 | Understanding the OAF Deployment Process | Video | ✓ | Checklist | Compilation, packaging, file transfer, import to MDS, bounce Apache | 101§10.1 |
+| B101-12.2 | Deploying Your OAF Application on R12.1.x | Lab | ✓ | Tutorial | Step-by-step deployment, file locations, import commands, verification | 101§10.2 |
+| B101-12.3 | Deploying Your OAF Application on R12.2.x | Lab | ✓ | Tutorial | Deployment differences on R12.2 for a training instance; the dual file system, adop and online patching are covered in Dev 103 | 101§10.3 |
+| B101-12.4 | Completing Post-Deployment Configuration Tasks | Lab | ✓ | Guide | Function registration, menu setup, responsibility assignment, testing | 101§10.4 |
 
 ### Section 101.6: Capstone
 
 **Modules:** 1 | **Days:** alongside
 
-#### Module DEV101-13: Jobs & Positions Management Capstone
+#### Module B101-13: Jobs & Positions Management Capstone
 
 **Type:** Required | **Days:** alongside | **Labs:** [LABS.md](LABS.md), Level 101 Capstone Project (20-day schedule)  
 **Code-brain examples:** [JobEOImpl.java](code-brain/case-studies/jobs-positions-management/JobEOImpl.java), [PositionEOImpl.java](code-brain/case-studies/jobs-positions-management/PositionEOImpl.java), [JobMgmtAMImpl.java](code-brain/model-layer/application-modules/JobMgmtAMImpl.java), [JobMgmtCO.java](code-brain/controller-layer/JobMgmtCO.java), [Lab1QueryPageCO.java](code-brain/labs/Lab1QueryPageCO.java), [Lab2CreateUpdatePageCO.java](code-brain/labs/Lab2CreateUpdatePageCO.java), [Lab3MasterDetailPageCO.java](code-brain/labs/Lab3MasterDetailPageCO.java)
 
 | Code | Lecture Title | Format | Practice | Resource | Notes | Syllabus |
 | :-- | :-- | :-: | :-: | :-: | :-- | :-: |
-| DEV101-13.1 | Database Objects and Entities | Lab | ✓ | Scripts | Tables, sequences, entity objects, WHO columns | 101§11.1 |
-| DEV101-13.2 | View Objects and Application Module | Lab | ✓ | Project | Job and position VOs, view link, root AM | 101§11.2 |
-| DEV101-13.3 | Job Search and Job Details Pages | Lab | ✓ | Project | Search page, create/update page, controllers | 101§11.3 |
-| DEV101-13.4 | Position Maintenance (Master-Detail) | Lab | ✓ | Project | Detail table, add/delete rows, validation | 101§11.4 |
-| DEV101-13.5 | Testing and Deployment | Lab | ✓ | Checklist | Test plan, deployment to EBS, reflection | 101§11.5 |
-| DEV101-13.6 | Capstone Assessment | Workshop | ✓ | Rubric | 100 points: functionality 40, code quality 30, UI 20, documentation 10 | 101§11.6 |
+| B101-13.1 | Database Objects and Entities | Lab | ✓ | Scripts | Tables, sequences, entity objects, WHO columns | 101§11.1 |
+| B101-13.2 | View Objects and Application Module | Lab | ✓ | Project | Job and position VOs, view link, root AM | 101§11.2 |
+| B101-13.3 | Job Search and Job Details Pages | Lab | ✓ | Project | Search page, create/update page, controllers | 101§11.3 |
+| B101-13.4 | Position Maintenance (Master-Detail) | Lab | ✓ | Project | Detail table, add/delete rows, validation | 101§11.4 |
+| B101-13.5 | Testing and Deployment | Lab | ✓ | Checklist | Test plan, deployment to EBS, reflection | 101§11.5 |
+| B101-13.6 | Capstone Assessment | Workshop | ✓ | Rubric | 100 points: functionality 40, code quality 30, UI 20, documentation 10 | 101§11.6 |
 
 ## Level 102: Dev 102: Oracle OAF Building BootCamp (Advanced)
 
@@ -1704,16 +1704,16 @@ Every OAF user interface component and core capability, with the lectures that t
 
 | Area | Component or capability | Type | Lectures |
 | :-- | :-- | :-: | :-- |
-| Structural | attributeSet, package | Components | DEV101-6.13 |
-| Structural | page | Components | DEV101-6.3 |
-| Structural | Look-and-feel standards (BLAF, Redwood) | Capabilities | DEV101-6.8 |
-| Layout containers | pageLayout | Components | DEV101-6.3, DEV101-6.6 |
+| Structural | attributeSet, package | Components | B101-6.13 |
+| Structural | page | Components | B101-6.3 |
+| Structural | Look-and-feel standards (BLAF, Redwood) | Capabilities | B101-6.8 |
+| Layout containers | pageLayout | Components | B101-6.3, B101-6.6 |
 | Layout containers | header, hideShowHeader | Components | DEV102-9.1 |
-| Layout containers | messageComponentLayout, default* layouts (deprecated in 12.2) | Components | DEV101-6.7 |
+| Layout containers | messageComponentLayout, default* layouts (deprecated in 12.2) | Components | B101-6.7 |
 | Layout containers | stackLayout, flowLayout | Components | DEV102-9.2, DEV102-9.3 |
 | Layout containers | tableLayout, rowLayout, cellFormat | Components | DEV102-9.6 |
-| Layout containers | messageLayout, labeledFieldLayout | Components | DEV101-6.7 |
-| Layout containers | footer (copyright, privacy links) | Components | DEV101-6.10 |
+| Layout containers | messageLayout, labeledFieldLayout | Components | B101-6.7 |
+| Layout containers | footer (copyright, privacy links) | Components | B101-6.10 |
 | Layout containers | Auto-Repeating Layout (ARL) | Components | DEV102-10.5 |
 | Layout containers | flexibleLayout, flexibleContent, flexibleContentList | Components | DEV102-11.5 |
 | Layout containers | contentContainer, richContainer | Components | DEV102-9.4 |
@@ -1725,17 +1725,17 @@ Every OAF user interface component and core capability, with the lectures that t
 | Data presentation | infotile | Components | DEV103-16.6 |
 | Navigation and page flow | train | Components | DEV102-11.1, DEV103-17.5 |
 | Navigation and page flow | subTabLayout, subTabBar, hideShowSubTabLayout | Components | DEV103-17.5 |
-| Navigation and page flow | menu, menuItem, breadcrumbs, locator | Components | DEV101-6.14 |
-| Navigation and page flow | pageButtonBar, contentFooter | Components | DEV101-6.10 |
-| Input and item controls | Text and labeled inputs (messageTextInput, styledText, formattedText, instructionText) | Components | DEV101-6.5, DEV101-6.11 |
-| Input and item controls | messageChoice, messageLovChoice, radio, checkbox, spinBox | Components | DEV101-6.9 |
+| Navigation and page flow | menu, menuItem, breadcrumbs, locator | Components | B101-6.14 |
+| Navigation and page flow | pageButtonBar, contentFooter | Components | B101-6.10 |
+| Input and item controls | Text and labeled inputs (messageTextInput, styledText, formattedText, instructionText) | Components | B101-6.5, B101-6.11 |
+| Input and item controls | messageChoice, messageLovChoice, radio, checkbox, spinBox | Components | B101-6.9 |
 | Input and item controls | shuttle | Components | DEV102-11.2 |
 | Input and item controls | richTextEditor, colorPicker, messageRatingBar | Components | DEV102-11.4 |
-| Input and item controls | button, submitButton, resetButton, selectionButton, exportButton, link | Components | DEV101-6.10, DEV102-7.5 |
+| Input and item controls | button, submitButton, resetButton, selectionButton, exportButton, link | Components | B101-6.10, DEV102-7.5 |
 | Input and item controls | LOV auto-completion | Capabilities | DEV102-3.3 |
-| Input and item controls | Smart poplist (LOV choice list) | Capabilities | DEV101-6.9 |
+| Input and item controls | Smart poplist (LOV choice list) | Capabilities | B101-6.9 |
 | Input and item controls | lovActionButton, lovActionMap | Components | DEV102-3.4 |
-| Input and item controls | messageStyledText, staticStyledText, rawText | Components | DEV101-6.11, DEV102-12.4 |
+| Input and item controls | messageStyledText, staticStyledText, rawText | Components | B101-6.11, DEV102-12.4 |
 | Input and item controls | singleSelection, multipleSelection (table row selection) | Components | DEV102-6.1, DEV103-16.1 |
 | Input and item controls | messageFileUpload, messageDownload | Components | DEV102-15.5, DEV102-15.9 |
 | Input and item controls | entityMap, categoryMap, primaryKey (attachment mapping) | Components | DEV102-15.4 |
@@ -1743,25 +1743,25 @@ Every OAF user interface component and core capability, with the lectures that t
 | Input and item controls | popUp, dialogPage | Components | DEV102-5.1, DEV102-5.2, DEV103-17.5 |
 | Input and item controls | flex, flexMap (DFF and KFF) | Components | DEV102-12.1, DEV102-12.2 |
 | Input and item controls | attachmentTable, attachmentLink, attachmentImage, messageInlineAttachment | Components | DEV102-15.4 |
-| Input and item controls | image, spacer, separator, tip | Components | DEV101-6.11 |
-| Input and item controls | formParameter, formValue, servletInclude, urlInclude | Components | DEV101-6.12 |
+| Input and item controls | image, spacer, separator, tip | Components | B101-6.11 |
+| Input and item controls | formParameter, formValue, servletInclude, urlInclude | Components | B101-6.12 |
 | Analytics and charts | Gantt, graphTable, graph, graphData | Components | DEV102-10.3, DEV103-16.6 |
-| Architecture and runtime | Model-View-Controller pattern | Capabilities | DEV101-1.5 |
+| Architecture and runtime | Model-View-Controller pattern | Capabilities | B101-1.5 |
 | Architecture and runtime | Partial Page Rendering (PPR) | Capabilities | DEV102-2.1, DEV102-2.2 |
-| Architecture and runtime | State and connection management (AM pooling, retention, passivation) | Capabilities | DEV101-3.5, DEV103-18.3 |
-| Architecture and runtime | Enterprise performance (AM and JDBC pooling, resource swapping, caching) | Capabilities | DEV101-3.5, DEV103-18.3, DEV103-18.4 |
-| Architecture and runtime | Development environment (JDeveloper, property sheets, hierarchy navigator, UML) | Capabilities | DEV101-2.1, DEV101-2.5 |
+| Architecture and runtime | State and connection management (AM pooling, retention, passivation) | Capabilities | B101-3.5, DEV103-18.3 |
+| Architecture and runtime | Enterprise performance (AM and JDBC pooling, resource swapping, caching) | Capabilities | B101-3.5, DEV103-18.3, DEV103-18.4 |
+| Architecture and runtime | Development environment (JDeveloper, property sheets, hierarchy navigator, UML) | Capabilities | B101-2.1, B101-2.5 |
 | Architecture and runtime | Enhanced save model (unsaved changes warning) | Capabilities | DEV102-15.16 |
 | Personalization and customization | Durable personalizations and MDS | Capabilities | CUST101-1.2, CUST101-1.3, CUST101-4.2 |
 | Personalization and customization | BC4J substitutions and extensions | Capabilities | CUST102-3.1, CUST102-3.2, CUST102-1.1 |
 | Personalization and customization | Configurable pages | Capabilities | DEV102-11.5 |
 | Personalization and customization | Multi-level personalization precedence (site, organization, responsibility, function, user) | Capabilities | CUST101-2.1 |
-| Personalization and customization | Object-oriented reuse (central EO validation, shared regions) | Capabilities | DEV101-5.3, DEV102-14.4, DEV101-6.4 |
+| Personalization and customization | Object-oriented reuse (central EO validation, shared regions) | Capabilities | B101-5.3, DEV102-14.4, B101-6.4 |
 | Search and rich tables | Query regions, list search, saved searches, infotiles | Capabilities | DEV102-10.1, DEV103-17.1, DEV103-17.2 |
 | Search and rich tables | Rich table features (resize, reorder, freeze, detach) | Capabilities | DEV103-16.3 |
-| Security | Function security, data security | Capabilities | DEV101-10.2, DEV101-10.3, DEV103-18.6 |
+| Security | Function security, data security | Capabilities | B101-10.2, B101-10.3, DEV103-18.6 |
 | Security | XSS scanning, AntiSamy, virus scanning, frame busting | Capabilities | DEV103-18.7 |
-| Security | Built-in protection against HTML tampering | Capabilities | DEV101-10.4 |
+| Security | Built-in protection against HTML tampering | Capabilities | B101-10.4 |
 | Integration and export | REST and web services, BSO tester | Capabilities | DEV103-19.1, DEV103-19.2 |
 | Integration and export | Export to Excel and PDF | Capabilities | DEV102-15.7, DEV103-16.4 |
 | Integration and export | Forms, portal and workflow interoperability | Capabilities | DEV102-12.5, DEV102-12.6, DEV103-19.4 |
@@ -1779,12 +1779,12 @@ Typical OAF application use cases, with the lectures that teach them. Titles are
 
 | Group | Use case | Lectures |
 | :-- | :-- | :-- |
-| Transactional and data entry | Single-step create | DEV103-9.3, DEV101-4.2 |
+| Transactional and data entry | Single-step create | DEV103-9.3, B101-4.2 |
 | Transactional and data entry | Multi-step create (wizard with train) | DEV102-11.1, DEV102-11.3 |
 | Transactional and data entry | Single-step update (iterative or single submit) | DEV103-9.5, DEV102-11.3 |
 | Transactional and data entry | Multi-step update | DEV102-11.3 |
 | Transactional and data entry | Delete with confirmation dialog | DEV103-9.4, DEV102-5.2 |
-| Transactional and data entry | Master-detail processing | DEV101-8.1, DEV101-8.2, DEV103-11.1 |
+| Transactional and data entry | Master-detail processing | B101-8.1, B101-8.2, DEV103-11.1 |
 | Transactional and data entry | Updateable summary pages (batch update, duplicate, delete rows) | DEV102-6.3, DEV102-6.2 |
 | Search, inquiry and filtering | Simple search and results | DEV103-9.1 |
 | Search, inquiry and filtering | Advanced search (AND/OR, query by example) | DEV102-10.1, DEV103-17.1 |
