@@ -14,22 +14,22 @@
 
 ## Curriculum
 
-| Section | Module | Title | Path | Lectures | Days |
-| :-: | :-- | :-- | :-: | :-: | :-: |
-| [1] | B101-1 | [BootCamp Orientation and Success Path](#1-bootcamp-orientation-and-success-path) | Extended | 4 | 2.1 |
-| [2] | B101-2 | [OAF Architecture and MVC Paradigms](#2-oaf-architecture-and-mvc-paradigms) | Core | 7 | 3.7 |
-| [3] | B101-3 | [IDE Setup and Project Topology](#3-ide-setup-and-project-topology) | Core | 10 | 5.3 |
-| [4] | B101-4 | [Application Module Construction](#4-application-module-construction) | Core | 5 | 2.6 |
-| [5] | B101-5 | [View Object Development](#5-view-object-development) | Core | 5 | 2.6 |
-| [6] | B101-6 | [Entity Object and DML Layer](#6-entity-object-and-dml-layer) | Core | 3 | 1.6 |
-| [7] | B101-7 | [Declarative Page Layouts](#7-declarative-page-layouts) | Core | 14 | 7.4 |
-| [8] | B101-8 | [Controller Request Processing](#8-controller-request-processing) | Core | 7 | 3.7 |
-| [9] | B101-9 | [Master-Detail Relationships](#9-master-detail-relationships) | Required | 2 | 1.1 |
-| [10] | B101-10 | [Debugging in JDeveloper](#10-debugging-in-jdeveloper) | Required | 2 | 1.1 |
-| [11] | B101-11 | [Security Implementation](#11-security-implementation) | Extended | 4 | 2.1 |
-| [12] | B101-12 | [Development Standards and Best Practices](#12-development-standards-and-best-practices) | Extended | 7 | 3.7 |
-| [13] | B101-13 | [Deploying OAF Applications](#13-deploying-oaf-applications) | Required | 4 | 2.1 |
-| [14] | B101-14 | [Jobs and Positions Management Capstone](#14-jobs-and-positions-management-capstone) | Required | 6 | alongside |
+| Section | Module | Title | Path | Lectures |
+| :-: | :-- | :-- | :-: | :-: |
+| [1] | B101-1 | [BootCamp Orientation and Success Path](#1-bootcamp-orientation-and-success-path) | Extended | 4 |
+| [2] | B101-2 | [OAF Architecture and MVC Paradigms](#2-oaf-architecture-and-mvc-paradigms) | Core | 7 |
+| [3] | B101-3 | [IDE Setup and Project Topology](#3-ide-setup-and-project-topology) | Core | 10 |
+| [4] | B101-4 | [Application Module Construction](#4-application-module-construction) | Core | 5 |
+| [5] | B101-5 | [View Object Development](#5-view-object-development) | Core | 5 |
+| [6] | B101-6 | [Entity Object and DML Layer](#6-entity-object-and-dml-layer) | Core | 3 |
+| [7] | B101-7 | [Declarative Page Layouts](#7-declarative-page-layouts) | Core | 14 |
+| [8] | B101-8 | [Controller Request Processing](#8-controller-request-processing) | Core | 7 |
+| [9] | B101-9 | [Master-Detail Relationships](#9-master-detail-relationships) | Required | 2 |
+| [10] | B101-10 | [Debugging in JDeveloper](#10-debugging-in-jdeveloper) | Required | 2 |
+| [11] | B101-11 | [Security Implementation](#11-security-implementation) | Extended | 4 |
+| [12] | B101-12 | [Development Standards and Best Practices](#12-development-standards-and-best-practices) | Extended | 7 |
+| [13] | B101-13 | [Deploying OAF Applications](#13-deploying-oaf-applications) | Required | 4 |
+| [14] | B101-14 | [Jobs and Positions Management Capstone](#14-jobs-and-positions-management-capstone) | Required | 6 |
 
 ## [1] BootCamp Orientation and Success Path
 
@@ -45,8 +45,6 @@
 ## [2] OAF Architecture and MVC Paradigms
 
 **Module:** B101-2 | **Path:** Core  
-**Technical focus:** J2EE MVC, Tier Separation, MDS Architecture  
-**Learning outcome:** Analyze the execution flow across Model, View, and Controller layers.  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -61,8 +59,6 @@
 ## [3] IDE Setup and Project Topology
 
 **Module:** B101-3 | **Path:** Core  
-**Technical focus:** JDeveloper Setup, .jws/.jpr Specs, DBC Connections  
-**Learning outcome:** Configure standardized local development environments linked to EBS.  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -80,8 +76,6 @@
 ## [4] Application Module Construction
 
 **Module:** B101-4 | **Path:** Core  
-**Technical focus:** OAApplicationModuleImpl, OADBTransaction, Root AM  
-**Learning outcome:** Construct transactional containers for BC4J component management.  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -94,8 +88,6 @@
 ## [5] View Object Development
 
 **Module:** B101-5 | **Path:** Core  
-**Technical focus:** OAViewObjectImpl, SQL Bind Variables, View Links  
-**Learning outcome:** Develop declarative and dynamic data query components for UI rendering.  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -108,8 +100,6 @@
 ## [6] Entity Object and DML Layer
 
 **Module:** B101-6 | **Path:** Core  
-**Technical focus:** OAEntityImpl, Validation Logic, Primary Keys  
-**Learning outcome:** Build persistent data access objects that enforce business constraints.  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -120,8 +110,6 @@
 ## [7] Declarative Page Layouts
 
 **Module:** B101-7 | **Path:** Core  
-**Technical focus:** Page Definitions (.xml), UIX Web Beans, Region Types  
-**Learning outcome:** Construct structured UI hierarchies using standard JRAD components.  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -143,8 +131,6 @@
 ## [8] Controller Request Processing
 
 **Module:** B101-8 | **Path:** Core  
-**Technical focus:** OAControllerImpl, processRequest(), OAPageContext  
-**Learning outcome:** Implement controller logic for initial page rendering and query setup.  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
