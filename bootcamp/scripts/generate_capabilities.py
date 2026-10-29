@@ -64,7 +64,19 @@ COMP={"Pages and regions":["page","pageLayout","attributeSet","package"],"messag
 "Form inputs and selection controls (radio, checkbox, spin box)":["messageTextInput","messageChoice","messageLovChoice","messageRadioButton","messageRadioGroup","messageCheckBox","messageSpinBox"],"Text and display items":["styledText","formattedText","instructionText","messageStyledText","staticStyledText","rawText"],"Images, spacers and separators":["image","spacer","separator","tip"],"Form parameters and includes":["formParameter","formValue","servletInclude","urlInclude"],"LOV auto-completion, dependent LOV and look-ahead":["listOfValues","messageLovInput","lovMap","lovActionButton","lovActionMap"],"Rich text, color picker and rating bar":["richTextEditor","colorPicker","messageRatingBar"],"Flexfields (DFF and KFF)":["flex","flexMap"],"Attachment mapping":["attachmentTable","attachmentLink","attachmentImage","messageInlineAttachment","entityMap","categoryMap","primaryKey"],"File upload and download":["messageFileUpload","messageDownload"],"Dialog pages":["dialogPage"]}
 allcap={n for its in CAP.values() for n,_ in its}
 assert all(k in allcap for k in COMP),[k for k in COMP if k not in allcap]
-out=["# Oracle OAF BootCamp Capabilities","","Every OAF capability covered by the five courses, with the levels that teach it and up to five lectures (lectures that name the capability come first).","","**Courses:** [Dev 101](building/101/README.md), [Dev 102](building/102/README.md), [Dev 103](building/103/README.md), [Cust 101](customizing/101/README.md), [Cust 102](customizing/102/README.md).",""]
+out=["# Oracle OAF BootCamp Capabilities","","Every OAF capability covered by the five courses, with its Level, the courses that teach it and up to five lectures (lectures that name the capability come first).","","**Courses:** [Dev 101](building/101/README.md), [Dev 102](building/102/README.md), [Dev 103](building/103/README.md), [Cust 101](customizing/101/README.md), [Cust 102](customizing/102/README.md).","","**Level** shows how advanced a capability is, taken from the lowest course that teaches it: **Foundation** (Dev 101), **Core** (Dev 102, Cust 101), **Advanced** (Dev 103, Cust 102) and **Expert** (Advanced capabilities taught only in the hardest modules). **Courses** lists every course that teaches it.",""]
+# Level: Foundation (Dev 101), Core (Dev 102, Cust 101), Advanced (Dev 103, Cust 102), Expert (Advanced, only in 5-star modules)
+LEVELS=["Foundation","Core","Advanced","Expert"]
+RANK={"B101":0,"B102":1,"C101":1,"B103":2,"C102":2}
+EXPERT_MODULES={"B103-004","B103-012","B103-014","B103-016","C102-003","C102-004"}
+# capabilities whose lectures sit late only because earlier lectures do not name them
+OVERRIDES={"CRUD pages (query, create, update, delete)":"Foundation"}
+def level_of(name,lectures):
+    if name in OVERRIDES: return OVERRIDES[name]
+    base=min(RANK[c[:4]] for c in lectures)
+    if base==2 and all(c[:8] in EXPERT_MODULES for c in lectures if RANK[c[:4]]==2): return "Expert"
+    return LEVELS[base]
+LEVEL_COUNT=collections.Counter()
 body=[];total=0;checks=[];summ=[]
 seen_parents=set()
 for area,items in CAP.items():
@@ -72,15 +84,16 @@ for area,items in CAP.items():
     if par:
         if par not in seen_parents:
             body+=[f"## {par}",""]; seen_parents.add(par)
-        body+=[f"### {sub}","","| Capability | Level | Lectures |","| :-- | :-- | :-- |"]
+        body+=[f"### {sub}","","| Capability | Level | Courses | Lectures |","| :-- | :-: | :-- | :-- |"]
     else:
-        body+=[f"## {area}","","| Capability | Level | Lectures |","| :-- | :-- | :-- |"]
+        body+=[f"## {area}","","| Capability | Level | Courses | Lectures |","| :-- | :-: | :-- | :-- |"]
     for name,kws in items:
         nh=sorted([c for c,n,no in rows if any(hit(k,n.lower()) for k in kws)],key=lambda c:(-int(any(p in [r for r in rows if r[0]==c][0][1].lower() for p in PREFER.get(name,[]))),-sum(hit(k,[r for r in rows if r[0]==c][0][1].lower()) for k in kws)))
         ot=sorted([c for c,n,no in rows if c not in nh and any(hit(k,(n+" "+no).lower()) for k in kws)],key=lambda c:-int(any(p in ([r for r in rows if r[0]==c][0][1]+" "+[r for r in rows if r[0]==c][0][2]).lower() for p in PREFER.get(name,[]))))
         allh=nh+ot; assert allh,name
         top=allh[:5]; lv=[LV[p] for p in LV if any(c.startswith(p) for c in allh)]
-        body.append(f"| {name} | {', '.join(lv)} | {', '.join(top)} |"); total+=1; checks.append((name,kws,top))
+        level=level_of(name,allh); LEVEL_COUNT[level]+=1
+        body.append(f"| {name} | {level} | {', '.join(lv)} | {', '.join(top)} |"); total+=1; checks.append((name,kws,top))
     summ.append((area,len(items))); body.append("")
 def _summ_rows():
     rows_=[];done=set()
@@ -107,7 +120,7 @@ for _i,(n,g) in enumerate(_ci,1):
     _nums='<br>'.join(f"C{_i:02d}.{_j:03d}" for _j in range(1,len(COMP[n])+1))
     _ci_rows.append(f"| C{_i:02d} | {g if g!=_last else ''} | {n} | {_nums} | {'<br>'.join(COMP[n])} |"); _last=g
 assert len(_ci_rows)==len(COMP)
-out+=["## Summary","","| Area | Capabilities |","| :-- | :-: |"]+_summ_rows()+[f"| **Total** | **{total}** |","",*body,"## UI Component Layout Index","","Bean-level OAF component names for each capability that has them, grouped by OAF component category. Look up the lectures in the capability's row.","","| # | Group | Capability | # | Component |","| :-- | :-- | :-- | :-- | :-- |",*_ci_rows,"","## Notes","","- A capability counts as covered when a lecture name or note names it. This shows where a topic is taught, not how deeply.","- The list is built from the capability catalogs supplied for this course, not from an official Oracle list.","- The content has not been reviewed by an instructor.",""]
+out+=["## Summary","","| Area | Capabilities |","| :-- | :-: |"]+_summ_rows()+[f"| **Total** | **{total}** |","",*body,"## UI Component Layout Index","","Bean-level OAF component names for each capability that has them, grouped by OAF component category. Look up the lectures in the capability's row.","","| # | Group | Capability | # | Component |","| :-- | :-- | :-- | :-- | :-- |",*_ci_rows,"","## Notes","","- A capability counts as covered when a lecture name or note names it. This shows where a topic is taught, not how deeply.","- The list is built from the capability catalogs supplied for this course, not from an official Oracle list.","- Levels are derived from where lectures name each capability (a few basics are set by hand), so they are not an official Oracle grading.","- The content has not been reviewed by an instructor.",""]
 open('bootcamp/CAPABILITIES.md','w').write("\n".join(out))
 bad=[(n,c) for n,k,top in checks for c in top if c not in codes or not any(hit(x,(r[1]+" "+r[2]).lower()) for x in k for r in rows if r[0]==c)]
 print("capabilities",total,"| bad",bad,"| lines",len(out))
