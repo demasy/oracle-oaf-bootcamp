@@ -28,59 +28,83 @@ Each lecture and module carries a **Difficulty** rating from 1 to 5 stars (Begin
 
 Start with Building 101 unless you already build OAF pages. Customizing 101 needs Building 101 and EBS system administration, and Customizing 102 builds on Building 102 and 103.
 
-## OA Framework BootCamp Levels
+## Oracle OAF BootCamp Levels
 
 <p align="center"><img src="bootcamp/assets/levels.svg" width="720" alt="Beginner > Advanced > Ninja"></p>
 
-| Code       | Lecture Title                         | Level     | Subscribe  |   Notes |
-| :-:         | :--------                             | :-:       | :-:        |     :----   |
-| OAF-B-101        | <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/tree/master/building-101">Oracle OAF Building BootCamp 101</a>      | Beginner  |  N/A       | -|
-| OAF-B-102        | <a href="SYLLABUS_102.md">Oracle OAF Building BootCamp 102</a>      | Advanced  |  N/A       | -|
-| OAF-B-103       | <a href="SYLLABUS_103.md">Oracle OAF Building BootCamp 103</a>      | Ninja     |  N/A       | -|
-| OAF-C-101        | <a href="SYLLABUS_CUST_101.md">Oracle OAF Customizing BootCamp 101</a>   | Beginner  |  N/A       | -|
-| OAF-C-102        | <a href="SYLLABUS_CUST_102.md">Oracle OAF Customizing BootCamp 102</a>   | Advanced  |  N/A       | -|
+| Code | Course | Level | Difficulty | Modules | Lectures |
+| :-: | :-- | :-: | :-: | :-: | :-: |
+| OAF-B-101 | <a href="bootcamp/building/101/README.md">Oracle OAF Building BootCamp 101</a> | Beginner | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 15 | 92 |
+| OAF-B-102 | <a href="bootcamp/building/102/README.md">Oracle OAF Building BootCamp 102</a> | Advanced | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 20 | 85 |
+| OAF-B-103 | <a href="bootcamp/building/103/README.md">Oracle OAF Building BootCamp 103</a> | Ninja | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 17 | 78 |
+| OAF-C-101 | <a href="bootcamp/customizing/101/README.md">Oracle OAF Customizing BootCamp 101</a> | Beginner | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 5 | 19 |
+| OAF-C-102 | <a href="bootcamp/customizing/102/README.md">Oracle OAF Customizing BootCamp 102</a> | Advanced | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 6 | 19 |
+| | **Total: 5 courses** | | | **63** | **293** |
 
 <br>
 
 ## Target Audience
 
-- Oracle Technical Consultant (Apps Developer)
-- Oracle Apps Developer Course attended
-- Oracle Developer
-- Java Developer
-- Oracle Techno Functional
+| Who you are | What you get | Start with |
+| :-- | :-- | :-- |
+| Oracle Apps Technical Consultant, Oracle Developer or Java Developer | Build OAF pages, regions and business components from scratch, then take them to production | [OAF-B-101](bootcamp/building/101/README.md) |
+| Oracle Techno-Functional Consultant | Learn the OAF basics, then personalize pages, regions and LOVs without code and migrate personalizations safely | [OAF-B-101](bootcamp/building/101/README.md), then [OAF-C-101](bootcamp/customizing/101/README.md) |
+| Senior OAF Developer | Advanced UI, integration, R12.2 online patching, security hardening and extension of delivered code | [OAF-B-102](bootcamp/building/102/README.md), then [OAF-B-103](bootcamp/building/103/README.md) and [OAF-C-102](bootcamp/customizing/102/README.md) (after [OAF-B-101](bootcamp/building/101/README.md)) |
+| EBS Support and Upgrade Team | Diagnose OAF issues and keep personalizations upgrade-safe | [OAF-B-101](bootcamp/building/101/README.md), then [OAF-C-101](bootcamp/customizing/101/README.md) |
 
 <br>
 
-## Prerequisites & Requirements 
+## Prerequisites & Requirements
 
-- Java Programming
-- Oracle database SQL & PL/SQL
-- 3 months of Oracle developing experience on e-Business Suite applications
-- Oracle E-Business Suite Virtual Machine
-- Toad for Oracle or SQL Developer
+**Knowledge**
+
+| Track | Course | You should have |
+| :-- | :-- | :-- |
+| Building | [OAF-B-101](bootcamp/building/101/README.md) | Basic Java programming, SQL, PL/SQL and HTML. Familiarity with Oracle E-Business Suite. No prior OAF experience needed |
+| | [OAF-B-102](bootcamp/building/102/README.md) | OAF-B-101 completed: you can build and deploy a CRUD application |
+| | [OAF-B-103](bootcamp/building/103/README.md) | OAF-B-102 completed: you can build an interactive application |
+| Customizing | [OAF-C-101](bootcamp/customizing/101/README.md) | OAF-B-101 completed and EBS system administration |
+| | [OAF-C-102](bootcamp/customizing/102/README.md) | OAF-B-102, OAF-C-101 and OAF-B-103 modules 1-4 completed. Advanced Java, enough to extend controllers and business components |
+
+**Environment**
+
+| Track | You need |
+| :-- | :-- |
+| Building | Oracle E-Business Suite Virtual Machine, Toad for Oracle or SQL Developer, and an Oracle Support account to download OA Extension<br>[OAF-B-101](bootcamp/building/101/README.md) teaches installing and configuring JDeveloper with OA Extension (module 3) |
+| Customizing | Oracle E-Business Suite Virtual Machine. [OAF-C-102](bootcamp/customizing/102/README.md) requires OAF-B-102, so the Building track environment applies to it |
 
 <br>
 
-## **About the Instructor**
-My name is <a href="https://github.com/demasy">Ahmed El-Demasy</a> , I have more than 13 years of experience in Oracle technology and Oracle applications; 11 years in ERP development using JAVA and ORACLE tools specialist in OA framework development (OAF).
+## About the Instructor
 
-Currently holding a position of Principal Technical Consultant, responsible for implementation, enhancement, and support for Oracle e-Business Suite applications (ERP); coaching development team, leading projects and vendor resources coordination.
+<img src="https://github.com/demasy.png" width="100px" align="left" alt="Ahmed El-Demasy" hspace="16">
 
-Practical experience in coaching and teaching Oracle courses such as Oracle SQL, Oracle PL/SQL, Java SE, Oracle OA framework (OAF), Oracle workflow, and etc.
+**<a href="https://github.com/demasy">Ahmed El-Demasy</a>**<br>
+Oracle Solutions Architect · Oracle ACE
 
-For more information about my experiences and professional career. please visit my LinkedIn profile <a href="https://www.linkedin.com/in/demasy/">here</a>
+I have more than 17 years of experience in Oracle technology and Oracle applications. For 11 of those years I have developed ERP solutions with Java and Oracle tools, specializing in Oracle Application Framework (OAF).
+
+<br clear="left">
+
+| Focus | What I do |
+| :-- | :-- |
+| **Role** | Implementation, enhancement and support of Oracle E-Business Suite applications (ERP) |
+| **Leadership** | Coaching development teams, leading projects and coordinating vendor resources |
+| **Teaching** | Oracle SQL, Oracle PL/SQL, Java SE, Oracle Application Framework (OAF) and Oracle Workflow |
+
+<a href="https://github.com/demasy">GitHub</a> · <a href="https://www.linkedin.com/in/demasy/">LinkedIn</a>
 
 <br>
 
 
-## How can get this BootCamp!
+## How to Get this BootCamp
 
-###### Online BootCamps for individuals buy these BootCamps via udemy.com
-> <a href="#">udemy.com</a>
+| Option | Who it is for | How to join |
+| :-- | :-- | :-- |
+| **Online** | Individuals learning at their own pace | <a href="#">Enroll on udemy.com</a> |
+| **Live** | Enterprise teams, instructor-led | <a href="#">Schedule a call via Calendly</a> |
 
-###### Live BootCamps for enterprise ONLY
-> <a href="#">Schedule call with us via Calendly</a>
+See the [course levels](#oracle-oaf-bootcamp-levels) for what each course covers.
 
 <br>
 
@@ -92,57 +116,15 @@ If you find any issue or have a great idea in mind please create an issue on <a 
 
 ## Contributing
 
-We welcome contributions from the community! Whether you're fixing a bug, adding a new code example, improving documentation, or creating new lab exercises, your contributions help make this bootcamp better for everyone.
-
-### How to Contribute
-
-1. **Fork the Repository**: Create your own fork of the repository
-2. **Create a Branch**: Create a feature branch for your changes
-3. **Make Changes**: Follow our [Code Quality Guidelines](.github/instructions/codacy.instructions.md)
-4. **Submit a PR**: Submit a pull request with a clear description of your changes
-
-For detailed guidelines, please read our [Contributing Guide](.github/CONTRIBUTING.md).
-
-### Areas Where You Can Contribute
-
-- **Code Examples**: Add new OAF patterns and use cases to the [code-brain](code-brain/) directory
-- **Documentation**: Improve existing documentation or fix errors
-- **Lab Exercises**: Create new hands-on labs and exercises
-- **Course Content**: Enhance syllabus content and learning materials
-- **Bug Fixes**: Fix issues in existing code or documentation
-
-### Code of Conduct
-
-This project follows a Code of Conduct to ensure a welcoming and inclusive environment. By participating, you agree to be respectful, inclusive, and constructive in all interactions.
+New Oracle technical contributors are welcome. Read [Contributing](.github/CONTRIBUTING.md) to learn how to propose a standard, how files are named and how review works. For anything else, contact founder@demasy.io.
 
 <br>
 
-## Repository Structure
+### Contributors
 
-```
-Oracle-OAF-BootCamp/
-├── code-brain/              # Comprehensive OAF code examples and patterns
-│   ├── code-brain.json      # Metadata for all code examples
-│   ├── README.md            # Documentation for code-brain
-│   ├── view-object-operations/
-│   ├── error-handling/
-│   ├── controller-patterns/
-│   └── ...                  # Other code categories
-├── SYLLABUS.md              # Main syllabus overview
-├── SYLLABUS_101.md          # Level 101 (Beginner) detailed syllabus
-├── SYLLABUS_102.md          # Level 102 (Advanced) detailed syllabus
-├── SYLLABUS_103.md          # Level 103 (Ninja) detailed syllabus
-├── LABS.md                  # All lab exercises and activities
-├── INSTRUCTOR_SYLLABUS.md   # Instructor-specific content
-├── PROJECT_LEVEL_101.md     # Capstone project details
-├── .github/                 # GitHub configuration
-│   ├── CONTRIBUTING.md      # Contribution guidelines
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   ├── ISSUE_TEMPLATE/      # Issue templates
-│   ├── instructions/        # Quality and coding guidelines
-│   └── workflows/           # CI/CD workflows
-└── README.md                # This file
-```
+| Author | GitHub & LinkedIn account |
+| :-  | :---- |
+| <div align="center"> <img src="https://github.com/demasy.png" width="100px;" alt="Ahmed El-Demasy"/> <br> **Ahmed El-Demasy** (Creator & Maintainer) <br> Oracle Solutions Architect <br> Oracle ACE </div> | <div align="center"> <a href="https://github.com/demasy">Github</a> & <a href="https://www.linkedin.com/in/demasy">LinkedIn</a> </div> |
 
 <br> 
 <br>

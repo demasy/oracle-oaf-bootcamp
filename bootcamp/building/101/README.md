@@ -14,6 +14,7 @@
 - SQL
 - PL/SQL
 - HTML
+- Familiarity with Oracle E-Business Suite
 - No prior OAF experience needed
 
 ## Course Goals
