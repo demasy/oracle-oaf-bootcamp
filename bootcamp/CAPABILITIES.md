@@ -25,10 +25,10 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | ↳ Dynamic and Programmatic UI | 5 |
 | Framework | 7 |
 | Localization | 5 |
-| **Integration** | **14** |
-| ↳ Files and Data Exchange | 5 |
-| ↳ Services and APIs | 3 |
-| ↳ EBS Products and Processes | 6 |
+| **Integration** | **17** |
+| ↳ Files and Data Exchange | 6 |
+| ↳ Services and APIs | 4 |
+| ↳ EBS Products and Processes | 7 |
 | Security | 9 |
 | Errors and diagnostics | 9 |
 | Personalization | 10 |
@@ -38,7 +38,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | ↳ Coding and Naming Standards | 6 |
 | ↳ Project and Code Management | 4 |
 | ↳ Quality and Extension Practice | 5 |
-| **Total** | **174** |
+| **Total** | **177** |
 
 ## Architecture
 
@@ -224,10 +224,11 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Capability | Level | Lectures |
 | :-- | :-- | :-- |
 | Attachments | Dev 102, Dev 103 | B102-016.001, B103-009.001, B103-016.002 |
-| File upload and download | Dev 102, Dev 103 | B102-016.002, B102-016.006, B103-015.004, B102-016.005 |
+| File upload and download | Dev 102, Dev 103 | B102-016.002, B102-016.006, B102-016.009, B103-015.004, B102-016.005 |
 | Import and export data | Dev 102 | B102-016.003, B102-016.004 |
-| Export to Excel and PDF | Dev 102, Dev 103 | B103-011.005, B103-012.004, B102-016.003, B102-016.004, B103-006.001 |
+| Export to Excel and PDF | Dev 102, Dev 103 | B103-011.005, B103-012.004, B102-016.003, B102-016.004, B102-016.008 |
 | XML Publisher and BI Publisher output | Dev 102 | B102-016.007, B102-012.003 |
+| Web ADI integration | Dev 102 | B102-016.008, B102-016.009 |
 
 ### Services and APIs
 
@@ -236,6 +237,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | REST and web services | Dev 103 | B103-016.001, B103-016.002 |
 | BSO tester | Dev 103 | B103-017.003, B103-016.001 |
 | External SOAP and REST services | Dev 103 | B103-016.003 |
+| Embedded JET and third-party content | Dev 103 | B103-016.007 |
 
 ### EBS Products and Processes
 
@@ -245,7 +247,8 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Business events | Dev 102 | B102-017.005 |
 | Oracle Forms interoperability | Dev 101, Dev 102 | B101-002.002, B102-014.005, B102-014.006 |
 | Portal and portlets | Dev 103 | B103-017.001, B103-016.005 |
-| Concurrent requests | Dev 102, Dev 103 | B102-017.004, B103-003.003, B103-006.005 |
+| Concurrent requests | Dev 102, Dev 103 | B102-017.004, B102-017.006, B103-003.003, B103-006.005 |
+| Programmatic concurrent request submission | Dev 102 | B102-017.006 |
 | OBIEE analytics | Dev 103 | B103-017.002, B103-016.005 |
 
 ## Security
