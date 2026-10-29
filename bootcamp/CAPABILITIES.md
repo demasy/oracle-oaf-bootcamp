@@ -4,7 +4,12 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 
 **Courses:** [Dev 101](building/101/README.md), [Dev 102](building/102/README.md), [Dev 103](building/103/README.md), [Cust 101](customizing/101/README.md), [Cust 102](customizing/102/README.md).
 
-**Level** shows how advanced a capability is, taken from the lowest course that teaches it: **Foundation** (Dev 101), **Core** (Dev 102, Cust 101), **Advanced** (Dev 103, Cust 102) and **Expert** (Advanced capabilities taught only in the hardest modules). **Courses** lists every course that teaches it.
+**Level** shows how advanced a capability is, taken from the lowest course that teaches it.
+
+| <img src="assets/level-foundation.svg" width="20" height="20" alt="Foundation" align="absmiddle"> **Foundation** | <img src="assets/level-core.svg" width="20" height="20" alt="Core" align="absmiddle"> **Core** | <img src="assets/level-advanced.svg" width="20" height="20" alt="Advanced" align="absmiddle"> **Advanced** | <img src="assets/level-expert.svg" width="20" height="20" alt="Expert" align="absmiddle"> **Expert** |
+| :-: | :-: | :-: | :-: |
+
+**Courses** lists every course that teaches the capability.
 
 ## Summary
 
