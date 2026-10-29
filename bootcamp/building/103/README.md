@@ -23,7 +23,9 @@
 - Lead OAF development projects
 - Mentor junior developers
 
-## Curriculum
+<table>
+<tr><th align="left">Curriculum</th><th align="left">Capabilities Statistics</th></tr>
+<tr><td valign="top">
 
 | Section | Module | Title | Difficulty | Lectures |
 | :-: | :-- | :-- | :-- | :-: |
@@ -44,6 +46,17 @@
 | [15] | B103-015 | [Security Hardening](#15-security-hardening) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 4 |
 | [16] | B103-016 | [REST and Product Integration](#16-rest-and-product-integration) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 7 |
 | [17] | B103-017 | [Portal, Analytics and Service Testing](#17-portal-analytics-and-service-testing) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 3 |
+
+</td><td valign="top">
+
+<img src="../../assets/stats-b103-areas.svg" width="360" alt="Building 103 capabilities per area: View Layer 17, Integration 11, Model Layer 7, Controller Layer 6, Security 6, Deployment 5, OA Framework Standards 5, Architecture 4, Errors and diagnostics 4, Framework 1, Localization 1, Personalization 1, Extension 1">
+
+<img src="../../assets/stats-b103-modules.svg" width="360" alt="Capabilities per module, 17 modules, from 1 to 15 capabilities">
+
+Capabilities taught in this course, from the [capability index](../../CAPABILITIES.md).
+
+</td></tr>
+</table>
 
 ## [1] MDS and BC4J Deployment
 

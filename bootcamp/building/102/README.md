@@ -23,7 +23,9 @@
 - Build advanced tables with inline record creation and deletion
 - Change web bean state dynamically during the page lifecycle
 
-## Curriculum
+<table>
+<tr><th align="left">Curriculum</th><th align="left">Capabilities Statistics</th></tr>
+<tr><td valign="top">
 
 | Section | Module | Title | Difficulty | Lectures |
 | :-: | :-- | :-- | :-- | :-: |
@@ -47,6 +49,17 @@
 | [18] | B102-018 | [Internationalization, Accessibility and Usability](#18-internationalization-accessibility-and-usability) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 5 |
 | [19] | B102-019 | [Advanced Debugging](#19-advanced-debugging) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 4 |
 | [20] | B102-020 | [Projects and Final Assessment](#20-projects-and-final-assessment) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 6 |
+
+</td><td valign="top">
+
+<img src="../../assets/stats-b102-areas.svg" width="360" alt="Building 102 capabilities per area: View Layer 26, Controller Layer 14, Integration 11, Model Layer 7, Framework 7, Localization 5, Errors and diagnostics 5, OA Framework Standards 4, Architecture 2, Security 2, Deployment 1">
+
+<img src="../../assets/stats-b102-modules.svg" width="360" alt="Capabilities per module, 20 modules, from 2 to 16 capabilities">
+
+Capabilities taught in this course, from the [capability index](../../CAPABILITIES.md).
+
+</td></tr>
+</table>
 
 ## [1] Form Event Handling Lifecycle
 

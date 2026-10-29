@@ -22,7 +22,9 @@
 - Deploy substitutions and extended controllers
 - Package, deploy and promote customizations across environments
 
-## Curriculum
+<table>
+<tr><th align="left">Curriculum</th><th align="left">Capabilities Statistics</th></tr>
+<tr><td valign="top">
 
 | Section | Module | Title | Difficulty | Lectures |
 | :-: | :-- | :-- | :-- | :-: |
@@ -32,6 +34,17 @@
 | [4] | C102-004 | [Extension Packaging and R12.2 Synchronization](#4-extension-packaging-and-r122-synchronization) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 3 |
 | [5] | C102-005 | [Extension Architecture and Standards](#5-extension-architecture-and-standards) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 4 |
 | [6] | C102-006 | [Release, Promotion and Assessment](#6-release-promotion-and-assessment) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 4 |
+
+</td><td valign="top">
+
+<img src="../../assets/stats-c102-areas.svg" width="360" alt="Customizing 102 capabilities per area: Extension 7, Deployment 5, Controller Layer 3, OA Framework Standards 3, Model Layer 2, View Layer 2, Architecture 1, Framework 1, Personalization 1">
+
+<img src="../../assets/stats-c102-modules.svg" width="360" alt="Capabilities per module, 6 modules, from 4 to 9 capabilities">
+
+Capabilities taught in this course, from the [capability index](../../CAPABILITIES.md).
+
+</td></tr>
+</table>
 
 ## [1] Controller and LOV Extensions
 

@@ -20,7 +20,9 @@
 - Create and manage personalizations at every level
 - Inspect, export, import and delete MDS content
 
-## Curriculum
+<table>
+<tr><th align="left">Curriculum</th><th align="left">Capabilities Statistics</th></tr>
+<tr><td valign="top">
 
 | Section | Module | Title | Difficulty | Lectures |
 | :-: | :-- | :-- | :-- | :-: |
@@ -29,6 +31,17 @@
 | [3] | C101-003 | [Declarative Customization of Pages, Regions and LOVs](#3-declarative-customization-of-pages-regions-and-lovs) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 5 |
 | [4] | C101-004 | [Personalization Migration](#4-personalization-migration) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 3 |
 | [5] | C101-005 | [Diagnostics, Translation and Assessment](#5-diagnostics-translation-and-assessment) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 3 |
+
+</td><td valign="top">
+
+<img src="../../assets/stats-c101-areas.svg" width="360" alt="Customizing 101 capabilities per area: Personalization 10, Framework 2, Architecture 1, View Layer 1, Controller Layer 1, Errors and diagnostics 1, Deployment 1">
+
+<img src="../../assets/stats-c101-modules.svg" width="360" alt="Capabilities per module, 5 modules, from 4 to 7 capabilities">
+
+Capabilities taught in this course, from the [capability index](../../CAPABILITIES.md).
+
+</td></tr>
+</table>
 
 ## [1] Upgrade Preservation Principles
 
