@@ -1,11 +1,19 @@
 # Oracle OAF Customizing BootCamp 102
 
-**Code:** DL-OAF-C-102 | **Level:** Advanced | **Duration:** 10-15 days | **Scaffolding:** 40% guidance | **Certification milestone:** Master Customization Architect
+**Code:** `OAF-C-102` &nbsp;·&nbsp; **Level:** Advanced
 
-**Path:** Core is the required reference path; Required is content the exit depends on; Extended is optional depth.  
-**Entry:** Dev 102, Cust 101, the Dev 103 production-readiness core (B103-001 to B103-004) and advanced Java.  
-**Exit:** Learner extends a seeded page without touching base code, packages and deploys it on R12.2, and diagnoses a failure.  
-**Assessment:** Extension project with a substitution and an extended controller, deployed on R12.2 (criteria proposed).
+**Difficulty**
+
+| <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> |
+| :-: | :-: | :-: | :-: | :-: |
+| **Beginner** | **Elementary** | **Intermediate** | **Advanced** | **Expert** |
+
+## Prerequisites
+
+- Completed Building BootCamp 102
+- Completed Customizing BootCamp 101
+- Completed the Building 103 production-readiness core (B103-001 to B103-004)
+- Advanced Java
 
 ## Course Goals
 
@@ -16,72 +24,72 @@
 
 ## Curriculum
 
-| Section | Module | Title | Path | Lectures |
-| :-: | :-- | :-- | :-: | :-: |
-| [1] | C102-001 | [Controller and LOV Extensions](#1-controller-and-lov-extensions) | Core | 2 |
-| [2] | C102-002 | [Business Component Extensions](#2-business-component-extensions) | Core | 3 |
-| [3] | C102-003 | [Substitution and Troubleshooting](#3-substitution-and-troubleshooting) | Core | 3 |
-| [4] | C102-004 | [Extension Packaging and R12.2 Synchronization](#4-extension-packaging-and-r122-synchronization) | Core | 3 |
-| [5] | C102-005 | [Extension Architecture and Standards](#5-extension-architecture-and-standards) | Required | 4 |
-| [6] | C102-006 | [Release, Promotion and Assessment](#6-release-promotion-and-assessment) | Required | 4 |
+| Section | Module | Title | Difficulty | Lectures |
+| :-: | :-- | :-- | :-- | :-: |
+| [1] | C102-001 | [Controller and LOV Extensions](#1-controller-and-lov-extensions) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 2 |
+| [2] | C102-002 | [Business Component Extensions](#2-business-component-extensions) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 3 |
+| [3] | C102-003 | [Substitution and Troubleshooting](#3-substitution-and-troubleshooting) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 3 |
+| [4] | C102-004 | [Extension Packaging and R12.2 Synchronization](#4-extension-packaging-and-r122-synchronization) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 3 |
+| [5] | C102-005 | [Extension Architecture and Standards](#5-extension-architecture-and-standards) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 4 |
+| [6] | C102-006 | [Release, Promotion and Assessment](#6-release-promotion-and-assessment) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 4 |
 
 ## [1] Controller and LOV Extensions
 
-**Module:** C102-001 | **Path:** Core  
+**Module:** C102-001 | **Difficulty:** <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle">  
 
-| Code | Lecture | Format | Resource | Notes |
-| :-- | :-------- | :-: | :-- | :---- |
-| C102-001.001 | Extending Controllers | Lab | Project | Extending `processRequest` and `processFormRequest`, super calls, attaching through personalization |
-| C102-001.002 | Extending LOVs Programmatically | Lab | Project | LOV controller extensions, VO substitution for LOV queries |
+| Code | Lecture | Format | Difficulty | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :-- | :---- |
+| C102-001.001 | Extending Controllers | Lab | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Project | Extending `processRequest` and `processFormRequest`, super calls, attaching through personalization |
+| C102-001.002 | Extending LOVs Programmatically | Lab | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Project | LOV controller extensions, VO substitution for LOV queries |
 
 ## [2] Business Component Extensions
 
-**Module:** C102-002 | **Path:** Core  
+**Module:** C102-002 | **Difficulty:** <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle">  
 
-| Code | Lecture | Format | Resource | Notes |
-| :-- | :-------- | :-: | :-- | :---- |
-| C102-002.001 | Extending View Objects | Lab | Project | Transient and mapped attributes, SQL changes, bind parameters, query overrides |
-| C102-002.002 | Extending Entity Objects | Lab | Project | Default values, extra columns, custom validation rules, DML overrides |
-| C102-002.003 | Extending Application Modules | Lab | Project | Custom transaction methods, nested AM extensions |
+| Code | Lecture | Format | Difficulty | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :-- | :---- |
+| C102-002.001 | Extending View Objects | Lab | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Project | Transient and mapped attributes, SQL changes, bind parameters, query overrides |
+| C102-002.002 | Extending Entity Objects | Lab | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Project | Default values, extra columns, custom validation rules, DML overrides |
+| C102-002.003 | Extending Application Modules | Lab | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Project | Custom transaction methods, nested AM extensions |
 
 ## [3] Substitution and Troubleshooting
 
-**Module:** C102-003 | **Path:** Core  
+**Module:** C102-003 | **Difficulty:** <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle">  
 
-| Code | Lecture | Format | Resource | Notes |
-| :-- | :-------- | :-: | :-- | :---- |
-| C102-003.001 | Understanding the Substitution Mechanism | Video | Diagram | How MDS substitutions replace parent objects at runtime |
-| C102-003.002 | Deploying Substitutions | Lab | Guide | JPX files, `jpximport`, verifying active substitutions; extension-specific steps, tooling basics are in Dev 103 |
-| C102-003.003 | Troubleshooting Extensions | Lab | Checklist | Classloader conflicts, substitution load failures, casting exceptions |
+| Code | Lecture | Format | Difficulty | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :-- | :---- |
+| C102-003.001 | Understanding the Substitution Mechanism | Video | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Diagram | How MDS substitutions replace parent objects at runtime |
+| C102-003.002 | Deploying Substitutions | Lab | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Guide | JPX files, `jpximport`, verifying active substitutions; extension-specific steps, tooling basics are in Dev 103 |
+| C102-003.003 | Troubleshooting Extensions | Lab | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Checklist | Classloader conflicts, substitution load failures, casting exceptions |
 
 ## [4] Extension Packaging and R12.2 Synchronization
 
-**Module:** C102-004 | **Path:** Core  
+**Module:** C102-004 | **Difficulty:** <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle">  
 
-| Code | Lecture | Format | Resource | Notes |
-| :-- | :-------- | :-: | :-- | :---- |
-| C102-004.001 | Packaging Archives with adcgnjar | Lab | Guide | $AD_TOP/bin/adcgnjar, customall.jar, manifest files, signed archives; applies the Dev 103 tooling to extensions |
-| C102-004.002 | Packaging Extensions for Deployment | Lab | Guide | Classes, XML pages and MDS documents under `$JAVA_TOP`; extension-specific steps, tooling basics are in Dev 103 |
-| C102-004.003 | Synchronizing the R12.2 File Systems | Lab | Guide | adop cycle, dual file systems, adop_sync_drv.tmp custom driver entries |
+| Code | Lecture | Format | Difficulty | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :-- | :---- |
+| C102-004.001 | Packaging Archives with adcgnjar | Lab | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Guide | $AD_TOP/bin/adcgnjar, customall.jar, manifest files, signed archives; applies the Dev 103 tooling to extensions |
+| C102-004.002 | Packaging Extensions for Deployment | Lab | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Guide | Classes, XML pages and MDS documents under `$JAVA_TOP`; extension-specific steps, tooling basics are in Dev 103 |
+| C102-004.003 | Synchronizing the R12.2 File Systems | Lab | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Guide | adop cycle, dual file systems, adop_sync_drv.tmp custom driver entries |
 
 ## [5] Extension Architecture and Standards
 
-**Module:** C102-005 | **Path:** Required  
+**Module:** C102-005 | **Difficulty:** <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle">  
 
-| Code | Lecture | Format | Resource | Notes |
-| :-- | :-------- | :-: | :-- | :---- |
-| C102-005.001 | Applying Extension Standards | Video | Guide | `xx` prefixes, package structure, extension log |
-| C102-005.002 | Choosing Extension Touchpoints | Video | Diagram | Model object extensions versus controller extensions |
-| C102-005.003 | Placing Custom Code | Video | Guide | APPS versus custom schema, grants and synonyms under Edition-Based Redefinition |
-| C102-005.004 | Creating Extensions for Oracle Pages | Video | Patterns | Extending Oracle pages, custom extensions, upgrade-safe mods |
+| Code | Lecture | Format | Difficulty | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :-- | :---- |
+| C102-005.001 | Applying Extension Standards | Video | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Guide | `xx` prefixes, package structure, extension log |
+| C102-005.002 | Choosing Extension Touchpoints | Video | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Diagram | Model object extensions versus controller extensions |
+| C102-005.003 | Placing Custom Code | Video | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Guide | APPS versus custom schema, grants and synonyms under Edition-Based Redefinition |
+| C102-005.004 | Creating Extensions for Oracle Pages | Video | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Patterns | Extending Oracle pages, custom extensions, upgrade-safe mods |
 
 ## [6] Release, Promotion and Assessment
 
-**Module:** C102-006 | **Path:** Required  
+**Module:** C102-006 | **Difficulty:** <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle">  
 
-| Code | Lecture | Format | Resource | Notes |
-| :-- | :-------- | :-: | :-- | :---- |
-| C102-006.001 | Using Import Tools | Lab | Guide | XMLImporter for pages and regions, attribute sets |
-| C102-006.002 | Registering Functions and Menus | Lab | Guide | Register functions, attach to menus, assign responsibilities |
-| C102-006.003 | Promoting Customizations Between Environments | Video | Guide | Dev, test and production migration, patching, version control, verification and rollback |
-| C102-006.004 | Completing the Extension Project | Workshop | Rubric | Extend a seeded page with a substitution and a controller, then deploy it. Proposed criteria: extension correctness 35, substitution and JPX deployment 25, packaging and adop synchronization 20, troubleshooting log 10, documentation 10 |
+| Code | Lecture | Format | Difficulty | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :-- | :---- |
+| C102-006.001 | Using Import Tools | Lab | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Guide | XMLImporter for pages and regions, attribute sets |
+| C102-006.002 | Registering Functions and Menus | Lab | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Guide | Register functions, attach to menus, assign responsibilities |
+| C102-006.003 | Promoting Customizations Between Environments | Video | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Guide | Dev, test and production migration, patching, version control, verification and rollback |
+| C102-006.004 | Completing the Extension Project | Workshop | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | Rubric | Extend a seeded page with a substitution and a controller, then deploy it. Proposed criteria: extension correctness 35, substitution and JPX deployment 25, packaging and adop synchronization 20, troubleshooting log 10, documentation 10 |
