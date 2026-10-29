@@ -90,9 +90,21 @@ def _summ_rows():
             rows_.append(f"| ↳ {sub} | {n} |")
         else: rows_.append(f"| {a} | {n} |")
     return rows_
-_ci_rows=[f"| {n} | {', '.join(COMP[n])} |" for its in CAP.values() for n,_ in its if n in COMP]
-assert len(_ci_rows)==len(COMP) and sum(len(v) for v in COMP.values())==sum(r.count(",")+1 for r in [x.split(" | ")[1].rstrip(" |") for x in _ci_rows])
-out+=["## Summary","","| Area | Capabilities |","| :-- | :-: |"]+_summ_rows()+[f"| **Total** | **{total}** |","",*body,"## UI Component Layout Index","","Bean-level OAF component names for each capability that has them, in the same order as the areas above. Look up the lectures in the capability's row.","","| Capability | Component |","| :-- | :-- |",*_ci_rows,"","## Notes","","- A capability counts as covered when a lecture name or note names it. This shows where a topic is taught, not how deeply.","- The list is built from the capability catalogs supplied for this course, not from an official Oracle list.","- The content has not been reviewed by an instructor.",""]
+GROUPNAME={"Layout containers":["Pages and regions","messageComponentLayout","Stack, flow, table, row and cell layouts","Panel splitter and layered layout","Flexible layout and configurable pages","Advanced layout and content container regions","Section headers, hide/show regions and footers"],
+"Data presentation":["Bulleted list","Advanced tables","Table columns, totals and row selection","HGrid and tree","Infotiles"],
+"Navigation and page flow":["Sub tabs and navigation components","Train and wizards","Breadcrumbs and menus"],
+"Input and item controls":["Form inputs and selection controls","Text and display items","Images, spacers and separators","Buttons and button bars","Form parameters and includes","LOV, dependent LOV and look-ahead","Rich text, color picker and rating bar","Flexfields (DFF and KFF)","Shuttle","Popups","Dialog pages"],
+"Attachment and file controls":["Attachment mapping","File upload and download"],
+"Analytics and charts":["Charts and graphs","Gantt charts"]}
+_g_of={n:g for g,ns in GROUPNAME.items() for n in ns}
+assert sorted(_g_of)==sorted(COMP) and sum(len(v) for v in GROUPNAME.values())==len(COMP),(set(_g_of)^set(COMP))
+_ci=[(n,_g_of[n]) for its in CAP.values() for n,_ in its if n in COMP]
+_ci.sort(key=lambda x:list(GROUPNAME).index(x[1]))
+_ci_rows=[]; _last=None
+for n,g in _ci:
+    _ci_rows.append(f"| {g if g!=_last else ''} | {n} | {'<br>'.join(COMP[n])} |"); _last=g
+assert len(_ci_rows)==len(COMP)
+out+=["## Summary","","| Area | Capabilities |","| :-- | :-: |"]+_summ_rows()+[f"| **Total** | **{total}** |","",*body,"## UI Component Layout Index","","Bean-level OAF component names for each capability that has them, grouped by OAF component category. Look up the lectures in the capability's row.","","| Group | Capability | Component |","| :-- | :-- | :-- |",*_ci_rows,"","## Notes","","- A capability counts as covered when a lecture name or note names it. This shows where a topic is taught, not how deeply.","- The list is built from the capability catalogs supplied for this course, not from an official Oracle list.","- The content has not been reviewed by an instructor.",""]
 open('bootcamp/CAPABILITIES.md','w').write("\n".join(out))
 bad=[(n,c) for n,k,top in checks for c in top if c not in codes or not any(hit(x,(r[1]+" "+r[2]).lower()) for x in k for r in rows if r[0]==c)]
 print("capabilities",total,"| bad",bad,"| lines",len(out))
