@@ -6,7 +6,9 @@ A hands-on Oracle Application Framework (OAF) BootCamp for Oracle E-Business Sui
 
 - [About this BootCamp](#about-this-bootcamp)
 - [Levels](#oracle-oaf-bootcamp-levels)
-- [Master Class](#oracle-oaf-master-class)
+  - [Oracle OAF Building BootCamp](#oracle-oaf-building-bootcamp)
+  - [Oracle OAF Customizing BootCamp](#oracle-oaf-customizing-bootcamp)
+  - [Oracle OAF Master Class (Ninja)](#oracle-oaf-master-class)
 - [Target Audience](#target-audience)
 - [Prerequisites & Requirements](#prerequisites--requirements)
 - [About the Instructor](#about-the-instructor)
@@ -54,7 +56,7 @@ Each lecture and module carries a **Difficulty** rating from 1 to 5 stars (Begin
 | OAF-C-102 | <a href="bootcamp/customizing/102/README.md">Oracle OAF Customizing BootCamp 102</a> | Advanced | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 6 | 19 | Controller, LOV and business component extensions, substitution, packaging and R12.2 synchronization |
 | | **Total: 2 courses** | | | **11** | **38** | |
 
-## Oracle OAF Master Class
+### Oracle OAF Master Class
 
 <img src="bootcamp/assets/master-class.svg" width="700" alt="Oracle OAF Master Class, with a ninja character: the Building path (OAF-B-101 Beginner, OAF-B-102 Advanced, OAF-B-103 Ninja) and the Customizing path (OAF-C-101 Beginner, OAF-C-102 Advanced) combine into the Master Class. Customizing 101 follows Building 101 and Customizing 102 follows Building 102.">
 
