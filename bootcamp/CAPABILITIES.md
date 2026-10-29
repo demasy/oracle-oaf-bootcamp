@@ -321,38 +321,38 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 
 Bean-level OAF component names for each capability that has them, grouped by OAF component category. Look up the lectures in the capability's row.
 
-| Group | Capability | Component |
-| :-- | :-- | :-- |
-| Layout containers | Pages and regions | page<br>pageLayout<br>attributeSet<br>package |
-|  | messageComponentLayout | messageComponentLayout<br>messageLayout<br>labeledFieldLayout<br>defaultSingleColumn<br>defaultDoubleColumn |
-|  | Stack, flow, table, row and cell layouts | stackLayout<br>flowLayout<br>rowLayout<br>tableLayout<br>cellFormat |
-|  | Panel splitter and layered layout | panelSplitter<br>layeredLayout |
-|  | Flexible layout and configurable pages | flexibleLayout<br>flexibleContent<br>flexibleContentList |
-|  | Advanced layout and content container regions | contentContainer<br>richContainer |
-|  | Section headers, hide/show regions and footers | header<br>hideShowHeader<br>footer<br>contentFooter |
-| Data presentation | Bulleted list | bulletedList |
-|  | Advanced tables | table<br>advancedTable |
-|  | Table columns, totals and row selection | columnGroup<br>sortableHeader<br>totalRow<br>addTableRow<br>singleSelection<br>multipleSelection |
-|  | HGrid and tree | HGrid<br>tree<br>nodeDef<br>childNode |
-|  | Infotiles | infotile |
-| Navigation and page flow | Sub tabs and navigation components | subTabLayout<br>subTabBar<br>hideShowSubTabLayout |
-|  | Train and wizards | train |
-|  | Breadcrumbs and menus | menu<br>menuItem<br>breadcrumbs<br>locator<br>navigationBar |
-| Input and item controls | Shuttle | shuttle |
-|  | Popups | popUp |
-|  | Form inputs and selection controls | messageTextInput<br>messageChoice<br>messageLovChoice<br>messageRadioButton<br>messageRadioGroup<br>messageCheckBox<br>messageSpinBox |
-|  | Text and display items | styledText<br>formattedText<br>instructionText<br>messageStyledText<br>staticStyledText<br>rawText |
-|  | Images, spacers and separators | image<br>spacer<br>separator<br>tip |
-|  | Buttons and button bars | button<br>submitButton<br>resetButton<br>selectionButton<br>exportButton<br>link<br>pageButtonBar |
-|  | Form parameters and includes | formParameter<br>formValue<br>servletInclude<br>urlInclude |
-|  | LOV, dependent LOV and look-ahead | listOfValues<br>messageLovInput<br>lovMap<br>lovActionButton<br>lovActionMap |
-|  | Rich text, color picker and rating bar | richTextEditor<br>colorPicker<br>messageRatingBar |
-|  | Flexfields (DFF and KFF) | flex<br>flexMap |
-|  | Dialog pages | dialogPage |
-| Attachment and file controls | Attachment mapping | attachmentTable<br>attachmentLink<br>attachmentImage<br>messageInlineAttachment<br>entityMap<br>categoryMap<br>primaryKey |
-|  | File upload and download | messageFileUpload<br>messageDownload |
-| Analytics and charts | Charts and graphs | graphTable<br>graph<br>graphData |
-|  | Gantt charts | Gantt |
+| # | Group | Capability | # | Component |
+| :-- | :-- | :-- | :-- | :-- |
+| C01 | Layout containers | Pages and regions | C01.001<br>C01.002<br>C01.003<br>C01.004 | page<br>pageLayout<br>attributeSet<br>package |
+| C02 |  | messageComponentLayout | C02.001<br>C02.002<br>C02.003<br>C02.004<br>C02.005 | messageComponentLayout<br>messageLayout<br>labeledFieldLayout<br>defaultSingleColumn<br>defaultDoubleColumn |
+| C03 |  | Stack, flow, table, row and cell layouts | C03.001<br>C03.002<br>C03.003<br>C03.004<br>C03.005 | stackLayout<br>flowLayout<br>rowLayout<br>tableLayout<br>cellFormat |
+| C04 |  | Panel splitter and layered layout | C04.001<br>C04.002 | panelSplitter<br>layeredLayout |
+| C05 |  | Flexible layout and configurable pages | C05.001<br>C05.002<br>C05.003 | flexibleLayout<br>flexibleContent<br>flexibleContentList |
+| C06 |  | Advanced layout and content container regions | C06.001<br>C06.002 | contentContainer<br>richContainer |
+| C07 |  | Section headers, hide/show regions and footers | C07.001<br>C07.002<br>C07.003<br>C07.004 | header<br>hideShowHeader<br>footer<br>contentFooter |
+| C08 | Data presentation | Bulleted list | C08.001 | bulletedList |
+| C09 |  | Advanced tables | C09.001<br>C09.002 | table<br>advancedTable |
+| C10 |  | Table columns, totals and row selection | C10.001<br>C10.002<br>C10.003<br>C10.004<br>C10.005<br>C10.006 | columnGroup<br>sortableHeader<br>totalRow<br>addTableRow<br>singleSelection<br>multipleSelection |
+| C11 |  | HGrid and tree | C11.001<br>C11.002<br>C11.003<br>C11.004 | HGrid<br>tree<br>nodeDef<br>childNode |
+| C12 |  | Infotiles | C12.001 | infotile |
+| C13 | Navigation and page flow | Sub tabs and navigation components | C13.001<br>C13.002<br>C13.003 | subTabLayout<br>subTabBar<br>hideShowSubTabLayout |
+| C14 |  | Train and wizards | C14.001 | train |
+| C15 |  | Breadcrumbs and menus | C15.001<br>C15.002<br>C15.003<br>C15.004<br>C15.005 | menu<br>menuItem<br>breadcrumbs<br>locator<br>navigationBar |
+| C16 | Input and item controls | Shuttle | C16.001 | shuttle |
+| C17 |  | Popups | C17.001 | popUp |
+| C18 |  | Form inputs and selection controls | C18.001<br>C18.002<br>C18.003<br>C18.004<br>C18.005<br>C18.006<br>C18.007 | messageTextInput<br>messageChoice<br>messageLovChoice<br>messageRadioButton<br>messageRadioGroup<br>messageCheckBox<br>messageSpinBox |
+| C19 |  | Text and display items | C19.001<br>C19.002<br>C19.003<br>C19.004<br>C19.005<br>C19.006 | styledText<br>formattedText<br>instructionText<br>messageStyledText<br>staticStyledText<br>rawText |
+| C20 |  | Images, spacers and separators | C20.001<br>C20.002<br>C20.003<br>C20.004 | image<br>spacer<br>separator<br>tip |
+| C21 |  | Buttons and button bars | C21.001<br>C21.002<br>C21.003<br>C21.004<br>C21.005<br>C21.006<br>C21.007 | button<br>submitButton<br>resetButton<br>selectionButton<br>exportButton<br>link<br>pageButtonBar |
+| C22 |  | Form parameters and includes | C22.001<br>C22.002<br>C22.003<br>C22.004 | formParameter<br>formValue<br>servletInclude<br>urlInclude |
+| C23 |  | LOV, dependent LOV and look-ahead | C23.001<br>C23.002<br>C23.003<br>C23.004<br>C23.005 | listOfValues<br>messageLovInput<br>lovMap<br>lovActionButton<br>lovActionMap |
+| C24 |  | Rich text, color picker and rating bar | C24.001<br>C24.002<br>C24.003 | richTextEditor<br>colorPicker<br>messageRatingBar |
+| C25 |  | Flexfields (DFF and KFF) | C25.001<br>C25.002 | flex<br>flexMap |
+| C26 |  | Dialog pages | C26.001 | dialogPage |
+| C27 | Attachment and file controls | Attachment mapping | C27.001<br>C27.002<br>C27.003<br>C27.004<br>C27.005<br>C27.006<br>C27.007 | attachmentTable<br>attachmentLink<br>attachmentImage<br>messageInlineAttachment<br>entityMap<br>categoryMap<br>primaryKey |
+| C28 |  | File upload and download | C28.001<br>C28.002 | messageFileUpload<br>messageDownload |
+| C29 | Analytics and charts | Charts and graphs | C29.001<br>C29.002<br>C29.003 | graphTable<br>graph<br>graphData |
+| C30 |  | Gantt charts | C30.001 | Gantt |
 
 ## Notes
 

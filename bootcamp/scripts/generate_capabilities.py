@@ -101,10 +101,11 @@ assert sorted(_g_of)==sorted(COMP) and sum(len(v) for v in GROUPNAME.values())==
 _ci=[(n,_g_of[n]) for its in CAP.values() for n,_ in its if n in COMP]
 _ci.sort(key=lambda x:list(GROUPNAME).index(x[1]))
 _ci_rows=[]; _last=None
-for n,g in _ci:
-    _ci_rows.append(f"| {g if g!=_last else ''} | {n} | {'<br>'.join(COMP[n])} |"); _last=g
+for _i,(n,g) in enumerate(_ci,1):
+    _nums='<br>'.join(f"C{_i:02d}.{_j:03d}" for _j in range(1,len(COMP[n])+1))
+    _ci_rows.append(f"| C{_i:02d} | {g if g!=_last else ''} | {n} | {_nums} | {'<br>'.join(COMP[n])} |"); _last=g
 assert len(_ci_rows)==len(COMP)
-out+=["## Summary","","| Area | Capabilities |","| :-- | :-: |"]+_summ_rows()+[f"| **Total** | **{total}** |","",*body,"## UI Component Layout Index","","Bean-level OAF component names for each capability that has them, grouped by OAF component category. Look up the lectures in the capability's row.","","| Group | Capability | Component |","| :-- | :-- | :-- |",*_ci_rows,"","## Notes","","- A capability counts as covered when a lecture name or note names it. This shows where a topic is taught, not how deeply.","- The list is built from the capability catalogs supplied for this course, not from an official Oracle list.","- The content has not been reviewed by an instructor.",""]
+out+=["## Summary","","| Area | Capabilities |","| :-- | :-: |"]+_summ_rows()+[f"| **Total** | **{total}** |","",*body,"## UI Component Layout Index","","Bean-level OAF component names for each capability that has them, grouped by OAF component category. Look up the lectures in the capability's row.","","| # | Group | Capability | # | Component |","| :-- | :-- | :-- | :-- | :-- |",*_ci_rows,"","## Notes","","- A capability counts as covered when a lecture name or note names it. This shows where a topic is taught, not how deeply.","- The list is built from the capability catalogs supplied for this course, not from an official Oracle list.","- The content has not been reviewed by an instructor.",""]
 open('bootcamp/CAPABILITIES.md','w').write("\n".join(out))
 bad=[(n,c) for n,k,top in checks for c in top if c not in codes or not any(hit(x,(r[1]+" "+r[2]).lower()) for x in k for r in rows if r[0]==c)]
 print("capabilities",total,"| bad",bad,"| lines",len(out))
