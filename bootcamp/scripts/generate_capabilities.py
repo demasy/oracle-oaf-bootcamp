@@ -17,7 +17,7 @@ CAP={"Architecture":[("MVC pattern",["r:\\bmvc\\b","model, view"]),("BC4J (busin
 "Personalization":[("Customization concepts",["extension and modification"]),("Personalization levels",["personalization levels"]),("Durable personalizations",["preserving personalizations","durable personalization"]),("Region injection",["injecting regions"]),("LOV personalization",["personalizing lovs"]),("XMLExporter and XMLImporter",["xmlexporter","xmlimporter"]),("Translated personalizations",["translated personalizations"]),("End-user and declarative page personalization",["end-user personalizations","declarative page personalizations","implementing personalizations"]),("MDS content inspection",["inspecting mds content"])],
 "Extension":[("Controller extension",["extending controllers"]),("View object extension",["extending view objects"]),("Entity object extension",["extending entity objects"]),("Application module extension",["extending application modules"]),("Substitution and JPX",["substitution","jpx"]),("LOV extension",["extending lovs"]),("Extension touchpoints and Oracle page extensions",["extension touchpoints","extensions for oracle pages"])],
 "Deployment":[("Deployment to EBS",["deployment"]),("adop and R12.2 patching",["r:\\badop\\b"]),("adcgnjar and customall.jar",["adcgnjar"]),("AOL functions, menus and responsibilities",["form function","responsibilit"]),("Scripted deployment",["scripted","repeatable"]),("Environment promotion",["promoting customizations","promotion"])],
-"Platform":[("Accessibility",["accessib"]),("Hot keys",["hot key"]),("Screen reader support",["screen reader"]),("Enhanced save model",["save model"]),("Profile options",["profile options"]),("Default values",["default values"])],
+"Framework":[("Accessibility",["accessib"]),("Hot keys",["hot key"]),("Screen reader support",["screen reader"]),("Enhanced save model",["save model"]),("Profile options",["profile options"]),("Default values",["default values"])],
 "Localization":[("Multi-language support",["multiple languages","multi-language"]),("Right-to-left layouts",["right-to-left"]),("Timezones",["timezone"]),("Date formats",["formatting dates"]),("Number and currency formats",["formatting numbers"])],
 "OA Framework Standards":[("Why development standards matter",["development standards"]),("Coding standards and naming conventions",["coding standards"]),("Oracle, project and industry standards",["industry standards"]),("File types and package naming",["files and packages"]),("Directory structure ($JAVA_TOP)",["directory structure"]),("Workspace and project organization",["workspace"]),("Code management and version control",["import and export utilities","version control"]),("Common page patterns",["page patterns"]),("Extension standards",["extension standards"]),("Custom code placement",["placing custom code"]),("Server-side best practices",["server-side best practices"]),("Code quality and standards compliance",["code quality"]),("Project documentation and delivery",["writing documentation","deploying to production","presenting the project"]),("Mentoring and code review",["code review"])]}
 codes={r[0] for r in rows}
@@ -46,6 +46,12 @@ for a,its in CAP.items():
         for g,names in SPLITS[a].items(): NEW[f"{a}: {g}"]=[byname[n] for n in names]
     else: NEW[a]=its
 CAP=NEW
+ORDER=["Architecture","Model Layer","View Layer","Controller Layer","Framework","Localization","Integration","Security","Errors and diagnostics","Personalization","Extension","Deployment","OA Framework Standards"]
+def _parent(area):
+    h=area.split(": ",1)[0]
+    return h if h in PARENTS else area
+assert sorted({_parent(a) for a in CAP})==sorted(ORDER),(set(_parent(a) for a in CAP)^set(ORDER))
+CAP=dict(sorted(CAP.items(),key=lambda kv:ORDER.index(_parent(kv[0]))))
 def split_area(area):
     if ": " in area:
         h,t=area.split(": ",1)

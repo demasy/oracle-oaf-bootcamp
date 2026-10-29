@@ -20,6 +20,8 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | ↳ Request Processing | 5 |
 | ↳ State and Navigation | 6 |
 | ↳ Dynamic and Programmatic UI | 5 |
+| Framework | 6 |
+| Localization | 5 |
 | **Integration** | **12** |
 | ↳ Files and Data Exchange | 4 |
 | ↳ Services and APIs | 3 |
@@ -29,8 +31,6 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Personalization | 9 |
 | Extension | 7 |
 | Deployment | 6 |
-| Platform | 6 |
-| Localization | 5 |
 | **OA Framework Standards** | **14** |
 | ↳ Coding and Naming Standards | 6 |
 | ↳ Project and Code Management | 4 |
@@ -166,6 +166,27 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | JavaScript | Dev 101, Dev 102 | B102-015.001, B101-007.010, B102-014.004 |
 | Read-only pages and page modes | Dev 102 | B102-015.002 |
 
+## Framework
+
+| Capability | Level | Lectures |
+| :-- | :-- | :-- |
+| Accessibility | Dev 102, Cust 101 | B102-018.004, C101-003.003 |
+| Hot keys | Dev 102 | B102-018.002 |
+| Screen reader support | Dev 102 | B102-018.002 |
+| Enhanced save model | Dev 102 | B102-018.003 |
+| Profile options | Dev 102, Dev 103, Cust 101 | B102-010.003, B103-003.001, C101-002.002, C101-005.001 |
+| Default values | Dev 101, Dev 102, Cust 102 | B102-010.001, B101-007.009, B101-009.002, C102-002.002 |
+
+## Localization
+
+| Capability | Level | Lectures |
+| :-- | :-- | :-- |
+| Multi-language support | Dev 102, Dev 103 | B102-018.001, B103-009.001 |
+| Right-to-left layouts | Dev 102 | B102-018.001 |
+| Timezones | Dev 102 | B102-009.001, B102-018.001 |
+| Date formats | Dev 102 | B102-009.001 |
+| Number and currency formats | Dev 102 | B102-009.002 |
+
 ## Integration
 
 ### Files and Data Exchange
@@ -259,27 +280,6 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | AOL functions, menus and responsibilities | Dev 101, Dev 102, Dev 103, Cust 101, Cust 102 | B101-003.008, B103-002.001, B103-002.002, B101-012.002, B101-014.004 |
 | Scripted deployment | Dev 103 | B103-004.003 |
 | Environment promotion | Cust 102 | C102-006.003 |
-
-## Platform
-
-| Capability | Level | Lectures |
-| :-- | :-- | :-- |
-| Accessibility | Dev 102, Cust 101 | B102-018.004, C101-003.003 |
-| Hot keys | Dev 102 | B102-018.002 |
-| Screen reader support | Dev 102 | B102-018.002 |
-| Enhanced save model | Dev 102 | B102-018.003 |
-| Profile options | Dev 102, Dev 103, Cust 101 | B102-010.003, B103-003.001, C101-002.002, C101-005.001 |
-| Default values | Dev 101, Dev 102, Cust 102 | B102-010.001, B101-007.009, B101-009.002, C102-002.002 |
-
-## Localization
-
-| Capability | Level | Lectures |
-| :-- | :-- | :-- |
-| Multi-language support | Dev 102, Dev 103 | B102-018.001, B103-009.001 |
-| Right-to-left layouts | Dev 102 | B102-018.001 |
-| Timezones | Dev 102 | B102-009.001, B102-018.001 |
-| Date formats | Dev 102 | B102-009.001 |
-| Number and currency formats | Dev 102 | B102-009.002 |
 
 ## OA Framework Standards
 
