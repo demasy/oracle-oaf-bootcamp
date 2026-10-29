@@ -161,6 +161,34 @@ open('bootcamp/assets/stats-courses.svg','w',encoding='utf-8').write(_svg(76+len
 _alt1=html.escape(f"Capabilities per area by level: {len(_areas)} areas, {_n_sub} sub-areas, {total} capabilities. "+"; ".join(f"{a} {sum(c.values())}" for a,c in _areas),quote=True)
 _alt2=html.escape("Capabilities by course: "+"; ".join(f"{n} {k}" for n,k in _cn),quote=True)
 STATS_MD=[f'<img src="assets/stats-areas.svg" width="{STAT_W}" alt="{_alt1}">',"",f'<img src="assets/stats-courses.svg" width="{STAT_W}" alt="{_alt2}">']
+# Building 101 only: capability statistics for the course README (two SVG charts)
+def _course_stats(code,readme,tag):
+    caps=[r for r in csv_rows if any(c.startswith(code) for c in r[13].split("; "))]
+    text=open(readme,encoding="utf-8").read()
+    titles=dict(re.findall(r"^## \[(\d+)\] (.*)$",text,re.M))
+    n_lect=re.findall(rf"^\| {code}-\d{{3}}\.\d{{3}} \|",text,re.M)
+    mods=collections.Counter()
+    for r in caps:
+        for c in r[13].split("; "):
+            if c.startswith(code): mods[int(c[5:8])]+=1
+    areas=collections.Counter(r[1] for r in caps)
+    a=sorted(areas.items(),key=lambda kv:-kv[1])
+    parts=[_t(24,46,"Capabilities per area",22,700)]
+    for x,n,l in ((24,len(caps),"capabilities"),(160,len(a),"areas"),(250,len(mods),"modules"),(360,len(n_lect),"lectures")):
+        parts+=[_t(x,100,n,36,700),_t(x,124,l,14,400,"#57606a")]
+    scale=(STAT_W-24-190-50)/a[0][1]
+    for i,(nm,n) in enumerate(a):
+        y=150+i*34
+        parts+=[_t(178,y+17,nm,14,600,"#24292f","end"),f'<rect x="190" y="{y}" width="{n*scale:.1f}" height="24" fill="#2F66D6"/>',_t(190+n*scale+8,y+17,n,14,400,"#57606a")]
+    open(f"bootcamp/assets/stats-{tag}-areas.svg","w",encoding="utf-8").write(_svg(150+len(a)*34+16,parts))
+    parts=[_t(24,46,"Capabilities per module",22,700)]
+    m=sorted(mods.items()); scale=(STAT_W-24-280-50)/max(n for _,n in m)
+    for i,(k,n) in enumerate(m):
+        y=76+i*34; full=f"{k}. {titles[str(k)]}"; lab=full if len(full)<=36 else full[:35]+"…"
+        parts+=[f'<text x="268" y="{y+17}" font-size="13" font-weight="600" fill="#24292f" text-anchor="end"><title>{html.escape(full)}</title>{html.escape(lab)}</text>',f'<rect x="280" y="{y}" width="{n*scale:.1f}" height="24" fill="#2F66D6"/>',_t(280+n*scale+8,y+17,n,14,400,"#57606a")]
+    open(f"bootcamp/assets/stats-{tag}-modules.svg","w",encoding="utf-8").write(_svg(76+len(m)*34+16,parts))
+    return len(caps),len(a),len(mods),len(n_lect)
+print("building 101 stats (capabilities, areas, modules, lectures):",_course_stats("B101","bootcamp/building/101/README.md","b101"))
 out+=["<table>","<tr><th align=\"left\">Summary</th><th align=\"left\">Statistics</th></tr>","<tr><td valign=\"top\">","","| Area | Capabilities |","| :-- | :-: |"]+_summ_rows()+[f"| **Total** | **{total}** |","","</td><td valign=\"top\">","",*STATS_MD,"","</td></tr>","</table>","",*body,"## UI Component Layout Index","","Bean-level OAF component names for each capability that has them, grouped by OAF component category. Look up the lectures in the capability's row.","","| # | Group | Capability | # | Component |","| :-- | :-- | :-- | :-- | :-- |",*_ci_rows,"","## Notes","","- A capability counts as covered when a lecture name or note names it. This shows where a topic is taught, not how deeply.","- The list is built from the capability catalogs supplied for this course, not from an official Oracle list.","- Levels are derived from where lectures name each capability (a few basics are set by hand), so they are not an official Oracle grading.","- The content has not been reviewed by an instructor.",""]
 open('bootcamp/CAPABILITIES.md','w').write("\n".join(out))
 with open('bootcamp/capabilities.csv','w',newline='',encoding='utf-8') as f:

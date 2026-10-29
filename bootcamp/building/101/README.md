@@ -27,7 +27,9 @@
 - Debug and test basic OAF applications
 - Complete the Jobs & Positions master-detail application and deploy it to a training instance
 
-## Curriculum
+<table>
+<tr><th align="left">Curriculum</th><th align="left">Capabilities Statistics</th></tr>
+<tr><td valign="top">
 
 | Section | Module | Title | Difficulty | Lectures |
 | :-: | :-- | :-- | :-- | :-: |
@@ -46,6 +48,17 @@
 | [13] | B101-013 | [Development Standards and Best Practices](#13-development-standards-and-best-practices) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 7 |
 | [14] | B101-014 | [OAF Application Deployment](#14-oaf-application-deployment) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 4 |
 | [15] | B101-015 | [Jobs and Positions Management Capstone](#15-jobs-and-positions-management-capstone) | <img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="../../assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 6 |
+
+</td><td valign="top">
+
+<img src="../../assets/stats-b101-areas.svg" width="360" alt="Building 101 capabilities per area: View Layer 15, Architecture 11, Model Layer 10, OA Framework Standards 10, Controller Layer 6, Security 4, Deployment 3, Framework 1, Integration 1, Errors and diagnostics 1">
+
+<img src="../../assets/stats-b101-modules.svg" width="360" alt="Building 101 capabilities per module, 15 modules, from 1 in module 1 to 21 in module 7">
+
+Capabilities taught in this course, from the [capability index](../../CAPABILITIES.md).
+
+</td></tr>
+</table>
 
 ## [1] BootCamp Orientation and Success Path
 
