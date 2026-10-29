@@ -8,20 +8,20 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 
 | Area | Capabilities |
 | :-- | :-: |
-| Architecture | 6 |
-| Model | 8 |
-| View | 30 |
-| Controller | 13 |
-| Integration | 11 |
+| Architecture | 9 |
+| Model | 12 |
+| View | 41 |
+| Controller | 16 |
+| Integration | 12 |
 | Security | 9 |
-| Errors and diagnostics | 8 |
-| Personalization | 7 |
-| Extension | 6 |
+| Errors and diagnostics | 9 |
+| Personalization | 9 |
+| Extension | 7 |
 | Deployment | 6 |
 | Platform | 6 |
 | Localization | 5 |
-| OA Framework Standards | 12 |
-| **Total** | **127** |
+| OA Framework Standards | 14 |
+| **Total** | **155** |
 
 ## Architecture
 
@@ -31,8 +31,11 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | BC4J (business components) | Dev 101, Dev 103 | B101-002.006, B101-004.001, B103-001.002 |
 | UIX and MDS metadata | Dev 101, Dev 102, Cust 101, Cust 102 | B101-002.006, B101-007.001, B102-010.002, C101-001.003, C101-002.003 |
 | JDeveloper and OA Extension | Dev 101 | B101-003.001, B101-003.004, B101-003.010, B101-011.002, B101-013.006 |
-| AM pooling, retention and passivation | Dev 101, Dev 103 | B101-004.005, B103-014.003, B101-003.007, B101-004.002, B101-009.006 |
+| AM pooling, retention and passivation | Dev 101, Dev 103 | B103-014.003, B101-004.005, B101-003.007, B101-004.002, B101-009.006 |
 | Resource swapping and caching | Dev 103 | B103-014.004, B103-009.002 |
+| OAF terminology and page anatomy | Dev 101 | B101-002.001, B101-002.007 |
+| OAF in context (when to use, EBS integration) | Dev 101 | B101-002.003, B101-002.004 |
+| Object-oriented reuse | Dev 101, Dev 102 | B101-007.004, B102-009.004 |
 
 ## Model
 
@@ -41,11 +44,15 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Entity objects | Dev 101, Dev 103, Cust 102 | B101-006.001, B101-006.002, B103-014.002, B103-014.008, C102-002.002 |
 | View objects, bind variables and criteria | Dev 101 | B101-005.004 |
 | View links | Dev 101 | B101-005.005, B101-010.001, B101-015.002 |
-| Application modules and OADBTransaction | Dev 101, Dev 103, Cust 102 | B101-004.002, B101-004.003, B101-004.004, B101-015.002, C102-002.003 |
+| Application modules and OADBTransaction | Dev 101, Dev 103, Cust 102 | B101-004.004, B101-004.002, B101-004.003, B101-015.002, C102-002.003 |
 | PL/SQL entity objects | Dev 103 | B103-014.002 |
 | Polymorphic entity objects | Dev 103 | B103-014.008, B103-014.001 |
-| Programmatic view objects | Dev 102, Cust 102 | B102-006.002, B102-007.001, B102-007.002, B102-007.003, B102-007.004 |
+| Programmatic view objects | Dev 102 | B102-008.001, B102-008.002, B102-008.003 |
 | Entity expert validation | Dev 102 | B102-009.004 |
+| Updatable and read-only view objects | Dev 101 | B101-005.001, B101-005.002, B101-005.003 |
+| Attribute validation and primary keys | Dev 101, Dev 102 | B101-006.003, B102-009.003 |
+| SQL and PL/SQL calls from OAF | Dev 102 | B102-008.004, B102-008.005 |
+| Master-detail pages | Dev 101, Dev 103 | B101-010.001, B101-010.002, B101-015.004, B103-007.004, B101-005.005 |
 
 ## View
 
@@ -53,7 +60,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | :-- | :-- | :-- |
 | Pages and regions | Dev 101, Cust 102 | B101-007.003, C102-006.001 |
 | messageComponentLayout | Dev 101 | B101-007.007 |
-| Stack, flow, table, row and cell layouts | Dev 102 | B102-011.002, B102-011.006 |
+| Stack, flow, table, row and cell layouts | Dev 102 | B102-011.006, B102-011.002 |
 | Advanced tables | Dev 102, Dev 103 | B102-006.001, B103-012.001, B102-006.002, B103-007.004, B103-012.002 |
 | HGrid and tree | Dev 102, Dev 103 | B102-012.002, B103-012.005 |
 | Train and wizards | Dev 102, Dev 103 | B102-013.001, B102-013.003, B103-013.005 |
@@ -68,8 +75,8 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Charts and graphs | Dev 102, Dev 103 | B102-012.003, B103-012.006, B103-012.008, B103-008.003 |
 | Gantt charts | Dev 103 | B103-012.008, B103-012.006 |
 | Accordions | Dev 103 | B103-013.007, B103-013.005 |
-| LOV, dependent LOV and look-ahead | Dev 102 | B102-003.002, B102-003.003, B102-003.001 |
-| Smart poplists (LOV choice) | Dev 101 | B101-007.009, B101-008.001 |
+| LOV, dependent LOV and look-ahead | Dev 102 | B102-003.002, B102-003.003, B102-003.004, B102-003.001 |
+| Smart poplists (LOV choice) | Dev 101 | B101-008.001, B101-007.009 |
 | Rich text, color picker and rating bar | Dev 102 | B102-013.004 |
 | Flexfields (DFF and KFF) | Dev 102, Cust 101 | B102-014.001, B102-014.002, B102-014.007, C101-003.003 |
 | Attribute sets and CSS | Dev 101, Cust 102 | B101-007.013, C102-006.001 |
@@ -81,6 +88,17 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Breadcrumbs and menus | Dev 101, Dev 103 | B101-007.014, B103-006.002 |
 | Query region, list search and saved search | Dev 101, Dev 102, Dev 103 | B102-012.001, B103-013.002, B101-007.006, B103-013.001 |
 | Quick search | Dev 103 | B103-013.004 |
+| Standard web widgets | Dev 101 | B101-007.005 |
+| Dynamic item properties (SPEL) | Dev 102 | B102-014.003 |
+| Advanced layout and content container regions | Dev 102 | B102-011.003, B102-011.004 |
+| CRUD pages (query, create, update, delete) | Dev 103 | B103-006.001, B103-006.002, B103-006.003, B103-006.004, B103-006.005 |
+| Rich table features (resize, reorder, freeze, detach) | Dev 103 | B103-012.003 |
+| Table columns, totals and row selection | Dev 102, Dev 103 | B102-006.001, B102-006.002, B103-012.001 |
+| Section headers, hide/show regions and footers | Dev 101, Dev 102 | B101-007.010, B102-011.001 |
+| Form inputs and selection controls | Dev 101 | B101-007.009 |
+| Text and display items | Dev 101, Dev 102 | B101-007.011, B102-014.004 |
+| Popups | Dev 102, Dev 103 | B102-003.003, B103-013.005 |
+| Attachment mapping | Dev 102 | B102-016.001 |
 
 ## Controller
 
@@ -91,7 +109,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Partial page rendering (PPR) | Dev 102, Dev 103 | B102-002.001, B102-002.002, B102-011.001, B103-007.004 |
 | Page context and web bean API | Dev 101, Dev 102, Dev 103 | B101-009.003, B102-005.002, B103-003.002 |
 | Parameter passing | Dev 101, Dev 102, Dev 103, Cust 101, Cust 102 | B101-007.012, B101-008.003, B101-009.004, B101-009.005, B101-009.006 |
-| Programmatic beans | Dev 102 | B102-007.001, B102-007.002, B102-007.003 |
+| Programmatic beans | Dev 102 | B102-007.001, B102-007.002, B102-007.003, B102-007.004, B102-007.005 |
 | Dialog pages | Dev 102 | B102-005.001, B102-005.002 |
 | Dynamic focus and bean properties | Dev 102, Dev 103 | B102-007.006, B103-012.005 |
 | Table row actions | Dev 102 | B102-006.002, B102-006.003 |
@@ -99,22 +117,26 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Back button | Dev 102, Dev 103 | B102-017.001, B103-014.005 |
 | Deep links | Dev 102 | B102-017.003 |
 | Declarative page flows | Dev 103 | B103-013.006 |
+| Session parameters and user state | Dev 101 | B101-009.007 |
+| Read-only pages and page modes | Dev 102 | B102-015.002 |
+| Common controller patterns | Dev 102 | B102-001.002 |
 
 ## Integration
 
 | Capability | Level | Lectures |
 | :-- | :-- | :-- |
 | Attachments | Dev 102, Dev 103 | B102-016.001, B103-009.001, B103-016.002 |
-| File upload and download | Dev 102, Dev 103 | B102-016.002, B103-015.004, B102-016.005 |
+| File upload and download | Dev 102, Dev 103 | B102-016.002, B102-016.006, B103-015.004, B102-016.005 |
 | Import and export data | Dev 102 | B102-016.003, B102-016.004 |
 | Export to Excel and PDF | Dev 102, Dev 103 | B103-011.005, B103-012.004, B102-016.003, B102-016.004, B103-006.001 |
-| Workflow and notifications | Dev 102, Dev 103 | B102-017.002, B103-016.004, B103-016.006, B102-005.002, B102-020.002 |
+| Workflow and notifications | Dev 102, Dev 103 | B103-016.006, B102-017.002, B103-016.004, B102-005.002, B102-020.002 |
 | Oracle Forms interoperability | Dev 101, Dev 102 | B101-002.002, B102-014.005, B102-014.006 |
 | REST and web services | Dev 103 | B103-016.001, B103-016.002 |
 | Portlets | Dev 103 | B103-017.001, B103-016.005 |
 | Concurrent requests | Dev 102, Dev 103 | B102-017.004, B103-003.003, B103-006.005 |
 | OBIEE analytics | Dev 103 | B103-017.002, B103-016.005 |
 | BSO tester | Dev 103 | B103-017.003, B103-016.001 |
+| External SOAP and REST services | Dev 103 | B103-016.003 |
 
 ## Security
 
@@ -142,6 +164,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | FND_LOG and writeDiagnostics | Dev 103 | B103-003.001, B103-003.002, B103-003.003 |
 | SQL trace (event 10046) | Dev 103 | B103-003.004, B103-003.002 |
 | Log purge (FNDLGPRG) | Dev 103 | B103-003.003 |
+| Advanced debugging techniques | Dev 102 | B102-019.001, B102-019.002 |
 
 ## Personalization
 
@@ -149,11 +172,13 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | :-- | :-- | :-- |
 | Customization concepts | Cust 101 | C101-001.001 |
 | Personalization levels | Cust 101 | C101-002.001 |
-| Durable personalizations | Dev 101, Cust 101 | C101-001.002, B101-013.001 |
+| Durable personalizations | Cust 101 | C101-001.002 |
 | Region injection | Cust 101 | C101-003.004 |
 | LOV personalization | Cust 101 | C101-003.005 |
 | XMLExporter and XMLImporter | Dev 103, Cust 101, Cust 102 | B103-001.001, C101-004.001, C101-004.002, C101-005.002, C101-005.003 |
 | Translated personalizations | Cust 101 | C101-005.002 |
+| End-user and declarative page personalization | Cust 101 | C101-001.004, C101-003.001, C101-003.002 |
+| MDS content inspection | Cust 101 | C101-004.003 |
 
 ## Extension
 
@@ -165,6 +190,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Application module extension | Cust 102 | C102-002.003 |
 | Substitution and JPX | Dev 103, Cust 102 | B103-001.002, C102-003.001, C102-003.002, C102-001.002, C102-003.003 |
 | LOV extension | Cust 102 | C102-001.002 |
+| Extension touchpoints and Oracle page extensions | Cust 102 | C102-005.002, C102-005.004 |
 
 ## Deployment
 
@@ -214,6 +240,8 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Custom code placement | Cust 102 | C102-005.003 |
 | Server-side best practices | Dev 102 | B102-008.006 |
 | Code quality and standards compliance | Dev 101, Dev 102, Dev 103 | B103-011.002, B101-015.006, B102-020.006 |
+| Project documentation and delivery | Dev 103 | B103-010.001, B103-010.002, B103-010.003 |
+| Mentoring and code review | Dev 101, Dev 103 | B103-010.004, B101-001.003 |
 
 ## Notes
 
