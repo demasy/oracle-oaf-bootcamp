@@ -9,6 +9,7 @@ A hands-on Oracle Application Framework (OAF) BootCamp for Oracle E-Business Sui
   - [Oracle OAF Building BootCamp](#oracle-oaf-building-bootcamp)
   - [Oracle OAF Customizing BootCamp](#oracle-oaf-customizing-bootcamp)
   - [Oracle OAF Master Class (Ninja)](#oracle-oaf-master-class)
+- [Roadmap](#roadmap)
 - [Target Audience](#target-audience)
 - [Prerequisites & Requirements](#prerequisites--requirements)
 - [About the Instructor](#about-the-instructor)
@@ -59,6 +60,12 @@ Each lecture and module carries a **Difficulty** rating from 1 to 5 stars (Begin
 ### Oracle OAF Master Class
 
 <img src="bootcamp/assets/master-class.svg" width="700" alt="Oracle OAF Master Class, with a ninja character: the Building path (OAF-B-101 Beginner, OAF-B-102 Advanced, OAF-B-103 Ninja) and the Customizing path (OAF-C-101 Beginner, OAF-C-102 Advanced) combine into the Master Class. Customizing 101 follows Building 101 and Customizing 102 follows Building 102.">
+
+<br>
+
+## Roadmap
+
+The [Oracle Application Framework (OAF) Roadmap](roadmap/README.md) shows both paths as pictures. It has a **Building** roadmap (Beginner, Advanced, Ninja) and a **Customizing** roadmap (Beginner, Advanced). Each step is one course. It lists every section and lecture, with a level badge: Foundation, Core, Advanced or Expert.
 
 <br>
 
