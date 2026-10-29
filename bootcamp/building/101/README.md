@@ -1,11 +1,22 @@
 # Oracle OAF Building BootCamp 101
 
-**Code:** DL-OAF-B-101 | **Level:** Beginner | **Duration:** 28-32 days | **Scaffolding:** 60% guidance | **Certification milestone:** Associate OAF Developer
+| **Code** | **Level** |
+| :-- | :-- |
+| DL-OAF-B-101 | Beginner |
 
-**Path:** Core is the required reference path; Required is content the exit depends on; Extended is optional depth.  
-**Entry:** Basic Java, SQL, PL/SQL and HTML. No OAF experience needed.  
-**Exit:** Learner builds a master-detail CRUD application on BC4J, runs it locally and deploys it to a training instance.  
-**Assessment:** Jobs & Positions capstone, graded out of 100: functionality 40, code quality 30, UI 20, documentation 10.
+**Difficulty** (rated per module)
+
+| <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness | <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard | <img src="../../assets/difficulty-master.svg" width="16" height="16" alt="Master" align="absmiddle"> Master |
+| :-- | :-- | :-- |
+| Introductory | Intermediate | Advanced |
+
+## Prerequisites
+
+- Basic Java programming
+- SQL
+- PL/SQL
+- HTML
+- No prior OAF experience needed
 
 ## Course Goals
 
@@ -19,27 +30,27 @@
 
 ## Curriculum
 
-| Section | Module | Title | Path | Lectures |
-| :-: | :-- | :-- | :-: | :-: |
-| [1] | B101-001 | [BootCamp Orientation and Success Path](#1-bootcamp-orientation-and-success-path) | Extended | 4 |
-| [2] | B101-002 | [OAF Architecture and MVC Paradigms](#2-oaf-architecture-and-mvc-paradigms) | Core | 10 |
-| [3] | B101-003 | [IDE Setup and Project Topology](#3-ide-setup-and-project-topology) | Core | 10 |
-| [4] | B101-004 | [Application Module Construction](#4-application-module-construction) | Core | 5 |
-| [5] | B101-005 | [View Object Development](#5-view-object-development) | Core | 5 |
-| [6] | B101-006 | [Entity Object and DML Layer](#6-entity-object-and-dml-layer) | Core | 5 |
-| [7] | B101-007 | [Declarative Page Layouts](#7-declarative-page-layouts) | Core | 14 |
-| [8] | B101-008 | [Reusable UI Components](#8-reusable-ui-components) | Extended | 5 |
-| [9] | B101-009 | [Controller Request Processing](#9-controller-request-processing) | Core | 8 |
-| [10] | B101-010 | [Master-Detail Relationships](#10-master-detail-relationships) | Required | 2 |
-| [11] | B101-011 | [JDeveloper Debugging](#11-jdeveloper-debugging) | Required | 2 |
-| [12] | B101-012 | [Security Implementation](#12-security-implementation) | Extended | 5 |
-| [13] | B101-013 | [Development Standards and Best Practices](#13-development-standards-and-best-practices) | Extended | 7 |
-| [14] | B101-014 | [OAF Application Deployment](#14-oaf-application-deployment) | Required | 4 |
-| [15] | B101-015 | [Jobs and Positions Management Capstone](#15-jobs-and-positions-management-capstone) | Required | 6 |
+| Section | Module | Title | Difficulty | Lectures |
+| :-: | :-- | :-- | :-- | :-: |
+| [1] | B101-001 | [BootCamp Orientation and Success Path](#1-bootcamp-orientation-and-success-path) | <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness | 4 |
+| [2] | B101-002 | [OAF Architecture and MVC Paradigms](#2-oaf-architecture-and-mvc-paradigms) | <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness | 10 |
+| [3] | B101-003 | [IDE Setup and Project Topology](#3-ide-setup-and-project-topology) | <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness | 10 |
+| [4] | B101-004 | [Application Module Construction](#4-application-module-construction) | <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness | 5 |
+| [5] | B101-005 | [View Object Development](#5-view-object-development) | <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard | 5 |
+| [6] | B101-006 | [Entity Object and DML Layer](#6-entity-object-and-dml-layer) | <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard | 5 |
+| [7] | B101-007 | [Declarative Page Layouts](#7-declarative-page-layouts) | <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness | 14 |
+| [8] | B101-008 | [Reusable UI Components](#8-reusable-ui-components) | <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard | 5 |
+| [9] | B101-009 | [Controller Request Processing](#9-controller-request-processing) | <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard | 8 |
+| [10] | B101-010 | [Master-Detail Relationships](#10-master-detail-relationships) | <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard | 2 |
+| [11] | B101-011 | [JDeveloper Debugging](#11-jdeveloper-debugging) | <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness | 2 |
+| [12] | B101-012 | [Security Implementation](#12-security-implementation) | <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard | 5 |
+| [13] | B101-013 | [Development Standards and Best Practices](#13-development-standards-and-best-practices) | <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness | 7 |
+| [14] | B101-014 | [OAF Application Deployment](#14-oaf-application-deployment) | <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard | 4 |
+| [15] | B101-015 | [Jobs and Positions Management Capstone](#15-jobs-and-positions-management-capstone) | <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard | 6 |
 
 ## [1] BootCamp Orientation and Success Path
 
-**Module:** B101-001 | **Path:** Extended  
+**Module:** B101-001 | **Difficulty:** <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -50,7 +61,7 @@
 
 ## [2] OAF Architecture and MVC Paradigms
 
-**Module:** B101-002 | **Path:** Core  
+**Module:** B101-002 | **Difficulty:** <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -67,7 +78,7 @@
 
 ## [3] IDE Setup and Project Topology
 
-**Module:** B101-003 | **Path:** Core  
+**Module:** B101-003 | **Difficulty:** <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -84,7 +95,7 @@
 
 ## [4] Application Module Construction
 
-**Module:** B101-004 | **Path:** Core  
+**Module:** B101-004 | **Difficulty:** <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -96,7 +107,7 @@
 
 ## [5] View Object Development
 
-**Module:** B101-005 | **Path:** Core  
+**Module:** B101-005 | **Difficulty:** <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -108,7 +119,7 @@
 
 ## [6] Entity Object and DML Layer
 
-**Module:** B101-006 | **Path:** Core  
+**Module:** B101-006 | **Difficulty:** <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -120,7 +131,7 @@
 
 ## [7] Declarative Page Layouts
 
-**Module:** B101-007 | **Path:** Core  
+**Module:** B101-007 | **Difficulty:** <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -141,7 +152,7 @@
 
 ## [8] Reusable UI Components
 
-**Module:** B101-008 | **Path:** Extended  
+**Module:** B101-008 | **Difficulty:** <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -153,7 +164,7 @@
 
 ## [9] Controller Request Processing
 
-**Module:** B101-009 | **Path:** Core  
+**Module:** B101-009 | **Difficulty:** <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -168,7 +179,7 @@
 
 ## [10] Master-Detail Relationships
 
-**Module:** B101-010 | **Path:** Required  
+**Module:** B101-010 | **Difficulty:** <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -177,7 +188,7 @@
 
 ## [11] JDeveloper Debugging
 
-**Module:** B101-011 | **Path:** Required  
+**Module:** B101-011 | **Difficulty:** <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -186,7 +197,7 @@
 
 ## [12] Security Implementation
 
-**Module:** B101-012 | **Path:** Extended  
+**Module:** B101-012 | **Difficulty:** <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -198,7 +209,7 @@
 
 ## [13] Development Standards and Best Practices
 
-**Module:** B101-013 | **Path:** Extended  
+**Module:** B101-013 | **Difficulty:** <img src="../../assets/difficulty-awareness.svg" width="16" height="16" alt="Awareness" align="absmiddle"> Awareness  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -212,7 +223,7 @@
 
 ## [14] OAF Application Deployment
 
-**Module:** B101-014 | **Path:** Required  
+**Module:** B101-014 | **Difficulty:** <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -223,7 +234,7 @@
 
 ## [15] Jobs and Positions Management Capstone
 
-**Module:** B101-015 | **Path:** Required  
+**Module:** B101-015 | **Difficulty:** <img src="../../assets/difficulty-standard.svg" width="16" height="16" alt="Standard" align="absmiddle"> Standard  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
