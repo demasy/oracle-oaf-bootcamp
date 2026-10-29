@@ -18,8 +18,8 @@
 | :-: | :-- | :-- | :-: | :-: |
 | [1] | B103-001 | [MDS and BC4J Deployment](#1-mds-and-bc4j-deployment) | Core | 2 |
 | [2] | B103-002 | [AOL Security and Page Registration](#2-aol-security-and-page-registration) | Core | 2 |
-| [3] | B103-003 | [Enterprise Instrumentation and Log Management](#3-enterprise-instrumentation-and-log-management) | Core | 5 |
-| [4] | B103-004 | [R12.2 Online Patching and Packaging](#4-r122-online-patching-and-packaging) | Core | 4 |
+| [3] | B103-003 | [Enterprise Instrumentation and Log Management](#3-enterprise-instrumentation-and-log-management) | Core | 4 |
+| [4] | B103-004 | [R12.2 Online Patching and Packaging](#4-r122-online-patching-and-packaging) | Core | 3 |
 | [5] | B103-005 | [Project Setup and Planning](#5-project-setup-and-planning) | Required | 5 |
 | [6] | B103-006 | [Store Management Module](#6-store-management-module) | Required | 5 |
 | [7] | B103-007 | [Product and Branch Management](#7-product-and-branch-management) | Required | 4 |
@@ -27,9 +27,9 @@
 | [9] | B103-009 | [Advanced Features and Polish](#9-advanced-features-and-polish) | Required | 3 |
 | [10] | B103-010 | [Deployment and Presentation](#10-deployment-and-presentation) | Required | 4 |
 | [11] | B103-011 | [Final Assessment](#11-final-assessment) | Required | 6 |
-| [12] | B103-012 | [Advanced Tables, Grids and Visualization](#12-advanced-tables-grids-and-visualization) | Extended | 9 |
-| [13] | B103-013 | [Advanced Search and Navigation](#13-advanced-search-and-navigation) | Extended | 11 |
-| [14] | B103-014 | [State Management, Back Button and Security](#14-state-management-back-button-and-security) | Extended | 9 |
+| [12] | B103-012 | [Advanced Tables, Grids and Visualization](#12-advanced-tables-grids-and-visualization) | Extended | 8 |
+| [13] | B103-013 | [Advanced Search and Navigation](#13-advanced-search-and-navigation) | Extended | 8 |
+| [14] | B103-014 | [State Management, Back Button and Security](#14-state-management-back-button-and-security) | Extended | 8 |
 | [15] | B103-015 | [Security Hardening](#15-security-hardening) | Extended | 4 |
 | [16] | B103-016 | [REST and Product Integration](#16-rest-and-product-integration) | Extended | 6 |
 | [17] | B103-017 | [Portal, Analytics and Service Testing](#17-portal-analytics-and-service-testing) | Extended | 3 |
@@ -60,9 +60,8 @@
 | :-- | :-------- | :-: | :-- | :---- |
 | B103-003.001 | Configuring the FND_LOG Framework and Profile Options | Lab | Guide | FND: Debug Log Enabled, FND: Debug Log Level, FND_LOG_MESSAGES |
 | B103-003.002 | Writing Diagnostics from Code | Lab | Tutorial | pageContext.writeDiagnostics(), screen logging, performance tracing; SQL trace with event 10046 |
-| B103-003.003 | Purging Logs with FNDLGPRG | Lab | Guide | Concurrent program, FND_LOG_ADMIN package, table storage |
+| B103-003.003 | Purging Logs with FNDLGPRG | Lab | Guide | Concurrent program schedule, FND_LOG_ADMIN package, table storage and size checks |
 | B103-003.004 | Tracing SQL with Event 10046 | Lab | Guide | SQL trace with event 10046, reading trace output, finding slow statements |
-| B103-003.005 | Scheduling Log Purges with FNDLGPRG | Lab | Guide | FNDLGPRG concurrent program schedule, FND_LOG_ADMIN, log table size checks |
 
 ## [4] R12.2 Online Patching and Packaging
 
@@ -72,8 +71,7 @@
 | :-- | :-------- | :-: | :-- | :---- |
 | B103-004.001 | Using Online Patching (adop) Fundamentals | Video | Diagram | Run edition versus patch edition, patch phases, classpath configuration |
 | B103-004.002 | Compiling and Archiving with adcgnjar | Lab | Guide | $AD_TOP/bin/adcgnjar, customall.jar, signed archives under $JAVA_TOP |
-| B103-004.003 | Scripting Repeatable Deployments | Lab | Project | Environment variables such as $AD_APPS_JDBC_URL in place of hardcoded connection strings |
-| B103-004.004 | Running Scripted Deployments on R12.2 | Lab | Scripts | Repeatable scripted deployment with environment variables on an R12.2 instance |
+| B103-004.003 | Scripting Repeatable Deployments | Lab | Project | Environment variables such as $AD_APPS_JDBC_URL in place of hardcoded connection strings, run on R12.2 |
 
 ## [5] Project Setup and Planning
 
@@ -168,7 +166,6 @@
 | B103-012.006 | Building Charts, Graphs and Infotiles | Lab | Guide | BI beans and JET transition, Gantt, Infotiles *(verify)* |
 | B103-012.007 | Building Masonry Layout Dashboards | Lab | Guide | Grid-based responsive dashboards, status tiles, KPI cards *(verify)* |
 | B103-012.008 | Building Gantt Charts | Lab | Guide | Gantt chart region bound to project schedule data |
-| B103-012.009 | Laying Out Masonry Dashboards | Lab | Guide | Masonry layout with status tiles and KPI cards *(verify)* |
 
 ## [13] Advanced Search and Navigation
 
@@ -179,14 +176,11 @@
 | B103-013.001 | Designing the Search Architecture | Lab | Guide | Query regions, simple and advanced search, results-based search |
 | B103-013.002 | Implementing the List Search Framework | Lab | Guide | Filter panels, saved searches, quick and keyword search |
 | B103-013.003 | Implementing Infotile-Driven Search | Lab | Project | Summary tiles with metric counts that filter a results table |
-| B103-013.004 | Implementing Quick Search and Side Navigation Search | Lab | Guide | Compact search inputs in global headers and side navigation |
+| B103-013.004 | Implementing Quick Search and Side Navigation Search | Lab | Guide | Compact quick search inputs in global headers and side navigation |
 | B103-013.005 | Using Navigation Components | Lab | Guide | Trains, subtabs, accordions, hide/show, popups, shuttles |
-| B103-013.006 | Implementing Declarative Page Flows | Lab | Guide | Destination function and workflow page flows, transaction state |
+| B103-013.006 | Implementing Declarative Page Flows | Lab | Guide | Destination function and workflow page flows, transaction state, save for later |
 | B103-013.007 | Building Accordion Navigation | Lab | Guide | Accordion regions and hide/show navigation containers |
-| B103-013.008 | Filtering Results with Infotiles | Lab | Project | Infotile summary counts filtering a results table |
-| B103-013.009 | Searching from Headers and Side Navigation | Lab | Guide | Quick search inputs in headers and side navigation |
-| B103-013.010 | Chaining Pages with Declarative Page Flows | Lab | Project | Declarative page flows with transaction state and save for later |
-| B103-013.011 | Building Sub Tabs and Sliding Sub Tab Layouts | Lab | Guide | subTabLayout, subTabBar and hideShowSubTabLayout with slide-out content panels |
+| B103-013.008 | Building Sub Tabs and Sliding Sub Tab Layouts | Lab | Guide | subTabLayout, subTabBar and hideShowSubTabLayout with slide-out content panels |
 
 ## [14] State Management, Back Button and Security
 
@@ -195,14 +189,13 @@
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
 | B103-014.001 | Applying Advanced Entity Mechanics | Lab | Guide | Polymorphic entities, parent/child posting order, transient attributes |
-| B103-014.002 | Building PL/SQL Entity Objects | Lab | Guide | Wrapping PL/SQL table APIs, key generation, locking, error mapping |
+| B103-014.002 | Building PL/SQL Entity Objects | Lab | Guide | Wrapping legacy PL/SQL table APIs, key generation, locking, error mapping |
 | B103-014.003 | Managing State Retention and Pooling | Video | Guide | Retention levels, passivation, session limits, connection pool monitoring |
 | B103-014.004 | Applying Resource Swapping and Memory Caching | Video | Guide | AM pooling and resource swapping, JDBC pool tuning, memory caching, resource conservation |
 | B103-014.005 | Supporting the Browser Back Button | Lab | Guide | Page instance IDs, transaction units, back-button detection |
 | B103-014.006 | Securing Pages, Functions and Data | Lab | Guide | Function security, data grants, page access tracking |
 | B103-014.007 | Hardening Input Against Attacks | Lab | Guide | XSS scanning, AntiSamy HTML filtering, virus scanning, frame busting |
 | B103-014.008 | Applying Polymorphic Entity Objects | Lab | Guide | Polymorphic entity objects with subtype-specific validation |
-| B103-014.009 | Wrapping Legacy Tables with PL/SQL Entity Objects | Lab | Project | PL/SQL entity objects wrapping a legacy table API with key generation and locking |
 
 ## [15] Security Hardening
 

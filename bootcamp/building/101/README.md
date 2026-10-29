@@ -20,14 +20,14 @@
 | [2] | B101-002 | [OAF Architecture and MVC Paradigms](#2-oaf-architecture-and-mvc-paradigms) | Core | 7 |
 | [3] | B101-003 | [IDE Setup and Project Topology](#3-ide-setup-and-project-topology) | Core | 10 |
 | [4] | B101-004 | [Application Module Construction](#4-application-module-construction) | Core | 5 |
-| [5] | B101-005 | [View Object Development](#5-view-object-development) | Core | 6 |
+| [5] | B101-005 | [View Object Development](#5-view-object-development) | Core | 5 |
 | [6] | B101-006 | [Entity Object and DML Layer](#6-entity-object-and-dml-layer) | Core | 3 |
 | [7] | B101-007 | [Declarative Page Layouts](#7-declarative-page-layouts) | Core | 14 |
-| [8] | B101-008 | [Reusable UI Components](#8-reusable-ui-components) | Extended | 7 |
+| [8] | B101-008 | [Reusable UI Components](#8-reusable-ui-components) | Extended | 5 |
 | [9] | B101-009 | [Controller Request Processing](#9-controller-request-processing) | Core | 7 |
 | [10] | B101-010 | [Master-Detail Relationships](#10-master-detail-relationships) | Required | 2 |
 | [11] | B101-011 | [JDeveloper Debugging](#11-jdeveloper-debugging) | Required | 2 |
-| [12] | B101-012 | [Security Implementation](#12-security-implementation) | Extended | 7 |
+| [12] | B101-012 | [Security Implementation](#12-security-implementation) | Extended | 5 |
 | [13] | B101-013 | [Development Standards and Best Practices](#13-development-standards-and-best-practices) | Extended | 7 |
 | [14] | B101-014 | [OAF Application Deployment](#14-oaf-application-deployment) | Required | 4 |
 | [15] | B101-015 | [Jobs and Positions Management Capstone](#15-jobs-and-positions-management-capstone) | Required | 6 |
@@ -95,9 +95,8 @@
 | B101-005.001 | Choosing Between Read-Only and Updatable View Objects | Video | Guide | SQL queries, read-only vs updatable, performance |
 | B101-005.002 | Building Updatable View Objects for CRUD | Lab | Tutorial | VO-EO linking, attribute mapping, CRUD testing |
 | B101-005.003 | Building Read-Only View Objects with SQL | Lab | Tutorial | SQL-based VOs, expert mode, joins, optimization |
-| B101-005.004 | Configuring Bind Variables and View Criteria | Lab | Tutorial | Named bind variables, view criteria, dynamic WHERE clauses, preventing SQL injection |
+| B101-005.004 | Configuring Bind Variables and View Criteria | Lab | Tutorial | Named bind variables, view criteria, dynamic WHERE clauses, search pages, preventing SQL injection |
 | B101-005.005 | Linking View Objects with View Links and Associations | Video | Reference | Master-detail, FK relationships, domains |
-| B101-005.006 | Writing Search Pages with Bind Variables | Lab | Tutorial | Bind variables and view criteria behind a search page, avoiding SQL injection |
 
 ## [6] Entity Object and DML Layer
 
@@ -137,12 +136,10 @@
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
 | B101-008.001 | Building Smart Poplists with LOV Choice Lists | Lab | Tutorial | Smart poplist, messageLovChoice, combining a searchable LOV with a customizable poplist |
-| B101-008.002 | Reusing Shared Regions Across Pages | Lab | Project | Shared regions reused across pages, shared pages and items, sharing logistics |
-| B101-008.003 | Spacing Layouts with Spacers, Separators and Images | Lab | Tutorial | Spacers, separators and images placed in forms and regions |
-| B101-008.004 | Passing Form Parameters Between Pages | Lab | Tutorial | formParameter, formValue and servletInclude in a multi-page flow |
-| B101-008.005 | Applying a Look and Feel to a Page | Lab | Guide | Look-and-feel standards applied to a finished page, BLAF checks |
-| B101-008.006 | Laying Out Forms with messageComponentLayout | Lab | Tutorial | messageComponentLayout columns and rows, labeled fields and alignment |
-| B101-008.007 | Adding Page Button Bars to Forms | Lab | Tutorial | pageButtonBar with Save, Apply and Cancel actions and submit handling |
+| B101-008.002 | Spacing Layouts with Spacers, Separators and Images | Lab | Tutorial | Spacers, separators and images placed in forms and regions |
+| B101-008.003 | Passing Form Parameters Between Pages | Lab | Tutorial | formParameter, formValue and servletInclude in a multi-page flow |
+| B101-008.004 | Applying a Look and Feel to a Page | Lab | Guide | Look-and-feel standards applied to a finished page, BLAF checks |
+| B101-008.005 | Adding Page Button Bars to Forms | Lab | Tutorial | pageButtonBar with Save, Apply and Cancel actions and submit handling |
 
 ## [9] Controller Request Processing
 
@@ -182,13 +179,11 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B101-012.001 | Distinguishing Authentication from Authorization in OAF | Video | Guide | Authentication, authorization, function security |
+| B101-012.001 | Distinguishing Authentication from Authorization in OAF | Video | Guide | Authentication, authorization, function security, EBS login flow and session timeouts |
 | B101-012.002 | Implementing Function Security for Page Access | Lab | Tutorial | Function registration, menu setup, responsibilities |
-| B101-012.003 | Applying Data Security for Row-Level Protection | Video | Patterns | Multi-Org, row-level security, VPD, filtering |
+| B101-012.003 | Applying Data Security for Row-Level Protection | Video | Patterns | Multi-Org, row-level security, VPD, filtering, data security grants on a search page |
 | B101-012.004 | Understanding Built-In HTML Tampering Protection | Video | Guide | Automatic guards against HTML tampering and common hacking vectors, what the framework protects by default |
 | B101-012.005 | Testing Protection Against HTML Tampering | Lab | Checklist | Tampering attempts on hidden fields and URLs, verifying HTML tampering protection |
-| B101-012.006 | Granting Row-Level Data Security | Lab | Tutorial | Data security grants and row-level filtering on a search page |
-| B101-012.007 | Handling Authentication and Session Timeouts | Lab | Guide | Authentication in EBS, login flow and session timeout behavior |
 
 ## [13] Development Standards and Best Practices
 

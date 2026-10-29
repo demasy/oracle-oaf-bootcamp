@@ -24,17 +24,17 @@
 | [6] | B102-006 | [Advanced Table Operations](#6-advanced-table-operations) | Core | 3 |
 | [7] | B102-007 | [Dynamic UI Control and Focus](#7-dynamic-ui-control-and-focus) | Core | 6 |
 | [8] | B102-008 | [Advanced Model and Server-Side Features](#8-advanced-model-and-server-side-features) | Extended | 6 |
-| [9] | B102-009 | [Layout and Container Regions](#9-layout-and-container-regions) | Extended | 7 |
-| [10] | B102-010 | [Data Regions, Grids and Charts](#10-data-regions-grids-and-charts) | Extended | 7 |
-| [11] | B102-011 | [Wizards, Rich Inputs and Configurable Pages](#11-wizards-rich-inputs-and-configurable-pages) | Extended | 7 |
+| [9] | B102-009 | [Layout and Container Regions](#9-layout-and-container-regions) | Extended | 6 |
+| [10] | B102-010 | [Data Regions, Grids and Charts](#10-data-regions-grids-and-charts) | Extended | 5 |
+| [11] | B102-011 | [Wizards, Rich Inputs and Configurable Pages](#11-wizards-rich-inputs-and-configurable-pages) | Extended | 5 |
 | [12] | B102-012 | [Flexfields, SPEL and Forms Integration](#12-flexfields-spel-and-forms-integration) | Extended | 7 |
 | [13] | B102-013 | [Client-Side Scripting and Page Modes](#13-client-side-scripting-and-page-modes) | Extended | 2 |
-| [14] | B102-014 | [Data Formatting and Validation](#14-data-formatting-and-validation) | Extended | 5 |
+| [14] | B102-014 | [Data Formatting and Validation](#14-data-formatting-and-validation) | Extended | 4 |
 | [15] | B102-015 | [Configuration and Defaults](#15-configuration-and-defaults) | Extended | 3 |
 | [16] | B102-016 | [Files, Documents and Data Exchange](#16-files-documents-and-data-exchange) | Extended | 6 |
-| [17] | B102-017 | [Navigation, Workflow and Background Processing](#17-navigation-workflow-and-background-processing) | Extended | 5 |
-| [18] | B102-018 | [Internationalization, Accessibility and Usability](#18-internationalization-accessibility-and-usability) | Extended | 7 |
-| [19] | B102-019 | [Advanced Debugging](#19-advanced-debugging) | Extended | 4 |
+| [17] | B102-017 | [Navigation, Workflow and Background Processing](#17-navigation-workflow-and-background-processing) | Extended | 4 |
+| [18] | B102-018 | [Internationalization, Accessibility and Usability](#18-internationalization-accessibility-and-usability) | Extended | 4 |
+| [19] | B102-019 | [Advanced Debugging](#19-advanced-debugging) | Extended | 3 |
 | [20] | B102-020 | [Projects and Final Assessment](#20-projects-and-final-assessment) | Required | 6 |
 
 ## [1] Form Event Handling Lifecycle
@@ -133,7 +133,6 @@
 | B102-009.004 | Implementing Content Container Region | Lab | Examples | Tab-based navigation, hiding/showing tabs, dynamic tab generation; richContainer |
 | B102-009.005 | Implementing Panel Splitter and Layered Layout | Lab | Tutorial | panelSplitter, layeredLayout, adjustable panels, multi-mode pages |
 | B102-009.006 | Building Custom Grids with tableLayout and cellFormat | Lab | Tutorial | Explicit rows and cells, columnSpan, rowSpan, hAlign, vAlign, width and height |
-| B102-009.007 | Splitting Pages with Panel Splitters | Lab | Tutorial | panelSplitter and layeredLayout with adjustable panels and multi-mode pages |
 
 ## [10] Data Regions, Grids and Charts
 
@@ -144,10 +143,8 @@
 | B102-010.001 | Implementing Query Region (Advanced) | Lab | Guide | Construction modes, results-based search, auto-customization, configuration |
 | B102-010.002 | Implementing HGrid Region | Lab | Tutorial | Hierarchical data, expandable nodes, tree navigation, performance; tree, nodeDef and childNode definitions |
 | B102-010.003 | Implementing Charts and Graphs | Lab | Tutorial | Chart types, data binding, interactive charts, BI Publisher integration |
-| B102-010.004 | Implementing Bulleted Lists | Lab | Tutorial | bulletedList, multi-column lists, dynamic list content |
-| B102-010.005 | Implementing Auto-Repeating Layouts | Lab | Tutorial | Repeating regions generated from view object rows, dynamic sections, per-row content |
-| B102-010.006 | Repeating Regions from View Object Rows | Lab | Tutorial | Auto-repeating regions generated from view object rows |
-| B102-010.007 | Building Bulleted Lists from View Rows | Lab | Tutorial | bulletedList with up to three columns bound to view rows |
+| B102-010.004 | Implementing Bulleted Lists | Lab | Tutorial | bulletedList, multi-column lists (up to three columns), bound to view rows |
+| B102-010.005 | Implementing Auto-Repeating Layouts | Lab | Tutorial | Auto-repeating regions generated from view object rows, dynamic sections, per-row content |
 
 ## [11] Wizards, Rich Inputs and Configurable Pages
 
@@ -158,10 +155,8 @@
 | B102-011.001 | Implementing Train Region | Lab | Examples | Multi-step processes, train stops, navigation, validation, progress tracking |
 | B102-011.002 | Implementing Shuttle Region | Lab | Tutorial | Dual-list selection, moving items, ordering, search functionality |
 | B102-011.003 | Implementing Multi-Step Create and Update Flows | Lab | Project | Train-based wizards, transaction state across steps, iterative versus single-submit updates |
-| B102-011.004 | Building Rich Text, Color Picker and Rating Bar Inputs | Lab | Tutorial | richTextEditor, messageRichTextEditor, colorPicker, messageRatingBar |
+| B102-011.004 | Building Rich Text, Color Picker and Rating Bar Inputs | Lab | Tutorial | richTextEditor, messageRichTextEditor, colorPicker, messageRatingBar bound to a form |
 | B102-011.005 | Building Configurable Pages with flexibleLayout | Lab | Project | flexibleLayout, flexibleContent, flexibleContentList, user and admin dashboard tiles |
-| B102-011.006 | Assembling Configurable Pages with flexibleContent | Lab | Project | flexibleLayout, flexibleContent and flexibleContentList tiles for users and administrators |
-| B102-011.007 | Binding Rich Inputs to Form Fields | Lab | Tutorial | Rich text editor, color picker and rating bar bound to a form |
 
 ## [12] Flexfields, SPEL and Forms Integration
 
@@ -195,8 +190,7 @@
 | B102-014.001 | Manipulating and Formatting Dates | Lab | Tutorial | Date comparisons, Oracle date formats, timezone handling, calculations |
 | B102-014.002 | Formatting Numbers | Lab | Examples | Number formats, currency display, locale considerations, decimal precision |
 | B102-014.003 | Implementing Data Validations | Lab | Guide | Field-level validation, cross-field validation, business rule validation |
-| B102-014.004 | Implementing Validation Using Entity Expert | Lab | Tutorial | Entity Expert pattern, reusable validation, complex business rules, messages |
-| B102-014.005 | Implementing Entity Expert Validation Rules | Lab | Tutorial | Entity expert, shared validation rules and error messages across pages |
+| B102-014.004 | Implementing Validation Using Entity Expert | Lab | Tutorial | Entity Expert pattern, shared validation rules across pages, complex business rules, messages |
 
 ## [15] Configuration and Defaults
 
@@ -231,7 +225,6 @@
 | B102-017.002 | Building Workflow-Enabled OAF Applications | Lab | Tutorial | Launching workflow, passing parameters, monitoring, embedding OAF in notification |
 | B102-017.003 | Implementing Deep Links and Bookmarkable URLs | Lab | Guide | RF.jsp, OA.jsp and OAD.jsp URLs, passing parameters, security of direct page access |
 | B102-017.004 | Submitting Concurrent Requests from OAF Pages | Lab | Tutorial | Declarative request submission, monitoring requests, passing parameters |
-| B102-017.005 | Implementing Deep Links with Parameters | Lab | Tutorial | RF.jsp and OA.jsp deep links, passing parameters, securing direct access |
 
 ## [18] Internationalization, Accessibility and Usability
 
@@ -240,12 +233,9 @@
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
 | B102-018.001 | Supporting Multiple Languages and Internationalization | Lab | Guide | MLS and _TL tables, timezone conversion, client character encoding, right-to-left alignment |
-| B102-018.002 | Enabling Screen Reader Mode, Row Headers and Hot Keys | Lab | Checklist | Screen reader optimized mode, rowheadercol, keyboard accelerator keys |
+| B102-018.002 | Enabling Screen Reader Mode, Row Headers and Hot Keys | Lab | Checklist | Screen reader optimized mode, rowheadercol, accelerator hot keys, tested on a page |
 | B102-018.003 | Warning on Unsaved Changes with the Enhanced Save Model | Lab | Tutorial | Detecting uncommitted changes, warning before navigating away, save and discard flows |
-| B102-018.004 | Handling Right-to-Left Layouts and Timezones | Lab | Guide | Right-to-left alignment, timezone conversion, client character encoding |
-| B102-018.005 | Testing Screen Reader and Hot Key Support | Lab | Checklist | Screen reader mode, row headers, accelerator hot keys tested on a page |
-| B102-018.006 | Handling Unsaved Changes with the Save Model | Lab | Tutorial | Save model warnings on unsaved changes, save and discard flows |
-| B102-018.007 | Auditing Accessibility Compliance of a Page | Lab | Checklist | Accessibility audit of labels, row headers, keyboard access and contrast |
+| B102-018.004 | Auditing Accessibility Compliance of a Page | Lab | Checklist | Accessibility audit of labels, row headers, keyboard access and contrast |
 
 ## [19] Advanced Debugging
 
@@ -256,7 +246,6 @@
 | B102-019.001 | Using demasy-oaf Libraries for Debugging | Lab | Tutorial | Library overview, installation, debug utilities, performance profiling |
 | B102-019.002 | Applying Advanced Debugging Techniques | Lab | Guide | Remote debugging, production debugging, log analysis, performance profiling |
 | B102-019.003 | Using the About This Page and OAInfo.jsp Diagnostics | Lab | Guide | Page inspector, OAInfo.jsp, technology stack and profile option inspection, regionMap.xml |
-| B102-019.004 | Diagnosing Pages with OAInfo.jsp | Lab | Guide | OAInfo.jsp, technology stack, profile options and page diagnosis |
 
 ## [20] Projects and Final Assessment
 
