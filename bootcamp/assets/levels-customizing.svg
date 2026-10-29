@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="104" viewBox="0 0 760 104" role="img" aria-label="Customizing path: OAF-C-101 Beginner, OAF-C-102 Advanced" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<rect x="0" y="0" width="760" height="104" rx="12" fill="#F6F8FA"/>
+<rect x="24" y="20" width="190" height="64" rx="12" fill="#C9DDFB" stroke="#3B6FE0" stroke-width="3"/><text x="119" y="48" text-anchor="middle" font-size="13" font-weight="600" fill="#1b2a4a" opacity="0.8">OAF-C-101</text><text x="119" y="69" text-anchor="middle" font-size="18" font-weight="700" fill="#1b2a4a">Beginner</text>
+<path d="M220 52h30" stroke="#3B6FE0" stroke-width="3" stroke-linecap="round"/><path d="M244 44l8 8-8 8" fill="none" stroke="#3B6FE0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="269" y="20" width="190" height="64" rx="12" fill="#FBE79A" stroke="#D4A21F" stroke-width="3"/><text x="364" y="48" text-anchor="middle" font-size="13" font-weight="600" fill="#3a2f08" opacity="0.8">OAF-C-102</text><text x="364" y="69" text-anchor="middle" font-size="18" font-weight="700" fill="#3a2f08">Advanced</text>
+</svg>

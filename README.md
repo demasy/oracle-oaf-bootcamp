@@ -28,16 +28,30 @@ Each lecture and module carries a **Difficulty** rating from 1 to 5 stars (Begin
 
 ## Oracle OAF BootCamp Levels
 
-<p align="center"><img src="bootcamp/assets/levels.svg" width="720" alt="Beginner > Advanced > Ninja"></p>
+### Oracle OAF Building BootCamp
+
+**Path:** Beginner → Advanced → Ninja
+
+<img src="bootcamp/assets/levels-building.svg" width="720" alt="Building path: OAF-B-101 Beginner, OAF-B-102 Advanced, OAF-B-103 Ninja">
 
 | Code | Course | Level | Difficulty | Modules | Lectures | What you learn |
 | :-: | :-- | :-: | :-: | :-: | :-: | :-- |
 | OAF-B-101 | <a href="bootcamp/building/101/README.md">Oracle OAF Building BootCamp 101</a> | Beginner | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 15 | 92 | Architecture, MVC, JDeveloper setup, application modules, view and entity objects, pages, controllers, master-detail, debugging, security, deployment and a capstone |
 | OAF-B-102 | <a href="bootcamp/building/102/README.md">Oracle OAF Building BootCamp 102</a> | Advanced | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 20 | 97 | Event handling, PPR, LOVs, exception framework, dialogs, advanced tables, flexfields, scripting, internationalization and advanced debugging |
 | OAF-B-103 | <a href="bootcamp/building/103/README.md">Oracle OAF Building BootCamp 103</a> | Ninja | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 17 | 80 | MDS and BC4J deployment, AOL security, instrumentation, R12.2 online patching, REST integration and a point-of-sale capstone |
+| | **Total: 3 courses** | | | **52** | **269** | |
+
+### Oracle OAF Customizing BootCamp
+
+**Path:** Beginner → Advanced
+
+<img src="bootcamp/assets/levels-customizing.svg" width="720" alt="Customizing path: OAF-C-101 Beginner, OAF-C-102 Advanced">
+
+| Code | Course | Level | Difficulty | Modules | Lectures | What you learn |
+| :-: | :-- | :-: | :-: | :-: | :-: | :-- |
 | OAF-C-101 | <a href="bootcamp/customizing/101/README.md">Oracle OAF Customizing BootCamp 101</a> | Beginner | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 5 | 19 | Personalization hierarchy, declarative customization of pages, regions and LOVs, migration and diagnostics |
 | OAF-C-102 | <a href="bootcamp/customizing/102/README.md">Oracle OAF Customizing BootCamp 102</a> | Advanced | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 6 | 19 | Controller, LOV and business component extensions, substitution, packaging and R12.2 synchronization |
-| | **Total: 5 courses** | | | **63** | **307** |  |
+| | **Total: 2 courses** | | | **11** | **38** | |
 
 <br>
 
