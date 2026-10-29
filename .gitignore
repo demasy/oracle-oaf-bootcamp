@@ -49,3 +49,5 @@ node_modules/
 
 # Keep the brain repository for reference but don't track changes
 demasylabs-barin/
+# Local reference material, kept on disk but not tracked
+brain/
