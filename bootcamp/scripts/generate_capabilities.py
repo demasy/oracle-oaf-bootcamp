@@ -4,7 +4,7 @@ import re,collections,csv,html
 LV={"B101":"Dev 101","B102":"Dev 102","B103":"Dev 103","C101":"Cust 101","C102":"Cust 102"}
 rows=[]
 for f,pre in (("building/101","B101"),("building/102","B102"),("building/103","B103"),("customizing/101","C101"),("customizing/102","C102")):
-    for m in re.finditer(rf"^\| ({pre}-\d{{3}}\.\d{{3}}) \| (.*?) \| (?:Video|Lab|Workshop) \| .*? \| (.*) \|$",open(f'bootcamp/{f}/README.md').read(),re.M): rows.append((m.group(1),m.group(2),m.group(3)))
+    for m in re.finditer(rf"^\| ({pre}-\d{{3}}\.\d{{3}}) \| (.*?) \| (?:Video|Lab|Workshop) \| .*? \| (.*) \|$",open(f'bootcamp/courses/{f}/README.md').read(),re.M): rows.append((m.group(1),m.group(2),m.group(3)))
 def hit(k,text):
     return bool(re.search(k[2:],text)) if k.startswith("r:") else k in text
 CAP={"Architecture":[("MVC pattern",["r:\\bmvc\\b","model, view"]),("BC4J (business components)",["bc4j"]),("UIX and MDS metadata",["r:\\buix\\b","r:\\bmds\\b"]),("JDeveloper and OA Extension",["jdeveloper"]),("State and connection management (AM pooling, retention, passivation)",["pooling","retention","passivation"]),("Enterprise performance (resource swapping and caching)",["swapping","caching"]),("OAF terminology and page anatomy",["oaf terminology","page anatomy"]),("OAF in context (when to use, EBS integration)",["when and why to use oaf","with e-business suite"]),("Layered application architecture",["layered application architecture"]),("System catalog views",["system catalog views"]),("Database layer (_B and _TL tables)",["database layer"]),("Object-oriented reuse",["shared validation rules","reuse across"])],
@@ -64,7 +64,7 @@ COMP={"Pages and regions":["page","pageLayout","attributeSet","package"],"messag
 "Form inputs and selection controls (radio, checkbox, spin box)":["messageTextInput","messageChoice","messageLovChoice","messageRadioButton","messageRadioGroup","messageCheckBox","messageSpinBox"],"Text and display items":["styledText","formattedText","instructionText","messageStyledText","staticStyledText","rawText"],"Images, spacers and separators":["image","spacer","separator","tip"],"Form parameters and includes":["formParameter","formValue","servletInclude","urlInclude"],"LOV auto-completion, dependent LOV and look-ahead":["listOfValues","messageLovInput","lovMap","lovActionButton","lovActionMap"],"Rich text, color picker and rating bar":["richTextEditor","colorPicker","messageRatingBar"],"Flexfields (DFF and KFF)":["flex","flexMap"],"Attachment mapping":["attachmentTable","attachmentLink","attachmentImage","messageInlineAttachment","entityMap","categoryMap","primaryKey"],"File upload and download":["messageFileUpload","messageDownload"],"Dialog pages":["dialogPage"]}
 allcap={n for its in CAP.values() for n,_ in its}
 assert all(k in allcap for k in COMP),[k for k in COMP if k not in allcap]
-out=["# Oracle OAF BootCamp Capabilities","","Every OAF capability covered by the five courses, with its Level, the courses that teach it and up to five lectures (lectures that name the capability come first).","","**Courses:** [Dev 101](building/101/README.md), [Dev 102](building/102/README.md), [Dev 103](building/103/README.md), [Cust 101](customizing/101/README.md), [Cust 102](customizing/102/README.md).","","**Level** shows how advanced a capability is, taken from the lowest course that teaches it.","","| <img src=\"assets/level-foundation.svg\" width=\"20\" height=\"20\" alt=\"Foundation\" align=\"absmiddle\"> **Foundation** | <img src=\"assets/level-core.svg\" width=\"20\" height=\"20\" alt=\"Core\" align=\"absmiddle\"> **Core** | <img src=\"assets/level-advanced.svg\" width=\"20\" height=\"20\" alt=\"Advanced\" align=\"absmiddle\"> **Advanced** | <img src=\"assets/level-expert.svg\" width=\"20\" height=\"20\" alt=\"Expert\" align=\"absmiddle\"> **Expert** |","| :-: | :-: | :-: | :-: |","","**Courses** lists every course that teaches the capability.",""]
+out=["# Oracle OAF BootCamp Capabilities","","Every OAF capability covered by the five courses, with its Level, the courses that teach it and up to five lectures (lectures that name the capability come first).","","**Courses:** [Dev 101](../courses/building/101/README.md), [Dev 102](../courses/building/102/README.md), [Dev 103](../courses/building/103/README.md), [Cust 101](../courses/customizing/101/README.md), [Cust 102](../courses/customizing/102/README.md).","","**Level** shows how advanced a capability is, taken from the lowest course that teaches it.","","| <img src=\"../assets/level-foundation.svg\" width=\"20\" height=\"20\" alt=\"Foundation\" align=\"absmiddle\"> **Foundation** | <img src=\"../assets/level-core.svg\" width=\"20\" height=\"20\" alt=\"Core\" align=\"absmiddle\"> **Core** | <img src=\"../assets/level-advanced.svg\" width=\"20\" height=\"20\" alt=\"Advanced\" align=\"absmiddle\"> **Advanced** | <img src=\"../assets/level-expert.svg\" width=\"20\" height=\"20\" alt=\"Expert\" align=\"absmiddle\"> **Expert** |","| :-: | :-: | :-: | :-: |","","**Courses** lists every course that teaches the capability.",""]
 # Level: Foundation (Dev 101), Core (Dev 102, Cust 101), Advanced (Dev 103, Cust 102), Expert (Advanced, only in 5-star modules)
 LEVELS=["Foundation","Core","Advanced","Expert"]
 RANK={"B101":0,"B102":1,"C101":1,"B103":2,"C102":2}
@@ -94,7 +94,7 @@ for area,items in CAP.items():
         allh=nh+ot; assert allh,name
         top=allh[:5]; lv=[LV[p] for p in LV if any(c.startswith(p) for c in allh)]
         level=level_of(name,allh); LEVEL_COUNT[level]+=1
-        icon=f'<img src="assets/level-{level.lower()}.svg" width="20" height="20" alt="{level}" title="{level}" align="absmiddle">'
+        icon=f'<img src="../assets/level-{level.lower()}.svg" width="20" height="20" alt="{level}" title="{level}" align="absmiddle">'
         csv_rows.append([f"CAP-{total+1:03d}",par or area,sub if par else '',name,level,len(lv),*[int(any(c.startswith(p) for c in allh)) for p in LV],len(allh),'; '.join(lv),'; '.join(sorted(allh))])
         body.append(f"| {name} | {icon} | {', '.join(lv)} | {', '.join(top)} |"); total+=1; checks.append((name,kws,top))
     summ.append((area,len(items))); body.append("")
@@ -160,7 +160,7 @@ for _i,(_nm,_n) in enumerate(_cn):
 open('bootcamp/assets/stats-courses.svg','w',encoding='utf-8').write(_svg(76+len(_cn)*40+12,_parts))
 _alt1=html.escape(f"Capabilities per area by level: {len(_areas)} areas, {_n_sub} sub-areas, {total} capabilities. "+"; ".join(f"{a} {sum(c.values())}" for a,c in _areas),quote=True)
 _alt2=html.escape("Capabilities by course: "+"; ".join(f"{n} {k}" for n,k in _cn),quote=True)
-STATS_MD=[f'<img src="assets/stats-areas.svg" width="{STAT_W}" alt="{_alt1}">',"",f'<img src="assets/stats-courses.svg" width="{STAT_W}" alt="{_alt2}">']
+STATS_MD=[f'<img src="../assets/stats-areas.svg" width="{STAT_W}" alt="{_alt1}">',"",f'<img src="../assets/stats-courses.svg" width="{STAT_W}" alt="{_alt2}">']
 # Building 101 only: capability statistics for the course README (two SVG charts)
 def _course_stats(code,readme,tag):
     caps=[r for r in csv_rows if any(c.startswith(code) for c in r[13].split("; "))]
@@ -189,10 +189,10 @@ def _course_stats(code,readme,tag):
     open(f"bootcamp/assets/stats-{tag}-modules.svg","w",encoding="utf-8").write(_svg(76+len(m)*34+16,parts))
     return len(caps),len(a),len(mods),len(n_lect)
 for _code,_dir in (("B101","building/101"),("B102","building/102"),("B103","building/103"),("C101","customizing/101"),("C102","customizing/102")):
-    print(_code,"stats (capabilities, areas, modules, lectures):",_course_stats(_code,f"bootcamp/{_dir}/README.md",_code.lower()))
+    print(_code,"stats (capabilities, areas, modules, lectures):",_course_stats(_code,f"bootcamp/courses/{_dir}/README.md",_code.lower()))
 out+=["<table>","<tr><th align=\"left\">Summary</th><th align=\"left\">Statistics</th></tr>","<tr><td valign=\"top\">","","| Area | Capabilities |","| :-- | :-: |"]+_summ_rows()+[f"| **Total** | **{total}** |","","</td><td valign=\"top\">","",*STATS_MD,"","</td></tr>","</table>","",*body,"## UI Component Layout Index","","Bean-level OAF component names for each capability that has them, grouped by OAF component category. Look up the lectures in the capability's row.","","| # | Group | Capability | # | Component |","| :-- | :-- | :-- | :-- | :-- |",*_ci_rows,"","## Notes","","- A capability counts as covered when a lecture name or note names it. This shows where a topic is taught, not how deeply.","- The list is built from the capability catalogs supplied for this course, not from an official Oracle list.","- Levels are derived from where lectures name each capability (a few basics are set by hand), so they are not an official Oracle grading.","- The content has not been reviewed by an instructor.",""]
-open('bootcamp/CAPABILITIES.md','w').write("\n".join(out))
-with open('bootcamp/capabilities.csv','w',newline='',encoding='utf-8') as f:
+open('bootcamp/capabilities/CAPABILITIES.md','w').write("\n".join(out))
+with open('bootcamp/capabilities/capabilities.csv','w',newline='',encoding='utf-8') as f:
     w=csv.writer(f); w.writerow(["id","area","sub_area","capability","level","course_count",*[LV[p].replace(' ','_').lower() for p in LV],"lecture_count","courses","lectures"]); w.writerows(csv_rows)
 bad=[(n,c) for n,k,top in checks for c in top if c not in codes or not any(hit(x,(r[1]+" "+r[2]).lower()) for x in k for r in rows if r[0]==c)]
 print("capabilities",total,"| bad",bad,"| lines",len(out))

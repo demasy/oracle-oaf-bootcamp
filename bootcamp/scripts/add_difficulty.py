@@ -16,7 +16,7 @@ import re
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
 
 # relative path from each README (two folders deep) to the assets folder
-ASSETS = "../../assets/"
+ASSETS = "../../../assets/"
 
 # rating (number of stars) -> level name
 MEANING = {1: "Beginner", 2: "Elementary", 3: "Intermediate", 4: "Advanced", 5: "Expert"}
@@ -25,7 +25,7 @@ STAR = '<img src="{rel}difficulty-star.svg" width="16" height="16" alt="★" ali
 # course -> (README path, module-ID prefix, relative path to the assets folder, [(module title, stars), ...])
 RATINGS = {
     "101": (
-        "bootcamp/building/101/README.md",
+        "bootcamp/courses/building/101/README.md",
         "B101",
         ASSETS,
         [
@@ -47,7 +47,7 @@ RATINGS = {
         ],
     ),
     "102": (
-        "bootcamp/building/102/README.md",
+        "bootcamp/courses/building/102/README.md",
         "B102",
         ASSETS,
         [
@@ -74,7 +74,7 @@ RATINGS = {
         ],
     ),
     "103": (
-        "bootcamp/building/103/README.md",
+        "bootcamp/courses/building/103/README.md",
         "B103",
         ASSETS,
         [
@@ -98,7 +98,7 @@ RATINGS = {
         ],
     ),
     "C101": (
-        "bootcamp/customizing/101/README.md",
+        "bootcamp/courses/customizing/101/README.md",
         "C101",
         ASSETS,
         [
@@ -110,7 +110,7 @@ RATINGS = {
         ],
     ),
     "C102": (
-        "bootcamp/customizing/102/README.md",
+        "bootcamp/courses/customizing/102/README.md",
         "C102",
         ASSETS,
         [
