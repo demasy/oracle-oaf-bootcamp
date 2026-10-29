@@ -93,7 +93,8 @@ for area,items in CAP.items():
         allh=nh+ot; assert allh,name
         top=allh[:5]; lv=[LV[p] for p in LV if any(c.startswith(p) for c in allh)]
         level=level_of(name,allh); LEVEL_COUNT[level]+=1
-        body.append(f"| {name} | {level} | {', '.join(lv)} | {', '.join(top)} |"); total+=1; checks.append((name,kws,top))
+        icon=f'<img src="assets/level-{level.lower()}.svg" width="20" height="20" alt="{level}" title="{level}" align="absmiddle">'
+        body.append(f"| {name} | {icon} | {', '.join(lv)} | {', '.join(top)} |"); total+=1; checks.append((name,kws,top))
     summ.append((area,len(items))); body.append("")
 def _summ_rows():
     rows_=[];done=set()
