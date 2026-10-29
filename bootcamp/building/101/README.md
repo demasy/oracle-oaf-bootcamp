@@ -2,6 +2,11 @@
 
 **Code:** DL-OAF-B-101 | **Level:** Beginner | **Duration:** 28-32 days | **Scaffolding:** 60% guidance | **Certification milestone:** Associate OAF Developer
 
+**Path:** Core is the required reference path; Required is content the exit depends on; Extended is optional depth.  
+**Entry:** Basic Java, SQL, PL/SQL and HTML. No OAF experience needed.  
+**Exit:** Learner builds a master-detail CRUD application on BC4J, runs it locally and deploys it to a training instance.  
+**Assessment:** Jobs & Positions capstone, graded out of 100: functionality 40, code quality 30, UI 20, documentation 10.
+
 ## Course Goals
 
 - Set up and configure OAF development environment

@@ -2,6 +2,11 @@
 
 **Code:** DL-OAF-B-103 | **Level:** Ninja | **Duration:** 20-30 days | **Scaffolding:** 20% guidance | **Certification milestone:** Master OAF Developer
 
+**Path:** Core is the required reference path; Required is content the exit depends on; Extended is optional depth.  
+**Entry:** Dev 102 complete: can build an interactive application.  
+**Exit:** Learner deploys and operates an application on R12.2 with scripted, repeatable packaging and diagnostics.  
+**Assessment:** POS capstone with an 85% pass gate: functionality 30, code quality 25, architecture 20, deliverables 15, innovation 10.
+
 ## Course Goals
 
 - Design and architect complete enterprise applications
@@ -14,29 +19,29 @@
 
 ## Curriculum
 
-| Section | Module | Title | Path | Lectures |
-| :-: | :-- | :-- | :-: | :-: |
-| [1] | B103-001 | [MDS and BC4J Deployment](#1-mds-and-bc4j-deployment) | Core | 2 |
-| [2] | B103-002 | [AOL Security and Page Registration](#2-aol-security-and-page-registration) | Core | 2 |
-| [3] | B103-003 | [Enterprise Instrumentation and Log Management](#3-enterprise-instrumentation-and-log-management) | Core | 4 |
-| [4] | B103-004 | [R12.2 Online Patching and Packaging](#4-r122-online-patching-and-packaging) | Core | 3 |
-| [5] | B103-005 | [Project Setup and Planning](#5-project-setup-and-planning) | Required | 5 |
-| [6] | B103-006 | [Store Management Module](#6-store-management-module) | Required | 5 |
-| [7] | B103-007 | [Product and Branch Management](#7-product-and-branch-management) | Required | 4 |
-| [8] | B103-008 | [Sales and Transactions Module](#8-sales-and-transactions-module) | Required | 3 |
-| [9] | B103-009 | [Advanced Features and Polish](#9-advanced-features-and-polish) | Required | 3 |
-| [10] | B103-010 | [Deployment and Presentation](#10-deployment-and-presentation) | Required | 4 |
-| [11] | B103-011 | [Final Assessment](#11-final-assessment) | Required | 6 |
-| [12] | B103-012 | [Advanced Tables, Grids and Visualization](#12-advanced-tables-grids-and-visualization) | Extended | 8 |
-| [13] | B103-013 | [Advanced Search and Navigation](#13-advanced-search-and-navigation) | Extended | 8 |
-| [14] | B103-014 | [State Management, Back Button and Security](#14-state-management-back-button-and-security) | Extended | 8 |
-| [15] | B103-015 | [Security Hardening](#15-security-hardening) | Extended | 4 |
-| [16] | B103-016 | [REST and Product Integration](#16-rest-and-product-integration) | Extended | 6 |
-| [17] | B103-017 | [Portal, Analytics and Service Testing](#17-portal-analytics-and-service-testing) | Extended | 3 |
+| Section | Module | Title | Path | Track | Lectures |
+| :-: | :-- | :-- | :-: | :-- | :-: |
+| [1] | B103-001 | [MDS and BC4J Deployment](#1-mds-and-bc4j-deployment) | Core | Production Readiness | 2 |
+| [2] | B103-002 | [AOL Security and Page Registration](#2-aol-security-and-page-registration) | Core | Production Readiness | 2 |
+| [3] | B103-003 | [Enterprise Instrumentation and Log Management](#3-enterprise-instrumentation-and-log-management) | Core | Production Readiness | 4 |
+| [4] | B103-004 | [R12.2 Online Patching and Packaging](#4-r122-online-patching-and-packaging) | Core | Production Readiness | 3 |
+| [5] | B103-005 | [Project Setup and Planning](#5-project-setup-and-planning) | Required | POS Capstone | 5 |
+| [6] | B103-006 | [Store Management Module](#6-store-management-module) | Required | POS Capstone | 5 |
+| [7] | B103-007 | [Product and Branch Management](#7-product-and-branch-management) | Required | POS Capstone | 4 |
+| [8] | B103-008 | [Sales and Transactions Module](#8-sales-and-transactions-module) | Required | POS Capstone | 3 |
+| [9] | B103-009 | [Advanced Features and Polish](#9-advanced-features-and-polish) | Required | POS Capstone | 3 |
+| [10] | B103-010 | [Deployment and Presentation](#10-deployment-and-presentation) | Required | POS Capstone | 4 |
+| [11] | B103-011 | [Final Assessment](#11-final-assessment) | Required | POS Capstone | 6 |
+| [12] | B103-012 | [Advanced Tables, Grids and Visualization](#12-advanced-tables-grids-and-visualization) | Extended | Advanced Enterprise Topics | 8 |
+| [13] | B103-013 | [Advanced Search and Navigation](#13-advanced-search-and-navigation) | Extended | Advanced Enterprise Topics | 8 |
+| [14] | B103-014 | [State Management, Back Button and Security](#14-state-management-back-button-and-security) | Extended | Advanced Enterprise Topics | 8 |
+| [15] | B103-015 | [Security Hardening](#15-security-hardening) | Extended | Advanced Enterprise Topics | 4 |
+| [16] | B103-016 | [REST and Product Integration](#16-rest-and-product-integration) | Extended | Advanced Enterprise Topics | 6 |
+| [17] | B103-017 | [Portal, Analytics and Service Testing](#17-portal-analytics-and-service-testing) | Extended | Advanced Enterprise Topics | 3 |
 
 ## [1] MDS and BC4J Deployment
 
-**Module:** B103-001 | **Path:** Core  
+**Module:** B103-001 | **Path:** Core | **Track:** Production Readiness  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -45,7 +50,7 @@
 
 ## [2] AOL Security and Page Registration
 
-**Module:** B103-002 | **Path:** Core  
+**Module:** B103-002 | **Path:** Core | **Track:** Production Readiness  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -54,7 +59,7 @@
 
 ## [3] Enterprise Instrumentation and Log Management
 
-**Module:** B103-003 | **Path:** Core  
+**Module:** B103-003 | **Path:** Core | **Track:** Production Readiness  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -65,7 +70,7 @@
 
 ## [4] R12.2 Online Patching and Packaging
 
-**Module:** B103-004 | **Path:** Core  
+**Module:** B103-004 | **Path:** Core | **Track:** Production Readiness  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -75,7 +80,7 @@
 
 ## [5] Project Setup and Planning
 
-**Module:** B103-005 | **Path:** Required  
+**Module:** B103-005 | **Path:** Required | **Track:** POS Capstone  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -87,7 +92,7 @@
 
 ## [6] Store Management Module
 
-**Module:** B103-006 | **Path:** Required  
+**Module:** B103-006 | **Path:** Required | **Track:** POS Capstone  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -99,7 +104,7 @@
 
 ## [7] Product and Branch Management
 
-**Module:** B103-007 | **Path:** Required  
+**Module:** B103-007 | **Path:** Required | **Track:** POS Capstone  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -110,7 +115,7 @@
 
 ## [8] Sales and Transactions Module
 
-**Module:** B103-008 | **Path:** Required  
+**Module:** B103-008 | **Path:** Required | **Track:** POS Capstone  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -120,7 +125,7 @@
 
 ## [9] Advanced Features and Polish
 
-**Module:** B103-009 | **Path:** Required  
+**Module:** B103-009 | **Path:** Required | **Track:** POS Capstone  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -130,7 +135,7 @@
 
 ## [10] Deployment and Presentation
 
-**Module:** B103-010 | **Path:** Required  
+**Module:** B103-010 | **Path:** Required | **Track:** POS Capstone  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -141,7 +146,7 @@
 
 ## [11] Final Assessment
 
-**Module:** B103-011 | **Path:** Required  
+**Module:** B103-011 | **Path:** Required | **Track:** POS Capstone  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -154,7 +159,7 @@
 
 ## [12] Advanced Tables, Grids and Visualization
 
-**Module:** B103-012 | **Path:** Extended  
+**Module:** B103-012 | **Path:** Extended | **Track:** Advanced Enterprise Topics  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -169,7 +174,7 @@
 
 ## [13] Advanced Search and Navigation
 
-**Module:** B103-013 | **Path:** Extended  
+**Module:** B103-013 | **Path:** Extended | **Track:** Advanced Enterprise Topics  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -184,7 +189,7 @@
 
 ## [14] State Management, Back Button and Security
 
-**Module:** B103-014 | **Path:** Extended  
+**Module:** B103-014 | **Path:** Extended | **Track:** Advanced Enterprise Topics  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -199,7 +204,7 @@
 
 ## [15] Security Hardening
 
-**Module:** B103-015 | **Path:** Extended  
+**Module:** B103-015 | **Path:** Extended | **Track:** Advanced Enterprise Topics  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -210,7 +215,7 @@
 
 ## [16] REST and Product Integration
 
-**Module:** B103-016 | **Path:** Extended  
+**Module:** B103-016 | **Path:** Extended | **Track:** Advanced Enterprise Topics  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -223,7 +228,7 @@
 
 ## [17] Portal, Analytics and Service Testing
 
-**Module:** B103-017 | **Path:** Extended  
+**Module:** B103-017 | **Path:** Extended | **Track:** Advanced Enterprise Topics  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |

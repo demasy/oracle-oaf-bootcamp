@@ -2,6 +2,11 @@
 
 **Code:** DL-OAF-C-102 | **Level:** Advanced | **Duration:** 10-15 days | **Scaffolding:** 40% guidance | **Certification milestone:** Master Customization Architect
 
+**Path:** Core is the required reference path; Required is content the exit depends on; Extended is optional depth.  
+**Entry:** Dev 102, Cust 101, the Dev 103 production-readiness core (B103-001 to B103-004) and advanced Java.  
+**Exit:** Learner extends a seeded page without touching base code, packages and deploys it on R12.2, and diagnoses a failure.  
+**Assessment:** Extension project with a substitution and an extended controller, deployed on R12.2 (criteria proposed).
+
 ## Course Goals
 
 - Apply extension standards and place custom code correctly

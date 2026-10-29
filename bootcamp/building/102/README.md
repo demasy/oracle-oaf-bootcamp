@@ -2,6 +2,11 @@
 
 **Code:** DL-OAF-B-102 | **Level:** Advanced | **Duration:** 20-25 days | **Scaffolding:** 40% guidance | **Certification milestone:** Professional OAF Developer
 
+**Path:** Core is the required reference path; Required is content the exit depends on; Extended is optional depth.  
+**Entry:** Dev 101 complete: can build and deploy a CRUD application.  
+**Exit:** Learner delivers an application with events, PPR, LOVs, exception handling and advanced tables.  
+**Assessment:** Final assessment project, either the Advanced HR Management System or the Procurement Request System, after Project 102.
+
 ## Course Goals
 
 - Intercept user interactions and execute post-back processing with processFormRequest
@@ -14,32 +19,32 @@
 
 ## Curriculum
 
-| Section | Module | Title | Path | Lectures |
-| :-: | :-- | :-- | :-: | :-: |
-| [1] | B102-001 | [Form Event Handling Lifecycle](#1-form-event-handling-lifecycle) | Core | 2 |
-| [2] | B102-002 | [Asynchronous UI via PPR](#2-asynchronous-ui-via-ppr) | Core | 2 |
-| [3] | B102-003 | [List of Values (LOV) Engineering](#3-list-of-values-lov-engineering) | Core | 4 |
-| [4] | B102-004 | [Enterprise Exception Framework](#4-enterprise-exception-framework) | Core | 3 |
-| [5] | B102-005 | [Modal Dialogs and Page Navigation](#5-modal-dialogs-and-page-navigation) | Core | 2 |
-| [6] | B102-006 | [Advanced Table Operations](#6-advanced-table-operations) | Core | 3 |
-| [7] | B102-007 | [Dynamic UI Control and Focus](#7-dynamic-ui-control-and-focus) | Core | 6 |
-| [8] | B102-008 | [Advanced Model and Server-Side Features](#8-advanced-model-and-server-side-features) | Extended | 6 |
-| [9] | B102-009 | [Layout and Container Regions](#9-layout-and-container-regions) | Extended | 6 |
-| [10] | B102-010 | [Data Regions, Grids and Charts](#10-data-regions-grids-and-charts) | Extended | 5 |
-| [11] | B102-011 | [Wizards, Rich Inputs and Configurable Pages](#11-wizards-rich-inputs-and-configurable-pages) | Extended | 5 |
-| [12] | B102-012 | [Flexfields, SPEL and Forms Integration](#12-flexfields-spel-and-forms-integration) | Extended | 7 |
-| [13] | B102-013 | [Client-Side Scripting and Page Modes](#13-client-side-scripting-and-page-modes) | Extended | 2 |
-| [14] | B102-014 | [Data Formatting and Validation](#14-data-formatting-and-validation) | Extended | 4 |
-| [15] | B102-015 | [Configuration and Defaults](#15-configuration-and-defaults) | Extended | 3 |
-| [16] | B102-016 | [Files, Documents and Data Exchange](#16-files-documents-and-data-exchange) | Extended | 6 |
-| [17] | B102-017 | [Navigation, Workflow and Background Processing](#17-navigation-workflow-and-background-processing) | Extended | 4 |
-| [18] | B102-018 | [Internationalization, Accessibility and Usability](#18-internationalization-accessibility-and-usability) | Extended | 4 |
-| [19] | B102-019 | [Advanced Debugging](#19-advanced-debugging) | Extended | 3 |
-| [20] | B102-020 | [Projects and Final Assessment](#20-projects-and-final-assessment) | Required | 6 |
+| Section | Module | Title | Path | Track | Lectures |
+| :-: | :-- | :-- | :-: | :-- | :-: |
+| [1] | B102-001 | [Form Event Handling Lifecycle](#1-form-event-handling-lifecycle) | Core | Core Path | 2 |
+| [2] | B102-002 | [Asynchronous UI via PPR](#2-asynchronous-ui-via-ppr) | Core | Core Path | 2 |
+| [3] | B102-003 | [List of Values (LOV) Engineering](#3-list-of-values-lov-engineering) | Core | Core Path | 4 |
+| [4] | B102-004 | [Enterprise Exception Framework](#4-enterprise-exception-framework) | Core | Core Path | 3 |
+| [5] | B102-005 | [Modal Dialogs and Page Navigation](#5-modal-dialogs-and-page-navigation) | Core | Core Path | 2 |
+| [6] | B102-006 | [Advanced Table Operations](#6-advanced-table-operations) | Core | Core Path | 3 |
+| [7] | B102-007 | [Dynamic UI Control and Focus](#7-dynamic-ui-control-and-focus) | Core | Core Path | 6 |
+| [8] | B102-008 | [Advanced Model and Server-Side Features](#8-advanced-model-and-server-side-features) | Extended | Advanced Model and Data | 6 |
+| [9] | B102-009 | [Data Formatting and Validation](#9-data-formatting-and-validation) | Extended | Advanced Model and Data | 4 |
+| [10] | B102-010 | [Configuration and Defaults](#10-configuration-and-defaults) | Extended | Advanced Model and Data | 3 |
+| [11] | B102-011 | [Layout and Container Regions](#11-layout-and-container-regions) | Extended | Advanced UI Components | 6 |
+| [12] | B102-012 | [Data Regions, Grids and Charts](#12-data-regions-grids-and-charts) | Extended | Advanced UI Components | 5 |
+| [13] | B102-013 | [Wizards, Rich Inputs and Configurable Pages](#13-wizards-rich-inputs-and-configurable-pages) | Extended | Advanced UI Components | 5 |
+| [14] | B102-014 | [Flexfields, SPEL and Forms Integration](#14-flexfields-spel-and-forms-integration) | Extended | Advanced UI Components | 7 |
+| [15] | B102-015 | [Client-Side Scripting and Page Modes](#15-client-side-scripting-and-page-modes) | Extended | Advanced UI Components | 2 |
+| [16] | B102-016 | [Files, Documents and Data Exchange](#16-files-documents-and-data-exchange) | Extended | Integration, Platform and Diagnostics | 6 |
+| [17] | B102-017 | [Navigation, Workflow and Background Processing](#17-navigation-workflow-and-background-processing) | Extended | Integration, Platform and Diagnostics | 4 |
+| [18] | B102-018 | [Internationalization, Accessibility and Usability](#18-internationalization-accessibility-and-usability) | Extended | Integration, Platform and Diagnostics | 4 |
+| [19] | B102-019 | [Advanced Debugging](#19-advanced-debugging) | Extended | Integration, Platform and Diagnostics | 3 |
+| [20] | B102-020 | [Projects and Final Assessment](#20-projects-and-final-assessment) | Required | Core Path | 6 |
 
 ## [1] Form Event Handling Lifecycle
 
-**Module:** B102-001 | **Path:** Core  
+**Module:** B102-001 | **Path:** Core | **Track:** Core Path  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -48,7 +53,7 @@
 
 ## [2] Asynchronous UI via PPR
 
-**Module:** B102-002 | **Path:** Core  
+**Module:** B102-002 | **Path:** Core | **Track:** Core Path  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -57,7 +62,7 @@
 
 ## [3] List of Values (LOV) Engineering
 
-**Module:** B102-003 | **Path:** Core  
+**Module:** B102-003 | **Path:** Core | **Track:** Core Path  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -68,7 +73,7 @@
 
 ## [4] Enterprise Exception Framework
 
-**Module:** B102-004 | **Path:** Core  
+**Module:** B102-004 | **Path:** Core | **Track:** Core Path  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -78,7 +83,7 @@
 
 ## [5] Modal Dialogs and Page Navigation
 
-**Module:** B102-005 | **Path:** Core  
+**Module:** B102-005 | **Path:** Core | **Track:** Core Path  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -87,7 +92,7 @@
 
 ## [6] Advanced Table Operations
 
-**Module:** B102-006 | **Path:** Core  
+**Module:** B102-006 | **Path:** Core | **Track:** Core Path  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -97,7 +102,7 @@
 
 ## [7] Dynamic UI Control and Focus
 
-**Module:** B102-007 | **Path:** Core  
+**Module:** B102-007 | **Path:** Core | **Track:** Core Path  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -110,7 +115,7 @@
 
 ## [8] Advanced Model and Server-Side Features
 
-**Module:** B102-008 | **Path:** Extended  
+**Module:** B102-008 | **Path:** Extended | **Track:** Advanced Model and Data  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -121,90 +126,90 @@
 | B102-008.005 | Calling PL/SQL Functions and Procedures | Lab | Examples | CallableStatement usage, IN/OUT parameters, function returns, error handling |
 | B102-008.006 | Applying Server-Side Best Practices | Video | Patterns | PL/SQL vs Java, performance considerations, transaction management |
 
-## [9] Layout and Container Regions
+## [9] Data Formatting and Validation
 
-**Module:** B102-009 | **Path:** Extended  
-
-| Code | Lecture | Format | Resource | Notes |
-| :-- | :-------- | :-: | :-- | :---- |
-| B102-009.001 | Implementing Hide/Show Region | Lab | Tutorial | Conditional rendering, PPR for dynamic display, UX considerations |
-| B102-009.002 | Implementing Flow Layout Region | Lab | Examples | Flow vs other layouts, component arrangement, responsive design |
-| B102-009.003 | Implementing Advanced Layout Region | Lab | Patterns | Table/Row/Cell layouts, nested layouts, complex forms |
-| B102-009.004 | Implementing Content Container Region | Lab | Examples | Tab-based navigation, hiding/showing tabs, dynamic tab generation; richContainer |
-| B102-009.005 | Implementing Panel Splitter and Layered Layout | Lab | Tutorial | panelSplitter, layeredLayout, adjustable panels, multi-mode pages |
-| B102-009.006 | Building Custom Grids with tableLayout and cellFormat | Lab | Tutorial | Explicit rows and cells, columnSpan, rowSpan, hAlign, vAlign, width and height |
-
-## [10] Data Regions, Grids and Charts
-
-**Module:** B102-010 | **Path:** Extended  
+**Module:** B102-009 | **Path:** Extended | **Track:** Advanced Model and Data  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-010.001 | Implementing Query Region (Advanced) | Lab | Guide | Construction modes, results-based search, auto-customization, configuration |
-| B102-010.002 | Implementing HGrid Region | Lab | Tutorial | Hierarchical data, expandable nodes, tree navigation, performance; tree, nodeDef and childNode definitions |
-| B102-010.003 | Implementing Charts and Graphs | Lab | Tutorial | Chart types, data binding, interactive charts, BI Publisher integration |
-| B102-010.004 | Implementing Bulleted Lists | Lab | Tutorial | bulletedList, multi-column lists (up to three columns), bound to view rows |
-| B102-010.005 | Implementing Auto-Repeating Layouts | Lab | Tutorial | Auto-repeating regions generated from view object rows, dynamic sections, per-row content |
+| B102-009.001 | Manipulating and Formatting Dates | Lab | Tutorial | Date comparisons, Oracle date formats, timezone handling, calculations |
+| B102-009.002 | Formatting Numbers | Lab | Examples | Number formats, currency display, locale considerations, decimal precision |
+| B102-009.003 | Implementing Data Validations | Lab | Guide | Field-level validation, cross-field validation, business rule validation |
+| B102-009.004 | Implementing Validation Using Entity Expert | Lab | Tutorial | Entity Expert pattern, shared validation rules across pages, complex business rules, messages |
 
-## [11] Wizards, Rich Inputs and Configurable Pages
+## [10] Configuration and Defaults
 
-**Module:** B102-011 | **Path:** Extended  
-
-| Code | Lecture | Format | Resource | Notes |
-| :-- | :-------- | :-: | :-- | :---- |
-| B102-011.001 | Implementing Train Region | Lab | Examples | Multi-step processes, train stops, navigation, validation, progress tracking |
-| B102-011.002 | Implementing Shuttle Region | Lab | Tutorial | Dual-list selection, moving items, ordering, search functionality |
-| B102-011.003 | Implementing Multi-Step Create and Update Flows | Lab | Project | Train-based wizards, transaction state across steps, iterative versus single-submit updates |
-| B102-011.004 | Building Rich Text, Color Picker and Rating Bar Inputs | Lab | Tutorial | richTextEditor, messageRichTextEditor, colorPicker, messageRatingBar bound to a form |
-| B102-011.005 | Building Configurable Pages with flexibleLayout | Lab | Project | flexibleLayout, flexibleContent, flexibleContentList, user and admin dashboard tiles |
-
-## [12] Flexfields, SPEL and Forms Integration
-
-**Module:** B102-012 | **Path:** Extended  
+**Module:** B102-010 | **Path:** Extended | **Track:** Advanced Model and Data  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-012.001 | Configuring a Key Flexfield Region | Lab | Tutorial | KFF configuration, binding to page, validation, capturing values |
-| B102-012.002 | Configuring a Descriptive Flexfield Region | Lab | Tutorial | DFF configuration, context-sensitive DFF, EO integration, querying |
-| B102-012.003 | Changing Item Properties Using SPEL | Lab | Examples | SPEL syntax, conditional properties, dynamic rendering, performance |
-| B102-012.004 | Adding Custom HTML Code | Lab | Guide | RawText component, JavaScript integration, security, best practices |
-| B102-012.005 | Launching Oracle Forms from OAF | Lab | Tutorial | Form function call, parameter passing, integration patterns |
-| B102-012.006 | Launching OAF Pages from Oracle Forms | Lab | Guide | ICX integration, URL construction, SSO considerations |
-| B102-012.007 | Mapping Flexfield Segments with flexMap | Lab | Tutorial | flex and flexMap regions for DFF and KFF, mapping segments to page items |
+| B102-010.001 | Setting Default Values | Lab | Tutorial | Text fields, number fields, date fields, techniques and best practices |
+| B102-010.002 | Querying Page Metadata in the MDS Repository | Video | Guide | How page metadata is stored and queried, from a developer view; MDS architecture and administration are covered in Cust 101 |
+| B102-010.003 | Configuring Important Profile Options | Video | Reference | Key profile options, impact on behavior, setting programmatically |
 
-## [13] Client-Side Scripting and Page Modes
+## [11] Layout and Container Regions
 
-**Module:** B102-013 | **Path:** Extended  
+**Module:** B102-011 | **Path:** Extended | **Track:** Advanced UI Components  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-013.001 | Using JavaScript in OAF | Lab | Guide | Client-side validation, UI enhancements, calling Java, security |
-| B102-013.002 | Implementing Read-Only Page | Lab | Tutorial | Disabling inputs, visual indicators, conditional read-only mode |
+| B102-011.001 | Implementing Hide/Show Region | Lab | Tutorial | Conditional rendering, PPR for dynamic display, UX considerations |
+| B102-011.002 | Implementing Flow Layout Region | Lab | Examples | Flow vs other layouts, component arrangement, responsive design |
+| B102-011.003 | Implementing Advanced Layout Region | Lab | Patterns | Table/Row/Cell layouts, nested layouts, complex forms |
+| B102-011.004 | Implementing Content Container Region | Lab | Examples | Tab-based navigation, hiding/showing tabs, dynamic tab generation; richContainer |
+| B102-011.005 | Implementing Panel Splitter and Layered Layout | Lab | Tutorial | panelSplitter, layeredLayout, adjustable panels, multi-mode pages |
+| B102-011.006 | Building Custom Grids with tableLayout and cellFormat | Lab | Tutorial | Explicit rows and cells, columnSpan, rowSpan, hAlign, vAlign, width and height |
 
-## [14] Data Formatting and Validation
+## [12] Data Regions, Grids and Charts
 
-**Module:** B102-014 | **Path:** Extended  
-
-| Code | Lecture | Format | Resource | Notes |
-| :-- | :-------- | :-: | :-- | :---- |
-| B102-014.001 | Manipulating and Formatting Dates | Lab | Tutorial | Date comparisons, Oracle date formats, timezone handling, calculations |
-| B102-014.002 | Formatting Numbers | Lab | Examples | Number formats, currency display, locale considerations, decimal precision |
-| B102-014.003 | Implementing Data Validations | Lab | Guide | Field-level validation, cross-field validation, business rule validation |
-| B102-014.004 | Implementing Validation Using Entity Expert | Lab | Tutorial | Entity Expert pattern, shared validation rules across pages, complex business rules, messages |
-
-## [15] Configuration and Defaults
-
-**Module:** B102-015 | **Path:** Extended  
+**Module:** B102-012 | **Path:** Extended | **Track:** Advanced UI Components  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-015.001 | Setting Default Values | Lab | Tutorial | Text fields, number fields, date fields, techniques and best practices |
-| B102-015.002 | Querying Page Metadata in the MDS Repository | Video | Guide | How page metadata is stored and queried, from a developer view; MDS architecture and administration are covered in Cust 101 |
-| B102-015.003 | Configuring Important Profile Options | Video | Reference | Key profile options, impact on behavior, setting programmatically |
+| B102-012.001 | Implementing Query Region (Advanced) | Lab | Guide | Construction modes, results-based search, auto-customization, configuration |
+| B102-012.002 | Implementing HGrid Region | Lab | Tutorial | Hierarchical data, expandable nodes, tree navigation, performance; tree, nodeDef and childNode definitions |
+| B102-012.003 | Implementing Charts and Graphs | Lab | Tutorial | Chart types, data binding, interactive charts, BI Publisher integration |
+| B102-012.004 | Implementing Bulleted Lists | Lab | Tutorial | bulletedList, multi-column lists (up to three columns), bound to view rows |
+| B102-012.005 | Implementing Auto-Repeating Layouts | Lab | Tutorial | Auto-repeating regions generated from view object rows, dynamic sections, per-row content |
+
+## [13] Wizards, Rich Inputs and Configurable Pages
+
+**Module:** B102-013 | **Path:** Extended | **Track:** Advanced UI Components  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| B102-013.001 | Implementing Train Region | Lab | Examples | Multi-step processes, train stops, navigation, validation, progress tracking |
+| B102-013.002 | Implementing Shuttle Region | Lab | Tutorial | Dual-list selection, moving items, ordering, search functionality |
+| B102-013.003 | Implementing Multi-Step Create and Update Flows | Lab | Project | Train-based wizards, transaction state across steps, iterative versus single-submit updates |
+| B102-013.004 | Building Rich Text, Color Picker and Rating Bar Inputs | Lab | Tutorial | richTextEditor, messageRichTextEditor, colorPicker, messageRatingBar bound to a form |
+| B102-013.005 | Building Configurable Pages with flexibleLayout | Lab | Project | flexibleLayout, flexibleContent, flexibleContentList, user and admin dashboard tiles |
+
+## [14] Flexfields, SPEL and Forms Integration
+
+**Module:** B102-014 | **Path:** Extended | **Track:** Advanced UI Components  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| B102-014.001 | Configuring a Key Flexfield Region | Lab | Tutorial | KFF configuration, binding to page, validation, capturing values |
+| B102-014.002 | Configuring a Descriptive Flexfield Region | Lab | Tutorial | DFF configuration, context-sensitive DFF, EO integration, querying |
+| B102-014.003 | Changing Item Properties Using SPEL | Lab | Examples | SPEL syntax, conditional properties, dynamic rendering, performance |
+| B102-014.004 | Adding Custom HTML Code | Lab | Guide | RawText component, JavaScript integration, security, best practices |
+| B102-014.005 | Launching Oracle Forms from OAF | Lab | Tutorial | Form function call, parameter passing, integration patterns |
+| B102-014.006 | Launching OAF Pages from Oracle Forms | Lab | Guide | ICX integration, URL construction, SSO considerations |
+| B102-014.007 | Mapping Flexfield Segments with flexMap | Lab | Tutorial | flex and flexMap regions for DFF and KFF, mapping segments to page items |
+
+## [15] Client-Side Scripting and Page Modes
+
+**Module:** B102-015 | **Path:** Extended | **Track:** Advanced UI Components  
+
+| Code | Lecture | Format | Resource | Notes |
+| :-- | :-------- | :-: | :-- | :---- |
+| B102-015.001 | Using JavaScript in OAF | Lab | Guide | Client-side validation, UI enhancements, calling Java, security |
+| B102-015.002 | Implementing Read-Only Page | Lab | Tutorial | Disabling inputs, visual indicators, conditional read-only mode |
 
 ## [16] Files, Documents and Data Exchange
 
-**Module:** B102-016 | **Path:** Extended  
+**Module:** B102-016 | **Path:** Extended | **Track:** Integration, Platform and Diagnostics  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -217,7 +222,7 @@
 
 ## [17] Navigation, Workflow and Background Processing
 
-**Module:** B102-017 | **Path:** Extended  
+**Module:** B102-017 | **Path:** Extended | **Track:** Integration, Platform and Diagnostics  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -228,7 +233,7 @@
 
 ## [18] Internationalization, Accessibility and Usability
 
-**Module:** B102-018 | **Path:** Extended  
+**Module:** B102-018 | **Path:** Extended | **Track:** Integration, Platform and Diagnostics  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -239,7 +244,7 @@
 
 ## [19] Advanced Debugging
 
-**Module:** B102-019 | **Path:** Extended  
+**Module:** B102-019 | **Path:** Extended | **Track:** Integration, Platform and Diagnostics  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
@@ -249,7 +254,7 @@
 
 ## [20] Projects and Final Assessment
 
-**Module:** B102-020 | **Path:** Required  
+**Module:** B102-020 | **Path:** Required | **Track:** Core Path  
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |

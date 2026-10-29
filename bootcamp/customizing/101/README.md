@@ -2,6 +2,11 @@
 
 **Code:** DL-OAF-C-101 | **Level:** Beginner | **Duration:** 10-15 days | **Scaffolding:** 60% guidance | **Certification milestone:** Certified Personalization Specialist
 
+**Path:** Core is the required reference path; Required is content the exit depends on; Extended is optional depth.  
+**Entry:** Dev 101 and EBS system administration.  
+**Exit:** Learner personalizes a seeded page at two levels, explains the precedence result and migrates the change between environments.  
+**Assessment:** Personalization project at two levels, migrated with XMLExporter and XMLImporter (criteria proposed).
+
 ## Course Goals
 
 - Explain personalization, extension and modification, and when to use each
