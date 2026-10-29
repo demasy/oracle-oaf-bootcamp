@@ -1,121 +1,44 @@
 # Oracle Application Framework (OAF) BootCamp
 
-**Version 1.4.0** - Production-Ready Code Brain with Centralized Message Management
-
-A comprehensive collection of Oracle Application Framework (OAF) patterns, utilities, and best practices. Features 12,800+ lines of production-ready code with 240+ use cases covering all MVC layers, validation utilities, and multi-language message support.
-
-## 🎯 What's New in v1.4.0
-
-**Centralized Message Management** - Zero hardcoded error messages!
-- ✅ **MessageConstants.java** - 60+ centralized message codes
-- ✅ **MessageHelper.java** - Reusable error creation utilities
-- ✅ **MESSAGE_REGISTRATION.sql** - Complete FND_MESSAGES setup
-- ✅ **Multi-language (i18n)** - Support for all languages via database
-- ✅ **Production-ready** - Message changes without code deployment
+A hands-on Oracle Application Framework (OAF) BootCamp for Oracle E-Business Suite developers and implementers. Five courses take you from your first OAF page to production deployment and upgrade-safe customization, covering the model, view and controller layers, integration, security, personalization and extension.
 
 ## About this BootCamp
 
-This repository provides comprehensive training materials and production-ready code for Oracle E-Business Suite OA Framework development. The **code-brain** directory contains extensively documented Java patterns covering Entity Objects, View Objects, Application Modules, Controllers, Integration (Excel/PL/SQL), Security, and more.
+A structured, hands-on path through Oracle Application Framework (OAF) for Oracle E-Business Suite, from first page to production deployment and upgrade-safe customization. The BootCamp has **five courses**, **63 modules** and **293 lectures**, and every OAF capability it teaches is indexed in [CAPABILITIES.md](bootcamp/CAPABILITIES.md) (164 capabilities across 13 areas).
 
-**Key Features:**
-- 📚 Complete MVC layer implementations
-- 🔧 Reusable validation utilities (48 XXVAL_* message codes)
-- 🌍 Multi-language message support (XX, XXVAL, XXLAB applications)
-- 📊 3 complete lab exercises with step-by-step solutions
-- 🛡️ Security patterns and best practices
-- 📈 Production-tested code with comprehensive JavaDoc
+**How it is organized**
 
-<br>
+- **Level**: a course, for example Building 101.
+- **Section**: a module of a course, numbered in order (`B101-001`).
+- **Lecture**: a lesson inside a section (`B101-001.001`), delivered as a Video, Lab or Workshop.
 
-## 📚 Code Brain Structure
+Each lecture and module carries a **Difficulty** rating from 1 to 5 stars (Beginner, Elementary, Intermediate, Advanced, Expert).
 
-The **code-brain** directory contains production-ready OAF code organized by layer:
+**Two tracks**
 
-### Model Layer
-- **Entity Objects** - Database entity patterns, validation, DML operations
-- **View Objects** - Query patterns, WHERE clause building, dynamic SQL
-- **Application Modules** - Transaction management, nested AM patterns
-- **Validation** - DataValidation.java with 40 reusable methods (v1.3.5)
+| Track | Course | Modules | Lectures | What you learn |
+| :-- | :-- | :-: | :-: | :-- |
+| Building | [101](bootcamp/building/101/README.md) | 15 | 92 | Architecture, MVC, JDeveloper setup, application modules, view and entity objects, pages, controllers, master-detail, debugging, security, deployment and a capstone |
+| Building | [102](bootcamp/building/102/README.md) | 20 | 85 | Event handling, PPR, LOVs, exception framework, dialogs, advanced tables, flexfields, scripting, internationalization and advanced debugging |
+| Building | [103](bootcamp/building/103/README.md) | 17 | 78 | MDS and BC4J deployment, AOL security, instrumentation, R12.2 online patching, REST integration and a point-of-sale capstone |
+| Customizing | [101](bootcamp/customizing/101/README.md) | 5 | 19 | Personalization hierarchy, declarative customization of pages, regions and LOVs, migration and diagnostics |
+| Customizing | [102](bootcamp/customizing/102/README.md) | 6 | 19 | Controller, LOV and business component extensions, substitution, packaging and R12.2 synchronization |
 
-### View Layer  
-- **Tables** - Advanced table patterns, PPR, row selection
-- **LOV** - List of Values patterns with validation
-- **Flexfields** - DFF/KFF implementation patterns
+**Capability areas covered**: Architecture, Model Layer, View Layer, Controller Layer, Framework, Localization, Integration, Security, Errors and diagnostics, Personalization, Extension, Deployment and OA Framework Standards, plus a UI Component Layout Index that maps each component to the capability that uses it.
 
-### Controller Layer
-- **Core Controllers** - CRUD operations, navigation, dialogs
-- **Advanced Controllers** - File upload/download, PPR, dynamic forms
-- **Lab Exercises** - 3 complete labs with solutions
-
-### Integration & Utilities
-- **Excel Integration** - Upload/download with Apache POI
-- **PL/SQL Integration** - Functions, procedures, batch operations
-- **Message Management** - MessageConstants + MessageHelper (v1.4.0)
-- **Security** - Access control, function security
-
-**Statistics:**
-- **Total Lines**: 12,800+
-- **Use Cases**: 240+
-- **Message Codes**: 100+ (XX, XXVAL, XXLAB)
-- **Lab Exercises**: 3 complete implementations
-
-## 🚀 Quick Start - Message Management
-
-**Step 1: Register Messages**
-```sql
--- Run MESSAGE_REGISTRATION.sql in your database
-@MESSAGE_REGISTRATION.sql
--- Then load messages via Application Developer responsibility
--- Tools > Load Messages from File (FND_NEW_MESSAGES)
-```
-
-**Step 2: Use MessageHelper in Your Code**
-```java
-import oracle.apps.xxcust.oaf.codebrain.constants.MessageConstants;
-import oracle.apps.xxcust.oaf.codebrain.utils.MessageHelper;
-
-// Instead of hardcoded errors
-// throw new OAException("Employee Name is required", OAException.ERROR);
-
-// Use MessageHelper
-throw MessageHelper.createError(MessageConstants.ERR_EMP_NAME_REQUIRED, "EmployeeName");
-
-// Or for validation
-throw MessageHelper.createValidationError(
-    MessageConstants.ERR_FIELD_REQUIRED, 
-    fieldName
-);
-```
-
-**Benefits:**
-- ✅ Multi-language support without code changes
-- ✅ Message updates via database (no redeployment)
-- ✅ Centralized message management
-- ✅ Token substitution for dynamic messages
-- ✅ Consistent error handling patterns
-
-## 📖 Documentation
-
-- **[COURSE.md](COURSE.md)** - Full course outline: Level, Section, Module, Lecture  
-- **[ROADMAP.md](ROADMAP.md)** - BootCamp roadmap: course map, syllabus completion plan and phases  
-- **[CHANGELOG.md](CHANGELOG.md)** - Version history and migration guides  
-- **[MESSAGEHELPER_GUIDE.md](MESSAGEHELPER_GUIDE.md)** - Complete MessageHelper usage guide (v1.4.0)  
-- **[MESSAGE_REGISTRATION.sql](MESSAGE_REGISTRATION.sql)** - FND_MESSAGES setup for XX/XXVAL/XXLAB (v1.4.0)  
-- **[MESSAGE_CODES.md](code-brain/model-layer/validation/MESSAGE_CODES.md)** - XXVAL validation messages (v1.3.5)  
-- **[USAGE_EXAMPLES.md](code-brain/model-layer/validation/USAGE_EXAMPLES.md)** - DataValidation utilities guide (v1.3.5)  
-- **[code-brain/README.md](code-brain/README.md)** - Complete code brain documentation  
-
-<br>
+Start with Building 101 unless you already build OAF pages. Customizing 101 needs Building 101 and EBS system administration, and Customizing 102 builds on Building 102 and 103.
 
 ## OA Framework BootCamp Levels
 
+<p align="center"><img src="bootcamp/assets/levels.svg" width="720" alt="Beginner > Advanced > Ninja"></p>
+
 | Code       | Lecture Title                         | Level     | Subscribe  |   Notes |
 | :-:         | :--------                             | :-:       | :-:        |     :----   |
-| DL-OAF-B-101        | <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/tree/master/building-101">Oracle OAF Building BootCamp 101</a>      | Beginner  |  N/A       | -|
-| DL-OAF-B-102        | <a href="SYLLABUS_102.md">Oracle OAF Building BootCamp 102</a>      | Advanced  |  N/A       | -|
-| DL-OAF-B-103       | <a href="SYLLABUS_103.md">Oracle OAF Building BootCamp 103</a>      | Ninja     |  N/A       | -|
-| DL-OAF-C-101        | <a href="SYLLABUS_CUST_101.md">Oracle OAF Customizing BootCamp 101</a>   | Beginner  |  N/A       | -|
-| DL-OAF-C-102        | <a href="SYLLABUS_CUST_102.md">Oracle OAF Customizing BootCamp 102</a>   | Advanced  |  N/A       | -|
+| OAF-B-101        | <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/tree/master/building-101">Oracle OAF Building BootCamp 101</a>      | Beginner  |  N/A       | -|
+| OAF-B-102        | <a href="SYLLABUS_102.md">Oracle OAF Building BootCamp 102</a>      | Advanced  |  N/A       | -|
+| OAF-B-103       | <a href="SYLLABUS_103.md">Oracle OAF Building BootCamp 103</a>      | Ninja     |  N/A       | -|
+| OAF-C-101        | <a href="SYLLABUS_CUST_101.md">Oracle OAF Customizing BootCamp 101</a>   | Beginner  |  N/A       | -|
+| OAF-C-102        | <a href="SYLLABUS_CUST_102.md">Oracle OAF Customizing BootCamp 102</a>   | Advanced  |  N/A       | -|
 
 <br>
 

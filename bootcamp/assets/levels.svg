@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="72" viewBox="0 0 720 72" role="img" aria-label="Levels: Beginner, then Advanced, then Ninja">
+  <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+    <rect x="4" y="8" width="200" height="56" rx="28" fill="#2E9E5B"/>
+    <text x="104" y="43" fill="#FFFFFF">Beginner</text>
+    <rect x="260" y="8" width="200" height="56" rx="28" fill="#F0A32F"/>
+    <text x="360" y="43" fill="#FFFFFF">Advanced</text>
+    <rect x="516" y="8" width="200" height="56" rx="28" fill="#2B2F36"/>
+    <text x="616" y="43" fill="#FFFFFF">Ninja</text>
+  </g>
+  <g fill="none" stroke="#8B949E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M222 36h20M236 28l8 8-8 8"/>
+    <path d="M478 36h20M492 28l8 8-8 8"/>
+  </g>
+</svg>
