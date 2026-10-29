@@ -33,6 +33,24 @@ for a,its in CAP.items():
     if a=="Model Layer":
         for g,names in GROUPS.items(): NEW[g]=[view[n] for n in names]
 CAP=NEW
+SPLITS={"Model Layer":{"Business Components":["Entity objects","View objects, bind variables and criteria","Updatable and read-only view objects","View links","Application modules and OADBTransaction","Master-detail pages","Polymorphic entity objects"],"Validation and Server-Side Logic":["Entity expert validation","Attribute validation and primary keys","SQL and PL/SQL calls from OAF","PL/SQL entity objects","Programmatic view objects"]},
+"Controller Layer":{"Request Processing":["processRequest (GET)","processFormRequest (POST)","Partial page rendering (PPR)","Page context and web bean API","Common controller patterns"],"State and Navigation":["Parameter passing","Session parameters and user state","Dialog pages","Back button","Deep links","Declarative page flows"],"Dynamic and Programmatic UI":["Programmatic beans","Dynamic focus and bean properties","Table row actions","JavaScript","Read-only pages and page modes"]},
+"Integration":{"Files and Data Exchange":["Attachments","File upload and download","Import and export data","Export to Excel and PDF"],"Services and APIs":["REST and web services","BSO tester","External SOAP and REST services"],"EBS Products and Processes":["Workflow and notifications","Oracle Forms interoperability","Portlets","Concurrent requests","OBIEE analytics"]},
+"OA Framework Standards":{"Coding and Naming Standards":["Why development standards matter","Coding standards and naming conventions","Oracle, project and industry standards","File types and package naming","Directory structure ($JAVA_TOP)","Common page patterns"],"Project and Code Management":["Workspace and project organization","Code management and version control","Project documentation and delivery","Mentoring and code review"],"Quality and Extension Practice":["Extension standards","Custom code placement","Server-side best practices","Code quality and standards compliance"]}}
+PARENTS=["View Layer"]+list(SPLITS)
+NEW={}
+for a,its in CAP.items():
+    if a in SPLITS:
+        byname=dict((n,(n,k)) for n,k in its); flat=[x for g in SPLITS[a].values() for x in g]
+        assert sorted(byname)==sorted(flat) and len(flat)==len(set(flat)),(a,set(byname)^set(flat))
+        for g,names in SPLITS[a].items(): NEW[f"{a}: {g}"]=[byname[n] for n in names]
+    else: NEW[a]=its
+CAP=NEW
+def split_area(area):
+    if ": " in area:
+        h,t=area.split(": ",1)
+        if h in PARENTS: return h,t
+    return None,area
 COMP={"Pages and regions":["page","pageLayout","attributeSet","package"],"messageComponentLayout":["messageComponentLayout","messageLayout","labeledFieldLayout","defaultSingleColumn","defaultDoubleColumn"],"Stack, flow, table, row and cell layouts":["stackLayout","flowLayout","rowLayout","tableLayout","cellFormat"],"Panel splitter and layered layout":["panelSplitter","layeredLayout"],"Bulleted list":["bulletedList"],"Flexible layout and configurable pages":["flexibleLayout","flexibleContent","flexibleContentList"],"Advanced layout and content container regions":["contentContainer","richContainer"],"Section headers, hide/show regions and footers":["header","hideShowHeader","footer","contentFooter"],"Sub tabs and navigation components":["subTabLayout","subTabBar","hideShowSubTabLayout"],"Train and wizards":["train"],"Shuttle":["shuttle"],"Popups":["popUp"],"Breadcrumbs and menus":["menu","menuItem","breadcrumbs","locator","navigationBar"],"Buttons and button bars":["button","submitButton","resetButton","selectionButton","exportButton","link","pageButtonBar"],
 "Advanced tables":["table","advancedTable"],"Table columns, totals and row selection":["columnGroup","sortableHeader","totalRow","addTableRow","singleSelection","multipleSelection"],"HGrid and tree":["HGrid","tree","nodeDef","childNode"],"Infotiles":["infotile"],"Charts and graphs":["graphTable","graph","graphData"],"Gantt charts":["Gantt"],
 "Form inputs and selection controls":["messageTextInput","messageChoice","messageLovChoice","messageRadioButton","messageRadioGroup","messageCheckBox","messageSpinBox"],"Text and display items":["styledText","formattedText","instructionText","messageStyledText","staticStyledText","rawText"],"Images, spacers and separators":["image","spacer","separator","tip"],"Form parameters and includes":["formParameter","formValue","servletInclude","urlInclude"],"LOV, dependent LOV and look-ahead":["listOfValues","messageLovInput","lovMap","lovActionButton","lovActionMap"],"Rich text, color picker and rating bar":["richTextEditor","colorPicker","messageRatingBar"],"Flexfields (DFF and KFF)":["flex","flexMap"],"Attachment mapping":["attachmentTable","attachmentLink","attachmentImage","messageInlineAttachment","entityMap","categoryMap","primaryKey"],"File upload and download":["messageFileUpload","messageDownload"],"Dialog pages":["dialogPage"]}
@@ -40,12 +58,13 @@ allcap={n for its in CAP.values() for n,_ in its}
 assert all(k in allcap for k in COMP),[k for k in COMP if k not in allcap]
 out=["# Oracle OAF BootCamp Capabilities","","Every OAF capability covered by the five courses, with the levels that teach it and up to five lectures (lectures that name the capability come first).","","**Courses:** [Dev 101](building/101/README.md), [Dev 102](building/102/README.md), [Dev 103](building/103/README.md), [Cust 101](customizing/101/README.md), [Cust 102](customizing/102/README.md).",""]
 body=[];total=0;checks=[];summ=[]
-PARENT="View Layer"; seen_parent=False
+seen_parents=set()
 for area,items in CAP.items():
-    if area.startswith(PARENT+": "):
-        if not seen_parent:
-            body+=[f"## {PARENT}",""]; seen_parent=True
-        body+=[f"### {area[len(PARENT)+2:]}","","| Capability | Level | Lectures |","| :-- | :-- | :-- |"]
+    par,sub=split_area(area)
+    if par:
+        if par not in seen_parents:
+            body+=[f"## {par}",""]; seen_parents.add(par)
+        body+=[f"### {sub}","","| Capability | Level | Lectures |","| :-- | :-- | :-- |"]
     else:
         body+=[f"## {area}","","| Capability | Level | Lectures |","| :-- | :-- | :-- |"]
     for name,kws in items:
@@ -56,13 +75,13 @@ for area,items in CAP.items():
         body.append(f"| {name} | {', '.join(lv)} | {', '.join(top)} |"); total+=1; checks.append((name,kws,top))
     summ.append((area,len(items))); body.append("")
 def _summ_rows():
-    rows_=[];sub=[(a,n) for a,n in summ if a.startswith(PARENT+": ")]
-    done=False
+    rows_=[];done=set()
     for a,n in summ:
-        if a.startswith(PARENT+": "):
-            if not done:
-                rows_.append(f"| **{PARENT}** | **{sum(x for _,x in sub)}** |"); done=True
-            rows_.append(f"| ↳ {a[len(PARENT)+2:]} | {n} |")
+        par,sub=split_area(a)
+        if par:
+            if par not in done:
+                rows_.append(f"| **{par}** | **{sum(x for b,x in summ if split_area(b)[0]==par)}** |"); done.add(par)
+            rows_.append(f"| ↳ {sub} | {n} |")
         else: rows_.append(f"| {a} | {n} |")
     return rows_
 out+=["## Summary","","| Area | Capabilities |","| :-- | :-: |"]+_summ_rows()+[f"| **Total** | **{total}** |","",*body,"## Component Index","","Bean-level OAF component names and the capability row that covers each. Look up the lectures in that row.","","| Component | Capability |","| :-- | :-- |",*[f"| {c} | {cap_} |" for cap_,cs in COMP.items() for c in cs],"","## Notes","","- A capability counts as covered when a lecture name or note names it. This shows where a topic is taught, not how deeply.","- The list is built from the capability catalogs supplied for this course, not from an official Oracle list.","- The content has not been reviewed by an instructor.",""]
