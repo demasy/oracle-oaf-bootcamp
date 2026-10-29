@@ -9,9 +9,12 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Area | Capabilities |
 | :-- | :-: |
 | Architecture | 9 |
-| Model | 12 |
-| View | 41 |
-| Controller | 16 |
+| Model Layer | 12 |
+| **View Layer** | **41** |
+| ↳ Layout and Navigation | 19 |
+| ↳ Tables, Search and Visualization | 10 |
+| ↳ Widgets, Items and Forms | 12 |
+| Controller Layer | 16 |
 | Integration | 12 |
 | Security | 9 |
 | Errors and diagnostics | 9 |
@@ -37,7 +40,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | OAF in context (when to use, EBS integration) | Dev 101 | B101-002.003, B101-002.004 |
 | Object-oriented reuse | Dev 101, Dev 102 | B101-007.004, B102-009.004 |
 
-## Model
+## Model Layer
 
 | Capability | Level | Lectures |
 | :-- | :-- | :-- |
@@ -54,53 +57,65 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | SQL and PL/SQL calls from OAF | Dev 102 | B102-008.004, B102-008.005 |
 | Master-detail pages | Dev 101, Dev 103 | B101-010.001, B101-010.002, B101-015.004, B103-007.004, B101-005.005 |
 
-## View
+## View Layer
+
+### Layout and Navigation
 
 | Capability | Level | Lectures |
 | :-- | :-- | :-- |
 | Pages and regions | Dev 101, Cust 102 | B101-007.003, C102-006.001 |
 | messageComponentLayout | Dev 101 | B101-007.007 |
 | Stack, flow, table, row and cell layouts | Dev 102 | B102-011.006, B102-011.002 |
-| Advanced tables | Dev 102, Dev 103 | B102-006.001, B103-012.001, B102-006.002, B103-007.004, B103-012.002 |
-| HGrid and tree | Dev 102, Dev 103 | B102-012.002, B103-012.005 |
-| Train and wizards | Dev 102, Dev 103 | B102-013.001, B102-013.003, B103-013.005 |
-| Shuttle | Dev 102, Dev 103 | B102-013.002, B103-007.004, B103-013.005 |
-| Sub tabs and navigation components | Dev 102, Dev 103 | B102-011.001, B103-013.005, B103-012.003, B103-013.007, B103-013.008 |
 | Panel splitter and layered layout | Dev 102 | B102-011.005 |
 | Auto-repeating layout | Dev 102 | B102-012.005 |
 | Bulleted list | Dev 102 | B102-012.004 |
 | Flexible layout and configurable pages | Dev 102 | B102-013.005 |
 | Masonry layout | Dev 103 | B103-012.007 |
+| Advanced layout and content container regions | Dev 102 | B102-011.003, B102-011.004 |
+| Section headers, hide/show regions and footers | Dev 101, Dev 102 | B101-007.010, B102-011.001 |
+| Sub tabs and navigation components | Dev 102, Dev 103 | B103-013.005, B102-011.001, B103-013.008, B103-012.003, B103-013.007 |
+| Train and wizards | Dev 102, Dev 103 | B102-013.001, B102-013.003, B103-013.005 |
+| Shuttle | Dev 102, Dev 103 | B102-013.002, B103-007.004, B103-013.005 |
+| Accordions | Dev 103 | B103-013.007, B103-013.005 |
+| Popups | Dev 103 | B103-013.005 |
+| Breadcrumbs and menus | Dev 101, Dev 103 | B101-007.014, B103-006.002 |
+| Look-and-feel standards | Dev 101 | B101-007.008, B101-008.004 |
+| Attribute sets and CSS | Dev 101, Cust 102 | B101-007.013, C102-006.001 |
+| Shared regions and pages | Dev 101 | B101-007.004 |
+
+### Tables, Search and Visualization
+
+| Capability | Level | Lectures |
+| :-- | :-- | :-- |
+| Advanced tables | Dev 102, Dev 103 | B102-006.001, B103-012.001, B102-006.002, B103-007.004, B103-012.002 |
+| Table columns, totals and row selection | Dev 102, Dev 103 | B102-006.001, B102-006.002, B103-012.001 |
+| Rich table features (resize, reorder, freeze, detach) | Dev 103 | B103-012.003 |
+| HGrid and tree | Dev 102, Dev 103 | B102-012.002, B103-012.005 |
 | Infotiles | Dev 103 | B103-012.006, B103-013.003 |
 | Charts and graphs | Dev 102, Dev 103 | B102-012.003, B103-012.006, B103-012.008, B103-008.003 |
 | Gantt charts | Dev 103 | B103-012.008, B103-012.006 |
-| Accordions | Dev 103 | B103-013.007, B103-013.005 |
+| Query region, list search and saved search | Dev 101, Dev 102, Dev 103 | B102-012.001, B103-013.002, B101-007.006, B103-013.001 |
+| Quick search | Dev 103 | B103-013.004 |
+| CRUD pages (query, create, update, delete) | Dev 103 | B103-006.001, B103-006.002, B103-006.003, B103-006.004, B103-006.005 |
+
+### Widgets, Items and Forms
+
+| Capability | Level | Lectures |
+| :-- | :-- | :-- |
+| Standard web widgets | Dev 101 | B101-007.005 |
+| Form inputs and selection controls | Dev 101 | B101-007.009 |
+| Text and display items | Dev 101, Dev 102 | B101-007.011, B102-014.004 |
+| Images, spacers and separators | Dev 101 | B101-007.011, B101-008.002 |
+| Buttons and button bars | Dev 101 | B101-007.010, B101-008.005 |
+| Form parameters and includes | Dev 101 | B101-007.012, B101-008.003 |
 | LOV, dependent LOV and look-ahead | Dev 102 | B102-003.002, B102-003.003, B102-003.004, B102-003.001 |
 | Smart poplists (LOV choice) | Dev 101 | B101-008.001, B101-007.009 |
 | Rich text, color picker and rating bar | Dev 102 | B102-013.004 |
 | Flexfields (DFF and KFF) | Dev 102, Cust 101 | B102-014.001, B102-014.002, B102-014.007, C101-003.003 |
-| Attribute sets and CSS | Dev 101, Cust 102 | B101-007.013, C102-006.001 |
-| Look-and-feel standards | Dev 101 | B101-007.008, B101-008.004 |
-| Shared regions and pages | Dev 101 | B101-007.004 |
-| Images, spacers and separators | Dev 101 | B101-007.011, B101-008.002 |
-| Form parameters and includes | Dev 101 | B101-007.012, B101-008.003 |
-| Buttons and button bars | Dev 101 | B101-007.010, B101-008.005 |
-| Breadcrumbs and menus | Dev 101, Dev 103 | B101-007.014, B103-006.002 |
-| Query region, list search and saved search | Dev 101, Dev 102, Dev 103 | B102-012.001, B103-013.002, B101-007.006, B103-013.001 |
-| Quick search | Dev 103 | B103-013.004 |
-| Standard web widgets | Dev 101 | B101-007.005 |
 | Dynamic item properties (SPEL) | Dev 102 | B102-014.003 |
-| Advanced layout and content container regions | Dev 102 | B102-011.003, B102-011.004 |
-| CRUD pages (query, create, update, delete) | Dev 103 | B103-006.001, B103-006.002, B103-006.003, B103-006.004, B103-006.005 |
-| Rich table features (resize, reorder, freeze, detach) | Dev 103 | B103-012.003 |
-| Table columns, totals and row selection | Dev 102, Dev 103 | B102-006.001, B102-006.002, B103-012.001 |
-| Section headers, hide/show regions and footers | Dev 101, Dev 102 | B101-007.010, B102-011.001 |
-| Form inputs and selection controls | Dev 101 | B101-007.009 |
-| Text and display items | Dev 101, Dev 102 | B101-007.011, B102-014.004 |
-| Popups | Dev 102, Dev 103 | B102-003.003, B103-013.005 |
 | Attachment mapping | Dev 102 | B102-016.001 |
 
-## Controller
+## Controller Layer
 
 | Capability | Level | Lectures |
 | :-- | :-- | :-- |
@@ -146,7 +161,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Data security | Dev 101 | B101-012.003 |
 | Authentication and authorization | Dev 101 | B101-012.001 |
 | XSS scanning | Dev 103 | B103-014.007, B103-015.002 |
-| AntiSamy filtering | Dev 102, Dev 103 | B102-016.005, B103-014.007, B103-015.002 |
+| AntiSamy filtering | Dev 102, Dev 103 | B103-014.007, B103-015.002, B102-016.005 |
 | Virus scanning | Dev 102, Dev 103 | B103-015.004, B102-016.005, B103-014.007 |
 | Frame busting | Dev 103 | B103-015.003, B103-014.007 |
 | HTML tampering protection | Dev 101 | B101-012.004, B101-012.005 |
@@ -242,6 +257,115 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Code quality and standards compliance | Dev 101, Dev 102, Dev 103 | B103-011.002, B101-015.006, B102-020.006 |
 | Project documentation and delivery | Dev 103 | B103-010.001, B103-010.002, B103-010.003 |
 | Mentoring and code review | Dev 101, Dev 103 | B103-010.004, B101-001.003 |
+
+## Component Index
+
+Bean-level OAF component names and the capability row that covers each. Look up the lectures in that row.
+
+| Component | Capability |
+| :-- | :-- |
+| page | Pages and regions |
+| pageLayout | Pages and regions |
+| attributeSet | Pages and regions |
+| package | Pages and regions |
+| messageComponentLayout | messageComponentLayout |
+| messageLayout | messageComponentLayout |
+| labeledFieldLayout | messageComponentLayout |
+| defaultSingleColumn | messageComponentLayout |
+| defaultDoubleColumn | messageComponentLayout |
+| stackLayout | Stack, flow, table, row and cell layouts |
+| flowLayout | Stack, flow, table, row and cell layouts |
+| rowLayout | Stack, flow, table, row and cell layouts |
+| tableLayout | Stack, flow, table, row and cell layouts |
+| cellFormat | Stack, flow, table, row and cell layouts |
+| panelSplitter | Panel splitter and layered layout |
+| layeredLayout | Panel splitter and layered layout |
+| bulletedList | Bulleted list |
+| flexibleLayout | Flexible layout and configurable pages |
+| flexibleContent | Flexible layout and configurable pages |
+| flexibleContentList | Flexible layout and configurable pages |
+| contentContainer | Advanced layout and content container regions |
+| richContainer | Advanced layout and content container regions |
+| header | Section headers, hide/show regions and footers |
+| hideShowHeader | Section headers, hide/show regions and footers |
+| footer | Section headers, hide/show regions and footers |
+| contentFooter | Section headers, hide/show regions and footers |
+| subTabLayout | Sub tabs and navigation components |
+| subTabBar | Sub tabs and navigation components |
+| hideShowSubTabLayout | Sub tabs and navigation components |
+| train | Train and wizards |
+| shuttle | Shuttle |
+| popUp | Popups |
+| menu | Breadcrumbs and menus |
+| menuItem | Breadcrumbs and menus |
+| breadcrumbs | Breadcrumbs and menus |
+| locator | Breadcrumbs and menus |
+| navigationBar | Breadcrumbs and menus |
+| button | Buttons and button bars |
+| submitButton | Buttons and button bars |
+| resetButton | Buttons and button bars |
+| selectionButton | Buttons and button bars |
+| exportButton | Buttons and button bars |
+| link | Buttons and button bars |
+| pageButtonBar | Buttons and button bars |
+| table | Advanced tables |
+| advancedTable | Advanced tables |
+| columnGroup | Table columns, totals and row selection |
+| sortableHeader | Table columns, totals and row selection |
+| totalRow | Table columns, totals and row selection |
+| addTableRow | Table columns, totals and row selection |
+| singleSelection | Table columns, totals and row selection |
+| multipleSelection | Table columns, totals and row selection |
+| HGrid | HGrid and tree |
+| tree | HGrid and tree |
+| nodeDef | HGrid and tree |
+| childNode | HGrid and tree |
+| infotile | Infotiles |
+| graphTable | Charts and graphs |
+| graph | Charts and graphs |
+| graphData | Charts and graphs |
+| Gantt | Gantt charts |
+| messageTextInput | Form inputs and selection controls |
+| messageChoice | Form inputs and selection controls |
+| messageLovChoice | Form inputs and selection controls |
+| messageRadioButton | Form inputs and selection controls |
+| messageRadioGroup | Form inputs and selection controls |
+| messageCheckBox | Form inputs and selection controls |
+| messageSpinBox | Form inputs and selection controls |
+| styledText | Text and display items |
+| formattedText | Text and display items |
+| instructionText | Text and display items |
+| messageStyledText | Text and display items |
+| staticStyledText | Text and display items |
+| rawText | Text and display items |
+| image | Images, spacers and separators |
+| spacer | Images, spacers and separators |
+| separator | Images, spacers and separators |
+| tip | Images, spacers and separators |
+| formParameter | Form parameters and includes |
+| formValue | Form parameters and includes |
+| servletInclude | Form parameters and includes |
+| urlInclude | Form parameters and includes |
+| listOfValues | LOV, dependent LOV and look-ahead |
+| messageLovInput | LOV, dependent LOV and look-ahead |
+| lovMap | LOV, dependent LOV and look-ahead |
+| lovActionButton | LOV, dependent LOV and look-ahead |
+| lovActionMap | LOV, dependent LOV and look-ahead |
+| richTextEditor | Rich text, color picker and rating bar |
+| colorPicker | Rich text, color picker and rating bar |
+| messageRatingBar | Rich text, color picker and rating bar |
+| flex | Flexfields (DFF and KFF) |
+| flexMap | Flexfields (DFF and KFF) |
+| attachmentTable | Attachment mapping |
+| attachmentLink | Attachment mapping |
+| attachmentImage | Attachment mapping |
+| messageInlineAttachment | Attachment mapping |
+| entityMap | Attachment mapping |
+| categoryMap | Attachment mapping |
+| primaryKey | Attachment mapping |
+| messageFileUpload | File upload and download |
+| messageDownload | File upload and download |
+| dialogPage | Dialog pages |
 
 ## Notes
 
