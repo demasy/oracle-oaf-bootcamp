@@ -185,6 +185,16 @@ def draw_legend():
             f'aria-label="Legend: Foundation, Core, Advanced, Expert">' + "".join(parts) + "</svg>\n")
 
 
+def step_title(c):
+    """Heading of a step, for example 'Step 1: Oracle OAF Building BootCamp 101'."""
+    return f"Step {c[1]}: Oracle OAF {c[0]} BootCamp {c[3].split('/')[1]}"
+
+
+def slug(heading):
+    """GitHub anchor of a heading."""
+    return re.sub(r"[^\w\- ]", "", heading.lower()).replace(" ", "-")
+
+
 def stars(n):
     return "★" * n
 
@@ -202,21 +212,18 @@ def main():
             open(f"roadmap/{r.lower()}-{step}.svg", "w", encoding="utf-8").write(svg)
     md = ["# Oracle Application Framework (OAF) Roadmap", "",
           "A learning roadmap for Oracle E-Business Suite OAF developers. It has two roadmaps, **Building** and **Customizing**. Each roadmap is a short path of steps, and every step is one course of the [Oracle OAF BootCamp](../README.md). Each step lists the sections and lectures of its course, and every lecture has a level.", "",
-          "Every picture is drawn by [build_roadmap.py](../bootcamp/scripts/build_roadmap.py) from the course READMEs, so the roadmap always matches the courses. See the [capability index](../bootcamp/capabilities/CAPABILITIES.md) for the topics by area.", "",
           "<br>", "", "## Contents", "",
           "- [How to read the roadmap](#how-to-read-the-roadmap)",
           "- [Building roadmap](#building-roadmap)"]
     for c in COURSES:
         if c[0] == "Building":
-            md.append(f"  - [Step {c[1]}: {c[4]} ({c[2]})](#building-step-{c[1]}-{c[4].lower()}-{c[2].lower()})")
+            md.append(f"  - [{step_title(c)}](#{slug(step_title(c))})")
     md.append("- [Customizing roadmap](#customizing-roadmap)")
     for c in COURSES:
         if c[0] == "Customizing":
-            md.append(f"  - [Step {c[1]}: {c[4]} ({c[2]})](#customizing-step-{c[1]}-{c[4].lower()}-{c[2].lower()})")
+            md.append(f"  - [{step_title(c)}](#{slug(step_title(c))})")
     md += ["", "<br>", "", "## How to read the roadmap", "",
-           "Each picture has a blue line down the middle. A yellow box on the line is a **section** of the course. The white card next to it lists the **lectures** of that section, in course order. Each lecture shows its name and a level badge. The level comes from the Difficulty rating of the lecture's section: 1 to 2 stars is Foundation, 3 is Core, 4 is Advanced and 5 is Expert.", "",
-           '<img src="legend.svg" width="700" alt="Legend: Foundation, Core, Advanced, Expert">', "",
-           "Every picture has a text version under **Topics as text**, which also shows each lecture's format (Video, Lab or Workshop).", "", "<br>", ""]
+           '<img src="legend.svg" width="700" alt="Legend: Foundation, Core, Advanced, Expert">', "", "<br>", ""]
     for road, blurb, path in (
             ("Building", "Build OAF pages, business components and applications, from the first page to production.", "levels-building.svg"),
             ("Customizing", "Personalize and extend delivered Oracle E-Business Suite pages without breaking upgrades. Customizing 101 follows Building 101, and Customizing 102 follows Building 102.", "levels-customizing.svg")):
@@ -226,13 +233,13 @@ def main():
                "| Step | Course | Level | Sections | Lectures | Focus |", "| --: | :-- | :-: | :-: | :-: | :-- |"]
         for r, step, code, d, level, pre in steps:
             secs = data[code]["sections"]
-            md.append(f"| {step} | [{code}](#{road.lower()}-step-{step}-{level.lower()}-{code.lower()}) | {level} | {len(secs)} | {sum(len(s['lectures']) for s in secs)} | {focus_of(code)} |")
+            md.append(f"| {step} | [{code}](#{slug(step_title((r, step, code, d, level, pre)))}) | {level} | {len(secs)} | {sum(len(s['lectures']) for s in secs)} | {focus_of(code)} |")
         md += ["", "<br>", ""]
         for r, step, code, d, level, pre in steps:
             dd = data[code]
             n_lec = sum(len(s["lectures"]) for s in dd["sections"])
-            md += [f"### {road} Step {step}: {level} ({code})", "",
-                   f"Step {step} of {len(steps)} · [{code} course](../bootcamp/courses/{d}/README.md) · {len(dd['sections'])} sections · {n_lec} lectures", "",
+            md += [f"### {step_title((r, step, code, d, level, pre))}", "",
+                   f"Step {step} of {len(steps)} · {level} · [{code} course](../bootcamp/courses/{d}/README.md) · {len(dd['sections'])} sections · {n_lec} lectures", "",
                    f"![{road} step {step}: {level}]({road.lower()}-{step}.svg)", "",
                    "<details>", "<summary>Topics as text</summary>", ""]
             for s in dd["sections"]:

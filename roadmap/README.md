@@ -2,30 +2,24 @@
 
 A learning roadmap for Oracle E-Business Suite OAF developers. It has two roadmaps, **Building** and **Customizing**. Each roadmap is a short path of steps, and every step is one course of the [Oracle OAF BootCamp](../README.md). Each step lists the sections and lectures of its course, and every lecture has a level.
 
-Every picture is drawn by [build_roadmap.py](../bootcamp/scripts/build_roadmap.py) from the course READMEs, so the roadmap always matches the courses. See the [capability index](../bootcamp/capabilities/CAPABILITIES.md) for the topics by area.
-
 <br>
 
 ## Contents
 
 - [How to read the roadmap](#how-to-read-the-roadmap)
 - [Building roadmap](#building-roadmap)
-  - [Step 1: Beginner (OAF-B-101)](#building-step-1-beginner-oaf-b-101)
-  - [Step 2: Advanced (OAF-B-102)](#building-step-2-advanced-oaf-b-102)
-  - [Step 3: Ninja (OAF-B-103)](#building-step-3-ninja-oaf-b-103)
+  - [Step 1: Oracle OAF Building BootCamp 101](#step-1-oracle-oaf-building-bootcamp-101)
+  - [Step 2: Oracle OAF Building BootCamp 102](#step-2-oracle-oaf-building-bootcamp-102)
+  - [Step 3: Oracle OAF Building BootCamp 103](#step-3-oracle-oaf-building-bootcamp-103)
 - [Customizing roadmap](#customizing-roadmap)
-  - [Step 1: Beginner (OAF-C-101)](#customizing-step-1-beginner-oaf-c-101)
-  - [Step 2: Advanced (OAF-C-102)](#customizing-step-2-advanced-oaf-c-102)
+  - [Step 1: Oracle OAF Customizing BootCamp 101](#step-1-oracle-oaf-customizing-bootcamp-101)
+  - [Step 2: Oracle OAF Customizing BootCamp 102](#step-2-oracle-oaf-customizing-bootcamp-102)
 
 <br>
 
 ## How to read the roadmap
 
-Each picture has a blue line down the middle. A yellow box on the line is a **section** of the course. The white card next to it lists the **lectures** of that section, in course order. Each lecture shows its name and a level badge. The level comes from the Difficulty rating of the lecture's section: 1 to 2 stars is Foundation, 3 is Core, 4 is Advanced and 5 is Expert.
-
 <img src="legend.svg" width="700" alt="Legend: Foundation, Core, Advanced, Expert">
-
-Every picture has a text version under **Topics as text**, which also shows each lecture's format (Video, Lab or Workshop).
 
 <br>
 
@@ -39,15 +33,15 @@ Build OAF pages, business components and applications, from the first page to pr
 
 | Step | Course | Level | Sections | Lectures | Focus |
 | --: | :-- | :-: | :-: | :-: | :-- |
-| 1 | [OAF-B-101](#building-step-1-beginner-oaf-b-101) | Beginner | 15 | 92 | Architecture, MVC, JDeveloper setup, application modules, view and entity objects, pages, controllers, master-detail, debugging, security, deployment and a capstone |
-| 2 | [OAF-B-102](#building-step-2-advanced-oaf-b-102) | Advanced | 20 | 97 | Event handling, PPR, LOVs, exception framework, dialogs, advanced tables, flexfields, scripting, internationalization and advanced debugging |
-| 3 | [OAF-B-103](#building-step-3-ninja-oaf-b-103) | Ninja | 17 | 80 | MDS and BC4J deployment, AOL security, instrumentation, R12.2 online patching, REST integration and a point-of-sale capstone |
+| 1 | [OAF-B-101](#step-1-oracle-oaf-building-bootcamp-101) | Beginner | 15 | 92 | Architecture, MVC, JDeveloper setup, application modules, view and entity objects, pages, controllers, master-detail, debugging, security, deployment and a capstone |
+| 2 | [OAF-B-102](#step-2-oracle-oaf-building-bootcamp-102) | Advanced | 20 | 97 | Event handling, PPR, LOVs, exception framework, dialogs, advanced tables, flexfields, scripting, internationalization and advanced debugging |
+| 3 | [OAF-B-103](#step-3-oracle-oaf-building-bootcamp-103) | Ninja | 17 | 80 | MDS and BC4J deployment, AOL security, instrumentation, R12.2 online patching, REST integration and a point-of-sale capstone |
 
 <br>
 
-### Building Step 1: Beginner (OAF-B-101)
+### Step 1: Oracle OAF Building BootCamp 101
 
-Step 1 of 3 · [OAF-B-101 course](../bootcamp/courses/building/101/README.md) · 15 sections · 92 lectures
+Step 1 of 3 · Beginner · [OAF-B-101 course](../bootcamp/courses/building/101/README.md) · 15 sections · 92 lectures
 
 ![Building step 1: Beginner](building-1.svg)
 
@@ -166,9 +160,9 @@ Step 1 of 3 · [OAF-B-101 course](../bootcamp/courses/building/101/README.md) ·
 
 <br>
 
-### Building Step 2: Advanced (OAF-B-102)
+### Step 2: Oracle OAF Building BootCamp 102
 
-Step 2 of 3 · [OAF-B-102 course](../bootcamp/courses/building/102/README.md) · 20 sections · 97 lectures
+Step 2 of 3 · Advanced · [OAF-B-102 course](../bootcamp/courses/building/102/README.md) · 20 sections · 97 lectures
 
 ![Building step 2: Advanced](building-2.svg)
 
@@ -297,9 +291,9 @@ Step 2 of 3 · [OAF-B-102 course](../bootcamp/courses/building/102/README.md) ·
 
 <br>
 
-### Building Step 3: Ninja (OAF-B-103)
+### Step 3: Oracle OAF Building BootCamp 103
 
-Step 3 of 3 · [OAF-B-103 course](../bootcamp/courses/building/103/README.md) · 17 sections · 80 lectures
+Step 3 of 3 · Ninja · [OAF-B-103 course](../bootcamp/courses/building/103/README.md) · 17 sections · 80 lectures
 
 ![Building step 3: Ninja](building-3.svg)
 
@@ -418,14 +412,14 @@ Personalize and extend delivered Oracle E-Business Suite pages without breaking 
 
 | Step | Course | Level | Sections | Lectures | Focus |
 | --: | :-- | :-: | :-: | :-: | :-- |
-| 1 | [OAF-C-101](#customizing-step-1-beginner-oaf-c-101) | Beginner | 5 | 19 | Personalization hierarchy, declarative customization of pages, regions and LOVs, migration and diagnostics |
-| 2 | [OAF-C-102](#customizing-step-2-advanced-oaf-c-102) | Advanced | 6 | 19 | Controller, LOV and business component extensions, substitution, packaging and R12.2 synchronization |
+| 1 | [OAF-C-101](#step-1-oracle-oaf-customizing-bootcamp-101) | Beginner | 5 | 19 | Personalization hierarchy, declarative customization of pages, regions and LOVs, migration and diagnostics |
+| 2 | [OAF-C-102](#step-2-oracle-oaf-customizing-bootcamp-102) | Advanced | 6 | 19 | Controller, LOV and business component extensions, substitution, packaging and R12.2 synchronization |
 
 <br>
 
-### Customizing Step 1: Beginner (OAF-C-101)
+### Step 1: Oracle OAF Customizing BootCamp 101
 
-Step 1 of 2 · [OAF-C-101 course](../bootcamp/courses/customizing/101/README.md) · 5 sections · 19 lectures
+Step 1 of 2 · Beginner · [OAF-C-101 course](../bootcamp/courses/customizing/101/README.md) · 5 sections · 19 lectures
 
 ![Customizing step 1: Beginner](customizing-1.svg)
 
@@ -461,9 +455,9 @@ Step 1 of 2 · [OAF-C-101 course](../bootcamp/courses/customizing/101/README.md)
 
 <br>
 
-### Customizing Step 2: Advanced (OAF-C-102)
+### Step 2: Oracle OAF Customizing BootCamp 102
 
-Step 2 of 2 · [OAF-C-102 course](../bootcamp/courses/customizing/102/README.md) · 6 sections · 19 lectures
+Step 2 of 2 · Advanced · [OAF-C-102 course](../bootcamp/courses/customizing/102/README.md) · 6 sections · 19 lectures
 
 ![Customizing step 2: Advanced](customizing-2.svg)
 
