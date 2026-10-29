@@ -1,17 +1,17 @@
 id,area,sub_area,capability,level,course_count,dev_101,dev_102,dev_103,cust_101,cust_102,lecture_count,courses,lectures
-CAP-001,Architecture,Concepts and Layers,MVC pattern,Foundation,2,1,0,1,0,0,4,Dev 101; Dev 103,B101-002.005; B101-004.001; B101-009.001; B103-011.003
-CAP-002,Architecture,Concepts and Layers,UIX and MDS metadata,Foundation,4,1,1,0,1,1,12,Dev 101; Dev 102; Cust 101; Cust 102,B101-002.006; B101-007.001; B101-013.004; B101-014.001; B102-010.002; C101-001.003; C101-002.003; C101-004.001; C101-004.002; C101-004.003; C102-003.001; C102-004.002
+CAP-001,Architecture,Concepts and Layers,MVC pattern,Foundation,1,1,0,0,0,0,3,Dev 101,B101-002.005; B101-004.001; B101-009.001
+CAP-002,Architecture,Concepts and Layers,UIX and MDS metadata,Foundation,4,1,1,0,1,1,11,Dev 101; Dev 102; Cust 101; Cust 102,B101-002.006; B101-007.001; B101-013.004; B101-014.001; B102-010.002; C101-001.003; C101-002.003; C101-004.001; C101-004.002; C101-004.003; C102-004.002
 CAP-003,Architecture,Concepts and Layers,OAF terminology and page anatomy,Foundation,1,1,0,0,0,0,2,Dev 101,B101-002.001; B101-002.007
 CAP-004,Architecture,Concepts and Layers,"OAF in context (when to use, EBS integration)",Foundation,1,1,0,0,0,0,2,Dev 101,B101-002.003; B101-002.004
 CAP-005,Architecture,Concepts and Layers,Layered application architecture,Foundation,1,1,0,0,0,0,1,Dev 101,B101-002.008
 CAP-006,Architecture,Concepts and Layers,Object-oriented reuse,Foundation,2,1,1,0,0,0,2,Dev 101; Dev 102,B101-007.004; B102-009.004
-CAP-007,Architecture,Runtime and Data Foundations,BC4J (business components),Foundation,2,1,0,1,0,0,3,Dev 101; Dev 103,B101-002.006; B101-004.001; B103-001.002
+CAP-007,Architecture,Runtime and Data Foundations,BC4J (business components),Foundation,4,1,0,1,1,1,5,Dev 101; Dev 103; Cust 101; Cust 102,B101-002.006; B101-004.001; B103-001.002; C101-003.004; C102-003.001
 CAP-008,Architecture,Runtime and Data Foundations,JDeveloper and OA Extension,Foundation,1,1,0,0,0,0,5,Dev 101,B101-003.001; B101-003.004; B101-003.010; B101-011.002; B101-013.006
-CAP-009,Architecture,Runtime and Data Foundations,"State and connection management (AM pooling, retention, passivation)",Foundation,2,1,0,1,0,0,7,Dev 101; Dev 103,B101-003.007; B101-004.002; B101-004.005; B101-009.006; B103-005.004; B103-014.003; B103-014.004
+CAP-009,Architecture,Runtime and Data Foundations,"State and connection management (AM pooling, retention, passivation)",Foundation,3,1,1,1,0,0,10,Dev 101; Dev 102; Dev 103,B101-003.007; B101-004.002; B101-004.005; B101-008.003; B101-009.006; B102-017.001; B103-005.004; B103-014.003; B103-014.004; B103-014.005
 CAP-010,Architecture,Runtime and Data Foundations,Enterprise performance (resource swapping and caching),Advanced,1,0,0,1,0,0,2,Dev 103,B103-009.002; B103-014.004
 CAP-011,Architecture,Runtime and Data Foundations,Database layer (_B and _TL tables),Foundation,1,1,0,0,0,0,1,Dev 101,B101-002.009
 CAP-012,Architecture,Runtime and Data Foundations,System catalog views,Foundation,1,1,0,0,0,0,1,Dev 101,B101-002.010
-CAP-013,Model Layer,Business Components,Entity objects,Foundation,4,1,1,1,0,1,10,Dev 101; Dev 102; Dev 103; Cust 102,B101-002.008; B101-006.001; B101-006.002; B101-006.004; B101-006.005; B101-015.001; B102-008.007; B103-014.002; B103-014.008; C102-002.002
+CAP-013,Model Layer,Business Components,Entity objects,Foundation,4,1,1,1,0,1,11,Dev 101; Dev 102; Dev 103; Cust 102,B101-002.008; B101-006.001; B101-006.002; B101-006.004; B101-006.005; B101-015.001; B102-008.007; B103-014.001; B103-014.002; B103-014.008; C102-002.002
 CAP-014,Model Layer,Business Components,"View objects, bind variables and criteria",Foundation,2,1,0,1,0,0,2,Dev 101; Dev 103,B101-005.004; B103-003.005
 CAP-015,Model Layer,Business Components,Updatable and read-only view objects,Foundation,1,1,0,0,0,0,3,Dev 101,B101-005.001; B101-005.002; B101-005.003
 CAP-016,Model Layer,Business Components,View links,Foundation,1,1,0,0,0,0,3,Dev 101,B101-005.005; B101-010.001; B101-015.002
@@ -19,7 +19,7 @@ CAP-017,Model Layer,Business Components,Application modules and OADBTransaction,
 CAP-018,Model Layer,Business Components,Master-detail pages,Foundation,2,1,0,1,0,0,6,Dev 101; Dev 103,B101-005.005; B101-010.001; B101-010.002; B101-015.004; B103-006.002; B103-007.004
 CAP-019,Model Layer,Business Components,Entity associations,Foundation,1,1,0,0,0,0,1,Dev 101,B101-006.004
 CAP-020,Model Layer,Business Components,Polymorphic entity objects,Expert,1,0,0,1,0,0,2,Dev 103,B103-014.001; B103-014.008
-CAP-021,Model Layer,Business Components,Multi-Org (operating unit) context,Foundation,2,1,1,0,0,0,2,Dev 101; Dev 102,B101-012.003; B102-008.008
+CAP-021,Model Layer,Business Components,Multi-Org (operating unit) context,Foundation,3,1,1,1,0,0,3,Dev 101; Dev 102; Dev 103,B101-012.003; B102-008.008; B103-014.006
 CAP-022,Model Layer,Business Components,View object query performance,Advanced,1,0,0,1,0,0,1,Dev 103,B103-003.005
 CAP-023,Model Layer,Validation and Server-Side Logic,Validation view objects,Core,1,0,1,0,0,0,1,Dev 102,B102-008.007
 CAP-024,Model Layer,Validation and Server-Side Logic,Entity expert validation,Core,1,0,1,0,0,0,1,Dev 102,B102-009.004
@@ -46,10 +46,10 @@ CAP-044,View Layer,Navigation and Page Structure,Accordions,Advanced,1,0,0,1,0,0
 CAP-045,View Layer,Navigation and Page Structure,Popups,Advanced,1,0,0,1,0,0,1,Dev 103,B103-013.005
 CAP-046,View Layer,Navigation and Page Structure,Breadcrumbs and menus,Foundation,2,1,0,1,0,0,2,Dev 101; Dev 103,B101-007.014; B103-006.002
 CAP-047,View Layer,Navigation and Page Structure,Look-and-feel standards,Foundation,1,1,0,0,0,0,2,Dev 101,B101-007.008; B101-008.004
-CAP-048,View Layer,Navigation and Page Structure,Attribute sets and CSS,Foundation,2,1,0,0,0,1,2,Dev 101; Cust 102,B101-007.013; C102-006.001
-CAP-049,View Layer,Navigation and Page Structure,Shared regions and pages,Foundation,1,1,0,0,0,0,1,Dev 101,B101-007.004
+CAP-048,View Layer,Navigation and Page Structure,Attribute sets and CSS,Foundation,2,1,0,0,0,1,3,Dev 101; Cust 102,B101-007.013; B101-008.004; C102-006.001
+CAP-049,View Layer,Navigation and Page Structure,Shared regions and pages,Foundation,1,1,0,0,0,0,2,Dev 101,B101-007.004; B101-008.003
 CAP-050,View Layer,Navigation and Page Structure,Switcher,Core,1,0,1,0,0,0,1,Dev 102,B102-007.007
-CAP-051,View Layer,"Tables, Search and Visualization",Advanced tables,Core,2,0,1,1,0,0,5,Dev 102; Dev 103,B102-006.001; B102-006.002; B103-007.004; B103-012.001; B103-012.002
+CAP-051,View Layer,"Tables, Search and Visualization",Advanced tables,Core,2,0,1,1,0,0,4,Dev 102; Dev 103,B102-006.001; B102-006.002; B103-012.001; B103-012.002
 CAP-052,View Layer,"Tables, Search and Visualization","Table columns, totals and row selection",Core,2,0,1,1,0,0,3,Dev 102; Dev 103,B102-006.001; B102-006.002; B103-012.001
 CAP-053,View Layer,"Tables, Search and Visualization","Rich table features (resize, reorder, freeze, detach)",Expert,1,0,0,1,0,0,1,Dev 103,B103-012.003
 CAP-054,View Layer,"Tables, Search and Visualization",HGrid and tree,Core,2,0,1,1,0,0,2,Dev 102; Dev 103,B102-012.002; B103-012.005
@@ -62,10 +62,10 @@ CAP-060,View Layer,"Tables, Search and Visualization","CRUD pages (query, create
 CAP-061,View Layer,"Widgets, Items and Forms",Standard web widgets,Foundation,1,1,0,0,0,0,1,Dev 101,B101-007.005
 CAP-062,View Layer,"Widgets, Items and Forms","Form inputs and selection controls (radio, checkbox, spin box)",Foundation,1,1,0,0,0,0,1,Dev 101,B101-007.009
 CAP-063,View Layer,"Widgets, Items and Forms",Text and display items,Foundation,2,1,1,0,0,0,2,Dev 101; Dev 102,B101-007.011; B102-014.004
-CAP-064,View Layer,"Widgets, Items and Forms","Images, spacers and separators",Foundation,1,1,0,0,0,0,2,Dev 101,B101-007.011; B101-008.002
+CAP-064,View Layer,"Widgets, Items and Forms","Images, spacers and separators",Foundation,1,1,0,0,0,0,1,Dev 101,B101-007.011
 CAP-065,View Layer,"Widgets, Items and Forms",Buttons and button bars,Foundation,1,1,0,0,0,0,2,Dev 101,B101-007.010; B101-008.005
-CAP-066,View Layer,"Widgets, Items and Forms",Form parameters and includes,Foundation,1,1,0,0,0,0,2,Dev 101,B101-007.012; B101-008.003
-CAP-067,View Layer,"Widgets, Items and Forms","LOV auto-completion, dependent LOV and look-ahead",Core,1,0,1,0,0,0,4,Dev 102,B102-003.001; B102-003.002; B102-003.003; B102-003.004
+CAP-066,View Layer,"Widgets, Items and Forms",Form parameters and includes,Foundation,1,1,0,0,0,0,1,Dev 101,B101-007.012
+CAP-067,View Layer,"Widgets, Items and Forms","LOV auto-completion, dependent LOV and look-ahead",Foundation,2,1,1,0,0,0,6,Dev 101; Dev 102,B101-008.001; B102-003.001; B102-003.002; B102-003.003; B102-003.004; B102-020.003
 CAP-068,View Layer,"Widgets, Items and Forms",Smart poplists (LOV choice),Foundation,2,1,1,0,0,0,3,Dev 101; Dev 102,B101-007.009; B101-008.001; B102-003.005
 CAP-069,View Layer,"Widgets, Items and Forms",Lookup codes and value sets,Core,1,0,1,0,0,0,1,Dev 102,B102-003.005
 CAP-070,View Layer,"Widgets, Items and Forms",Date picker and calendar fields,Core,1,0,1,0,0,0,1,Dev 102,B102-009.005
@@ -73,14 +73,14 @@ CAP-071,View Layer,"Widgets, Items and Forms","Rich text, color picker and ratin
 CAP-072,View Layer,"Widgets, Items and Forms",Flexfields (DFF and KFF),Core,2,0,1,0,1,0,4,Dev 102; Cust 101,B102-014.001; B102-014.002; B102-014.007; C101-003.003
 CAP-073,View Layer,"Widgets, Items and Forms",Dynamic item properties (SPEL),Core,1,0,1,0,0,0,2,Dev 102,B102-007.007; B102-014.003
 CAP-074,View Layer,"Widgets, Items and Forms",Attachment mapping,Core,1,0,1,0,0,0,1,Dev 102,B102-016.001
-CAP-075,Controller Layer,Request Processing,processRequest (GET),Foundation,2,1,0,0,0,1,2,Dev 101; Cust 102,B101-009.002; C102-001.001
-CAP-076,Controller Layer,Request Processing,processFormRequest (POST),Core,2,0,1,0,0,1,4,Dev 102; Cust 102,B102-001.001; B102-001.003; B102-002.002; C102-001.001
-CAP-077,Controller Layer,Request Processing,Partial page rendering (PPR),Core,2,0,1,1,0,0,4,Dev 102; Dev 103,B102-002.001; B102-002.002; B102-011.001; B103-007.004
+CAP-075,Controller Layer,Request Processing,processRequest (GET),Foundation,2,1,0,0,0,1,3,Dev 101; Cust 102,B101-009.002; B101-009.008; C102-001.001
+CAP-076,Controller Layer,Request Processing,processFormRequest (POST),Foundation,3,1,1,0,0,1,6,Dev 101; Dev 102; Cust 102,B101-009.008; B101-009.009; B102-001.001; B102-001.003; B102-002.002; C102-001.001
+CAP-077,Controller Layer,Request Processing,Partial page rendering (PPR),Core,2,0,1,1,0,0,5,Dev 102; Dev 103,B102-002.001; B102-002.002; B102-011.001; B102-020.003; B103-007.004
 CAP-078,Controller Layer,Request Processing,Page context and web bean API,Foundation,3,1,1,1,0,0,3,Dev 101; Dev 102; Dev 103,B101-009.003; B102-005.002; B103-003.002
 CAP-079,Controller Layer,Request Processing,Common controller patterns,Core,1,0,1,0,0,0,1,Dev 102,B102-001.002
 CAP-080,Controller Layer,Request Processing,processFormData,Core,1,0,1,0,0,0,1,Dev 102,B102-001.003
 CAP-081,Controller Layer,Request Processing,Controller classes (OAControllerImpl),Foundation,1,1,0,0,0,0,1,Dev 101,B101-009.008
-CAP-082,Controller Layer,State and Navigation,Parameter passing,Foundation,5,1,1,1,1,1,19,Dev 101; Dev 102; Dev 103; Cust 101; Cust 102,B101-003.006; B101-007.012; B101-008.003; B101-009.004; B101-009.005; B101-009.006; B101-009.007; B102-001.002; B102-008.005; B102-014.005; B102-017.002; B102-017.003; B102-017.004; B102-017.006; B103-001.001; B103-002.001; B103-016.004; C101-003.005; C102-002.001
+CAP-082,Controller Layer,State and Navigation,Parameter passing,Foundation,4,1,1,1,0,1,16,Dev 101; Dev 102; Dev 103; Cust 102,B101-003.006; B101-007.012; B101-008.003; B101-009.004; B101-009.005; B101-009.006; B101-009.007; B102-008.005; B102-014.005; B102-017.002; B102-017.003; B102-017.004; B102-017.006; B103-001.001; B103-002.001; C102-002.001
 CAP-083,Controller Layer,State and Navigation,Session parameters and user state,Foundation,1,1,0,0,0,0,1,Dev 101,B101-009.007
 CAP-084,Controller Layer,State and Navigation,Dialog pages,Core,1,0,1,0,0,0,2,Dev 102,B102-005.001; B102-005.002
 CAP-085,Controller Layer,State and Navigation,Back button,Core,2,0,1,1,0,0,2,Dev 102; Dev 103,B102-017.001; B103-014.005
@@ -89,53 +89,53 @@ CAP-087,Controller Layer,State and Navigation,Declarative page flows,Advanced,1,
 CAP-088,Controller Layer,Dynamic and Programmatic UI,Programmatic beans,Core,1,0,1,0,0,0,5,Dev 102,B102-007.001; B102-007.002; B102-007.003; B102-007.004; B102-007.005
 CAP-089,Controller Layer,Dynamic and Programmatic UI,Dynamic focus and bean properties,Core,2,0,1,1,0,0,2,Dev 102; Dev 103,B102-007.006; B103-012.005
 CAP-090,Controller Layer,Dynamic and Programmatic UI,Table row actions,Core,1,0,1,0,0,0,2,Dev 102,B102-006.002; B102-006.003
-CAP-091,Controller Layer,Dynamic and Programmatic UI,JavaScript,Foundation,2,1,1,0,0,0,3,Dev 101; Dev 102,B101-007.010; B102-014.004; B102-015.001
+CAP-091,Controller Layer,Dynamic and Programmatic UI,JavaScript,Core,1,0,1,0,0,0,2,Dev 102,B102-014.004; B102-015.001
 CAP-092,Controller Layer,Dynamic and Programmatic UI,Read-only pages and page modes,Core,1,0,1,0,0,0,1,Dev 102,B102-015.002
-CAP-093,Framework,,Accessibility,Core,2,0,1,0,1,0,2,Dev 102; Cust 101,B102-018.004; C101-003.003
+CAP-093,Framework,,Accessibility,Foundation,4,1,1,1,1,0,8,Dev 101; Dev 102; Dev 103; Cust 101,B101-007.008; B101-008.002; B101-008.004; B102-018.004; B102-020.003; B102-020.006; B103-012.007; C101-003.003
 CAP-094,Framework,,Accelerator (hot) keys,Core,1,0,1,0,0,0,1,Dev 102,B102-018.002
 CAP-095,Framework,,Screen reader support,Core,1,0,1,0,0,0,1,Dev 102,B102-018.002
 CAP-096,Framework,,Enhanced save model,Core,1,0,1,0,0,0,1,Dev 102,B102-018.003
-CAP-097,Framework,,Profile options,Core,3,0,1,1,1,0,4,Dev 102; Dev 103; Cust 101,B102-010.003; B103-003.001; C101-002.002; C101-005.001
+CAP-097,Framework,,Profile options,Core,3,0,1,1,1,0,5,Dev 102; Dev 103; Cust 101,B102-010.003; B102-016.008; B103-003.001; C101-002.002; C101-005.001
 CAP-098,Framework,,Default values,Foundation,3,1,1,0,0,1,4,Dev 101; Dev 102; Cust 102,B101-007.009; B101-009.002; B102-010.001; C102-002.002
 CAP-099,Framework,,Context-sensitive help,Core,1,0,1,0,0,0,1,Dev 102,B102-018.005
-CAP-100,Localization,,Multi-language support,Core,2,0,1,1,0,0,2,Dev 102; Dev 103,B102-018.001; B103-009.001
-CAP-101,Localization,,Right-to-left layouts,Core,1,0,1,0,0,0,1,Dev 102,B102-018.001
+CAP-100,Localization,,Multi-language support,Core,1,0,1,0,0,0,1,Dev 102,B102-018.001
+CAP-101,Localization,,Right-to-left layouts,Core,1,0,1,0,0,0,2,Dev 102,B102-018.001; B102-018.004
 CAP-102,Localization,,Timezones,Core,1,0,1,0,0,0,2,Dev 102,B102-009.001; B102-018.001
 CAP-103,Localization,,Date formats,Core,1,0,1,0,0,0,1,Dev 102,B102-009.001
 CAP-104,Localization,,Number and currency formats,Core,1,0,1,0,0,0,1,Dev 102,B102-009.002
 CAP-105,Integration,Files and Data Exchange,Attachments,Core,2,0,1,1,0,0,3,Dev 102; Dev 103,B102-016.001; B103-009.001; B103-016.002
-CAP-106,Integration,Files and Data Exchange,File upload and download,Core,2,0,1,1,0,0,5,Dev 102; Dev 103,B102-016.002; B102-016.005; B102-016.006; B102-016.009; B103-015.004
+CAP-106,Integration,Files and Data Exchange,File upload and download,Core,2,0,1,1,0,0,6,Dev 102; Dev 103,B102-016.002; B102-016.005; B102-016.006; B102-016.009; B103-014.007; B103-015.004
 CAP-107,Integration,Files and Data Exchange,Import and export data,Core,1,0,1,0,0,0,2,Dev 102,B102-016.003; B102-016.004
-CAP-108,Integration,Files and Data Exchange,Export to Excel and PDF,Core,2,0,1,1,0,0,6,Dev 102; Dev 103,B102-016.003; B102-016.004; B102-016.008; B103-006.001; B103-011.005; B103-012.004
-CAP-109,Integration,Files and Data Exchange,XML Publisher and BI Publisher output,Core,1,0,1,0,0,0,2,Dev 102,B102-012.003; B102-016.007
+CAP-108,Integration,Files and Data Exchange,Export to Excel and PDF,Core,2,0,1,1,0,0,5,Dev 102; Dev 103,B102-016.003; B102-016.004; B102-016.008; B103-006.001; B103-012.004
+CAP-109,Integration,Files and Data Exchange,XML Publisher and BI Publisher output,Core,2,0,1,1,0,0,3,Dev 102; Dev 103,B102-012.003; B102-016.007; B103-008.003
 CAP-110,Integration,Files and Data Exchange,Web ADI integration,Core,1,0,1,0,0,0,2,Dev 102,B102-016.008; B102-016.009
-CAP-111,Integration,Services and APIs,REST and web services,Expert,1,0,0,1,0,0,2,Dev 103,B103-016.001; B103-016.002
+CAP-111,Integration,Services and APIs,REST and web services,Advanced,1,0,0,1,0,0,3,Dev 103,B103-016.001; B103-016.002; B103-017.003
 CAP-112,Integration,Services and APIs,BSO tester,Advanced,1,0,0,1,0,0,2,Dev 103,B103-016.001; B103-017.003
 CAP-113,Integration,Services and APIs,External SOAP and REST services,Expert,1,0,0,1,0,0,1,Dev 103,B103-016.003
 CAP-114,Integration,Services and APIs,Embedded JET and third-party content,Expert,1,0,0,1,0,0,1,Dev 103,B103-016.007
-CAP-115,Integration,EBS Products and Processes,Workflow and notifications,Core,2,0,1,1,0,0,10,Dev 102; Dev 103,B102-005.002; B102-017.002; B102-017.005; B102-020.002; B102-020.004; B102-020.005; B103-009.001; B103-013.006; B103-016.004; B103-016.006
+CAP-115,Integration,EBS Products and Processes,Workflow and notifications,Core,2,0,1,1,0,0,8,Dev 102; Dev 103,B102-005.002; B102-017.002; B102-017.005; B102-020.002; B103-009.001; B103-013.006; B103-016.004; B103-016.006
 CAP-116,Integration,EBS Products and Processes,Business events,Core,1,0,1,0,0,0,1,Dev 102,B102-017.005
 CAP-117,Integration,EBS Products and Processes,Oracle Forms interoperability,Foundation,2,1,1,0,0,0,3,Dev 101; Dev 102,B101-002.002; B102-014.005; B102-014.006
 CAP-118,Integration,EBS Products and Processes,Portal and portlets,Advanced,1,0,0,1,0,0,2,Dev 103,B103-016.005; B103-017.001
-CAP-119,Integration,EBS Products and Processes,Concurrent requests,Core,2,0,1,1,0,0,4,Dev 102; Dev 103,B102-017.004; B102-017.006; B103-003.003; B103-006.005
-CAP-120,Integration,EBS Products and Processes,Programmatic concurrent request submission,Core,1,0,1,0,0,0,1,Dev 102,B102-017.006
+CAP-119,Integration,EBS Products and Processes,Concurrent requests,Foundation,3,1,1,1,0,0,6,Dev 101; Dev 102; Dev 103,B101-009.011; B102-017.004; B102-017.006; B103-003.003; B103-006.005; B103-008.002
+CAP-120,Integration,EBS Products and Processes,Programmatic concurrent request submission,Core,1,0,1,0,0,0,2,Dev 102,B102-017.004; B102-017.006
 CAP-121,Integration,EBS Products and Processes,OBIEE analytics,Advanced,1,0,0,1,0,0,2,Dev 103,B103-016.005; B103-017.002
 CAP-122,Security,,Function security,Foundation,2,1,0,1,0,0,3,Dev 101; Dev 103,B101-012.001; B101-012.002; B103-014.006
-CAP-123,Security,,Data security,Foundation,1,1,0,0,0,0,1,Dev 101,B101-012.003
-CAP-124,Security,,Authentication and authorization,Foundation,1,1,0,0,0,0,1,Dev 101,B101-012.001
+CAP-123,Security,,Data security,Foundation,2,1,0,1,0,0,2,Dev 101; Dev 103,B101-012.003; B103-014.006
+CAP-124,Security,,Authentication and authorization,Foundation,2,1,0,1,0,0,4,Dev 101; Dev 103,B101-012.001; B103-016.005; B103-016.007; B103-017.002
 CAP-125,Security,,XSS scanning,Advanced,1,0,0,1,0,0,2,Dev 103,B103-014.007; B103-015.002
 CAP-126,Security,,AntiSamy filtering,Core,2,0,1,1,0,0,3,Dev 102; Dev 103,B102-016.005; B103-014.007; B103-015.002
 CAP-127,Security,,Virus scanning,Core,2,0,1,1,0,0,3,Dev 102; Dev 103,B102-016.005; B103-014.007; B103-015.004
 CAP-128,Security,,Frame busting,Advanced,1,0,0,1,0,0,2,Dev 103,B103-014.007; B103-015.003
 CAP-129,Security,,Built-in protection against HTML tampering,Foundation,1,1,0,0,0,0,2,Dev 101,B101-012.004; B101-012.005
 CAP-130,Security,,Page access tracking,Advanced,1,0,0,1,0,0,2,Dev 103,B103-014.006; B103-015.001
-CAP-131,Errors and diagnostics,,OAException and severities,Core,1,0,1,0,0,0,2,Dev 102,B102-004.001; B102-004.002
+CAP-131,Errors and diagnostics,,OAException and severities,Foundation,2,1,1,0,0,0,3,Dev 101; Dev 102,B101-009.010; B102-004.001; B102-004.002
 CAP-132,Errors and diagnostics,,Bundled exceptions,Core,1,0,1,0,0,0,2,Dev 102,B102-004.002; B102-004.003
-CAP-133,Errors and diagnostics,,Debugger and logging,Foundation,2,1,0,1,0,0,4,Dev 101; Dev 103,B101-011.001; B101-011.002; B103-003.002; B103-009.003
+CAP-133,Errors and diagnostics,,Debugger and logging,Foundation,2,1,0,1,0,0,4,Dev 101; Dev 103,B101-011.001; B101-011.002; B103-009.003; B103-011.003
 CAP-134,Errors and diagnostics,,About This Page,Core,2,0,1,0,1,0,2,Dev 102; Cust 101,B102-019.003; C101-005.001
 CAP-135,Errors and diagnostics,,OAInfo.jsp,Core,1,0,1,0,0,0,1,Dev 102,B102-019.003
 CAP-136,Errors and diagnostics,,FND_LOG and writeDiagnostics,Advanced,1,0,0,1,0,0,3,Dev 103,B103-003.001; B103-003.002; B103-003.003
-CAP-137,Errors and diagnostics,,SQL trace (event 10046),Advanced,1,0,0,1,0,0,2,Dev 103,B103-003.002; B103-003.004
+CAP-137,Errors and diagnostics,,SQL trace (event 10046),Advanced,1,0,0,1,0,0,1,Dev 103,B103-003.004
 CAP-138,Errors and diagnostics,,Log purge (FNDLGPRG),Advanced,1,0,0,1,0,0,1,Dev 103,B103-003.003
 CAP-139,Errors and diagnostics,,Advanced debugging techniques,Core,1,0,1,0,0,0,2,Dev 102,B102-019.001; B102-019.002
 CAP-140,Personalization,,Customization concepts,Core,1,0,0,0,1,0,1,Cust 101,C101-001.001
@@ -144,7 +144,7 @@ CAP-142,Personalization,,Personalization precedence (user level highest),Core,1,
 CAP-143,Personalization,,Durable personalizations,Core,1,0,0,0,1,0,1,Cust 101,C101-001.002
 CAP-144,Personalization,,Region injection,Core,1,0,0,0,1,0,1,Cust 101,C101-003.004
 CAP-145,Personalization,,LOV personalization,Core,1,0,0,0,1,0,1,Cust 101,C101-003.005
-CAP-146,Personalization,,XMLExporter and XMLImporter,Core,3,0,0,1,1,1,6,Dev 103; Cust 101; Cust 102,B103-001.001; C101-004.001; C101-004.002; C101-005.002; C101-005.003; C102-006.001
+CAP-146,Personalization,,XMLExporter and XMLImporter,Core,3,0,0,1,1,1,4,Dev 103; Cust 101; Cust 102,B103-001.001; C101-004.001; C101-004.002; C102-006.001
 CAP-147,Personalization,,Translated personalizations,Core,1,0,0,0,1,0,1,Cust 101,C101-005.002
 CAP-148,Personalization,,End-user and declarative page personalization,Core,1,0,0,0,1,0,3,Cust 101,C101-001.004; C101-003.001; C101-003.002
 CAP-149,Personalization,,MDS content inspection,Core,1,0,0,0,1,0,1,Cust 101,C101-004.003
@@ -154,25 +154,25 @@ CAP-152,Extension,,Entity object extension,Advanced,1,0,0,0,0,1,1,Cust 102,C102-
 CAP-153,Extension,,Application module extension,Advanced,1,0,0,0,0,1,1,Cust 102,C102-002.003
 CAP-154,Extension,,Substitution and JPX,Advanced,2,0,0,1,0,1,6,Dev 103; Cust 102,B103-001.002; C102-001.002; C102-003.001; C102-003.002; C102-003.003; C102-006.004
 CAP-155,Extension,,LOV extension,Advanced,1,0,0,0,0,1,1,Cust 102,C102-001.002
-CAP-156,Extension,,Extension touchpoints and Oracle page extensions,Advanced,1,0,0,0,0,1,2,Cust 102,C102-005.002; C102-005.004
-CAP-157,Deployment,,Deployment to EBS,Foundation,3,1,0,1,0,1,10,Dev 101; Dev 103; Cust 102,B101-014.001; B101-014.002; B101-014.003; B101-014.004; B101-015.005; B103-004.003; B103-010.001; B103-011.004; C102-004.002; C102-006.004
-CAP-158,Deployment,,adop and R12.2 patching,Foundation,3,1,0,1,0,1,4,Dev 101; Dev 103; Cust 102,B101-014.003; B103-004.001; C102-004.003; C102-006.004
+CAP-156,Extension,,Extension touchpoints and Oracle page extensions,Advanced,1,0,0,0,0,1,1,Cust 102,C102-005.002
+CAP-157,Deployment,,Deployment to EBS,Foundation,3,1,0,1,0,1,12,Dev 101; Dev 103; Cust 102,B101-014.001; B101-014.002; B101-014.003; B101-014.004; B101-015.005; B101-015.006; B103-004.003; B103-005.004; B103-010.001; B103-011.004; C102-003.002; C102-004.002
+CAP-158,Deployment,,adop and R12.2 patching,Foundation,3,1,0,1,0,1,4,Dev 101; Dev 103; Cust 102,B101-014.003; B103-004.001; B103-011.004; C102-004.003
 CAP-159,Deployment,,adcgnjar and customall.jar,Expert,2,0,0,1,0,1,2,Dev 103; Cust 102,B103-004.002; C102-004.001
-CAP-160,Deployment,,"AOL functions, menus and responsibilities",Foundation,5,1,1,1,1,1,9,Dev 101; Dev 102; Dev 103; Cust 101; Cust 102,B101-003.008; B101-012.002; B101-014.004; B102-014.005; B103-002.001; B103-002.002; C101-002.001; C101-002.002; C102-006.002
+CAP-160,Deployment,,"AOL functions, menus and responsibilities",Foundation,5,1,1,1,1,1,12,Dev 101; Dev 102; Dev 103; Cust 101; Cust 102,B101-003.008; B101-004.004; B101-009.001; B101-012.002; B101-014.004; B102-014.005; B103-002.001; B103-002.002; B103-005.001; C101-002.001; C101-002.002; C102-006.002
 CAP-161,Deployment,,Scripted deployment,Expert,1,0,0,1,0,0,1,Dev 103,B103-004.003
-CAP-162,Deployment,,Environment promotion,Advanced,1,0,0,0,0,1,1,Cust 102,C102-006.003
+CAP-162,Deployment,,Environment promotion,Advanced,2,0,0,1,0,1,2,Dev 103; Cust 102,B103-005.002; C102-006.003
 CAP-163,OA Framework Standards,Coding and Naming Standards,Why development standards matter,Foundation,1,1,0,0,0,0,1,Dev 101,B101-013.001
 CAP-164,OA Framework Standards,Coding and Naming Standards,Coding standards and naming conventions,Foundation,1,1,0,0,0,0,1,Dev 101,B101-013.002
 CAP-165,OA Framework Standards,Coding and Naming Standards,"Oracle, project and industry standards",Foundation,1,1,0,0,0,0,1,Dev 101,B101-013.003
 CAP-166,OA Framework Standards,Coding and Naming Standards,File types and package naming,Foundation,1,1,0,0,0,0,1,Dev 101,B101-013.004
 CAP-167,OA Framework Standards,Coding and Naming Standards,Directory structure ($JAVA_TOP),Foundation,1,1,0,0,0,0,1,Dev 101,B101-013.005
 CAP-168,OA Framework Standards,Coding and Naming Standards,Common page patterns,Foundation,1,1,0,0,0,0,1,Dev 101,B101-013.007
-CAP-169,OA Framework Standards,Project and Code Management,Workspace and project organization,Foundation,2,1,0,1,0,0,6,Dev 101; Dev 103,B101-003.001; B101-003.010; B101-007.002; B101-013.005; B103-005.001; B103-005.003
-CAP-170,OA Framework Standards,Project and Code Management,Code management and version control,Foundation,4,1,1,1,0,1,6,Dev 101; Dev 102; Dev 103; Cust 102,B101-003.010; B101-013.006; B102-020.001; B103-005.002; B103-006.005; C102-006.003
-CAP-171,OA Framework Standards,Project and Code Management,Project documentation and delivery,Advanced,1,0,0,1,0,0,3,Dev 103,B103-010.001; B103-010.002; B103-010.003
+CAP-169,OA Framework Standards,Project and Code Management,Workspace and project organization,Foundation,2,1,0,1,0,0,5,Dev 101; Dev 103,B101-003.001; B101-003.010; B101-007.002; B101-013.005; B103-005.003
+CAP-170,OA Framework Standards,Project and Code Management,Code management and version control,Foundation,3,1,0,1,0,1,5,Dev 101; Dev 103; Cust 102,B101-003.010; B101-013.006; B103-005.002; B103-006.005; C102-006.003
+CAP-171,OA Framework Standards,Project and Code Management,Project documentation and delivery,Advanced,1,0,0,1,0,0,2,Dev 103,B103-010.002; B103-010.003
 CAP-172,OA Framework Standards,Project and Code Management,Mentoring and code review,Foundation,2,1,0,1,0,0,2,Dev 101; Dev 103,B101-001.003; B103-010.004
 CAP-173,OA Framework Standards,Quality and Extension Practice,Extension standards,Advanced,1,0,0,0,0,1,1,Cust 102,C102-005.001
 CAP-174,OA Framework Standards,Quality and Extension Practice,Custom code placement,Advanced,1,0,0,0,0,1,1,Cust 102,C102-005.003
 CAP-175,OA Framework Standards,Quality and Extension Practice,Server-side best practices,Core,1,0,1,0,0,0,1,Dev 102,B102-008.006
 CAP-176,OA Framework Standards,Quality and Extension Practice,Unit and automated testing,Core,1,0,1,0,0,0,1,Dev 102,B102-019.004
-CAP-177,OA Framework Standards,Quality and Extension Practice,Code quality and standards compliance,Foundation,3,1,1,1,0,0,3,Dev 101; Dev 102; Dev 103,B101-015.006; B102-020.006; B103-011.002
+CAP-177,OA Framework Standards,Quality and Extension Practice,Code quality and standards compliance,Advanced,1,0,0,1,0,0,1,Dev 103,B103-011.002

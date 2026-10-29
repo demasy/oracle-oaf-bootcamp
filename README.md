@@ -1,34 +1,34 @@
 # Oracle Application Framework (OAF) BootCamp
 
-A hands-on Oracle Application Framework (OAF) BootCamp for Oracle E-Business Suite developers and implementers. Five courses take you from your first OAF page to production deployment and upgrade-safe customization, covering the model, view and controller layers, integration, security, personalization and extension.
+A five-course curriculum for Oracle E-Business Suite developers, technical consultants and administrators. The Building path progresses from OAF foundations to production-readiness decisions; the Customizing path covers declarative personalization and supported extensions.
+
+**Repository scope: course curriculum only.** This repository publishes course structure, lecture topics, outcomes, prerequisites, workload estimates and assessment designs. Video, Lab and Workshop are planned delivery formats; resource labels describe intended teaching materials. Recordings, lab instructions, application code and solutions are outside this repository's scope.
 
 ## Contents
 
 - [About this BootCamp](#about-this-bootcamp)
-- [Levels](#oracle-oaf-bootcamp-levels)
-  - [Oracle OAF Building BootCamp](#oracle-oaf-building-bootcamp)
-  - [Oracle OAF Customizing BootCamp](#oracle-oaf-customizing-bootcamp)
-  - [Oracle OAF Master Class (Ninja)](#oracle-oaf-master-class)
+- [Course levels](#oracle-oaf-bootcamp-levels)
+- [Workload and learning paths](#workload-and-learning-paths)
 - [Roadmap](#roadmap)
-- [Target Audience](#target-audience)
-- [Prerequisites & Requirements](#prerequisites--requirements)
-- [About the Instructor](#about-the-instructor)
-- [How to Get this BootCamp](#how-to-get-this-bootcamp)
+- [Target audience](#target-audience)
+- [Prerequisites and requirements](#prerequisites--requirements)
+- [About the instructor](#about-the-instructor)
+- [Delivery status](#delivery-status)
 - [Contributing](#contributing)
 
 ## About this BootCamp
 
-The BootCamp has **five courses**, **63 modules** and **307 lectures**. Every OAF capability it teaches is indexed in [CAPABILITIES.md](bootcamp/capabilities/CAPABILITIES.md) (177 capabilities across 13 areas).
+**Five courses · 63 modules · 310 planned lectures · 177 indexed capabilities across 13 areas.** The five [course READMEs](bootcamp/CURRICULUM.md#authoritative-curriculum) are authoritative; the roadmap and capability index are supporting views.
 
-**How it is organized** (course levels are Beginner, Advanced and Ninja)
+- **Course:** identified by a code such as `OAF-B-101`.
+- **Module:** a stable reference such as `B101-001`.
+- **Lecture:** a stable reference such as `B101-001.001`.
+- **Teaching step:** recommended learning order, which can differ from identifier order.
+- **Path:** required competencies versus optional specialist depth. Conditional integrations remain unscheduled until a supported product/release scope is selected.
 
-- **Course**: one of the five courses, identified by a code such as `OAF-B-101`.
-- **Section**: a module of a course, numbered in order (`B101-001`).
-- **Lecture**: a lesson inside a section (`B101-001.001`), delivered as a Video, Lab or Workshop.
+Each course defines measurable outcomes, module prerequisites, instruction/study/assessment hours, a bounded assessment scenario and exit criteria. See [curriculum conventions and release references](bootcamp/CURRICULUM.md) for the difficulty rubric, assessment policy and version-dependent boundaries.
 
-Each lecture and module carries a **Difficulty** rating from 1 to 5 stars (Beginner, Elementary, Intermediate, Advanced, Expert).
-
-**Capability areas covered**: Architecture, Model Layer, View Layer, Controller Layer, Framework, Localization, Integration, Security, Errors and diagnostics, Personalization, Extension, Deployment and OA Framework Standards, plus a UI Component Layout Index that maps each component to the capability that uses it.
+The [capability index](bootcamp/capabilities/CAPABILITIES.md) locates planned topics, including electives and conditional integrations; counts do not establish mastery or delivery readiness.
 
 ## Oracle OAF BootCamp Levels
 
@@ -36,70 +36,69 @@ Each lecture and module carries a **Difficulty** rating from 1 to 5 stars (Begin
 
 **Path:** Beginner → Advanced → Ninja
 
-<img src="bootcamp/assets/levels-building.svg" width="520" alt="Building path: OAF-B-101 Beginner, OAF-B-102 Advanced, OAF-B-103 Ninja">
+<img src="bootcamp/assets/levels-building.svg" width="520" alt="Building course progression">
 
-| Code | Course | Level | Difficulty | Modules | Lectures | What you learn |
-| :-: | :-- | :-: | :-: | :-: | :-: | :-- |
-| OAF-B-101 | <a href="bootcamp/courses/building/101/README.md">Oracle OAF Building BootCamp 101</a> | Beginner | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 15 | 92 | Architecture, MVC, JDeveloper setup, application modules, view and entity objects, pages, controllers, master-detail, debugging, security, deployment and a capstone |
-| OAF-B-102 | <a href="bootcamp/courses/building/102/README.md">Oracle OAF Building BootCamp 102</a> | Advanced | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 20 | 97 | Event handling, PPR, LOVs, exception framework, dialogs, advanced tables, flexfields, scripting, internationalization and advanced debugging |
-| OAF-B-103 | <a href="bootcamp/courses/building/103/README.md">Oracle OAF Building BootCamp 103</a> | Ninja | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 17 | 80 | MDS and BC4J deployment, AOL security, instrumentation, R12.2 online patching, REST integration and a point-of-sale capstone |
-| | **Total: 3 courses** | | | **52** | **269** | |
+| Code | Course | Level | Difficulty | Modules | Lectures | Required focus |
+| :-- | :-- | :-- | :-- | --: | --: | :-- |
+| OAF-B-101 | [Building BootCamp 101](bootcamp/courses/building/101/README.md) | Beginner | ★–★★★ | 15 | 95 | MVC, setup, BC4J model, declarative pages, GET/POST, messages, master-detail, security, deployment and Jobs/Positions design |
+| OAF-B-102 | [Building BootCamp 102](bootcamp/courses/building/102/README.md) | Advanced | ★★–★★★★ | 20 | 97 | PPR, LOVs, advanced tables, model validation, recoverable navigation, accessibility and interactive request design |
+| OAF-B-103 | [Building BootCamp 103](bootcamp/courses/building/103/README.md) | Ninja | ★★★–★★★★★ | 17 | 80 | MDS/BC4J deployment, diagnostics, R12.2 patching, state/security analysis and bounded sales/inventory design |
 
 ### Oracle OAF Customizing BootCamp
 
 **Path:** Beginner → Advanced
 
-<img src="bootcamp/assets/levels-customizing.svg" width="520" alt="Customizing path: OAF-C-101 Beginner, OAF-C-102 Advanced">
+<img src="bootcamp/assets/levels-customizing.svg" width="520" alt="Customizing course progression">
 
-| Code | Course | Level | Difficulty | Modules | Lectures | What you learn |
-| :-: | :-- | :-: | :-: | :-: | :-: | :-- |
-| OAF-C-101 | <a href="bootcamp/courses/customizing/101/README.md">Oracle OAF Customizing BootCamp 101</a> | Beginner | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 5 | 19 | Personalization hierarchy, declarative customization of pages, regions and LOVs, migration and diagnostics |
-| OAF-C-102 | <a href="bootcamp/courses/customizing/102/README.md">Oracle OAF Customizing BootCamp 102</a> | Advanced | <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> – <img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"><img src="bootcamp/assets/difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle"> | 6 | 19 | Controller, LOV and business component extensions, substitution, packaging and R12.2 synchronization |
-| | **Total: 2 courses** | | | **11** | **38** | |
+| Code | Course | Level | Difficulty | Modules | Lectures | Required focus |
+| :-- | :-- | :-- | :-- | --: | --: | :-- |
+| OAF-C-101 | [Customizing BootCamp 101](bootcamp/courses/customizing/101/README.md) | Beginner | ★–★★★ | 5 | 19 | Personalization levels, supported property/region/LOV changes, migration, diagnostics and back-out |
+| OAF-C-102 | [Customizing BootCamp 102](bootcamp/courses/customizing/102/README.md) | Advanced | ★★★–★★★★ | 6 | 19 | Extension architecture, model/controller contracts, BC4J substitution, packaging, synchronization and recovery |
 
 ### Oracle OAF Master Class
 
-<img src="bootcamp/assets/master-class.svg" width="700" alt="Oracle OAF Master Class, with a ninja character: the Building path (OAF-B-101 Beginner, OAF-B-102 Advanced, OAF-B-103 Ninja) and the Customizing path (OAF-C-101 Beginner, OAF-C-102 Advanced) combine into the Master Class. Customizing 101 follows Building 101 and Customizing 102 follows Building 102.">
+<img src="bootcamp/assets/master-class.svg" width="700" alt="Master Class combines the Building and Customizing curricula; Customizing 102 also requires the Building 103 deployment core">
 
-<br>
+Master Class and Ninja describe provider-defined curriculum milestones. They are not Oracle certifications.
+
+## Workload and Learning Paths
+
+| Course | Required lectures | Elective lectures | Instruction h | Study h | Assessment h | Required total h | Scheduled elective additions h |
+| :-- | --: | --: | --: | --: | --: | --: | --: |
+| OAF-B-101 | 90 | 5 | 32.5 | 25 | 20 | 77.5 | 3.5 |
+| OAF-B-102 | 53 | 44 | 28.5 | 22 | 24 | 74.5 | 36.5 |
+| OAF-B-103 | 54 | 26 | 28 | 12 | 44 | 84 | 21.5 |
+| OAF-C-101 | 18 | 1 | 10 | 7 | 6 | 23 | 0 |
+| OAF-C-102 | 19 | 0 | 13 | 8.5 | 10 | 31.5 | 0 |
+
+Hours are editorial planning estimates, not measured completion times. Instruction, study and assessment time are additive; capstone time is counted once. Scheduled elective additions cover fully elective modules; optional extensions inside required modules and conditional product integrations receive an additional time estimate only when selected. The required Building path totals **236 hours**; completing all five required course paths totals **290.5 hours**, without repeating shared prerequisites.
+
+For each course, follow its Teaching step column and module prerequisites. Customizing 101 follows Building 101. Customizing 102 requires Building 102, Customizing 101 and Building 103 modules **B103-001 through B103-004**; the full Building 103 capstone is not an entry requirement. Equivalent experience is evaluated through each course's readiness check.
 
 ## Roadmap
 
-The [Oracle Application Framework (OAF) Roadmap](roadmap/README.md) shows both paths as pictures. It has a **Building** roadmap (Beginner, Advanced, Ninja) and a **Customizing** roadmap (Beginner, Advanced). Each step is one course. It lists every section and lecture, with a level badge: Foundation, Core, Advanced or Expert.
-
-<br>
+The [OAF roadmap](roadmap/README.md) presents both paths with their planned modules and lectures. Required/elective labels come from course headings; level badges summarize module difficulty. Consult the course pages for individual lecture difficulty, prerequisite details and assessment scope.
 
 ## Target Audience
 
-| Who you are | What you get | Start with |
+| Audience | Intended curriculum outcome | Suggested route |
 | :-- | :-- | :-- |
-| Oracle Apps Technical Consultant, Oracle Developer or Java Developer | Build OAF pages, regions and business components from scratch, then take them to production | [OAF-B-101](bootcamp/courses/building/101/README.md) |
-| Oracle Techno-Functional Consultant | Learn the OAF basics, then personalize pages, regions and LOVs without code and migrate personalizations safely | [OAF-B-101](bootcamp/courses/building/101/README.md), then [OAF-C-101](bootcamp/courses/customizing/101/README.md) |
-| Senior OAF Developer | Advanced UI, integration, R12.2 online patching, security hardening and extension of delivered code | [OAF-B-102](bootcamp/courses/building/102/README.md), then [OAF-B-103](bootcamp/courses/building/103/README.md) and [OAF-C-102](bootcamp/courses/customizing/102/README.md) (after [OAF-B-101](bootcamp/courses/building/101/README.md)) |
-| EBS Support and Upgrade Team | Diagnose OAF issues and keep personalizations upgrade-safe | [OAF-B-101](bootcamp/courses/building/101/README.md), then [OAF-C-101](bootcamp/courses/customizing/101/README.md) |
-
-<br>
+| Oracle Apps technical consultants and Java/SQL developers | Explain and design OAF applications through release planning | Building 101 → 102 → 103 |
+| Techno-functional consultants and EBS administrators | Select supported declarative personalizations and plan migration | Building 101 → Customizing 101 |
+| Experienced OAF developers | Evaluate interactions, state, diagnostics, security and release decisions | Readiness check → Building 102/103 |
+| Seeded-page customization and upgrade teams | Review extension contracts, substitutions and lifecycle risks | Customizing 101 + Building 102 + Building 103 deployment core → Customizing 102 |
 
 ## Prerequisites & Requirements
 
-**Knowledge**
-
-| Track | Course | You should have |
-| :-- | :-- | :-- |
-| Building | [OAF-B-101](bootcamp/courses/building/101/README.md) | Basic Java programming, SQL, PL/SQL and HTML. Familiarity with Oracle E-Business Suite. No prior OAF experience needed |
-| | [OAF-B-102](bootcamp/courses/building/102/README.md) | OAF-B-101 completed: you can build and deploy a CRUD application |
-| | [OAF-B-103](bootcamp/courses/building/103/README.md) | OAF-B-102 completed: you can build an interactive application |
-| Customizing | [OAF-C-101](bootcamp/courses/customizing/101/README.md) | OAF-B-101 completed and EBS system administration |
-| | [OAF-C-102](bootcamp/courses/customizing/102/README.md) | OAF-B-102, OAF-C-101 and OAF-B-103 modules 1-4 completed. Advanced Java, enough to extend controllers and business components |
-
-**Environment**
-
-| Track | You need |
+| Course | Entry requirements |
 | :-- | :-- |
-| Building | Oracle E-Business Suite Virtual Machine, Toad for Oracle or SQL Developer, and an Oracle Support account to download OA Extension<br>[OAF-B-101](bootcamp/courses/building/101/README.md) teaches installing and configuring JDeveloper with OA Extension (module 3) |
-| Customizing | Oracle E-Business Suite Virtual Machine. [OAF-C-102](bootcamp/courses/customizing/102/README.md) requires OAF-B-102, so the Building track environment applies to it |
+| [Building 101](bootcamp/courses/building/101/README.md) | Java classes/inheritance/exceptions, SQL/DML, PL/SQL reading, HTML and EBS familiarity |
+| [Building 102](bootcamp/courses/building/102/README.md) | Building 101 exit competencies, including basic CRUD, GET/POST, validation and transactions |
+| [Building 103](bootcamp/courses/building/103/README.md) | Building 102 required outcomes and basic Git/database design concepts |
+| [Customizing 101](bootcamp/courses/customizing/101/README.md) | Building 101 exit competencies and EBS administration concepts |
+| [Customizing 102](bootcamp/courses/customizing/102/README.md) | Building 102, Customizing 101, Building 103 modules 1–4 and Java subclassing |
 
-<br>
+**For curriculum review:** read the published outlines and linked documentation. **For future practical delivery:** select a target EBS/OAF 12.2 patch level, matching JDeveloper OA Extension/JDK, development database access, appropriate responsibilities and permitted Oracle Support downloads. Product-dependent electives require their named integrations. These are delivery prerequisites described by the curriculum, not an environment supplied by this repository.
 
 ## About the Instructor
 
@@ -125,38 +124,20 @@ I have more than 17 years of experience delivering enterprise Oracle and HR digi
 
 <br>
 
-## How to Get this BootCamp
+## Delivery Status
 
-| Option | Who it is for | How to join |
-| :-- | :-- | :-- |
-| **Online** | Individuals learning at their own pace | <a href="#">Enroll on udemy.com</a> (Not Available now) |
-| **Live** | Enterprise teams, instructor-led | <a href="#">Schedule a call via Calendly</a> |
-
-See the [course levels](#oracle-oaf-bootcamp-levels) for what each course covers.
-
-<br>
+This repository publishes the curriculum specification. Enrollment, recordings, live-cohort schedules and delivery-platform links have not been published here. For curriculum or delivery enquiries, contact founder@demasy.io.
 
 ## Suggestions & Issues
 
-If you find any issue or have a great idea in mind please create an issue on <a href="https://github.com/demasylabs/Oracle-OAF-BootCamp/issues">GitHub</a>.
-
-<br>
+Report curriculum issues through [GitHub Issues](https://github.com/demasylabs/Oracle-OAF-BootCamp/issues). Include the course/module/lecture ID, the current wording and a concrete correction or supporting reference.
 
 ## Contributing
 
-New Oracle technical contributors are welcome. Read [Contributing](.github/CONTRIBUTING.md) to learn how to report issues, suggest enhancements, contribute code examples and how review works. For anything else, contact founder@demasy.io.
-
-<br>
+Curriculum contributions are welcome: clarify outcomes, repair prerequisite order, improve workload estimates, refine assessment criteria or supply authoritative release references. Keep changes within the curriculum scope and follow [curriculum maintenance conventions](bootcamp/CURRICULUM.md#curriculum-maintenance). Update supporting views when course content changes.
 
 ### Contributors
 
-| Author | GitHub & LinkedIn account |
-| :-  | :---- |
-| <div align="center"> <img src="https://github.com/demasy.png" width="100px;" alt="Ahmed El-Demasy"/> <br> **Ahmed El-Demasy** (Creator & Maintainer) <br> Oracle Solutions Architect <br> Oracle ACE </div> | <div align="center"> <a href="https://github.com/demasy">Github</a> & <a href="https://www.linkedin.com/in/demasy">LinkedIn</a> </div> |
+**Ahmed El-Demasy** — Creator and maintainer · [GitHub](https://github.com/demasy) · [LinkedIn](https://www.linkedin.com/in/demasy/)
 
-<br>
-<br>
-
-<p align="center">
-Made with love ❤️ in Egypt by <a href="https://github.com/demasylabs"> Demasy Labs </a>
-</p>
+<p align="center">Made with love ❤️ in Egypt by <a href="https://github.com/demasylabs">Demasy Labs</a></p>

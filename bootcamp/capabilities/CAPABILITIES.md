@@ -1,6 +1,8 @@
 # Oracle OAF BootCamp Capabilities
 
-Every OAF capability covered by the five courses, with its Level, the courses that teach it and up to five lectures (lectures that name the capability come first).
+Planned topic coverage across the five course curricula, including required, elective and conditional integrations. Lecture references locate topic mentions; they do not establish competency or the availability of teaching materials. See the [curriculum conventions](../CURRICULUM.md) and each course's outcome-to-assessment mapping.
+
+Each row gives its Level, courses and up to five matching lectures (lecture titles take priority).
 
 **Courses:** [Dev 101](../courses/building/101/README.md), [Dev 102](../courses/building/102/README.md), [Dev 103](../courses/building/103/README.md), [Cust 101](../courses/customizing/101/README.md), [Cust 102](../courses/customizing/102/README.md).
 
@@ -9,7 +11,7 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" align="absmiddle"> **Foundation** | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" align="absmiddle"> **Core** | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" align="absmiddle"> **Advanced** | <img src="../assets/level-expert.svg" width="20" height="20" alt="Expert" align="absmiddle"> **Expert** |
 | :-: | :-: | :-: | :-: |
 
-**Courses** lists every course that teaches the capability.
+**Courses** lists every course that mentions the topic in a lecture title or scope note. Required coverage is defined by the course outcome tables, not by this keyword-derived index.
 
 <table>
 <tr><th align="left">Summary</th><th align="left">Statistics</th></tr>
@@ -53,7 +55,7 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 
 <img src="../assets/stats-areas.svg" width="560" alt="Capabilities per area by level: 13 areas, 17 sub-areas, 177 capabilities. View Layer 45; Controller Layer 18; Model Layer 17; Integration 17; OA Framework Standards 15; Architecture 12; Personalization 10; Security 9; Errors and diagnostics 9; Framework 7; Extension 7; Deployment 6; Localization 5">
 
-<img src="../assets/stats-courses.svg" width="560" alt="Capabilities by course: Dev 101 62; Dev 102 84; Dev 103 69; Cust 101 17; Cust 102 25">
+<img src="../assets/stats-courses.svg" width="560" alt="Capabilities by course: Dev 101 65; Dev 102 83; Dev 103 73; Cust 101 17; Cust 102 26">
 
 </td></tr>
 </table>
@@ -64,7 +66,7 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 
 | Capability | Level | Courses | Lectures |
 | :-- | :-: | :-- | :-- |
-| MVC pattern | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103 | B101-002.005, B101-004.001, B101-009.001, B103-011.003 |
+| MVC pattern | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-002.005, B101-004.001, B101-009.001 |
 | UIX and MDS metadata | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Cust 101, Cust 102 | B101-002.006, B101-007.001, B102-010.002, C101-001.003, C101-002.003 |
 | OAF terminology and page anatomy | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-002.001, B101-002.007 |
 | OAF in context (when to use, EBS integration) | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-002.003, B101-002.004 |
@@ -75,9 +77,9 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 
 | Capability | Level | Courses | Lectures |
 | :-- | :-: | :-- | :-- |
-| BC4J (business components) | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103 | B101-002.006, B101-004.001, B103-001.002 |
+| BC4J (business components) | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103, Cust 101, Cust 102 | B101-002.006, B101-004.001, B103-001.002, C101-003.004, C102-003.001 |
 | JDeveloper and OA Extension | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-003.001, B101-003.004, B101-003.010, B101-011.002, B101-013.006 |
-| State and connection management (AM pooling, retention, passivation) | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103 | B103-014.003, B101-004.005, B101-003.007, B101-004.002, B101-009.006 |
+| State and connection management (AM pooling, retention, passivation) | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Dev 103 | B103-014.003, B101-004.005, B101-003.007, B101-004.002, B101-009.006 |
 | Enterprise performance (resource swapping and caching) | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-014.004, B103-009.002 |
 | Database layer (_B and _TL tables) | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-002.009 |
 | System catalog views | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-002.010 |
@@ -90,13 +92,13 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 | :-- | :-: | :-- | :-- |
 | Entity objects | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Dev 103, Cust 102 | B101-006.001, B101-006.002, B101-006.004, B103-014.002, B103-014.008 |
 | View objects, bind variables and criteria | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103 | B101-005.004, B103-003.005 |
-| Updatable and read-only view objects | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-005.001, B101-005.002, B101-005.003 |
+| Updatable and read-only view objects | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-005.001, B101-005.003, B101-005.002 |
 | View links | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-005.005, B101-010.001, B101-015.002 |
 | Application modules and OADBTransaction | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103, Cust 102 | B101-004.004, B101-004.002, B101-004.003, B101-015.002, C102-002.003 |
 | Master-detail pages | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103 | B101-010.001, B101-010.002, B101-015.004, B103-007.004, B101-005.005 |
 | Entity associations | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-006.004 |
 | Polymorphic entity objects | <img src="../assets/level-expert.svg" width="20" height="20" alt="Expert" title="Expert" align="absmiddle"> | Dev 103 | B103-014.008, B103-014.001 |
-| Multi-Org (operating unit) context | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102 | B102-008.008, B101-012.003 |
+| Multi-Org (operating unit) context | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Dev 103 | B102-008.008, B101-012.003, B103-014.006 |
 | View object query performance | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-003.005 |
 
 ### Validation and Server-Side Logic
@@ -140,15 +142,15 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 | Popups | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-013.005 |
 | Breadcrumbs and menus | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103 | B101-007.014, B103-006.002 |
 | Look-and-feel standards | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-007.008, B101-008.004 |
-| Attribute sets and CSS | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Cust 102 | B101-007.013, C102-006.001 |
-| Shared regions and pages | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-007.004 |
+| Attribute sets and CSS | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Cust 102 | B101-007.013, B101-008.004, C102-006.001 |
+| Shared regions and pages | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-007.004, B101-008.003 |
 | Switcher | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-007.007 |
 
 ### Tables, Search and Visualization
 
 | Capability | Level | Courses | Lectures |
 | :-- | :-: | :-- | :-- |
-| Advanced tables | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B102-006.001, B103-012.001, B102-006.002, B103-007.004, B103-012.002 |
+| Advanced tables | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B102-006.001, B103-012.001, B102-006.002, B103-012.002 |
 | Table columns, totals and row selection | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B102-006.001, B102-006.002, B103-012.001 |
 | Rich table features (resize, reorder, freeze, detach) | <img src="../assets/level-expert.svg" width="20" height="20" alt="Expert" title="Expert" align="absmiddle"> | Dev 103 | B103-012.003 |
 | HGrid and tree | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B102-012.002, B103-012.005 |
@@ -166,10 +168,10 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 | Standard web widgets | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-007.005 |
 | Form inputs and selection controls (radio, checkbox, spin box) | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-007.009 |
 | Text and display items | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102 | B101-007.011, B102-014.004 |
-| Images, spacers and separators | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-007.011, B101-008.002 |
+| Images, spacers and separators | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-007.011 |
 | Buttons and button bars | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-007.010, B101-008.005 |
-| Form parameters and includes | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-007.012, B101-008.003 |
-| LOV auto-completion, dependent LOV and look-ahead | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-003.002, B102-003.003, B102-003.004, B102-003.001 |
+| Form parameters and includes | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-007.012 |
+| LOV auto-completion, dependent LOV and look-ahead | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102 | B102-003.002, B102-003.003, B102-003.004, B101-008.001, B102-003.001 |
 | Smart poplists (LOV choice) | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102 | B101-008.001, B101-007.009, B102-003.005 |
 | Lookup codes and value sets | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-003.005 |
 | Date picker and calendar fields | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-009.005 |
@@ -184,9 +186,9 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 
 | Capability | Level | Courses | Lectures |
 | :-- | :-: | :-- | :-- |
-| processRequest (GET) | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Cust 102 | B101-009.002, C102-001.001 |
-| processFormRequest (POST) | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Cust 102 | B102-001.001, B102-001.003, B102-002.002, C102-001.001 |
-| Partial page rendering (PPR) | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B102-002.001, B102-002.002, B102-011.001, B103-007.004 |
+| processRequest (GET) | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Cust 102 | B101-009.002, B101-009.008, C102-001.001 |
+| processFormRequest (POST) | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Cust 102 | B101-009.009, B101-009.008, B102-001.001, B102-001.003, B102-002.002 |
+| Partial page rendering (PPR) | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B102-002.001, B102-002.002, B102-020.003, B102-011.001, B103-007.004 |
 | Page context and web bean API | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Dev 103 | B101-009.003, B102-005.002, B103-003.002 |
 | Common controller patterns | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-001.002 |
 | processFormData | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-001.003 |
@@ -196,7 +198,7 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 
 | Capability | Level | Courses | Lectures |
 | :-- | :-: | :-- | :-- |
-| Parameter passing | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Dev 103, Cust 101, Cust 102 | B101-007.012, B101-008.003, B101-009.004, B101-009.005, B101-009.006 |
+| Parameter passing | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Dev 103, Cust 102 | B101-007.012, B101-009.004, B101-009.005, B101-009.006, B101-009.007 |
 | Session parameters and user state | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-009.007 |
 | Dialog pages | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-005.001, B102-005.002 |
 | Back button | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B102-017.001, B103-014.005 |
@@ -210,18 +212,18 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 | Programmatic beans | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-007.001, B102-007.002, B102-007.003, B102-007.004, B102-007.005 |
 | Dynamic focus and bean properties | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B102-007.006, B103-012.005 |
 | Table row actions | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-006.002, B102-006.003 |
-| JavaScript | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102 | B102-015.001, B101-007.010, B102-014.004 |
+| JavaScript | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-015.001, B102-014.004 |
 | Read-only pages and page modes | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-015.002 |
 
 ## Framework
 
 | Capability | Level | Courses | Lectures |
 | :-- | :-: | :-- | :-- |
-| Accessibility | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Cust 101 | B102-018.004, C101-003.003 |
+| Accessibility | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Dev 103, Cust 101 | B102-018.004, B101-007.008, B101-008.002, B101-008.004, B102-020.003 |
 | Accelerator (hot) keys | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-018.002 |
 | Screen reader support | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-018.002 |
 | Enhanced save model | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-018.003 |
-| Profile options | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103, Cust 101 | B102-010.003, B103-003.001, C101-002.002, C101-005.001 |
+| Profile options | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103, Cust 101 | B102-010.003, B103-003.001, B102-016.008, C101-002.002, C101-005.001 |
 | Default values | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Cust 102 | B102-010.001, B101-007.009, B101-009.002, C102-002.002 |
 | Context-sensitive help | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-018.005 |
 
@@ -229,8 +231,8 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 
 | Capability | Level | Courses | Lectures |
 | :-- | :-: | :-- | :-- |
-| Multi-language support | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B102-018.001, B103-009.001 |
-| Right-to-left layouts | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-018.001 |
+| Multi-language support | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-018.001 |
+| Right-to-left layouts | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-018.001, B102-018.004 |
 | Timezones | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-009.001, B102-018.001 |
 | Date formats | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-009.001 |
 | Number and currency formats | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-009.002 |
@@ -244,15 +246,15 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 | Attachments | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B102-016.001, B103-009.001, B103-016.002 |
 | File upload and download | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B102-016.002, B102-016.006, B102-016.009, B103-015.004, B102-016.005 |
 | Import and export data | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-016.003, B102-016.004 |
-| Export to Excel and PDF | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B103-011.005, B103-012.004, B102-016.003, B102-016.004, B102-016.008 |
-| XML Publisher and BI Publisher output | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-016.007, B102-012.003 |
+| Export to Excel and PDF | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B103-012.004, B102-016.003, B102-016.004, B102-016.008, B103-006.001 |
+| XML Publisher and BI Publisher output | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B102-016.007, B102-012.003, B103-008.003 |
 | Web ADI integration | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-016.008, B102-016.009 |
 
 ### Services and APIs
 
 | Capability | Level | Courses | Lectures |
 | :-- | :-: | :-- | :-- |
-| REST and web services | <img src="../assets/level-expert.svg" width="20" height="20" alt="Expert" title="Expert" align="absmiddle"> | Dev 103 | B103-016.001, B103-016.002 |
+| REST and web services | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-016.001, B103-016.002, B103-017.003 |
 | BSO tester | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-017.003, B103-016.001 |
 | External SOAP and REST services | <img src="../assets/level-expert.svg" width="20" height="20" alt="Expert" title="Expert" align="absmiddle"> | Dev 103 | B103-016.003 |
 | Embedded JET and third-party content | <img src="../assets/level-expert.svg" width="20" height="20" alt="Expert" title="Expert" align="absmiddle"> | Dev 103 | B103-016.007 |
@@ -265,8 +267,8 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 | Business events | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-017.005 |
 | Oracle Forms interoperability | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102 | B101-002.002, B102-014.005, B102-014.006 |
 | Portal and portlets | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-017.001, B103-016.005 |
-| Concurrent requests | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B102-017.004, B102-017.006, B103-003.003, B103-006.005 |
-| Programmatic concurrent request submission | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-017.006 |
+| Concurrent requests | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Dev 103 | B102-017.004, B102-017.006, B101-009.011, B103-003.003, B103-006.005 |
+| Programmatic concurrent request submission | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-017.004, B102-017.006 |
 | OBIEE analytics | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-017.002, B103-016.005 |
 
 ## Security
@@ -274,10 +276,10 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 | Capability | Level | Courses | Lectures |
 | :-- | :-: | :-- | :-- |
 | Function security | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103 | B101-012.002, B101-012.001, B103-014.006 |
-| Data security | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-012.003 |
-| Authentication and authorization | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-012.001 |
+| Data security | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103 | B101-012.003, B103-014.006 |
+| Authentication and authorization | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103 | B101-012.001, B103-016.005, B103-016.007, B103-017.002 |
 | XSS scanning | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-014.007, B103-015.002 |
-| AntiSamy filtering | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B103-014.007, B103-015.002, B102-016.005 |
+| AntiSamy filtering | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B103-015.002, B102-016.005, B103-014.007 |
 | Virus scanning | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Dev 103 | B103-015.004, B102-016.005, B103-014.007 |
 | Frame busting | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-015.003, B103-014.007 |
 | Built-in protection against HTML tampering | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101 | B101-012.004, B101-012.005 |
@@ -287,15 +289,15 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 
 | Capability | Level | Courses | Lectures |
 | :-- | :-: | :-- | :-- |
-| OAException and severities | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-004.002, B102-004.001 |
+| OAException and severities | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102 | B101-009.010, B102-004.002, B102-004.001 |
 | Bundled exceptions | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-004.003, B102-004.002 |
-| Debugger and logging | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103 | B101-011.001, B101-011.002, B103-009.003, B103-003.002 |
+| Debugger and logging | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103 | B101-011.001, B101-011.002, B103-009.003, B103-011.003 |
 | About This Page | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102, Cust 101 | B102-019.003, C101-005.001 |
 | OAInfo.jsp | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-019.003 |
 | FND_LOG and writeDiagnostics | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-003.001, B103-003.002, B103-003.003 |
-| SQL trace (event 10046) | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-003.004, B103-003.002 |
+| SQL trace (event 10046) | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-003.004 |
 | Log purge (FNDLGPRG) | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-003.003 |
-| Advanced debugging techniques | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-019.001, B102-019.002 |
+| Advanced debugging techniques | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-019.002, B102-019.001 |
 
 ## Personalization
 
@@ -307,7 +309,7 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 | Durable personalizations | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Cust 101 | C101-001.002 |
 | Region injection | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Cust 101 | C101-003.004 |
 | LOV personalization | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Cust 101 | C101-003.005 |
-| XMLExporter and XMLImporter | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 103, Cust 101, Cust 102 | B103-001.001, C101-004.001, C101-004.002, C101-005.002, C101-005.003 |
+| XMLExporter and XMLImporter | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 103, Cust 101, Cust 102 | B103-001.001, C101-004.001, C101-004.002, C102-006.001 |
 | Translated personalizations | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Cust 101 | C101-005.002 |
 | End-user and declarative page personalization | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Cust 101 | C101-001.004, C101-003.001, C101-003.002 |
 | MDS content inspection | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Cust 101 | C101-004.003 |
@@ -322,18 +324,18 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 | Application module extension | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Cust 102 | C102-002.003 |
 | Substitution and JPX | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103, Cust 102 | B103-001.002, C102-003.001, C102-003.002, C102-001.002, C102-003.003 |
 | LOV extension | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Cust 102 | C102-001.002 |
-| Extension touchpoints and Oracle page extensions | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Cust 102 | C102-005.002, C102-005.004 |
+| Extension touchpoints and Oracle page extensions | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Cust 102 | C102-005.002 |
 
 ## Deployment
 
 | Capability | Level | Courses | Lectures |
 | :-- | :-: | :-- | :-- |
-| Deployment to EBS | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103, Cust 102 | B101-014.001, B101-014.004, B103-004.003, C102-004.002, B101-014.002 |
-| adop and R12.2 patching | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103, Cust 102 | B103-004.001, B101-014.003, C102-004.003, C102-006.004 |
+| Deployment to EBS | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103, Cust 102 | B101-014.001, B101-014.002, B101-014.003, B101-014.004, B103-004.003 |
+| adop and R12.2 patching | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103, Cust 102 | B103-004.001, B101-014.003, B103-011.004, C102-004.003 |
 | adcgnjar and customall.jar | <img src="../assets/level-expert.svg" width="20" height="20" alt="Expert" title="Expert" align="absmiddle"> | Dev 103, Cust 102 | B103-004.002, C102-004.001 |
-| AOL functions, menus and responsibilities | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Dev 103, Cust 101, Cust 102 | B101-003.008, B103-002.001, B103-002.002, B101-012.002, B101-014.004 |
+| AOL functions, menus and responsibilities | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Dev 103, Cust 101, Cust 102 | B101-003.008, B103-002.001, B103-002.002, B101-004.004, B101-009.001 |
 | Scripted deployment | <img src="../assets/level-expert.svg" width="20" height="20" alt="Expert" title="Expert" align="absmiddle"> | Dev 103 | B103-004.003 |
-| Environment promotion | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Cust 102 | C102-006.003 |
+| Environment promotion | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103, Cust 102 | C102-006.003, B103-005.002 |
 
 ## OA Framework Standards
 
@@ -353,8 +355,8 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 | Capability | Level | Courses | Lectures |
 | :-- | :-: | :-- | :-- |
 | Workspace and project organization | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103 | B101-003.010, B101-007.002, B103-005.003, B101-003.001, B101-013.005 |
-| Code management and version control | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Dev 103, Cust 102 | B101-003.010, B101-013.006, B103-005.002, B102-020.001, B103-006.005 |
-| Project documentation and delivery | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-010.001, B103-010.002, B103-010.003 |
+| Code management and version control | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103, Cust 102 | B101-003.010, B101-013.006, B103-005.002, B103-006.005, C102-006.003 |
+| Project documentation and delivery | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-010.002, B103-010.003 |
 | Mentoring and code review | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 103 | B103-010.004, B101-001.003 |
 
 ### Quality and Extension Practice
@@ -365,7 +367,7 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 | Custom code placement | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Cust 102 | C102-005.003 |
 | Server-side best practices | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-008.006 |
 | Unit and automated testing | <img src="../assets/level-core.svg" width="20" height="20" alt="Core" title="Core" align="absmiddle"> | Dev 102 | B102-019.004 |
-| Code quality and standards compliance | <img src="../assets/level-foundation.svg" width="20" height="20" alt="Foundation" title="Foundation" align="absmiddle"> | Dev 101, Dev 102, Dev 103 | B103-011.002, B101-015.006, B102-020.006 |
+| Code quality and standards compliance | <img src="../assets/level-advanced.svg" width="20" height="20" alt="Advanced" title="Advanced" align="absmiddle"> | Dev 103 | B103-011.002 |
 
 ## UI Component Layout Index
 
@@ -406,7 +408,7 @@ Bean-level OAF component names for each capability that has them, grouped by OAF
 
 ## Notes
 
-- A capability counts as covered when a lecture name or note names it. This shows where a topic is taught, not how deeply.
+- A capability counts as mentioned when a lecture title or scope note names it, even as a comparison or excluded integration. Check that lecture's path, release conditions and intended depth before inferring coverage.
 - The list is built from the capability catalogs supplied for this course, not from an official Oracle list.
 - Levels are derived from where lectures name each capability (a few basics are set by hand), so they are not an official Oracle grading.
 - The content has not been reviewed by an instructor.

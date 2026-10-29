@@ -211,7 +211,7 @@ def main():
             svg = draw_step(r, step, code, level, data[code], len(steps), nxt)
             open(f"roadmap/{r.lower()}-{step}.svg", "w", encoding="utf-8").write(svg)
     md = ["# Oracle Application Framework (OAF) Roadmap", "",
-          "Two learning paths for Oracle E-Business Suite OAF developers. **Building** takes you from your first page to production. **Customizing** shows you how to change delivered pages without breaking upgrades. Every step is one course of the [Oracle OAF BootCamp](../README.md), with its sections, lectures and levels.", "",
+          "Two learning paths for Oracle E-Business Suite OAF developers. **Building** takes you from your first page to production. **Customizing** shows you how to change delivered pages without breaking upgrades. Every step is one course, with its sections, lectures and levels. It is part of the [Oracle Application Framework (OAF) BootCamp](../README.md).", "",
           "<br>", "", "## Contents", "",
           "- [How to read the roadmap](#how-to-read-the-roadmap)",
           "- [Building roadmap](#building-roadmap)"]
