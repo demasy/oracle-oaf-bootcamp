@@ -11,41 +11,52 @@ Every OAF capability covered by the five courses, with its Level, the courses th
 
 **Courses** lists every course that teaches the capability.
 
-## Summary
+<table>
+<tr><th align="left">Summary</th><th align="left">Statistics</th></tr>
+<tr><td valign="top">
 
 | Area | Capabilities |
 | :-- | :-: |
-| **Architecture** | **12** |
-| ↳ Concepts and Layers | 6 |
-| ↳ Runtime and Data Foundations | 6 |
-| **Model Layer** | **17** |
-| ↳ Business Components | 10 |
-| ↳ Validation and Server-Side Logic | 7 |
-| **View Layer** | **45** |
-| ↳ Layout Containers | 11 |
-| ↳ Navigation and Page Structure | 10 |
-| ↳ Tables, Search and Visualization | 10 |
-| ↳ Widgets, Items and Forms | 14 |
-| **Controller Layer** | **18** |
-| ↳ Request Processing | 7 |
-| ↳ State and Navigation | 6 |
-| ↳ Dynamic and Programmatic UI | 5 |
-| Framework | 7 |
-| Localization | 5 |
-| **Integration** | **17** |
-| ↳ Files and Data Exchange | 6 |
-| ↳ Services and APIs | 4 |
-| ↳ EBS Products and Processes | 7 |
-| Security | 9 |
-| Errors and diagnostics | 9 |
-| Personalization | 10 |
-| Extension | 7 |
-| Deployment | 6 |
-| **OA Framework Standards** | **15** |
-| ↳ Coding and Naming Standards | 6 |
-| ↳ Project and Code Management | 4 |
-| ↳ Quality and Extension Practice | 5 |
+| **[Architecture](#architecture)** | **12** |
+| ↳ [Concepts and Layers](#concepts-and-layers) | 6 |
+| ↳ [Runtime and Data Foundations](#runtime-and-data-foundations) | 6 |
+| **[Model Layer](#model-layer)** | **17** |
+| ↳ [Business Components](#business-components) | 10 |
+| ↳ [Validation and Server-Side Logic](#validation-and-server-side-logic) | 7 |
+| **[View Layer](#view-layer)** | **45** |
+| ↳ [Layout Containers](#layout-containers) | 11 |
+| ↳ [Navigation and Page Structure](#navigation-and-page-structure) | 10 |
+| ↳ [Tables, Search and Visualization](#tables-search-and-visualization) | 10 |
+| ↳ [Widgets, Items and Forms](#widgets-items-and-forms) | 14 |
+| **[Controller Layer](#controller-layer)** | **18** |
+| ↳ [Request Processing](#request-processing) | 7 |
+| ↳ [State and Navigation](#state-and-navigation) | 6 |
+| ↳ [Dynamic and Programmatic UI](#dynamic-and-programmatic-ui) | 5 |
+| [Framework](#framework) | 7 |
+| [Localization](#localization) | 5 |
+| **[Integration](#integration)** | **17** |
+| ↳ [Files and Data Exchange](#files-and-data-exchange) | 6 |
+| ↳ [Services and APIs](#services-and-apis) | 4 |
+| ↳ [EBS Products and Processes](#ebs-products-and-processes) | 7 |
+| [Security](#security) | 9 |
+| [Errors and diagnostics](#errors-and-diagnostics) | 9 |
+| [Personalization](#personalization) | 10 |
+| [Extension](#extension) | 7 |
+| [Deployment](#deployment) | 6 |
+| **[OA Framework Standards](#oa-framework-standards)** | **15** |
+| ↳ [Coding and Naming Standards](#coding-and-naming-standards) | 6 |
+| ↳ [Project and Code Management](#project-and-code-management) | 4 |
+| ↳ [Quality and Extension Practice](#quality-and-extension-practice) | 5 |
 | **Total** | **177** |
+
+</td><td valign="top">
+
+<img src="assets/stats-areas.svg" width="560" alt="Capabilities per area by level: 13 areas, 17 sub-areas, 177 capabilities. View Layer 45; Controller Layer 18; Model Layer 17; Integration 17; OA Framework Standards 15; Architecture 12; Personalization 10; Security 9; Errors and diagnostics 9; Framework 7; Extension 7; Deployment 6; Localization 5">
+
+<img src="assets/stats-courses.svg" width="560" alt="Capabilities by course: Dev 101 62; Dev 102 84; Dev 103 69; Cust 101 17; Cust 102 25">
+
+</td></tr>
+</table>
 
 ## Architecture
 

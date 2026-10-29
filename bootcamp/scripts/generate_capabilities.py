@@ -1,6 +1,6 @@
 import os
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)),"..",".."))
-import re,collections
+import re,collections,csv,html
 LV={"B101":"Dev 101","B102":"Dev 102","B103":"Dev 103","C101":"Cust 101","C102":"Cust 102"}
 rows=[]
 for f,pre in (("building/101","B101"),("building/102","B102"),("building/103","B103"),("customizing/101","C101"),("customizing/102","C102")):
@@ -78,6 +78,7 @@ def level_of(name,lectures):
     return LEVELS[base]
 LEVEL_COUNT=collections.Counter()
 body=[];total=0;checks=[];summ=[]
+csv_rows=[]
 seen_parents=set()
 for area,items in CAP.items():
     par,sub=split_area(area)
@@ -94,17 +95,20 @@ for area,items in CAP.items():
         top=allh[:5]; lv=[LV[p] for p in LV if any(c.startswith(p) for c in allh)]
         level=level_of(name,allh); LEVEL_COUNT[level]+=1
         icon=f'<img src="assets/level-{level.lower()}.svg" width="20" height="20" alt="{level}" title="{level}" align="absmiddle">'
+        csv_rows.append([f"CAP-{total+1:03d}",par or area,sub if par else '',name,level,len(lv),*[int(any(c.startswith(p) for c in allh)) for p in LV],len(allh),'; '.join(lv),'; '.join(sorted(allh))])
         body.append(f"| {name} | {icon} | {', '.join(lv)} | {', '.join(top)} |"); total+=1; checks.append((name,kws,top))
     summ.append((area,len(items))); body.append("")
+def _anchor(h):
+    return "#"+re.sub(r"[^\w\- ]","",h.lower()).replace(" ","-")
 def _summ_rows():
     rows_=[];done=set()
     for a,n in summ:
         par,sub=split_area(a)
         if par:
             if par not in done:
-                rows_.append(f"| **{par}** | **{sum(x for b,x in summ if split_area(b)[0]==par)}** |"); done.add(par)
-            rows_.append(f"| ↳ {sub} | {n} |")
-        else: rows_.append(f"| {a} | {n} |")
+                rows_.append(f"| **[{par}]({_anchor(par)})** | **{sum(x for b,x in summ if split_area(b)[0]==par)}** |"); done.add(par)
+            rows_.append(f"| ↳ [{sub}]({_anchor(sub)}) | {n} |")
+        else: rows_.append(f"| [{a}]({_anchor(a)}) | {n} |")
     return rows_
 GROUPNAME={"Layout containers":["Pages and regions","messageComponentLayout","Stack, flow, table, row and cell layouts","Panel splitter and layered layout","Flexible layout and configurable pages","Advanced layout and content container regions","Section headers, hide/show regions and footers"],
 "Data presentation":["Bulleted list","Advanced tables","Table columns, totals and row selection","HGrid and tree","Infotiles"],
@@ -121,7 +125,45 @@ for _i,(n,g) in enumerate(_ci,1):
     _nums='<br>'.join(f"C{_i:02d}.{_j:03d}" for _j in range(1,len(COMP[n])+1))
     _ci_rows.append(f"| C{_i:02d} | {g if g!=_last else ''} | {n} | {_nums} | {'<br>'.join(COMP[n])} |"); _last=g
 assert len(_ci_rows)==len(COMP)
-out+=["## Summary","","| Area | Capabilities |","| :-- | :-: |"]+_summ_rows()+[f"| **Total** | **{total}** |","",*body,"## UI Component Layout Index","","Bean-level OAF component names for each capability that has them, grouped by OAF component category. Look up the lectures in the capability's row.","","| # | Group | Capability | # | Component |","| :-- | :-- | :-- | :-- | :-- |",*_ci_rows,"","## Notes","","- A capability counts as covered when a lecture name or note names it. This shows where a topic is taught, not how deeply.","- The list is built from the capability catalogs supplied for this course, not from an official Oracle list.","- Levels are derived from where lectures name each capability (a few basics are set by hand), so they are not an official Oracle grading.","- The content has not been reviewed by an instructor.",""]
+# Statistics: two SVG charts (stacked bars per area by level, bars per course) built from csv_rows
+LEVEL_COLOR={"Foundation":"#8E96A3","Core":"#CDA94A","Advanced":"#D4763A","Expert":"#C0353A"}
+STAT_W=560
+def _t(x,y,t,size=14,weight=400,fill="#24292f",anchor="start"):
+    return f'<text x="{x}" y="{y}" font-size="{size}" font-weight="{weight}" fill="{fill}" text-anchor="{anchor}">{html.escape(str(t))}</text>'
+def _svg(h,parts):
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{STAT_W}" height="{h}" viewBox="0 0 {STAT_W} {h}" font-family="-apple-system,\'Segoe UI\',Helvetica,Arial,sans-serif">'
+            f'<rect x="1" y="1" width="{STAT_W-2}" height="{h-2}" rx="12" fill="#ffffff" stroke="#d0d7de"/>'+"".join(parts)+'</svg>\n')
+_by_area={}
+for _r in csv_rows: _by_area.setdefault(_r[1],collections.Counter())[_r[4]]+=1
+_areas=sorted(_by_area.items(),key=lambda kv:-sum(kv[1].values()))
+_n_sub=len({(_r[1],_r[2]) for _r in csv_rows if _r[2]})
+_parts=[_t(24,46,"Capabilities per area",22,700)]
+for _x,_n,_l in ((24,len(_areas),"areas"),(110,_n_sub,"sub-areas"),(220,total,"capabilities")):
+    _parts+=[_t(_x,100,_n,36,700),_t(_x,124,_l,14,400,"#57606a")]
+_lx=24
+for _lvl,_w in zip(LEVELS,(105,70,95,75)):
+    _parts+=[f'<rect x="{_lx}" y="140" width="14" height="14" rx="2" fill="{LEVEL_COLOR[_lvl]}"/>',_t(_lx+20,152,_lvl,14,400,"#57606a")]; _lx+=_w+20
+_x0=190; _scale=(STAT_W-24-_x0-50)/max(sum(c.values()) for _,c in _areas)
+for _i,(_a,_c) in enumerate(_areas):
+    _y=180+_i*34; _x=_x0
+    _parts.append(_t(178,_y+17,_a,14,600,"#24292f","end"))
+    for _lvl in LEVELS:
+        _w=_c[_lvl]*_scale
+        if _w: _parts.append(f'<rect x="{_x:.1f}" y="{_y}" width="{_w:.1f}" height="24" fill="{LEVEL_COLOR[_lvl]}"><title>{html.escape(_a)}: {_c[_lvl]} {_lvl}</title></rect>'); _x+=_w
+    _parts.append(_t(_x+8,_y+17,sum(_c.values()),14,400,"#57606a"))
+open('bootcamp/assets/stats-areas.svg','w',encoding='utf-8').write(_svg(180+len(_areas)*34+16,_parts))
+_cn=[(LV[_p],sum(_r[6+_k] for _r in csv_rows)) for _k,_p in enumerate(LV)]
+_parts=[_t(24,46,"Capabilities by course",22,700)]; _cs=(STAT_W-24-112-130)/max(n for _,n in _cn)
+for _i,(_nm,_n) in enumerate(_cn):
+    _y=76+_i*40
+    _parts+=[_t(100,_y+18,_nm,14,600,"#24292f","end"),f'<rect x="112" y="{_y}" width="{_n*_cs:.1f}" height="26" fill="#2F66D6"/>',_t(112+_n*_cs+8,_y+18,f"{_n} ({round(100*_n/total)}%)",14,400,"#57606a")]
+open('bootcamp/assets/stats-courses.svg','w',encoding='utf-8').write(_svg(76+len(_cn)*40+12,_parts))
+_alt1=html.escape(f"Capabilities per area by level: {len(_areas)} areas, {_n_sub} sub-areas, {total} capabilities. "+"; ".join(f"{a} {sum(c.values())}" for a,c in _areas),quote=True)
+_alt2=html.escape("Capabilities by course: "+"; ".join(f"{n} {k}" for n,k in _cn),quote=True)
+STATS_MD=[f'<img src="assets/stats-areas.svg" width="{STAT_W}" alt="{_alt1}">',"",f'<img src="assets/stats-courses.svg" width="{STAT_W}" alt="{_alt2}">']
+out+=["<table>","<tr><th align=\"left\">Summary</th><th align=\"left\">Statistics</th></tr>","<tr><td valign=\"top\">","","| Area | Capabilities |","| :-- | :-: |"]+_summ_rows()+[f"| **Total** | **{total}** |","","</td><td valign=\"top\">","",*STATS_MD,"","</td></tr>","</table>","",*body,"## UI Component Layout Index","","Bean-level OAF component names for each capability that has them, grouped by OAF component category. Look up the lectures in the capability's row.","","| # | Group | Capability | # | Component |","| :-- | :-- | :-- | :-- | :-- |",*_ci_rows,"","## Notes","","- A capability counts as covered when a lecture name or note names it. This shows where a topic is taught, not how deeply.","- The list is built from the capability catalogs supplied for this course, not from an official Oracle list.","- Levels are derived from where lectures name each capability (a few basics are set by hand), so they are not an official Oracle grading.","- The content has not been reviewed by an instructor.",""]
 open('bootcamp/CAPABILITIES.md','w').write("\n".join(out))
+with open('bootcamp/capabilities.csv','w',newline='',encoding='utf-8') as f:
+    w=csv.writer(f); w.writerow(["id","area","sub_area","capability","level","course_count",*[LV[p].replace(' ','_').lower() for p in LV],"lecture_count","courses","lectures"]); w.writerows(csv_rows)
 bad=[(n,c) for n,k,top in checks for c in top if c not in codes or not any(hit(x,(r[1]+" "+r[2]).lower()) for x in k for r in rows if r[0]==c)]
 print("capabilities",total,"| bad",bad,"| lines",len(out))
