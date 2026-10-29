@@ -1,6 +1,6 @@
 # Oracle Application Framework (OAF) Roadmap
 
-A learning roadmap for Oracle E-Business Suite OAF developers. It has two roadmaps, **Building** and **Customizing**. Each roadmap is a short path of steps, and every step is one course of the [Oracle OAF BootCamp](../README.md). Each step lists the sections and lectures of its course, and every lecture has a level.
+Two learning paths for Oracle E-Business Suite OAF developers. **Building** takes you from your first page to production. **Customizing** shows you how to change delivered pages without breaking upgrades. Every step is one course of the [Oracle OAF BootCamp](../README.md), with its sections, lectures and levels.
 
 <br>
 
