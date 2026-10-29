@@ -1,6 +1,6 @@
-"""Add a per-module Difficulty rating (badge plus label) to a bootcamp README.
+"""Add Difficulty ratings (1 to 5 star icons) to a bootcamp README: per module, then per lecture.
 
-Ratings 1, 2 and 3 map to Awareness (blue check), Standard (orange star) and Master (red diamond).
+The stars are SVG images (bootcamp/assets/difficulty-star.svg): 1 Beginner, 2 Elementary, 3 Intermediate, 4 Advanced, 5 Expert.
 
 Phase 1 covers Building BootCamp 101 only. Add the other courses to RATINGS later.
 Run from anywhere:  python3 bootcamp/scripts/add_difficulty.py
@@ -12,9 +12,9 @@ import sys
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
 
-# rating -> (badge file name, label, meaning)
-LEVELS = {1: ("awareness", "Awareness", "Introductory"), 2: ("standard", "Standard", "Intermediate"), 3: ("master", "Master", "Advanced")}
-BADGE = '<img src="{rel}difficulty-{name}.svg" width="16" height="16" alt="{label}" align="absmiddle"> {label}'
+# rating (number of stars) -> meaning
+MEANING = {1: "Beginner", 2: "Elementary", 3: "Intermediate", 4: "Advanced", 5: "Expert"}
+STAR = '<img src="{rel}difficulty-star.svg" width="16" height="16" alt="★" align="absmiddle">'
 
 # course -> (README path, module-ID prefix, relative path to the badge, [(module title, stars), ...])
 RATINGS = {
@@ -44,16 +44,20 @@ RATINGS = {
 
 
 def badges(rel, n):
-    name, label, _ = LEVELS[n]
-    return BADGE.format(rel=rel, name=name, label=label)
+    return STAR.format(rel=rel) * n
 
 
-def apply(course):
+def lecture_stars(module_stars, fmt):
+    """Video lectures take the module's rating; Lab and Workshop lectures are one star harder (max 5)."""
+    return module_stars if fmt == "Video" else min(5, module_stars + 1)
+
+
+def apply_modules(course):
     path, pre, rel, table = RATINGS[course]
     full = os.path.join(ROOT, path)
     text = open(full).read()
-    if "Difficulty" in text:
-        sys.exit(f"{path}: already has a Difficulty column, nothing to do")
+    if "**Difficulty**" in text:
+        return 0  # module ratings already added
 
     # module titles must match the README exactly
     titles = re.findall(r"^## \[\d+\] (.*)$", text, re.M)
@@ -89,10 +93,10 @@ def apply(course):
 
     # 3. legend line under the existing Path line
     legend = (
-        "\n**Difficulty** (rated per module)\n\n"
-        f"| {badges(rel, 1)} | {badges(rel, 2)} | {badges(rel, 3)} |\n"
-        "| :-- | :-- | :-- |\n"
-        f"| {LEVELS[1][2]} | {LEVELS[2][2]} | {LEVELS[3][2]} |\n"
+        "\n**Difficulty**\n\n"
+        "| " + " | ".join(badges(rel, n) for n in MEANING) + " |\n"
+        "| " + " | ".join([":-:"] * len(MEANING)) + " |\n"
+        "| " + " | ".join(f"**{v}**" for v in MEANING.values()) + " |\n"
     )
     text, k = re.subn(r"^(\*\*Path:\*\* Core is.*)$", lambda m: m.group(1) + "\n" + legend, text, count=1, flags=re.M)
     assert k == 1
@@ -101,6 +105,31 @@ def apply(course):
     return len(table)
 
 
+def apply_lectures(course):
+    """Add a Difficulty column after Format in every lecture table."""
+    path, pre, rel, table = RATINGS[course]
+    full = os.path.join(ROOT, path)
+    text = open(full).read()
+    if "| Format | Difficulty |" in text:
+        return 0  # lecture ratings already added
+    head = "| Code | Lecture | Format | Resource | Notes |"
+    sep = "| :-- | :-------- | :-: | :-- | :---- |"
+    assert text.count(head) == len(table) and text.count(sep) == len(table), (text.count(head), text.count(sep))
+    text = text.replace(head, "| Code | Lecture | Format | Difficulty | Resource | Notes |")
+    text = text.replace(sep, "| :-- | :-------- | :-: | :-- | :-- | :---- |")
+
+    def lecture_row(m):
+        module = int(m.group(1))
+        return f"{m.group(2)}{m.group(3)} | {badges(rel, lecture_stars(table[module - 1][1], m.group(3)))} | "
+
+    text, k = re.subn(
+        rf"^(?=\| {pre}-(\d{{3}})\.\d{{3}} \|)(\| {pre}-\d{{3}}\.\d{{3}} \| .*? \| )(Video|Lab|Workshop) \| ",
+        lecture_row, text, flags=re.M,
+    )
+    open(full, "w").write(text)
+    return k
+
+
 if __name__ == "__main__":
     for c in RATINGS:
-        print(c, apply(c), "modules rated")
+        print(c, apply_modules(c), "modules rated,", apply_lectures(c), "lectures rated")
