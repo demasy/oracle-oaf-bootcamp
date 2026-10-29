@@ -62,7 +62,7 @@
 | B101-002.006 | Understanding BC4J and UIX Architecture | Video | Guide | BC4J, UIX, lifecycle, metadata repository |
 | B101-002.007 | Examining OAF Page Anatomy | Video | Reference | AM, VO, EO, Pages, Regions, Controllers |
 | B101-002.008 | Understanding the Layered Application Architecture | Video | Diagram | Layered application architecture: database, entity object, view object and AM, shared region and page layers |
-| B101-002.009 | Mapping the Database Layer to Base and TL Tables | Video | Reference | Database layer: _B and _TL tables, sequences, packages and WHO columns |
+| B101-002.009 | Mapping the Database Layer to Base and TL Tables | Video | Reference | Database layer: _B and _TL tables, sequences, packages, system catalog views and WHO columns |
 
 ## [3] IDE Setup and Project Topology
 
@@ -113,7 +113,7 @@
 | :-- | :-------- | :-: | :-- | :---- |
 | B101-006.001 | Understanding Entity Object Fundamentals | Video | Reference | Table mapping, validation, DML, associations |
 | B101-006.002 | Creating Entity Objects from Tables | Lab | Tutorial | Wizard creation, attributes, validation rules |
-| B101-006.003 | Defining Primary Keys and Attribute Validation | Lab | Tutorial | Primary key identification, attribute-level validation routines, entity-level validation |
+| B101-006.003 | Defining Primary Keys and Attribute Validation | Lab | Tutorial | Primary key identification, attribute-level, entity-level and cross-attribute validation |
 
 ## [7] Declarative Page Layouts
 
@@ -154,7 +154,7 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B101-009.001 | Understanding Controller Architecture and User Actions | Video | Guide | MVC role, lifecycle, structure, best practices |
+| B101-009.001 | Understanding Controller Architecture and User Actions | Video | Guide | MVC role, OAControllerImpl class, lifecycle, structure, best practices |
 | B101-009.002 | Handling GET Requests and Page Initialization | Video | Patterns | processRequest(), initialization, default values |
 | B101-009.003 | Using the Controller API for pageContext and WebBeans | Video | Reference | pageContext, attributes, WebBeans, transactions |
 | B101-009.004 | Comparing Parameter Passing Strategies | Video | Diagram | Request, Transaction, Session scopes comparison |

@@ -8,16 +8,16 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 
 | Area | Capabilities |
 | :-- | :-: |
-| Architecture | 11 |
-| **Model Layer** | **13** |
+| Architecture | 12 |
+| **Model Layer** | **14** |
 | ↳ Business Components | 8 |
-| ↳ Validation and Server-Side Logic | 5 |
+| ↳ Validation and Server-Side Logic | 6 |
 | **View Layer** | **42** |
 | ↳ Layout and Navigation | 20 |
 | ↳ Tables, Search and Visualization | 10 |
 | ↳ Widgets, Items and Forms | 12 |
-| **Controller Layer** | **17** |
-| ↳ Request Processing | 6 |
+| **Controller Layer** | **18** |
+| ↳ Request Processing | 7 |
 | ↳ State and Navigation | 6 |
 | ↳ Dynamic and Programmatic UI | 5 |
 | Framework | 6 |
@@ -28,14 +28,14 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | ↳ EBS Products and Processes | 5 |
 | Security | 9 |
 | Errors and diagnostics | 9 |
-| Personalization | 9 |
+| Personalization | 10 |
 | Extension | 7 |
 | Deployment | 6 |
 | **OA Framework Standards** | **14** |
 | ↳ Coding and Naming Standards | 6 |
 | ↳ Project and Code Management | 4 |
 | ↳ Quality and Extension Practice | 4 |
-| **Total** | **160** |
+| **Total** | **164** |
 
 ## Architecture
 
@@ -50,6 +50,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | OAF terminology and page anatomy | Dev 101 | B101-002.001, B101-002.007 |
 | OAF in context (when to use, EBS integration) | Dev 101 | B101-002.003, B101-002.004 |
 | Layered application architecture | Dev 101 | B101-002.008 |
+| System catalog views | Dev 101 | B101-002.009 |
 | Database layer (_B and _TL tables) | Dev 101 | B101-002.009 |
 | Object-oriented reuse | Dev 101, Dev 102 | B101-007.004, B102-009.004 |
 
@@ -74,6 +75,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | :-- | :-- | :-- |
 | Entity expert validation | Dev 102 | B102-009.004 |
 | Attribute validation and primary keys | Dev 101, Dev 102 | B101-006.003, B102-009.003 |
+| Cross-attribute validation | Dev 101 | B101-006.003 |
 | SQL and PL/SQL calls from OAF | Dev 102 | B102-008.004, B102-008.005 |
 | PL/SQL entity objects | Dev 103 | B103-014.002 |
 | Programmatic view objects | Dev 102 | B102-008.001, B102-008.002, B102-008.003 |
@@ -149,6 +151,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Page context and web bean API | Dev 101, Dev 102, Dev 103 | B101-009.003, B102-005.002, B103-003.002 |
 | Common controller patterns | Dev 102 | B102-001.002 |
 | processFormData | Dev 102 | B102-001.001 |
+| Controller classes (OAControllerImpl) | Dev 101 | B101-009.001 |
 
 ### State and Navigation
 
@@ -255,6 +258,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | :-- | :-- | :-- |
 | Customization concepts | Cust 101 | C101-001.001 |
 | Personalization levels | Cust 101 | C101-002.001 |
+| Personalization precedence (user level highest) | Cust 101 | C101-002.001 |
 | Durable personalizations | Cust 101 | C101-001.002 |
 | Region injection | Cust 101 | C101-003.004 |
 | LOV personalization | Cust 101 | C101-003.005 |

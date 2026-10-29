@@ -41,7 +41,7 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| C101-002.001 | Applying Personalization Levels and Precedence | Lab | Guide | Function, organization, responsibility, site and localization levels, precedence results |
+| C101-002.001 | Applying Personalization Levels and Precedence | Lab | Guide | Function, localization, responsibility, organization or location, site and user levels; user level has highest precedence |
 | C101-002.002 | Enabling Personalization | Lab | Guide | Personalization profile options, Functional Administrator responsibility |
 | C101-002.003 | Clearing MDS Caches | Lab | Guide | Functional Administrator cache invalidation, seeing personalization changes immediately |
 
