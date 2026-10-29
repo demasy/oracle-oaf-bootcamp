@@ -21,11 +21,11 @@ Every picture is drawn by [build_roadmap.py](../bootcamp/scripts/build_roadmap.p
 
 ## How to read the roadmap
 
-Each picture has a blue line down the middle. A yellow box on the line is a **section** of the course. The white card next to it lists the **lectures** of that section, in course order. Each lecture shows its format (Video, Lab or Workshop) and a level badge. The level comes from the Difficulty rating of the lecture's section: 1 to 2 stars is Foundation, 3 is Core, 4 is Advanced and 5 is Expert.
+Each picture has a blue line down the middle. A yellow box on the line is a **section** of the course. The white card next to it lists the **lectures** of that section, in course order. Each lecture shows its name and a level badge. The level comes from the Difficulty rating of the lecture's section: 1 to 2 stars is Foundation, 3 is Core, 4 is Advanced and 5 is Expert.
 
 <img src="legend.svg" width="700" alt="Legend: Foundation, Core, Advanced, Expert">
 
-Every picture has a text version under **Topics as text**.
+Every picture has a text version under **Topics as text**, which also shows each lecture's format (Video, Lab or Workshop).
 
 <br>
 

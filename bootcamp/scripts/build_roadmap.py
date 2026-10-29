@@ -79,10 +79,9 @@ def badge(cx, cy, level):
 
 def item_box(x, y, lec, w):
     body, n = lines(x + w / 2 + 6, y + 21, lec["title"], 41, 14, 17, weight=400)
-    h = 14 + n * 17 + 18
-    fmt = t(x + w / 2 + 6, y + 21 + (n - 1) * 17 + 17, f'{lec["format"]} · {lec["level"]}', 11, 400, "#57606a")
+    h = 16 + n * 17 + 4
     svg = (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="6" fill="#F7E4A8" stroke="#111111" stroke-width="2"/>'
-           + badge(x + 2, y + h / 2, lec["level"]) + body + fmt)
+           + badge(x + 2, y + h / 2, lec["level"]) + body)
     return svg, h
 
 
@@ -215,9 +214,9 @@ def main():
         if c[0] == "Customizing":
             md.append(f"  - [Step {c[1]}: {c[4]} ({c[2]})](#customizing-step-{c[1]}-{c[4].lower()}-{c[2].lower()})")
     md += ["", "<br>", "", "## How to read the roadmap", "",
-           "Each picture has a blue line down the middle. A yellow box on the line is a **section** of the course. The white card next to it lists the **lectures** of that section, in course order. Each lecture shows its format (Video, Lab or Workshop) and a level badge. The level comes from the Difficulty rating of the lecture's section: 1 to 2 stars is Foundation, 3 is Core, 4 is Advanced and 5 is Expert.", "",
+           "Each picture has a blue line down the middle. A yellow box on the line is a **section** of the course. The white card next to it lists the **lectures** of that section, in course order. Each lecture shows its name and a level badge. The level comes from the Difficulty rating of the lecture's section: 1 to 2 stars is Foundation, 3 is Core, 4 is Advanced and 5 is Expert.", "",
            '<img src="legend.svg" width="700" alt="Legend: Foundation, Core, Advanced, Expert">', "",
-           "Every picture has a text version under **Topics as text**.", "", "<br>", ""]
+           "Every picture has a text version under **Topics as text**, which also shows each lecture's format (Video, Lab or Workshop).", "", "<br>", ""]
     for road, blurb, path in (
             ("Building", "Build OAF pages, business components and applications, from the first page to production.", "levels-building.svg"),
             ("Customizing", "Personalize and extend delivered Oracle E-Business Suite pages without breaking upgrades. Customizing 101 follows Building 101, and Customizing 102 follows Building 102.", "levels-customizing.svg")):
