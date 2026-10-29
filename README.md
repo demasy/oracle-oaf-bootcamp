@@ -96,21 +96,6 @@ I have more than 17 years of experience delivering enterprise Oracle and HR digi
 <a href="https://github.com/demasy">GitHub</a> · <a href="https://www.linkedin.com/in/demasy/">LinkedIn</a>
 
 <br>
-Oracle Solutions Architect · Oracle ACE
-
-I have more than 17 years of experience in Oracle technology and Oracle applications. For 11 of those years I have developed ERP solutions with Java and Oracle tools, specializing in Oracle Application Framework (OAF).
-
-<br clear="left">
-
-| Focus | What I do |
-| :-- | :-- |
-| **Role** | Implementing, enhancing and supporting Oracle E-Business Suite (ERP) applications |
-| **Leadership** | Coaching development teams, leading projects and coordinating vendor resources |
-| **Teaching** | Oracle SQL, Oracle PL/SQL, Java SE, Oracle Application Framework (OAF) and Oracle Workflow |
-
-<a href="https://github.com/demasy">GitHub</a> · <a href="https://www.linkedin.com/in/demasy/">LinkedIn</a>
-
-<br>
 
 ## How to Get this BootCamp
 
