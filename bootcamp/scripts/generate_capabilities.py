@@ -90,7 +90,9 @@ def _summ_rows():
             rows_.append(f"| ↳ {sub} | {n} |")
         else: rows_.append(f"| {a} | {n} |")
     return rows_
-out+=["## Summary","","| Area | Capabilities |","| :-- | :-: |"]+_summ_rows()+[f"| **Total** | **{total}** |","",*body,"## Component Index","","Bean-level OAF component names and the capability row that covers each. Look up the lectures in that row.","","| Component | Capability |","| :-- | :-- |",*[f"| {c} | {cap_} |" for cap_,cs in COMP.items() for c in cs],"","## Notes","","- A capability counts as covered when a lecture name or note names it. This shows where a topic is taught, not how deeply.","- The list is built from the capability catalogs supplied for this course, not from an official Oracle list.","- The content has not been reviewed by an instructor.",""]
+_ci_rows=[f"| {n} | {', '.join(COMP[n])} |" for its in CAP.values() for n,_ in its if n in COMP]
+assert len(_ci_rows)==len(COMP) and sum(len(v) for v in COMP.values())==sum(r.count(",")+1 for r in [x.split(" | ")[1].rstrip(" |") for x in _ci_rows])
+out+=["## Summary","","| Area | Capabilities |","| :-- | :-: |"]+_summ_rows()+[f"| **Total** | **{total}** |","",*body,"## UI Component Layout Index","","Bean-level OAF component names for each capability that has them, in the same order as the areas above. Look up the lectures in the capability's row.","","| Capability | Component |","| :-- | :-- |",*_ci_rows,"","## Notes","","- A capability counts as covered when a lecture name or note names it. This shows where a topic is taught, not how deeply.","- The list is built from the capability catalogs supplied for this course, not from an official Oracle list.","- The content has not been reviewed by an instructor.",""]
 open('bootcamp/CAPABILITIES.md','w').write("\n".join(out))
 bad=[(n,c) for n,k,top in checks for c in top if c not in codes or not any(hit(x,(r[1]+" "+r[2]).lower()) for x in k for r in rows if r[0]==c)]
 print("capabilities",total,"| bad",bad,"| lines",len(out))

@@ -317,114 +317,42 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Server-side best practices | Dev 102 | B102-008.006 |
 | Code quality and standards compliance | Dev 101, Dev 102, Dev 103 | B103-011.002, B101-015.006, B102-020.006 |
 
-## Component Index
+## UI Component Layout Index
 
-Bean-level OAF component names and the capability row that covers each. Look up the lectures in that row.
+Bean-level OAF component names for each capability that has them, in the same order as the areas above. Look up the lectures in the capability's row.
 
-| Component | Capability |
+| Capability | Component |
 | :-- | :-- |
-| page | Pages and regions |
-| pageLayout | Pages and regions |
-| attributeSet | Pages and regions |
-| package | Pages and regions |
-| messageComponentLayout | messageComponentLayout |
-| messageLayout | messageComponentLayout |
-| labeledFieldLayout | messageComponentLayout |
-| defaultSingleColumn | messageComponentLayout |
-| defaultDoubleColumn | messageComponentLayout |
-| stackLayout | Stack, flow, table, row and cell layouts |
-| flowLayout | Stack, flow, table, row and cell layouts |
-| rowLayout | Stack, flow, table, row and cell layouts |
-| tableLayout | Stack, flow, table, row and cell layouts |
-| cellFormat | Stack, flow, table, row and cell layouts |
-| panelSplitter | Panel splitter and layered layout |
-| layeredLayout | Panel splitter and layered layout |
-| bulletedList | Bulleted list |
-| flexibleLayout | Flexible layout and configurable pages |
-| flexibleContent | Flexible layout and configurable pages |
-| flexibleContentList | Flexible layout and configurable pages |
-| contentContainer | Advanced layout and content container regions |
-| richContainer | Advanced layout and content container regions |
-| header | Section headers, hide/show regions and footers |
-| hideShowHeader | Section headers, hide/show regions and footers |
-| footer | Section headers, hide/show regions and footers |
-| contentFooter | Section headers, hide/show regions and footers |
-| subTabLayout | Sub tabs and navigation components |
-| subTabBar | Sub tabs and navigation components |
-| hideShowSubTabLayout | Sub tabs and navigation components |
-| train | Train and wizards |
-| shuttle | Shuttle |
-| popUp | Popups |
-| menu | Breadcrumbs and menus |
-| menuItem | Breadcrumbs and menus |
-| breadcrumbs | Breadcrumbs and menus |
-| locator | Breadcrumbs and menus |
-| navigationBar | Breadcrumbs and menus |
-| button | Buttons and button bars |
-| submitButton | Buttons and button bars |
-| resetButton | Buttons and button bars |
-| selectionButton | Buttons and button bars |
-| exportButton | Buttons and button bars |
-| link | Buttons and button bars |
-| pageButtonBar | Buttons and button bars |
-| table | Advanced tables |
-| advancedTable | Advanced tables |
-| columnGroup | Table columns, totals and row selection |
-| sortableHeader | Table columns, totals and row selection |
-| totalRow | Table columns, totals and row selection |
-| addTableRow | Table columns, totals and row selection |
-| singleSelection | Table columns, totals and row selection |
-| multipleSelection | Table columns, totals and row selection |
-| HGrid | HGrid and tree |
-| tree | HGrid and tree |
-| nodeDef | HGrid and tree |
-| childNode | HGrid and tree |
-| infotile | Infotiles |
-| graphTable | Charts and graphs |
-| graph | Charts and graphs |
-| graphData | Charts and graphs |
-| Gantt | Gantt charts |
-| messageTextInput | Form inputs and selection controls |
-| messageChoice | Form inputs and selection controls |
-| messageLovChoice | Form inputs and selection controls |
-| messageRadioButton | Form inputs and selection controls |
-| messageRadioGroup | Form inputs and selection controls |
-| messageCheckBox | Form inputs and selection controls |
-| messageSpinBox | Form inputs and selection controls |
-| styledText | Text and display items |
-| formattedText | Text and display items |
-| instructionText | Text and display items |
-| messageStyledText | Text and display items |
-| staticStyledText | Text and display items |
-| rawText | Text and display items |
-| image | Images, spacers and separators |
-| spacer | Images, spacers and separators |
-| separator | Images, spacers and separators |
-| tip | Images, spacers and separators |
-| formParameter | Form parameters and includes |
-| formValue | Form parameters and includes |
-| servletInclude | Form parameters and includes |
-| urlInclude | Form parameters and includes |
-| listOfValues | LOV, dependent LOV and look-ahead |
-| messageLovInput | LOV, dependent LOV and look-ahead |
-| lovMap | LOV, dependent LOV and look-ahead |
-| lovActionButton | LOV, dependent LOV and look-ahead |
-| lovActionMap | LOV, dependent LOV and look-ahead |
-| richTextEditor | Rich text, color picker and rating bar |
-| colorPicker | Rich text, color picker and rating bar |
-| messageRatingBar | Rich text, color picker and rating bar |
-| flex | Flexfields (DFF and KFF) |
-| flexMap | Flexfields (DFF and KFF) |
-| attachmentTable | Attachment mapping |
-| attachmentLink | Attachment mapping |
-| attachmentImage | Attachment mapping |
-| messageInlineAttachment | Attachment mapping |
-| entityMap | Attachment mapping |
-| categoryMap | Attachment mapping |
-| primaryKey | Attachment mapping |
-| messageFileUpload | File upload and download |
-| messageDownload | File upload and download |
-| dialogPage | Dialog pages |
+| Pages and regions | page, pageLayout, attributeSet, package |
+| messageComponentLayout | messageComponentLayout, messageLayout, labeledFieldLayout, defaultSingleColumn, defaultDoubleColumn |
+| Stack, flow, table, row and cell layouts | stackLayout, flowLayout, rowLayout, tableLayout, cellFormat |
+| Panel splitter and layered layout | panelSplitter, layeredLayout |
+| Bulleted list | bulletedList |
+| Flexible layout and configurable pages | flexibleLayout, flexibleContent, flexibleContentList |
+| Advanced layout and content container regions | contentContainer, richContainer |
+| Section headers, hide/show regions and footers | header, hideShowHeader, footer, contentFooter |
+| Sub tabs and navigation components | subTabLayout, subTabBar, hideShowSubTabLayout |
+| Train and wizards | train |
+| Shuttle | shuttle |
+| Popups | popUp |
+| Breadcrumbs and menus | menu, menuItem, breadcrumbs, locator, navigationBar |
+| Advanced tables | table, advancedTable |
+| Table columns, totals and row selection | columnGroup, sortableHeader, totalRow, addTableRow, singleSelection, multipleSelection |
+| HGrid and tree | HGrid, tree, nodeDef, childNode |
+| Infotiles | infotile |
+| Charts and graphs | graphTable, graph, graphData |
+| Gantt charts | Gantt |
+| Form inputs and selection controls | messageTextInput, messageChoice, messageLovChoice, messageRadioButton, messageRadioGroup, messageCheckBox, messageSpinBox |
+| Text and display items | styledText, formattedText, instructionText, messageStyledText, staticStyledText, rawText |
+| Images, spacers and separators | image, spacer, separator, tip |
+| Buttons and button bars | button, submitButton, resetButton, selectionButton, exportButton, link, pageButtonBar |
+| Form parameters and includes | formParameter, formValue, servletInclude, urlInclude |
+| LOV, dependent LOV and look-ahead | listOfValues, messageLovInput, lovMap, lovActionButton, lovActionMap |
+| Rich text, color picker and rating bar | richTextEditor, colorPicker, messageRatingBar |
+| Flexfields (DFF and KFF) | flex, flexMap |
+| Attachment mapping | attachmentTable, attachmentLink, attachmentImage, messageInlineAttachment, entityMap, categoryMap, primaryKey |
+| Dialog pages | dialogPage |
+| File upload and download | messageFileUpload, messageDownload |
 
 ## Notes
 
