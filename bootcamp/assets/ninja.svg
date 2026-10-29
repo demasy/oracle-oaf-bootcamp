@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="120" viewBox="0 0 100 120" role="img" aria-label="Ninja character">
+<g>
+  <path d="M82 18 L26 96" stroke="#8B949E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M26 96 L22 101" stroke="#C9A227" stroke-width="6" stroke-linecap="round"/>
+  <path d="M30 70 Q50 60 70 70 L76 108 Q50 116 24 108 Z" fill="#11172A"/>
+  <path d="M26 98 Q50 106 74 98 L74 104 Q50 112 26 104 Z" fill="#D43A2F"/>
+  <rect x="21" y="72" width="12" height="30" rx="6" fill="#11172A"/>
+  <rect x="67" y="72" width="12" height="30" rx="6" fill="#11172A"/>
+  <circle cx="50" cy="38" r="26" fill="#11172A"/>
+  <path d="M27 36 Q50 26 73 36 L73 48 Q50 56 27 48 Z" fill="#F2C9A0"/>
+  <ellipse cx="40" cy="42" rx="5" ry="4" fill="#fff"/><ellipse cx="60" cy="42" rx="5" ry="4" fill="#fff"/>
+  <circle cx="41.5" cy="42.5" r="2.4" fill="#11172A"/><circle cx="58.5" cy="42.5" r="2.4" fill="#11172A"/>
+  <path d="M24 26 Q50 14 76 26 L76 33 Q50 23 24 33 Z" fill="#D43A2F"/>
+  <rect x="40" y="19" width="20" height="10" rx="2" fill="#C0C7D0" stroke="#8B949E" stroke-width="1"/>
+  <path d="M46 21 L54 21 M46 24 L54 24" stroke="#8B949E" stroke-width="1.2"/>
+  <path d="M76 28 L92 22 L88 34 Z" fill="#D43A2F"/>
+</g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="258" viewBox="0 0 988 258" role="img" aria-label="Oracle OAF Master Class: the Building path OAF-B-101 Beginner, OAF-B-102 Advanced, OAF-B-103 Ninja and the Customizing path OAF-C-101 Beginner, OAF-C-102 Advanced combine into the Master Class, shown with a ninja character. Customizing 101 follows Building 101 and Customizing 102 follows Building 102." font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<rect x="0" y="0" width="988" height="258" rx="12" fill="#F6F8FA"/>
+<text x="24" y="30" font-size="15" font-weight="700" fill="#24292f">Oracle OAF Building BootCamp</text>
+<text x="24" y="156" font-size="15" font-weight="700" fill="#24292f">Oracle OAF Customizing BootCamp</text>
+<rect x="24" y="46" width="170" height="64" rx="12" fill="#C9DDFB" stroke="#3B6FE0" stroke-width="3"/><text x="109.0" y="74" text-anchor="middle" font-size="13" font-weight="600" fill="#1b2a4a" opacity="0.8">OAF-B-101</text><text x="109.0" y="95" text-anchor="middle" font-size="18" font-weight="700" fill="#1b2a4a">Beginner</text>
+<rect x="244" y="46" width="170" height="64" rx="12" fill="#FBE79A" stroke="#D4A21F" stroke-width="3"/><text x="329.0" y="74" text-anchor="middle" font-size="13" font-weight="600" fill="#3a2f08" opacity="0.8">OAF-B-102</text><text x="329.0" y="95" text-anchor="middle" font-size="18" font-weight="700" fill="#3a2f08">Advanced</text>
+<rect x="464" y="46" width="170" height="64" rx="12" fill="#11172A" stroke="#C9A227" stroke-width="3"/><text x="549.0" y="74" text-anchor="middle" font-size="13" font-weight="600" fill="#F3D45A" opacity="0.8">OAF-B-103</text><text x="549.0" y="95" text-anchor="middle" font-size="18" font-weight="700" fill="#F3D45A">Ninja</text>
+<rect x="24" y="170" width="170" height="64" rx="12" fill="#C9DDFB" stroke="#3B6FE0" stroke-width="3"/><text x="109.0" y="198" text-anchor="middle" font-size="13" font-weight="600" fill="#1b2a4a" opacity="0.8">OAF-C-101</text><text x="109.0" y="219" text-anchor="middle" font-size="18" font-weight="700" fill="#1b2a4a">Beginner</text>
+<rect x="244" y="170" width="170" height="64" rx="12" fill="#FBE79A" stroke="#D4A21F" stroke-width="3"/><text x="329.0" y="198" text-anchor="middle" font-size="13" font-weight="600" fill="#3a2f08" opacity="0.8">OAF-C-102</text><text x="329.0" y="219" text-anchor="middle" font-size="18" font-weight="700" fill="#3a2f08">Advanced</text>
+<path d="M200 78.0H238" stroke="#3B6FE0" stroke-width="3" stroke-linecap="round"/><path d="M230 70.0L238 78.0L230 86.0" fill="none" stroke="#3B6FE0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M420 78.0H458" stroke="#D4763A" stroke-width="3" stroke-linecap="round"/><path d="M450 70.0L458 78.0L450 86.0" fill="none" stroke="#D4763A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200 202.0H238" stroke="#3B6FE0" stroke-width="3" stroke-linecap="round"/><path d="M230 194.0L238 202.0L230 210.0" fill="none" stroke="#3B6FE0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M109.0 114V130" stroke="#8B949E" stroke-width="2" stroke-dasharray="5 5"/>
+<path d="M329.0 114V130" stroke="#8B949E" stroke-width="2" stroke-dasharray="5 5"/>
+<rect x="684" y="108.0" width="170" height="64" rx="12" fill="#11172A" stroke="#C9A227" stroke-width="3"/><text x="769.0" y="136.0" text-anchor="middle" font-size="13" font-weight="600" fill="#F3D45A" opacity="0.8">OAF</text><text x="769.0" y="157.0" text-anchor="middle" font-size="18" font-weight="700" fill="#F3D45A">Master Class</text>
+<path d="M640 78.0H769.0V102.0" fill="none" stroke="#D4763A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M761.0 94.0L769.0 102.0L777.0 94.0" fill="none" stroke="#D4763A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M420 202.0H769.0V178.0" fill="none" stroke="#3B6FE0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M761.0 186.0L769.0 178.0L777.0 186.0" fill="none" stroke="#3B6FE0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(868 79)">
+<g>
+  <path d="M82 18 L26 96" stroke="#8B949E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M26 96 L22 101" stroke="#C9A227" stroke-width="6" stroke-linecap="round"/>
+  <path d="M30 70 Q50 60 70 70 L76 108 Q50 116 24 108 Z" fill="#11172A"/>
+  <path d="M26 98 Q50 106 74 98 L74 104 Q50 112 26 104 Z" fill="#D43A2F"/>
+  <rect x="21" y="72" width="12" height="30" rx="6" fill="#11172A"/>
+  <rect x="67" y="72" width="12" height="30" rx="6" fill="#11172A"/>
+  <circle cx="50" cy="38" r="26" fill="#11172A"/>
+  <path d="M27 36 Q50 26 73 36 L73 48 Q50 56 27 48 Z" fill="#F2C9A0"/>
+  <ellipse cx="40" cy="42" rx="5" ry="4" fill="#fff"/><ellipse cx="60" cy="42" rx="5" ry="4" fill="#fff"/>
+  <circle cx="41.5" cy="42.5" r="2.4" fill="#11172A"/><circle cx="58.5" cy="42.5" r="2.4" fill="#11172A"/>
+  <path d="M24 26 Q50 14 76 26 L76 33 Q50 23 24 33 Z" fill="#D43A2F"/>
+  <rect x="40" y="19" width="20" height="10" rx="2" fill="#C0C7D0" stroke="#8B949E" stroke-width="1"/>
+  <path d="M46 21 L54 21 M46 24 L54 24" stroke="#8B949E" stroke-width="1.2"/>
+  <path d="M76 28 L92 22 L88 34 Z" fill="#D43A2F"/>
+</g>
+</g>
+</svg>
