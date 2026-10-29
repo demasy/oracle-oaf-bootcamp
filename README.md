@@ -8,7 +8,6 @@ A five-course curriculum for Oracle E-Business Suite developers, technical consu
 
 - [About this BootCamp](#about-this-bootcamp)
 - [Course levels](#oracle-oaf-bootcamp-levels)
-- [Workload and learning paths](#workload-and-learning-paths)
 - [Roadmap](#roadmap)
 - [Target audience](#target-audience)
 - [Prerequisites and requirements](#prerequisites--requirements)
@@ -18,17 +17,9 @@ A five-course curriculum for Oracle E-Business Suite developers, technical consu
 
 ## About this BootCamp
 
-**Five courses · 63 modules · 310 planned lectures · 177 indexed capabilities across 13 areas.** The five [course READMEs](bootcamp/CURRICULUM.md#authoritative-curriculum) are authoritative; the roadmap and capability index are supporting views.
+The Oracle Application Framework (OAF) BootCamp prepares Oracle E-Business Suite developers and technical consultants to build custom applications and extend existing functionality. It covers the development lifecycle, from OAF architecture and business components to page interactions, security, diagnostics and deployment.
 
-- **Course:** identified by a code such as `OAF-B-101`.
-- **Module:** a stable reference such as `B101-001`.
-- **Lecture:** a stable reference such as `B101-001.001`.
-- **Teaching step:** recommended learning order, which can differ from identifier order.
-- **Path:** required competencies versus optional specialist depth. Conditional integrations remain unscheduled until a supported product/release scope is selected.
-
-Each course defines measurable outcomes, module prerequisites, instruction/study/assessment hours, a bounded assessment scenario and exit criteria. See [curriculum conventions and release references](bootcamp/CURRICULUM.md) for the difficulty rubric, assessment policy and version-dependent boundaries.
-
-The [capability index](bootcamp/capabilities/CAPABILITIES.md) locates planned topics, including electives and conditional integrations; counts do not establish mastery or delivery readiness.
+Five courses form two learning tracks: **Building**, progressing from foundational development to advanced application design and R12.2 deployment, and **Customizing**, covering declarative personalization, programmatic extensions and customization maintenance.
 
 ## Oracle OAF BootCamp Levels
 
@@ -61,20 +52,6 @@ The [capability index](bootcamp/capabilities/CAPABILITIES.md) locates planned to
 
 Master Class and Ninja describe provider-defined curriculum milestones. They are not Oracle certifications.
 
-## Workload and Learning Paths
-
-| Course | Required lectures | Elective lectures | Instruction h | Study h | Assessment h | Required total h | Scheduled elective additions h |
-| :-- | --: | --: | --: | --: | --: | --: | --: |
-| OAF-B-101 | 90 | 5 | 32.5 | 25 | 20 | 77.5 | 3.5 |
-| OAF-B-102 | 53 | 44 | 28.5 | 22 | 24 | 74.5 | 36.5 |
-| OAF-B-103 | 54 | 26 | 28 | 12 | 44 | 84 | 21.5 |
-| OAF-C-101 | 18 | 1 | 10 | 7 | 6 | 23 | 0 |
-| OAF-C-102 | 19 | 0 | 13 | 8.5 | 10 | 31.5 | 0 |
-
-Hours are editorial planning estimates, not measured completion times. Instruction, study and assessment time are additive; capstone time is counted once. Scheduled elective additions cover fully elective modules; optional extensions inside required modules and conditional product integrations receive an additional time estimate only when selected. The required Building path totals **236 hours**; completing all five required course paths totals **290.5 hours**, without repeating shared prerequisites.
-
-For each course, follow its Teaching step column and module prerequisites. Customizing 101 follows Building 101. Customizing 102 requires Building 102, Customizing 101 and Building 103 modules **B103-001 through B103-004**; the full Building 103 capstone is not an entry requirement. Equivalent experience is evaluated through each course's readiness check.
-
 ## Roadmap
 
 The [OAF roadmap](roadmap/README.md) presents both paths with their planned modules and lectures. Required/elective labels come from course headings; level badges summarize module difficulty. Consult the course pages for individual lecture difficulty, prerequisite details and assessment scope.
@@ -97,8 +74,6 @@ The [OAF roadmap](roadmap/README.md) presents both paths with their planned modu
 | [Building 103](bootcamp/courses/building/103/README.md) | Building 102 required outcomes and basic Git/database design concepts |
 | [Customizing 101](bootcamp/courses/customizing/101/README.md) | Building 101 exit competencies and EBS administration concepts |
 | [Customizing 102](bootcamp/courses/customizing/102/README.md) | Building 102, Customizing 101, Building 103 modules 1–4 and Java subclassing |
-
-**For curriculum review:** read the published outlines and linked documentation. **For future practical delivery:** select a target EBS/OAF 12.2 patch level, matching JDeveloper OA Extension/JDK, development database access, appropriate responsibilities and permitted Oracle Support downloads. Product-dependent electives require their named integrations. These are delivery prerequisites described by the curriculum, not an environment supplied by this repository.
 
 ## About the Instructor
 

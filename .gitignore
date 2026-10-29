@@ -51,3 +51,6 @@ node_modules/
 demasylabs-barin/
 # Local reference material, kept on disk but not tracked
 brain/
+
+# Local instructor planning notes
+/bootcamp/instructor/
