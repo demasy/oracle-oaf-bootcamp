@@ -22,7 +22,7 @@
 | Section | Module | Title | Path | Lectures |
 | :-: | :-- | :-- | :-: | :-: |
 | [1] | B101-001 | [BootCamp Orientation and Success Path](#1-bootcamp-orientation-and-success-path) | Extended | 4 |
-| [2] | B101-002 | [OAF Architecture and MVC Paradigms](#2-oaf-architecture-and-mvc-paradigms) | Core | 7 |
+| [2] | B101-002 | [OAF Architecture and MVC Paradigms](#2-oaf-architecture-and-mvc-paradigms) | Core | 9 |
 | [3] | B101-003 | [IDE Setup and Project Topology](#3-ide-setup-and-project-topology) | Core | 10 |
 | [4] | B101-004 | [Application Module Construction](#4-application-module-construction) | Core | 5 |
 | [5] | B101-005 | [View Object Development](#5-view-object-development) | Core | 5 |
@@ -61,6 +61,8 @@
 | B101-002.005 | Separating Model, View and Controller in OAF | Video | Diagram | Model-View-Controller, separation of concerns |
 | B101-002.006 | Understanding BC4J and UIX Architecture | Video | Guide | BC4J, UIX, lifecycle, metadata repository |
 | B101-002.007 | Examining OAF Page Anatomy | Video | Reference | AM, VO, EO, Pages, Regions, Controllers |
+| B101-002.008 | Understanding the Layered Application Architecture | Video | Diagram | Layered application architecture: database, entity object, view object and AM, shared region and page layers |
+| B101-002.009 | Mapping the Database Layer to Base and TL Tables | Video | Reference | Database layer: _B and _TL tables, sequences, packages and WHO columns |
 
 ## [3] IDE Setup and Project Topology
 
@@ -101,7 +103,7 @@
 | B101-005.002 | Building Updatable View Objects for CRUD | Lab | Tutorial | VO-EO linking, attribute mapping, CRUD testing |
 | B101-005.003 | Building Read-Only View Objects with SQL | Lab | Tutorial | SQL-based VOs, expert mode, joins, optimization |
 | B101-005.004 | Configuring Bind Variables and View Criteria | Lab | Tutorial | Named bind variables, view criteria, dynamic WHERE clauses, search pages, preventing SQL injection |
-| B101-005.005 | Linking View Objects with View Links and Associations | Video | Reference | Master-detail, FK relationships, domains |
+| B101-005.005 | Linking View Objects with View Links and Associations | Video | Reference | Master-detail, FK relationships, domains, entity associations (composite and non-composite) |
 
 ## [6] Entity Object and DML Layer
 

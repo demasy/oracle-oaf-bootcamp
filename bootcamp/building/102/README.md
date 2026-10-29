@@ -48,7 +48,7 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-001.001 | Handling Form Submissions with processFormRequest | Video | Examples | processFormRequest(), button clicks, validation |
+| B102-001.001 | Handling Form Submissions with processFormRequest | Video | Examples | processFormRequest(), processFormData(), button clicks, validation |
 | B102-001.002 | Applying Common Controller Patterns | Video | Patterns | Parameters, form values, navigation, messages |
 
 ## [2] Asynchronous UI via PPR
@@ -157,7 +157,7 @@
 | B102-011.002 | Implementing Flow Layout Region | Lab | Examples | Flow vs other layouts, component arrangement, responsive design |
 | B102-011.003 | Implementing Advanced Layout Region | Lab | Patterns | Table/Row/Cell layouts, nested layouts, complex forms |
 | B102-011.004 | Implementing Content Container Region | Lab | Examples | Tab-based navigation, hiding/showing tabs, dynamic tab generation; richContainer |
-| B102-011.005 | Implementing Panel Splitter and Layered Layout | Lab | Tutorial | panelSplitter, layeredLayout, adjustable panels, multi-mode pages |
+| B102-011.005 | Implementing Panel Splitter and Layered Layout | Lab | Tutorial | panelSplitter, layeredLayout, adjustable panels, Redirect Mode and Form Submission Mode |
 | B102-011.006 | Building Custom Grids with tableLayout and cellFormat | Lab | Tutorial | Explicit rows and cells, columnSpan, rowSpan, hAlign, vAlign, width and height |
 
 ## [12] Data Regions, Grids and Charts

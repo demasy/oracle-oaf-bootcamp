@@ -8,16 +8,16 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 
 | Area | Capabilities |
 | :-- | :-: |
-| Architecture | 9 |
-| **Model Layer** | **12** |
-| ↳ Business Components | 7 |
+| Architecture | 11 |
+| **Model Layer** | **13** |
+| ↳ Business Components | 8 |
 | ↳ Validation and Server-Side Logic | 5 |
-| **View Layer** | **41** |
-| ↳ Layout and Navigation | 19 |
+| **View Layer** | **42** |
+| ↳ Layout and Navigation | 20 |
 | ↳ Tables, Search and Visualization | 10 |
 | ↳ Widgets, Items and Forms | 12 |
-| **Controller Layer** | **16** |
-| ↳ Request Processing | 5 |
+| **Controller Layer** | **17** |
+| ↳ Request Processing | 6 |
 | ↳ State and Navigation | 6 |
 | ↳ Dynamic and Programmatic UI | 5 |
 | Framework | 6 |
@@ -35,7 +35,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | ↳ Coding and Naming Standards | 6 |
 | ↳ Project and Code Management | 4 |
 | ↳ Quality and Extension Practice | 4 |
-| **Total** | **155** |
+| **Total** | **160** |
 
 ## Architecture
 
@@ -49,6 +49,8 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Resource swapping and caching | Dev 103 | B103-014.004, B103-009.002 |
 | OAF terminology and page anatomy | Dev 101 | B101-002.001, B101-002.007 |
 | OAF in context (when to use, EBS integration) | Dev 101 | B101-002.003, B101-002.004 |
+| Layered application architecture | Dev 101 | B101-002.008 |
+| Database layer (_B and _TL tables) | Dev 101 | B101-002.009 |
 | Object-oriented reuse | Dev 101, Dev 102 | B101-007.004, B102-009.004 |
 
 ## Model Layer
@@ -63,6 +65,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | View links | Dev 101 | B101-005.005, B101-010.001, B101-015.002 |
 | Application modules and OADBTransaction | Dev 101, Dev 103, Cust 102 | B101-004.004, B101-004.002, B101-004.003, B101-015.002, C102-002.003 |
 | Master-detail pages | Dev 101, Dev 103 | B101-010.001, B101-010.002, B101-015.004, B103-007.004, B101-005.005 |
+| Entity associations | Dev 101 | B101-005.005 |
 | Polymorphic entity objects | Dev 103 | B103-014.008, B103-014.001 |
 
 ### Validation and Server-Side Logic
@@ -90,6 +93,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Flexible layout and configurable pages | Dev 102 | B102-013.005 |
 | Masonry layout | Dev 103 | B103-012.007 |
 | Advanced layout and content container regions | Dev 102 | B102-011.003, B102-011.004 |
+| Layered layout modes (redirect and form submission) | Dev 102 | B102-011.005 |
 | Section headers, hide/show regions and footers | Dev 101, Dev 102 | B101-007.010, B102-011.001 |
 | Sub tabs and navigation components | Dev 102, Dev 103 | B103-013.005, B102-011.001, B103-013.008, B103-012.003, B103-013.007 |
 | Train and wizards | Dev 102, Dev 103 | B102-013.001, B102-013.003, B103-013.005 |
@@ -144,6 +148,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Partial page rendering (PPR) | Dev 102, Dev 103 | B102-002.001, B102-002.002, B102-011.001, B103-007.004 |
 | Page context and web bean API | Dev 101, Dev 102, Dev 103 | B101-009.003, B102-005.002, B103-003.002 |
 | Common controller patterns | Dev 102 | B102-001.002 |
+| processFormData | Dev 102 | B102-001.001 |
 
 ### State and Navigation
 
