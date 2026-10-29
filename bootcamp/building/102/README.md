@@ -21,7 +21,7 @@
 
 | Section | Module | Title | Path | Track | Lectures |
 | :-: | :-- | :-- | :-: | :-- | :-: |
-| [1] | B102-001 | [Form Event Handling Lifecycle](#1-form-event-handling-lifecycle) | Core | Core Path | 2 |
+| [1] | B102-001 | [Form Event Handling Lifecycle](#1-form-event-handling-lifecycle) | Core | Core Path | 3 |
 | [2] | B102-002 | [Asynchronous UI via PPR](#2-asynchronous-ui-via-ppr) | Core | Core Path | 2 |
 | [3] | B102-003 | [List of Values (LOV) Engineering](#3-list-of-values-lov-engineering) | Core | Core Path | 4 |
 | [4] | B102-004 | [Enterprise Exception Framework](#4-enterprise-exception-framework) | Core | Core Path | 3 |
@@ -31,7 +31,7 @@
 | [8] | B102-008 | [Advanced Model and Server-Side Features](#8-advanced-model-and-server-side-features) | Extended | Advanced Model and Data | 6 |
 | [9] | B102-009 | [Data Formatting and Validation](#9-data-formatting-and-validation) | Extended | Advanced Model and Data | 4 |
 | [10] | B102-010 | [Configuration and Defaults](#10-configuration-and-defaults) | Extended | Advanced Model and Data | 3 |
-| [11] | B102-011 | [Layout and Container Regions](#11-layout-and-container-regions) | Extended | Advanced UI Components | 6 |
+| [11] | B102-011 | [Layout and Container Regions](#11-layout-and-container-regions) | Extended | Advanced UI Components | 7 |
 | [12] | B102-012 | [Data Regions, Grids and Charts](#12-data-regions-grids-and-charts) | Extended | Advanced UI Components | 5 |
 | [13] | B102-013 | [Wizards, Rich Inputs and Configurable Pages](#13-wizards-rich-inputs-and-configurable-pages) | Extended | Advanced UI Components | 5 |
 | [14] | B102-014 | [Flexfields, SPEL and Forms Integration](#14-flexfields-spel-and-forms-integration) | Extended | Advanced UI Components | 7 |
@@ -48,8 +48,9 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B102-001.001 | Handling Form Submissions with processFormRequest | Video | Examples | processFormRequest(), processFormData(), button clicks, validation |
+| B102-001.001 | Handling Form Submissions with processFormRequest | Video | Examples | processFormRequest(), button clicks, validation |
 | B102-001.002 | Applying Common Controller Patterns | Video | Patterns | Parameters, form values, navigation, messages |
+| B102-001.003 | Reading Request Data with processFormData | Lab | Tutorial | processFormData() compared with processFormRequest(), reading submitted values, lifecycle order |
 
 ## [2] Asynchronous UI via PPR
 
@@ -157,8 +158,9 @@
 | B102-011.002 | Implementing Flow Layout Region | Lab | Examples | Flow vs other layouts, component arrangement, responsive design |
 | B102-011.003 | Implementing Advanced Layout Region | Lab | Patterns | Table/Row/Cell layouts, nested layouts, complex forms |
 | B102-011.004 | Implementing Content Container Region | Lab | Examples | Tab-based navigation, hiding/showing tabs, dynamic tab generation; richContainer |
-| B102-011.005 | Implementing Panel Splitter and Layered Layout | Lab | Tutorial | panelSplitter, layeredLayout, adjustable panels, Redirect Mode and Form Submission Mode |
+| B102-011.005 | Implementing Panel Splitter and Layered Layout | Lab | Tutorial | panelSplitter, layeredLayout, adjustable panels, multi-mode pages |
 | B102-011.006 | Building Custom Grids with tableLayout and cellFormat | Lab | Tutorial | Explicit rows and cells, columnSpan, rowSpan, hAlign, vAlign, width and height |
+| B102-011.007 | Switching layeredLayout Between Two Modes | Lab | Tutorial | layeredLayout Redirect Mode and Form Submission Mode, choosing between them, mode events |
 
 ## [12] Data Regions, Grids and Charts
 

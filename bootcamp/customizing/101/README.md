@@ -19,7 +19,7 @@
 | Section | Module | Title | Path | Lectures |
 | :-: | :-- | :-- | :-: | :-: |
 | [1] | C101-001 | [Upgrade Preservation Principles](#1-upgrade-preservation-principles) | Core | 4 |
-| [2] | C101-002 | [Personalization Hierarchy and Administration](#2-personalization-hierarchy-and-administration) | Core | 3 |
+| [2] | C101-002 | [Personalization Hierarchy and Administration](#2-personalization-hierarchy-and-administration) | Core | 4 |
 | [3] | C101-003 | [Declarative Customization of Pages, Regions and LOVs](#3-declarative-customization-of-pages-regions-and-lovs) | Core | 5 |
 | [4] | C101-004 | [Personalization Migration](#4-personalization-migration) | Core | 3 |
 | [5] | C101-005 | [Diagnostics, Translation and Assessment](#5-diagnostics-translation-and-assessment) | Required | 3 |
@@ -41,9 +41,10 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| C101-002.001 | Applying Personalization Levels and Precedence | Lab | Guide | Function, localization, responsibility, organization or location, site and user levels; user level has highest precedence |
+| C101-002.001 | Applying Personalization Levels and Precedence | Lab | Guide | Function, localization, responsibility, organization or location, site and user levels |
 | C101-002.002 | Enabling Personalization | Lab | Guide | Personalization profile options, Functional Administrator responsibility |
 | C101-002.003 | Clearing MDS Caches | Lab | Guide | Functional Administrator cache invalidation, seeing personalization changes immediately |
+| C101-002.004 | Resolving Personalization Precedence Across Levels | Lab | Guide | User level has highest precedence, then the admin levels, with conflict examples |
 
 ## [3] Declarative Customization of Pages, Regions and LOVs
 

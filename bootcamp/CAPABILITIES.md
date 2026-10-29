@@ -8,12 +8,15 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 
 | Area | Capabilities |
 | :-- | :-: |
-| Architecture | 12 |
+| **Architecture** | **12** |
+| ↳ Concepts and Layers | 6 |
+| ↳ Runtime and Data Foundations | 6 |
 | **Model Layer** | **14** |
 | ↳ Business Components | 8 |
 | ↳ Validation and Server-Side Logic | 6 |
 | **View Layer** | **42** |
-| ↳ Layout and Navigation | 20 |
+| ↳ Layout Containers | 11 |
+| ↳ Navigation and Page Structure | 9 |
 | ↳ Tables, Search and Visualization | 10 |
 | ↳ Widgets, Items and Forms | 12 |
 | **Controller Layer** | **18** |
@@ -39,20 +42,27 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 
 ## Architecture
 
+### Concepts and Layers
+
 | Capability | Level | Lectures |
 | :-- | :-- | :-- |
 | MVC pattern | Dev 101, Dev 103 | B101-002.005, B101-004.001, B101-009.001, B103-011.003 |
-| BC4J (business components) | Dev 101, Dev 103 | B101-002.006, B101-004.001, B103-001.002 |
 | UIX and MDS metadata | Dev 101, Dev 102, Cust 101, Cust 102 | B101-002.006, B101-007.001, B102-010.002, C101-001.003, C101-002.003 |
-| JDeveloper and OA Extension | Dev 101 | B101-003.001, B101-003.004, B101-003.010, B101-011.002, B101-013.006 |
-| AM pooling, retention and passivation | Dev 101, Dev 103 | B103-014.003, B101-004.005, B101-003.007, B101-004.002, B101-009.006 |
-| Resource swapping and caching | Dev 103 | B103-014.004, B103-009.002 |
 | OAF terminology and page anatomy | Dev 101 | B101-002.001, B101-002.007 |
 | OAF in context (when to use, EBS integration) | Dev 101 | B101-002.003, B101-002.004 |
 | Layered application architecture | Dev 101 | B101-002.008 |
-| System catalog views | Dev 101 | B101-002.009 |
-| Database layer (_B and _TL tables) | Dev 101 | B101-002.009 |
 | Object-oriented reuse | Dev 101, Dev 102 | B101-007.004, B102-009.004 |
+
+### Runtime and Data Foundations
+
+| Capability | Level | Lectures |
+| :-- | :-- | :-- |
+| BC4J (business components) | Dev 101, Dev 103 | B101-002.006, B101-004.001, B103-001.002 |
+| JDeveloper and OA Extension | Dev 101 | B101-003.001, B101-003.004, B101-003.010, B101-011.002, B101-013.006 |
+| State and connection management (AM pooling, retention, passivation) | Dev 101, Dev 103 | B103-014.003, B101-004.005, B101-003.007, B101-004.002, B101-009.006 |
+| Enterprise performance (resource swapping and caching) | Dev 103 | B103-014.004, B103-009.002 |
+| Database layer (_B and _TL tables) | Dev 101 | B101-002.009 |
+| System catalog views | Dev 101 | B101-002.010 |
 
 ## Model Layer
 
@@ -60,13 +70,13 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 
 | Capability | Level | Lectures |
 | :-- | :-- | :-- |
-| Entity objects | Dev 101, Dev 103, Cust 102 | B101-006.001, B101-006.002, B103-014.002, B103-014.008, C102-002.002 |
+| Entity objects | Dev 101, Dev 103, Cust 102 | B101-006.001, B101-006.002, B101-006.004, B103-014.002, B103-014.008 |
 | View objects, bind variables and criteria | Dev 101 | B101-005.004 |
 | Updatable and read-only view objects | Dev 101 | B101-005.001, B101-005.002, B101-005.003 |
 | View links | Dev 101 | B101-005.005, B101-010.001, B101-015.002 |
 | Application modules and OADBTransaction | Dev 101, Dev 103, Cust 102 | B101-004.004, B101-004.002, B101-004.003, B101-015.002, C102-002.003 |
 | Master-detail pages | Dev 101, Dev 103 | B101-010.001, B101-010.002, B101-015.004, B103-007.004, B101-005.005 |
-| Entity associations | Dev 101 | B101-005.005 |
+| Entity associations | Dev 101 | B101-006.004 |
 | Polymorphic entity objects | Dev 103 | B103-014.008, B103-014.001 |
 
 ### Validation and Server-Side Logic
@@ -74,15 +84,15 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Capability | Level | Lectures |
 | :-- | :-- | :-- |
 | Entity expert validation | Dev 102 | B102-009.004 |
-| Attribute validation and primary keys | Dev 101, Dev 102 | B101-006.003, B102-009.003 |
-| Cross-attribute validation | Dev 101 | B101-006.003 |
+| Attribute validation and primary keys | Dev 101, Dev 102 | B101-006.003, B101-006.005, B102-009.003 |
+| Cross-attribute validation | Dev 101 | B101-006.005 |
 | SQL and PL/SQL calls from OAF | Dev 102 | B102-008.004, B102-008.005 |
 | PL/SQL entity objects | Dev 103 | B103-014.002 |
 | Programmatic view objects | Dev 102 | B102-008.001, B102-008.002, B102-008.003 |
 
 ## View Layer
 
-### Layout and Navigation
+### Layout Containers
 
 | Capability | Level | Lectures |
 | :-- | :-- | :-- |
@@ -90,13 +100,18 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | messageComponentLayout | Dev 101 | B101-007.007 |
 | Stack, flow, table, row and cell layouts | Dev 102 | B102-011.006, B102-011.002 |
 | Panel splitter and layered layout | Dev 102 | B102-011.005 |
+| Layered layout modes (redirect and form submission) | Dev 102 | B102-011.007 |
 | Auto-repeating layout | Dev 102 | B102-012.005 |
 | Bulleted list | Dev 102 | B102-012.004 |
 | Flexible layout and configurable pages | Dev 102 | B102-013.005 |
 | Masonry layout | Dev 103 | B103-012.007 |
 | Advanced layout and content container regions | Dev 102 | B102-011.003, B102-011.004 |
-| Layered layout modes (redirect and form submission) | Dev 102 | B102-011.005 |
 | Section headers, hide/show regions and footers | Dev 101, Dev 102 | B101-007.010, B102-011.001 |
+
+### Navigation and Page Structure
+
+| Capability | Level | Lectures |
+| :-- | :-- | :-- |
 | Sub tabs and navigation components | Dev 102, Dev 103 | B103-013.005, B102-011.001, B103-013.008, B103-012.003, B103-013.007 |
 | Train and wizards | Dev 102, Dev 103 | B102-013.001, B102-013.003, B103-013.005 |
 | Shuttle | Dev 102, Dev 103 | B102-013.002, B103-007.004, B103-013.005 |
@@ -127,12 +142,12 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Capability | Level | Lectures |
 | :-- | :-- | :-- |
 | Standard web widgets | Dev 101 | B101-007.005 |
-| Form inputs and selection controls | Dev 101 | B101-007.009 |
+| Form inputs and selection controls (radio, checkbox, spin box) | Dev 101 | B101-007.009 |
 | Text and display items | Dev 101, Dev 102 | B101-007.011, B102-014.004 |
 | Images, spacers and separators | Dev 101 | B101-007.011, B101-008.002 |
 | Buttons and button bars | Dev 101 | B101-007.010, B101-008.005 |
 | Form parameters and includes | Dev 101 | B101-007.012, B101-008.003 |
-| LOV, dependent LOV and look-ahead | Dev 102 | B102-003.002, B102-003.003, B102-003.004, B102-003.001 |
+| LOV auto-completion, dependent LOV and look-ahead | Dev 102 | B102-003.002, B102-003.003, B102-003.004, B102-003.001 |
 | Smart poplists (LOV choice) | Dev 101 | B101-008.001, B101-007.009 |
 | Rich text, color picker and rating bar | Dev 102 | B102-013.004 |
 | Flexfields (DFF and KFF) | Dev 102, Cust 101 | B102-014.001, B102-014.002, B102-014.007, C101-003.003 |
@@ -146,12 +161,12 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Capability | Level | Lectures |
 | :-- | :-- | :-- |
 | processRequest (GET) | Dev 101, Cust 102 | B101-009.002, C102-001.001 |
-| processFormRequest (POST) | Dev 102, Cust 102 | B102-001.001, B102-002.002, C102-001.001 |
+| processFormRequest (POST) | Dev 102, Cust 102 | B102-001.001, B102-001.003, B102-002.002, C102-001.001 |
 | Partial page rendering (PPR) | Dev 102, Dev 103 | B102-002.001, B102-002.002, B102-011.001, B103-007.004 |
 | Page context and web bean API | Dev 101, Dev 102, Dev 103 | B101-009.003, B102-005.002, B103-003.002 |
 | Common controller patterns | Dev 102 | B102-001.002 |
-| processFormData | Dev 102 | B102-001.001 |
-| Controller classes (OAControllerImpl) | Dev 101 | B101-009.001 |
+| processFormData | Dev 102 | B102-001.003 |
+| Controller classes (OAControllerImpl) | Dev 101 | B101-009.008 |
 
 ### State and Navigation
 
@@ -179,7 +194,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | Capability | Level | Lectures |
 | :-- | :-- | :-- |
 | Accessibility | Dev 102, Cust 101 | B102-018.004, C101-003.003 |
-| Hot keys | Dev 102 | B102-018.002 |
+| Accelerator (hot) keys | Dev 102 | B102-018.002 |
 | Screen reader support | Dev 102 | B102-018.002 |
 | Enhanced save model | Dev 102 | B102-018.003 |
 | Profile options | Dev 102, Dev 103, Cust 101 | B102-010.003, B103-003.001, C101-002.002, C101-005.001 |
@@ -220,7 +235,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | :-- | :-- | :-- |
 | Workflow and notifications | Dev 102, Dev 103 | B103-016.006, B102-017.002, B103-016.004, B102-005.002, B102-020.002 |
 | Oracle Forms interoperability | Dev 101, Dev 102 | B101-002.002, B102-014.005, B102-014.006 |
-| Portlets | Dev 103 | B103-017.001, B103-016.005 |
+| Portal and portlets | Dev 103 | B103-017.001, B103-016.005 |
 | Concurrent requests | Dev 102, Dev 103 | B102-017.004, B103-003.003, B103-006.005 |
 | OBIEE analytics | Dev 103 | B103-017.002, B103-016.005 |
 
@@ -235,7 +250,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | AntiSamy filtering | Dev 102, Dev 103 | B103-014.007, B103-015.002, B102-016.005 |
 | Virus scanning | Dev 102, Dev 103 | B103-015.004, B102-016.005, B103-014.007 |
 | Frame busting | Dev 103 | B103-015.003, B103-014.007 |
-| HTML tampering protection | Dev 101 | B101-012.004, B101-012.005 |
+| Built-in protection against HTML tampering | Dev 101 | B101-012.004, B101-012.005 |
 | Page access tracking | Dev 103 | B103-014.006, B103-015.001 |
 
 ## Errors and diagnostics
@@ -258,7 +273,7 @@ Every OAF capability covered by the five courses, with the levels that teach it 
 | :-- | :-- | :-- |
 | Customization concepts | Cust 101 | C101-001.001 |
 | Personalization levels | Cust 101 | C101-002.001 |
-| Personalization precedence (user level highest) | Cust 101 | C101-002.001 |
+| Personalization precedence (user level highest) | Cust 101 | C101-002.004 |
 | Durable personalizations | Cust 101 | C101-001.002 |
 | Region injection | Cust 101 | C101-003.004 |
 | LOV personalization | Cust 101 | C101-003.005 |
@@ -344,12 +359,12 @@ Bean-level OAF component names for each capability that has them, grouped by OAF
 | C15 |  | Breadcrumbs and menus | C15.001<br>C15.002<br>C15.003<br>C15.004<br>C15.005 | menu<br>menuItem<br>breadcrumbs<br>locator<br>navigationBar |
 | C16 | Input and item controls | Shuttle | C16.001 | shuttle |
 | C17 |  | Popups | C17.001 | popUp |
-| C18 |  | Form inputs and selection controls | C18.001<br>C18.002<br>C18.003<br>C18.004<br>C18.005<br>C18.006<br>C18.007 | messageTextInput<br>messageChoice<br>messageLovChoice<br>messageRadioButton<br>messageRadioGroup<br>messageCheckBox<br>messageSpinBox |
+| C18 |  | Form inputs and selection controls (radio, checkbox, spin box) | C18.001<br>C18.002<br>C18.003<br>C18.004<br>C18.005<br>C18.006<br>C18.007 | messageTextInput<br>messageChoice<br>messageLovChoice<br>messageRadioButton<br>messageRadioGroup<br>messageCheckBox<br>messageSpinBox |
 | C19 |  | Text and display items | C19.001<br>C19.002<br>C19.003<br>C19.004<br>C19.005<br>C19.006 | styledText<br>formattedText<br>instructionText<br>messageStyledText<br>staticStyledText<br>rawText |
 | C20 |  | Images, spacers and separators | C20.001<br>C20.002<br>C20.003<br>C20.004 | image<br>spacer<br>separator<br>tip |
 | C21 |  | Buttons and button bars | C21.001<br>C21.002<br>C21.003<br>C21.004<br>C21.005<br>C21.006<br>C21.007 | button<br>submitButton<br>resetButton<br>selectionButton<br>exportButton<br>link<br>pageButtonBar |
 | C22 |  | Form parameters and includes | C22.001<br>C22.002<br>C22.003<br>C22.004 | formParameter<br>formValue<br>servletInclude<br>urlInclude |
-| C23 |  | LOV, dependent LOV and look-ahead | C23.001<br>C23.002<br>C23.003<br>C23.004<br>C23.005 | listOfValues<br>messageLovInput<br>lovMap<br>lovActionButton<br>lovActionMap |
+| C23 |  | LOV auto-completion, dependent LOV and look-ahead | C23.001<br>C23.002<br>C23.003<br>C23.004<br>C23.005 | listOfValues<br>messageLovInput<br>lovMap<br>lovActionButton<br>lovActionMap |
 | C24 |  | Rich text, color picker and rating bar | C24.001<br>C24.002<br>C24.003 | richTextEditor<br>colorPicker<br>messageRatingBar |
 | C25 |  | Flexfields (DFF and KFF) | C25.001<br>C25.002 | flex<br>flexMap |
 | C26 |  | Dialog pages | C26.001 | dialogPage |

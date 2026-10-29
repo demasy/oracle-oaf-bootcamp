@@ -22,14 +22,14 @@
 | Section | Module | Title | Path | Lectures |
 | :-: | :-- | :-- | :-: | :-: |
 | [1] | B101-001 | [BootCamp Orientation and Success Path](#1-bootcamp-orientation-and-success-path) | Extended | 4 |
-| [2] | B101-002 | [OAF Architecture and MVC Paradigms](#2-oaf-architecture-and-mvc-paradigms) | Core | 9 |
+| [2] | B101-002 | [OAF Architecture and MVC Paradigms](#2-oaf-architecture-and-mvc-paradigms) | Core | 10 |
 | [3] | B101-003 | [IDE Setup and Project Topology](#3-ide-setup-and-project-topology) | Core | 10 |
 | [4] | B101-004 | [Application Module Construction](#4-application-module-construction) | Core | 5 |
 | [5] | B101-005 | [View Object Development](#5-view-object-development) | Core | 5 |
-| [6] | B101-006 | [Entity Object and DML Layer](#6-entity-object-and-dml-layer) | Core | 3 |
+| [6] | B101-006 | [Entity Object and DML Layer](#6-entity-object-and-dml-layer) | Core | 5 |
 | [7] | B101-007 | [Declarative Page Layouts](#7-declarative-page-layouts) | Core | 14 |
 | [8] | B101-008 | [Reusable UI Components](#8-reusable-ui-components) | Extended | 5 |
-| [9] | B101-009 | [Controller Request Processing](#9-controller-request-processing) | Core | 7 |
+| [9] | B101-009 | [Controller Request Processing](#9-controller-request-processing) | Core | 8 |
 | [10] | B101-010 | [Master-Detail Relationships](#10-master-detail-relationships) | Required | 2 |
 | [11] | B101-011 | [JDeveloper Debugging](#11-jdeveloper-debugging) | Required | 2 |
 | [12] | B101-012 | [Security Implementation](#12-security-implementation) | Extended | 5 |
@@ -62,7 +62,8 @@
 | B101-002.006 | Understanding BC4J and UIX Architecture | Video | Guide | BC4J, UIX, lifecycle, metadata repository |
 | B101-002.007 | Examining OAF Page Anatomy | Video | Reference | AM, VO, EO, Pages, Regions, Controllers |
 | B101-002.008 | Understanding the Layered Application Architecture | Video | Diagram | Layered application architecture: database, entity object, view object and AM, shared region and page layers |
-| B101-002.009 | Mapping the Database Layer to Base and TL Tables | Video | Reference | Database layer: _B and _TL tables, sequences, packages, system catalog views and WHO columns |
+| B101-002.009 | Mapping the Database Layer to Base and TL Tables | Video | Reference | Database layer: _B and _TL tables, sequences, packages and WHO columns |
+| B101-002.010 | Querying System Catalog Views for OAF Metadata | Video | Reference | System catalog views for finding the tables, columns and dependencies behind a page |
 
 ## [3] IDE Setup and Project Topology
 
@@ -103,7 +104,7 @@
 | B101-005.002 | Building Updatable View Objects for CRUD | Lab | Tutorial | VO-EO linking, attribute mapping, CRUD testing |
 | B101-005.003 | Building Read-Only View Objects with SQL | Lab | Tutorial | SQL-based VOs, expert mode, joins, optimization |
 | B101-005.004 | Configuring Bind Variables and View Criteria | Lab | Tutorial | Named bind variables, view criteria, dynamic WHERE clauses, search pages, preventing SQL injection |
-| B101-005.005 | Linking View Objects with View Links and Associations | Video | Reference | Master-detail, FK relationships, domains, entity associations (composite and non-composite) |
+| B101-005.005 | Linking View Objects with View Links and Associations | Video | Reference | Master-detail, FK relationships, domains |
 
 ## [6] Entity Object and DML Layer
 
@@ -113,7 +114,9 @@
 | :-- | :-------- | :-: | :-- | :---- |
 | B101-006.001 | Understanding Entity Object Fundamentals | Video | Reference | Table mapping, validation, DML, associations |
 | B101-006.002 | Creating Entity Objects from Tables | Lab | Tutorial | Wizard creation, attributes, validation rules |
-| B101-006.003 | Defining Primary Keys and Attribute Validation | Lab | Tutorial | Primary key identification, attribute-level, entity-level and cross-attribute validation |
+| B101-006.003 | Defining Primary Keys and Attribute Validation | Lab | Tutorial | Primary key identification, attribute-level validation routines, entity-level validation |
+| B101-006.004 | Defining Entity Associations Between Entity Objects | Lab | Tutorial | Composite and non-composite entity associations, foreign key mapping and association accessors |
+| B101-006.005 | Writing Entity-Level and Cross-Attribute Validation | Lab | Tutorial | Validation across attributes in an entity object, validation order and error messages |
 
 ## [7] Declarative Page Layouts
 
@@ -154,13 +157,14 @@
 
 | Code | Lecture | Format | Resource | Notes |
 | :-- | :-------- | :-: | :-- | :---- |
-| B101-009.001 | Understanding Controller Architecture and User Actions | Video | Guide | MVC role, OAControllerImpl class, lifecycle, structure, best practices |
+| B101-009.001 | Understanding Controller Architecture and User Actions | Video | Guide | MVC role, lifecycle, structure, best practices |
 | B101-009.002 | Handling GET Requests and Page Initialization | Video | Patterns | processRequest(), initialization, default values |
 | B101-009.003 | Using the Controller API for pageContext and WebBeans | Video | Reference | pageContext, attributes, WebBeans, transactions |
 | B101-009.004 | Comparing Parameter Passing Strategies | Video | Diagram | Request, Transaction, Session scopes comparison |
 | B101-009.005 | Using Request Parameters for Single-Page Scope | Lab | Tutorial | Token-based, navigation, lifecycle, examples |
 | B101-009.006 | Managing Transaction Parameters Across Pages | Lab | Tutorial | Multi-page flow, retention, cleanup |
 | B101-009.007 | Storing User State in Session Parameters | Lab | Tutorial | Session scope, persistence, memory, best practices |
+| B101-009.008 | Creating Controller Classes with OAControllerImpl | Lab | Tutorial | OAControllerImpl subclass, attaching it to a region and overriding the lifecycle methods |
 
 ## [10] Master-Detail Relationships
 
